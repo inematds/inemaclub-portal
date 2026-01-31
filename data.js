@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/BMAD-Academy/"
     },
     {
+        id: 37,
+        title: "CCGuide - Claude Code 2026",
+        description: "O curso mais completo sobre Claude Code em português. Domine a CLI da Anthropic do básico ao avançado com 24 módulos e 144 tópicos práticos.",
+        icon: "🖥️",
+        tags: ["Claude Code", "CLI", "Anthropic", "IA"],
+        url: "https://inematds.github.io/ccguide2026"
+    },
+    {
         id: 5,
         title: "Dashboard Mastery",
         description: "Supercurso de Dashboards Profissionais - Domine a criação de dashboards com Next.js e React.",
@@ -292,6 +300,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-01-31", title: "CCGuide - Claude Code 2026", type: "novo", url: "https://inematds.github.io/ccguide2026" },
     { date: "2026-01-21", title: "WebP - Designer 2026", type: "novo", url: "https://inematds.github.io/webp" },
     { date: "2026-01-21", title: "AIWCF - Vibe Coding", type: "novo", url: "https://inematds.github.io/AIWCF" },
     { date: "2026-01-16", title: "GIPM - Projetos com IA Governada", type: "novo", url: "https://inematds.github.io/GIPM/" },
