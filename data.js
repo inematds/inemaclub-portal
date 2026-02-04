@@ -105,6 +105,14 @@ const platformsData = [
         url: "https://inematds.github.io/FEP/"
     },
     {
+        id: 38,
+        title: "FEP2 - Prompt Engineering Masterclass",
+        description: "Masterclass em Engenharia de Prompts - Domine técnicas profissionais de prompting, desde context windows até meta prompting.",
+        icon: "✍️",
+        tags: ["Prompts", "IA", "Engenharia", "LLMs"],
+        url: "https://inematds.github.io/FEP2/"
+    },
+    {
         id: 13,
         title: "FETD - Engenharia de Treinamentos de Dados",
         description: "Formação em Engenharia de Treinamento de Dados - Especialização em preparação e qualidade de dados para IA.",
@@ -300,6 +308,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-02-03", title: "FEP2 - Prompt Engineering Masterclass", type: "novo", url: "https://inematds.github.io/FEP2/" },
     { date: "2026-01-31", title: "CCGuide - Claude Code 2026", type: "novo", url: "https://inematds.github.io/ccguide2026" },
     { date: "2026-01-21", title: "WebP - Designer 2026", type: "novo", url: "https://inematds.github.io/webp" },
     { date: "2026-01-21", title: "AIWCF - Vibe Coding", type: "novo", url: "https://inematds.github.io/AIWCF" },
