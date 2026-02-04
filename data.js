@@ -257,6 +257,14 @@ const platformsData = [
         url: "https://inematds.github.io/SHIA/"
     },
     {
+        id: 39,
+        title: "Skills - Agent Skills Mastery",
+        description: "Domine a criação de Skills para agentes de IA. Aprenda a criar, configurar e distribuir skills para Claude Code, Gemini CLI e outras plataformas.",
+        icon: "🧠",
+        tags: ["Skills", "IA", "Agentes", "Claude Code", "Gemini"],
+        url: "https://inematds.github.io/skills"
+    },
+    {
         id: 31,
         title: "SuperProf",
         description: "SuperProf - Formação avançada para professores e educadores do futuro.",
@@ -308,6 +316,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-02-04", title: "Skills - Agent Skills Mastery", type: "novo", url: "https://inematds.github.io/skills" },
     { date: "2026-02-03", title: "FEP2 - Prompt Engineering Masterclass", type: "novo", url: "https://inematds.github.io/FEP2/" },
     { date: "2026-01-31", title: "CCGuide - Claude Code 2026", type: "novo", url: "https://inematds.github.io/ccguide2026" },
     { date: "2026-01-21", title: "WebP - Designer 2026", type: "novo", url: "https://inematds.github.io/webp" },
