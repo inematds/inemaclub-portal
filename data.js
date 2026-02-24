@@ -209,6 +209,14 @@ const platformsData = [
         url: "https://inematds.github.io/NanoBanana/"
     },
     {
+        id: 40,
+        title: "NotebookLM - Do Zero ao Avançado",
+        description: "NotebookLM Completo - Domine a ferramenta de IA do Google que transforma documentos em conhecimento acionável, com áudio, mapas mentais e chat inteligente.",
+        icon: "📓",
+        tags: ["NotebookLM", "Google AI", "Documentos", "IA", "RAG"],
+        url: "https://inematds.github.io/notebooklm"
+    },
+    {
         id: 25,
         title: "Playbook - Formação Consultor IA - Inglês",
         description: "Playbook de Desenvolvimento - Guia completo de boas práticas e metodologias de desenvolvimento.",
@@ -316,6 +324,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-02-24", title: "NotebookLM - Do Zero ao Avançado", type: "novo", url: "https://inematds.github.io/notebooklm" },
     { date: "2026-02-04", title: "Skills - Agent Skills Mastery", type: "novo", url: "https://inematds.github.io/skills" },
     { date: "2026-02-03", title: "FEP2 - Prompt Engineering Masterclass", type: "novo", url: "https://inematds.github.io/FEP2/" },
     { date: "2026-01-31", title: "CCGuide - Claude Code 2026", type: "novo", url: "https://inematds.github.io/ccguide2026" },
