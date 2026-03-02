@@ -5,38 +5,29 @@ import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, type Course } from '@/data/courses'
 import s from './PortalV2.module.css'
 
-interface VisitStats {
-  total: number
-  uniqueLogged: number
-  uniqueAnon: number
-}
+interface VisitStats { total: number; uniqueLogged: number; uniqueAnon: number }
 
-// Hook de scroll reveal
-function useReveal() {
+/* ── Scroll Reveal ── */
+function Reveal({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
-    const el = ref.current
-    if (!el) return
+    const el = ref.current; if (!el) return
     const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { el.classList.add(s.visible); obs.disconnect() } },
-      { threshold: 0.1 }
+      ([e]) => { if (e.isIntersecting) { el.classList.add(s.vis); obs.disconnect() } },
+      { threshold: 0.08 }
     )
     obs.observe(el)
     return () => obs.disconnect()
   }, [])
-  return ref
-}
-
-function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
-  const ref = useReveal()
   return (
-    <div ref={ref} className={s.reveal} style={{ transitionDelay: `${delay}ms` }}>
+    <div ref={ref} className={`${s.reveal} ${className}`} style={{ transitionDelay: `${delay}ms` }}>
       {children}
     </div>
   )
 }
 
-const TELEGRAM_GROUPS = [
+/* ── Dados estáticos ── */
+const TELEGRAM = [
   { icon: '💬', name: 'INEMA.VIP - Recepção',  url: 'https://t.me/inema_vip' },
   { icon: '👥', name: 'INEMA.ADULTO',           url: 'https://t.me/inema_adulto' },
   { icon: '🤖', name: 'INEMA.AGENTES',          url: 'https://t.me/inema_agentes' },
@@ -66,360 +57,405 @@ const TELEGRAM_GROUPS = [
   { icon: '🎤', name: 'INEMA.VOZ',              url: 'https://t.me/inema_voz' },
 ]
 
-const GITHUB_REPOS = [
-  { icon: '🖥️', name: 'sis',               desc: 'Sistema de Informações',                               stars: 0 },
-  { icon: '✨', name: 'AIWCF',             desc: 'AI Website Creation Framework - Vibe Coding',           stars: 0 },
-  { icon: '💄', name: 'bela360',           desc: 'Plataforma Bela 360',                                   stars: 1 },
-  { icon: '🎲', name: 'bet360',            desc: 'Plataforma Bet 360',                                    stars: 0 },
-  { icon: '🎓', name: 'SuperProf',         desc: 'Formação avançada para professores e educadores',       stars: 1 },
-  { icon: '🤖', name: 'agent-browser',     desc: 'Agente de automação de navegador',                      stars: 0 },
-  { icon: '🖼️', name: 'webp',              desc: 'Conversão e otimização de imagens WebP',                stars: 0 },
-  { icon: '🎙️', name: 'DublarV4',          desc: 'Sistema de dublagem versão 4',                          stars: 1 },
-  { icon: '🏛️', name: 'GIPM',              desc: 'Método de Projetos com IA Governada',                   stars: 0 },
-  { icon: '🎬', name: 'VisionPro',         desc: 'Construção Audiovisual com IA',                         stars: 0 },
+const REPOS = [
   { icon: '📚', name: 'BMAD-Academy',      desc: 'Academia de desenvolvimento com metodologia BMAD',      stars: 12 },
-  { icon: '🐾', name: 'pet360',            desc: 'Plataforma Pet 360',                                    stars: 0 },
   { icon: '🧠', name: 'FEA-IA',            desc: 'Formação de Engenheiros de Agentes de IA',              stars: 10 },
   { icon: '✍️', name: 'FEP',               desc: 'Formação de Engenheiros de Prompts',                    stars: 7 },
   { icon: '🎤', name: 'lk_agente_v3',      desc: 'Agente de voz inteligente com LiveKit em Português',    stars: 5 },
   { icon: '📱', name: 'whatsapp-agentkit', desc: 'Kit de agentes para WhatsApp',                          stars: 4 },
   { icon: '🤝', name: 'nm82',              desc: 'Sistema de Padrinhos e Afiliados INEMA.VIP',            stars: 3 },
   { icon: '🤖', name: 'FEA',               desc: 'Formação de Engenharia de Agentes de IA',               stars: 3 },
+  { icon: '💄', name: 'bela360',           desc: 'Plataforma Bela 360',                                   stars: 1 },
+  { icon: '🎓', name: 'SuperProf',         desc: 'Formação avançada para professores e educadores',       stars: 1 },
+  { icon: '🎙️', name: 'DublarV4',          desc: 'Sistema de dublagem versão 4',                          stars: 1 },
+  { icon: '✨', name: 'AIWCF',             desc: 'AI Website Creation Framework - Vibe Coding',           stars: 0 },
+  { icon: '🖥️', name: 'sis',               desc: 'Sistema de Informações',                               stars: 0 },
+  { icon: '🎲', name: 'bet360',            desc: 'Plataforma Bet 360',                                    stars: 0 },
+  { icon: '🤖', name: 'agent-browser',     desc: 'Agente de automação de navegador',                      stars: 0 },
+  { icon: '🖼️', name: 'webp',              desc: 'Conversão e otimização de imagens WebP',                stars: 0 },
+  { icon: '🏛️', name: 'GIPM',              desc: 'Método de Projetos com IA Governada',                   stars: 0 },
+  { icon: '🎬', name: 'VisionPro',         desc: 'Construção Audiovisual com IA',                         stars: 0 },
+  { icon: '🐾', name: 'pet360',            desc: 'Plataforma Pet 360',                                    stars: 0 },
 ]
 
-function formatDate(dateStr: string) {
-  return new Date(dateStr + 'T00:00:00').toLocaleDateString('pt-BR', {
-    day: '2-digit', month: '2-digit',
-  })
+function fmt(d: string) {
+  return new Date(d + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
 }
 
+/* ================================================================ */
 export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
-  const [searchTerm, setSearchTerm] = useState('')
-  const [updatesExpanded, setUpdatesExpanded] = useState(false)
+  const [search, setSearch] = useState('')
+  const [expanded, setExpanded] = useState(false)
 
-  // Registra visita
   useEffect(() => {
-    async function trackVisit() {
+    async function track() {
       let sid = localStorage.getItem('animabook_sid')
-      if (!sid) {
-        sid = crypto.randomUUID()
-        localStorage.setItem('animabook_sid', sid)
-      }
-      const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+      if (!sid) { sid = crypto.randomUUID(); localStorage.setItem('animabook_sid', sid) }
+      const hdrs: Record<string, string> = { 'Content-Type': 'application/json' }
       const { data: { session } } = await supabase.auth.getSession()
-      if (session?.access_token) headers['Authorization'] = `Bearer ${session.access_token}`
-      await fetch('/api/visit', { method: 'POST', headers, body: JSON.stringify({ session_id: sid }) })
+      if (session?.access_token) hdrs['Authorization'] = `Bearer ${session.access_token}`
+      fetch('/api/visit', { method: 'POST', headers: hdrs, body: JSON.stringify({ session_id: sid }) })
     }
-    trackVisit()
+    track()
   }, [])
 
-  function trackClick(url: string, label: string, section: string) {
+  function click(url: string, label: string, section: string) {
     const sid = localStorage.getItem('animabook_sid') ?? 'unknown'
-    fetch('/api/click', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ session_id: sid, url, label, section }),
-    })
+    fetch('/api/click', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: sid, url, label, section }) })
   }
 
-  const filteredCourses: Course[] =
-    searchTerm.trim() === ''
-      ? platformsData
-      : platformsData.filter((p) => {
-          const t = searchTerm.toLowerCase()
-          return (
-            p.title.toLowerCase().includes(t) ||
-            p.description.toLowerCase().includes(t) ||
-            p.tags.some((tag) => tag.toLowerCase().includes(t))
-          )
-        })
+  const courses: Course[] = search.trim() === '' ? platformsData
+    : platformsData.filter(p => {
+        const t = search.toLowerCase()
+        return p.title.toLowerCase().includes(t) || p.description.toLowerCase().includes(t)
+          || p.tags.some(tag => tag.toLowerCase().includes(t))
+      })
 
-  const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
+  const updates = updatesData.slice(0, expanded ? 20 : 5)
 
   return (
     <div className={s.root}>
 
       {/* ── Navbar ── */}
-      <nav className={s.navbar} aria-label="Navegação principal">
-        <div className={`${s.container} ${s.navInner}`}>
-          <a href="#top" className={s.navBrand}>
-            INEMA<span>.CLUB</span>
-          </a>
-          <div className={s.navLinks}>
-            <a href="#cursos"    className={s.navLink}>Cursos</a>
-            <a href="#trilha"    className={s.navLink}>Trilha</a>
-            <a href="#github"    className={s.navLink}>GitHub</a>
-            <a href="#comunidade" className={s.navLink}>Comunidade</a>
+      <nav className={s.nav} aria-label="Navegação principal">
+        <div className={`${s.wrap} ${s.navWrap}`}>
+          <a href="#inicio" className={s.navLogo}>INEMA<em>.CLUB</em></a>
+          <div className={s.navMenu}>
+            <a href="#cursos"    className={s.navItem}>Cursos</a>
+            <a href="#trilha"    className={s.navItem}>Trilha</a>
+            <a href="#github"    className={s.navItem}>GitHub</a>
+            <a href="#comunidade" className={s.navItem}>Comunidade</a>
             <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
-               className={s.navCta}
-               onClick={() => trackClick('https://inema.vip', 'Entrar', 'navbar')}>
+               className={s.navBtn}
+               onClick={() => click('https://inema.vip', 'Entrar', 'navbar')}>
               Entrar →
             </a>
           </div>
         </div>
       </nav>
 
-      {/* ── Header ── */}
-      <header id="top" className={s.header}>
-        <div className={s.container}>
-          <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
-             className={s.headerBadge}
-             onClick={() => trackClick('https://inema.vip', 'Participe da Comunidade', 'header')}>
-            <img src="/doc/conviteinemap.png" alt="" width={20} height={20}
-                 style={{ borderRadius: 4, objectFit: 'cover' }} />
-            Participe da Comunidade INEMA.VIP
-          </a>
-          <h1 className={s.headerTitle}>Portal INEMA.CLUB</h1>
-          <p className={s.headerSub}>Acesso centralizado aos seus cursos e plataformas</p>
-          <div className={s.statsRow}>
-            <span className={s.statChip} title="Visualizações">👁 {visitStats.total.toLocaleString('pt-BR')}</span>
-            <span className={s.statChip} title="Visitantes únicos">👤 {visitStats.uniqueAnon.toLocaleString('pt-BR')}</span>
-            {visitStats.uniqueLogged > 0 && (
-              <span className={s.statChip} title="Logados">🔑 {visitStats.uniqueLogged}</span>
-            )}
+      {/* ══════════════════════════════════════════
+          HERO — full viewport, orbe animado
+      ══════════════════════════════════════════ */}
+      <section id="inicio" className={s.hero}>
+        <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
+           className={s.heroBadge}
+           onClick={() => click('https://inema.vip', 'badge comunidade', 'hero')}>
+          Participe da Comunidade INEMA.VIP
+        </a>
+
+        <h1 className={s.heroTitle}>
+          Portal<br /><span>INEMA.CLUB</span>
+        </h1>
+
+        <p className={s.heroSub}>
+          Acesso centralizado a cursos, ferramentas e comunidade de IA do Brasil.
+        </p>
+
+        <div className={s.heroStats}>
+          <div className={s.heroStat}>
+            <strong>{visitStats.total.toLocaleString('pt-BR')}</strong>
+            <span>Visualizações</span>
+          </div>
+          <div className={s.heroStat}>
+            <strong>{visitStats.uniqueAnon.toLocaleString('pt-BR')}</strong>
+            <span>Visitantes únicos</span>
+          </div>
+          <div className={s.heroStat}>
+            <strong>{platformsData.length}</strong>
+            <span>Cursos</span>
           </div>
         </div>
-      </header>
 
-      {/* ── Hero banner ── */}
-      <section className={s.heroBanner} aria-hidden="true">
-        <img src="/doc/inemaclub.jpg" alt="Portal INEMA" className={s.heroBannerImg} />
+        <div className={s.heroCtas}>
+          <a href="#cursos" className={s.ctaPrimary}
+             onClick={() => click('#cursos', 'explorar cursos', 'hero')}>
+            Explorar cursos →
+          </a>
+          <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
+             className={s.ctaSecondary}
+             onClick={() => click('https://inema.vip', 'entrar comunidade', 'hero')}>
+            Entrar na comunidade
+          </a>
+        </div>
+
+        <div className={s.scrollHint}>
+          <span>scroll</span>
+          <span>↓</span>
+        </div>
       </section>
 
-      {/* ── Recruitment ── */}
-      <section className={s.sectionAlt}>
-        <div className={s.container}>
-          <Reveal>
-            <div className={s.recruitGrid}>
-              <div className={s.recruitImgWrapper}>
+      {/* ── Banner full-bleed ── */}
+      <div className={s.fullBleed}>
+        <img src="/doc/inemaclub.jpg" alt="Portal INEMA" />
+      </div>
+
+      {/* ══════════════════════════════════════════
+          01 — MISSÃO
+      ══════════════════════════════════════════ */}
+      <section className={s.sectionDark}>
+        <div className={s.wrap}>
+          <div className={s.recruitGrid}>
+            <Reveal>
+              <div>
                 <div className={s.recruitImg}>
-                  <img src="/doc/7e25b078-3996-4a42-abf6-48103e2ba422.jpg"
-                       alt="Crie seu time." />
+                  <img src="/doc/7e25b078-3996-4a42-abf6-48103e2ba422.jpg" alt="Crie seu time." />
                 </div>
                 <p className={s.recruitCaption}>
-                  Comece sua jornada agora e compartilhe as trilhas especiais para iniciantes.
+                  Comece sua jornada e compartilhe as trilhas especiais para iniciantes.
                   É aqui que o futuro começa — e ele precisa de você.
                 </p>
               </div>
+            </Reveal>
+            <Reveal delay={100}>
               <div className={s.recruitText}>
-                <h2>Crie sua Equipe, Seu Time.<br />Nós Ajudamos.</h2>
+                <div className={s.sectionTop}>
+                  <span className={s.sectionNum}>01</span>
+                  <span className={s.sectionLine} />
+                  <span className={s.sectionLabel}>Nossa Missão</span>
+                </div>
+                <h2>Crie sua Equipe.<br />Nós Ajudamos.</h2>
                 <p>O INEMA Clube é o ponto de partida para quem quer se preparar para o futuro.
-                  Nosso foco é ajudar você a formar e desenvolver seu próprio time — pessoas com
-                  propósito, visão e capacidade de atuar em um mundo onde a Inteligência Artificial
-                  e a Robótica estarão em todos os lugares.</p>
-                <p>O INEMA não é apenas uma plataforma de conhecimento — é uma comunidade viva,
-                  feita por pessoas que acreditam no poder do aprendizado, da inovação e da
-                  colaboração para transformar o futuro.</p>
-                <p className={s.recruitCta}>
-                  Você está pronto para criar, liderar e construir o amanhã conosco?
-                </p>
+                  Ajudamos você a formar e desenvolver seu próprio time — pessoas com propósito,
+                  visão e capacidade de atuar em um mundo onde a IA estará em todos os lugares.</p>
+                <p>Não é apenas uma plataforma de conhecimento — é uma comunidade viva, feita
+                  por pessoas que acreditam no poder do aprendizado e da inovação.</p>
+                <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
+                   className={s.recruitCta}
+                   onClick={() => click('https://inema.vip', 'quero fazer parte', 'missao')}>
+                  Quero fazer parte →
+                </a>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </section>
 
-      {/* ── Trilha ── */}
+      {/* ══════════════════════════════════════════
+          02 — TRILHA
+      ══════════════════════════════════════════ */}
       <section id="trilha" className={s.section}>
-        <div className={s.container}>
+        <div className={s.wrap}>
           <Reveal>
-            <div className={s.sectionHeader}>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>02</span>
+              <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Por onde começar</span>
-              <h2 className={s.sectionTitle}>Trilha para Iniciantes</h2>
-              <p className={s.sectionDesc}>Comece sua jornada com os cursos essenciais, nesta ordem recomendada</p>
             </div>
+            <h2 className={s.sectionTitle}>Trilha para Iniciantes</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              Siga esta ordem recomendada para construir uma base sólida em IA
+            </p>
           </Reveal>
-          <div className={s.pathGrid}>
-            {[
-              { href: 'https://inematds.github.io/FEP/',    label: 'FEP',    desc: 'Fundamentos de Engenharia de Prompts' },
-              { href: 'https://inematds.github.io/ATIA/',   label: 'ATIA',   desc: 'AI Tools in Action' },
-              { href: 'https://inematds.github.io/FDB/',    label: 'FDB',    desc: 'Fundamentos de Banco de Dados' },
-              { href: 'https://inematds.github.io/VISION/', label: 'Vision', desc: 'Processamento de Imagens com IA' },
-            ].map((p, i) => (
-              <Reveal key={p.label} delay={i * 80}>
-                <a href={p.href} target="_blank" rel="noopener noreferrer"
+          <Reveal delay={80}>
+            <div className={s.pathRow}>
+              {[
+                { href: 'https://inematds.github.io/FEP/',    label: 'FEP',    desc: 'Fundamentos de Engenharia de Prompts',   tag: 'Passo 1' },
+                { href: 'https://inematds.github.io/ATIA/',   label: 'ATIA',   desc: 'AI Tools in Action',                    tag: 'Passo 2' },
+                { href: 'https://inematds.github.io/FDB/',    label: 'FDB',    desc: 'Fundamentos de Banco de Dados',         tag: 'Passo 3' },
+                { href: 'https://inematds.github.io/VISION/', label: 'Vision', desc: 'Processamento de Imagens com IA',      tag: 'Passo 4' },
+              ].map((p, i) => (
+                <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                    className={s.pathCard}
-                   onClick={() => trackClick(p.href, p.label, 'trilha')}>
-                  <div className={s.pathNum}>{i + 1}</div>
+                   onClick={() => click(p.href, p.label, 'trilha')}>
+                  <div className={s.pathNum}>0{i + 1}</div>
+                  <span className={s.pathTag}>{p.tag}</span>
                   <h4>{p.label}</h4>
                   <p>{p.desc}</p>
+                  <span className={s.pathArrow}>Acessar →</span>
                 </a>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal delay={320}>
-            <div className={s.pathFooter}>
-              Após completar esta trilha, explore outros cursos conforme seu interesse abaixo
+              ))}
+            </div>
+          </Reveal>
+          <Reveal delay={160}>
+            <div className={s.pathNote}>
+              Após completar esta trilha, explore os demais cursos abaixo conforme seu interesse
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* ── Cursos ── */}
-      <section id="cursos" className={s.sectionAlt}>
-        <div className={s.container}>
+      {/* ══════════════════════════════════════════
+          03 — CURSOS
+      ══════════════════════════════════════════ */}
+      <section id="cursos" className={s.sectionDark}>
+        <div className={s.wrap}>
           <Reveal>
-            <div className={s.sectionHeader}>
-              <span className={s.sectionLabel}>Biblioteca de cursos</span>
-              <h2 className={s.sectionTitle}>Cursos e Plataformas</h2>
-              <p className={s.sectionDesc}>Explore todo o conteúdo disponível na plataforma</p>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>03</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Biblioteca completa</span>
             </div>
+            <h2 className={s.sectionTitle}>Cursos e Plataformas</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              {platformsData.length} cursos disponíveis — encontre o seu
+            </p>
           </Reveal>
 
-          {/* Updates */}
           <Reveal>
-            <div className={s.updatesBox}>
-              <div className={s.updatesHead} onClick={() => setUpdatesExpanded(v => !v)}
-                   role="button" aria-expanded={updatesExpanded}>
+            <div className={s.updBox}>
+              <div className={s.updHead} onClick={() => setExpanded(v => !v)}
+                   role="button" aria-expanded={expanded}>
                 <h3>Últimas Atualizações</h3>
-                <span className={s.updatesToggle}>{updatesExpanded ? 'Ver menos ↑' : 'Ver mais ↓'}</span>
+                <span className={s.updToggle}>{expanded ? 'Ver menos ↑' : 'Ver mais ↓'}</span>
               </div>
-              <div className={`${s.updatesList} ${updatesExpanded ? s.expanded : ''}`}>
-                {visibleUpdates.map((u, i) => (
-                  <a key={i} className={s.updateItem} href={u.url}
+              <div className={`${s.updList} ${expanded ? s.exp : ''}`}>
+                {updates.map((u, i) => (
+                  <a key={i} className={s.updItem} href={u.url}
                      target="_blank" rel="noopener noreferrer"
-                     onClick={() => trackClick(u.url, u.title, 'atualizacoes')}>
-                    <span className={s.updateDate}>{formatDate(u.date)}</span>
-                    <span className={`${s.updateBadge} ${u.type === 'novo' ? s.badgeNovo : s.badgeAtualizado}`}>
-                      {u.type}
-                    </span>
-                    <span className={s.updateTitle}>{u.title}</span>
-                    <span className={s.updateArrow}>→</span>
+                     onClick={() => click(u.url, u.title, 'atualizacoes')}>
+                    <span className={s.updDate}>{fmt(u.date)}</span>
+                    <span className={`${s.updBadge} ${u.type === 'novo' ? s.bNovo : s.bUpd}`}>{u.type}</span>
+                    <span className={s.updTitle}>{u.title}</span>
+                    <span className={s.updArrow}>→</span>
                   </a>
                 ))}
               </div>
             </div>
           </Reveal>
 
-          {/* Search */}
           <Reveal>
-            <div className={s.searchWrap}>
-              <span className={s.searchIcon}>🔍</span>
-              <label htmlFor="v2-search" className={s.srOnly}>Buscar cursos</label>
-              <input
-                id="v2-search"
-                type="search"
-                className={s.searchInput}
+            <div className={s.searchBox}>
+              <span className={s.searchIco}>🔍</span>
+              <label htmlFor="v3search" className={s.sr}>Buscar cursos</label>
+              <input id="v3search" type="search" className={s.searchIn}
                 placeholder="Buscar cursos ou plataformas..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                onKeyDown={(e) => { if (e.key === 'Escape') setSearchTerm('') }}
-              />
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                onKeyDown={e => { if (e.key === 'Escape') setSearch('') }} />
             </div>
           </Reveal>
 
-          {/* Cards */}
-          <div className={s.cardsGrid}>
-            {filteredCourses.length === 0 ? (
+          <div className={s.bento}>
+            {courses.length === 0 ? (
               <div className={s.emptyState}>
-                <div className={s.emptyIcon}>🔍</div>
-                <p>Nenhuma plataforma encontrada para &ldquo;{searchTerm}&rdquo;</p>
+                <div className={s.emptyIco}>🔍</div>
+                <p>Nenhum resultado para &ldquo;{search}&rdquo;</p>
               </div>
-            ) : (
-              filteredCourses.map((course, i) => (
-                <Reveal key={course.id} delay={(i % 3) * 60}>
-                  <div className={s.card}>
-                    <div className={s.cardIcon}>{course.icon}</div>
-                    <h2 className={s.cardTitle}>{course.title}</h2>
-                    <p className={s.cardDesc}>{course.description}</p>
-                    <div className={s.cardTags}>
-                      {course.tags.map((tag) => (
-                        <span key={tag} className={s.tag}>{tag}</span>
-                      ))}
-                    </div>
-                    <a href={course.url} className={s.cardBtn}
-                       target="_blank" rel="noopener noreferrer"
-                       aria-label={`Acessar ${course.title}`}
-                       onClick={() => trackClick(course.url, course.title, 'cursos')}>
-                      Acessar plataforma →
-                    </a>
-                  </div>
-                </Reveal>
-              ))
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* ── GitHub ── */}
-      <section id="github" className={s.section}>
-        <div className={s.container}>
-          <Reveal>
-            <div className={s.sectionHeader}>
-              <span className={s.sectionLabel}>Open source</span>
-              <h2 className={s.sectionTitle}>Repositórios GitHub INEMA</h2>
-              <p className={s.sectionDesc}>Explore nossos projetos e contribua com a comunidade</p>
-            </div>
-          </Reveal>
-          <div className={s.githubGrid}>
-            {GITHUB_REPOS.map((repo, i) => (
-              <Reveal key={repo.name} delay={(i % 4) * 50}>
-                <a href={`https://github.com/inematds/${repo.name}`}
+            ) : courses.map((c, i) => (
+              <Reveal key={c.id} delay={(i % 3) * 40} className={s.bentoCard}>
+                <span className={s.bentoIcon}>{c.icon}</span>
+                <h2 className={s.bentoTitle}>{c.title}</h2>
+                <p className={s.bentoDesc}>{c.description}</p>
+                <div className={s.bentoTags}>
+                  {c.tags.map(t => <span key={t} className={s.bentoTag}>{t}</span>)}
+                </div>
+                <a href={c.url} className={s.bentoBtn}
                    target="_blank" rel="noopener noreferrer"
-                   className={s.githubCard}
-                   aria-label={`${repo.name} — ${repo.desc}`}
-                   onClick={() => trackClick(`https://github.com/inematds/${repo.name}`, repo.name, 'github')}>
-                  <div className={s.githubCardHead}>
-                    <span>{repo.icon}</span>
-                    <h4>{repo.name}</h4>
-                  </div>
-                  <p className={s.githubDesc}>{repo.desc}</p>
-                  <span className={s.githubStars}>⭐ {repo.stars}</span>
+                   aria-label={`Acessar ${c.title}`}
+                   onClick={() => click(c.url, c.title, 'cursos')}>
+                  Acessar →
                 </a>
               </Reveal>
             ))}
           </div>
-          <div style={{ textAlign: 'center' }}>
-            <a href="https://github.com/inematds" target="_blank" rel="noopener noreferrer"
-               className={s.githubViewAll}
-               onClick={() => trackClick('https://github.com/inematds', 'Ver todos', 'github')}>
-              Ver todos os repositórios no GitHub →
-            </a>
-          </div>
         </div>
       </section>
 
-      {/* ── Hero banner 2 ── */}
-      <section className={s.heroBanner} aria-hidden="true">
-        <img src="/doc/inemac2.jpg" alt="" className={s.heroBannerImg} />
-      </section>
-
-      {/* ── INEMA.VIP Featured ── */}
-      <section id="comunidade" className={s.featuredSection}>
-        <div className={s.container}>
+      {/* ══════════════════════════════════════════
+          04 — GITHUB
+      ══════════════════════════════════════════ */}
+      <section id="github" className={s.section}>
+        <div className={s.wrap}>
           <Reveal>
-            <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
-               className={s.featuredCard}
-               onClick={() => trackClick('https://inema.vip', 'INEMA.VIP — Faça seu Cadastro', 'comunidade')}>
-              <div className={s.featuredLogo}>
-                <img src="/doc/conviteinemap.png" alt="INEMA.VIP" />
-              </div>
-              <div className={s.featuredText}>
-                <h2>INEMA.VIP</h2>
-                <p>Um espaço de autoaprendizado e transformação com IA e Humanoides</p>
-              </div>
-              <div className={s.featuredCta}>Faça seu Cadastro →</div>
-            </a>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>04</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Open Source</span>
+            </div>
+            <h2 className={s.sectionTitle}>Repositórios GitHub</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              Projetos abertos da comunidade INEMA — contribua e aprenda
+            </p>
           </Reveal>
-        </div>
-      </section>
-
-      {/* ── Telegram ── */}
-      <section className={s.sectionAlt}>
-        <div className={s.container}>
-          <Reveal>
-            <div className={s.sectionHeader}>
-              <span className={s.sectionLabel}>Comunidade</span>
-              <h2 className={s.sectionTitle}>Grupos e Canais Telegram</h2>
-              <p className={s.sectionDesc}>Junte-se à nossa comunidade de aprendizado</p>
+          <Reveal delay={60}>
+            <div className={s.ghGrid}>
+              {REPOS.map((r, i) => (
+                <a key={r.name} href={`https://github.com/inematds/${r.name}`}
+                   target="_blank" rel="noopener noreferrer"
+                   className={s.ghCard}
+                   aria-label={`${r.name} — ${r.desc}`}
+                   onClick={() => click(`https://github.com/inematds/${r.name}`, r.name, 'github')}>
+                  <div className={s.ghHead}>
+                    <span>{r.icon}</span>
+                    <h4>{r.name}</h4>
+                  </div>
+                  <p className={s.ghDesc}>{r.desc}</p>
+                  <span className={s.ghStars}>⭐ {r.stars}</span>
+                </a>
+              ))}
             </div>
           </Reveal>
+          <Reveal delay={100}>
+            <div className={s.ghFooter}>
+              <a href="https://github.com/inematds" target="_blank" rel="noopener noreferrer"
+                 className={s.ghAll}
+                 onClick={() => click('https://github.com/inematds', 'ver todos', 'github')}>
+                Ver todos os repositórios →
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── Banner ── */}
+      <div className={s.fullBleed}>
+        <img src="/doc/inemac2.jpg" alt="" />
+      </div>
+
+      {/* ══════════════════════════════════════════
+          05 — INEMA.VIP
+      ══════════════════════════════════════════ */}
+      <section id="comunidade" className={s.featSection}>
+        <div className={s.wrap}>
           <Reveal>
-            <div className={s.telegramGrid}>
-              {TELEGRAM_GROUPS.map((g) => (
+            <div className={s.sectionTop} style={{ justifyContent: 'center', marginBottom: '2.5rem' }}>
+              <span className={s.sectionNum}>05</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Comunidade Premium</span>
+            </div>
+          </Reveal>
+          <Reveal delay={60}>
+            <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
+               className={s.featCard}
+               onClick={() => click('https://inema.vip', 'INEMA.VIP CTA', 'comunidade')}>
+              <div className={s.featImg}>
+                <img src="/doc/conviteinemap.png" alt="INEMA.VIP" />
+              </div>
+              <div className={s.featText}>
+                <h2>INEMA.VIP</h2>
+                <p>Um espaço de autoaprendizado e transformação com IA e Humanoides.
+                  Junte-se a uma comunidade que está construindo o futuro agora.</p>
+              </div>
+              <div className={s.featBtn}>Faça seu Cadastro →</div>
+            </a>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          06 — TELEGRAM
+      ══════════════════════════════════════════ */}
+      <section className={s.sectionDark}>
+        <div className={s.wrap}>
+          <Reveal>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>06</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Grupos e canais</span>
+            </div>
+            <h2 className={s.sectionTitle}>Telegram INEMA</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              27 grupos temáticos — escolha os que fazem sentido para você
+            </p>
+          </Reveal>
+          <Reveal delay={60}>
+            <div className={s.tgGrid}>
+              {TELEGRAM.map(g => (
                 <a key={g.name} href={g.url} target="_blank" rel="noopener noreferrer"
-                   className={s.telegramBtn}
-                   onClick={() => trackClick(g.url, g.name, 'telegram')}>
+                   className={s.tgBtn}
+                   onClick={() => click(g.url, g.name, 'telegram')}>
                   <span>{g.icon}</span>
                   <span>{g.name}</span>
                 </a>
@@ -429,68 +465,63 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* ── Hero banner 3 ── */}
-      <section className={s.heroBanner} aria-hidden="true">
-        <img src="/doc/inemaclubee.jpg" alt="" className={s.heroBannerImg} />
-      </section>
+      {/* ── Banner ── */}
+      <div className={s.fullBleed}>
+        <img src="/doc/inemaclubee.jpg" alt="" />
+      </div>
 
-      {/* ── Social ── */}
+      {/* ══════════════════════════════════════════
+          07 — SOCIAL
+      ══════════════════════════════════════════ */}
       <section className={s.section}>
-        <div className={s.container}>
+        <div className={s.wrap}>
           <Reveal>
-            <div className={s.sectionHeader}>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>07</span>
+              <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Siga-nos</span>
-              <h2 className={s.sectionTitle}>Redes Sociais INEMA</h2>
-              <p className={s.sectionDesc}>Acompanhe o INEMA nas principais plataformas</p>
             </div>
+            <h2 className={s.sectionTitle}>Redes Sociais</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              Acompanhe o INEMA nas principais plataformas
+            </p>
           </Reveal>
           <div className={s.socialGrid}>
             {[
-              {
-                icon: '📱', name: 'TikTok', cls: 'tiktok',
+              { icon: '📱', name: 'TikTok', cls: 'tiktok',
                 links: [
-                  { handle: '@inema.tds',     url: 'https://www.tiktok.com/@inema.tds' },
-                  { handle: '@inema.tia',     url: 'https://www.tiktok.com/@inema.tia' },
-                  { handle: '@inemafuturos',  url: 'https://www.tiktok.com/@inemafuturos' },
-                  { handle: '@inema.tech',    url: 'https://www.tiktok.com/@inema.tech' },
-                  { handle: '@inema.prompts', url: 'https://www.tiktok.com/@inema.prompts' },
-                  { handle: '@inema.robot',   url: 'https://www.tiktok.com/@inema.robot' },
-                ],
-              },
-              {
-                icon: '📷', name: 'Instagram', cls: 'instagram',
+                  { h: '@inema.tds',     u: 'https://www.tiktok.com/@inema.tds' },
+                  { h: '@inema.tia',     u: 'https://www.tiktok.com/@inema.tia' },
+                  { h: '@inemafuturos',  u: 'https://www.tiktok.com/@inemafuturos' },
+                  { h: '@inema.tech',    u: 'https://www.tiktok.com/@inema.tech' },
+                  { h: '@inema.prompts', u: 'https://www.tiktok.com/@inema.prompts' },
+                  { h: '@inema.robot',   u: 'https://www.tiktok.com/@inema.robot' },
+                ]},
+              { icon: '📷', name: 'Instagram', cls: 'instagram',
                 links: [
-                  { handle: '@inema.tds', url: 'https://www.instagram.com/inema.tds' },
-                  { handle: '@inema.tia', url: 'https://www.instagram.com/inema.tia' },
-                ],
-              },
-              {
-                icon: '🎬', name: 'YouTube', cls: 'youtube',
+                  { h: '@inema.tds', u: 'https://www.instagram.com/inema.tds' },
+                  { h: '@inema.tia', u: 'https://www.instagram.com/inema.tia' },
+                ]},
+              { icon: '🎬', name: 'YouTube', cls: 'youtube',
+                links: [{ h: '@inematdsx', u: 'https://www.youtube.com/@inematdsx' }]},
+              { icon: '👍', name: 'Facebook', cls: 'facebook',
                 links: [
-                  { handle: '@inematdsx', url: 'https://www.youtube.com/@inematdsx' },
-                ],
-              },
-              {
-                icon: '👍', name: 'Facebook', cls: 'facebook',
-                links: [
-                  { handle: 'inemafuturos', url: 'https://www.facebook.com/inemafuturos' },
-                  { handle: 'inematds',     url: 'https://www.facebook.com/inematds' },
-                ],
-              },
-            ].map((platform) => (
-              <Reveal key={platform.name}>
+                  { h: 'inemafuturos', u: 'https://www.facebook.com/inemafuturos' },
+                  { h: 'inematds',     u: 'https://www.facebook.com/inematds' },
+                ]},
+            ].map(p => (
+              <Reveal key={p.name}>
                 <div className={s.socialCard}>
-                  <div className={s.socialCardHead}>
-                    <span>{platform.icon}</span>
-                    <h4>{platform.name}</h4>
+                  <div className={s.socialHead}>
+                    <span>{p.icon}</span>
+                    <h4>{p.name}</h4>
                   </div>
                   <div className={s.socialLinks}>
-                    {platform.links.map((link) => (
-                      <a key={link.handle} href={link.url}
-                         target="_blank" rel="noopener noreferrer"
-                         className={`${s.socialBtn} ${s[platform.cls as keyof typeof s] ?? ''}`}
-                         onClick={() => trackClick(link.url, link.handle, 'social')}>
-                        {link.handle}
+                    {p.links.map(l => (
+                      <a key={l.h} href={l.u} target="_blank" rel="noopener noreferrer"
+                         className={`${s.socialBtn} ${s[p.cls as keyof typeof s] ?? ''}`}
+                         onClick={() => click(l.u, l.h, 'social')}>
+                        {l.h}
                       </a>
                     ))}
                   </div>
@@ -503,12 +534,9 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
 
       {/* ── Footer ── */}
       <footer className={s.footer}>
-        <div className={s.container}>
+        <div className={s.wrap}>
           <p>
-            &copy; 2025 Portal INEMA. Todos os direitos reservados. &nbsp;·&nbsp;&nbsp;
-            <a href="/stats">Estatísticas</a>
-            &nbsp;·&nbsp;&nbsp;
-            <a href="/">Versão atual</a>
+            &copy; 2025 Portal INEMA · <a href="/stats">Estatísticas</a> · <a href="/">Versão atual</a>
           </p>
         </div>
       </footer>
