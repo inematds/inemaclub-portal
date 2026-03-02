@@ -38,6 +38,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
     trackVisit()
   }, [])
 
+  // Rastreia cliques em links externos
+  function trackClick(url: string, label: string, section: string) {
+    const sid = localStorage.getItem('animabook_sid') ?? 'unknown'
+    fetch('/api/click', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: sid, url, label, section }),
+    })
+  }
+
   // Filtra cursos pela busca
   const filteredCourses: Course[] =
     searchTerm.trim() === ''
@@ -69,6 +79,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             target="_blank"
             rel="noopener noreferrer"
             className="community-badge"
+            onClick={() => trackClick('https://inema.vip', 'Participe da Comunidade', 'header')}
           >
             <img src="/doc/conviteinemap.png" alt="INEMA.VIP" />
             <span>Participe da Comunidade</span>
@@ -158,6 +169,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               target="_blank"
               rel="noopener noreferrer"
               className="path-card path-card-1"
+              onClick={() => trackClick('https://inematds.github.io/FEP/', 'FEP', 'trilha')}
             >
               <div className="path-number">1</div>
               <h4>FEP</h4>
@@ -168,6 +180,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               target="_blank"
               rel="noopener noreferrer"
               className="path-card path-card-2"
+              onClick={() => trackClick('https://inematds.github.io/ATIA/', 'ATIA', 'trilha')}
             >
               <div className="path-number">2</div>
               <h4>ATIA</h4>
@@ -178,6 +191,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               target="_blank"
               rel="noopener noreferrer"
               className="path-card path-card-3"
+              onClick={() => trackClick('https://inematds.github.io/FDB/', 'FDB', 'trilha')}
             >
               <div className="path-number">3</div>
               <h4>FDB</h4>
@@ -188,6 +202,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               target="_blank"
               rel="noopener noreferrer"
               className="path-card path-card-4"
+              onClick={() => trackClick('https://inematds.github.io/VISION/', 'Vision', 'trilha')}
             >
               <div className="path-number">4</div>
               <h4>Vision</h4>
@@ -221,6 +236,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   href={update.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackClick(update.url, update.title, 'atualizacoes')}
                 >
                   <span className="update-date">{formatDate(update.date)}</span>
                   <span className={`update-type ${update.type}`}>{update.type}</span>
@@ -270,6 +286,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                     className="card-link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick(course.url, course.title, 'cursos')}
                   >
                     Acessar plataforma
                   </a>
@@ -314,6 +331,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="github-card"
+                onClick={() => trackClick(`https://github.com/inematds/${repo.name}`, repo.name, 'github')}
               >
                 <div className="github-card-header">
                   <span className="github-icon">{repo.icon}</span>
@@ -332,6 +350,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               target="_blank"
               rel="noopener noreferrer"
               className="github-view-all"
+              onClick={() => trackClick('https://github.com/inematds', 'Ver todos os repositórios', 'github')}
             >
               Ver todos os repositórios no GitHub →
             </a>
@@ -413,6 +432,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             target="_blank"
             rel="noopener noreferrer"
             className="featured-link"
+            onClick={() => trackClick('https://inema.vip', 'INEMA.VIP - Faça seu Cadastro', 'comunidade')}
           >
             <div className="featured-content">
               <div className="featured-logo">
