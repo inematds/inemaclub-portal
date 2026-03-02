@@ -1,6 +1,7 @@
 node_modules/
-package.json
 package-lock.json
+.next/
+.env.local
 .DS_Store
 *.log
 .vscode/
