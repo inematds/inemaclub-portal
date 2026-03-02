@@ -4,8 +4,8 @@ import Portal from '@/components/Portal'
 export const revalidate = 60 // revalida a cada 60 segundos
 
 export default async function Home() {
-  const BASE_TOTAL = 10000
-  const BASE_UNIQUE_ANON = 3991
+  const BASE_TOTAL = 20000
+  const BASE_UNIQUE_ANON = 10000
   let visitStats = { total: BASE_TOTAL, uniqueLogged: 0, uniqueAnon: BASE_UNIQUE_ANON }
 
   try {
