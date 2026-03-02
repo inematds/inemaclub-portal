@@ -1,7 +1,7 @@
 import { supabaseAdmin } from '@/lib/supabase'
 
-const BASE_TOTAL = 10000
-const BASE_UNIQUE_ANON = 3991
+const BASE_TOTAL = 20000
+const BASE_UNIQUE_ANON = 10000
 
 export const revalidate = 60
 
