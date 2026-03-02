@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   }
 
   const { error } = await supabaseAdmin
-    .from('visits')
+    .from('eai-visitors')
     .insert({ session_id, user_id })
 
   if (error) {

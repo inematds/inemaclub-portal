@@ -30,8 +30,8 @@ export default async function StatsPage() {
 
   try {
     const [v, c] = await Promise.all([
-      supabaseAdmin.from('visits').select('session_id, created_at').order('created_at'),
-      supabaseAdmin.from('clicks').select('url, label, section, created_at').order('created_at'),
+      supabaseAdmin.from('eai-visitors').select('session_id, created_at').order('created_at'),
+      supabaseAdmin.from('eai-clicks').select('url, label, section, created_at').order('created_at'),
     ])
     visits = v.data ?? []
     clicks = c.data ?? []

@@ -10,7 +10,7 @@ export default async function Home() {
 
   try {
     const { data: visits } = await supabaseAdmin
-      .from('visits')
+      .from('eai-visitors')
       .select('user_id, session_id')
 
     if (visits) {

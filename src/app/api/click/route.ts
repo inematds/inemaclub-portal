@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
   const { session_id, url, label, section } = await req.json()
 
   const { error } = await supabaseAdmin
-    .from('clicks')
+    .from('eai-clicks')
     .insert({ session_id, url, label, section })
 
   if (error) {
