@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 42,
+        title: "Agentic Engineering Masterclass",
+        description: "Engenharia de Agentic - Masterclass completa com 6 trilhas, 42 módulos e 252+ tópicos em 21 semanas. Do básico à orquestração multi-agente enterprise com LangGraph, CrewAI e AutoGen.",
+        icon: "🤖",
+        tags: ["IA", "Agentes", "Engenharia", "LLMs", "Multi-Agentes", "Python"],
+        url: "https://inematds.github.io/agentic/"
+    },
+    {
         id: 1,
         title: "AIWCF - Vibe Coding",
         description: "AI Website Creation Framework - Aprenda a criar websites profissionais usando IA com a metodologia Vibe Coding.",
@@ -332,6 +340,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-03-03", title: "Agentic Engineering Masterclass", type: "novo", url: "https://inematds.github.io/agentic/" },
     { date: "2026-03-03", title: "Vibe Coding - Da Ideia ao Produto", type: "novo", url: "https://inematds.github.io/vibecode" },
     { date: "2026-02-24", title: "NotebookLM - Do Zero ao Avançado", type: "novo", url: "https://inematds.github.io/notebooklm" },
     { date: "2026-02-04", title: "Skills - Agent Skills Mastery", type: "novo", url: "https://inematds.github.io/skills" },
