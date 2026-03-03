@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 42,
+    title: 'Agentic Engineering Masterclass',
+    description:
+      'Engenharia de Agentic - Masterclass completa com 6 trilhas, 42 módulos e 252+ tópicos em 21 semanas. Do básico à orquestração multi-agente enterprise com LangGraph, CrewAI e AutoGen.',
+    icon: '🤖',
+    tags: ['IA', 'Agentes', 'Engenharia', 'LLMs', 'Multi-Agentes', 'Python'],
+    url: 'https://inematds.github.io/agentic/',
+  },
+  {
     id: 1,
     title: 'AIWCF - Vibe Coding',
     description:
@@ -348,6 +357,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/tiktokshop',
   },
   {
+    id: 41,
+    title: 'Vibe Coding - Da Ideia ao Produto',
+    description:
+      'Vibe Coding: Da Ideia ao Produto - Aprenda a construir software usando linguagem natural com IA. Método com 4 trilhas para leigos, executivos e técnicos com 31 módulos e 217 tópicos.',
+    icon: '⚡',
+    tags: ['Vibe Coding', 'IA', 'Programação', 'Low-Code', 'Empreendedorismo'],
+    url: 'https://inematds.github.io/vibecode',
+  },
+  {
     id: 34,
     title: 'VISION',
     description:
@@ -377,6 +395,18 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-03',
+    title: 'Agentic Engineering Masterclass',
+    type: 'novo',
+    url: 'https://inematds.github.io/agentic/',
+  },
+  {
+    date: '2026-03-03',
+    title: 'Vibe Coding - Da Ideia ao Produto',
+    type: 'novo',
+    url: 'https://inematds.github.io/vibecode',
+  },
   {
     date: '2026-02-24',
     title: 'NotebookLM - Do Zero ao Avançado',
