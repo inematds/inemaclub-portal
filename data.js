@@ -297,6 +297,14 @@ const platformsData = [
         url: "https://inematds.github.io/tiktokshop"
     },
     {
+        id: 41,
+        title: "Vibe Coding - Da Ideia ao Produto",
+        description: "Vibe Coding: Da Ideia ao Produto - Aprenda a construir software usando linguagem natural com IA. Método com 4 trilhas para leigos, executivos e técnicos com 31 módulos e 217 tópicos.",
+        icon: "⚡",
+        tags: ["Vibe Coding", "IA", "Programação", "Low-Code", "Empreendedorismo"],
+        url: "https://inematds.github.io/vibecode"
+    },
+    {
         id: 34,
         title: "VISION",
         description: "Plataforma VISION - Visão computacional e processamento de imagens com IA.",
@@ -324,6 +332,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-03-03", title: "Vibe Coding - Da Ideia ao Produto", type: "novo", url: "https://inematds.github.io/vibecode" },
     { date: "2026-02-24", title: "NotebookLM - Do Zero ao Avançado", type: "novo", url: "https://inematds.github.io/notebooklm" },
     { date: "2026-02-04", title: "Skills - Agent Skills Mastery", type: "novo", url: "https://inematds.github.io/skills" },
     { date: "2026-02-03", title: "FEP2 - Prompt Engineering Masterclass", type: "novo", url: "https://inematds.github.io/FEP2/" },
