@@ -1,5 +1,5 @@
 import { supabaseAdmin } from '@/lib/supabase'
-import Portal from '@/components/PortalV2'
+import Portal from '@/components/Portal'
 
 export const revalidate = 60 // revalida a cada 60 segundos
 

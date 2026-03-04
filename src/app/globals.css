@@ -555,6 +555,29 @@ body {
     font-weight: 500;
 }
 
+/* Trilhas de Aprendizado */
+.trilhas-section {
+    background: var(--bg-secondary);
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.trilha-group {
+    margin-bottom: 3rem;
+}
+
+.trilha-group:last-child {
+    margin-bottom: 0;
+}
+
+.trilha-group-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.2rem;
+    padding-left: 0.25rem;
+}
+
 /* Social Media Section */
 .social-section {
     background: var(--bg-secondary);

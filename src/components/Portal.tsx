@@ -297,6 +297,115 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </main>
 
+      {/* Trilha Vibe Code */}
+      <section className="learning-path-section">
+        <div className="container">
+          <div className="learning-path-header">
+            <h3>⚡ Trilha Vibe Code</h3>
+            <p>Do conceito à engenharia — crie software com IA de ponta a ponta</p>
+          </div>
+          <div className="learning-path-cards">
+            {[
+              { href: 'https://inematds.github.io/vibecode', label: 'Vibe Coding', desc: 'Da Ideia ao Produto com IA', n: 1 },
+              { href: 'https://inematds.github.io/skills',   label: 'Skills',      desc: 'Agent Skills Mastery',      n: 2 },
+              { href: 'https://inematds.github.io/agentic/', label: 'Agentic',     desc: 'Engenharia de Agentic',     n: 3 },
+            ].map((p) => (
+              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                 className={`path-card path-card-${p.n}`}
+                 onClick={() => trackClick(p.href, p.label, 'trilha-vibe')}>
+                <div className="path-number">{p.n}</div>
+                <h4>{p.label}</h4>
+                <p>{p.desc}</p>
+              </a>
+            ))}
+          </div>
+          <div className="learning-path-footer">
+            <p>Trilha completa para dominar o desenvolvimento de software com IA — do vibe ao agente</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Banner */}
+      <section className="hero-banner">
+        <div className="container">
+          <img src="/doc/inemac2.jpg" alt="INEMA.CLUB" className="hero-banner-image" />
+        </div>
+      </section>
+
+      {/* Trilhas de Aprendizado */}
+      <section className="trilhas-section">
+        <div className="container">
+          <div className="learning-path-header">
+            <h3>Trilhas de Aprendizado</h3>
+            <p>8 trilhas temáticas — escolha seu caminho e avance com foco</p>
+          </div>
+          {([
+            { title: '⚡ Automação', steps: [
+              { href: 'https://inematds.github.io/FIA2026/', label: 'FIA2026',    desc: 'Automações com IA 2026' },
+              { href: 'https://inematds.github.io/N8Nb',    label: 'N8Nb',       desc: 'Fundamentos N8N' },
+              { href: 'https://inematds.github.io/N8Np',    label: 'N8Np',       desc: 'N8N Avançado' },
+              { href: 'https://inematds.github.io/MAKE/',   label: 'MAKE',       desc: 'Automação com Make' },
+            ]},
+            { title: '✍️ Engenharia de Prompts', steps: [
+              { href: 'https://inematds.github.io/FEP/',     label: 'FEP',     desc: 'Fundamentos de Prompts' },
+              { href: 'https://inematds.github.io/FEP2/',    label: 'FEP2',    desc: 'Prompt Engineering Masterclass' },
+              { href: 'https://inematds.github.io/prompts/', label: 'Prompts', desc: 'Engenharia de Prompts Avançada' },
+              { href: 'https://inematds.github.io/FEI/',     label: 'FEI',     desc: 'Engenharia da Intenção' },
+            ]},
+            { title: '🎨 Design & Visual', steps: [
+              { href: 'https://inematds.github.io/webp',      label: 'WebP',      desc: 'Designer 2026' },
+              { href: 'https://inematds.github.io/FDF',       label: 'FDF',       desc: 'Designers do Futuro' },
+              { href: 'https://inematds.github.io/dash/',     label: 'Dashboard', desc: 'Dashboard Mastery' },
+              { href: 'https://inematds.github.io/VisionPro', label: 'VisionPro', desc: 'Construção Audiovisual com IA' },
+            ]},
+            { title: '🤖 Robótica & Humanoides', steps: [
+              { href: 'https://inematds.github.io/robot/', label: 'Robot', desc: 'Robótica e Automação' },
+              { href: 'https://inematds.github.io/FTH/',   label: 'FTH',   desc: 'Treinamento de Humanoides' },
+              { href: 'https://inematds.github.io/HG1',    label: 'HG1',   desc: 'Academia dos Humanoides G1' },
+            ]},
+            { title: '💼 Consultoria IA & Negócios', steps: [
+              { href: 'https://inematds.github.io/ATIA/',        label: 'ATIA',        desc: 'Oportunidades Digitais com IA' },
+              { href: 'https://inematds.github.io/FGMD/',        label: 'FGMD',        desc: 'Gatilhos Mentais Digitais' },
+              { href: 'https://inematds.github.io/Playbook-IA/', label: 'Playbook-IA', desc: 'Formação de Consultoria IA' },
+              { href: 'https://inematds.github.io/tiktokshop',   label: 'TikTok Shop', desc: 'Vendas no TikTok Shop' },
+            ]},
+            { title: '📊 Dados & IA', steps: [
+              { href: 'https://inematds.github.io/FDB/',       label: 'FDB',        desc: 'Fundamentos de Banco de Dados' },
+              { href: 'https://inematds.github.io/DBA-FO/',    label: 'DBA-FO',     desc: 'Fundamentos DBA Oracle' },
+              { href: 'https://inematds.github.io/FETD/',      label: 'FETD',       desc: 'Engenharia de Treinamento de Dados' },
+              { href: 'https://inematds.github.io/notebooklm', label: 'NotebookLM', desc: 'Do Zero ao Avançado' },
+            ]},
+            { title: '💻 Desenvolvedor IA', steps: [
+              { href: 'https://inematds.github.io/ccguide2026',   label: 'CCGuide',   desc: 'Claude Code 2026' },
+              { href: 'https://inematds.github.io/BMAD-Academy/', label: 'BMAD',      desc: 'BMAD Academy' },
+              { href: 'https://inematds.github.io/github/',        label: 'GitHub',    desc: 'Repositórios INEMA' },
+              { href: 'https://inematds.github.io/dash/',          label: 'Dashboard', desc: 'Dashboard Mastery' },
+            ]},
+            { title: '🌱 Transformação Digital', steps: [
+              { href: 'https://inematds.github.io/FTD/',  label: 'FTD',  desc: 'Formação Transformação Digital' },
+              { href: 'https://inematds.github.io/TDS/',  label: 'TDS',  desc: 'Transformação Digital Sustentável' },
+              { href: 'https://inematds.github.io/SHIA/', label: 'SHIA', desc: 'Super Humanos Inteligência Ampliada' },
+              { href: 'https://inematds.github.io/GIPM/', label: 'GIPM', desc: 'Projetos com IA Governada' },
+            ]},
+          ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
+            <div key={trail.title} className="trilha-group">
+              <h4 className="trilha-group-title">{trail.title}</h4>
+              <div className="learning-path-cards">
+                {trail.steps.map((p, i) => (
+                  <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                     className={`path-card path-card-${(i % 4) + 1}`}
+                     onClick={() => trackClick(p.href, p.label, 'trilhas')}>
+                    <div className="path-number">{i + 1}</div>
+                    <h4>{p.label}</h4>
+                    <p>{p.desc}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* GitHub Repos */}
       <section className="github-section">
         <div className="container">
@@ -359,15 +468,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* Hero Banners */}
-      <section className="hero-banner">
-        <div className="container">
-          <img
-            src="/doc/inemac2.jpg"
-            alt="Crie sua equipe. Lidere o futuro."
-            className="hero-banner-image"
-          />
-        </div>
-      </section>
       <section className="hero-banner">
         <div className="container">
           <img
