@@ -125,6 +125,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             <a href="#cursos"      className={s.navItem}>Cursos</a>
             <a href="#trilha"      className={s.navItem}>Trilha</a>
             <a href="#trilha-vibe" className={s.navItem}>Trilha Vibe</a>
+            <a href="#trilhas"     className={s.navItem}>Trilhas</a>
             <a href="#github"    className={s.navItem}>GitHub</a>
             <a href="#comunidade" className={s.navItem}>Comunidade</a>
             <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
@@ -397,14 +398,109 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* ── Banner ── */}
+      <div className={s.fullBleed}>
+        <img src="/doc/inemac2.jpg" alt="" />
+      </div>
+
       {/* ══════════════════════════════════════════
-          04 — GITHUB
+          05 — TRILHAS
+      ══════════════════════════════════════════ */}
+      <section id="trilhas" className={s.section}>
+        <div className={s.wrap}>
+          <Reveal>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>05</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Percursos temáticos</span>
+            </div>
+            <h2 className={s.sectionTitle}>Trilhas de Aprendizado</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              8 trilhas temáticas — escolha seu caminho e avance com foco
+            </p>
+          </Reveal>
+
+          {([
+            { title: '⚡ Automação', steps: [
+              { href: 'https://inematds.github.io/FIA2026/', label: 'FIA2026',    desc: 'Automações com IA 2026' },
+              { href: 'https://inematds.github.io/N8Nb',    label: 'N8Nb',       desc: 'Fundamentos N8N' },
+              { href: 'https://inematds.github.io/N8Np',    label: 'N8Np',       desc: 'N8N Avançado' },
+              { href: 'https://inematds.github.io/MAKE/',   label: 'MAKE',       desc: 'Automação com Make' },
+            ]},
+            { title: '✍️ Engenharia de Prompts', steps: [
+              { href: 'https://inematds.github.io/FEP/',      label: 'FEP',     desc: 'Fundamentos de Prompts' },
+              { href: 'https://inematds.github.io/FEP2/',     label: 'FEP2',    desc: 'Prompt Engineering Masterclass' },
+              { href: 'https://inematds.github.io/prompts/',  label: 'Prompts', desc: 'Engenharia de Prompts Avançada' },
+              { href: 'https://inematds.github.io/FEI/',      label: 'FEI',     desc: 'Engenharia da Intenção' },
+            ]},
+            { title: '🎨 Design & Visual', steps: [
+              { href: 'https://inematds.github.io/webp',       label: 'WebP',       desc: 'Designer 2026' },
+              { href: 'https://inematds.github.io/FDF',        label: 'FDF',        desc: 'Designers do Futuro' },
+              { href: 'https://inematds.github.io/dash/',      label: 'Dashboard',  desc: 'Dashboard Mastery' },
+              { href: 'https://inematds.github.io/VisionPro',  label: 'VisionPro',  desc: 'Construção Audiovisual com IA' },
+            ]},
+            { title: '🤖 Robótica & Humanoides', steps: [
+              { href: 'https://inematds.github.io/robot/', label: 'Robot', desc: 'Robótica e Automação' },
+              { href: 'https://inematds.github.io/FTH/',   label: 'FTH',   desc: 'Treinamento de Humanoides' },
+              { href: 'https://inematds.github.io/HG1',    label: 'HG1',   desc: 'Academia dos Humanoides G1' },
+            ]},
+            { title: '💼 Consultoria IA & Negócios', steps: [
+              { href: 'https://inematds.github.io/ATIA/',        label: 'ATIA',       desc: 'Oportunidades Digitais com IA' },
+              { href: 'https://inematds.github.io/FGMD/',        label: 'FGMD',       desc: 'Gatilhos Mentais Digitais' },
+              { href: 'https://inematds.github.io/Playbook-IA/', label: 'Playbook-IA',desc: 'Formação de Consultoria IA' },
+              { href: 'https://inematds.github.io/tiktokshop',   label: 'TikTok Shop',desc: 'Vendas no TikTok Shop' },
+            ]},
+            { title: '📊 Dados & IA', steps: [
+              { href: 'https://inematds.github.io/FDB/',       label: 'FDB',       desc: 'Fundamentos de Banco de Dados' },
+              { href: 'https://inematds.github.io/DBA-FO/',    label: 'DBA-FO',    desc: 'Fundamentos DBA Oracle' },
+              { href: 'https://inematds.github.io/FETD/',      label: 'FETD',      desc: 'Engenharia de Treinamento de Dados' },
+              { href: 'https://inematds.github.io/notebooklm', label: 'NotebookLM',desc: 'Do Zero ao Avançado' },
+            ]},
+            { title: '💻 Desenvolvedor IA', steps: [
+              { href: 'https://inematds.github.io/ccguide2026',   label: 'CCGuide',   desc: 'Claude Code 2026' },
+              { href: 'https://inematds.github.io/BMAD-Academy/', label: 'BMAD',      desc: 'BMAD Academy' },
+              { href: 'https://inematds.github.io/github/',        label: 'GitHub',    desc: 'Repositórios INEMA' },
+              { href: 'https://inematds.github.io/dash/',          label: 'Dashboard', desc: 'Dashboard Mastery' },
+            ]},
+            { title: '🌱 Transformação Digital', steps: [
+              { href: 'https://inematds.github.io/FTD/',   label: 'FTD',   desc: 'Formação Transformação Digital' },
+              { href: 'https://inematds.github.io/TDS/',   label: 'TDS',   desc: 'Transformação Digital Sustentável' },
+              { href: 'https://inematds.github.io/SHIA/',  label: 'SHIA',  desc: 'Super Humanos Inteligência Ampliada' },
+              { href: 'https://inematds.github.io/GIPM/',  label: 'GIPM',  desc: 'Projetos com IA Governada' },
+            ]},
+          ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
+            <Reveal key={trail.title} delay={ti * 30}>
+              <div style={{ marginBottom: '2.5rem' }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '1.2rem', opacity: 0.9 }}>
+                  {trail.title}
+                </h3>
+                <div className={s.pathRow}>
+                  {trail.steps.map((p, i) => (
+                    <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                       className={s.pathCard}
+                       onClick={() => click(p.href, p.label, 'trilhas')}>
+                      <div className={s.pathNum}>0{i + 1}</div>
+                      <span className={s.pathTag}>Passo {i + 1}</span>
+                      <h4>{p.label}</h4>
+                      <p>{p.desc}</p>
+                      <span className={s.pathArrow}>Acessar →</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          06 — GITHUB
       ══════════════════════════════════════════ */}
       <section id="github" className={s.section}>
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>05</span>
+              <span className={s.sectionNum}>06</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Open Source</span>
             </div>
@@ -443,19 +539,14 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* ── Banner ── */}
-      <div className={s.fullBleed}>
-        <img src="/doc/inemac2.jpg" alt="" />
-      </div>
-
       {/* ══════════════════════════════════════════
-          05 — INEMA.VIP
+          07 — INEMA.VIP
       ══════════════════════════════════════════ */}
       <section id="comunidade" className={s.featSection}>
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop} style={{ justifyContent: 'center', marginBottom: '2.5rem' }}>
-              <span className={s.sectionNum}>06</span>
+              <span className={s.sectionNum}>07</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Comunidade Premium</span>
             </div>
@@ -485,7 +576,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>07</span>
+              <span className={s.sectionNum}>08</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Grupos e canais</span>
             </div>
@@ -521,7 +612,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>08</span>
+              <span className={s.sectionNum}>09</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Siga-nos</span>
             </div>
