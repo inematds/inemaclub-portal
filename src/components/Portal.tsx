@@ -31,7 +31,7 @@ const communityProjects: Array<{
   { icon: '🇪🇸', name: 'hola', desc: 'Projeto para aprender espanhol com IA', url: 'https://github.com/inematds/hola', badge: 'GitHub' },
   { icon: '🚚', name: 'rotaX1', desc: 'Logistica de entregas ultima milha', url: 'https://github.com/inematds/RotaX1', badge: 'GitHub' },
   { icon: '🔧', name: 'rf360', desc: 'Marketplace de tecnicos', url: 'https://github.com/inematds/RF360', badge: 'GitHub' },
-  { icon: '⬆️', name: 'acima', desc: 'Projeto da comunidade INEMA' },
+  { icon: '🌤️', name: 'aclima', desc: 'Aplicativo de clima da comunidade', url: 'https://github.com/inematds/aclima', badge: 'GitHub' },
   { icon: '📚', name: 'eboo-maker', desc: 'Gerador de ebooks com IA', url: 'https://github.com/inematds/ebook-maker', badge: 'GitHub' },
   { icon: '⚡', name: 'megaRAG', desc: 'SaaS white-label com RAG', url: 'https://github.com/inematds/MegaRAG', badge: 'GitHub' },
   { icon: '🍔', name: 'Restaurante Brutal', desc: 'Sistema completo para restaurante' },
