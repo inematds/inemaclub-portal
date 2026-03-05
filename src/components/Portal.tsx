@@ -105,17 +105,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </header>
 
-      {/* Hero Banner */}
-      <section className="hero-banner">
-        <div className="container">
-          <img
-            src="/doc/inemaclub.jpg"
-            alt="INEMA.CLUB - Portal de conhecimento, inovação e equipe em ação"
-            className="hero-banner-image"
-          />
-        </div>
-      </section>
-
       {/* Recruitment Hero */}
       <section className="recruitment-hero">
         <div className="container">
