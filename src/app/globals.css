@@ -1183,6 +1183,85 @@ body {
     font-size: 1.25rem;
 }
 
+/* Community Projects Section */
+.community-projects-section {
+    background: var(--bg-secondary);
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.community-projects-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.community-projects-header h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.community-projects-header p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+.community-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+.community-project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    min-height: 160px;
+}
+
+.community-project-card-linked {
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.community-project-card-linked:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-hover);
+    background: var(--card-hover);
+}
+
+.community-project-icon {
+    font-size: 1.25rem;
+}
+
+.community-project-card h4 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+}
+
+.community-project-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.community-project-badge {
+    margin-top: auto;
+    align-self: flex-start;
+    font-size: 0.72rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
 /* GitHub Repositories Section */
 .github-section {
     background: var(--bg-color);

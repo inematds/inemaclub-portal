@@ -10,6 +10,33 @@ interface VisitStats {
   uniqueAnon: number
 }
 
+const communityProjects: Array<{
+  icon: string
+  name: string
+  desc: string
+  url?: string
+  badge?: string
+}> = [
+  { icon: '🌐', name: 'eai.inema.club', desc: 'Portal EAi da comunidade', url: 'https://eai.inema.club', badge: 'Site' },
+  { icon: '🐾', name: 'pet360', desc: 'Plataforma completa para pets', url: 'https://github.com/inematds/pet360', badge: 'GitHub' },
+  { icon: '💄', name: 'bela360', desc: 'Gestao para salao de beleza', url: 'https://github.com/inematds/bela360', badge: 'GitHub' },
+  { icon: '📖', name: 'animabook', desc: 'Livros animados com IA' },
+  { icon: '📕', name: 'book-genesis', desc: 'Criacao de livros com IA' },
+  { icon: '🎤', name: 'inemavox', desc: 'Suite de voz da comunidade' },
+  { icon: '🎙️', name: 'dublar pro', desc: 'Dublagem profissional com IA', url: 'https://github.com/inematds/DublarV4', badge: 'GitHub' },
+  { icon: '🧠', name: 'intelecto', desc: 'Assistente pessoal com IA' },
+  { icon: '💊', name: 'antidote', desc: 'Bots assistentes e automacoes' },
+  { icon: '🛡️', name: 'seg360', desc: 'Plataforma de seguros' },
+  { icon: '🏢', name: 'erpsb', desc: 'ERP para pequenas empresas' },
+  { icon: '🇪🇸', name: 'hola', desc: 'Projeto para aprender espanhol com IA' },
+  { icon: '🚚', name: 'rotaX1', desc: 'Logistica de entregas ultima milha' },
+  { icon: '🔧', name: 'rf360', desc: 'Marketplace de tecnicos' },
+  { icon: '⬆️', name: 'acima', desc: 'Projeto da comunidade INEMA' },
+  { icon: '📚', name: 'eboo-maker', desc: 'Gerador de ebooks com IA' },
+  { icon: '⚡', name: 'megaRAG', desc: 'SaaS white-label com RAG' },
+  { icon: '🍔', name: 'Restaurante Brutal', desc: 'Sistema completo para restaurante' },
+]
+
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
@@ -392,6 +419,41 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Projetos da Comunidade */}
+      <section className="community-projects-section">
+        <div className="container">
+          <div className="community-projects-header">
+            <h3>Projetos da Comunidade</h3>
+            <p>Cards com os projetos citados pela comunidade INEMA</p>
+          </div>
+          <div className="community-projects-grid">
+            {communityProjects.map((project) =>
+              project.url ? (
+                <a
+                  key={project.name}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="community-project-card community-project-card-linked"
+                  onClick={() => trackClick(project.url!, project.name, 'projetos-comunidade')}
+                >
+                  <span className="community-project-icon">{project.icon}</span>
+                  <h4>{project.name}</h4>
+                  <p>{project.desc}</p>
+                  <span className="community-project-badge">{project.badge ?? 'Link'}</span>
+                </a>
+              ) : (
+                <div key={project.name} className="community-project-card">
+                  <span className="community-project-icon">{project.icon}</span>
+                  <h4>{project.name}</h4>
+                  <p>{project.desc}</p>
+                </div>
+              )
+            )}
+          </div>
         </div>
       </section>
 
