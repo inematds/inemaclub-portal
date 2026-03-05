@@ -406,6 +406,85 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* Projetos da Comunidade */}
+      <section className="projects-section">
+        <div className="container">
+          <div className="projects-header">
+            <h3>Projetos da Comunidade</h3>
+            <p>Projetos desenvolvidos pela comunidade INEMA em aulas ao vivo e workshops</p>
+          </div>
+          <div className="projects-grid">
+            {[
+              { icon: '🍔', name: 'Restaurante Brutal', desc: 'Sistema completo para restaurante' },
+              { icon: '⚡', name: 'Vibe Code 2025', desc: 'Formação em Vibe Coding' },
+              { icon: '📄', name: 'MSFilesAStd', desc: 'Criando Arquivos Office Automático' },
+              { icon: '🎨', name: 'Design de Marca', desc: 'Masterclass de Design de Marca' },
+              { icon: '🖼️', name: 'Imagens Gemini', desc: 'Edição de imagens com IA Google' },
+              { icon: '📊', name: 'Tendências YT', desc: 'Análise de tendências YouTube' },
+              { icon: '🌐', name: 'WebSite Pessoal', desc: 'Criando WebSite Pessoal com Prompts' },
+              { icon: '✨', name: 'One Prompt Website', desc: 'The One Prompt Website Formula' },
+              { icon: '🧠', name: 'MegaRAG', desc: 'SaaS WhiteLabel com RAG' },
+              { icon: '📚', name: 'Ebook-Maker', desc: 'Gerador de Ebooks com IA' },
+              { icon: '🎯', name: 'Flash UI', desc: 'Google Design com IA' },
+              { icon: '📈', name: 'Dashboard Console', desc: 'Console de Gestão' },
+              { icon: '💻', name: 'WebSites SaaS', desc: 'Criando WebSites SaaS' },
+              { icon: '🎮', name: 'EAi Games', desc: 'Jogos educativos com IA' },
+              { icon: '🌤️', name: 'AClima', desc: 'Aplicativo clima - Dev CCode' },
+              { icon: '🎅', name: 'Gemini Veo Santa', desc: 'App de Natal com Gemini Veo' },
+              { icon: '🚀', name: 'LandPages 1m', desc: 'Landing Pages em 1 minuto' },
+              { icon: '👥', name: 'e17 - Recrutamento', desc: 'Sistema Recrutamento N8N + AIStudio' },
+              { icon: '💰', name: '4 Mercados Escaláveis', desc: 'Mercados pequenos e escaláveis' },
+              { icon: '💄', name: 'Bela360', desc: 'Gestão de Salão de Beleza', github: 'bela360' },
+              { icon: '📊', name: 'j121 - Dashboard 10k', desc: 'Dashboard de 10k' },
+              { icon: '🔮', name: 'j119 - AntiGravity', desc: 'Use AntiGravity melhor que 99%' },
+              { icon: '✅', name: 'Validar Projeto SaaS', desc: 'Como validar o projeto SaaS' },
+              { icon: '🐾', name: 'Pet360', desc: 'Plataforma Completa para Pets', github: 'pet360' },
+              { icon: '🤖', name: '1% Engenheiro Agentic', desc: 'Formação top 1% em Agentic' },
+              { icon: '🧩', name: 'Engenharia de Contexto', desc: 'Master de Engenharia de Contexto' },
+              { icon: '💡', name: 'MVP SaaS Lucrativo', desc: 'Como construir um MVP SaaS lucrativo' },
+              { icon: '🎨', name: 'Design de Sites com IA', desc: 'Super Curso de Design de Sites' },
+              { icon: '🔧', name: 'RF360', desc: 'Marketplace de Técnicos de Eletrônica' },
+              { icon: '🚚', name: 'RotaX1', desc: 'Entregas Última Milha' },
+              { icon: '🧬', name: 'NCIAFlux - NeuroFluxo', desc: 'Mentes Brilhantes' },
+              { icon: '🇪🇸', name: 'Projeto Hola', desc: 'Aprenda Espanhol com IA' },
+              { icon: '🏢', name: 'ERPsb', desc: 'ERP para Pequenas Empresas' },
+              { icon: '🛡️', name: 'Seg360', desc: 'Plataforma Seguro Catastrófico' },
+              { icon: '🌐', name: '10 Sites Dinâmicos', desc: 'Construção de sites dinâmicos' },
+              { icon: '💊', name: 'Antidote', desc: 'Criando Bot Assistentes' },
+              { icon: '🧠', name: 'INTELECTO', desc: 'Seu Assistente IA pessoal' },
+              { icon: '📱', name: 'Redes Sociais', desc: 'Publicando nas Redes Sociais' },
+              { icon: '🎙️', name: 'Dublar PRO v5.3.1', desc: 'Dublagem profissional com IA' },
+              { icon: '🎤', name: 'inemaVOX', desc: 'Suite de Voz completa' },
+              { icon: '🛠️', name: 'WebSiteBuilder', desc: 'Gerador de Prompts para Sites' },
+              { icon: '📖', name: 'AnimaBook v1', desc: 'Livros animados com IA' },
+              { icon: '📕', name: 'Book-Genesis', desc: 'Crie Livros com IA' },
+              { icon: '🎲', name: 'Bet360', desc: 'Plataforma Bet 360', github: 'bet360' },
+              { icon: '📏', name: 'BS-Benchmark', desc: 'Benchmark de performance', github: 'bs-benchmark', pages: true },
+            ].map((p) => {
+              const url = (p as any).pages
+                ? `https://inematds.github.io/${(p as any).github}/`
+                : (p as any).github
+                  ? `https://github.com/inematds/${(p as any).github}`
+                  : undefined
+              const Tag = url ? 'a' : 'div'
+              return (
+                <Tag
+                  key={p.name}
+                  {...(url ? { href: url, target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className={`project-card${url ? ' project-card-linked' : ''}`}
+                  onClick={url ? () => trackClick(url, p.name, 'projetos') : undefined}
+                >
+                  <span className="project-icon">{p.icon}</span>
+                  <h4>{p.name}</h4>
+                  <p>{p.desc}</p>
+                  {(p as any).github && <span className="project-github-badge">{(p as any).pages ? 'GitHub Pages' : 'GitHub'}</span>}
+                </Tag>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* GitHub Repos */}
       <section className="github-section">
         <div className="container">
