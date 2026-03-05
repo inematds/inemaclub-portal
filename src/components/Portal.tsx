@@ -21,7 +21,7 @@ const communityProjects: Array<{
   { icon: '🐾', name: 'pet360', desc: 'Plataforma completa para pets', url: 'https://github.com/inematds/pet360', badge: 'GitHub' },
   { icon: '💄', name: 'bela360', desc: 'Gestao para salao de beleza', url: 'https://github.com/inematds/bela360', badge: 'GitHub' },
   { icon: '📖', name: 'animabook', desc: 'Livros animados com IA', url: 'https://animabook.vercel.app/', badge: 'Site' },
-  { icon: '📕', name: 'book-genesis', desc: 'Criacao de livros com IA' },
+  { icon: '📕', name: 'book-genesis', desc: 'Criacao de livros com IA', url: 'https://github.com/PhilipStark/book-genesis', badge: 'GitHub' },
   { icon: '🎤', name: 'inemavox', desc: 'Suite de voz da comunidade', url: 'https://github.com/inematds/inemavox', badge: 'GitHub' },
   { icon: '🎙️', name: 'dublar pro', desc: 'Dublagem profissional com IA', url: 'https://github.com/inematds/dublarv5', badge: 'GitHub' },
   { icon: '🧠', name: 'intelecto', desc: 'Assistente pessoal com IA', url: 'https://github.com/inematds/intelecto', badge: 'GitHub' },
