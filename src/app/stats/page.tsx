@@ -30,8 +30,8 @@ export default async function StatsPage() {
 
   try {
     const [v, c] = await Promise.all([
-      supabaseAdmin.from('visits').select('session_id, created_at').order('created_at'),
-      supabaseAdmin.from('clicks').select('url, label, section, created_at').order('created_at'),
+      supabaseAdmin.from('visits').select('session_id, created_at').order('created_at').limit(100000),
+      supabaseAdmin.from('clicks').select('url, label, section, created_at').order('created_at').limit(100000),
     ])
     visits = v.data ?? []
     clicks = c.data ?? []
@@ -40,7 +40,12 @@ export default async function StatsPage() {
   }
 
   // --- Visitas ---
-  const totalViews = BASE_TOTAL + visits.length
+  let realVisitCount = visits.length
+  try {
+    const { count } = await supabaseAdmin.from('visits').select('*', { count: 'exact', head: true })
+    if (count !== null) realVisitCount = count
+  } catch {}
+  const totalViews = BASE_TOTAL + realVisitCount
   const uniqueVisitors = BASE_UNIQUE_ANON + new Set(visits.map((v) => v.session_id)).size
   const totalClicks = clicks.length
 
