@@ -4,6 +4,8 @@ import { fetchAllRows } from '@/lib/supabase-utils'
 const BASE_TOTAL = 90000
 const BASE_UNIQUE_ANON = 50000
 
+type StatsRpc = { total: number; unique_anon: number; unique_logged: number }
+
 export const revalidate = 60
 
 type ClickRow = { url: string; label: string | null; section: string | null; created_at: string }
@@ -40,14 +42,16 @@ export default async function StatsPage() {
     // Supabase indisponível
   }
 
-  // --- Visitas ---
-  let realVisitCount = visits.length
+  // --- Totais via RPC (leve) ---
+  let totalViews = BASE_TOTAL + visits.length
+  let uniqueVisitors = BASE_UNIQUE_ANON
   try {
-    const { count } = await supabaseAdmin.from('visits').select('*', { count: 'exact', head: true })
-    if (count !== null) realVisitCount = count
+    const { data } = await supabaseAdmin.rpc('visit_stats') as { data: StatsRpc | null }
+    if (data) {
+      totalViews = BASE_TOTAL + data.total
+      uniqueVisitors = BASE_UNIQUE_ANON + data.unique_anon
+    }
   } catch {}
-  const totalViews = BASE_TOTAL + realVisitCount
-  const uniqueVisitors = BASE_UNIQUE_ANON + new Set(visits.map((v) => v.session_id)).size
   const totalClicks = clicks.length
 
   // Visitas por dia (últimos 14 dias)
