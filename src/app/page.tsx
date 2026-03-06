@@ -9,12 +9,19 @@ export default async function Home() {
   let visitStats = { total: BASE_TOTAL, uniqueLogged: 0, uniqueAnon: BASE_UNIQUE_ANON }
 
   try {
+    // Contagem total via count do Supabase (sem transferir dados)
+    const { count: totalCount } = await supabaseAdmin
+      .from('visits')
+      .select('*', { count: 'exact', head: true })
+
+    // Busca dados para cálculo de únicos (limit alto para superar default de 1000)
     const { data: visits } = await supabaseAdmin
       .from('visits')
       .select('user_id, session_id')
+      .limit(100000)
 
     if (visits) {
-      const total = BASE_TOTAL + visits.length
+      const total = BASE_TOTAL + (totalCount ?? visits.length)
       const uniqueLogged = new Set(
         visits.filter((v) => v.user_id).map((v) => v.user_id)
       ).size
