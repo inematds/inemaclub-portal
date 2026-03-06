@@ -1,7 +1,8 @@
 import { supabaseAdmin } from '@/lib/supabase'
+import { fetchAllRows } from '@/lib/supabase-utils'
 
-const BASE_TOTAL = 20000
-const BASE_UNIQUE_ANON = 10000
+const BASE_TOTAL = 90000
+const BASE_UNIQUE_ANON = 50000
 
 export const revalidate = 60
 
@@ -30,11 +31,11 @@ export default async function StatsPage() {
 
   try {
     const [v, c] = await Promise.all([
-      supabaseAdmin.from('visits').select('session_id, created_at').order('created_at').limit(100000),
-      supabaseAdmin.from('clicks').select('url, label, section, created_at').order('created_at').limit(100000),
+      fetchAllRows<VisitRow>(supabaseAdmin.from('visits').select('session_id, created_at').order('created_at')),
+      fetchAllRows<ClickRow>(supabaseAdmin.from('clicks').select('url, label, section, created_at').order('created_at')),
     ])
-    visits = v.data ?? []
-    clicks = c.data ?? []
+    visits = v
+    clicks = c
   } catch {
     // Supabase indisponível
   }
