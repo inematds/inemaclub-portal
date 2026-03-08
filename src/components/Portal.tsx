@@ -392,8 +392,9 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/notebooklm', label: 'NotebookLM', desc: 'Do Zero ao Avançado' },
             ]},
             { title: '💻 Desenvolvedor IA', steps: [
-              { href: 'https://inematds.github.io/ccguide2026',   label: 'CCGuide',   desc: 'Claude Code 2026' },
-              { href: 'https://inematds.github.io/BMAD-Academy/', label: 'BMAD',      desc: 'BMAD Academy' },
+              { href: 'https://inematds.github.io/ccguide2026',   label: 'CCGuide',    desc: 'Claude Code 2026' },
+              { href: 'https://inematds.github.io/6pilarccb/',    label: '6 Pilares',  desc: '6 Pilares do Claude Code' },
+              { href: 'https://inematds.github.io/BMAD-Academy/', label: 'BMAD',       desc: 'BMAD Academy' },
               { href: 'https://inematds.github.io/github/',        label: 'GitHub',    desc: 'Repositórios INEMA' },
               { href: 'https://inematds.github.io/dash/',          label: 'Dashboard', desc: 'Dashboard Mastery' },
             ]},

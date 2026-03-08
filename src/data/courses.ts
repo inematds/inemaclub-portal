@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 43,
+    title: '6 Pilares do Claude Code',
+    description:
+      '6 Pilares do Claude Code - Domine atalhos, CLAUDE.md, 9 workflows, prompts estratégicos, skills reutilizáveis e MCPs. 6 trilhas, 58 aulas práticas.',
+    icon: '🧠',
+    tags: ['Claude Code', 'CLI', 'IA', 'Produtividade', 'Skills', 'Automação'],
+    url: 'https://inematds.github.io/6pilarccb/',
+  },
+  {
     id: 42,
     title: 'Agentic Engineering Masterclass',
     description:
@@ -395,6 +404,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-07',
+    title: '6 Pilares do Claude Code',
+    type: 'novo',
+    url: 'https://inematds.github.io/6pilarccb/',
+  },
   {
     date: '2026-03-03',
     title: 'Agentic Engineering Masterclass',
