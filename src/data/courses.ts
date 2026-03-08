@@ -25,6 +25,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/6pilarccb/',
   },
   {
+    id: 44,
+    title: 'Engenharia Agentic - Workflow',
+    description:
+      'Engenharia Agentic prática: especifique workflows, desenhe tools, rode evals, depure traces e opere sistemas agentic em ambiente real. 3 trilhas, 18 módulos, 100+ aulas e labs.',
+    icon: '🔄',
+    tags: ['Agentic', 'Workflows', 'Tools', 'Evals', 'IA', 'Engenharia'],
+    url: 'https://inematds.github.io/agentic-workflow/',
+  },
+  {
     id: 42,
     title: 'Agentic Engineering Masterclass',
     description:
@@ -404,6 +413,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-08',
+    title: 'Engenharia Agentic - Workflow',
+    type: 'novo',
+    url: 'https://inematds.github.io/agentic-workflow/',
+  },
   {
     date: '2026-03-07',
     title: '6 Pilares do Claude Code',

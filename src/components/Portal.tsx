@@ -322,9 +322,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </div>
           <div className="learning-path-cards">
             {[
-              { href: 'https://inematds.github.io/vibecode', label: 'Vibe Coding', desc: 'Da Ideia ao Produto com IA', n: 1 },
-              { href: 'https://inematds.github.io/skills',   label: 'Skills',      desc: 'Agent Skills Mastery',      n: 2 },
-              { href: 'https://inematds.github.io/agentic/', label: 'Agentic',     desc: 'Engenharia de Agentic',     n: 3 },
+              { href: 'https://inematds.github.io/vibecode',          label: 'Vibe Coding',      desc: 'Da Ideia ao Produto com IA',    n: 1 },
+              { href: 'https://inematds.github.io/skills',            label: 'Skills',           desc: 'Agent Skills Mastery',         n: 2 },
+              { href: 'https://inematds.github.io/agentic/',          label: 'Agentic',          desc: 'Engenharia de Agentic',        n: 3 },
+              { href: 'https://inematds.github.io/agentic-workflow/', label: 'Agentic Workflow', desc: 'Workflows Agentic na Prática', n: 4 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
@@ -392,11 +393,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/notebooklm', label: 'NotebookLM', desc: 'Do Zero ao Avançado' },
             ]},
             { title: '💻 Desenvolvedor IA', steps: [
-              { href: 'https://inematds.github.io/ccguide2026',   label: 'CCGuide',    desc: 'Claude Code 2026' },
-              { href: 'https://inematds.github.io/6pilarccb/',    label: '6 Pilares',  desc: '6 Pilares do Claude Code' },
-              { href: 'https://inematds.github.io/BMAD-Academy/', label: 'BMAD',       desc: 'BMAD Academy' },
-              { href: 'https://inematds.github.io/github/',        label: 'GitHub',    desc: 'Repositórios INEMA' },
-              { href: 'https://inematds.github.io/dash/',          label: 'Dashboard', desc: 'Dashboard Mastery' },
+              { href: 'https://inematds.github.io/ccguide2026',          label: 'CCGuide',          desc: 'Claude Code 2026' },
+              { href: 'https://inematds.github.io/6pilarccb/',           label: '6 Pilares',        desc: '6 Pilares do Claude Code' },
+              { href: 'https://inematds.github.io/agentic-workflow/',    label: 'Agentic Workflow', desc: 'Engenharia Agentic Prática' },
+              { href: 'https://inematds.github.io/BMAD-Academy/',       label: 'BMAD',             desc: 'BMAD Academy' },
+              { href: 'https://inematds.github.io/github/',              label: 'GitHub',           desc: 'Repositórios INEMA' },
+              { href: 'https://inematds.github.io/dash/',                label: 'Dashboard',        desc: 'Dashboard Mastery' },
             ]},
             { title: '🌱 Transformação Digital', steps: [
               { href: 'https://inematds.github.io/FTD/',  label: 'FTD',  desc: 'Formação Transformação Digital' },
