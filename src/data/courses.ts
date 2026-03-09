@@ -25,6 +25,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vb-imersao/',
   },
   {
+    id: 46,
+    title: '6 Pilares do Claude Code - Completa',
+    description:
+      '6 Pilares do Claude Code - Edicao Completa 2026. Domine o Claude Code do zero ao avancado com 6 trilhas, 49 modulos, 294 topicos e 49 exercicios praticos.',
+    icon: '🧠',
+    tags: ['Claude Code', 'CLI', 'IA', 'Produtividade', 'Skills', 'MCP'],
+    url: 'https://inematds.github.io/6pilarccfull/',
+  },
+  {
     id: 43,
     title: '6 Pilares do Claude Code',
     description:
@@ -422,6 +431,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-09',
+    title: '6 Pilares do Claude Code - Completa',
+    type: 'novo',
+    url: 'https://inematds.github.io/6pilarccfull/',
+  },
   {
     date: '2026-03-09',
     title: 'Imersao Vibe Coding',
