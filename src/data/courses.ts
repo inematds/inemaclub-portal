@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 45,
+    title: 'Imersao Vibe Coding',
+    description:
+      'Do Zero ao SaaS com IA em 3 Dias. Construa uma plataforma de assistentes com agentes, skills, MCP, multibots, billing e deploy. 6 turnos intensivos, 36 topicos.',
+    icon: '🚀',
+    tags: ['Vibe Coding', 'SaaS', 'Agentes', 'IA', 'MCP', 'Deploy'],
+    url: 'https://inematds.github.io/vb-imersao/',
+  },
+  {
     id: 43,
     title: '6 Pilares do Claude Code',
     description:
@@ -413,6 +422,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-09',
+    title: 'Imersao Vibe Coding',
+    type: 'novo',
+    url: 'https://inematds.github.io/vb-imersao/',
+  },
   {
     date: '2026-03-08',
     title: 'Engenharia Agentic - Workflow',

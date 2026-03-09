@@ -323,9 +323,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div className="learning-path-cards">
             {[
               { href: 'https://inematds.github.io/vibecode',          label: 'Vibe Coding',      desc: 'Da Ideia ao Produto com IA',    n: 1 },
-              { href: 'https://inematds.github.io/skills',            label: 'Skills',           desc: 'Agent Skills Mastery',         n: 2 },
-              { href: 'https://inematds.github.io/agentic/',          label: 'Agentic',          desc: 'Engenharia de Agentic',        n: 3 },
-              { href: 'https://inematds.github.io/agentic-workflow/', label: 'Agentic Workflow', desc: 'Workflows Agentic na Prática', n: 4 },
+              { href: 'https://inematds.github.io/vb-imersao/',      label: 'VB Imersao',       desc: 'Do Zero ao SaaS em 3 Dias',    n: 2 },
+              { href: 'https://inematds.github.io/skills',            label: 'Skills',           desc: 'Agent Skills Mastery',         n: 3 },
+              { href: 'https://inematds.github.io/agentic/',          label: 'Agentic',          desc: 'Engenharia de Agentic',        n: 4 },
+              { href: 'https://inematds.github.io/agentic-workflow/', label: 'Agentic Workflow', desc: 'Workflows Agentic na Prática', n: 5 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
