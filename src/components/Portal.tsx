@@ -35,6 +35,7 @@ const communityProjects: Array<{
   { icon: '📚', name: 'eboo-maker', desc: 'Gerador de ebooks com IA', url: 'https://github.com/inematds/ebook-maker', badge: 'GitHub' },
   { icon: '⚡', name: 'megaRAG', desc: 'SaaS white-label com RAG', url: 'https://github.com/inematds/MegaRAG', badge: 'GitHub' },
   { icon: '🍔', name: 'Restaurante Brutal', desc: 'Sistema completo para restaurante' },
+  { icon: '🏋️', name: 'inema academia', desc: 'Plataforma fitness da comunidade', url: 'https://inemaacademia.vercel.app/', badge: 'Site' },
 ]
 
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
