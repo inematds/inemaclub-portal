@@ -36,6 +36,8 @@ const communityProjects: Array<{
   { icon: '⚡', name: 'megaRAG', desc: 'SaaS white-label com RAG', url: 'https://github.com/inematds/MegaRAG', badge: 'GitHub' },
   { icon: '🍔', name: 'Restaurante Brutal', desc: 'Sistema completo para restaurante' },
   { icon: '🏋️', name: 'inema academia', desc: 'Plataforma fitness da comunidade', url: 'https://inemaacademia.vercel.app/', badge: 'Site' },
+  { icon: '📱', name: 'redessociais', desc: 'Gestao de redes sociais com IA', url: 'https://github.com/inematds/redessociais', badge: 'GitHub' },
+  { icon: '📲', name: 'redessociais2026', desc: 'Redes sociais 2026', url: 'https://github.com/inematds/redessociais2026', badge: 'GitHub' },
 ]
 
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
