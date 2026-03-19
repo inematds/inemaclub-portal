@@ -133,6 +133,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/EAI/',
   },
   {
+    id: 47,
+    title: 'Enxames de Agentes de IA',
+    description:
+      'Domine a construção de sistemas multiagentes inteligentes. 4 trilhas, 32 módulos e 220+ tópicos cobrindo fundamentos, frameworks (CrewAI, LangGraph, AutoGen), prática avançada e projetos hands-on.',
+    icon: '🐝',
+    tags: ['IA', 'Agentes', 'Multi-Agentes', 'CrewAI', 'LangGraph', 'AutoGen'],
+    url: 'https://inematds.github.io/enxamesagentes/',
+  },
+  {
     id: 8,
     title: 'FDB - Fundamentos de Banco de Dados',
     description:
@@ -402,6 +411,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vibecode',
   },
   {
+    id: 48,
+    title: 'Vibe Coding Imersão - Do Zero ao SaaS',
+    description:
+      'Imersão intensiva de 3 dias: do zero ao SaaS com IA. 6 trilhas e 36 tópicos cobrindo arquitetura, agentes inteligentes, MCP, multi-bots, billing e deploy em produção.',
+    icon: '🚀',
+    tags: ['Vibe Coding', 'SaaS', 'IA', 'Agentes', 'Imersão'],
+    url: 'https://inematds.github.io/vibecode-imersao/',
+  },
+  {
     id: 34,
     title: 'VISION',
     description:
@@ -431,6 +449,18 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-19',
+    title: 'Enxames de Agentes de IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/enxamesagentes/',
+  },
+  {
+    date: '2026-03-19',
+    title: 'Vibe Coding Imersão - Do Zero ao SaaS',
+    type: 'novo',
+    url: 'https://inematds.github.io/vibecode-imersao/',
+  },
   {
     date: '2026-03-09',
     title: '6 Pilares do Claude Code - Completa',
