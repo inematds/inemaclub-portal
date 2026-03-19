@@ -277,6 +277,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/MAKE/',
   },
   {
+    id: 49,
+    title: 'MiroFish - Ecossistema de Predição Multiagente',
+    description:
+      'Domine o motor de predição multiagente que constrói mundos digitais paralelos para simular cenários futuros. Pipeline MindSpider, BettaFish e MiroFish. 5 trilhas, 30 módulos e ~180 tópicos.',
+    icon: '🐟',
+    tags: ['IA', 'Multiagente', 'Simulação', 'Predição', 'GraphRAG'],
+    url: 'https://inematds.github.io/mirofishcurso/',
+  },
+  {
     id: 22,
     title: 'N8Nb - Fundamentos N8N',
     description:
@@ -449,6 +458,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-19',
+    title: 'MiroFish - Ecossistema de Predição Multiagente',
+    type: 'novo',
+    url: 'https://inematds.github.io/mirofishcurso/',
+  },
   {
     date: '2026-03-19',
     title: 'Enxames de Agentes de IA',
