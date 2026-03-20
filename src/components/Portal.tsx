@@ -38,6 +38,7 @@ const communityProjects: Array<{
   { icon: '🏋️', name: 'inema academia', desc: 'Plataforma fitness da comunidade', url: 'https://inemaacademia.vercel.app/', badge: 'Site' },
   { icon: '📱', name: 'redessociais', desc: 'Gestao de redes sociais com IA', url: 'https://github.com/inematds/redessociais', badge: 'GitHub' },
   { icon: '📲', name: 'redessociais2026', desc: 'Redes sociais 2026', url: 'https://github.com/inematds/redessociais2026', badge: 'GitHub' },
+  { icon: '🔍', name: 'deepsearchagent', desc: 'Agente de pesquisa profunda com IA', url: 'https://github.com/inematds/deepsearchagent', badge: 'GitHub' },
 ]
 
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
