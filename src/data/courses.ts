@@ -79,6 +79,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ATIA/',
   },
   {
+    id: 52,
+    title: 'Arquitetura 2030 - Arquitetura de Software com IA',
+    description:
+      'De fundamentos a execução: domine arquitetura de software com exemplos reais, decisões práticas e IA aplicada. 6 trilhas, 30 módulos e 210 tópicos em ~30 horas de conteúdo.',
+    icon: '🏗️',
+    tags: ['Arquitetura', 'Software', 'IA', 'DevOps', 'Escalabilidade', 'Design Patterns'],
+    url: 'https://inematds.github.io/arqdev2030',
+  },
+  {
     id: 3,
     title: 'Automação 2026',
     description:
@@ -476,6 +485,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-20',
+    title: 'Arquitetura 2030 - Arquitetura de Software com IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/arqdev2030',
+  },
   {
     date: '2026-03-20',
     title: 'DEV2K6 - Engenharia de Software com IA Avançada',
