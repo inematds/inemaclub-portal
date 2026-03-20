@@ -322,6 +322,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/notebooklm',
   },
   {
+    id: 50,
+    title: 'PHA 2030 - Da Capacitação à Transformação',
+    description:
+      'Prepare pessoas, equipes e empresas para a era da inteligência aplicada. Capacitação, diagnóstico, monitoramento e consultoria com clareza, critério e escala. 3 trilhas, 12 módulos e 72 tópicos.',
+    icon: '🎯',
+    tags: ['Transformação Digital', 'Capacitação', 'IA Aplicada', 'Consultoria', 'Educação'],
+    url: 'https://inematds.github.io/pha2030-aula',
+  },
+  {
     id: 25,
     title: 'Playbook - Formação Consultor IA - Inglês',
     description:
@@ -458,6 +467,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-19',
+    title: 'PHA 2030 - Da Capacitação à Transformação',
+    type: 'novo',
+    url: 'https://inematds.github.io/pha2030-aula',
+  },
   {
     date: '2026-03-19',
     title: 'MiroFish - Ecossistema de Predição Multiagente',
