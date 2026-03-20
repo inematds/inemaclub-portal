@@ -124,6 +124,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/DBA-FO/',
   },
   {
+    id: 51,
+    title: 'DEV2K6 - Engenharia de Software com IA Avançada',
+    description:
+      'Formação completa para devs que querem dominar IA como ferramenta de engenharia. 3 trilhas, 15 módulos, ~100 tópicos e 55+ exercícios práticos cobrindo LLMs, prompting, context engineering, MCP, agentes, RAG, segurança e adoção em times.',
+    icon: '💻',
+    tags: ['IA', 'Engenharia', 'Claude Code', 'MCP', 'Agentes', 'RAG'],
+    url: 'https://inematds.github.io/dev2k6/',
+  },
+  {
     id: 7,
     title: 'EAI - Games Educativos',
     description:
@@ -467,6 +476,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-20',
+    title: 'DEV2K6 - Engenharia de Software com IA Avançada',
+    type: 'novo',
+    url: 'https://inematds.github.io/dev2k6/',
+  },
   {
     date: '2026-03-19',
     title: 'PHA 2030 - Da Capacitação à Transformação',
