@@ -106,6 +106,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/BMAD-Academy/',
   },
   {
+    id: 53,
+    title: 'CCA-Q1 - Claude Certified Architect Foundations',
+    description:
+      'Curso preparatório para a certificação oficial da Anthropic. 5 trilhas, 30 módulos cobrindo Agentic Architecture, Tool Design & MCP, Claude Code, Prompt Engineering e Context Management. Score mínimo 720/1000.',
+    icon: '🏅',
+    tags: ['Certificação', 'Anthropic', 'Claude', 'MCP', 'Agentic', 'Arquitetura'],
+    url: 'https://inematds.github.io/cca-q1/',
+  },
+  {
     id: 37,
     title: 'CCGuide - Claude Code 2026',
     description:
@@ -485,6 +494,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-23',
+    title: 'CCA-Q1 - Claude Certified Architect Foundations',
+    type: 'novo',
+    url: 'https://inematds.github.io/cca-q1/',
+  },
   {
     date: '2026-03-20',
     title: 'Arquitetura 2030 - Arquitetura de Software com IA',

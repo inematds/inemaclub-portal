@@ -40,6 +40,7 @@ const communityProjects: Array<{
   { icon: '📲', name: 'redessociais2026', desc: 'Redes sociais 2026', url: 'https://github.com/inematds/redessociais2026', badge: 'GitHub' },
   { icon: '🔍', name: 'deepsearchagent', desc: 'Agente de pesquisa profunda com IA', url: 'https://github.com/inematds/deepsearchagent', badge: 'GitHub' },
   { icon: '🎬', name: 'yt-pub-lives2', desc: 'Pipeline automatizado de clipes de lives do YouTube', url: 'https://github.com/inematds/yt-pub-lives2', badge: 'GitHub' },
+  { icon: '🎥', name: 'aisf', desc: 'Produção de vídeos em lote com IA (SkyReels V3)', url: 'https://github.com/inematds/aisf', badge: 'GitHub' },
 ]
 
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
