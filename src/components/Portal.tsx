@@ -690,14 +690,18 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                 <h4 className="platform-name">YouTube</h4>
               </div>
               <div className="social-links">
-                <a
-                  href="https://www.youtube.com/@inematdsx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-btn youtube"
-                >
-                  <span>@inematdsx</span>
-                </a>
+                {['@inematdsx', '@inematia', '@inemaftd', '@inematec'].map((handle) => (
+                  <a
+                    key={handle}
+                    href={`https://www.youtube.com/${handle}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-btn youtube"
+                    onClick={() => trackClick(`https://www.youtube.com/${handle}`, handle, 'social')}
+                  >
+                    <span>{handle}</span>
+                  </a>
+                ))}
               </div>
             </div>
             {/* Facebook */}
