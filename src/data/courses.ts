@@ -124,6 +124,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cca-q2',
   },
   {
+    id: 55,
+    title: 'CLI-x - O Terminal como Interface dos Agentes',
+    description:
+      'O terminal como interface padrão dos agentes de IA em 2026. 6 trilhas, 30 módulos cobrindo fundamentos CLI, arquitetura MCP, CLI-Anything, ecossistema de agentes e projetos práticos. ~15 horas.',
+    icon: '💻',
+    tags: ['CLI', 'Terminal', 'MCP', 'Agentes', 'Claude Code', 'Gemini CLI'],
+    url: 'https://inematds.github.io/CLI-x',
+  },
+  {
     id: 37,
     title: 'CCGuide - Claude Code 2026',
     description:
@@ -503,6 +512,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-23',
+    title: 'CLI-x - O Terminal como Interface dos Agentes',
+    type: 'novo',
+    url: 'https://inematds.github.io/CLI-x',
+  },
   {
     date: '2026-03-23',
     title: 'CCA-Q1 - Claude Certified Architect Foundations',
