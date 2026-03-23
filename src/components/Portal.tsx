@@ -138,6 +138,22 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </header>
 
+      {/* Section Nav */}
+      <nav className="section-nav">
+        <div className="container">
+          <div className="section-nav-links">
+            <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
+            <a href="#cursos" className="section-nav-link">🎓 Cursos</a>
+            <a href="#trilha-vibe" className="section-nav-link">⚡ Vibe Code</a>
+            <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
+            <a href="#comunidade" className="section-nav-link">🚀 Comunidade</a>
+            <a href="#github" className="section-nav-link">💻 GitHub</a>
+            <a href="#telegram" className="section-nav-link">💬 Telegram</a>
+            <a href="#social" className="section-nav-link">📱 Social</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Recruitment Hero */}
       <section className="recruitment-hero">
         <div className="container">
@@ -179,7 +195,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* Learning Path */}
-      <section className="learning-path-section">
+      <section id="trilha-iniciantes" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
             <h3>Trilha para Iniciantes</h3>
@@ -270,7 +286,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </section>
 
           {/* Search */}
-          <section className="search-section">
+          <section id="cursos" className="search-section">
             <input
               type="text"
               className="search-input"
@@ -320,7 +336,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </main>
 
       {/* Trilha Vibe Code */}
-      <section className="learning-path-section">
+      <section id="trilha-vibe" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
             <h3>⚡ Trilha Vibe Code</h3>
@@ -357,7 +373,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* Trilhas de Aprendizado */}
-      <section className="trilhas-section">
+      <section id="trilhas" className="trilhas-section">
         <div className="container">
           <div className="learning-path-header">
             <h3>Trilhas de Aprendizado</h3>
@@ -434,7 +450,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* Projetos da Comunidade */}
-      <section className="community-projects-section">
+      <section id="comunidade" className="community-projects-section">
         <div className="container">
           <div className="community-projects-header">
             <h3>Projetos da Comunidade</h3>
@@ -469,7 +485,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* GitHub Repos */}
-      <section className="github-section">
+      <section id="github" className="github-section">
         <div className="container">
           <div className="github-header">
             <h3>Repositórios GitHub INEMA</h3>
@@ -541,7 +557,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* Telegram */}
-      <section className="telegram-section">
+      <section id="telegram" className="telegram-section">
         <div className="container">
           <div className="telegram-header">
             <h3>Grupos e Canais Telegram</h3>
@@ -616,7 +632,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* Social */}
-      <section className="social-section">
+      <section id="social" className="social-section">
         <div className="container">
           <div className="social-header">
             <h3>Redes Sociais INEMA</h3>
