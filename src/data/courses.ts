@@ -115,6 +115,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cca-q1/',
   },
   {
+    id: 54,
+    title: 'CCA-Q2 - Claude Certified Architect Interativo',
+    description:
+      'Preparatório interativo para a certificação Anthropic. Mapa visual, simulador de cenários e flashcards com repetição espaçada. 5 camadas progressivas cobrindo os 5 domínios do exame. Score mínimo 720/1000.',
+    icon: '🎯',
+    tags: ['Certificação', 'Anthropic', 'Claude', 'Simulador', 'Flashcards', 'Interativo'],
+    url: 'https://inematds.github.io/cca-q2',
+  },
+  {
     id: 37,
     title: 'CCGuide - Claude Code 2026',
     description:
@@ -499,6 +508,12 @@ export const updatesData: Update[] = [
     title: 'CCA-Q1 - Claude Certified Architect Foundations',
     type: 'novo',
     url: 'https://inematds.github.io/cca-q1/',
+  },
+  {
+    date: '2026-03-23',
+    title: 'CCA-Q2 - Claude Certified Architect Interativo',
+    type: 'novo',
+    url: 'https://inematds.github.io/cca-q2',
   },
   {
     date: '2026-03-20',
