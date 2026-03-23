@@ -648,7 +648,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                 <h4 className="platform-name">TikTok</h4>
               </div>
               <div className="social-links">
-                {['@inema.tds', '@inema.tia', '@inemafuturos', '@inema.tech', '@inema.prompts', '@inema.robot'].map(
+                {['@inema.tds', '@inema.tia', '@inemafuturos', '@inema.tech', '@inema.prompts', '@inema.robot', '@inema.vip'].map(
                   (handle) => (
                     <a
                       key={handle}
@@ -670,7 +670,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                 <h4 className="platform-name">Instagram</h4>
               </div>
               <div className="social-links">
-                {['@inema.tds', '@inema.tia'].map((handle) => (
+                {['@inema.tds', '@inema.tia', '@inema.vip'].map((handle) => (
                   <a
                     key={handle}
                     href={`https://www.instagram.com/${handle.replace('@', '')}`}
