@@ -509,9 +509,24 @@ export const platformsData: Course[] = [
     tags: ['Design', 'IA', 'Web', 'UI/UX', '2026'],
     url: 'https://inematds.github.io/webp',
   },
+  {
+    id: 56,
+    title: 'Hack do Algoritmo Meta 2026',
+    description:
+      'Domine o algoritmo da Meta (Facebook e Instagram) em 2026. 4 trilhas, 20 módulos e 120+ tópicos cobrindo fundamentos do algoritmo, estratégia de conteúdo, produção de vídeos e escala de 0 a 10K+ seguidores. ~10 horas.',
+    icon: '📱',
+    tags: ['Meta', 'Instagram', 'Facebook', 'Marketing Digital', 'Reels', 'IA'],
+    url: 'https://inematds.github.io/hack7meta',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-26',
+    title: 'Hack do Algoritmo Meta 2026',
+    type: 'novo',
+    url: 'https://inematds.github.io/hack7meta',
+  },
   {
     date: '2026-03-23',
     title: 'CLI-x - O Terminal como Interface dos Agentes',
