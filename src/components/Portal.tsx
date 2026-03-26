@@ -43,6 +43,7 @@ const communityProjects: Array<{
   { icon: '🎥', name: 'aisf', desc: 'Produção de vídeos em lote com IA (SkyReels V3)', url: 'https://github.com/inematds/aisf', badge: 'GitHub' },
   { icon: '🐟', name: 'BettaFish', desc: 'Plataforma de pesquisa e analise com IA multi-engine', url: 'https://github.com/inematds/BettaFish', badge: 'GitHub' },
   { icon: '🌊', name: 'MiroFish', desc: 'Motor de predicao com inteligencia de enxame e agentes IA', url: 'https://github.com/inematds/mirofish', badge: 'GitHub' },
+  { icon: '🧪', name: 'intelecto-testes', desc: 'Testes e validacao do assistente pessoal Intelecto com IA', url: 'https://github.com/inematds/intelecto-testes', badge: 'GitHub' },
 ]
 
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
