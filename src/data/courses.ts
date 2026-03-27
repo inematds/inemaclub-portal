@@ -518,9 +518,24 @@ export const platformsData: Course[] = [
     tags: ['Meta', 'Instagram', 'Facebook', 'Marketing Digital', 'Reels', 'IA'],
     url: 'https://inematds.github.io/hack7meta',
   },
+  {
+    id: 57,
+    title: '8020 - Vendas, Gestão e Estratégia Comercial',
+    description:
+      'Construa um sistema comercial integrado. 8 trilhas cobrindo diagnóstico de equipes, treinamento de vendedores, scripts práticos, níveis de consciência do consumidor, estratégias B2B/B2C e IA aplicada a vendas.',
+    icon: '💰',
+    tags: ['Vendas', 'Gestão Comercial', 'Estratégia', 'B2B', 'B2C', 'IA'],
+    url: 'https://inematds.github.io/8020',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-03-27',
+    title: '8020 - Vendas, Gestão e Estratégia Comercial',
+    type: 'novo',
+    url: 'https://inematds.github.io/8020',
+  },
   {
     date: '2026-03-26',
     title: 'Hack do Algoritmo Meta 2026',
