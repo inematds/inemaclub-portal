@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INEMA — Relatório de Pesquisa Páscoa 2026</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --primary: #0099FF;
+      --primary-glow: rgba(0, 153, 255, 0.3);
+      --accent: #00FF88;
+      --accent-glow: rgba(0, 255, 136, 0.3);
+      --bg: #050510;
+      --bg-card: #0D0D1E;
+      --bg-card2: #111128;
+      --text: #E8E8F0;
+      --text-muted: #8888AA;
+      --border: rgba(0, 153, 255, 0.2);
+      --pascal-coral: #FF6B6B;
+      --pascal-yellow: #FFE66D;
+      --pascal-mint: #4ECDC4;
+      --pascal-lavender: #C77DFF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg-card2);
+      border-radius: 6px;
+      border: 2px solid var(--bg);
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(0, 153, 255, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(0, 255, 136, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(199, 125, 255, 0.05) 0%, transparent 70%);
+    }
+
+    header {
+      padding: 48px 40px 32px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(13, 13, 30, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .brand-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: clamp(22px, 3vw, 36px);
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF 0%, var(--primary) 50%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+
+    .meta-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: rgba(0, 153, 255, 0.08);
+      color: var(--primary);
+    }
+
+    .pill.accent { color: var(--accent); background: rgba(0, 255, 136, 0.08); border-color: rgba(0, 255, 136, 0.2); }
+    .pill.pascal { color: var(--pascal-coral); background: rgba(255, 107, 107, 0.08); border-color: rgba(255, 107, 107, 0.2); }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .opportunity-banner {
+      background: linear-gradient(135deg, rgba(0, 153, 255, 0.15) 0%, rgba(0, 255, 136, 0.1) 100%);
+      border: 1px solid var(--primary);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .opportunity-banner::before {
+      content: '🥚';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 64px;
+      opacity: 0.3;
+    }
+
+    .opportunity-banner h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .opportunity-banner p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      max-width: 85%;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 24px var(--primary-glow);
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-title .icon { font-size: 18px; }
+
+    .card-body { font-size: 13px; line-height: 1.7; color: var(--text-muted); }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .badge.alta { background: rgba(0, 255, 136, 0.15); color: var(--accent); }
+    .badge.media { background: rgba(255, 230, 109, 0.15); color: var(--pascal-yellow); }
+
+    .chart-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .chart-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .chart-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    canvas { max-height: 320px; }
+
+    .hook-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: border-color 0.3s;
+    }
+
+    .hook-card:hover { border-color: var(--accent); }
+
+    .hook-rank {
+      font-size: 28px;
+      font-weight: 900;
+      min-width: 40px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hook-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+      font-style: italic;
+    }
+
+    .hook-why { font-size: 13px; color: var(--text-muted); }
+
+    .score-bar {
+      height: 4px;
+      border-radius: 2px;
+      margin-top: 10px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .video-concept {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .video-concept-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .video-concept-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .video-hook {
+      background: rgba(0, 153, 255, 0.08);
+      border-left: 3px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+      font-style: italic;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      font-size: 13px;
+    }
+
+    .video-field label {
+      display: block;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .video-field span { color: var(--text); }
+
+    .keywords-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .keyword {
+      padding: 8px 16px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      transition: all 0.3s;
+      cursor: default;
+    }
+
+    .keyword:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(0, 255, 136, 0.08);
+    }
+
+    .keyword.primary { color: var(--primary); border-color: rgba(0, 153, 255, 0.4); }
+
+    .next-steps {
+      background: linear-gradient(135deg, rgba(0, 255, 136, 0.08) 0%, rgba(0, 153, 255, 0.08) 100%);
+      border: 1px solid rgba(0, 255, 136, 0.3);
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 40px;
+    }
+
+    .next-steps h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .next-step-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .next-step-item:last-child { border-bottom: none; }
+
+    .step-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+      background: rgba(0, 153, 255, 0.15);
+    }
+
+    .step-text strong {
+      display: block;
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .step-text span { font-size: 12px; color: var(--text-muted); }
+
+    footer {
+      text-align: center;
+      padding: 32px 40px;
+      color: var(--text-muted);
+      font-size: 12px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      main { padding: 24px 20px; }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .video-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div>
+      <div class="brand-tag">INEMA · Relatório de Pesquisa</div>
+      <h1>Páscoa 2026 — Transformação Digital</h1>
+    </div>
+    <div class="meta-pills">
+      <span class="pill pascal">c0007-pascoa2026</span>
+      <span class="pill">2026-03-28</span>
+      <span class="pill accent">Instagram Reels + Carrossel</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Oportunidade Principal -->
+  <div class="opportunity-banner">
+    <h2>Oportunidade Principal Identificada</h2>
+    <p>A interseção entre o espírito pascal de renovação/recomeço e a urgência de atualização em IA cria uma janela única para a INEMA. Enquanto concorrentes exploram promoções de produto, <strong>nenhuma marca educacional digital está ocupando o espaço de transformação de carreira pascal</strong> — completamente inexplorado.</p>
+  </div>
+
+  <!-- Tendências -->
+  <div class="section-title">Tendências de Mercado</div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title"><span class="icon">📈</span> Páscoa como Plataforma de Marca</div>
+      <div class="card-body">Em 2026, a Páscoa se consolida como momento estratégico de construção de marca. Storytelling emocional e valores de renovação geram mais engajamento que promoções.</div>
+      <span class="badge alta">Alta</span>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🎬</span> Carrossel + Reels = Dupla de Ouro</div>
+      <div class="card-body">Carrosseis geram salvamentos e storytelling profundo; Reels geram alcance e novas audiências. Essa dupla é a estratégia mais eficaz de crescimento no Instagram 2026.</div>
+      <span class="badge alta">Alta</span>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🧠</span> Conteúdo Educacional Prático</div>
+      <div class="card-body">Conteúdo educacional no formato direto e aplicável voltou a dominar. "Vou usar isso agora" é o critério de retenção. INEMA.CLUB tem fit perfeito com essa tendência.</div>
+      <span class="badge alta">Alta</span>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🤝</span> Páscoa Solidária Viral</div>
+      <div class="card-body">Campanhas de Páscoa com viés solidário estão gerando alto engajamento orgânico. Open-source como solidariedade digital é o ângulo perfeito para INEMA.</div>
+      <span class="badge media">Média</span>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🌟</span> Marketing de Influenciadores</div>
+      <div class="card-body">57% das marcas brasileiras aumentarão budget com influenciadores em 2026. Engajamento real gera até 3x mais conversão. Nei Maldaner: 40 anos de autoridade.</div>
+      <span class="badge media">Média</span>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🔥</span> POV e Narrativa Humana</div>
+      <div class="card-body">Conteúdo em primeira pessoa com ponto de vista claro e humano segue performando muito bem. Música deixa de ser protagonista — narrativa e retenção pesam mais.</div>
+      <span class="badge alta">Alta</span>
+    </div>
+  </div>
+
+  <!-- Gráfico: Engajamento por Formato -->
+  <div class="chart-container">
+    <div class="chart-title">Potencial de Engajamento por Formato — Páscoa 2026</div>
+    <div class="chart-subtitle">Índice de 0 a 100 com base em tendências de mercado identificadas</div>
+    <canvas id="formatChart"></canvas>
+  </div>
+
+  <!-- Motivações do Público -->
+  <div class="section-title">Motivações do Público</div>
+  <div class="grid-2">
+    <div class="chart-container" style="margin-bottom:0">
+      <div class="chart-title">Distribuição das Motivações Pascais</div>
+      <div class="chart-subtitle">Gatilhos emocionais do público INEMA na Páscoa</div>
+      <canvas id="motivacoesChart"></canvas>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="card" style="flex:1">
+        <div class="card-title"><span class="icon">🔄</span> Renovação e Novos Ciclos</div>
+        <div class="card-body">Gatilho: "esperança de dias melhores". Conexão INEMA: CLUB e VIP como o "ovo" da nova fase da carreira.</div>
+      </div>
+      <div class="card" style="flex:1">
+        <div class="card-title"><span class="icon">🌐</span> Conexão Comunitária</div>
+        <div class="card-body">Gatilho: "não quero ficar para trás". +30 grupos Telegram da comunidade VIP como o lugar de pertencer.</div>
+      </div>
+      <div class="card" style="flex:1">
+        <div class="card-title"><span class="icon">⚡</span> Urgência de Atualização</div>
+        <div class="card-body">Gatilho: "medo de ficar obsoleto". INEMA como solução urgente e acessível — R$ 35/mês ou grátis no CLUB.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ad Hooks -->
+  <div class="section-title" style="margin-top:40px">Ad Hooks — Rankeados por Potencial Viral</div>
+
+  <div class="hook-card">
+    <div class="hook-rank">#1</div>
+    <div style="flex:1">
+      <div class="hook-text">"Essa Páscoa, ao invés de ganhar só um ovo, você pode ganhar uma habilidade que muda sua carreira — de graça."</div>
+      <div class="hook-why">Inverte expectativa pascalina + proposta de valor irresistível (gratuito) + urgência sazonal</div>
+      <div class="score-bar" style="width:95%"></div>
+    </div>
+  </div>
+
+  <div class="hook-card">
+    <div class="hook-rank">#2</div>
+    <div style="flex:1">
+      <div class="hook-text">"Páscoa é sobre recomeços. E o seu começo com IA é 100% grátis no INEMA.CLUB."</div>
+      <div class="hook-why">Símbolo pascal mais forte (recomeço) + elimina barreira de custo diretamente</div>
+      <div class="score-bar" style="width:88%"></div>
+    </div>
+  </div>
+
+  <div class="hook-card">
+    <div class="hook-rank">#3</div>
+    <div style="flex:1">
+      <div class="hook-text">"Enquanto o Brasil troca ovos de Páscoa, a comunidade INEMA troca conhecimento."</div>
+      <div class="hook-why">Contraste criativo e memorável — posiciona INEMA acima da experiência pascalina padrão</div>
+      <div class="score-bar" style="width:85%"></div>
+    </div>
+  </div>
+
+  <div class="hook-card">
+    <div class="hook-rank">#4</div>
+    <div style="flex:1">
+      <div class="hook-text">"O ovo que vai chocar sua carreira não é de chocolate — é de conhecimento."</div>
+      <div class="hook-why">Metáfora inusitada e viral. Fácil de compartilhar. Conecta Páscoa ao produto de forma criativa.</div>
+      <div class="score-bar" style="width:78%"></div>
+    </div>
+  </div>
+
+  <div class="hook-card">
+    <div class="hook-rank">#5</div>
+    <div style="flex:1">
+      <div class="hook-text">"A Páscoa chegou. O futuro também. Você está pronto?"</div>
+      <div class="hook-why">Urgência dupla (data pascal + urgência IA). FOMO suave. Alta retenção nos primeiros 3 segundos.</div>
+      <div class="score-bar" style="width:72%"></div>
+    </div>
+  </div>
+
+  <!-- Score dos Hooks Chart -->
+  <div class="chart-container">
+    <div class="chart-title">Score de Viralidade dos Ad Hooks</div>
+    <div class="chart-subtitle">Potencial de engajamento estimado para cada hook (0–100)</div>
+    <canvas id="hooksChart"></canvas>
+  </div>
+
+  <!-- Conceitos de Vídeo -->
+  <div class="section-title">Conceitos de Vídeo (Reels 1080×1920)</div>
+
+  <div class="video-concept">
+    <div class="video-concept-header">
+      <div class="video-concept-title">🎬 Reel 1 — A Páscoa do Renascimento Profissional</div>
+      <div class="video-meta">
+        <span class="pill">1080×1920</span>
+        <span class="pill accent">Voz Feminina Emotiva</span>
+        <span class="pill pascal">30–45s</span>
+      </div>
+    </div>
+    <div class="video-hook">"Essa Páscoa, ao invés de ganhar só um ovo, você pode ganhar uma habilidade que muda sua carreira — de graça."</div>
+    <div class="video-grid">
+      <div class="video-field"><label>Arco Emocional</label><span>Urgência → Esperança → Resolução → CTA</span></div>
+      <div class="video-field"><label>Estilo Visual</label><span>Ovos coloridos → Interface IA → Pessoa confiante com luz ciano</span></div>
+      <div class="video-field"><label>CTA Final</label><span>Comece grátis agora: inema.club</span></div>
+    </div>
+  </div>
+
+  <div class="video-concept">
+    <div class="video-concept-header">
+      <div class="video-concept-title">🎬 Reel 2 — A Comunidade que Cresce Junto na Páscoa</div>
+      <div class="video-meta">
+        <span class="pill">1080×1920</span>
+        <span class="pill accent">Voz Feminina Calorosa</span>
+        <span class="pill pascal">30–45s</span>
+      </div>
+    </div>
+    <div class="video-hook">"Enquanto o Brasil troca ovos de Páscoa, a comunidade INEMA troca conhecimento — e isso transforma carreiras."</div>
+    <div class="video-grid">
+      <div class="video-field"><label>Arco Emocional</label><span>Identificação → Pertencimento → Desejo → CTA</span></div>
+      <div class="video-field"><label>Estilo Visual</label><span>Conexão digital + ovos pascais → Comunidade Telegram ativa</span></div>
+      <div class="video-field"><label>CTA Final</label><span>Entre para a comunidade: inema.vip</span></div>
+    </div>
+  </div>
+
+  <!-- Ângulos por Ativação -->
+  <div class="section-title">Ângulos por Força de Ativação</div>
+  <div class="chart-container">
+    <div class="chart-title">Força dos Ângulos de Marketing</div>
+    <div class="chart-subtitle">Avaliação de potencial de conversão por ângulo estratégico</div>
+    <canvas id="angulosChart"></canvas>
+  </div>
+
+  <!-- Keywords -->
+  <div class="section-title">Keywords da Campanha</div>
+  <div class="keywords-cloud">
+    <span class="keyword primary">#pascoa2026</span>
+    <span class="keyword primary">#inema</span>
+    <span class="keyword primary">#inemavip</span>
+    <span class="keyword primary">#inemaclub</span>
+    <span class="keyword primary">#inematds</span>
+    <span class="keyword">#transformacaodigital</span>
+    <span class="keyword">#educacaodigital</span>
+    <span class="keyword">#inteligenciaartificial</span>
+    <span class="keyword">#automacao</span>
+    <span class="keyword">#profissionaldofuturo</span>
+    <span class="keyword">#renovacao</span>
+    <span class="keyword">#recomeço</span>
+    <span class="keyword">#comunidadeia</span>
+    <span class="keyword">#pascoa</span>
+    <span class="keyword">#esperanca</span>
+    <span class="keyword">#carreira</span>
+    <span class="keyword">#crescimento</span>
+    <span class="keyword">#promptengineering</span>
+    <span class="keyword">#viralcontent</span>
+    <span class="keyword">#reels</span>
+    <span class="keyword">#carrossel</span>
+    <span class="keyword">#instagram</span>
+    <span class="keyword">#open-source</span>
+    <span class="keyword">#gratuito</span>
+  </div>
+
+  <!-- Próximos Passos -->
+  <div class="next-steps">
+    <h3>Próximos Passos do Pipeline</h3>
+    <div class="next-step-item">
+      <div class="step-icon">✅</div>
+      <div class="step-text">
+        <strong>Research Agent — CONCLUÍDO</strong>
+        <span>5 buscas avançadas Tavily · 3 entregáveis gerados · 2026-03-28</span>
+      </div>
+    </div>
+    <div class="next-step-item">
+      <div class="step-icon">🎨</div>
+      <div class="step-text">
+        <strong>Ad Creative Designer — PRÓXIMO (paralelo)</strong>
+        <span>Imagens KIE z-image pascal 1080×1080 · Carrosseis 1 e 2 · Zero texto nas imagens geradas</span>
+      </div>
+    </div>
+    <div class="next-step-item">
+      <div class="step-icon">🎬</div>
+      <div class="step-text">
+        <strong>Video Ad Specialist — PRÓXIMO (paralelo)</strong>
+        <span>Roteiro Reels 1080×1920 · Voz feminina pt-BR · ElevenLabs / Fish Audio / Azure TTS</span>
+      </div>
+    </div>
+    <div class="next-step-item">
+      <div class="step-icon">✍️</div>
+      <div class="step-text">
+        <strong>Copywriter Agent — Após Creative</strong>
+        <span>Legendas Instagram · Hashtags · CTAs por plataforma</span>
+      </div>
+    </div>
+    <div class="next-step-item">
+      <div class="step-icon">🚀</div>
+      <div class="step-text">
+        <strong>Distribution Agent — Publicação Final</strong>
+        <span>Upload Supabase · Instagram Graph API · Publish MD</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  INEMA — Pesquisa de Mercado · Campanha c0007-pascoa2026 · 2026-03-28 · Powered by Tavily AI SDK
+</footer>
+
+<script>
+  const primary = '#0099FF';
+  const accent = '#00FF88';
+  const coral = '#FF6B6B';
+  const yellow = '#FFE66D';
+  const lavender = '#C77DFF';
+  const mint = '#4ECDC4';
+  const gridColor = 'rgba(255,255,255,0.07)';
+  const textColor = '#8888AA';
+
+  Chart.defaults.color = textColor;
+  Chart.defaults.borderColor = gridColor;
+  Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
+
+  // Gráfico 1: Engajamento por Formato
+  new Chart(document.getElementById('formatChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Reels', 'Carrossel', 'Stories', 'Lives', 'Post Feed'],
+      datasets: [{
+        label: 'Potencial de Engajamento',
+        data: [92, 87, 74, 65, 58],
+        backgroundColor: [
+          'rgba(0, 153, 255, 0.7)',
+          'rgba(0, 255, 136, 0.7)',
+          'rgba(255, 230, 109, 0.7)',
+          'rgba(199, 125, 255, 0.7)',
+          'rgba(78, 205, 196, 0.7)'
+        ],
+        borderColor: [primary, accent, yellow, lavender, mint],
+        borderWidth: 2,
+        borderRadius: 8,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` Score: ${ctx.raw}/100` } }
+      },
+      scales: {
+        y: { min: 0, max: 100, grid: { color: gridColor } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+
+  // Gráfico 2: Motivações (Doughnut)
+  new Chart(document.getElementById('motivacoesChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Renovação e novos ciclos', 'Conexão comunitária', 'Crescimento pessoal', 'Urgência de atualização'],
+      datasets: [{
+        data: [32, 27, 25, 16],
+        backgroundColor: [
+          'rgba(0, 153, 255, 0.8)',
+          'rgba(0, 255, 136, 0.8)',
+          'rgba(255, 230, 109, 0.8)',
+          'rgba(255, 107, 107, 0.8)'
+        ],
+        borderColor: ['#050510'],
+        borderWidth: 3,
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '65%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { padding: 16, usePointStyle: true, pointStyleWidth: 10 }
+        }
+      }
+    }
+  });
+
+  // Gráfico 3: Hooks Score
+  new Chart(document.getElementById('hooksChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Hook 1', 'Hook 2', 'Hook 3', 'Hook 4', 'Hook 5'],
+      datasets: [{
+        label: 'Score de Viralidade',
+        data: [95, 88, 85, 78, 72],
+        backgroundColor: [
+          'rgba(0, 255, 136, 0.8)',
+          'rgba(0, 153, 255, 0.8)',
+          'rgba(78, 205, 196, 0.7)',
+          'rgba(199, 125, 255, 0.7)',
+          'rgba(255, 230, 109, 0.7)'
+        ],
+        borderWidth: 0,
+        borderRadius: 10,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { min: 0, max: 100, grid: { color: gridColor } },
+        y: { grid: { display: false } }
+      }
+    }
+  });
+
+  // Gráfico 4: Ângulos de Marketing
+  new Chart(document.getElementById('angulosChart'), {
+    type: 'radar',
+    data: {
+      labels: ['Alcance Orgânico', 'Conversão VIP', 'Conversão CLUB', 'Viralidade', 'Autoridade de Marca', 'Engajamento Pascal'],
+      datasets: [
+        {
+          label: 'Páscoa da Transformação Digital',
+          data: [85, 70, 90, 80, 75, 95],
+          backgroundColor: 'rgba(0, 153, 255, 0.15)',
+          borderColor: primary,
+          borderWidth: 2,
+          pointBackgroundColor: primary,
+        },
+        {
+          label: 'Comunidade que Planta e Colhe Junto',
+          data: [78, 88, 65, 75, 80, 85],
+          backgroundColor: 'rgba(0, 255, 136, 0.1)',
+          borderColor: accent,
+          borderWidth: 2,
+          pointBackgroundColor: accent,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { padding: 20, usePointStyle: true } }
+      },
+      scales: {
+        r: {
+          min: 0,
+          max: 100,
+          grid: { color: gridColor },
+          angleLines: { color: gridColor },
+          pointLabels: { color: textColor, font: { size: 12 } },
+          ticks: { display: false }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>

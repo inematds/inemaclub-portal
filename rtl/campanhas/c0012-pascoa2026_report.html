@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INEMA — Relatório de Pesquisa | Páscoa 2026 Futurista</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg-color: #090912;
+      --bg-secondary: #0D0D1A;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --card-border: rgba(0, 153, 255, 0.15);
+      --primary-accent: #0099FF;
+      --secondary-accent: #00FF88;
+      --tertiary-accent: #7B61FF;
+      --text-primary: #F0F4FF;
+      --text-secondary: #8899BB;
+      --text-muted: #4A5568;
+      --gradient-1: linear-gradient(135deg, #0099FF 0%, #00FF88 100%);
+      --gradient-2: linear-gradient(135deg, #7B61FF 0%, #0099FF 100%);
+      --gradient-3: linear-gradient(135deg, #00FF88 0%, #0099FF 60%, #7B61FF 100%);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg-color); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--card-bg);
+      border-radius: 6px;
+      border: 2px solid var(--bg-color);
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--primary-accent); }
+
+    /* Ambient Background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -200px;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 153, 255, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 255, 136, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero Header */
+    .hero {
+      padding: 60px 0 40px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(0, 153, 255, 0.12);
+      border: 1px solid rgba(0, 153, 255, 0.3);
+      color: var(--primary-accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .hero h1 .gradient-text {
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .hero-meta-item span:first-child {
+      color: var(--secondary-accent);
+      font-weight: 700;
+    }
+
+    /* Section */
+    .section { padding: 40px 0; }
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 22px;
+      background: var(--gradient-1);
+      border-radius: 2px;
+    }
+    .section-desc {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 28px;
+      margin-left: 16px;
+    }
+
+    /* Cards Grid */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.3s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: rgba(0, 153, 255, 0.4);
+      transform: translateY(-2px);
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    .card-body {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Relevance Badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+    .badge-high { background: rgba(0, 255, 136, 0.12); color: var(--secondary-accent); }
+    .badge-medium { background: rgba(0, 153, 255, 0.12); color: var(--primary-accent); }
+
+    /* Chart containers */
+    .chart-wrapper {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      margin-bottom: 20px;
+    }
+    .chart-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .chart-canvas-wrap {
+      position: relative;
+      height: 280px;
+    }
+
+    /* Hooks Table */
+    .hooks-table { width: 100%; border-collapse: collapse; }
+    .hooks-table th {
+      text-align: left;
+      padding: 10px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .hooks-table td {
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      vertical-align: top;
+    }
+    .hooks-table tr:hover td { background: rgba(0,153,255,0.04); }
+    .hook-text { color: var(--text-primary); font-weight: 600; }
+    .hook-tag {
+      display: inline-block;
+      background: rgba(123, 97, 255, 0.15);
+      color: var(--tertiary-accent);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    /* Angle Cards */
+    .angle-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      position: relative;
+      overflow: hidden;
+    }
+    .angle-card::before {
+      content: attr(data-rank);
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 42px;
+      font-weight: 900;
+      opacity: 0.07;
+      color: var(--primary-accent);
+    }
+    .angle-rank {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--primary-accent);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .angle-hook {
+      font-size: 15px;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--text-primary);
+      border-left: 3px solid var(--secondary-accent);
+      padding-left: 12px;
+      margin: 12px 0;
+    }
+
+    /* Keywords Cloud */
+    .keywords-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .keyword {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: default;
+      transition: transform 0.2s;
+    }
+    .keyword:hover { transform: scale(1.05); }
+    .kw-primary { background: rgba(0,153,255,0.15); color: var(--primary-accent); border: 1px solid rgba(0,153,255,0.2); }
+    .kw-secondary { background: rgba(0,255,136,0.1); color: var(--secondary-accent); border: 1px solid rgba(0,255,136,0.15); }
+    .kw-tertiary { background: rgba(123,97,255,0.1); color: var(--tertiary-accent); border: 1px solid rgba(123,97,255,0.15); }
+
+    /* Opportunity Banner */
+    .opportunity-banner {
+      background: linear-gradient(135deg, rgba(0,153,255,0.1) 0%, rgba(0,255,136,0.06) 100%);
+      border: 1px solid rgba(0,153,255,0.25);
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .opportunity-banner h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .opportunity-banner p {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    .report-footer {
+      text-align: center;
+      padding: 40px 0 60px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 40px;
+    }
+    .report-footer p {
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    /* Separator */
+    .sep { border: none; border-top: 1px solid rgba(255,255,255,0.05); margin: 40px 0; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-tag">Relatório de Pesquisa de Mercado</div>
+    <h1>INEMA × <span class="gradient-text">Páscoa 2026 Futurista</span></h1>
+    <p class="hero-sub">Inteligência de marketing para a campanha c0012-pascoa2026 — cruzando educação em IA com o universo pascal</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span>Campanha</span><span>c0012-pascoa2026</span></div>
+      <div class="hero-meta-item"><span>Data</span><span>28 de março de 2026</span></div>
+      <div class="hero-meta-item"><span>Plataforma</span><span>Instagram</span></div>
+      <div class="hero-meta-item"><span>Formato</span><span>Carrossel + Reels</span></div>
+    </div>
+  </div>
+
+  <!-- Opportunity Banner -->
+  <div class="opportunity-banner">
+    <h2>🚀 A Grande Oportunidade</h2>
+    <p>A intersecção entre o simbolismo de renovação da Páscoa e a transformação profissional via IA é um terreno praticamente inexplorado no marketing educacional brasileiro. A INEMA tem posicionamento único: credibilidade histórica de 40 anos, conteúdo gratuito de ponta e comunidade ativa. A metáfora do "ovo que eclode" como renascimento profissional é poderosa, original e perfeitamente alinhada ao momento de 2026.</p>
+  </div>
+
+  <!-- Tendências -->
+  <div class="section">
+    <div class="section-title">Tendências de Mercado</div>
+    <p class="section-desc">Relevância de cada tendência identificada para a campanha INEMA Páscoa 2026</p>
+    <div class="chart-wrapper">
+      <div class="chart-title">Índice de Relevância por Tendência (%)</div>
+      <div class="chart-canvas-wrap">
+        <canvas id="trendsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">🤖 IA na Educação em 2026</div>
+        <div class="card-body">IA se consolida como agenda estrutural no Brasil. Debate migrou do entusiasmo para qualidade pedagógica e impacto real na aprendizagem. Momento ideal para INEMA posicionar-se como referência prática.</div>
+        <span class="badge badge-high">⬆ Alta Relevância · 78%</span>
+      </div>
+      <div class="card">
+        <div class="card-title">📱 Carrossel + Reels = Ouro</div>
+        <div class="card-body">A dupla é o principal motor de crescimento orgânico no Instagram em 2026. Carrossel gera salvamentos e storytelling; Reels entrega alcance e novos seguidores. Campanha usa ambos.</div>
+        <span class="badge badge-high">⬆ Alta Relevância · 85%</span>
+      </div>
+      <div class="card">
+        <div class="card-title">🥚 Páscoa como Marca Estratégica</div>
+        <div class="card-body">Páscoa 2026 consolida-se como plataforma de construção de marca. Tema de renovação alinha com jornada de transformação profissional da INEMA — não só varejo, mas posicionamento.</div>
+        <span class="badge badge-medium">→ Relevância Média · 60%</span>
+      </div>
+      <div class="card">
+        <div class="card-title">✨ Autenticidade Supera IA Genérica</div>
+        <div class="card-body">Saturação de conteúdo gerado por IA aumenta valor de histórias reais. INEMA tem Nei Maldaner com 40 anos de história real — diferencial competitivo imenso em 2026.</div>
+        <span class="badge badge-high">⬆ Alta Relevância · 70%</span>
+      </div>
+      <div class="card">
+        <div class="card-title">📚 Conteúdo Educativo Prático</div>
+        <div class="card-body">"Vou usar isso agora" é o critério de engajamento em 2026. Conteúdo educacional prático e aplicável voltou a ser trending. Tutoriais em série aumentam retenção e visitas ao perfil.</div>
+        <span class="badge badge-high">⬆ Alta Relevância · 82%</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep" />
+
+  <!-- Público -->
+  <div class="section">
+    <div class="section-title">Segmentação de Público</div>
+    <p class="section-desc">Distribuição e motivações dos segmentos prioritários da campanha</p>
+
+    <div class="grid-2">
+      <div class="chart-wrapper">
+        <div class="chart-title">Distribuição dos Segmentos (%)</div>
+        <div class="chart-canvas-wrap">
+          <canvas id="audienceChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-wrapper">
+        <div class="chart-title">Intensidade de Dor por Segmento</div>
+        <div class="chart-canvas-wrap">
+          <canvas id="painChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep" />
+
+  <!-- Ângulos de Campanha -->
+  <div class="section">
+    <div class="section-title">Ângulos Estratégicos de Campanha</div>
+    <p class="section-desc">4 posicionamentos narrativos identificados, em ordem de potencial</p>
+
+    <div class="grid-2">
+      <div class="angle-card" data-rank="1">
+        <div class="angle-rank">🥇 Ângulo Principal — Recomendado</div>
+        <div class="card-title">Renascimento Profissional</div>
+        <div class="angle-hook">"Essa Páscoa, o ovo que vai mudar sua carreira é gratuito."</div>
+        <div class="card-body">Páscoa = renovação e recomeço. Para o profissional em transição, entrar para o INEMA é o renascimento digital. Une urgência (obsolescência), esperança (renovação) e CTA claro (inema.club grátis).</div>
+        <span class="badge badge-high">Carrossel + Reel inspirador</span>
+      </div>
+      <div class="angle-card" data-rank="2">
+        <div class="angle-rank">🥈 Ângulo Secundário</div>
+        <div class="card-title">Os Ovos da IA</div>
+        <div class="angle-hook">"Quantos ovos de IA você já abriu? 🥚🤖"</div>
+        <div class="card-body">Cada ovo esconde uma habilidade: Prompt Engineering, n8n, Agentes, Claude Code, Automação. Gamificação + Educação + Visual neon = alto salvamento e compartilhamento.</div>
+        <span class="badge badge-medium">Carrossel educativo · 5 slides</span>
+      </div>
+      <div class="angle-card" data-rank="3">
+        <div class="angle-rank">🥉 Ângulo Visual</div>
+        <div class="card-title">Coelhinhos do Futuro</div>
+        <div class="angle-hook">"Esqueça o chocolate. O Coelhinho do Futuro trouxe IA de graça."</div>
+        <div class="card-body">Personagens futuristas estilizados entregam skills em vez de chocolate. Alta memorabilidade visual, diferenciação competitiva, tom divertido ideal para Reels.</div>
+        <span class="badge badge-medium">Reel animado · Alta memorabilidade</span>
+      </div>
+      <div class="angle-card" data-rank="4">
+        <div class="angle-rank">💛 Ângulo Emocional</div>
+        <div class="card-title">Solidariedade Digital</div>
+        <div class="angle-hook">"Nosso presente de Páscoa para o Brasil: conhecimento em IA, 100% gratuito."</div>
+        <div class="card-body">INEMA distribui cursos gratuitos como presente de Páscoa para o Brasil. Alinha com tendência de Páscoa Solidária identificada na pesquisa — comunidade + generosidade.</div>
+        <span class="badge badge-medium">Vídeo emocional + post comunidade</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep" />
+
+  <!-- Hooks -->
+  <div class="section">
+    <div class="section-title">Hooks de Alto Desempenho</div>
+    <p class="section-desc">Linhas de abertura com maior potencial de scroll-stop no Instagram</p>
+
+    <div class="chart-wrapper">
+      <table class="hooks-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Hook</th>
+            <th>Ângulo</th>
+            <th>Gatilho</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="hook-text">Essa Páscoa, o ovo que vai mudar sua carreira é gratuito. 🥚🤖</td>
+            <td><span class="hook-tag">Renascimento</span></td>
+            <td>Urgência + Gratuidade</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="hook-text">E se o Coelhinho da Páscoa trouxesse IA em vez de chocolate?</td>
+            <td><span class="hook-tag">Coelhinhos</span></td>
+            <td>Surpresa + Humor</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="hook-text">Renove sua carreira. De graça. Agora. → inema.club</td>
+            <td><span class="hook-tag">Renascimento</span></td>
+            <td>Clareza + CTA direto</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="hook-text">40+ cursos de IA. R$0. Seu presente de Páscoa da INEMA.</td>
+            <td><span class="hook-tag">Solidariedade</span></td>
+            <td>Valor + Gratuidade</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="hook-text">Cada ovo esconde uma habilidade. Qual você vai abrir hoje?</td>
+            <td><span class="hook-tag">Ovos da IA</span></td>
+            <td>Curiosidade + Gamificação</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td class="hook-text">O futuro não espera. Mas a IA pode esperar por você aprender. Começa agora.</td>
+            <td><span class="hook-tag">Urgência</span></td>
+            <td>FOMO + Empoderamento</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="sep" />
+
+  <!-- Conceitos de Vídeo -->
+  <div class="section">
+    <div class="section-title">Conceitos de Vídeo</div>
+    <p class="section-desc">Planejamento dos dois vídeos — video_quick e video_pro — para Instagram Reels</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">⚡ video_quick (~30s)</div>
+        <div class="angle-hook">"E se esse ovo de Páscoa te desse acesso a 40+ cursos de IA, de graça?"</div>
+        <div class="card-body">
+          <strong>Arco:</strong> Curiosidade → Surpresa → Inspiração → CTA<br><br>
+          <strong>Visual:</strong> Futurista neon — coelhos estilizados, ovos holográficos, UI de IA no fundo<br><br>
+          <strong>Narração:</strong> Voz feminina, tom leve e direto<br><br>
+          <strong>Música:</strong> Eletrônica futurista suave
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">🎬 video_pro (~60s)</div>
+        <div class="angle-hook">"Toda Páscoa, algo nasce. Nessa, pode ser a sua carreira em IA."</div>
+        <div class="card-body">
+          <strong>Arco:</strong> Dor (obsolescência) → Virada (INEMA) → Transformação → Comunidade → CTA<br><br>
+          <strong>Visual:</strong> Cinematográfico futurista — telas de IA, ovos neon se abrindo revelando código<br><br>
+          <strong>Narração:</strong> Voz feminina, tom emocional e motivacional<br><br>
+          <strong>Música:</strong> Trilha inspiradora com build-up
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep" />
+
+  <!-- Keywords -->
+  <div class="section">
+    <div class="section-title">Palavras-chave Estratégicas</div>
+    <p class="section-desc">Termos de alta relevância para SEO, legendas e hashtags da campanha</p>
+
+    <div class="keywords-cloud">
+      <span class="keyword kw-primary">pascoa 2026</span>
+      <span class="keyword kw-secondary">ia educacao</span>
+      <span class="keyword kw-primary">renovacao digital</span>
+      <span class="keyword kw-tertiary">inema</span>
+      <span class="keyword kw-secondary">inema.club</span>
+      <span class="keyword kw-primary">coelho futurista</span>
+      <span class="keyword kw-secondary">ovos de ia</span>
+      <span class="keyword kw-primary">aprendizado ia</span>
+      <span class="keyword kw-tertiary">automacao brasil</span>
+      <span class="keyword kw-secondary">profissional do futuro</span>
+      <span class="keyword kw-primary">comunidade tech</span>
+      <span class="keyword kw-tertiary">reels educativos</span>
+      <span class="keyword kw-primary">carrossel instagram</span>
+      <span class="keyword kw-secondary">prompt engineering</span>
+      <span class="keyword kw-primary">n8n automacao</span>
+      <span class="keyword kw-tertiary">transformacao digital</span>
+      <span class="keyword kw-secondary">cursos gratuitos ia</span>
+      <span class="keyword kw-primary">inema vip</span>
+      <span class="keyword kw-tertiary">tecnologia educacao</span>
+      <span class="keyword kw-secondary">pascoa futurista</span>
+      <span class="keyword kw-primary">claude code</span>
+      <span class="keyword kw-tertiary">agentes ia</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="report-footer">
+    <p>
+      Relatório gerado pelo <strong>Marketing Research Agent</strong> — ITAGMKT v4.0.0<br>
+      Campanha: <strong>c0012-pascoa2026</strong> | Projeto: <strong>INEMA</strong> | 28 de março de 2026<br>
+      <em>Próximo agente: Creative Director → brief criativo consolidado</em>
+    </p>
+  </div>
+
+</div>
+
+<script>
+  const neonBlue = '#0099FF';
+  const neonGreen = '#00FF88';
+  const neonPurple = '#7B61FF';
+  const gridColor = 'rgba(255,255,255,0.05)';
+  const labelColor = '#8899BB';
+
+  Chart.defaults.color = labelColor;
+  Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
+
+  // Trends Bar Chart
+  new Chart(document.getElementById('trendsChart'), {
+    type: 'bar',
+    data: {
+      labels: ['IA na Educação', 'Carrossel + Reels', 'Páscoa como Marca', 'Anti-IA Genérica', 'Conteúdo Prático'],
+      datasets: [{
+        label: 'Relevância (%)',
+        data: [78, 85, 60, 70, 82],
+        backgroundColor: [
+          'rgba(0, 153, 255, 0.6)',
+          'rgba(0, 255, 136, 0.6)',
+          'rgba(123, 97, 255, 0.6)',
+          'rgba(0, 153, 255, 0.4)',
+          'rgba(0, 255, 136, 0.4)'
+        ],
+        borderColor: [neonBlue, neonGreen, neonPurple, neonBlue, neonGreen],
+        borderWidth: 1.5,
+        borderRadius: 8
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(13,13,26,0.95)',
+          borderColor: 'rgba(0,153,255,0.3)',
+          borderWidth: 1
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100,
+          grid: { color: gridColor },
+          ticks: { callback: v => v + '%' }
+        },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+
+  // Audience Donut
+  new Chart(document.getElementById('audienceChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Iniciante em IA', 'Empreendedor Digital', 'Desenvolvedor', 'Criativo/Designer', 'Educador'],
+      datasets: [{
+        data: [35, 25, 20, 10, 10],
+        backgroundColor: [
+          'rgba(0, 153, 255, 0.7)',
+          'rgba(0, 255, 136, 0.7)',
+          'rgba(123, 97, 255, 0.7)',
+          'rgba(0, 153, 255, 0.35)',
+          'rgba(0, 255, 136, 0.35)'
+        ],
+        borderColor: '#090912',
+        borderWidth: 3,
+        hoverOffset: 8
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: { boxWidth: 12, padding: 16, font: { size: 12 } }
+        },
+        tooltip: {
+          backgroundColor: 'rgba(13,13,26,0.95)',
+          borderColor: 'rgba(0,153,255,0.3)',
+          borderWidth: 1,
+          callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed}%` }
+        }
+      },
+      cutout: '65%'
+    }
+  });
+
+  // Pain Points Radar
+  new Chart(document.getElementById('painChart'), {
+    type: 'radar',
+    data: {
+      labels: ['Medo de Obsolescência', 'Custo de Cursos', 'Isolamento', 'Falta de Praticidade', 'Falta de PT-BR'],
+      datasets: [
+        {
+          label: 'Iniciante em IA',
+          data: [90, 80, 70, 85, 75],
+          borderColor: neonBlue,
+          backgroundColor: 'rgba(0,153,255,0.1)',
+          pointBackgroundColor: neonBlue,
+          borderWidth: 2
+        },
+        {
+          label: 'Empreendedor',
+          data: [70, 60, 55, 90, 65],
+          borderColor: neonGreen,
+          backgroundColor: 'rgba(0,255,136,0.08)',
+          pointBackgroundColor: neonGreen,
+          borderWidth: 2
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top', labels: { boxWidth: 12, padding: 12 } },
+        tooltip: {
+          backgroundColor: 'rgba(13,13,26,0.95)',
+          borderColor: 'rgba(0,153,255,0.3)',
+          borderWidth: 1
+        }
+      },
+      scales: {
+        r: {
+          beginAtZero: true,
+          max: 100,
+          grid: { color: gridColor },
+          angleLines: { color: gridColor },
+          pointLabels: { font: { size: 11 } },
+          ticks: { display: false }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>

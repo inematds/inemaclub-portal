@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITAGMKT v4.2.8 — Relatorio Completo INEMA</title>
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #1a1a2e;
+    --surface2: #16213e;
+    --accent: #00d4aa;
+    --accent2: #7c3aed;
+    --text: #e8e8e8;
+    --text-muted: #8892a4;
+    --border: #2a2a4a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header p { color: var(--text-muted); margin-top: 8px; font-size: 1.05rem; }
+  .version {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: rgba(0,212,170,0.12);
+    color: var(--accent);
+    border: 1px solid rgba(0,212,170,0.25);
+  }
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+  .stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 48px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 28px 0 12px;
+    color: var(--text);
+  }
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 20px 0 8px;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  p, li { color: var(--text); font-size: 0.92rem; margin-bottom: 6px; }
+  ul { padding-left: 20px; margin-bottom: 16px; }
+  li { margin-bottom: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 24px;
+    font-size: 0.88rem;
+  }
+  th {
+    background: var(--surface);
+    color: var(--accent);
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  td {
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: rgba(26,26,46,0.4); }
+
+  .pipeline-visual {
+    display: flex;
+    gap: 6px;
+    margin: 24px 0 32px;
+    flex-wrap: wrap;
+  }
+  .pipe-step {
+    flex: 1;
+    min-width: 130px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 10px;
+    text-align: center;
+  }
+  .pipe-num { font-size: 1.5rem; font-weight: 800; color: var(--accent); }
+  .pipe-label { font-size: 0.72rem; color: var(--text-muted); margin-top: 4px; }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+  }
+  .card-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+  .card-desc { font-size: 0.8rem; color: var(--text-muted); }
+
+  code {
+    background: var(--surface);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+  pre {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin: 12px 0 20px;
+    color: var(--text);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 2px;
+  }
+  .tag-green { background: rgba(0,212,170,0.15); color: var(--accent); }
+  .tag-purple { background: rgba(124,58,237,0.15); color: var(--accent2); }
+  .tag-blue { background: rgba(59,130,246,0.15); color: #3b82f6; }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 1.6rem; }
+    .pipeline-visual { flex-direction: column; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ITAGMKT</h1>
+  <p>INEMA Time de Agentes de Marketing</p>
+  <span class="version">v4.2.8</span>
+  <div class="stats">
+    <div style="text-align:center"><div class="stat-num">13+</div><div class="stat-label">Agentes</div></div>
+    <div style="text-align:center"><div class="stat-num">5</div><div class="stat-label">Etapas</div></div>
+    <div style="text-align:center"><div class="stat-num">15</div><div class="stat-label">Componentes Remotion</div></div>
+    <div style="text-align:center"><div class="stat-num">6</div><div class="stat-label">Plataformas</div></div>
+    <div style="text-align:center"><div class="stat-num">8</div><div class="stat-label">Fontes Google</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Pipeline — 5 Estagios</h2>
+
+<div class="pipeline-visual">
+  <div class="pipe-step"><div class="pipe-num">1</div><div class="pipe-label">Estrategia & Narrativa</div></div>
+  <div class="pipe-step"><div class="pipe-num">2</div><div class="pipe-label">Imagens</div></div>
+  <div class="pipe-step"><div class="pipe-num">3</div><div class="pipe-label">Video</div></div>
+  <div class="pipe-step"><div class="pipe-num">4</div><div class="pipe-label">Plataformas</div></div>
+  <div class="pipe-step"><div class="pipe-num">5</div><div class="pipe-label">Distribuicao</div></div>
+</div>
+
+<table>
+  <tr><th>Etapa</th><th>Agentes</th><th>Aprovacao</th></tr>
+  <tr><td>1. Estrategia</td><td>Research + Diretor Criativo + Copywriter</td><td>Brief + narrativa</td></tr>
+  <tr><td>2. Imagens</td><td>Ad Creative Designer</td><td>Imagens estaticas</td></tr>
+  <tr><td>3. Video</td><td>Video Quick (default) + Video Pro (sob demanda)</td><td>Video</td></tr>
+  <tr><td>4. Plataformas</td><td>Instagram, YouTube, TikTok, Facebook, Threads, LinkedIn</td><td>Copy nativo</td></tr>
+  <tr><td>5. Distribuicao</td><td>Distribution Agent</td><td>Publicar</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Agentes</h2>
+
+<table>
+  <tr><th>#</th><th>Agente</th><th>Funcao</th><th>Stage</th></tr>
+  <tr><td>1</td><td>Research Agent</td><td>Pesquisa tendencias, concorrentes, audiencia via Tavily</td><td>1</td></tr>
+  <tr><td>2</td><td>Diretor Criativo</td><td>Define angulo estrategico + direcao visual</td><td>1</td></tr>
+  <tr><td>3</td><td>Copywriter</td><td>Cria narrativa central (nao copy de plataforma)</td><td>1</td></tr>
+  <tr><td>4</td><td>Ad Creative Designer</td><td>Imagens estaticas (HTML → PNG via Playwright)</td><td>2</td></tr>
+  <tr><td>5</td><td>Video Quick</td><td>Slideshow 10-20s, ffmpeg</td><td>3</td></tr>
+  <tr><td>6</td><td>Video Pro</td><td>Producao profissional 30-60s, Remotion</td><td>3</td></tr>
+  <tr><td>7</td><td>Instagram Agent</td><td>Carousel + stories + reels + captions</td><td>4</td></tr>
+  <tr><td>8</td><td>YouTube Agent</td><td>Titulo SEO + descricao + tags + shorts</td><td>4</td></tr>
+  <tr><td>9</td><td>TikTok Agent</td><td>Video curto + caption + hook 2s</td><td>4</td></tr>
+  <tr><td>10</td><td>Facebook Agent</td><td>Feed + stories + reels + video</td><td>4</td></tr>
+  <tr><td>11</td><td>Threads Agent</td><td>Posts conversacionais (max 500 chars)</td><td>4</td></tr>
+  <tr><td>12</td><td>LinkedIn Agent</td><td>Post profissional + carousel PDF</td><td>4</td></tr>
+  <tr><td>13</td><td>Distribution Agent</td><td>Upload Supabase + Agendar + Publicar APIs</td><td>5</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Etapa 1 — Estrategia & Narrativa</h2>
+
+<h3>Research Agent</h3>
+<p>Executa 5 pesquisas via Tavily AI SDK: tendencias, concorrentes, audiencia, hooks criativos, topicos virais.</p>
+<table>
+  <tr><th>Output</th><th>Descricao</th></tr>
+  <tr><td><code>research_results.json</code></td><td>Dados estruturados consumidos pelos agentes seguintes</td></tr>
+  <tr><td><code>research_brief.md</code></td><td>Relatorio legivel com graficos Mermaid</td></tr>
+  <tr><td><code>interactive_report.html</code></td><td>Dashboard interativo com Chart.js</td></tr>
+</table>
+
+<h3>Diretor Criativo</h3>
+<p>Escolhe UM angulo estrategico. Define direcao visual (mood, cores, fotografia, tipografia). Escreve mensagens-chave por plataforma. Define guardrails.</p>
+<table>
+  <tr><th>Output</th><th>Descricao</th></tr>
+  <tr><td><code>creative/creative_brief.json</code></td><td>Brief estruturado consumido por Designer, Copywriter, Video</td></tr>
+  <tr><td><code>creative/creative_brief.md</code></td><td>Brief legivel exibido na Aprovacao 1</td></tr>
+</table>
+
+<h3>Copywriter (Narrador)</h3>
+<p>Cria a narrativa central — arco emocional: hook → tensao → solucao → prova → CTA. Headlines, frases-chave, textos para carousel/stories, roteiro de video.</p>
+<table>
+  <tr><th>Output</th><th>Descricao</th></tr>
+  <tr><td><code>copy/narrative.json</code></td><td>Narrativa estruturada (headlines, key_phrases, emotional_arc)</td></tr>
+  <tr><td><code>copy/narrative.md</code></td><td>Narrativa legivel</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Etapa 2 — Imagens</h2>
+
+<h3>Ad Creative Designer</h3>
+<p>Funcao puramente visual — nao escreve copy. Consome <code>creative_brief.json</code> + <code>narrative.json</code>. Monta HTML + CSS, renderiza PNG via Playwright.</p>
+
+<h4>Fontes de imagem</h4>
+<table>
+  <tr><th>Valor</th><th>Alias (pt-BR)</th><th>Comportamento</th></tr>
+  <tr><td><code>api</code></td><td>—</td><td>Provider de IA do .env (IMAGE_PROVIDER)</td></tr>
+  <tr><td><code>free</code></td><td><code>gratis</code></td><td>Banco gratis (pexels, unsplash, pixabay)</td></tr>
+  <tr><td><code>brand</code></td><td><code>marca</code></td><td>Imagens de assets/ do projeto</td></tr>
+  <tr><td><code>folder</code></td><td><code>pasta</code></td><td>Pasta especifica via image_folder</td></tr>
+</table>
+
+<table>
+  <tr><th>Output</th><th>Descricao</th></tr>
+  <tr><td><code>ads/layout.json</code></td><td>Especificacao do design</td></tr>
+  <tr><td><code>ads/*.png</code></td><td>Imagens renderizadas (1080x1080 ou 1080x1920)</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Etapa 3 — Video</h2>
+
+<h3>Video Quick</h3>
+<p>Slideshow rapido (10-20s) usando imagens do Designer. 4-6 cenas, transicoes simples, Ken Burns. Render via <code>ffmpeg</code>.</p>
+
+<h3>Video Pro</h3>
+<p>Producao profissional em 4 fases:</p>
+<table>
+  <tr><th>Fase</th><th>O que faz</th></tr>
+  <tr><td>1. Roteiro</td><td>Scene plan com 30-50 cortes, narracao, musica. Render de rascunho (ffmpeg)</td></tr>
+  <tr><td>2. Imagens</td><td>Gera imagens reais via API para cada cena unica</td></tr>
+  <tr><td>3. Aprovacao</td><td>Usuario revisa roteiro/draft. Timeout 30 min</td></tr>
+  <tr><td>4. Render</td><td>Remotion (default) com fallback para ffmpeg. Timeout 10 min</td></tr>
+</table>
+
+<h4>Notificacoes Telegram do Video Pro</h4>
+<ul>
+  <li><code>[VIDEO_PRO_PROGRESS] plan_ready</code> — roteiro criado</li>
+  <li><code>[STAGE3_DRAFT_READY]</code> — rascunho renderizado (video enviado ao chat)</li>
+  <li><code>[VIDEO_PRO_PROGRESS] images_start</code> — gerando imagens</li>
+  <li><code>[VIDEO_PRO_PROGRESS] render_start</code> — renderizando final</li>
+</ul>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Remotion — 15 Componentes de Video</h2>
+
+<table>
+  <tr><th>Componente</th><th>Funcao</th></tr>
+  <tr><td>DynamicAd</td><td>Composicao principal — cenas, audio, subtitles, progress bar</td></tr>
+  <tr><td>DynamicScene</td><td>Cena dinamica — tipo, camera, overlay, texto, efeitos</td></tr>
+  <tr><td>CameraMotion</td><td>12 efeitos de camera + color grading</td></tr>
+  <tr><td>TextOverlay</td><td>11 animacoes de texto</td></tr>
+  <tr><td>TextBackgroundBand</td><td>Faixa localizada atras do texto (gradient, solid, blur, glass)</td></tr>
+  <tr><td>CTAButton</td><td>Botao CTA (solid, glass, outline, pill)</td></tr>
+  <tr><td>LowerThird</td><td>Barra inferior com info (bar, pill, glass, minimal)</td></tr>
+  <tr><td>Subtitles</td><td>Legendas sincronizadas (default, bold, karaoke, minimal)</td></tr>
+  <tr><td>ParticleEffects</td><td>Particulas (bokeh, dust, sparkle, glitch)</td></tr>
+  <tr><td>SplitScreen</td><td>Tela dividida antes/depois</td></tr>
+  <tr><td>ProgressBar</td><td>Barra de progresso (stories, line, dots)</td></tr>
+  <tr><td>KineticText</td><td>Tipografia cinetica (grow, wave, slam, elastic...)</td></tr>
+  <tr><td>ProductImage</td><td>Imagem de produto com animacao + glow</td></tr>
+  <tr><td>SceneBackgrounds</td><td>Fundos solidos, gradientes, glow rings, vignette</td></tr>
+  <tr><td>SVGIcons</td><td>Icones decorativos (sparkle burst, alarm clock)</td></tr>
+</table>
+
+<h3>Efeitos de Camera (12)</h3>
+<div class="card-grid">
+  <div class="card"><div class="card-title">ken-burns-in</div><div class="card-desc">Zoom lento para dentro — intimidade, emocao</div></div>
+  <div class="card"><div class="card-title">ken-burns-out</div><div class="card-desc">Zoom lento para fora — revelar, establishing</div></div>
+  <div class="card"><div class="card-title">pan-left / pan-right</div><div class="card-desc">Panorama horizontal — movimento, passagem</div></div>
+  <div class="card"><div class="card-title">pan-up / pan-down</div><div class="card-desc">Panorama vertical — esperanca / calma</div></div>
+  <div class="card"><div class="card-title">drift</div><div class="card-desc">Flutuacao aleatoria — sonho, suavidade</div></div>
+  <div class="card"><div class="card-title">parallax-zoom</div><div class="card-desc">Zoom + deriva vertical — dinamismo</div></div>
+  <div class="card"><div class="card-title">push-in</div><div class="card-desc">Zoom rapido ao sujeito — drama, impacto</div></div>
+  <div class="card"><div class="card-title">pull-out</div><div class="card-desc">Zoom rapido para tras — revelacao</div></div>
+  <div class="card"><div class="card-title">tilt-shift</div><div class="card-desc">Zoom + rotacao sutil — artistico</div></div>
+  <div class="card"><div class="card-title">breathe</div><div class="card-desc">Pulso sutil — foto viva, CTA</div></div>
+</div>
+
+<h3>Animacoes de Texto (11)</h3>
+<div class="card-grid">
+  <div class="card"><div class="card-title">fade</div><div class="card-desc">Fade in simples</div></div>
+  <div class="card"><div class="card-title">slide-up / slide-down</div><div class="card-desc">Sobe ou desce com spring</div></div>
+  <div class="card"><div class="card-title">slide-left / slide-right</div><div class="card-desc">Lateral com spring</div></div>
+  <div class="card"><div class="card-title">per-word</div><div class="card-desc">Palavra por palavra com slide</div></div>
+  <div class="card"><div class="card-title">punch-in</div><div class="card-desc">Palavra por palavra com escala</div></div>
+  <div class="card"><div class="card-title">typewriter</div><div class="card-desc">Letra por letra com cursor</div></div>
+  <div class="card"><div class="card-title">blur-in</div><div class="card-desc">Desfoque que abre</div></div>
+  <div class="card"><div class="card-title">scale-up</div><div class="card-desc">Cresce de 50% a 100%</div></div>
+  <div class="card"><div class="card-title">bounce-in</div><div class="card-desc">Palavra por palavra com bounce</div></div>
+</div>
+
+<h3>Transicoes entre Cenas (5)</h3>
+<div class="card-grid">
+  <div class="card"><div class="card-title">crossfade</div><div class="card-desc">Fade cruzado (default para cena 2+)</div></div>
+  <div class="card"><div class="card-title">fade_black</div><div class="card-desc">Fade para preto antes de entrar</div></div>
+  <div class="card"><div class="card-title">slide_left / slide_right</div><div class="card-desc">Proxima cena entra lateralmente</div></div>
+  <div class="card"><div class="card-title">wipe</div><div class="card-desc">Clip-path horizontal</div></div>
+</div>
+
+<h3>Fontes Google (8)</h3>
+<table>
+  <tr><th>Fonte</th><th>Uso tipico</th></tr>
+  <tr><td>Inter</td><td>Default, interfaces, geral</td></tr>
+  <tr><td>Montserrat</td><td>Profissional, corporativo</td></tr>
+  <tr><td>Playfair Display</td><td>Serif classico, editorial, luxo</td></tr>
+  <tr><td>Oswald</td><td>Condensado, impacto, esporte</td></tr>
+  <tr><td>Space Grotesk</td><td>Geometrico, tech, moderno</td></tr>
+  <tr><td>Poppins</td><td>Jovem, social, casual</td></tr>
+  <tr><td>Raleway</td><td>Elegante, leve</td></tr>
+  <tr><td>Bebas Neue</td><td>Ultra-condensado, titulos grandes</td></tr>
+</table>
+
+<h3>Color Grading</h3>
+<p>CSS filters aplicados por cena: <code>brightness</code>, <code>contrast</code>, <code>saturate</code>, <code>sepia</code>, <code>hueRotate</code></p>
+
+<h3>Overlays</h3>
+<div class="card-grid">
+  <div class="card"><div class="card-title">dark</div><div class="card-desc">Preto com opacidade</div></div>
+  <div class="card"><div class="card-title">light</div><div class="card-desc">Branco com opacidade</div></div>
+  <div class="card"><div class="card-title">warm</div><div class="card-desc">Marrom quente</div></div>
+  <div class="card"><div class="card-title">cool</div><div class="card-desc">Azul frio</div></div>
+  <div class="card"><div class="card-title">sepia</div><div class="card-desc">Sepia + desaturacao</div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Etapa 4 — Plataformas</h2>
+
+<p>So rodam os agentes cujas plataformas estao em <code>platform_targets</code>. Selecao pode ser alterada na aprovacao da Etapa 3.</p>
+
+<table>
+  <tr><th>Plataforma</th><th>Conteudo gerado</th><th>Formatos</th></tr>
+  <tr><td>Instagram</td><td>Carousel caption + slide_captions, stories, reels, scheduling</td><td>1:1 + 9:16</td></tr>
+  <tr><td>YouTube</td><td>Title SEO (60-70 chars), description, tags (8-12), shorts</td><td>16:9 + 9:16</td></tr>
+  <tr><td>TikTok</td><td>Caption (max 150 chars), hashtags (max 5), hook strategy</td><td>9:16</td></tr>
+  <tr><td>Facebook</td><td>Feed post (storytelling), stories, reels, video</td><td>1:1/16:9 + 9:16</td></tr>
+  <tr><td>Threads</td><td>Post (max 500 chars), thread follow-up, standalone</td><td>texto</td></tr>
+  <tr><td>LinkedIn</td><td>Post profissional, carousel PDF, article</td><td>1200x627</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Etapa 5 — Distribuicao</h2>
+
+<h4>Fluxo em 3 passos</h4>
+<table>
+  <tr><th>Passo</th><th>Acao</th><th>Automatico?</th></tr>
+  <tr><td>1. Guardar</td><td>Upload midia para Supabase, gera media_urls.json</td><td>Sim</td></tr>
+  <tr><td>2. Agendar</td><td>Monta calendario, gera Publish MD</td><td>Sim</td></tr>
+  <tr><td>3. Publicar</td><td>APIs configuradas → publica; sem API → manual</td><td>So com aprovacao</td></tr>
+</table>
+
+<h4>APIs de publicacao</h4>
+<table>
+  <tr><th>Plataforma</th><th>Status</th><th>Credenciais</th></tr>
+  <tr><td>Instagram</td><td><span class="tag tag-green">Implementado</span></td><td>INSTAGRAM_ACCOUNT_ID, INSTAGRAM_ACCESS_TOKEN</td></tr>
+  <tr><td>YouTube</td><td><span class="tag tag-green">Implementado</span></td><td>YOUTUBE_CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN</td></tr>
+  <tr><td>Threads</td><td><span class="tag tag-green">Implementado</span></td><td>THREADS_USER_ID, THREADS_ACCESS_TOKEN</td></tr>
+  <tr><td>Facebook</td><td><span class="tag tag-blue">Placeholder</span></td><td>FACEBOOK_PAGE_ID, FACEBOOK_ACCESS_TOKEN</td></tr>
+  <tr><td>TikTok</td><td><span class="tag tag-blue">Placeholder</span></td><td>TIKTOK_ACCESS_TOKEN</td></tr>
+  <tr><td>LinkedIn</td><td><span class="tag tag-blue">Placeholder</span></td><td>LINKEDIN_ACCESS_TOKEN, LINKEDIN_ORGANIZATION_ID</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Comandos do Bot</h2>
+
+<table>
+  <tr><th>Comando</th><th>Funcao</th></tr>
+  <tr><td><code>/nova</code></td><td>Criar nova campanha (interpreta linguagem natural)</td></tr>
+  <tr><td><code>/status</code></td><td>Status do pipeline atual por etapa</td></tr>
+  <tr><td><code>/rerun &lt;campanha&gt; &lt;etapas&gt;</code></td><td>Reprocessar etapas de campanha existente</td></tr>
+  <tr><td><code>/help</code></td><td>Ajuda</td></tr>
+</table>
+
+<h4>Exemplos de /rerun</h4>
+<pre>/rerun c13 video pro
+/rerun c12 imagens
+/rerun c13 2,3
+/rerun c13 imagens,video quick</pre>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Tipografia sobre Imagem — Guia</h2>
+
+<h4>Quando usar texto grande (60-140px)</h4>
+<ul>
+  <li>Hook / abertura — impacto imediato</li>
+  <li>CTA final — urgencia</li>
+  <li>Headline principal — max 5 palavras</li>
+  <li>Numero/estatistica</li>
+</ul>
+
+<h4>Combinacoes de fonte por estilo</h4>
+<table>
+  <tr><th>Estilo</th><th>Headline</th><th>Body</th><th>Uso</th></tr>
+  <tr><td>Editorial / Moda</td><td>Playfair Display 700</td><td>Inter 400</td><td>Premium, luxo</td></tr>
+  <tr><td>Tech / Moderno</td><td>Space Grotesk 700</td><td>Inter 400</td><td>SaaS, apps</td></tr>
+  <tr><td>Bold / Esportivo</td><td>Oswald 700 / Bebas Neue</td><td>Montserrat 500</td><td>Fitness, energia</td></tr>
+  <tr><td>Elegante</td><td>Playfair Display 600</td><td>Raleway 400</td><td>Joias, gastronomia</td></tr>
+  <tr><td>Jovem / Social</td><td>Poppins 800</td><td>Poppins 400</td><td>Gen Z, casual</td></tr>
+  <tr><td>Corporativo</td><td>Montserrat 700</td><td>Inter 400</td><td>B2B, consultoria</td></tr>
+</table>
+
+<h4>Posicao por tipo de cena</h4>
+<table>
+  <tr><th>Tipo</th><th>Posicao</th><th>positionPercent</th></tr>
+  <tr><td>Hook</td><td>Center-bottom</td><td>55-65%</td></tr>
+  <tr><td>Beneficio</td><td>Bottom</td><td>70-80%</td></tr>
+  <tr><td>Produto</td><td>Top</td><td>15-25%</td></tr>
+  <tr><td>CTA</td><td>Center</td><td>45-55%</td></tr>
+  <tr><td>Close/final</td><td>Top</td><td>15-20%</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Video Art Direction — 12 Presets</h2>
+
+<div class="card-grid">
+  <div class="card"><div class="card-title">Neon Futurista</div><div class="card-desc">Tech, inovacao — SaaS, apps</div></div>
+  <div class="card"><div class="card-title">Premium Minimal</div><div class="card-desc">Elegancia, luxo — moda, joias</div></div>
+  <div class="card"><div class="card-title">Energetico</div><div class="card-desc">Energia, acao — fitness, esporte</div></div>
+  <div class="card"><div class="card-title">Cinematico</div><div class="card-desc">Narrativo, emocional — storytelling</div></div>
+  <div class="card"><div class="card-title">Editorial</div><div class="card-desc">Sofisticacao — revistas, moda</div></div>
+  <div class="card"><div class="card-title">Bold</div><div class="card-desc">Impacto, contraste — lancamentos</div></div>
+  <div class="card"><div class="card-title">Organico</div><div class="card-desc">Natural, suave — saude, bem-estar</div></div>
+  <div class="card"><div class="card-title">Retro</div><div class="card-desc">Nostalgia — vintage, cultura</div></div>
+  <div class="card"><div class="card-title">Corporate</div><div class="card-desc">Profissional — B2B, consultoria</div></div>
+  <div class="card"><div class="card-title">Playful</div><div class="card-desc">Divertido, jovem — Gen Z, social</div></div>
+  <div class="card"><div class="card-title">Documentary</div><div class="card-desc">Autenticidade — depoimentos</div></div>
+  <div class="card"><div class="card-title">Glitch</div><div class="card-desc">Digital, disruptivo — arte, musica</div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Stack Tecnico</h2>
+
+<table>
+  <tr><th>Ferramenta</th><th>Uso</th></tr>
+  <tr><td>BullMQ + Upstash Redis</td><td>Fila de jobs e orquestracao</td></tr>
+  <tr><td>Tavily AI SDK</td><td>Pesquisa de mercado</td></tr>
+  <tr><td>Playwright (chromium)</td><td>Render HTML → PNG</td></tr>
+  <tr><td>ffmpeg</td><td>Render de video basico (Video Quick)</td></tr>
+  <tr><td>Remotion</td><td>Render de video profissional (Video Pro) — 15 componentes</td></tr>
+  <tr><td>Supabase</td><td>Hosting de midia + URLs publicas</td></tr>
+  <tr><td>Instagram Graph API</td><td>Publicacao Instagram</td></tr>
+  <tr><td>YouTube Data API</td><td>Publicacao YouTube (OAuth)</td></tr>
+  <tr><td>Threads API</td><td>Publicacao Threads</td></tr>
+  <tr><td>ElevenLabs</td><td>Narracao por voz IA</td></tr>
+  <tr><td>Claude Code CLI</td><td>Execucao dos agentes IA</td></tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Estrutura de Output</h2>
+
+<pre>prj/&lt;projeto&gt;/outputs/&lt;task_name&gt;_&lt;date&gt;/
+├── research_results.json
+├── research_brief.md
+├── interactive_report.html
+├── creative/
+│   ├── creative_brief.json
+│   └── creative_brief.md
+├── copy/
+│   ├── narrative.json
+│   └── narrative.md
+├── ads/
+│   ├── layout.json
+│   └── &lt;task&gt;_carousel_01.png
+├── video/
+│   ├── &lt;task&gt;_video_01_scene_plan.json
+│   ├── &lt;task&gt;_video_01.mp4
+│   ├── &lt;task&gt;_video_01_scene_plan_motion.json
+│   └── &lt;task&gt;_video_01_draft.mp4
+├── platforms/
+│   ├── instagram.json + .md
+│   ├── youtube.json + .md
+│   ├── tiktok.json + .md
+│   ├── facebook.json + .md
+│   ├── threads.json + .md
+│   └── linkedin.json + .md
+├── imgs/
+├── logs/
+├── media_urls.json
+└── Publish &lt;task&gt; &lt;date&gt;.md</pre>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<h2>Campanhas Realizadas</h2>
+
+<h3>Serie Pascoa (c0001 a c0013)</h3>
+<table>
+  <tr><th>#</th><th>Campanha</th></tr>
+  <tr><td>c0001</td><td>pascoa2026</td></tr>
+  <tr><td>c0002</td><td>pascoa2026</td></tr>
+  <tr><td>c0003</td><td>pascoa2026</td></tr>
+  <tr><td>c0004</td><td>pascoa_2026</td></tr>
+  <tr><td>c0005</td><td>pascoa_2026</td></tr>
+  <tr><td>c0006</td><td>pascoa2026</td></tr>
+  <tr><td>c0007</td><td>pascoa2026</td></tr>
+  <tr><td>c0008</td><td>pascoa2026</td></tr>
+  <tr><td>c0009</td><td>pascoa2026</td></tr>
+  <tr><td>c0010</td><td>pascoa2026</td></tr>
+  <tr><td>c0011</td><td>pascoa_2026</td></tr>
+  <tr><td>c0012</td><td>pascoa2026</td></tr>
+  <tr><td>c0013</td><td>pascoa2026</td></tr>
+</table>
+
+<h3>Outras</h3>
+<table>
+  <tr><th>Campanha</th><th>Data</th></tr>
+  <tr><td>Dia das Maes</td><td>2026-05-10</td></tr>
+  <tr><td>INEMA DDM Test</td><td>2026-05-10</td></tr>
+  <tr><td>Pascoa 2026</td><td>2026-03-27</td></tr>
+  <tr><td>Pascoa 2026</td><td>2026-03-28</td></tr>
+  <tr><td>Pascoa XX</td><td>2026-03-27</td></tr>
+  <tr><td>Pascoa YY</td><td>2026-03-28</td></tr>
+  <tr><td>Pascoa ZZ</td><td>2026-03-28</td></tr>
+</table>
+
+<div style="text-align:center; margin-top:60px; padding:24px; color:var(--text-muted); font-size:0.8rem;">
+  ITAGMKT v4.2.8 — INEMA Time de Agentes de Marketing<br>
+  Gerado em 2026-03-29
+</div>
+
+</div>
+</body>
+</html>

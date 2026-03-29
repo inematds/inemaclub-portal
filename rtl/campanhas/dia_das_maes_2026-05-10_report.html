@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INEMA — Research Report · Dia das Mães 2026</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    /* ─── INEMA Brand Variables ─── */
+    :root {
+      --primary:      #0099FF;
+      --accent:       #00FF88;
+      --bg:           #0D0D0D;
+      --surface:      #111827;
+      --card-bg:      rgba(255,255,255,0.05);
+      --card-border:  rgba(0,153,255,0.2);
+      --text-primary: #FFFFFF;
+      --text-muted:   #8B9AB0;
+      --gradient-1:   linear-gradient(135deg, #0099FF, #00FF88);
+      --gradient-2:   linear-gradient(135deg, #001529, #0D2040);
+    }
+
+    /* ─── Custom Scrollbar ─── */
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--card-bg);
+      border-radius: 6px;
+      border: 2px solid var(--bg);
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    /* ─── Ambient Background ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 20% 20%, rgba(0,153,255,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 35% at 80% 80%, rgba(0,255,136,0.06) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── Layout ─── */
+    .wrapper { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+    /* ─── Header ─── */
+    header {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(0,153,255,0.15);
+      border: 1px solid rgba(0,153,255,0.35);
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    header p { color: var(--text-muted); font-size: 1rem; }
+    .meta-chips { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem; }
+    .chip {
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      border: 1px solid rgba(0,255,136,0.25);
+      background: rgba(0,255,136,0.08);
+      color: var(--accent);
+    }
+
+    /* ─── Section Titles ─── */
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-title span {
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ─── Glassmorphism Cards ─── */
+    .glass {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+
+    /* ─── Grid Layouts ─── */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
+
+    /* ─── KPI Cards ─── */
+    .kpi-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .kpi-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .kpi-number {
+      font-size: 2.4rem;
+      font-weight: 800;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+    .kpi-label { color: var(--text-muted); font-size: 0.82rem; margin-top: 0.4rem; }
+    .kpi-sub { color: var(--accent); font-size: 0.75rem; font-weight: 600; margin-top: 0.3rem; }
+
+    /* ─── Chart Containers ─── */
+    .chart-container {
+      position: relative;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+    }
+    .chart-container h3 { font-size: 1rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--text-primary); }
+    canvas { max-height: 300px; }
+
+    /* ─── Hook Cards ─── */
+    .hook-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .hook-card:hover { border-color: var(--accent); }
+    .hook-rank {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .hook-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+    .hook-why { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ─── Angle Cards ─── */
+    .angle-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .angle-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .angle-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+    .angle-name { font-weight: 700; font-size: 1rem; }
+    .angle-emotion {
+      font-size: 0.7rem;
+      background: rgba(0,153,255,0.15);
+      border: 1px solid rgba(0,153,255,0.3);
+      color: var(--primary);
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .angle-narrative { font-size: 0.88rem; color: var(--text-muted); font-style: italic; }
+    .angle-cta {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      padding: 0.4rem 0.8rem;
+      background: rgba(0,255,136,0.1);
+      border: 1px solid rgba(0,255,136,0.25);
+      border-radius: 8px;
+      align-self: flex-start;
+    }
+    .platforms { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .platform-tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      color: var(--text-muted);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* ─── Video Cards ─── */
+    .video-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color 0.2s;
+    }
+    .video-card:hover { border-color: var(--accent); }
+    .video-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .video-hook { font-size: 0.85rem; color: var(--primary); font-style: italic; margin-bottom: 0.75rem; padding: 0.6rem; background: rgba(0,153,255,0.08); border-radius: 8px; border-left: 3px solid var(--primary); }
+    .video-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+    .video-meta span { font-size: 0.75rem; color: var(--text-muted); background: rgba(255,255,255,0.04); padding: 0.2rem 0.6rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.08); }
+
+    /* ─── Competitor Table ─── */
+    .comp-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .comp-table th { text-align: left; padding: 0.75rem 1rem; background: rgba(0,153,255,0.1); color: var(--primary); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .comp-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); color: var(--text-muted); }
+    .comp-table tr:hover td { background: rgba(255,255,255,0.02); color: var(--text-primary); }
+    .comp-name { color: var(--text-primary); font-weight: 600; }
+
+    /* ─── Timeline ─── */
+    .timeline { display: flex; flex-direction: column; gap: 0; }
+    .timeline-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .timeline-track { display: flex; flex-direction: column; align-items: center; }
+    .timeline-dot { width: 12px; height: 12px; background: var(--primary); border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    .timeline-line { width: 2px; background: rgba(0,153,255,0.25); flex: 1; min-height: 40px; }
+    .timeline-content { padding-bottom: 1.25rem; }
+    .timeline-label { font-size: 0.75rem; color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+    .timeline-text { font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+    /* ─── Keywords ─── */
+    .keyword-cloud { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .keyword {
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid rgba(0,153,255,0.3);
+      background: rgba(0,153,255,0.08);
+      color: var(--primary);
+      transition: background 0.2s, border-color 0.2s;
+      cursor: default;
+    }
+    .keyword:hover { background: rgba(0,153,255,0.2); border-color: var(--primary); }
+    .keyword.accent {
+      border-color: rgba(0,255,136,0.3);
+      background: rgba(0,255,136,0.08);
+      color: var(--accent);
+    }
+    .keyword.accent:hover { background: rgba(0,255,136,0.2); border-color: var(--accent); }
+
+    /* ─── Section Spacing ─── */
+    section { margin-bottom: 3rem; }
+
+    /* ─── Footer ─── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 3rem;
+    }
+    footer strong { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <div class="badge">🧠 Marketing Intelligence Report</div>
+    <h1>INEMA · Dia das Mães 2026</h1>
+    <p>Inteligência de mercado para a campanha mais emocional do ano</p>
+    <div class="meta-chips">
+      <span class="chip">📅 10 de Maio de 2026</span>
+      <span class="chip">📱 Instagram</span>
+      <span class="chip">🧵 Threads</span>
+      <span class="chip">▶️ YouTube</span>
+      <span class="chip">⚡ inema.vip · inema.club</span>
+    </div>
+  </header>
+
+  <!-- KPI SECTION -->
+  <section>
+    <div class="section-title">📊 <span>Números que importam</span></div>
+    <div class="grid-4">
+      <div class="kpi-card">
+        <div class="kpi-number">54%</div>
+        <div class="kpi-label">Brasileiros que usaram IA generativa</div>
+        <div class="kpi-sub">Acima da média global de 48%</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-number">76,6%</div>
+        <div class="kpi-label">Profissionais que temem substituição por IA</div>
+        <div class="kpi-sub">Gatilho emocional principal da campanha</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-number">747k</div>
+        <div class="kpi-label">Gap de talentos tech no Brasil</div>
+        <div class="kpi-sub">53k formados vs. 800k demandados/ano</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-number">R$35</div>
+        <div class="kpi-label">Preço INEMA.VIP por mês</div>
+        <div class="kpi-sub">Menos que um jantar fora</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARTS ROW 1 -->
+  <section>
+    <div class="section-title">📈 <span>Tendências de mercado</span></div>
+    <div class="grid-2">
+
+      <div class="chart-container">
+        <h3>Adoção de IA Generativa — Brasil vs. Mundo (%)</h3>
+        <canvas id="chartAdocao"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h3>Segmentos de Público Prioritários</h3>
+        <canvas id="chartSegmentos"></canvas>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHARTS ROW 2 -->
+  <section>
+    <div class="grid-2">
+
+      <div class="chart-container">
+        <h3>Sentimento do Profissional Brasileiro sobre IA</h3>
+        <canvas id="chartSentimento"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h3>Posicionamento Competitivo — Valor vs. Comunidade</h3>
+        <canvas id="chartCompetidores"></canvas>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AD HOOKS -->
+  <section>
+    <div class="section-title">🔥 <span>Top Ad Hooks</span></div>
+    <div class="grid-2">
+
+      <div class="hook-card">
+        <div class="hook-rank">🥇 Hook #1 — Recomendado</div>
+        <div class="hook-text">"Sua mãe merece mais do que flores — ela merece o futuro."</div>
+        <div class="hook-why">Subverte expectativa do presente tradicional. Conecta amor filial com transformação real. Scroll-stopper imediato.</div>
+      </div>
+
+      <div class="hook-card">
+        <div class="hook-rank">🥈 Hook #2 — Urgência</div>
+        <div class="hook-text">"A IA vai substituir o emprego da sua mãe — ou ela vai comandar a IA?"</div>
+        <div class="hook-why">Usa o medo real de 76,6% dos brasileiros como gatilho. Oferece caminho de empoderamento. Alta retenção.</div>
+      </div>
+
+      <div class="hook-card">
+        <div class="hook-rank">🥉 Hook #3 — Comparativo</div>
+        <div class="hook-text">"Enquanto outros dão chocolates, você pode dar uma carreira."</div>
+        <div class="hook-why">Posiciona INEMA como escolha inteligente e diferenciada. Tom de confiança e distinção.</div>
+      </div>
+
+      <div class="hook-card">
+        <div class="hook-rank">4 — Ancoragem de preço</div>
+        <div class="hook-text">"R$35/mês. Menos que um jantar fora. O presente que transforma carreiras."</div>
+        <div class="hook-why">Ancora o preço em contexto familiar. Derruba objeção de custo com comparação cotidiana simples.</div>
+      </div>
+
+      <div class="hook-card">
+        <div class="hook-rank">5 — Reciprocidade emocional</div>
+        <div class="hook-text">"Ela te criou para o futuro. Agora é sua vez de fazer o mesmo por ela."</div>
+        <div class="hook-why">Apelo à reciprocidade profunda. Posiciona o VIP como ato de amor e retribuição geracional.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MARKETING ANGLES -->
+  <section>
+    <div class="section-title">🎯 <span>Ângulos de Campanha</span></div>
+    <div class="grid-2">
+
+      <div class="angle-card" style="border-color: rgba(0,255,136,0.35);">
+        <div class="angle-header">
+          <div class="angle-name">🏆 Presente Transformador</div>
+          <div class="angle-emotion">Amor + Impacto</div>
+        </div>
+        <div class="angle-narrative">"Presenteie sua mãe com o futuro. R$35/mês no INEMA.VIP é o presente que transforma carreiras — não murcha, não vai para a gaveta."</div>
+        <div class="platforms">
+          <span class="platform-tag">Instagram</span>
+          <span class="platform-tag">Stories</span>
+          <span class="platform-tag">Threads</span>
+        </div>
+        <div class="angle-cta">Acelere sua evolução → inema.vip</div>
+      </div>
+
+      <div class="angle-card">
+        <div class="angle-header">
+          <div class="angle-name">⚡ Empoderamento Materno</div>
+          <div class="angle-emotion">Medo → Orgulho</div>
+        </div>
+        <div class="angle-narrative">"Sua mãe não precisa temer a IA — ela pode comandá-la. INEMA transforma medo em habilidade, em comunidade, em renda."</div>
+        <div class="platforms">
+          <span class="platform-tag">Reels</span>
+          <span class="platform-tag">YouTube</span>
+        </div>
+        <div class="angle-cta">Comece grátis agora: inema.club</div>
+      </div>
+
+      <div class="angle-card">
+        <div class="angle-header">
+          <div class="angle-name">🌐 Legado Geracional</div>
+          <div class="angle-emotion">Herança + Aspiração</div>
+        </div>
+        <div class="angle-narrative">"A mãe que aprendeu a usar IA passa para os filhos não só o amor — passa o exemplo. INEMA é o início de uma história que se repete."</div>
+        <div class="platforms">
+          <span class="platform-tag">YouTube</span>
+          <span class="platform-tag">Carrossel</span>
+        </div>
+        <div class="angle-cta">Entre para a comunidade: inema.vip</div>
+      </div>
+
+      <div class="angle-card">
+        <div class="angle-header">
+          <div class="angle-name">🎯 Urgência Suave</div>
+          <div class="angle-emotion">Urgência + Acolhimento</div>
+        </div>
+        <div class="angle-narrative">"O mercado não espera. Mas R$35/mês no INEMA.VIP dá tempo para aprender, sem pressa, com comunidade ao lado."</div>
+        <div class="platforms">
+          <span class="platform-tag">Threads</span>
+          <span class="platform-tag">Stories</span>
+        </div>
+        <div class="angle-cta">Sua comunidade VIP de IA está esperando.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO CONCEPTS -->
+  <section>
+    <div class="section-title">🎬 <span>Conceitos de Vídeo</span></div>
+    <div class="grid-3">
+
+      <div class="video-card">
+        <div class="video-title">A Mãe que Virou o Jogo</div>
+        <div class="video-hook">"Ela tinha 42 anos, emprego ameaçado pela IA, e R$35 no bolso."</div>
+        <p style="font-size:0.84rem; color: var(--text-muted);">Mini-documentário emocional. Arco: Medo → Descoberta INEMA → Transformação → Orgulho familiar.</p>
+        <div class="video-meta">
+          <span>YouTube / Reels</span>
+          <span>60–90s / 3–5min</span>
+          <span>Depoimento real</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-title">O Presente que Ela Nunca Esquece</div>
+        <div class="video-hook">"Flores murcham. Chocolates acabam. Mas conhecimento? Isso dura para sempre."</div>
+        <p style="font-size:0.84rem; color: var(--text-muted);">Ad emocional comparativo. Presentes comuns → INEMA.VIP → 1 mês depois: nova habilidade.</p>
+        <div class="video-meta">
+          <span>Instagram / Threads</span>
+          <span>15–30s</span>
+          <span>Ad direto</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-title">Mãe, IA e o Futuro — com Nei</div>
+        <div class="video-hook">"Por que o maior presente que você pode dar para sua mãe é uma habilidade."</div>
+        <p style="font-size:0.84rem; color: var(--text-muted);">Talking head com Nei Maldaner. Contexto de mercado + impacto feminino + CTA comunidade.</p>
+        <div class="video-meta">
+          <span>YouTube</span>
+          <span>5–8 min</span>
+          <span>Educativo / autoridade</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPETITORS -->
+  <section>
+    <div class="section-title">🔍 <span>Análise de Concorrentes</span></div>
+    <div class="glass">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Concorrente</th>
+            <th>Posicionamento</th>
+            <th>Preço</th>
+            <th>Gap que INEMA explora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="comp-name">Tera</td>
+            <td>Escola de IA/produto para líderes. Comunidade ativa de qualidade.</td>
+            <td>Alto ticket — MBA, memberships premium</td>
+            <td>Tera não é acessível para a massa. INEMA tem CLUB gratuito + VIP R$35/mês.</td>
+          </tr>
+          <tr>
+            <td class="comp-name">Conversion Academy</td>
+            <td>IA para marketing digital e SEO. Técnico e nichado.</td>
+            <td>Cursos avulsos pagos</td>
+            <td>Focado em marketing. INEMA cobre profissional completo: tech + negócios + psicologia.</td>
+          </tr>
+          <tr>
+            <td class="comp-name">Escola Virtual (Bradesco/MS)</td>
+            <td>Cursos gratuitos com certificado. Parceria com grandes marcas.</td>
+            <td>Gratuito</td>
+            <td>EAD passivo. INEMA tem comunidade VIP ativa com +30 grupos Telegram.</td>
+          </tr>
+          <tr>
+            <td class="comp-name">Udemy / Hotmart</td>
+            <td>Cursos isolados, sem comunidade, sem suporte.</td>
+            <td>R$27–R$500 por curso</td>
+            <td>INEMA é ecossistema: aprende + aplica + suporte de comunidade. Não é curso, é jornada.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section>
+    <div class="section-title">📅 <span>Sequência de Lançamento</span></div>
+    <div class="glass">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-track"><div class="timeline-dot" style="background:var(--accent)"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Semana -4 · 12–18 Abr</div>
+            <div class="timeline-text">Teaser "Uma surpresa para o Dia das Mães" + stories de preparação. Aquecer audiência sem revelar produto.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Semana -3 · 19–25 Abr</div>
+            <div class="timeline-text">Lançar vídeo emocional principal no YouTube + Reels. Carrossel com ângulos de campanha. Hook #1 em destaque.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Semana -2 · 26 Abr–2 Mai</div>
+            <div class="timeline-text">Posts de conversão direta com CTA para inema.vip. Depoimentos de membros VIP femininos. Ancoragem de preço.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-track"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Semana -1 · 3–9 Mai</div>
+            <div class="timeline-text">Urgência + "última chance de presentear antes do dia". Hook #4 (R$35 < jantar fora). Reels virais.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-track"><div class="timeline-dot" style="background:var(--accent)"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-label">Dia das Mães · 10 Mai</div>
+            <div class="timeline-text">Post comemorativo + agradecimento + CTA gratuito para inema.club. Celebração da comunidade.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEYWORDS -->
+  <section>
+    <div class="section-title">🔑 <span>Keywords Estratégicas</span></div>
+    <div class="glass">
+      <div class="keyword-cloud">
+        <span class="keyword accent">dia das mães 2026</span>
+        <span class="keyword accent">presente dia das mães diferente</span>
+        <span class="keyword">educação IA Brasil</span>
+        <span class="keyword">inema vip</span>
+        <span class="keyword">inema club</span>
+        <span class="keyword accent">comunidade VIP IA</span>
+        <span class="keyword">automação n8n make</span>
+        <span class="keyword">profissional do futuro</span>
+        <span class="keyword">prompt engineering português</span>
+        <span class="keyword accent">mãe empreendedora IA</span>
+        <span class="keyword">carreira IA Brasil</span>
+        <span class="keyword">Claude Code português</span>
+        <span class="keyword">aprendizado IA acessível</span>
+        <span class="keyword">transformação digital pessoal</span>
+        <span class="keyword accent">inteligência artificial gratuita</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Gerado pelo <strong>Marketing Research Agent</strong> · INEMA Ecossistema de Educação em IA
+    <br>Campanha: <strong>dia_das_maes</strong> · Data: <strong>2026-05-10</strong> · Plataformas: Instagram · Threads · YouTube
+  </footer>
+
+</div>
+
+<!-- CHART.JS -->
+<script>
+  const PRIMARY = '#0099FF';
+  const ACCENT  = '#00FF88';
+  const MUTED   = 'rgba(139,154,176,0.6)';
+  const GRID    = 'rgba(255,255,255,0.06)';
+  const TOOLTIP_BG = 'rgba(17,24,39,0.95)';
+
+  Chart.defaults.color = '#8B9AB0';
+  Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
+
+  // ── Chart 1: Adoção de IA Brasil vs Mundo ──
+  new Chart(document.getElementById('chartAdocao'), {
+    type: 'bar',
+    data: {
+      labels: ['2023', '2024', 'H1 2025', 'H2 2025'],
+      datasets: [
+        {
+          label: 'Brasil (%)',
+          data: [28, 40, 50, 54],
+          backgroundColor: 'rgba(0,153,255,0.7)',
+          borderColor: PRIMARY,
+          borderWidth: 2,
+          borderRadius: 6,
+        },
+        {
+          label: 'Média Global (%)',
+          data: [22, 32, 44, 48],
+          type: 'line',
+          borderColor: ACCENT,
+          backgroundColor: 'rgba(0,255,136,0.1)',
+          borderWidth: 2.5,
+          pointBackgroundColor: ACCENT,
+          pointRadius: 5,
+          fill: false,
+          tension: 0.4,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#8B9AB0', usePointStyle: true } },
+        tooltip: { backgroundColor: TOOLTIP_BG, titleColor: '#fff', bodyColor: '#8B9AB0' }
+      },
+      scales: {
+        x: { grid: { color: GRID }, ticks: { color: '#8B9AB0' } },
+        y: { grid: { color: GRID }, ticks: { color: '#8B9AB0', callback: v => v + '%' }, max: 70 }
+      }
+    }
+  });
+
+  // ── Chart 2: Segmentos de Público ──
+  new Chart(document.getElementById('chartSegmentos'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Mãe Profissional em Transição', 'Filho(a) presenteando', 'Empreendedora / Freelancer', 'Alta Qualificação exposta à IA'],
+      datasets: [{
+        data: [35, 28, 22, 15],
+        backgroundColor: [
+          'rgba(0,153,255,0.8)',
+          'rgba(0,255,136,0.7)',
+          'rgba(99,179,237,0.7)',
+          'rgba(0,153,255,0.35)',
+        ],
+        borderColor: ['#0099FF','#00FF88','#63B3ED','rgba(0,153,255,0.5)'],
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '62%',
+      plugins: {
+        legend: { position: 'right', labels: { color: '#8B9AB0', usePointStyle: true, padding: 14, font: { size: 11 } } },
+        tooltip: { backgroundColor: TOOLTIP_BG, titleColor: '#fff', bodyColor: '#8B9AB0', callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw}%` } }
+      }
+    }
+  });
+
+  // ── Chart 3: Sentimento sobre IA ──
+  new Chart(document.getElementById('chartSentimento'), {
+    type: 'bar',
+    data: {
+      labels: ['Temem substituição', 'Usaram IA generativa', 'Querem aprender IA', 'Empresas priorizando IA'],
+      datasets: [{
+        label: 'Profissionais Brasileiros (%)',
+        data: [76.6, 54, 80, 67],
+        backgroundColor: [
+          'rgba(255,99,99,0.6)',
+          'rgba(0,153,255,0.7)',
+          'rgba(0,255,136,0.7)',
+          'rgba(99,179,237,0.7)',
+        ],
+        borderColor: ['#FF6363', PRIMARY, ACCENT, '#63B3ED'],
+        borderWidth: 2,
+        borderRadius: 6,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { backgroundColor: TOOLTIP_BG, titleColor: '#fff', bodyColor: '#8B9AB0', callbacks: { label: ctx => ` ${ctx.raw}%` } }
+      },
+      scales: {
+        x: { grid: { color: GRID }, ticks: { color: '#8B9AB0', callback: v => v + '%' }, max: 100 },
+        y: { grid: { color: GRID }, ticks: { color: '#8B9AB0' } }
+      }
+    }
+  });
+
+  // ── Chart 4: Posicionamento Competitivo (Bubble) ──
+  new Chart(document.getElementById('chartCompetidores'), {
+    type: 'bubble',
+    data: {
+      datasets: [
+        { label: 'INEMA VIP',      data: [{ x: 1.5, y: 9.0, r: 16 }], backgroundColor: 'rgba(0,255,136,0.7)', borderColor: ACCENT },
+        { label: 'INEMA CLUB',     data: [{ x: 0.3, y: 7.5, r: 12 }], backgroundColor: 'rgba(0,153,255,0.5)', borderColor: PRIMARY },
+        { label: 'Tera',           data: [{ x: 7.5, y: 7.0, r: 11 }], backgroundColor: 'rgba(99,179,237,0.5)', borderColor: '#63B3ED' },
+        { label: 'Conversion',     data: [{ x: 5.0, y: 3.5, r:  9 }], backgroundColor: 'rgba(180,160,255,0.5)', borderColor: '#B4A0FF' },
+        { label: 'Escola Virtual', data: [{ x: 0.5, y: 1.5, r: 10 }], backgroundColor: 'rgba(255,200,80,0.5)', borderColor: '#FFC850' },
+        { label: 'Udemy/Hotmart',  data: [{ x: 4.0, y: 1.0, r:  8 }], backgroundColor: 'rgba(255,130,80,0.5)', borderColor: '#FF8250' },
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#8B9AB0', usePointStyle: true, font: { size: 11 } } },
+        tooltip: { backgroundColor: TOOLTIP_BG, titleColor: '#fff', bodyColor: '#8B9AB0' }
+      },
+      scales: {
+        x: { grid: { color: GRID }, ticks: { color: '#8B9AB0' }, title: { display: true, text: '← Acessível · Preço · Caro →', color: '#8B9AB0' } },
+        y: { grid: { color: GRID }, ticks: { color: '#8B9AB0' }, title: { display: true, text: '← EAD Passivo · Comunidade · Ativa →', color: '#8B9AB0' }, max: 11 }
+      }
+    }
+  });
+</script>
+</body>
+</html>
