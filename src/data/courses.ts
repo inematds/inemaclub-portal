@@ -527,9 +527,24 @@ export const platformsData: Course[] = [
     tags: ['Vendas', 'Gestão Comercial', 'Estratégia', 'B2B', 'B2C', 'IA'],
     url: 'https://inematds.github.io/8020',
   },
+  {
+    id: 58,
+    title: 'Por Dentro do Claude Code',
+    description:
+      'A arquitetura revelada do agente de IA mais sofisticado ja construido. Baseado em 512k linhas de TypeScript. 3 trilhas (Fundamentos, Nucleo, Avancado), 12 modulos, 72 topicos em ~6 horas.',
+    icon: '🔬',
+    tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'TypeScript', 'IA', 'Agentes'],
+    url: 'https://inematds.github.io/claudecode-estrutura/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-01',
+    title: 'Por Dentro do Claude Code',
+    type: 'novo',
+    url: 'https://inematds.github.io/claudecode-estrutura/',
+  },
   {
     date: '2026-03-27',
     title: '8020 - Vendas, Gestão e Estratégia Comercial',

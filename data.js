@@ -249,6 +249,14 @@ const platformsData = [
         url: "https://inematds.github.io/Playbook-IA/"
     },
     {
+        id: 58,
+        title: "Por Dentro do Claude Code",
+        description: "A arquitetura revelada do agente de IA mais sofisticado ja construido. Baseado em 512k linhas de TypeScript. 3 trilhas (Fundamentos, Nucleo, Avancado), 12 modulos, 72 topicos em ~6 horas.",
+        icon: "🔬",
+        tags: ["Claude Code", "Anthropic", "Arquitetura", "TypeScript", "IA", "Agentes"],
+        url: "https://inematds.github.io/claudecode-estrutura/"
+    },
+    {
         id: 27,
         title: "Portal INEMA",
         description: "Portal dos Projetos, Sites e Plataformas do INEMA - Acesso centralizado a todos os recursos.",
@@ -356,6 +364,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-01", title: "Por Dentro do Claude Code", type: "novo", url: "https://inematds.github.io/claudecode-estrutura/" },
     { date: "2026-03-19", title: "Vibe Coding Imersão - Do Zero ao SaaS", type: "novo", url: "https://inematds.github.io/vibecode-imersao/" },
     { date: "2026-03-19", title: "Enxames de Agentes de IA", type: "novo", url: "https://inematds.github.io/enxamesagentes/" },
     { date: "2026-03-03", title: "Agentic Engineering Masterclass", type: "novo", url: "https://inematds.github.io/agentic/" },
