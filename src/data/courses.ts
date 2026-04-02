@@ -536,9 +536,24 @@ export const platformsData: Course[] = [
     tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'TypeScript', 'IA', 'Agentes'],
     url: 'https://inematds.github.io/claudecode-estrutura/',
   },
+  {
+    id: 59,
+    title: 'Claude Code Deep Dive',
+    description:
+      'Mergulho profundo no codigo-fonte do Claude Code. Analise de 1.902 arquivos cobrindo arquitetura core, sistema de tools, inteligencia do agente, infra, conectividade e features nao lancadas. 8 trilhas, 50 aulas, ~25 horas. Nivel avancado.',
+    icon: '🔍',
+    tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'Source Code', 'IA', 'Tools'],
+    url: 'https://inematds.github.io/claudecode-manual/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-02',
+    title: 'Claude Code Deep Dive',
+    type: 'novo',
+    url: 'https://inematds.github.io/claudecode-manual/',
+  },
   {
     date: '2026-04-01',
     title: 'Por Dentro do Claude Code',

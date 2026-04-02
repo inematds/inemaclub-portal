@@ -49,6 +49,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 59,
+        title: "Claude Code Deep Dive",
+        description: "Mergulho profundo no codigo-fonte do Claude Code. Analise de 1.902 arquivos cobrindo arquitetura core, sistema de tools, inteligencia do agente, infra, conectividade e features nao lancadas. 8 trilhas, 50 aulas, ~25 horas. Nivel avancado.",
+        icon: "🔍",
+        tags: ["Claude Code", "Anthropic", "Arquitetura", "Source Code", "IA", "Tools"],
+        url: "https://inematds.github.io/claudecode-manual/"
+    },
+    {
         id: 5,
         title: "Dashboard Mastery",
         description: "Supercurso de Dashboards Profissionais - Domine a criação de dashboards com Next.js e React.",
@@ -364,6 +372,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-02", title: "Claude Code Deep Dive", type: "novo", url: "https://inematds.github.io/claudecode-manual/" },
     { date: "2026-04-01", title: "Por Dentro do Claude Code", type: "novo", url: "https://inematds.github.io/claudecode-estrutura/" },
     { date: "2026-03-19", title: "Vibe Coding Imersão - Do Zero ao SaaS", type: "novo", url: "https://inematds.github.io/vibecode-imersao/" },
     { date: "2026-03-19", title: "Enxames de Agentes de IA", type: "novo", url: "https://inematds.github.io/enxamesagentes/" },
