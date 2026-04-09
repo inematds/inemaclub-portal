@@ -537,6 +537,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudecode-estrutura/',
   },
   {
+    id: 60,
+    title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
+    description:
+      'Construa um sistema de conhecimento persistente onde o LLM funciona como compilador. 3 trilhas (Fundamentos, Implementacao, Avancado), 12 modulos, ~8 horas. Cobre Obsidian vault, ingestao, grafos, RAG e multi-agentes.',
+    icon: '🧠',
+    tags: ['LLM', 'Obsidian', 'Knowledge Management', 'RAG', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/2cerebro/',
+  },
+  {
     id: 59,
     title: 'Claude Code Deep Dive',
     description:
@@ -548,6 +557,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-09',
+    title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
+    type: 'novo',
+    url: 'https://inematds.github.io/2cerebro/',
+  },
   {
     date: '2026-04-02',
     title: 'Claude Code Deep Dive',

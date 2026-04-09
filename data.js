@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 60,
+        title: "2Cerebro - Segundo Cerebro com LLM + Obsidian",
+        description: "Construa um sistema de conhecimento persistente onde o LLM funciona como compilador. 3 trilhas (Fundamentos, Implementacao, Avancado), 12 modulos, ~8 horas. Cobre Obsidian vault, ingestao, grafos, RAG e multi-agentes.",
+        icon: "🧠",
+        tags: ["LLM", "Obsidian", "Knowledge Management", "RAG", "IA", "Produtividade"],
+        url: "https://inematds.github.io/2cerebro/"
+    },
+    {
         id: 42,
         title: "Agentic Engineering Masterclass",
         description: "Engenharia de Agentic - Masterclass completa com 6 trilhas, 42 módulos e 252+ tópicos em 21 semanas. Do básico à orquestração multi-agente enterprise com LangGraph, CrewAI e AutoGen.",
@@ -372,6 +380,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-09", title: "2Cerebro - Segundo Cerebro com LLM + Obsidian", type: "novo", url: "https://inematds.github.io/2cerebro/" },
     { date: "2026-04-02", title: "Claude Code Deep Dive", type: "novo", url: "https://inematds.github.io/claudecode-manual/" },
     { date: "2026-04-01", title: "Por Dentro do Claude Code", type: "novo", url: "https://inematds.github.io/claudecode-estrutura/" },
     { date: "2026-03-19", title: "Vibe Coding Imersão - Do Zero ao SaaS", type: "novo", url: "https://inematds.github.io/vibecode-imersao/" },
