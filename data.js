@@ -145,6 +145,14 @@ const platformsData = [
         url: "https://inematds.github.io/FEP2/"
     },
     {
+        id: 61,
+        title: "FPFilm - Crie Filmes com IA",
+        description: "Criacao cinematografica com Freepik Spaces. Do roteiro ao export final usando workflows visuais baseados em nodes. 6 trilhas, 34 modulos, 200+ topicos. Cobre fundamentos de cinema, camera, producao e projeto completo.",
+        icon: "🎬",
+        tags: ["Freepik", "Cinema", "IA", "Video", "Filmes", "Producao"],
+        url: "https://inematds.github.io/fpfilm1/"
+    },
+    {
         id: 13,
         title: "FETD - Engenharia de Treinamentos de Dados",
         description: "Formação em Engenharia de Treinamento de Dados - Especialização em preparação e qualidade de dados para IA.",
@@ -380,6 +388,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-11", title: "FPFilm - Crie Filmes com IA", type: "novo", url: "https://inematds.github.io/fpfilm1/" },
     { date: "2026-04-09", title: "2Cerebro - Segundo Cerebro com LLM + Obsidian", type: "novo", url: "https://inematds.github.io/2cerebro/" },
     { date: "2026-04-02", title: "Claude Code Deep Dive", type: "novo", url: "https://inematds.github.io/claudecode-manual/" },
     { date: "2026-04-01", title: "Por Dentro do Claude Code", type: "novo", url: "https://inematds.github.io/claudecode-estrutura/" },

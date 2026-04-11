@@ -537,6 +537,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudecode-estrutura/',
   },
   {
+    id: 61,
+    title: 'FPFilm - Crie Filmes com IA',
+    description:
+      'Criacao cinematografica com Freepik Spaces. Do roteiro ao export final usando workflows visuais baseados em nodes. 6 trilhas, 34 modulos, 200+ topicos. Cobre fundamentos de cinema, camera, producao e projeto completo.',
+    icon: '🎬',
+    tags: ['Freepik', 'Cinema', 'IA', 'Video', 'Filmes', 'Producao'],
+    url: 'https://inematds.github.io/fpfilm1/',
+  },
+  {
     id: 60,
     title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
     description:
@@ -557,6 +566,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-11',
+    title: 'FPFilm - Crie Filmes com IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/fpfilm1/',
+  },
   {
     date: '2026-04-09',
     title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
