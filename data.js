@@ -217,6 +217,14 @@ const platformsData = [
         url: "https://inematds.github.io/HG1"
     },
     {
+        id: 62,
+        title: "IAMed - Medico IA-Native",
+        description: "Qualificacao de medicos em IA. 9 trilhas, 54 modulos: entendendo IA, prompt clinico, pesquisa, consultorio, vibe code, segundo cerebro medico. Do fundamento a pratica. 100% gratuito.",
+        icon: "🩺",
+        tags: ["Medicina", "IA", "Saude", "Pesquisa", "Obsidian", "Vibe Coding"],
+        url: "https://inematds.github.io/IAMed/"
+    },
+    {
         id: 21,
         title: "MAKE - Automações",
         description: "Curso Completo de Automação - Domine automação no-code com Make e IA.",
@@ -388,6 +396,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-12", title: "IAMed - Medico IA-Native", type: "novo", url: "https://inematds.github.io/IAMed/" },
     { date: "2026-04-11", title: "FPFilm - Crie Filmes com IA", type: "novo", url: "https://inematds.github.io/fpfilm1/" },
     { date: "2026-04-09", title: "2Cerebro - Segundo Cerebro com LLM + Obsidian", type: "novo", url: "https://inematds.github.io/2cerebro/" },
     { date: "2026-04-02", title: "Claude Code Deep Dive", type: "novo", url: "https://inematds.github.io/claudecode-manual/" },

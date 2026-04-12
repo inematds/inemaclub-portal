@@ -537,6 +537,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudecode-estrutura/',
   },
   {
+    id: 62,
+    title: 'IAMed - Medico IA-Native',
+    description:
+      'Qualificacao de medicos em IA. 9 trilhas, 54 modulos: entendendo IA, prompt clinico, pesquisa, consultorio, vibe code, segundo cerebro medico. Do fundamento a pratica. 100% gratuito.',
+    icon: '🩺',
+    tags: ['Medicina', 'IA', 'Saude', 'Pesquisa', 'Obsidian', 'Vibe Coding'],
+    url: 'https://inematds.github.io/IAMed/',
+  },
+  {
     id: 61,
     title: 'FPFilm - Crie Filmes com IA',
     description:
@@ -566,6 +575,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-12',
+    title: 'IAMed - Medico IA-Native',
+    type: 'novo',
+    url: 'https://inematds.github.io/IAMed/',
+  },
   {
     date: '2026-04-11',
     title: 'FPFilm - Crie Filmes com IA',
