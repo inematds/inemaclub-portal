@@ -572,9 +572,24 @@ export const platformsData: Course[] = [
     tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'Source Code', 'IA', 'Tools'],
     url: 'https://inematds.github.io/claudecode-manual/',
   },
+  {
+    id: 63,
+    title: 'Seedance 2.0 Mastery - Video com IA',
+    description:
+      'Curso completo de geracao de video com Seedance 2.0 (ByteDance). 3 trilhas (Iniciante, Aplicado, Tecnico), ~85 aulas. Cobre prompts, cinema, storytelling, reverse engineering e pipeline de producao. Audio nativo, faces reais e image references.',
+    icon: '🎥',
+    tags: ['Seedance', 'Video', 'IA', 'ByteDance', 'Cinema', 'Prompts'],
+    url: 'https://inematds.github.io/seedance2/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-13',
+    title: 'Seedance 2.0 Mastery - Video com IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/seedance2/',
+  },
   {
     date: '2026-04-12',
     title: 'IAMed - Medico IA-Native',

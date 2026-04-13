@@ -321,6 +321,14 @@ const platformsData = [
         url: "https://inematds.github.io/SHIA/"
     },
     {
+        id: 63,
+        title: "Seedance 2.0 Mastery - Video com IA",
+        description: "Curso completo de geracao de video com Seedance 2.0 (ByteDance). 3 trilhas (Iniciante, Aplicado, Tecnico), ~85 aulas. Cobre prompts, cinema, storytelling, reverse engineering e pipeline de producao. Audio nativo, faces reais e image references.",
+        icon: "🎥",
+        tags: ["Seedance", "Video", "IA", "ByteDance", "Cinema", "Prompts"],
+        url: "https://inematds.github.io/seedance2/"
+    },
+    {
         id: 39,
         title: "Skills - Agent Skills Mastery",
         description: "Domine a criação de Skills para agentes de IA. Aprenda a criar, configurar e distribuir skills para Claude Code, Gemini CLI e outras plataformas.",
@@ -396,6 +404,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-13", title: "Seedance 2.0 Mastery - Video com IA", type: "novo", url: "https://inematds.github.io/seedance2/" },
     { date: "2026-04-12", title: "IAMed - Medico IA-Native", type: "novo", url: "https://inematds.github.io/IAMed/" },
     { date: "2026-04-11", title: "FPFilm - Crie Filmes com IA", type: "novo", url: "https://inematds.github.io/fpfilm1/" },
     { date: "2026-04-09", title: "2Cerebro - Segundo Cerebro com LLM + Obsidian", type: "novo", url: "https://inematds.github.io/2cerebro/" },
