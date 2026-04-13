@@ -381,7 +381,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="learning-path-header">
             <h3>Trilhas de Aprendizado</h3>
-            <p>8 trilhas temáticas — escolha seu caminho e avance com foco</p>
+            <p>10 trilhas temáticas — escolha seu caminho e avance com foco</p>
           </div>
           {([
             { title: '⚡ Automação', steps: [
@@ -433,6 +433,20 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/TDS/',  label: 'TDS',  desc: 'Transformação Digital Sustentável' },
               { href: 'https://inematds.github.io/SHIA/', label: 'SHIA', desc: 'Super Humanos Inteligência Ampliada' },
               { href: 'https://inematds.github.io/GIPM/', label: 'GIPM', desc: 'Projetos com IA Governada' },
+            ]},
+            { title: '🎬 Vídeos, Filmes e Cinema', steps: [
+              { href: 'https://inematds.github.io/seedance2/',  label: 'Seedance 2.0', desc: 'Video com IA (ByteDance)' },
+              { href: 'https://inematds.github.io/VisionPro',   label: 'VisionPro',    desc: 'Construção Audiovisual com IA' },
+              { href: 'https://inematds.github.io/fpfilm1/',     label: 'FPFilm',       desc: 'Crie Filmes com IA (Freepik)' },
+              { href: 'https://inematds.github.io/VISION/',      label: 'VISION',       desc: 'Visão Computacional com IA' },
+            ]},
+            { title: '🖥️ Claude Code', steps: [
+              { href: 'https://inematds.github.io/ccguide2026',           label: 'CCGuide',     desc: 'Claude Code 2026 - Completo' },
+              { href: 'https://inematds.github.io/6pilarccb/',            label: '6 Pilares',   desc: '6 Pilares do Claude Code' },
+              { href: 'https://inematds.github.io/6pilarccfull/',         label: '6 Pilares Full', desc: 'Edição Completa 2026' },
+              { href: 'https://inematds.github.io/claudecode-estrutura/', label: 'Por Dentro',  desc: 'Arquitetura do Claude Code' },
+              { href: 'https://inematds.github.io/claudecode-manual/',    label: 'Deep Dive',   desc: 'Mergulho no Código-Fonte' },
+              { href: 'https://inematds.github.io/CLI-x',                label: 'CLI-x',       desc: 'Terminal como Interface dos Agentes' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">
