@@ -76,6 +76,7 @@ const REPOS = [
   { icon: '🏛️', name: 'GIPM',              desc: 'Método de Projetos com IA Governada',                   stars: 0 },
   { icon: '🎬', name: 'VisionPro',         desc: 'Construção Audiovisual com IA',                         stars: 0 },
   { icon: '🐾', name: 'pet360',            desc: 'Plataforma Pet 360',                                    stars: 0 },
+  { icon: '🎥', name: 'seedance2',         desc: 'App de Geração de Vídeo com IA',                         stars: 0 },
 ]
 
 function fmt(d: string) {
