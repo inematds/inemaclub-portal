@@ -81,6 +81,14 @@ const platformsData = [
         url: "https://inematds.github.io/DBA-FO/"
     },
     {
+        id: 64,
+        title: "DeerFlow 2.0 - Framework de Agentes ByteDance",
+        description: "Curso completo do framework open-source de agentes da ByteDance. 4 trilhas, 21 modulos com labs praticos. Cobre fundamentos, arquitetura LangGraph, extensao com skills e MCP, plataforma avancada e comparativo com Claude Code.",
+        icon: "🦌",
+        tags: ["DeerFlow", "ByteDance", "Agentes", "LangGraph", "MCP", "Python"],
+        url: "https://inematds.github.io/deerflow/"
+    },
+    {
         id: 7,
         title: "EAI - Games Educativos",
         description: "Games Educativos - Aprenda através de jogos interativos e gamificação.",
@@ -404,6 +412,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-13", title: "DeerFlow 2.0 - Framework de Agentes ByteDance", type: "novo", url: "https://inematds.github.io/deerflow/" },
     { date: "2026-04-13", title: "Seedance 2.0 Mastery - Video com IA", type: "novo", url: "https://inematds.github.io/seedance2/" },
     { date: "2026-04-12", title: "IAMed - Medico IA-Native", type: "novo", url: "https://inematds.github.io/IAMed/" },
     { date: "2026-04-11", title: "FPFilm - Crie Filmes com IA", type: "novo", url: "https://inematds.github.io/fpfilm1/" },

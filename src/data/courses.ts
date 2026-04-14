@@ -581,9 +581,24 @@ export const platformsData: Course[] = [
     tags: ['Seedance', 'Video', 'IA', 'ByteDance', 'Cinema', 'Prompts'],
     url: 'https://inematds.github.io/seedance2/',
   },
+  {
+    id: 64,
+    title: 'DeerFlow 2.0 - Framework de Agentes ByteDance',
+    description:
+      'Curso completo do framework open-source de agentes da ByteDance. 4 trilhas, 21 modulos com labs praticos. Cobre fundamentos, arquitetura LangGraph, extensao com skills e MCP, plataforma avancada e comparativo com Claude Code.',
+    icon: '🦌',
+    tags: ['DeerFlow', 'ByteDance', 'Agentes', 'LangGraph', 'MCP', 'Python'],
+    url: 'https://inematds.github.io/deerflow/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-13',
+    title: 'DeerFlow 2.0 - Framework de Agentes ByteDance',
+    type: 'novo',
+    url: 'https://inematds.github.io/deerflow/',
+  },
   {
     date: '2026-04-13',
     title: 'Seedance 2.0 Mastery - Video com IA',
