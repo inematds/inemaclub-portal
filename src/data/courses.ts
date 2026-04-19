@@ -590,9 +590,24 @@ export const platformsData: Course[] = [
     tags: ['DeerFlow', 'ByteDance', 'Agentes', 'LangGraph', 'MCP', 'Python'],
     url: 'https://inematds.github.io/deerflow/',
   },
+  {
+    id: 65,
+    title: 'Design + Video com IA (Hyperframes)',
+    description:
+      'Produza materiais visuais profissionais de ponta a ponta com Claude Design e Hyperframes. 3 trilhas, 9 modulos, 54 topicos em ~22 horas. Cobre design, brand systems, motion graphics, pitch decks, videos verticais e promocionais.',
+    icon: '🎨',
+    tags: ['Design', 'Video', 'IA', 'Hyperframes', 'Claude Design', 'Motion Graphics'],
+    url: 'https://inematds.github.io/cchyperframes/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-19',
+    title: 'Design + Video com IA (Hyperframes)',
+    type: 'novo',
+    url: 'https://inematds.github.io/cchyperframes/',
+  },
   {
     date: '2026-04-13',
     title: 'DeerFlow 2.0 - Framework de Agentes ByteDance',

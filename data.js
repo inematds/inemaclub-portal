@@ -89,6 +89,14 @@ const platformsData = [
         url: "https://inematds.github.io/deerflow/"
     },
     {
+        id: 65,
+        title: "Design + Video com IA (Hyperframes)",
+        description: "Produza materiais visuais profissionais de ponta a ponta com Claude Design e Hyperframes. 3 trilhas, 9 modulos, 54 topicos em ~22 horas. Cobre design, brand systems, motion graphics, pitch decks, videos verticais e promocionais.",
+        icon: "🎨",
+        tags: ["Design", "Video", "IA", "Hyperframes", "Claude Design", "Motion Graphics"],
+        url: "https://inematds.github.io/cchyperframes/"
+    },
+    {
         id: 7,
         title: "EAI - Games Educativos",
         description: "Games Educativos - Aprenda através de jogos interativos e gamificação.",
@@ -412,6 +420,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-19", title: "Design + Video com IA (Hyperframes)", type: "novo", url: "https://inematds.github.io/cchyperframes/" },
     { date: "2026-04-13", title: "DeerFlow 2.0 - Framework de Agentes ByteDance", type: "novo", url: "https://inematds.github.io/deerflow/" },
     { date: "2026-04-13", title: "Seedance 2.0 Mastery - Video com IA", type: "novo", url: "https://inematds.github.io/seedance2/" },
     { date: "2026-04-12", title: "IAMed - Medico IA-Native", type: "novo", url: "https://inematds.github.io/IAMed/" },
