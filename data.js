@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/claudecode-manual/"
     },
     {
+        id: 66,
+        title: "Claude Design - Zero ao Expert",
+        description: "Curso completo de Claude Design, a ferramenta de design da Anthropic. 5 trilhas, ~35 modulos, 200+ topicos. Cobre fundamentos, design systems, context stacking, canvas iteration, prompts prontos e automacao. Substitui Figma, Gamma e Canva numa interface conversacional.",
+        icon: "🎨",
+        tags: ["Claude Design", "Anthropic", "Design", "No-Code", "UI/UX", "Canva"],
+        url: "https://inematds.github.io/claudedesign/"
+    },
+    {
         id: 5,
         title: "Dashboard Mastery",
         description: "Supercurso de Dashboards Profissionais - Domine a criação de dashboards com Next.js e React.",
@@ -420,6 +428,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-20", title: "Claude Design - Zero ao Expert", type: "novo", url: "https://inematds.github.io/claudedesign/" },
     { date: "2026-04-19", title: "Design + Video com IA (Hyperframes)", type: "novo", url: "https://inematds.github.io/cchyperframes/" },
     { date: "2026-04-13", title: "DeerFlow 2.0 - Framework de Agentes ByteDance", type: "novo", url: "https://inematds.github.io/deerflow/" },
     { date: "2026-04-13", title: "Seedance 2.0 Mastery - Video com IA", type: "novo", url: "https://inematds.github.io/seedance2/" },

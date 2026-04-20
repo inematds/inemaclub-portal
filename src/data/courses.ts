@@ -599,9 +599,24 @@ export const platformsData: Course[] = [
     tags: ['Design', 'Video', 'IA', 'Hyperframes', 'Claude Design', 'Motion Graphics'],
     url: 'https://inematds.github.io/cchyperframes/',
   },
+  {
+    id: 66,
+    title: 'Claude Design - Zero ao Expert',
+    description:
+      'Curso completo de Claude Design, a ferramenta de design da Anthropic. 5 trilhas, ~35 modulos, 200+ topicos. Cobre fundamentos, design systems, context stacking, canvas iteration, prompts prontos e automacao. Substitui Figma, Gamma e Canva numa interface conversacional.',
+    icon: '🎨',
+    tags: ['Claude Design', 'Anthropic', 'Design', 'No-Code', 'UI/UX', 'Canva'],
+    url: 'https://inematds.github.io/claudedesign/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-20',
+    title: 'Claude Design - Zero ao Expert',
+    type: 'novo',
+    url: 'https://inematds.github.io/claudedesign/',
+  },
   {
     date: '2026-04-19',
     title: 'Design + Video com IA (Hyperframes)',
