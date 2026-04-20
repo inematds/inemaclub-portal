@@ -289,6 +289,14 @@ const platformsData = [
         url: "https://inematds.github.io/notebooklm"
     },
     {
+        id: 67,
+        title: "Opus 4.7 - Dominando o Claude Code",
+        description: "Treinamento pratico para dominar o Opus 4.7 no Claude Code. 4 trilhas, 28 modulos, 180+ topicos em ~20 horas. Cobre transicao do 4.6, orquestracao agentica, fan-out paralelo, framework ICCA, auditoria e migracao para producao.",
+        icon: "🧬",
+        tags: ["Claude Code", "Opus 4.7", "Anthropic", "Agentic", "IA", "Produtividade"],
+        url: "https://inematds.github.io/opus47/"
+    },
+    {
         id: 25,
         title: "Playbook - Formação Consultor IA - Inglês",
         description: "Playbook de Desenvolvimento - Guia completo de boas práticas e metodologias de desenvolvimento.",
@@ -428,6 +436,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-20", title: "Opus 4.7 - Dominando o Claude Code", type: "novo", url: "https://inematds.github.io/opus47/" },
     { date: "2026-04-20", title: "Claude Design - Zero ao Expert", type: "novo", url: "https://inematds.github.io/claudedesign/" },
     { date: "2026-04-19", title: "Design + Video com IA (Hyperframes)", type: "novo", url: "https://inematds.github.io/cchyperframes/" },
     { date: "2026-04-13", title: "DeerFlow 2.0 - Framework de Agentes ByteDance", type: "novo", url: "https://inematds.github.io/deerflow/" },

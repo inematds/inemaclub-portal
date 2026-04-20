@@ -608,9 +608,24 @@ export const platformsData: Course[] = [
     tags: ['Claude Design', 'Anthropic', 'Design', 'No-Code', 'UI/UX', 'Canva'],
     url: 'https://inematds.github.io/claudedesign/',
   },
+  {
+    id: 67,
+    title: 'Opus 4.7 - Dominando o Claude Code',
+    description:
+      'Treinamento pratico para dominar o Opus 4.7 no Claude Code. 4 trilhas, 28 modulos, 180+ topicos em ~20 horas. Cobre transicao do 4.6, orquestracao agentica, fan-out paralelo, framework ICCA, auditoria e migracao para producao.',
+    icon: '🧬',
+    tags: ['Claude Code', 'Opus 4.7', 'Anthropic', 'Agentic', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/opus47/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-20',
+    title: 'Opus 4.7 - Dominando o Claude Code',
+    type: 'novo',
+    url: 'https://inematds.github.io/opus47/',
+  },
   {
     date: '2026-04-20',
     title: 'Claude Design - Zero ao Expert',
