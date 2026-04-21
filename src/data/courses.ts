@@ -626,9 +626,24 @@ export const platformsData: Course[] = [
     tags: ['Pensamento', 'Decisao', '6 Chapeus', 'De Bono', 'Metodologia', 'Produtividade'],
     url: 'https://inematds.github.io/6chapeus/',
   },
+  {
+    id: 69,
+    title: 'CCTop - Mestre em Contexto e Tokens',
+    description:
+      'Domine o gerenciamento de contexto e tokens no Claude Code. 6 trilhas, 18 modulos, ~108 topicos em ~12 horas. Cobre mecanica de tokens, prompt caching, context rot, handoff inteligente, delegacao sub-agente e orquestracao multi-modelo.',
+    icon: '📊',
+    tags: ['Claude Code', 'Tokens', 'Contexto', 'Anthropic', 'Otimizacao', 'IA'],
+    url: 'https://inematds.github.io/cctop/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-21',
+    title: 'CCTop - Mestre em Contexto e Tokens',
+    type: 'novo',
+    url: 'https://inematds.github.io/cctop/',
+  },
   {
     date: '2026-04-21',
     title: '6 Chapeus + Anti-Ancora',

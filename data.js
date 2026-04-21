@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 69,
+        title: "CCTop - Mestre em Contexto e Tokens",
+        description: "Domine o gerenciamento de contexto e tokens no Claude Code. 6 trilhas, 18 modulos, ~108 topicos em ~12 horas. Cobre mecanica de tokens, prompt caching, context rot, handoff inteligente, delegacao sub-agente e orquestracao multi-modelo.",
+        icon: "📊",
+        tags: ["Claude Code", "Tokens", "Contexto", "Anthropic", "Otimizacao", "IA"],
+        url: "https://inematds.github.io/cctop/"
+    },
+    {
         id: 59,
         title: "Claude Code Deep Dive",
         description: "Mergulho profundo no codigo-fonte do Claude Code. Analise de 1.902 arquivos cobrindo arquitetura core, sistema de tools, inteligencia do agente, infra, conectividade e features nao lancadas. 8 trilhas, 50 aulas, ~25 horas. Nivel avancado.",
@@ -444,6 +452,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-21", title: "CCTop - Mestre em Contexto e Tokens", type: "novo", url: "https://inematds.github.io/cctop/" },
     { date: "2026-04-21", title: "6 Chapeus + Anti-Ancora", type: "novo", url: "https://inematds.github.io/6chapeus/" },
     { date: "2026-04-20", title: "Opus 4.7 - Dominando o Claude Code", type: "novo", url: "https://inematds.github.io/opus47/" },
     { date: "2026-04-20", title: "Claude Design - Zero ao Expert", type: "novo", url: "https://inematds.github.io/claudedesign/" },
