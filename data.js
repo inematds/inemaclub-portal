@@ -9,6 +9,14 @@ const platformsData = [
         url: "https://inematds.github.io/2cerebro/"
     },
     {
+        id: 68,
+        title: "6 Chapeus + Anti-Ancora",
+        description: "Curso completo do metodo dos 6 Chapeus de Edward de Bono com fase anti-ancora para quebrar vieses cognitivos. 3 trilhas (Metodo, Pratica, Construcao), 18 modulos, 108 topicos em ~9 horas. Pensamento estruturado em 8 etapas: fatos, beneficios, riscos, alternativas e intuicao.",
+        icon: "🎩",
+        tags: ["Pensamento", "Decisao", "6 Chapeus", "De Bono", "Metodologia", "Produtividade"],
+        url: "https://inematds.github.io/6chapeus/"
+    },
+    {
         id: 42,
         title: "Agentic Engineering Masterclass",
         description: "Engenharia de Agentic - Masterclass completa com 6 trilhas, 42 módulos e 252+ tópicos em 21 semanas. Do básico à orquestração multi-agente enterprise com LangGraph, CrewAI e AutoGen.",
@@ -436,6 +444,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-21", title: "6 Chapeus + Anti-Ancora", type: "novo", url: "https://inematds.github.io/6chapeus/" },
     { date: "2026-04-20", title: "Opus 4.7 - Dominando o Claude Code", type: "novo", url: "https://inematds.github.io/opus47/" },
     { date: "2026-04-20", title: "Claude Design - Zero ao Expert", type: "novo", url: "https://inematds.github.io/claudedesign/" },
     { date: "2026-04-19", title: "Design + Video com IA (Hyperframes)", type: "novo", url: "https://inematds.github.io/cchyperframes/" },

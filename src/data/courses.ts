@@ -617,9 +617,24 @@ export const platformsData: Course[] = [
     tags: ['Claude Code', 'Opus 4.7', 'Anthropic', 'Agentic', 'IA', 'Produtividade'],
     url: 'https://inematds.github.io/opus47/',
   },
+  {
+    id: 68,
+    title: '6 Chapeus + Anti-Ancora',
+    description:
+      'Curso completo do metodo dos 6 Chapeus de Edward de Bono com fase anti-ancora para quebrar vieses cognitivos. 3 trilhas (Metodo, Pratica, Construcao), 18 modulos, 108 topicos em ~9 horas. Pensamento estruturado em 8 etapas: fatos, beneficios, riscos, alternativas e intuicao.',
+    icon: '🎩',
+    tags: ['Pensamento', 'Decisao', '6 Chapeus', 'De Bono', 'Metodologia', 'Produtividade'],
+    url: 'https://inematds.github.io/6chapeus/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-21',
+    title: '6 Chapeus + Anti-Ancora',
+    type: 'novo',
+    url: 'https://inematds.github.io/6chapeus/',
+  },
   {
     date: '2026-04-20',
     title: 'Opus 4.7 - Dominando o Claude Code',
