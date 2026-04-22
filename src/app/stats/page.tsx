@@ -43,13 +43,15 @@ export default async function StatsPage() {
   }
 
   // --- Totais via RPC (leve) ---
+  // RETURNS TABLE vem como array: [{total, unique_anon, unique_logged}]
   let totalViews = BASE_TOTAL + visits.length
   let uniqueVisitors = BASE_UNIQUE_ANON
   try {
-    const { data } = await supabaseAdmin.rpc('visit_stats') as { data: StatsRpc | null }
-    if (data) {
-      totalViews = BASE_TOTAL + data.total
-      uniqueVisitors = BASE_UNIQUE_ANON + data.unique_anon
+    const { data } = await supabaseAdmin.rpc('visit_stats')
+    const row: StatsRpc | null = Array.isArray(data) ? data[0] ?? null : (data as StatsRpc | null)
+    if (row && typeof row.total === 'number') {
+      totalViews = BASE_TOTAL + row.total
+      uniqueVisitors = BASE_UNIQUE_ANON + row.unique_anon
     }
   } catch {}
   const totalClicks = clicks.length
