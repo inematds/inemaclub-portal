@@ -1,7 +1,7 @@
 import { supabaseAdmin } from '@/lib/supabase'
 import { fetchAllRows } from '@/lib/supabase-utils'
 
-const BASE_TOTAL = 90000
+const BASE_TOTAL = 100000
 const BASE_UNIQUE_ANON = 50000
 
 type StatsRpc = { total: number; unique_anon: number; unique_logged: number }
