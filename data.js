@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 70,
+        title: "CCMasterMemory - Memory Injection via Hooks",
+        description: "Resolva as limitacoes de memoria do Claude Code com hooks deterministicos. 6 trilhas, 36 modulos, ~24 horas + 6 labs praticos. Cobre hierarquia de 7 niveis de memoria, anatomia de 18 hooks, arquitetura de backend (Markdown, SQLite, vector DB) e memoria multi-agente.",
+        icon: "🧠",
+        tags: ["Claude Code", "Memory", "Hooks", "Anthropic", "IA", "SQLite"],
+        url: "https://inematds.github.io/ccmastermemory/"
+    },
+    {
         id: 69,
         title: "CCTop - Mestre em Contexto e Tokens",
         description: "Domine o gerenciamento de contexto e tokens no Claude Code. 6 trilhas, 18 modulos, ~108 topicos em ~12 horas. Cobre mecanica de tokens, prompt caching, context rot, handoff inteligente, delegacao sub-agente e orquestracao multi-modelo.",
@@ -452,6 +460,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-04-23", title: "CCMasterMemory - Memory Injection via Hooks", type: "novo", url: "https://inematds.github.io/ccmastermemory/" },
     { date: "2026-04-21", title: "CCTop - Mestre em Contexto e Tokens", type: "novo", url: "https://inematds.github.io/cctop/" },
     { date: "2026-04-21", title: "6 Chapeus + Anti-Ancora", type: "novo", url: "https://inematds.github.io/6chapeus/" },
     { date: "2026-04-20", title: "Opus 4.7 - Dominando o Claude Code", type: "novo", url: "https://inematds.github.io/opus47/" },

@@ -482,6 +482,9 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/claudecode-estrutura/', label: 'Por Dentro',      desc: 'Arquitetura do Claude Code' },
               { href: 'https://inematds.github.io/claudecode-manual/',   label: 'Deep Dive',        desc: 'Mergulho no Código-Fonte' },
               { href: 'https://inematds.github.io/CLI-x',               label: 'CLI-x',            desc: 'Terminal como Interface dos Agentes' },
+              { href: 'https://inematds.github.io/ccmastermemory/',    label: 'MasterMemory',     desc: 'Memory Injection via Hooks' },
+              { href: 'https://inematds.github.io/cctop/',             label: 'CCTop',            desc: 'Mestre em Contexto e Tokens' },
+              { href: 'https://inematds.github.io/opus47/',            label: 'Opus 4.7',         desc: 'Dominando o Opus 4.7' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>

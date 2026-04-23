@@ -635,9 +635,24 @@ export const platformsData: Course[] = [
     tags: ['Claude Code', 'Tokens', 'Contexto', 'Anthropic', 'Otimizacao', 'IA'],
     url: 'https://inematds.github.io/cctop/',
   },
+  {
+    id: 70,
+    title: 'CCMasterMemory - Memory Injection via Hooks',
+    description:
+      'Resolva as limitacoes de memoria do Claude Code com hooks deterministicos. 6 trilhas, 36 modulos, ~24 horas + 6 labs praticos. Cobre hierarquia de 7 niveis de memoria, anatomia de 18 hooks, arquitetura de backend (Markdown, SQLite, vector DB) e memoria multi-agente.',
+    icon: '🧠',
+    tags: ['Claude Code', 'Memory', 'Hooks', 'Anthropic', 'IA', 'SQLite'],
+    url: 'https://inematds.github.io/ccmastermemory/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-23',
+    title: 'CCMasterMemory - Memory Injection via Hooks',
+    type: 'novo',
+    url: 'https://inematds.github.io/ccmastermemory/',
+  },
   {
     date: '2026-04-21',
     title: 'CCTop - Mestre em Contexto e Tokens',
