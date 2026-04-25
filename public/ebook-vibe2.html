@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Zero ao SaaS com IA — Vibe Coding Masterbook</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0c12;--paper:#f5f0e8;--cream:#fdf8f0;
+  --gold:#c9a84c;--gold2:#e8c96a;--gold-dark:#8b6914;
+  --electric:#00d4ff;--neon:#00ff87;--hot:#ff3366;
+  --deep:#1a1f35;--mid:#2d3454;
+  --text:#1a1a2e;--muted:#6b6b8a;
+  --page-w:900px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--ink);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;}
+h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;}
+code,.mono{font-family:'JetBrains Mono',monospace;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:var(--gold);}
+
+/* ── PAGE SYSTEM ── */
+.page{
+  width:var(--page-w);max-width:100%;
+  margin:0 auto;
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+.page+.page{border-top:1px solid rgba(255,255,255,0.06);}
+
+/* ── READING PROGRESS ── */
+#rp{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--electric));z-index:9999;transition:width .1s;}
+
+/* ════════════════════════════════
+   COVER PAGE
+════════════════════════════════ */
+#cover{
+  background:var(--ink);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  min-height:100vh;padding:60px 40px;
+  text-align:center;position:relative;
+}
+.cover-noise{
+  position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+.cover-rings{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;}
+.ring{position:absolute;border-radius:50%;border:1px solid;animation:rotate linear infinite;}
+.ring1{width:700px;height:700px;border-color:rgba(201,168,76,0.08);animation-duration:80s;}
+.ring2{width:520px;height:520px;border-color:rgba(0,212,255,0.06);animation-duration:60s;animation-direction:reverse;}
+.ring3{width:340px;height:340px;border-color:rgba(201,168,76,0.12);animation-duration:40s;}
+@keyframes rotate{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+.cover-label{
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:4px;
+  text-transform:uppercase;color:var(--gold);
+  border:1px solid rgba(201,168,76,0.3);padding:8px 20px;border-radius:2px;
+  margin-bottom:48px;position:relative;
+}
+.cover-eyebrow{
+  font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:6px;
+  text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;
+}
+.cover-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(60px,10vw,110px);font-weight:900;
+  line-height:.92;position:relative;margin-bottom:32px;
+}
+.ct1{display:block;color:rgba(255,255,255,0.15);font-style:italic;font-size:.55em;}
+.ct2{display:block;
+  background:linear-gradient(135deg,#c9a84c 0%,#e8c96a 40%,#fff8e1 55%,#e8c96a 70%,#c9a84c 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.ct3{display:block;color:rgba(255,255,255,0.9);font-size:.75em;font-weight:400;font-style:italic;margin-top:8px;}
+.cover-line{
+  width:120px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:32px auto;
+}
+.cover-sub{color:rgba(255,255,255,0.4);font-size:16px;max-width:440px;margin:0 auto 56px;line-height:1.8;}
+
+.cover-stats{display:flex;gap:0;border:1px solid rgba(201,168,76,0.2);border-radius:4px;overflow:hidden;}
+.cstat{padding:20px 32px;text-align:center;flex:1;border-right:1px solid rgba(201,168,76,0.15);}
+.cstat:last-child{border-right:none;}
+.cstat-n{font-family:'Playfair Display',serif;font-size:42px;font-weight:900;color:var(--gold);line-height:1;}
+.cstat-l{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-top:6px;}
+
+/* ── COVER HERO SVG ── */
+.cover-hero{width:100%;max-width:820px;margin:56px auto 0;position:relative;}
+
+/* ════════════════════════════════
+   MARKET SPREAD
+════════════════════════════════ */
+#market{
+  background:var(--cream);
+  min-height:100vh;padding:80px 60px;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+}
+.market-left{}
+.market-eyebrow{
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:4px;
+  text-transform:uppercase;color:var(--gold-dark);margin-bottom:24px;
+}
+.market-title{
+  font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);
+  font-weight:900;color:var(--text);line-height:1.05;margin-bottom:24px;
+}
+.market-body{color:var(--muted);font-size:16px;line-height:1.9;max-width:420px;}
+.market-right{}
+
+.big-stat{margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid rgba(0,0,0,0.06);}
+.big-stat:last-child{border-bottom:none;margin-bottom:0;}
+.big-stat-n{
+  font-family:'Playfair Display',serif;font-size:72px;font-weight:900;line-height:1;
+  color:var(--gold-dark);margin-bottom:8px;
+}
+.big-stat-l{font-size:15px;color:var(--text);font-weight:500;}
+.big-stat-sub{font-size:13px;color:var(--muted);}
+
+/* ════════════════════════════════
+   CHAPTER PAGES
+════════════════════════════════ */
+.ch-dark{background:var(--ink);color:rgba(255,255,255,0.9);}
+.ch-light{background:var(--cream);color:var(--text);}
+.ch-deep{background:var(--deep);color:rgba(255,255,255,0.9);}
+.ch-mid{background:var(--mid);color:rgba(255,255,255,0.9);}
+
+/* Chapter opener - full bleed */
+.ch-opener{
+  min-height:100vh;padding:0;
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+}
+.ch-opener-top{
+  flex:1;display:flex;flex-direction:column;
+  justify-content:flex-end;padding:60px 60px 40px;
+  position:relative;z-index:2;
+}
+.ch-opener-bottom{
+  padding:40px 60px 60px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;
+  position:relative;z-index:2;
+}
+.ch-num-bg{
+  position:absolute;right:-20px;bottom:-40px;
+  font-family:'Playfair Display',serif;font-size:320px;font-weight:900;
+  line-height:1;opacity:.04;pointer-events:none;user-select:none;
+  color:currentColor;
+}
+.ch-tag{
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:3px;text-transform:uppercase;
+  padding:6px 14px;border-radius:2px;margin-bottom:20px;
+}
+.ch-main-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(48px,7vw,90px);font-weight:900;
+  line-height:.95;margin-bottom:24px;
+}
+.ch-intro-text{font-size:17px;line-height:1.8;opacity:.7;max-width:560px;}
+.ch-key{
+  padding:20px;border-top:2px solid;
+}
+.ch-key-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.5;margin-bottom:8px;}
+.ch-key-val{font-size:15px;font-weight:500;line-height:1.5;}
+
+/* ── CONTENT SECTIONS ── */
+.content{padding:80px 60px;}
+
+.section-label{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:4px;text-transform:uppercase;
+  display:flex;align-items:center;gap:16px;margin-bottom:40px;
+  opacity:.5;
+}
+.section-label::after{content:'';flex:1;height:1px;background:currentColor;opacity:.2;}
+
+.section-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(28px,4vw,48px);font-weight:900;
+  line-height:1.1;margin-bottom:20px;
+}
+.body-text{font-size:16px;line-height:1.9;max-width:680px;}
+
+/* ── CARDS ── */
+.card-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:40px 0;}
+.card-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin:40px 0;}
+@media(max-width:700px){.card-grid-2,.card-grid-3{grid-template-columns:1fr;}}
+.card{padding:32px;background:rgba(255,255,255,0.04);transition:background .2s;}
+.card:hover{background:rgba(255,255,255,0.07);}
+.card-icon{font-size:32px;margin-bottom:16px;display:block;}
+.card-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:10px;}
+.card-body{font-size:14px;opacity:.65;line-height:1.7;}
+
+/* ── CALLOUT ── */
+.callout{
+  padding:28px 32px;margin:32px 0;
+  border-left:3px solid var(--gold);
+  background:rgba(201,168,76,0.06);
+}
+.callout-title{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:3px;text-transform:uppercase;color:var(--gold);
+  margin-bottom:10px;
+}
+.callout-body{font-size:15px;line-height:1.8;opacity:.8;}
+
+/* ── CODE BLOCK ── */
+.code-wrap{margin:32px 0;border-radius:8px;overflow:hidden;background:#0d1117;border:1px solid rgba(255,255,255,0.08);}
+.code-bar{background:rgba(255,255,255,0.04);padding:12px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(255,255,255,0.06);}
+.dots{display:flex;gap:6px;}
+.dot{width:10px;height:10px;border-radius:50%;}
+.d1{background:#ff5f57;}.d2{background:#febc2e;}.d3{background:#28c840;}
+.code-file{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-left:auto;}
+.code-body{padding:24px 20px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:2.1;overflow-x:auto;}
+.kw{color:#ff79c6;}.str{color:#f1fa8c;}.fn{color:#50fa7b;}.cm{color:#6272a4;}.nm{color:#bd93f9;}.op{color:#ff5555;}
+
+/* ── FLOW DIAGRAM ── */
+.flow{display:flex;flex-direction:column;gap:0;margin:32px 0;}
+.flow-step{display:flex;gap:24px;}
+.flow-spine{display:flex;flex-direction:column;align-items:center;flex-shrink:0;}
+.flow-circle{
+  width:48px;height:48px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-size:18px;font-weight:700;
+  flex-shrink:0;border:2px solid;
+}
+.flow-line{width:2px;flex:1;min-height:28px;opacity:.2;}
+.flow-body{padding:4px 0 36px;flex:1;}
+.flow-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;margin-bottom:8px;}
+.flow-desc{font-size:14px;opacity:.65;line-height:1.7;}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+.tag{font-family:'JetBrains Mono',monospace;font-size:11px;padding:4px 10px;border-radius:2px;background:rgba(255,255,255,0.06);opacity:.8;}
+
+/* ── DIAGRAM BOX ── */
+.diagram-box{
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px;padding:40px;margin:32px 0;
+  background:rgba(255,255,255,0.02);
+  position:relative;overflow:hidden;
+}
+.diagram-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--electric));
+}
+
+/* ── QUOTE ── */
+.quote-block{
+  padding:60px;margin:40px 0;text-align:center;
+  border-top:1px solid rgba(255,255,255,0.08);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  position:relative;
+}
+.q-mark{
+  font-family:'Playfair Display',serif;font-size:160px;line-height:1;
+  position:absolute;top:-20px;left:40px;opacity:.04;
+}
+.q-text{font-family:'Playfair Display',serif;font-size:clamp(22px,3.5vw,38px);font-weight:700;font-style:italic;line-height:1.4;max-width:680px;margin:0 auto 20px;}
+.q-author{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;opacity:.4;}
+
+/* ── STAT STRIP ── */
+.stat-strip{display:flex;gap:0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);margin:40px 0;}
+.sstat{flex:1;padding:28px;text-align:center;border-right:1px solid rgba(255,255,255,0.06);}
+.sstat:last-child{border-right:none;}
+.sstat-n{font-family:'Playfair Display',serif;font-size:44px;font-weight:900;line-height:1;margin-bottom:6px;}
+.sstat-l{font-size:12px;opacity:.45;letter-spacing:1px;}
+
+/* ── CHECKLIST ── */
+.chk{list-style:none;margin:20px 0;}
+.chk li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:15px;align-items:flex-start;}
+.chk li::before{content:'◆';font-size:9px;margin-top:6px;flex-shrink:0;}
+
+/* ── GOLD ACCENT ── */
+.gold{color:var(--gold);}
+.electric{color:var(--electric);}
+.neon{color:var(--neon);}
+.hot{color:var(--hot);}
+
+/* ── 2-COL LAYOUT ── */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+@media(max-width:700px){.two-col{grid-template-columns:1fr;}}
+
+/* ── FULL BLEED IMG-LIKE ── */
+.spread{
+  min-height:60vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:80px 60px;position:relative;overflow:hidden;
+}
+
+/* ── FOOTER ── */
+.ebook-footer{
+  background:var(--ink);padding:60px;text-align:center;
+  border-top:1px solid rgba(201,168,76,0.2);
+}
+.footer-brand{
+  font-family:'Playfair Display',serif;font-size:32px;font-weight:900;
+  color:var(--gold);margin-bottom:12px;
+}
+
+/* ── PAGE NUMBER ── */
+.page-num{
+  position:absolute;bottom:24px;right:40px;
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:2px;opacity:.25;
+}
+
+/* ── COLOR THEMES per chapter ── */
+.theme-gold .ch-tag{background:rgba(201,168,76,0.15);color:var(--gold);}
+.theme-gold .flow-circle{border-color:var(--gold);color:var(--gold);background:rgba(201,168,76,0.1);}
+.theme-gold .flow-line{background:var(--gold);}
+.theme-gold .section-label{color:var(--gold);}
+.theme-gold .callout{border-color:var(--gold);background:rgba(201,168,76,0.06);}
+
+.theme-electric .ch-tag{background:rgba(0,212,255,0.15);color:var(--electric);}
+.theme-electric .flow-circle{border-color:var(--electric);color:var(--electric);background:rgba(0,212,255,0.08);}
+.theme-electric .flow-line{background:var(--electric);}
+.theme-electric .section-label{color:var(--electric);}
+.theme-electric .callout{border-color:var(--electric);background:rgba(0,212,255,0.05);}
+
+.theme-neon .ch-tag{background:rgba(0,255,135,0.12);color:var(--neon);}
+.theme-neon .flow-circle{border-color:var(--neon);color:var(--neon);background:rgba(0,255,135,0.06);}
+.theme-neon .flow-line{background:var(--neon);}
+.theme-neon .section-label{color:var(--neon);}
+.theme-neon .callout{border-color:var(--neon);background:rgba(0,255,135,0.04);}
+
+.theme-hot .ch-tag{background:rgba(255,51,102,0.15);color:var(--hot);}
+.theme-hot .flow-circle{border-color:var(--hot);color:var(--hot);background:rgba(255,51,102,0.08);}
+.theme-hot .flow-line{background:var(--hot);}
+.theme-hot .section-label{color:var(--hot);}
+.theme-hot .callout{border-color:var(--hot);background:rgba(255,51,102,0.04);}
+
+.theme-purple .ch-tag{background:rgba(168,85,247,0.15);color:#a855f7;}
+.theme-purple .flow-circle{border-color:#a855f7;color:#a855f7;background:rgba(168,85,247,0.08);}
+.theme-purple .flow-line{background:#a855f7;}
+.theme-purple .section-label{color:#a855f7;}
+.theme-purple .callout{border-color:#a855f7;background:rgba(168,85,247,0.04);}
+
+.theme-amber .ch-tag{background:rgba(251,191,36,0.15);color:#fbbf24;}
+.theme-amber .flow-circle{border-color:#fbbf24;color:#fbbf24;background:rgba(251,191,36,0.08);}
+.theme-amber .flow-line{background:#fbbf24;}
+.theme-amber .section-label{color:#fbbf24;}
+.theme-amber .callout{border-color:#fbbf24;background:rgba(251,191,36,0.04);}
+
+/* ── PRINT/PDF STYLES ── */
+@media print{
+  .page{width:100%;page-break-after:always;}
+  #rp{display:none;}
+  body{background:white;}
+}
+</style>
+</head>
+<body>
+<div id="rp"></div>
+
+<!-- ══════════════════════════════════
+  PAGE 1: COVER
+══════════════════════════════════ -->
+<div class="page" id="cover">
+<div class="cover-noise"></div>
+<div class="cover-rings">
+  <div class="ring ring1"></div>
+  <div class="ring ring2"></div>
+  <div class="ring ring3"></div>
+</div>
+
+<div class="cover-eyebrow">INEMA.CLUB · Masterbook 2026</div>
+<div class="cover-label">Vibe Coding · E-Book</div>
+
+<h1 class="cover-title">
+  <span class="ct1">do zero ao</span>
+  <span class="ct2">SaaS com IA</span>
+  <span class="ct3">em 3 dias</span>
+</h1>
+<div class="cover-line"></div>
+<p class="cover-sub">O guia definitivo para construir, lançar e monetizar um produto SaaS usando IA como co-piloto. Da ideia ao deploy em produção.</p>
+
+<!-- COVER HERO SVG -->
+<div class="cover-hero">
+<svg viewBox="0 0 820 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#00d4ff"/></linearGradient>
+    <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1f35"/><stop offset="100%" stop-color="#0a0c12"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+  </defs>
+  <!-- Background -->
+  <rect width="820" height="360" rx="12" fill="url(#gb)"/>
+  <rect width="820" height="360" rx="12" fill="url(#gridg)" opacity=".3"/>
+  <defs><pattern id="gridg" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(201,168,76,0.08)" stroke-width="1"/>
+  </pattern></defs>
+  <!-- Top gradient bar -->
+  <rect width="820" height="3" rx="0" fill="url(#gg)"/>
+
+  <!-- LEFT PANEL: Code editor -->
+  <rect x="20" y="24" width="230" height="312" rx="10" fill="#0d1117" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+  <rect x="20" y="24" width="230" height="32" rx="10" fill="rgba(201,168,76,0.06)"/>
+  <rect x="20" y="44" width="230" height="12" fill="rgba(201,168,76,0.06)"/>
+  <circle cx="38" cy="40" r="5" fill="#ff5f57"/><circle cx="54" cy="40" r="5" fill="#febc2e"/><circle cx="70" cy="40" r="5" fill="#28c840"/>
+  <text x="120" y="44" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10" text-anchor="middle">CLAUDE.md</text>
+  <!-- Code lines with syntax highlight feel -->
+  <rect x="32" y="66" width="60" height="7" rx="2" fill="#ff79c6" opacity=".8"/>
+  <rect x="32" y="81" width="140" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="32" y="95" width="100" height="6" rx="2" fill="#f1fa8c" opacity=".6"/>
+  <rect x="32" y="109" width="160" height="6" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="32" y="123" width="80" height="6" rx="2" fill="#50fa7b" opacity=".7"/>
+  <rect x="32" y="137" width="130" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="32" y="151" width="110" height="6" rx="2" fill="#bd93f9" opacity=".6"/>
+  <rect x="32" y="165" width="150" height="6" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="32" y="179" width="70" height="6" rx="2" fill="#ff5555" opacity=".7"/>
+  <rect x="32" y="193" width="140" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="32" y="207" width="90" height="6" rx="2" fill="#f1fa8c" opacity=".5"/>
+  <rect x="32" y="221" width="160" height="6" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="32" y="235" width="100" height="6" rx="2" fill="#50fa7b" opacity=".6"/>
+  <rect x="32" y="249" width="120" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="32" y="263" width="80" height="6" rx="2" fill="#c9a84c" opacity=".8"/>
+  <rect x="32" y="277" width="150" height="6" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="32" y="291" width="60" height="6" rx="2" fill="#ff79c6" opacity=".6"/>
+  <rect x="32" y="305" width="130" height="7" rx="2" fill="rgba(255,255,255,0.07)"/>
+
+  <!-- ARROWS: idea flow -->
+  <path d="M 256 180 L 286 180" stroke="url(#gg)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="284,175 294,180 284,185" fill="#c9a84c"/>
+
+  <!-- CENTER: SaaS Dashboard -->
+  <rect x="296" y="24" width="228" height="312" rx="10" fill="#111827" stroke="url(#gg)" stroke-width="1.5"/>
+  <rect x="296" y="24" width="228" height="3" rx="1" fill="url(#gg)"/>
+  <!-- Nav -->
+  <rect x="308" y="38" width="204" height="28" rx="6" fill="rgba(201,168,76,0.08)"/>
+  <rect x="316" y="45" width="50" height="14" rx="3" fill="#c9a84c" opacity=".9"/>
+  <rect x="378" y="48" width="30" height="8" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="416" y="48" width="30" height="8" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="454" y="48" width="48" height="14" rx="3" fill="rgba(0,212,255,0.3)"/>
+  <!-- Stats row -->
+  <rect x="308" y="76" width="100" height="60" rx="6" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.15)" stroke-width="1"/>
+  <text x="358" y="102" fill="#00d4ff" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">2.4K</text>
+  <text x="358" y="118" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">usuários</text>
+  <rect x="416" y="76" width="100" height="60" rx="6" fill="rgba(0,255,135,0.05)" stroke="rgba(0,255,135,0.15)" stroke-width="1"/>
+  <text x="466" y="102" fill="#00ff87" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">$8.2K</text>
+  <text x="466" y="118" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">MRR</text>
+  <!-- Chart area -->
+  <rect x="308" y="146" width="208" height="90" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Bar chart -->
+  <rect x="320" y="210" width="16" height="18" rx="2" fill="rgba(201,168,76,0.5)"/>
+  <rect x="342" y="198" width="16" height="30" rx="2" fill="rgba(201,168,76,0.6)"/>
+  <rect x="364" y="185" width="16" height="43" rx="2" fill="rgba(201,168,76,0.8)"/>
+  <rect x="386" y="190" width="16" height="38" rx="2" fill="#c9a84c"/>
+  <rect x="408" y="180" width="16" height="48" rx="2" fill="#e8c96a"/>
+  <rect x="430" y="172" width="16" height="56" rx="2" fill="#c9a84c"/>
+  <rect x="452" y="165" width="16" height="63" rx="2" fill="#e8c96a"/>
+  <rect x="474" y="158" width="16" height="70" rx="2" fill="#c9a84c" opacity=".4"/>
+  <!-- Chat interface -->
+  <rect x="308" y="246" width="208" height="80" rx="6" fill="rgba(0,0,0,0.3)"/>
+  <rect x="316" y="254" width="180" height="20" rx="10" fill="rgba(255,255,255,0.05)"/>
+  <text x="326" y="268" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Como posso ajudar hoje?</text>
+  <rect x="316" y="280" width="140" height="16" rx="8" fill="rgba(0,212,255,0.15)"/>
+  <text x="326" y="291" fill="#00d4ff" font-family="monospace" font-size="9">Analisar vendas de março</text>
+  <rect x="316" y="300" width="100" height="16" rx="8" fill="rgba(201,168,76,0.2)"/>
+  <text x="326" y="311" fill="#c9a84c" font-family="monospace" font-size="9">Gerar relatório PDF</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 530 180 L 560 180" stroke="url(#gg)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="558,175 568,180 558,185" fill="#00d4ff"/>
+
+  <!-- RIGHT: Production terminal -->
+  <rect x="572" y="24" width="228" height="312" rx="10" fill="#0d1117" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <rect x="572" y="24" width="228" height="32" rx="10" fill="rgba(0,212,255,0.04)"/>
+  <rect x="572" y="44" width="228" height="12" fill="rgba(0,212,255,0.04)"/>
+  <circle cx="590" cy="40" r="5" fill="#ff5f57"/><circle cx="606" cy="40" r="5" fill="#febc2e"/><circle cx="622" cy="40" r="5" fill="#28c840"/>
+  <text x="695" y="44" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="10" text-anchor="middle">Terminal</text>
+  <text x="586" y="70" fill="#6272a4" font-family="monospace" font-size="10">$ vercel --prod</text>
+  <text x="586" y="86" fill="#50fa7b" font-family="monospace" font-size="10">✓ Build succeeded</text>
+  <text x="586" y="102" fill="#50fa7b" font-family="monospace" font-size="10">✓ Serverless functions</text>
+  <text x="586" y="118" fill="#00d4ff" font-family="monospace" font-size="10">→ Deployed to prod</text>
+  <text x="586" y="134" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">  https://meusaas.vercel</text>
+  <text x="586" y="158" fill="#6272a4" font-family="monospace" font-size="10">$ stripe customers:create</text>
+  <text x="586" y="174" fill="#50fa7b" font-family="monospace" font-size="10">✓ Customer cus_abc123</text>
+  <text x="586" y="190" fill="#6272a4" font-family="monospace" font-size="10">$ stripe subscriptions:get</text>
+  <text x="586" y="206" fill="#f1fa8c" font-family="monospace" font-size="10">  plan: pro_monthly</text>
+  <text x="586" y="222" fill="#f1fa8c" font-family="monospace" font-size="10">  amount: R$197/mês</text>
+  <text x="586" y="238" fill="#6272a4" font-family="monospace" font-size="10">$ pm2 status</text>
+  <text x="586" y="254" fill="#50fa7b" font-family="monospace" font-size="10">  bot-worker  ● online</text>
+  <text x="586" y="270" fill="#50fa7b" font-family="monospace" font-size="10">  api-server  ● online</text>
+  <text x="586" y="286" fill="#c9a84c" font-family="monospace" font-size="10">  uptime: 99.98%</text>
+  <text x="586" y="310" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="10">▮ ready</text>
+
+  <!-- Labels bottom -->
+  <text x="135" y="348" fill="rgba(201,168,76,0.4)" font-family="monospace" font-size="9" text-anchor="middle">BRIEFING + IA</text>
+  <text x="410" y="348" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">PRODUTO</text>
+  <text x="686" y="348" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">PRODUÇÃO</text>
+</svg>
+</div>
+
+<div class="cover-stats" style="margin-top:48px;">
+  <div class="cstat"><div class="cstat-n">6</div><div class="cstat-l">Trilhas</div></div>
+  <div class="cstat"><div class="cstat-n">36</div><div class="cstat-l">Tópicos</div></div>
+  <div class="cstat"><div class="cstat-n">3</div><div class="cstat-l">Dias</div></div>
+  <div class="cstat"><div class="cstat-n">1</div><div class="cstat-l">SaaS Completo</div></div>
+</div>
+<div class="page-num">01</div>
+</div>
+
+<!-- ══════════════════════════════════
+  PAGE 2: MARKET DATA
+══════════════════════════════════ -->
+<div class="page ch-light" id="market">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:100vh;">
+  <div style="padding:80px 60px;border-right:1px solid rgba(0,0,0,0.08);">
+    <div class="market-eyebrow">Por que agora?</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,64px);font-weight:900;color:var(--text);line-height:1.05;margin-bottom:28px;">O mercado<br><em>nunca foi</em><br>tão favorável.</h2>
+    <p style="color:var(--muted);font-size:16px;line-height:1.9;margin-bottom:32px;">Pela primeira vez na história da tecnologia, um desenvolvedor solo pode construir um produto que antes exigiria um time de 10 pessoas. A IA não é uma ferramenta — é um multiplicador de capacidade.</p>
+    <div class="callout" style="border-color:var(--gold-dark);background:rgba(139,105,20,0.06);">
+      <div class="callout-title" style="color:var(--gold-dark);">⚡ O Momento Vibe Coding</div>
+      <div class="callout-body" style="color:var(--text);">Vibe Coding não é sobre escrever menos código. É sobre pensar melhor sobre o problema para que a IA possa resolver mais rápido.</div>
+    </div>
+
+    <!-- Bar chart SVG -->
+    <svg viewBox="0 0 360 180" fill="none" style="width:100%;margin-top:32px;">
+      <text x="0" y="14" fill="var(--muted)" font-family="monospace" font-size="10" letter-spacing="2">TEMPO MÉDIO PARA MVP</text>
+      <!-- Bars -->
+      <rect x="10" y="30" width="60" height="120" rx="4" fill="rgba(0,0,0,0.08)"/>
+      <text x="40" y="26" fill="var(--muted)" font-size="10" font-family="monospace" text-anchor="middle">2020</text>
+      <text x="40" y="170" fill="var(--text)" font-size="13" font-family="monospace" font-weight="bold" text-anchor="middle">6m</text>
+
+      <rect x="100" y="50" width="60" height="100" rx="4" fill="rgba(0,0,0,0.12)"/>
+      <text x="130" y="46" fill="var(--muted)" font-size="10" font-family="monospace" text-anchor="middle">2022</text>
+      <text x="130" y="170" fill="var(--text)" font-size="13" font-family="monospace" font-weight="bold" text-anchor="middle">3m</text>
+
+      <rect x="190" y="90" width="60" height="60" rx="4" fill="rgba(139,105,20,0.3)"/>
+      <text x="220" y="86" fill="var(--muted)" font-size="10" font-family="monospace" text-anchor="middle">2024</text>
+      <text x="220" y="170" fill="var(--gold-dark)" font-size="13" font-family="monospace" font-weight="bold" text-anchor="middle">3sem</text>
+
+      <rect x="280" y="115" width="60" height="35" rx="4" fill="var(--gold-dark)" opacity=".9"/>
+      <text x="310" y="111" fill="var(--gold-dark)" font-size="10" font-family="monospace" font-weight="bold" text-anchor="middle">2026</text>
+      <text x="310" y="170" fill="var(--gold-dark)" font-size="13" font-family="monospace" font-weight="bold" text-anchor="middle">3 dias</text>
+    </svg>
+  </div>
+
+  <div style="padding:80px 60px;background:var(--ink);color:rgba(255,255,255,0.9);">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(201,168,76,0.7);margin-bottom:48px;">Números que importam</div>
+
+    <div style="margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.06);">
+      <div style="font-family:'Playfair Display',serif;font-size:80px;font-weight:900;line-height:1;color:var(--gold);">92%</div>
+      <div style="font-size:16px;font-weight:500;margin-top:8px;">dos devs nos EUA usam IA no dia a dia</div>
+      <div style="font-size:13px;opacity:.4;margin-top:4px;">Fonte: GitHub State of Octoverse 2025</div>
+    </div>
+    <div style="margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.06);">
+      <div style="font-family:'Playfair Display',serif;font-size:80px;font-weight:900;line-height:1;color:var(--electric);">41%</div>
+      <div style="font-size:16px;font-weight:500;margin-top:8px;">do código global já é gerado por IA</div>
+      <div style="font-size:13px;opacity:.4;margin-top:4px;">Fonte: GitHub Copilot Report 2025</div>
+    </div>
+    <div>
+      <div style="font-family:'Playfair Display',serif;font-size:80px;font-weight:900;line-height:1;color:var(--neon);">2030</div>
+      <div style="font-size:16px;font-weight:500;margin-top:8px;">Gartner prevê pricing baseado em resultado de IA</div>
+      <div style="font-size:13px;opacity:.4;margin-top:4px;">Janela de oportunidade: agora</div>
+    </div>
+  </div>
+</div>
+<div class="page-num" style="color:rgba(0,0,0,0.2);">02</div>
+</div>
+
+<!-- ══════════════════════════════════
+  PAGE 3: CH1 OPENER — MINDSET
+══════════════════════════════════ -->
+<div class="page ch-dark theme-gold" id="cap1">
+<div class="ch-opener">
+  <div class="ch-num-bg">01</div>
+
+  <!-- Big SVG Mindset illustration -->
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:40px 60px 0;">
+  <svg viewBox="0 0 780 300" fill="none" style="width:100%;max-width:780px;">
+    <defs>
+      <radialGradient id="mg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(201,168,76,0.15)"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+    </defs>
+    <!-- Journey arrow -->
+    <path d="M 40 150 Q 200 80 400 150 Q 600 220 740 150" stroke="rgba(201,168,76,0.2)" stroke-width="2" stroke-dasharray="6 4"/>
+    <!-- Phase nodes -->
+    <g transform="translate(40,150)">
+      <circle r="32" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.5"/>
+      <text y="5" fill="#c9a84c" font-family="monospace" font-size="10" text-anchor="middle">IDEIA</text>
+      <text y="-52" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">30 min</text>
+    </g>
+    <g transform="translate(200,98)">
+      <circle r="36" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.5"/>
+      <text y="0" fill="#c9a84c" font-family="monospace" font-size="10" text-anchor="middle">BRIEFING</text>
+      <text y="10" fill="#c9a84c" font-family="monospace" font-size="10" text-anchor="middle">+ IA</text>
+      <text y="-56" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">1 arquivo</text>
+    </g>
+    <g transform="translate(400,150)">
+      <circle r="44" fill="rgba(201,168,76,0.18)" stroke="#c9a84c" stroke-width="2"/>
+      <text y="-4" fill="#e8c96a" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">VIBE</text>
+      <text y="10" fill="#e8c96a" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">CODING</text>
+      <text y="64" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">core loop</text>
+    </g>
+    <g transform="translate(590,202)">
+      <circle r="36" fill="rgba(0,212,255,0.1)" stroke="#00d4ff" stroke-width="1.5"/>
+      <text y="-4" fill="#00d4ff" font-family="monospace" font-size="10" text-anchor="middle">MVP</text>
+      <text y="8" fill="#00d4ff" font-family="monospace" font-size="10" text-anchor="middle">LIVE</text>
+      <text y="-56" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">1-3 dias</text>
+    </g>
+    <g transform="translate(740,150)">
+      <circle r="32" fill="rgba(0,255,135,0.1)" stroke="#00ff87" stroke-width="1.5"/>
+      <text y="-4" fill="#00ff87" font-family="monospace" font-size="9" text-anchor="middle">GROW</text>
+      <text y="8" fill="#00ff87" font-family="monospace" font-size="9" text-anchor="middle">& SCALE</text>
+      <text y="52" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">contínuo</text>
+    </g>
+    <!-- VIBE CODING explanation rays -->
+    <line x1="444" y1="150" x2="520" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+    <text x="530" y="76" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">Prompts estratégicos</text>
+    <line x1="444" y1="155" x2="520" y2="130" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+    <text x="530" y="126" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">Ciclos de 2h</text>
+    <line x1="444" y1="160" x2="520" y2="180" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+    <text x="530" y="176" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">Feedback rápido</text>
+    <line x1="356" y1="150" x2="280" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+    <text x="180" y="76" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9" text-anchor="end">Contexto global</text>
+    <line x1="356" y1="155" x2="280" y2="130" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+    <text x="270" y="126" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9" text-anchor="end">CLAUDE.md</text>
+  </svg>
+  </div>
+
+  <div class="ch-opener-top" style="padding-top:20px;">
+    <div class="ch-tag" style="background:rgba(201,168,76,0.12);color:#c9a84c;">Trilha 01 · Dia 1</div>
+    <h2 class="ch-main-title">Mentalidade<br><em style="color:var(--gold);">&amp; Método</em></h2>
+    <p class="ch-intro-text">Como pensar e estruturar projetos com IA. Da ideia ao MVP usando Vibe Coding — antes de escrever uma linha de código.</p>
+  </div>
+
+  <div class="ch-opener-bottom">
+    <div class="ch-key" style="border-color:rgba(201,168,76,0.3);">
+      <div class="ch-key-label">Resultado</div>
+      <div class="ch-key-val">MVP estruturado em 30 minutos</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(201,168,76,0.3);">
+      <div class="ch-key-label">Ferramenta central</div>
+      <div class="ch-key-val">CLAUDE.md como memória do projeto</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(201,168,76,0.3);">
+      <div class="ch-key-label">Tópicos</div>
+      <div class="ch-key-val">6 tópicos · nível básico</div>
+    </div>
+  </div>
+</div>
+<div class="page-num">03</div>
+</div>
+
+<!-- PAGE 4: CH1 CONTENT -->
+<div class="page ch-dark theme-gold content">
+<div class="section-label" style="color:rgba(201,168,76,0.6);">01 — Mentalidade</div>
+<div class="two-col">
+<div>
+  <h3 class="section-title">Os 5 Princípios<br>do <em class="gold">Vibe Coder</em></h3>
+  <p class="body-text" style="opacity:.65;font-size:15px;">O Vibe Coder não é um desenvolvedor que usa IA. É um arquiteto de problemas que usa IA para construir soluções. Essa distinção muda tudo.</p>
+</div>
+<div>
+  <div class="callout">
+    <div class="callout-title">🎯 Regra de Ouro</div>
+    <div class="callout-body">Se você não consegue explicar o produto em 2 frases, a IA vai gerar 40 features que ninguém pediu.</div>
+  </div>
+  <div style="margin-top:16px;padding:20px;border:1px solid rgba(201,168,76,0.15);border-radius:6px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);margin-bottom:10px;letter-spacing:2px;">TEMPLATE DE PRODUTO</div>
+    <div style="font-size:14px;opacity:.7;line-height:1.8;font-style:italic;">"Este produto ajuda <span class="gold">[quem]</span> a <span class="gold">[fazer o quê]</span> para que <span class="gold">[resultado]</span>."</div>
+  </div>
+</div>
+</div>
+
+<div class="card-grid-3" style="margin-top:40px;">
+  <div class="card" style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);">
+    <span class="card-icon">🎯</span>
+    <div class="card-title">Problema primeiro</div>
+    <p class="card-body">Nunca comece pelo código. Comece pela dor do usuário. A IA só é boa se você souber o que pedir.</p>
+  </div>
+  <div class="card" style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);">
+    <span class="card-icon">⚡</span>
+    <div class="card-title">Velocidade de aprendizado</div>
+    <p class="card-body">O MVP não precisa ser perfeito. Precisa descobrir se você está construindo a coisa certa.</p>
+  </div>
+  <div class="card" style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);">
+    <span class="card-icon">🔄</span>
+    <div class="card-title">Ciclos curtos</div>
+    <p class="card-body">Nunca passe mais de 2h sem rodar o produto. Feedback rápido é o ativo mais valioso.</p>
+  </div>
+  <div class="card" style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);">
+    <span class="card-icon">🧠</span>
+    <div class="card-title">Contexto é rei</div>
+    <p class="card-body">Quanto mais contexto você der à IA, mais preciso e consistente o código gerado será.</p>
+  </div>
+  <div class="card" style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);">
+    <span class="card-icon">🚀</span>
+    <div class="card-title">Ship early</div>
+    <p class="card-body">Um produto ao vivo com 3 features supera um produto perfeito que nunca saiu do computador.</p>
+  </div>
+  <div class="card" style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);">
+    <span class="card-icon">📐</span>
+    <div class="card-title">Arquitetura intencional</div>
+    <p class="card-body">A IA gera o código, mas quem decide a estrutura é você. Erros de arquitetura custam 10x mais tarde.</p>
+  </div>
+</div>
+
+<div class="code-wrap">
+  <div class="code-bar">
+    <div class="dots"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div></div>
+    <div class="code-file">CLAUDE.md — Template Completo</div>
+  </div>
+  <div class="code-body">
+<span class="cm"># Briefing do Projeto — [Nome do SaaS]</span>
+
+<span class="kw">## Produto</span>
+<span class="str">Plataforma de [X] para [público-alvo].</span>
+<span class="str">Resolve: [dor principal].</span>
+
+<span class="kw">## Stack Definida</span>
+<span class="nm">- Frontend:</span> <span class="fn">Next.js 14 + TypeScript + Tailwind CSS</span>
+<span class="nm">- Backend:</span> <span class="fn">API Routes + Prisma + PostgreSQL</span>
+<span class="nm">- IA:</span> <span class="fn">Claude API (claude-opus-4-5)</span>
+<span class="nm">- Auth:</span> <span class="fn">NextAuth.js v5</span>
+<span class="nm">- Billing:</span> <span class="fn">Stripe</span>
+<span class="nm">- Deploy:</span> <span class="fn">Vercel (frontend) + Railway (DB)</span>
+
+<span class="kw">## Regras Absolutas</span>
+<span class="str">- TypeScript estrito, sem `any`</span>
+<span class="str">- Componentes &lt;150 linhas</span>
+<span class="str">- Testes para toda lógica de negócio</span>
+<span class="str">- Nunca commitar .env ou secrets</span>
+<span class="str">- Commits semânticos (feat/fix/chore)</span></div>
+</div>
+<div class="page-num">04</div>
+</div>
+
+<!-- PAGE 5: CH2 OPENER — ARQUITETURA -->
+<div class="page ch-deep theme-electric" id="cap2">
+<div class="ch-opener">
+  <div class="ch-num-bg">02</div>
+  <div style="flex:1;padding:60px;display:flex;align-items:center;justify-content:center;">
+    <!-- Architecture overview SVG -->
+    <svg viewBox="0 0 760 280" fill="none" style="width:100%;max-width:760px;">
+      <defs><linearGradient id="el" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#00ff87"/></linearGradient></defs>
+      <!-- Three layer boxes -->
+      <rect x="0" y="40" width="220" height="200" rx="10" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+      <rect x="0" y="40" width="220" height="3" fill="url(#el)"/>
+      <text x="110" y="66" fill="#00d4ff" font-family="monospace" font-size="11" text-anchor="middle" font-weight="bold">PRESENTATION</text>
+      <text x="110" y="82" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">app/ · components/ · hooks/</text>
+      <rect x="14" y="96" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="24" y="113" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 app/(dashboard)/</text>
+      <rect x="14" y="128" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="24" y="145" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 components/ui/</text>
+      <rect x="14" y="160" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="24" y="177" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 hooks/ · lib/client/</text>
+      <rect x="14" y="192" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="24" y="209" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📄 CLAUDE.md</text>
+
+      <path d="M 226 140 L 266 140" stroke="url(#el)" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="264,135 274,140 264,145" fill="#00d4ff"/>
+
+      <rect x="276" y="40" width="208" height="200" rx="10" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+      <rect x="276" y="40" width="208" height="3" fill="url(#el)"/>
+      <text x="380" y="66" fill="#00d4ff" font-family="monospace" font-size="11" text-anchor="middle" font-weight="bold">APPLICATION</text>
+      <text x="380" y="82" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">app/api/ · lib/server/ · services/</text>
+      <rect x="290" y="96" width="180" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="300" y="113" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 app/api/chat/</text>
+      <rect x="290" y="128" width="180" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="300" y="145" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 app/api/upload/</text>
+      <rect x="290" y="160" width="180" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="300" y="177" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 lib/claude.ts</text>
+      <rect x="290" y="192" width="180" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="300" y="209" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">📁 lib/stripe.ts</text>
+
+      <path d="M 490 140 L 530 140" stroke="url(#el)" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="528,135 538,140 528,145" fill="#00d4ff"/>
+
+      <rect x="540" y="40" width="220" height="200" rx="10" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+      <rect x="540" y="40" width="220" height="3" fill="url(#el)"/>
+      <text x="650" y="66" fill="#00d4ff" font-family="monospace" font-size="11" text-anchor="middle" font-weight="bold">INFRASTRUCTURE</text>
+      <text x="650" y="82" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">Prisma · Claude API · Stripe · S3</text>
+      <rect x="554" y="96" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="564" y="113" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">🗄️ PostgreSQL (Railway)</text>
+      <rect x="554" y="128" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="564" y="145" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">🤖 Claude API</text>
+      <rect x="554" y="160" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="564" y="177" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">💳 Stripe Webhooks</text>
+      <rect x="554" y="192" width="192" height="26" rx="4" fill="rgba(0,212,255,0.07)"/>
+      <text x="564" y="209" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">☁️ AWS S3 / Cloudflare R2</text>
+
+      <text x="380" y="264" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="9" text-anchor="middle">Fluxo: UI → API Route → Service → DB/IA → Response</text>
+    </svg>
+  </div>
+
+  <div class="ch-opener-top" style="padding-top:0;">
+    <div class="ch-tag" style="background:rgba(0,212,255,0.1);color:#00d4ff;">Trilha 02 · Dia 1</div>
+    <h2 class="ch-main-title">Arquitetura<br><em style="color:var(--electric);">da Plataforma</em></h2>
+    <p class="ch-intro-text">A estrutura de pastas, APIs e contexto global que escala. Esta trilha evita meses de refatoração futura.</p>
+  </div>
+  <div class="ch-opener-bottom">
+    <div class="ch-key" style="border-color:rgba(0,212,255,0.3);">
+      <div class="ch-key-label">Foco</div>
+      <div class="ch-key-val">Estrutura que não quebra com o crescimento</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(0,212,255,0.3);">
+      <div class="ch-key-label">Padrão</div>
+      <div class="ch-key-val">3 camadas: Presentation / App / Infra</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(0,212,255,0.3);">
+      <div class="ch-key-label">Tópicos</div>
+      <div class="ch-key-val">6 tópicos · nível básico</div>
+    </div>
+  </div>
+</div>
+<div class="page-num">05</div>
+</div>
+
+<!-- PAGE 6: CH3 OPENER — SAAS -->
+<div class="page ch-dark theme-neon" id="cap3">
+<div class="ch-opener">
+  <div class="ch-num-bg">03</div>
+  <div style="flex:1;padding:60px;display:flex;align-items:center;">
+    <svg viewBox="0 0 760 260" fill="none" style="width:100%;">
+      <defs><linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00ff87"/><stop offset="100%" stop-color="#00d4ff"/></linearGradient></defs>
+      <!-- 5 building blocks -->
+      <rect x="0" y="80" width="130" height="100" rx="8" fill="rgba(0,255,135,0.05)" stroke="rgba(0,255,135,0.2)" stroke-width="1.5"/>
+      <text x="65" y="120" fill="#00ff87" font-family="monospace" font-size="11" text-anchor="middle">🔐 AUTH</text>
+      <text x="65" y="140" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">NextAuth.js</text>
+      <text x="65" y="156" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">JWT + OAuth</text>
+
+      <rect x="158" y="60" width="130" height="140" rx="8" fill="rgba(0,255,135,0.07)" stroke="rgba(0,255,135,0.25)" stroke-width="1.5"/>
+      <text x="223" y="110" fill="#00ff87" font-family="monospace" font-size="11" text-anchor="middle">📊 DASH</text>
+      <text x="223" y="130" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Server Components</text>
+      <text x="223" y="146" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Recharts + shadcn</text>
+      <text x="223" y="162" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Real-time data</text>
+
+      <rect x="316" y="40" width="128" height="180" rx="8" fill="rgba(0,255,135,0.1)" stroke="#00ff87" stroke-width="2"/>
+      <rect x="316" y="40" width="128" height="3" fill="url(#ng)"/>
+      <text x="380" y="90" fill="#00ff87" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">🤖 CHAT</text>
+      <text x="380" y="110" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">Claude API</text>
+      <text x="380" y="126" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">Streaming</text>
+      <text x="380" y="142" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">System Prompts</text>
+      <text x="380" y="158" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">Multimodal</text>
+      <text x="380" y="174" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9" text-anchor="middle">History</text>
+      <text x="380" y="198" fill="#00ff87" font-family="monospace" font-size="9" text-anchor="middle">★ core feature</text>
+
+      <rect x="472" y="60" width="130" height="140" rx="8" fill="rgba(0,255,135,0.07)" stroke="rgba(0,255,135,0.25)" stroke-width="1.5"/>
+      <text x="537" y="110" fill="#00ff87" font-family="monospace" font-size="11" text-anchor="middle">📁 UPLOAD</text>
+      <text x="537" y="130" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">S3/R2</text>
+      <text x="537" y="146" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">PDF → text</text>
+      <text x="537" y="162" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Drag & drop</text>
+
+      <rect x="630" y="80" width="130" height="100" rx="8" fill="rgba(0,255,135,0.05)" stroke="rgba(0,255,135,0.2)" stroke-width="1.5"/>
+      <text x="695" y="120" fill="#00ff87" font-family="monospace" font-size="11" text-anchor="middle">💬 HISTORY</text>
+      <text x="695" y="140" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Prisma ORM</text>
+      <text x="695" y="156" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Cursor pagination</text>
+
+      <!-- Base line -->
+      <line x1="0" y1="240" x2="760" y2="240" stroke="rgba(0,255,135,0.15)" stroke-width="1"/>
+      <text x="380" y="256" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="9" text-anchor="middle">Base de dados: PostgreSQL via Prisma · Redis para cache</text>
+    </svg>
+  </div>
+
+  <div class="ch-opener-top" style="padding-top:0;">
+    <div class="ch-tag" style="background:rgba(0,255,135,0.1);color:#00ff87;">Trilha 03 · Dia 2</div>
+    <h2 class="ch-main-title">Construção<br><em style="color:var(--neon);">do SaaS</em></h2>
+    <p class="ch-intro-text">Auth, dashboard, system prompts, uploads multimodal e histórico. O produto começa a respirar nesta trilha.</p>
+  </div>
+  <div class="ch-opener-bottom">
+    <div class="ch-key" style="border-color:rgba(0,255,135,0.3);">
+      <div class="ch-key-label">Features</div><div class="ch-key-val">5 blocos funcionais</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(0,255,135,0.3);">
+      <div class="ch-key-label">Core</div><div class="ch-key-val">Chat com Claude API + streaming</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(0,255,135,0.3);">
+      <div class="ch-key-label">Nível</div><div class="ch-key-val">Intermediário · 6 tópicos</div>
+    </div>
+  </div>
+</div>
+<div class="page-num">06</div>
+</div>
+
+<!-- PAGE 7: CH3 CONTENT + CODE -->
+<div class="page ch-dark theme-neon content">
+<div class="section-label" style="color:rgba(0,255,135,0.6);">03 — Construção</div>
+<h3 class="section-title">Fluxo de construção<br><em class="neon">passo a passo</em></h3>
+
+<div class="flow" style="margin:40px 0;">
+  <div class="flow-step">
+    <div class="flow-spine">
+      <div class="flow-circle" style="border-color:#00ff87;color:#00ff87;">1</div>
+      <div class="flow-line" style="background:#00ff87;"></div>
+    </div>
+    <div class="flow-body">
+      <div class="flow-title">Autenticação com NextAuth</div>
+      <p class="flow-desc">Providers Google + Email. JWT strategy. Middleware de proteção de rotas. Tabelas User/Session/Account no Prisma.</p>
+      <div class="tags"><span class="tag">NextAuth.js</span><span class="tag">JWT</span><span class="tag">Prisma Adapter</span><span class="tag">OAuth 2.0</span></div>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-spine">
+      <div class="flow-circle" style="border-color:#00ff87;color:#00ff87;">2</div>
+      <div class="flow-line" style="background:#00ff87;"></div>
+    </div>
+    <div class="flow-body">
+      <div class="flow-title">Dashboard com dados reais</div>
+      <p class="flow-desc">Server Components para fetching direto no DB. StatsCard, RecentActivity, Charts. Layout responsivo com sidebar.</p>
+      <div class="tags"><span class="tag">Server Components</span><span class="tag">Recharts</span><span class="tag">shadcn/ui</span><span class="tag">Tailwind Grid</span></div>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-spine">
+      <div class="flow-circle" style="border-color:#00ff87;color:#00ff87;">3</div>
+      <div class="flow-line" style="background:#00ff87;"></div>
+    </div>
+    <div class="flow-body">
+      <div class="flow-title">Chat com Claude API (streaming)</div>
+      <p class="flow-desc">Route handler POST /api/chat. System prompt por bot. Streaming via ReadableStream. Context window management.</p>
+      <div class="tags"><span class="tag">Claude API</span><span class="tag">Streaming</span><span class="tag">ReadableStream</span><span class="tag">system_prompt</span></div>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-spine">
+      <div class="flow-circle" style="border-color:#00d4ff;color:#00d4ff;">4</div>
+    </div>
+    <div class="flow-body">
+      <div class="flow-title">Upload Multimodal + Histórico</div>
+      <p class="flow-desc">Drag-and-drop com react-dropzone. PDFs → texto, imagens → base64. Histórico cursor-paginado no Prisma.</p>
+      <div class="tags"><span class="tag">react-dropzone</span><span class="tag">pdf-parse</span><span class="tag">S3/R2</span><span class="tag">cursor pagination</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="code-wrap">
+  <div class="code-bar">
+    <div class="dots"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div></div>
+    <div class="code-file">app/api/chat/route.ts</div>
+  </div>
+  <div class="code-body">
+<span class="cm">// Streaming chat com Claude — o coração do SaaS</span>
+<span class="kw">import</span> { <span class="nm">Anthropic</span> } <span class="kw">from</span> <span class="str">'@anthropic-ai/sdk'</span>
+<span class="kw">import</span> { <span class="nm">getServerSession</span> } <span class="kw">from</span> <span class="str">'next-auth'</span>
+
+<span class="kw">export async function</span> <span class="fn">POST</span>(<span class="nm">req</span>: Request) {
+  <span class="kw">const</span> session = <span class="kw">await</span> <span class="fn">getServerSession</span>()
+  <span class="kw">if</span> (!session) <span class="kw">return new</span> <span class="fn">Response</span>(<span class="str">'Unauthorized'</span>, { status: <span class="nm">401</span> })
+
+  <span class="kw">const</span> { messages, botId, files } = <span class="kw">await</span> req.<span class="fn">json</span>()
+  <span class="kw">const</span> bot = <span class="kw">await</span> db.bot.<span class="fn">findUniqueOrThrow</span>({ where: { id: botId } })
+
+  <span class="kw">const</span> stream = <span class="kw">await</span> anthropic.messages.<span class="fn">stream</span>({
+    model: <span class="str">'claude-opus-4-5'</span>,
+    max_tokens: <span class="nm">4096</span>,
+    system: bot.systemPrompt,
+    messages: [...messages, ...<span class="fn">buildFileContext</span>(files)],
+  })
+
+  <span class="kw">return new</span> Response(<span class="fn">streamToReadable</span>(stream), {
+    headers: { <span class="str">'Content-Type'</span>: <span class="str">'text/event-stream'</span> }
+  })
+}</div>
+</div>
+<div class="page-num">07</div>
+</div>
+
+<!-- PAGE 8: CH4 — AGENTS MCP -->
+<div class="page ch-dark theme-purple" id="cap4">
+<div class="ch-opener">
+  <div class="ch-num-bg">04</div>
+  <div style="flex:1;padding:60px;display:flex;align-items:center;justify-content:center;">
+    <!-- Agent network SVG -->
+    <svg viewBox="0 0 760 280" fill="none" style="width:100%;">
+      <defs><radialGradient id="pg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(168,85,247,0.2)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+      <ellipse cx="380" cy="140" rx="180" ry="100" fill="url(#pg2)"/>
+      <!-- Central orchestrator -->
+      <rect x="300" y="100" width="160" height="80" rx="10" fill="rgba(168,85,247,0.12)" stroke="#a855f7" stroke-width="2"/>
+      <text x="380" y="133" fill="#a855f7" font-family="monospace" font-size="11" text-anchor="middle" font-weight="bold">ORQUESTRADOR</text>
+      <text x="380" y="150" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Claude Opus 4.5</text>
+      <text x="380" y="166" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">decide · delega · sintetiza</text>
+      <!-- Agents around -->
+      <rect x="30" y="30" width="120" height="60" rx="8" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.25)"/>
+      <text x="90" y="56" fill="#00d4ff" font-family="monospace" font-size="10" text-anchor="middle">📊 Research</text>
+      <text x="90" y="72" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="8" text-anchor="middle">busca · analisa</text>
+
+      <rect x="30" y="190" width="120" height="60" rx="8" fill="rgba(0,255,135,0.07)" stroke="rgba(0,255,135,0.25)"/>
+      <text x="90" y="216" fill="#00ff87" font-family="monospace" font-size="10" text-anchor="middle">✍️ Writer</text>
+      <text x="90" y="232" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="8" text-anchor="middle">conteúdo · copy</text>
+
+      <rect x="610" y="30" width="120" height="60" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.25)"/>
+      <text x="670" y="56" fill="#fbbf24" font-family="monospace" font-size="10" text-anchor="middle">📧 Publisher</text>
+      <text x="670" y="72" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="8" text-anchor="middle">email · social</text>
+
+      <rect x="610" y="190" width="120" height="60" rx="8" fill="rgba(255,51,102,0.07)" stroke="rgba(255,51,102,0.25)"/>
+      <text x="670" y="216" fill="#ff3366" font-family="monospace" font-size="10" text-anchor="middle">📈 Analyst</text>
+      <text x="670" y="232" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="8" text-anchor="middle">métricas · ROI</text>
+
+      <rect x="320" y="200" width="120" height="60" rx="8" fill="rgba(201,168,76,0.07)" stroke="rgba(201,168,76,0.25)"/>
+      <text x="380" y="226" fill="#c9a84c" font-family="monospace" font-size="10" text-anchor="middle">🔧 Tools MCP</text>
+      <text x="380" y="242" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="8" text-anchor="middle">filesystem · browser</text>
+
+      <!-- Connection lines -->
+      <line x1="150" y1="60" x2="300" y2="125" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+      <line x1="150" y1="220" x2="300" y2="155" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+      <line x1="460" y1="120" x2="610" y2="60" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+      <line x1="460" y1="155" x2="610" y2="220" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+      <line x1="380" y1="180" x2="380" y2="200" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+    </svg>
+  </div>
+  <div class="ch-opener-top" style="padding-top:0;">
+    <div class="ch-tag" style="background:rgba(168,85,247,0.1);color:#a855f7;">Trilha 04 · Dia 2</div>
+    <h2 class="ch-main-title">Agentes,<br><em style="color:#a855f7;">MCP &amp; Skills</em></h2>
+    <p class="ch-intro-text">Multi-agentes, orquestração, MCP e memória. O nível onde o SaaS se comporta como um sistema inteligente.</p>
+  </div>
+  <div class="ch-opener-bottom">
+    <div class="ch-key" style="border-color:rgba(168,85,247,0.3);">
+      <div class="ch-key-label">Paradigma</div><div class="ch-key-val">Orquestrador → Sub-agentes especializados</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(168,85,247,0.3);">
+      <div class="ch-key-label">Protocolo</div><div class="ch-key-val">Model Context Protocol (MCP)</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(168,85,247,0.3);">
+      <div class="ch-key-label">Nível</div><div class="ch-key-val">Intermediário · 6 tópicos</div>
+    </div>
+  </div>
+</div>
+<div class="page-num">08</div>
+</div>
+
+<!-- PAGE 9: CH5 — MULTIBOTS -->
+<div class="page ch-deep theme-hot" id="cap5">
+<div class="ch-opener">
+  <div class="ch-num-bg">05</div>
+  <div style="flex:1;padding:60px 60px 20px;display:flex;align-items:center;">
+    <svg viewBox="0 0 760 240" fill="none" style="width:100%;">
+      <!-- Platform center -->
+      <rect x="290" y="80" width="180" height="80" rx="10" fill="rgba(255,51,102,0.1)" stroke="#ff3366" stroke-width="2"/>
+      <text x="380" y="112" fill="#ff3366" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">PLATAFORMA</text>
+      <text x="380" y="130" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Bot Registry · Workspace</text>
+      <text x="380" y="146" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" text-anchor="middle">Billing · Analytics</text>
+      <!-- Left: bots -->
+      <rect x="20" y="30" width="130" height="54" rx="7" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.2)"/>
+      <text x="85" y="54" fill="#00d4ff" font-family="monospace" font-size="10" text-anchor="middle">🎨 Bot Design</text>
+      <text x="85" y="70" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">criação visual</text>
+
+      <rect x="20" y="110" width="130" height="54" rx="7" fill="rgba(0,255,135,0.07)" stroke="rgba(0,255,135,0.2)"/>
+      <text x="85" y="134" fill="#00ff87" font-family="monospace" font-size="10" text-anchor="middle">✍️ Bot Copy</text>
+      <text x="85" y="150" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">textos · scripts</text>
+
+      <rect x="20" y="190" width="130" height="54" rx="7" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.2)"/>
+      <text x="85" y="214" fill="#fbbf24" font-family="monospace" font-size="10" text-anchor="middle">📊 Bot Data</text>
+      <text x="85" y="230" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">análise · relatórios</text>
+
+      <!-- Right: channels -->
+      <rect x="610" y="30" width="140" height="54" rx="7" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.2)"/>
+      <text x="680" y="54" fill="#a855f7" font-family="monospace" font-size="10" text-anchor="middle">💬 Telegram</text>
+      <text x="680" y="70" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">chat direto</text>
+
+      <rect x="610" y="110" width="140" height="54" rx="7" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.2)"/>
+      <text x="680" y="134" fill="#a855f7" font-family="monospace" font-size="10" text-anchor="middle">🌐 Web Widget</text>
+      <text x="680" y="150" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">embed em sites</text>
+
+      <rect x="610" y="190" width="140" height="54" rx="7" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.2)"/>
+      <text x="680" y="214" fill="#a855f7" font-family="monospace" font-size="10" text-anchor="middle">📡 API REST</text>
+      <text x="680" y="230" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8" text-anchor="middle">integração custom</text>
+
+      <path d="M 152 57 L 288 115" stroke="rgba(255,51,102,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M 152 137 L 288 130" stroke="rgba(255,51,102,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M 152 217 L 288 148" stroke="rgba(255,51,102,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M 472 115 L 608 57" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M 472 130 L 608 137" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M 472 148 L 608 217" stroke="rgba(168,85,247,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
+    </svg>
+  </div>
+  <div class="ch-opener-top" style="padding-top:0;">
+    <div class="ch-tag" style="background:rgba(255,51,102,0.1);color:#ff3366;">Trilha 05 · Dia 3</div>
+    <h2 class="ch-main-title">Assistentes<br><em style="color:var(--hot);">&amp; Multibots</em></h2>
+    <p class="ch-intro-text">Arquitetura multi-bot, bots especialistas e integração com canais. O SaaS como plataforma.</p>
+  </div>
+  <div class="ch-opener-bottom">
+    <div class="ch-key" style="border-color:rgba(255,51,102,0.3);">
+      <div class="ch-key-label">Modelo</div><div class="ch-key-val">Workspaces isolados por tenant</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(255,51,102,0.3);">
+      <div class="ch-key-label">Canais</div><div class="ch-key-val">Telegram · Web · API REST</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(255,51,102,0.3);">
+      <div class="ch-key-label">Nível</div><div class="ch-key-val">Avançado · 6 tópicos</div>
+    </div>
+  </div>
+</div>
+<div class="page-num">09</div>
+</div>
+
+<!-- PAGE 10: CH6 — BILLING & PRODUÇÃO -->
+<div class="page ch-dark theme-amber" id="cap6">
+<div class="ch-opener">
+  <div class="ch-num-bg">06</div>
+  <div style="flex:1;padding:60px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+    <!-- Billing SVG -->
+    <svg viewBox="0 0 340 260" fill="none">
+      <defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#c9a84c"/></linearGradient></defs>
+      <!-- Stripe webhook flow -->
+      <rect x="10" y="20" width="140" height="50" rx="8" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.25)"/>
+      <text x="80" y="43" fill="#fbbf24" font-family="monospace" font-size="10" text-anchor="middle">💳 Stripe</text>
+      <text x="80" y="59" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="8" text-anchor="middle">payment event</text>
+      <path d="M 80 70 L 80 100" stroke="rgba(251,191,36,0.4)" stroke-width="1.5"/>
+      <polygon points="76,98 80,108 84,98" fill="#fbbf24"/>
+      <rect x="10" y="108" width="140" height="50" rx="8" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.25)"/>
+      <text x="80" y="131" fill="#fbbf24" font-family="monospace" font-size="10" text-anchor="middle">🔗 Webhook</text>
+      <text x="80" y="147" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="8" text-anchor="middle">/api/webhooks/stripe</text>
+      <path d="M 80 158 L 80 188" stroke="rgba(251,191,36,0.4)" stroke-width="1.5"/>
+      <polygon points="76,186 80,196 84,186" fill="#fbbf24"/>
+      <rect x="10" y="196" width="140" height="50" rx="8" fill="rgba(251,191,36,0.12)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="80" y="219" fill="#fbbf24" font-family="monospace" font-size="10" text-anchor="middle">✅ Plano ativo</text>
+      <text x="80" y="235" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="8" text-anchor="middle">workspace liberado</text>
+      <!-- Deploy column -->
+      <rect x="180" y="20" width="150" height="220" rx="8" fill="#0d1117" stroke="rgba(251,191,36,0.15)"/>
+      <text x="200" y="44" fill="#6272a4" font-family="monospace" font-size="9">$ vercel --prod</text>
+      <text x="200" y="62" fill="#50fa7b" font-family="monospace" font-size="9">✓ Build ok</text>
+      <text x="200" y="80" fill="#50fa7b" font-family="monospace" font-size="9">✓ Tests ok</text>
+      <text x="200" y="98" fill="#00d4ff" font-family="monospace" font-size="9">→ Deployed</text>
+      <text x="200" y="116" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="8">  prod.vercel.app</text>
+      <text x="200" y="138" fill="#6272a4" font-family="monospace" font-size="9">$ pm2 status</text>
+      <text x="200" y="156" fill="#50fa7b" font-family="monospace" font-size="9">● api    online</text>
+      <text x="200" y="174" fill="#50fa7b" font-family="monospace" font-size="9">● worker online</text>
+      <text x="200" y="192" fill="#fbbf24" font-family="monospace" font-size="9">  uptime 99.98%</text>
+      <text x="200" y="218" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="9">▮ ready for users</text>
+    </svg>
+    <!-- Stats -->
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;color:rgba(251,191,36,0.5);margin-bottom:24px;">STACK DE PRODUÇÃO</div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="padding:14px;border:1px solid rgba(251,191,36,0.15);border-radius:6px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:14px;opacity:.8;">Frontend</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#fbbf24;">Vercel Edge</span>
+        </div>
+        <div style="padding:14px;border:1px solid rgba(251,191,36,0.15);border-radius:6px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:14px;opacity:.8;">Database</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#fbbf24;">Railway</span>
+        </div>
+        <div style="padding:14px;border:1px solid rgba(251,191,36,0.15);border-radius:6px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:14px;opacity:.8;">Billing</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#fbbf24;">Stripe</span>
+        </div>
+        <div style="padding:14px;border:1px solid rgba(251,191,36,0.15);border-radius:6px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:14px;opacity:.8;">Monitoring</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#fbbf24;">Sentry + Posthog</span>
+        </div>
+        <div style="padding:14px;border:1px solid rgba(251,191,36,0.15);border-radius:6px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:14px;opacity:.8;">Security</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#fbbf24;">Rate limit + Zod</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ch-opener-top" style="padding-top:0;">
+    <div class="ch-tag" style="background:rgba(251,191,36,0.1);color:#fbbf24;">Trilha 06 · Dia 3</div>
+    <h2 class="ch-main-title">Segurança,<br><em style="color:#fbbf24;">Billing &amp; Deploy</em></h2>
+    <p class="ch-intro-text">Produção real. Stripe, landing page, segurança e as decisões que separam um produto de um projeto.</p>
+  </div>
+  <div class="ch-opener-bottom">
+    <div class="ch-key" style="border-color:rgba(251,191,36,0.3);">
+      <div class="ch-key-label">Billing</div><div class="ch-key-val">Free · Pro · Enterprise</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(251,191,36,0.3);">
+      <div class="ch-key-label">Deploy</div><div class="ch-key-val">Vercel + Railway + CI/CD</div>
+    </div>
+    <div class="ch-key" style="border-color:rgba(251,191,36,0.3);">
+      <div class="ch-key-label">Nível</div><div class="ch-key-val">Avançado · 6 tópicos</div>
+    </div>
+  </div>
+</div>
+<div class="page-num">10</div>
+</div>
+
+<!-- PAGE 11: CHECKLIST FINAL -->
+<div class="page ch-dark" id="checklist" style="background:linear-gradient(180deg,#0d1117 0%,#1a1f35 100%);">
+<div class="content">
+  <div style="text-align:center;margin-bottom:60px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.5);margin-bottom:20px;">CHECKLIST FINAL</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(40px,6vw,72px);font-weight:900;line-height:1.05;">
+      Vibe Coder<br><em style="background:linear-gradient(135deg,var(--gold),var(--electric));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Pronto para Produção</em>
+    </h2>
+    <div style="width:80px;height:2px;background:linear-gradient(90deg,var(--gold),var(--electric));margin:24px auto 0;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:840px;margin:0 auto;">
+    <div style="padding:28px;border:1px solid rgba(0,212,255,0.15);border-radius:8px;background:rgba(0,212,255,0.03);">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--electric);margin-bottom:16px;">PRODUTO</div>
+      <ul class="chk" style="border-color:rgba(0,212,255,0.06);">
+        <li style="border-color:rgba(0,212,255,0.06);"><span style="color:var(--electric);">◆</span>&nbsp;Auth funcionando (login + logout)</li>
+        <li style="border-color:rgba(0,212,255,0.06);"><span style="color:var(--electric);">◆</span>&nbsp;Dashboard com dados reais do DB</li>
+        <li style="border-color:rgba(0,212,255,0.06);"><span style="color:var(--electric);">◆</span>&nbsp;Chat com IA via streaming</li>
+        <li style="border-color:rgba(0,212,255,0.06);"><span style="color:var(--electric);">◆</span>&nbsp;Upload de arquivos funcionando</li>
+        <li style="border-color:rgba(0,212,255,0.06);"><span style="color:var(--electric);">◆</span>&nbsp;Histórico de conversas persistido</li>
+      </ul>
+    </div>
+    <div style="padding:28px;border:1px solid rgba(0,255,135,0.15);border-radius:8px;background:rgba(0,255,135,0.02);">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--neon);margin-bottom:16px;">INFRAESTRUTURA</div>
+      <ul class="chk" style="border-color:rgba(0,255,135,0.06);">
+        <li style="border-color:rgba(0,255,135,0.06);"><span style="color:var(--neon);">◆</span>&nbsp;Variáveis de ambiente no Vercel</li>
+        <li style="border-color:rgba(0,255,135,0.06);"><span style="color:var(--neon);">◆</span>&nbsp;DB com migrations rodadas</li>
+        <li style="border-color:rgba(0,255,135,0.06);"><span style="color:var(--neon);">◆</span>&nbsp;Domínio + SSL configurado</li>
+        <li style="border-color:rgba(0,255,135,0.06);"><span style="color:var(--neon);">◆</span>&nbsp;CI/CD via GitHub → Vercel</li>
+        <li style="border-color:rgba(0,255,135,0.06);"><span style="color:var(--neon);">◆</span>&nbsp;Sentry configurado para erros</li>
+      </ul>
+    </div>
+    <div style="padding:28px;border:1px solid rgba(201,168,76,0.15);border-radius:8px;background:rgba(201,168,76,0.02);">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:16px;">BILLING</div>
+      <ul class="chk" style="border-color:rgba(201,168,76,0.06);">
+        <li style="border-color:rgba(201,168,76,0.06);"><span style="color:var(--gold);">◆</span>&nbsp;Produtos e preços no Stripe</li>
+        <li style="border-color:rgba(201,168,76,0.06);"><span style="color:var(--gold);">◆</span>&nbsp;Webhook configurado e testado</li>
+        <li style="border-color:rgba(201,168,76,0.06);"><span style="color:var(--gold);">◆</span>&nbsp;Portal do cliente ativado</li>
+        <li style="border-color:rgba(201,168,76,0.06);"><span style="color:var(--gold);">◆</span>&nbsp;Upgrade/downgrade funcionando</li>
+        <li style="border-color:rgba(201,168,76,0.06);"><span style="color:var(--gold);">◆</span>&nbsp;Emails transacionais ativos</li>
+      </ul>
+    </div>
+    <div style="padding:28px;border:1px solid rgba(255,51,102,0.15);border-radius:8px;background:rgba(255,51,102,0.02);">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--hot);margin-bottom:16px;">SEGURANÇA</div>
+      <ul class="chk" style="border-color:rgba(255,51,102,0.06);">
+        <li style="border-color:rgba(255,51,102,0.06);"><span style="color:var(--hot);">◆</span>&nbsp;Rate limiting nas APIs</li>
+        <li style="border-color:rgba(255,51,102,0.06);"><span style="color:var(--hot);">◆</span>&nbsp;Input validado com Zod</li>
+        <li style="border-color:rgba(255,51,102,0.06);"><span style="color:var(--hot);">◆</span>&nbsp;Nenhum segredo no código</li>
+        <li style="border-color:rgba(255,51,102,0.06);"><span style="color:var(--hot);">◆</span>&nbsp;CORS restrito ao domínio</li>
+        <li style="border-color:rgba(255,51,102,0.06);"><span style="color:var(--hot);">◆</span>&nbsp;Logs de auditoria ativos</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="quote-block" style="margin-top:60px;">
+    <span class="q-mark">"</span>
+    <p class="q-text" style="background:linear-gradient(135deg,var(--gold),var(--electric));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">"O produto que você lança hoje com IA teria levado 6 meses há 3 anos."</p>
+    <div class="q-author">INEMA.CLUB · 2026</div>
+  </div>
+</div>
+<div class="page-num">11</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="ebook-footer">
+  <div class="footer-brand">INEMA.CLUB</div>
+  <p style="color:rgba(255,255,255,0.3);font-size:14px;margin-bottom:24px;">Do Zero ao SaaS com IA · Masterbook 2026</p>
+  <div style="display:flex;gap:32px;justify-content:center;flex-wrap:wrap;">
+    <a href="https://inema.club" style="color:rgba(255,255,255,0.3);font-size:13px;text-decoration:none;font-family:'JetBrains Mono',monospace;">portal</a>
+    <a href="https://inema.vip" style="color:rgba(255,255,255,0.3);font-size:13px;text-decoration:none;font-family:'JetBrains Mono',monospace;">comunidade</a>
+    <a href="https://inematds.github.io/vb-imersao/" style="color:var(--gold);font-size:13px;text-decoration:none;font-family:'JetBrains Mono',monospace;">ver curso completo →</a>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('rp').style.width=(window.scrollY/t*100)+'%';
+});
+</script>
+</body>
+</html>
