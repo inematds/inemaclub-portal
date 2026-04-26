@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 71,
+    title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
+    description:
+      'Compare 9 frameworks de IA (OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw, Agent Zero), escolha os ingredientes certos para o seu assistente pessoal e entenda os 8 corredores de funcionalidades e 6 padrões de arquitetura.',
+    icon: '🧠',
+    tags: ['Frameworks', 'IA', 'Assistente', 'Comparativo', 'Arquitetura', 'Agentes'],
+    url: 'https://inematds.github.io/intelecto',
+  },
+  {
     id: 70,
     title: 'CCMasterMemory - Memory Injection via Hooks',
     description:
@@ -647,6 +656,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-25',
+    title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
+    type: 'novo',
+    url: 'https://inematds.github.io/intelecto',
+  },
   {
     date: '2026-04-23',
     title: 'CCMasterMemory - Memory Injection via Hooks',

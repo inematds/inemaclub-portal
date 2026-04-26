@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 71,
+        title: "INTELECTO - Inteligência Pessoal sem Frameworks Inchados",
+        description: "Compare 9 frameworks de IA (OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw, Agent Zero), escolha os ingredientes certos para o seu assistente pessoal e entenda os 8 corredores de funcionalidades e 6 padrões de arquitetura.",
+        icon: "🧠",
+        tags: ["Frameworks", "IA", "Assistente", "Comparativo", "Arquitetura", "Agentes"],
+        url: "https://inematds.github.io/intelecto"
+    },
+    {
         id: 70,
         title: "CCMasterMemory - Memory Injection via Hooks",
         description: "Resolva as limitacoes de memoria do Claude Code com hooks deterministicos. 6 trilhas, 36 modulos, ~24 horas + 6 labs praticos. Cobre hierarquia de 7 niveis de memoria, anatomia de 18 hooks, arquitetura de backend (Markdown, SQLite, vector DB) e memoria multi-agente.",

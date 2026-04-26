@@ -417,7 +417,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             </div>
             <h2 className={s.sectionTitle}>Trilhas de Aprendizado</h2>
             <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
-              10 trilhas temáticas — escolha seu caminho e avance com foco
+              11 trilhas temáticas — escolha seu caminho e avance com foco
             </p>
           </Reveal>
 
@@ -474,6 +474,10 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/VisionPro',   label: 'VisionPro',    desc: 'Construção Audiovisual com IA' },
               { href: 'https://inematds.github.io/fpfilm1/',     label: 'FPFilm',       desc: 'Crie Filmes com IA (Freepik)' },
               { href: 'https://inematds.github.io/VISION/',      label: 'VISION',       desc: 'Visão Computacional com IA' },
+            ]},
+            { title: '🧠 Frameworks & Assistentes', steps: [
+              { href: 'https://inematds.github.io/intelecto',  label: 'INTELECTO', desc: 'Inteligência Pessoal sem Frameworks Inchados' },
+              { href: 'https://inematds.github.io/deerflow/',  label: 'DeerFlow',   desc: 'Framework de Agentes ByteDance' },
             ]},
             { title: '🖥️ Claude Code', steps: [
               { href: 'https://inematds.github.io/ccguide2026',          label: 'CCGuide',          desc: 'Claude Code 2026 - Completo' },
