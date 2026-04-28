@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 74,
+    title: 'INTELECTO Curso - Do Zero ao Expert em IA',
+    description:
+      'Curso completo de construção de assistentes de IA pessoais: 6 trilhas (Fundamentos, Identidade e Canais, Segurança Zero-Trust, Memória e Integrações, Arquiteturas Avançadas, Projeto Final: Seu Jarvis), 18 módulos, ~21 horas.',
+    icon: '🤖',
+    tags: ['Assistente IA', 'Frameworks', 'Segurança', 'Memória', 'Arquitetura', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/intelecto-curso/',
+  },
+  {
     id: 73,
     title: 'Superpowers - Desenvolvimento com Agentes de IA',
     description:
@@ -674,6 +683,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'INTELECTO Curso - Do Zero ao Expert em IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/intelecto-curso/',
+  },
   {
     date: '2026-04-28',
     title: 'Superpowers - Desenvolvimento com Agentes de IA',
