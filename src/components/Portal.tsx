@@ -441,9 +441,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/VISION/',      label: 'VISION',       desc: 'Visão Computacional com IA' },
             ]},
             { title: '🧠 Frameworks & Assistentes', steps: [
-              { href: 'https://inematds.github.io/intelecto-curso/', label: 'INTELECTO Curso', desc: 'Do Zero ao Expert em IA — 6 trilhas, 18 módulos' },
-              { href: 'https://inematds.github.io/intelecto',        label: 'INTELECTO',       desc: 'Inteligência Pessoal sem Frameworks Inchados' },
-              { href: 'https://inematds.github.io/deerflow/',        label: 'DeerFlow',        desc: 'Framework de Agentes ByteDance' },
+              { href: 'https://inematds.github.io/intelecto-curso/',   label: 'INTELECTO Curso', desc: 'Do Zero ao Expert em IA — 6 trilhas, 18 módulos' },
+              { href: 'https://inematds.github.io/intelecto',          label: 'INTELECTO',       desc: 'Inteligência Pessoal sem Frameworks Inchados' },
+              { href: 'https://inematds.github.io/docker-openclaw/',   label: 'Docker OpenClaw', desc: 'Assistente IA Autônomo e Multi-Canal' },
+              { href: 'https://inematds.github.io/deerflow/',          label: 'DeerFlow',        desc: 'Framework de Agentes ByteDance' },
             ]},
             { title: '🖥️ Claude Code', steps: [
               { href: 'https://inematds.github.io/ccguide2026',           label: 'CCGuide',     desc: 'Claude Code 2026 - Completo' },

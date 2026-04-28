@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 76,
+    title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
+    description:
+      'Configure um assistente pessoal de IA rodando localmente com Docker, 200+ modelos via OpenRouter, Telegram, WhatsApp, Discord e Slack. 6 trilhas, 24 módulos, 144 tópicos, ~12 horas. Cobre instalação, canais, workspace, uso avançado e segurança.',
+    icon: '🦞',
+    tags: ['Docker', 'OpenClaw', 'OpenRouter', 'Telegram', 'WhatsApp', 'Self-hosted', 'IA'],
+    url: 'https://inematds.github.io/docker-openclaw/',
+  },
+  {
     id: 75,
     title: 'CCOpen - Claude Code de Graça ou por Quase Nada',
     description:
@@ -692,6 +701,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
+    type: 'novo',
+    url: 'https://inematds.github.io/docker-openclaw/',
+  },
   {
     date: '2026-04-28',
     title: 'CCOpen - Claude Code de Graça ou por Quase Nada',
