@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 72,
+        title: "CCFast32 - 32 Hacks do Claude Code",
+        description: "Do Iniciante ao Power User: 32 hacks práticos em 3 trilhas (Iniciante, Intermediário, Avançado), 11 módulos. Cobre /init, CLAUDE.md, tokens, plan mode, subagentes paralelos, slash commands, hooks, worktrees, ultrathink, multi-agente e CI/CD.",
+        icon: "⚡",
+        tags: ["Claude Code", "Hacks", "Power User", "Multi-agente", "Worktrees", "Hooks", "IA"],
+        url: "https://inematds.github.io/ccfast32/"
+    },
+    {
         id: 71,
         title: "INTELECTO - Inteligência Pessoal sem Frameworks Inchados",
         description: "Compare 9 frameworks de IA (OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw, Agent Zero), escolha os ingredientes certos para o seu assistente pessoal e entenda os 8 corredores de funcionalidades e 6 padrões de arquitetura.",

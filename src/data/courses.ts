@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 72,
+    title: 'CCFast32 - 32 Hacks do Claude Code',
+    description:
+      'Do Iniciante ao Power User: 32 hacks práticos em 3 trilhas (Iniciante, Intermediário, Avançado), 11 módulos. Cobre /init, CLAUDE.md, tokens, plan mode, subagentes paralelos, slash commands, hooks, worktrees, ultrathink, multi-agente e CI/CD.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Hacks', 'Power User', 'Multi-agente', 'Worktrees', 'Hooks', 'IA'],
+    url: 'https://inematds.github.io/ccfast32/',
+  },
+  {
     id: 71,
     title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
     description:
@@ -656,6 +665,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'CCFast32 - 32 Hacks do Claude Code',
+    type: 'novo',
+    url: 'https://inematds.github.io/ccfast32/',
+  },
   {
     date: '2026-04-25',
     title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
