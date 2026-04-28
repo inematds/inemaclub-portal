@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 73,
+    title: 'Superpowers - Desenvolvimento com Agentes de IA',
+    description:
+      'Metodologia completa do brainstorming ao deploy com agentes: TDD, subagentes, debugging sistemático, worktrees, agentes paralelos e criação de skills. 1 trilha, 10 módulos, 42 tópicos, ~5 horas. Intermediate.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Agentes', 'TDD', 'Metodologia', 'Worktrees', 'Skills', 'IA'],
+    url: 'https://inematds.github.io/superpowers/',
+  },
+  {
     id: 72,
     title: 'CCFast32 - 32 Hacks do Claude Code',
     description:
@@ -665,6 +674,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'Superpowers - Desenvolvimento com Agentes de IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/superpowers/',
+  },
   {
     date: '2026-04-28',
     title: 'CCFast32 - 32 Hacks do Claude Code',

@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 73,
+        title: "Superpowers - Desenvolvimento com Agentes de IA",
+        description: "Metodologia completa do brainstorming ao deploy com agentes: TDD, subagentes, debugging sistemático, worktrees, agentes paralelos e criação de skills. 1 trilha, 10 módulos, 42 tópicos, ~5 horas. Intermediate.",
+        icon: "⚡",
+        tags: ["Claude Code", "Agentes", "TDD", "Metodologia", "Worktrees", "Skills", "IA"],
+        url: "https://inematds.github.io/superpowers/"
+    },
+    {
         id: 72,
         title: "CCFast32 - 32 Hacks do Claude Code",
         description: "Do Iniciante ao Power User: 32 hacks práticos em 3 trilhas (Iniciante, Intermediário, Avançado), 11 módulos. Cobre /init, CLAUDE.md, tokens, plan mode, subagentes paralelos, slash commands, hooks, worktrees, ultrathink, multi-agente e CI/CD.",
