@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 75,
+        title: "CCOpen - Claude Code de Graça ou por Quase Nada",
+        description: "Use Claude Code com Ollama (local, gratuito) ou OpenRouter (cloud, quase nada) trocando o motor sem mudar a interface. 5 trilhas, 19 módulos: fundamentos, instalação (Linux/macOS/Windows WSL), Ollama, OpenRouter e prática real.",
+        icon: "🆓",
+        tags: ["Claude Code", "Ollama", "OpenRouter", "Gratuito", "Local LLM", "vLLM", "IA"],
+        url: "https://inematds.github.io/ccopen/"
+    },
+    {
         id: 74,
         title: "INTELECTO Curso - Do Zero ao Expert em IA",
         description: "Curso completo de construção de assistentes de IA pessoais: 6 trilhas (Fundamentos, Identidade e Canais, Segurança Zero-Trust, Memória e Integrações, Arquiteturas Avançadas, Projeto Final: Seu Jarvis), 18 módulos, ~21 horas.",

@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 75,
+    title: 'CCOpen - Claude Code de Graça ou por Quase Nada',
+    description:
+      'Use Claude Code com Ollama (local, gratuito) ou OpenRouter (cloud, quase nada) trocando o motor sem mudar a interface. 5 trilhas, 19 módulos: fundamentos, instalação (Linux/macOS/Windows WSL), Ollama, OpenRouter e prática real.',
+    icon: '🆓',
+    tags: ['Claude Code', 'Ollama', 'OpenRouter', 'Gratuito', 'Local LLM', 'vLLM', 'IA'],
+    url: 'https://inematds.github.io/ccopen/',
+  },
+  {
     id: 74,
     title: 'INTELECTO Curso - Do Zero ao Expert em IA',
     description:
@@ -683,6 +692,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'CCOpen - Claude Code de Graça ou por Quase Nada',
+    type: 'novo',
+    url: 'https://inematds.github.io/ccopen/',
+  },
   {
     date: '2026-04-28',
     title: 'INTELECTO Curso - Do Zero ao Expert em IA',
