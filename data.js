@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 78,
+        title: "iClaudeX - Planejamento Inteligente com Claude + Codex",
+        description: "Duas IAs discutem o seu plano para você não precisar fazer isso. Claude drafta, Codex critica de múltiplas perspectivas profissionais, iteram até validar — tudo no terminal. Plugin open source para Claude Code com arquitetura de loops iterativos.",
+        icon: "🤝",
+        tags: ["Claude Code", "Codex", "OpenAI", "Planejamento", "Plugin", "Open Source", "IA"],
+        url: "https://inematds.github.io/iclaudex/"
+    },
+    {
         id: 77,
         title: "SuperSkills Karpathy - Transforme Skills em Funcionários Digitais",
         description: "Método Karpathy para criar skills que funcionam como funcionários digitais reais: contexto, memória, integração de dados e melhoria contínua. 3 trilhas, 9 módulos, 54 tópicos, ~5 horas. Cobre Memory OS, Signal Dashboard e Claude Code.",

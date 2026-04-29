@@ -77,6 +77,7 @@ const REPOS = [
   { icon: '🎬', name: 'VisionPro',         desc: 'Construção Audiovisual com IA',                         stars: 0 },
   { icon: '🐾', name: 'pet360',            desc: 'Plataforma Pet 360',                                    stars: 0 },
   { icon: '🎥', name: 'seedance2',         desc: 'App de Geração de Vídeo com IA',                         stars: 0 },
+  { icon: '🤝', name: 'iclaudex',          desc: 'Planejamento Inteligente com Claude + Codex',             stars: 0 },
 ]
 
 function fmt(d: string) {
@@ -495,6 +496,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/superpowers/',        label: 'Superpowers',      desc: 'Desenvolvimento com Agentes de IA' },
               { href: 'https://inematds.github.io/ccopen/',             label: 'CCOpen',           desc: 'Claude Code de Graça ou por Quase Nada' },
               { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills',    desc: 'Skills como Funcionários Digitais (Karpathy)' },
+              { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',      desc: 'Planejamento com Claude + Codex no Terminal' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>

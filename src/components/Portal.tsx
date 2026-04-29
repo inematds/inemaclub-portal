@@ -460,6 +460,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/superpowers/',        label: 'Superpowers',  desc: 'Desenvolvimento com Agentes de IA' },
               { href: 'https://inematds.github.io/ccopen/',             label: 'CCOpen',       desc: 'Claude Code de Graça ou por Quase Nada' },
               { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills', desc: 'Skills como Funcionários Digitais (Karpathy)' },
+              { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',    desc: 'Planejamento com Claude + Codex no Terminal' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">

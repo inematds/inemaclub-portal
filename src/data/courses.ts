@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 78,
+    title: 'iClaudeX - Planejamento Inteligente com Claude + Codex',
+    description:
+      'Duas IAs discutem o seu plano para você não precisar fazer isso. Claude drafta, Codex critica de múltiplas perspectivas profissionais, iteram até validar — tudo no terminal. Plugin open source para Claude Code com arquitetura de loops iterativos.',
+    icon: '🤝',
+    tags: ['Claude Code', 'Codex', 'OpenAI', 'Planejamento', 'Plugin', 'Open Source', 'IA'],
+    url: 'https://inematds.github.io/iclaudex/',
+  },
+  {
     id: 77,
     title: 'SuperSkills Karpathy - Transforme Skills em Funcionários Digitais',
     description:
@@ -710,6 +719,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'iClaudeX - Planejamento Inteligente com Claude + Codex',
+    type: 'novo',
+    url: 'https://inematds.github.io/iclaudex/',
+  },
   {
     date: '2026-04-28',
     title: 'SuperSkills Karpathy - Transforme Skills em Funcionários Digitais',
