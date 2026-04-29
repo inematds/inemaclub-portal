@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 77,
+        title: "SuperSkills Karpathy - Transforme Skills em Funcionários Digitais",
+        description: "Método Karpathy para criar skills que funcionam como funcionários digitais reais: contexto, memória, integração de dados e melhoria contínua. 3 trilhas, 9 módulos, 54 tópicos, ~5 horas. Cobre Memory OS, Signal Dashboard e Claude Code.",
+        icon: "🧑‍💻",
+        tags: ["Claude Code", "Skills", "Karpathy", "Memory OS", "Agentes", "IA", "Produtividade"],
+        url: "https://inematds.github.io/superskills-karpathy/"
+    },
+    {
         id: 76,
         title: "Docker OpenClaw - Assistente IA Autônomo e Multi-Canal",
         description: "Configure um assistente pessoal de IA rodando localmente com Docker, 200+ modelos via OpenRouter, Telegram, WhatsApp, Discord e Slack. 6 trilhas, 24 módulos, 144 tópicos, ~12 horas. Cobre instalação, canais, workspace, uso avançado e segurança.",

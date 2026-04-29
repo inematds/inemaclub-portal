@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 77,
+    title: 'SuperSkills Karpathy - Transforme Skills em Funcionários Digitais',
+    description:
+      'Método Karpathy para criar skills que funcionam como funcionários digitais reais: contexto, memória, integração de dados e melhoria contínua. 3 trilhas, 9 módulos, 54 tópicos, ~5 horas. Cobre Memory OS, Signal Dashboard e Claude Code.',
+    icon: '🧑‍💻',
+    tags: ['Claude Code', 'Skills', 'Karpathy', 'Memory OS', 'Agentes', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/superskills-karpathy/',
+  },
+  {
     id: 76,
     title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
     description:
@@ -701,6 +710,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-28',
+    title: 'SuperSkills Karpathy - Transforme Skills em Funcionários Digitais',
+    type: 'novo',
+    url: 'https://inematds.github.io/superskills-karpathy/',
+  },
   {
     date: '2026-04-28',
     title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',

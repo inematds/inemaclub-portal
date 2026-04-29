@@ -494,6 +494,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/ccfast32/',           label: 'CCFast32',         desc: '32 Hacks do Claude Code' },
               { href: 'https://inematds.github.io/superpowers/',        label: 'Superpowers',      desc: 'Desenvolvimento com Agentes de IA' },
               { href: 'https://inematds.github.io/ccopen/',             label: 'CCOpen',           desc: 'Claude Code de Graça ou por Quase Nada' },
+              { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills',    desc: 'Skills como Funcionários Digitais (Karpathy)' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>
