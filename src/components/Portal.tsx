@@ -47,12 +47,11 @@ const communityProjects: Array<{
 ]
 
 type RepoUpdate = {
-  name: string
+  sha: string
   url: string
-  description: string
-  pushed_at: string
-  stars: number
-  language: string | null
+  title: string
+  author: string
+  date: string
 }
 
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
@@ -134,7 +133,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
     return date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
   }
 
-  function formatPushedDate(iso: string) {
+  function formatIsoDate(iso: string) {
+    if (!iso) return ''
     const d = new Date(iso)
     return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
   }
@@ -310,21 +310,18 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </span>
             </div>
             <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
-              {visibleRepoUpdates.map((repo) => (
+              {visibleRepoUpdates.map((c) => (
                 <a
-                  key={repo.name}
+                  key={c.sha}
                   className="update-item"
-                  href={repo.url}
+                  href={c.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackClick(repo.url, repo.name, 'repo-updates')}
+                  onClick={() => trackClick(c.url, c.title, 'repo-updates')}
                 >
-                  <span className="update-date">{formatPushedDate(repo.pushed_at)}</span>
-                  <span className="update-type atualizado">repo</span>
-                  <span className="update-title">
-                    {repo.name}
-                    {repo.description ? ` — ${repo.description}` : ''}
-                  </span>
+                  <span className="update-date">{formatIsoDate(c.date)}</span>
+                  <span className="update-type atualizado">{c.sha}</span>
+                  <span className="update-title">{c.title}</span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}

@@ -2,16 +2,14 @@ import { NextResponse } from 'next/server'
 
 export const revalidate = 600 // 10 min de cache
 
-type GhRepo = {
-  name: string
+type GhCommit = {
+  sha: string
   html_url: string
-  description: string | null
-  pushed_at: string
-  updated_at: string
-  stargazers_count: number
-  fork: boolean
-  archived: boolean
-  language: string | null
+  commit: {
+    message: string
+    author: { name: string; date: string } | null
+  }
+  author: { login: string; avatar_url: string } | null
 }
 
 export async function GET() {
@@ -25,7 +23,7 @@ export async function GET() {
     }
 
     const res = await fetch(
-      'https://api.github.com/orgs/inematds/repos?sort=pushed&direction=desc&per_page=20&type=public',
+      'https://api.github.com/repos/inematds/portal/commits?per_page=20',
       { headers, next: { revalidate: 600 } }
     )
 
@@ -36,19 +34,19 @@ export async function GET() {
       )
     }
 
-    const repos = (await res.json()) as GhRepo[]
+    const commits = (await res.json()) as GhCommit[]
 
-    const items = repos
-      .filter((r) => !r.fork && !r.archived && r.name !== 'portal')
-      .slice(0, 20)
-      .map((r) => ({
-        name: r.name,
-        url: r.html_url,
-        description: r.description ?? '',
-        pushed_at: r.pushed_at,
-        stars: r.stargazers_count,
-        language: r.language,
-      }))
+    const items = commits.map((c) => {
+      const fullMsg = c.commit.message ?? ''
+      const title = fullMsg.split('\n')[0]
+      return {
+        sha: c.sha.slice(0, 7),
+        url: c.html_url,
+        title,
+        author: c.author?.login ?? c.commit.author?.name ?? 'unknown',
+        date: c.commit.author?.date ?? '',
+      }
+    })
 
     return NextResponse.json({ ok: true, items })
   } catch (e: unknown) {
