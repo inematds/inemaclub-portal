@@ -766,20 +766,6 @@ body {
     border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
-/* Badge do nome do repositório no bloco "Últimas Atualizações do Repositório":
-   largura calculada via CSS variable a partir do nome de repo mais longo,
-   garantindo alinhamento da coluna do título sem truncar. */
-.update-type.update-repo-badge {
-    width: var(--repo-badge-width, 16ch);
-    min-width: var(--repo-badge-width, 16ch);
-    max-width: var(--repo-badge-width, 16ch);
-    text-transform: none;
-    font-family: monospace;
-    white-space: nowrap;
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
-}
 
 .update-title {
     flex: 1;

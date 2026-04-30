@@ -173,11 +173,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
   const visibleRepoUpdates = repoUpdates.slice(0, repoUpdatesExpanded ? 20 : 5)
 
-  // Largura do badge baseada no nome de repo mais longo (em ch, monospace)
-  const maxRepoNameLen = visibleRepoUpdates.reduce(
-    (m, c) => Math.max(m, (c.repo ?? c.sha).length),
-    0
-  )
 
   function formatDate(dateStr: string) {
     const date = new Date(dateStr + 'T00:00:00')
@@ -360,14 +355,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   : 'Ver mais'}
               </span>
             </div>
-            <div
-              className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}
-              style={
-                {
-                  '--repo-badge-width': `${Math.max(maxRepoNameLen + 2, 8)}ch`,
-                } as React.CSSProperties
-              }
-            >
+            <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
               {visibleRepoUpdates.map((c, i) => (
                 <a
                   key={`${c.sha}-${i}`}
@@ -375,16 +363,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   href={c.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackClick(c.url, c.title, 'repo-updates')}
+                  onClick={() => trackClick(c.url, c.repo ?? c.title, 'repo-updates')}
+                  title={c.title}
                 >
                   <span className="update-date">{formatIsoDate(c.date)}</span>
-                  <span
-                    className="update-type atualizado update-repo-badge"
-                    title={c.repo ?? c.sha}
-                  >
-                    {c.repo ?? c.sha}
-                  </span>
-                  <span className="update-title">{c.title}</span>
+                  <span className="update-type atualizado">atualizado</span>
+                  <span className="update-title">{c.repo ?? c.title}</span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}
