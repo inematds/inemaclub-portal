@@ -365,7 +365,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   onClick={() => trackClick(c.url, c.title, 'repo-updates')}
                 >
                   <span className="update-date">{formatIsoDate(c.date)}</span>
-                  <span className="update-type atualizado">{c.repo ?? c.sha}</span>
+                  <span
+                    className="update-type atualizado update-repo-badge"
+                    title={c.repo ?? c.sha}
+                  >
+                    {c.repo ?? c.sha}
+                  </span>
                   <span className="update-title">{c.title}</span>
                   <span className="update-arrow">→</span>
                 </a>
