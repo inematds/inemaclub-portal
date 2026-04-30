@@ -6,20 +6,20 @@ type GhEvent = {
   type: string
   created_at: string
   repo: { name: string }
-  payload: { ref?: string; head?: string }
+  payload: { ref?: string; head?: string; ref_type?: string }
 }
 
-type GhCommit = {
-  sha: string
+type GhRepo = {
+  name: string
+  full_name: string
   html_url: string
-  commit: {
-    message: string
-    author: { name: string; date: string } | null
-  }
-  author: { login: string } | null
+  description: string | null
+  created_at: string
+  pushed_at: string
 }
 
 const MAX_ITEMS = 20
+const NEW_REPO_DAYS = 14 // dias desde criação para considerar "novo"
 
 export async function GET() {
   try {
@@ -45,46 +45,53 @@ export async function GET() {
 
     const events = (await evRes.json()) as GhEvent[]
 
-    // Pega o push mais recente de cada repositório (eventos vêm em ordem
-    // cronológica decrescente, então o primeiro encontrado por repo é o mais novo).
+    // Pega o evento mais recente de cada repositório (Push ou Create de repo)
     const seenRepos = new Set<string>()
-    const targets: Array<{ repo: string; sha: string; date: string }> = []
+    const targets: Array<{ repo: string; date: string; createEvent: boolean }> = []
     for (const ev of events) {
-      if (ev.type !== 'PushEvent' || !ev.payload?.head) continue
+      const isPush = ev.type === 'PushEvent' && !!ev.payload?.head
+      const isCreate =
+        ev.type === 'CreateEvent' && ev.payload?.ref_type === 'repository'
+      if (!isPush && !isCreate) continue
       if (seenRepos.has(ev.repo.name)) continue
       seenRepos.add(ev.repo.name)
-      targets.push({ repo: ev.repo.name, sha: ev.payload.head, date: ev.created_at })
+      targets.push({
+        repo: ev.repo.name,
+        date: ev.created_at,
+        createEvent: isCreate,
+      })
       if (targets.length >= MAX_ITEMS) break
     }
 
-    // Busca detalhes dos commits em paralelo
-    const commitResults = await Promise.allSettled(
+    // Busca metadados do repo em paralelo (descrição + data de criação)
+    const repoResults = await Promise.allSettled(
       targets.map((t) =>
-        fetch(`https://api.github.com/repos/${t.repo}/commits/${t.sha}`, {
+        fetch(`https://api.github.com/repos/${t.repo}`, {
           headers,
           next: { revalidate: 1800 },
-        }).then(async (r) => (r.ok ? ((await r.json()) as GhCommit) : null))
+        }).then(async (r) => (r.ok ? ((await r.json()) as GhRepo) : null))
       )
     )
 
-    const items = commitResults
-      .map((res, i) => {
-        const t = targets[i]
-        const c = res.status === 'fulfilled' ? res.value : null
-        const fullMsg = c?.commit?.message ?? ''
-        const title = fullMsg.split('\n')[0] || `Push em ${t.repo.replace(/^inematds\//, '')}`
-        return {
-          sha: (c?.sha ?? t.sha).slice(0, 7),
-          url:
-            c?.html_url ??
-            `https://github.com/${t.repo}/commit/${t.sha}`,
-          title,
-          author: c?.author?.login ?? 'inematds',
-          date: c?.commit?.author?.date ?? t.date,
-          repo: t.repo.replace(/^inematds\//, ''),
-        }
-      })
-      .filter(Boolean)
+    const now = Date.now()
+    const items = repoResults.map((res, i) => {
+      const t = targets[i]
+      const meta = res.status === 'fulfilled' ? res.value : null
+      const shortName = t.repo.replace(/^inematds\//, '')
+      const createdAt = meta?.created_at
+      const ageDays = createdAt
+        ? (now - new Date(createdAt).getTime()) / 86400000
+        : Infinity
+      const isNovo = t.createEvent || ageDays <= NEW_REPO_DAYS
+
+      return {
+        name: shortName,
+        url: meta?.html_url ?? `https://github.com/${t.repo}`,
+        description: meta?.description ?? '',
+        date: t.date,
+        type: isNovo ? 'novo' : 'atualizado',
+      }
+    })
 
     return NextResponse.json({ ok: true, items })
   } catch (e: unknown) {

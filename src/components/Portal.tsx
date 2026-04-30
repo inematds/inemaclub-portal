@@ -47,12 +47,11 @@ const communityProjects: Array<{
 ]
 
 type RepoUpdate = {
-  sha: string
+  name: string
   url: string
-  title: string
-  author: string
+  description: string
   date: string
-  repo?: string
+  type: 'novo' | 'atualizado'
 }
 
 type Repo = {
@@ -356,19 +355,22 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </span>
             </div>
             <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
-              {visibleRepoUpdates.map((c, i) => (
+              {visibleRepoUpdates.map((r, i) => (
                 <a
-                  key={`${c.sha}-${i}`}
+                  key={`${r.name}-${i}`}
                   className="update-item"
-                  href={c.url}
+                  href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackClick(c.url, c.repo ?? c.title, 'repo-updates')}
-                  title={c.title}
+                  onClick={() => trackClick(r.url, r.name, 'repo-updates')}
+                  title={r.description || r.name}
                 >
-                  <span className="update-date">{formatIsoDate(c.date)}</span>
-                  <span className="update-type atualizado">atualizado</span>
-                  <span className="update-title">{c.repo ?? c.title}</span>
+                  <span className="update-date">{formatIsoDate(r.date)}</span>
+                  <span className={`update-type ${r.type}`}>{r.type}</span>
+                  <span className="update-title">
+                    {r.name}
+                    {r.description ? ` — ${r.description}` : ''}
+                  </span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}
