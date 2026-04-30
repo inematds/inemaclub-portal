@@ -45,14 +45,14 @@ export async function GET() {
 
     const events = (await evRes.json()) as GhEvent[]
 
-    // Pega push events únicos (por SHA), preserva ordem cronológica
-    const seen = new Set<string>()
+    // Pega o push mais recente de cada repositório (eventos vêm em ordem
+    // cronológica decrescente, então o primeiro encontrado por repo é o mais novo).
+    const seenRepos = new Set<string>()
     const targets: Array<{ repo: string; sha: string; date: string }> = []
     for (const ev of events) {
       if (ev.type !== 'PushEvent' || !ev.payload?.head) continue
-      const key = `${ev.repo.name}@${ev.payload.head}`
-      if (seen.has(key)) continue
-      seen.add(key)
+      if (seenRepos.has(ev.repo.name)) continue
+      seenRepos.add(ev.repo.name)
       targets.push({ repo: ev.repo.name, sha: ev.payload.head, date: ev.created_at })
       if (targets.length >= MAX_ITEMS) break
     }
