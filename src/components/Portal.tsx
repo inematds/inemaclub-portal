@@ -54,11 +54,38 @@ type RepoUpdate = {
   date: string
 }
 
+type Repo = {
+  name: string
+  url: string
+  description: string
+  stars: number
+  language: string | null
+  pushed_at: string
+}
+
+const LANG_ICON: Record<string, string> = {
+  TypeScript: '🟦',
+  JavaScript: '🟨',
+  Python: '🐍',
+  HTML: '🌐',
+  CSS: '🎨',
+  Shell: '🐚',
+  Go: '🐹',
+  Rust: '🦀',
+  Java: '☕',
+  Ruby: '💎',
+  PHP: '🐘',
+  Vue: '💚',
+  Svelte: '🧡',
+  Dockerfile: '🐳',
+}
+
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
   const [repoUpdatesExpanded, setRepoUpdatesExpanded] = useState(false)
   const [repoUpdates, setRepoUpdates] = useState<RepoUpdate[]>([])
+  const [repos, setRepos] = useState<Repo[]>([])
 
   // Registra a visita ao montar
   useEffect(() => {
@@ -93,6 +120,23 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         if (cancelled) return
         if (data?.ok && Array.isArray(data.items)) {
           setRepoUpdates(data.items)
+        }
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  // Busca repositórios da org (ordenados por estrelas)
+  useEffect(() => {
+    let cancelled = false
+    fetch('/api/repos')
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return
+        if (data?.ok && Array.isArray(data.items)) {
+          setRepos(data.items)
         }
       })
       .catch(() => {})
@@ -594,44 +638,38 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <p>Explore nossos projetos open-source e contribua com a comunidade</p>
           </div>
           <div className="github-grid">
-            {[
-              { icon: '🖥️', name: 'sis', desc: 'Sistema de Informações', stars: 0 },
-              { icon: '✨', name: 'AIWCF', desc: 'AI Website Creation Framework - Vibe Coding', stars: 0 },
-              { icon: '💄', name: 'bela360', desc: 'Plataforma Bela 360', stars: 1 },
-              { icon: '🎲', name: 'bet360', desc: 'Plataforma Bet 360', stars: 0 },
-              { icon: '🎓', name: 'SuperProf', desc: 'Formação avançada para professores e educadores', stars: 1 },
-              { icon: '🤖', name: 'agent-browser', desc: 'Agente de automação de navegador', stars: 0 },
-              { icon: '🖼️', name: 'webp', desc: 'Conversão e otimização de imagens WebP', stars: 0 },
-              { icon: '🎙️', name: 'DublarV4', desc: 'Sistema de dublagem versão 4', stars: 1 },
-              { icon: '🏛️', name: 'GIPM', desc: 'Método de Projetos com IA Governada', stars: 0 },
-              { icon: '🎬', name: 'VisionPro', desc: 'Construção Audiovisual com IA', stars: 0 },
-              { icon: '📚', name: 'BMAD-Academy', desc: 'Academia de desenvolvimento com metodologia BMAD', stars: 12 },
-              { icon: '🐾', name: 'pet360', desc: 'Plataforma Pet 360', stars: 0 },
-              { icon: '🧠', name: 'FEA-IA', desc: 'Formação de Engenheiros de Agentes de IA', stars: 10 },
-              { icon: '✍️', name: 'FEP', desc: 'Formação de Engenheiros de Prompts', stars: 7 },
-              { icon: '🎤', name: 'lk_agente_v3', desc: 'Agente de voz inteligente com LiveKit em Português', stars: 5 },
-              { icon: '📱', name: 'whatsapp-agentkit', desc: 'Kit de agentes para WhatsApp', stars: 4 },
-              { icon: '🤝', name: 'nm82', desc: 'Sistema de Padrinhos e Afiliados INEMA.VIP', stars: 3 },
-              { icon: '🤖', name: 'FEA', desc: 'Formação de Engenharia de Agentes de IA', stars: 3 },
-            ].map((repo) => (
-              <a
-                key={repo.name}
-                href={`https://github.com/inematds/${repo.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-card"
-                onClick={() => trackClick(`https://github.com/inematds/${repo.name}`, repo.name, 'github')}
-              >
-                <div className="github-card-header">
-                  <span className="github-icon">{repo.icon}</span>
-                  <h4>{repo.name}</h4>
-                </div>
-                <p className="github-description">{repo.desc}</p>
-                <div className="github-stats">
-                  <span className="github-stars">⭐ {repo.stars}</span>
-                </div>
-              </a>
-            ))}
+            {repos.length === 0 ? (
+              <p style={{ color: 'var(--text-secondary)' }}>Carregando repositórios…</p>
+            ) : (
+              repos.map((repo) => (
+                <a
+                  key={repo.name}
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-card"
+                  onClick={() => trackClick(repo.url, repo.name, 'github')}
+                >
+                  <div className="github-card-header">
+                    <span className="github-icon">
+                      {(repo.language && LANG_ICON[repo.language]) ?? '📦'}
+                    </span>
+                    <h4>{repo.name}</h4>
+                  </div>
+                  <p className="github-description">
+                    {repo.description || 'Sem descrição'}
+                  </p>
+                  <div className="github-stats">
+                    <span className="github-stars">⭐ {repo.stars}</span>
+                    {repo.language && (
+                      <span className="github-stars" style={{ marginLeft: '0.75rem' }}>
+                        {repo.language}
+                      </span>
+                    )}
+                  </div>
+                </a>
+              ))
+            )}
           </div>
           <div className="github-footer">
             <a
