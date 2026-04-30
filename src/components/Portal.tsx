@@ -46,9 +46,20 @@ const communityProjects: Array<{
   { icon: '🧪', name: 'intelecto-testes', desc: 'Testes e validacao do assistente pessoal Intelecto com IA', url: 'https://github.com/inematds/intelecto-testes', badge: 'GitHub' },
 ]
 
+type RepoUpdate = {
+  name: string
+  url: string
+  description: string
+  pushed_at: string
+  stars: number
+  language: string | null
+}
+
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
+  const [repoUpdatesExpanded, setRepoUpdatesExpanded] = useState(false)
+  const [repoUpdates, setRepoUpdates] = useState<RepoUpdate[]>([])
 
   // Registra a visita ao montar
   useEffect(() => {
@@ -72,6 +83,23 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       })
     }
     trackVisit()
+  }, [])
+
+  // Busca últimas atualizações dos repositórios GitHub
+  useEffect(() => {
+    let cancelled = false
+    fetch('/api/repos-updates')
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return
+        if (data?.ok && Array.isArray(data.items)) {
+          setRepoUpdates(data.items)
+        }
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   // Rastreia cliques em links externos
@@ -99,10 +127,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
 
   // Lista de atualizações a exibir
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
+  const visibleRepoUpdates = repoUpdates.slice(0, repoUpdatesExpanded ? 20 : 5)
 
   function formatDate(dateStr: string) {
     const date = new Date(dateStr + 'T00:00:00')
     return date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+  }
+
+  function formatPushedDate(iso: string) {
+    const d = new Date(iso)
+    return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
   }
 
   return (
@@ -259,14 +293,52 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       {/* Main — Updates + Search + Cards */}
       <main className="main">
         <div className="container">
-          {/* Updates */}
+          {/* Repo Updates (GitHub) */}
+          <section className="updates-section">
+            <div
+              className="updates-header"
+              onClick={() => setRepoUpdatesExpanded((v) => !v)}
+              style={{ cursor: 'pointer' }}
+            >
+              <h3>Últimas Atualizações do Repositório</h3>
+              <span className="updates-toggle">
+                {repoUpdates.length === 0
+                  ? 'carregando…'
+                  : repoUpdatesExpanded
+                  ? 'Ver menos'
+                  : 'Ver mais'}
+              </span>
+            </div>
+            <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
+              {visibleRepoUpdates.map((repo) => (
+                <a
+                  key={repo.name}
+                  className="update-item"
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackClick(repo.url, repo.name, 'repo-updates')}
+                >
+                  <span className="update-date">{formatPushedDate(repo.pushed_at)}</span>
+                  <span className="update-type atualizado">repo</span>
+                  <span className="update-title">
+                    {repo.name}
+                    {repo.description ? ` — ${repo.description}` : ''}
+                  </span>
+                  <span className="update-arrow">→</span>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {/* Updates de Cursos */}
           <section className="updates-section">
             <div
               className="updates-header"
               onClick={() => setUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>Últimas Atualizações</h3>
+              <h3>Últimas Atualizações de Cursos</h3>
               <span className="updates-toggle">{updatesExpanded ? 'Ver menos' : 'Ver mais'}</span>
             </div>
             <div className={`updates-list${updatesExpanded ? ' expanded' : ''}`}>
