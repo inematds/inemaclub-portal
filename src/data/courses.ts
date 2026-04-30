@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 79,
+    title: 'MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin',
+    description:
+      'Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.',
+    icon: '🔧',
+    tags: ['Claude Code', 'Hooks', 'Plugins', 'Skills', 'Engenharia', 'YAML', 'IA'],
+    url: 'https://inematds.github.io/makeclaudex/',
+  },
+  {
     id: 78,
     title: 'iClaudeX - Planejamento Inteligente com Claude + Codex',
     description:
@@ -719,6 +728,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-04-30',
+    title: 'MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin',
+    type: 'novo',
+    url: 'https://inematds.github.io/makeclaudex/',
+  },
   {
     date: '2026-04-28',
     title: 'iClaudeX - Planejamento Inteligente com Claude + Codex',

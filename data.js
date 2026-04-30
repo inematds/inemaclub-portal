@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 79,
+        title: "MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin",
+        description: "Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.",
+        icon: "🔧",
+        tags: ["Claude Code", "Hooks", "Plugins", "Skills", "Engenharia", "YAML", "IA"],
+        url: "https://inematds.github.io/makeclaudex/"
+    },
+    {
         id: 78,
         title: "iClaudeX - Planejamento Inteligente com Claude + Codex",
         description: "Duas IAs discutem o seu plano para você não precisar fazer isso. Claude drafta, Codex critica de múltiplas perspectivas profissionais, iteram até validar — tudo no terminal. Plugin open source para Claude Code com arquitetura de loops iterativos.",

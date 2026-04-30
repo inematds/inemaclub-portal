@@ -497,6 +497,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/ccopen/',             label: 'CCOpen',           desc: 'Claude Code de Graça ou por Quase Nada' },
               { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills',    desc: 'Skills como Funcionários Digitais (Karpathy)' },
               { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',      desc: 'Planejamento com Claude + Codex no Terminal' },
+              { href: 'https://inematds.github.io/makeclaudex/',         label: 'MakeClaudeX',   desc: 'Do Prompt ao Plugin de Produção' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>
