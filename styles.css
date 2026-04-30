@@ -767,17 +767,18 @@ body {
 }
 
 /* Badge do nome do repositório no bloco "Últimas Atualizações do Repositório":
-   largura fixa para alinhar coluna do título mesmo com nomes longos. */
+   largura calculada via CSS variable a partir do nome de repo mais longo,
+   garantindo alinhamento da coluna do título sem truncar. */
 .update-type.update-repo-badge {
-    width: 160px;
-    min-width: 160px;
-    max-width: 160px;
+    width: var(--repo-badge-width, 16ch);
+    min-width: var(--repo-badge-width, 16ch);
+    max-width: var(--repo-badge-width, 16ch);
     text-transform: none;
     font-family: monospace;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .update-title {

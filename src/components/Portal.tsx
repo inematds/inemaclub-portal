@@ -173,6 +173,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
   const visibleRepoUpdates = repoUpdates.slice(0, repoUpdatesExpanded ? 20 : 5)
 
+  // Largura do badge baseada no nome de repo mais longo (em ch, monospace)
+  const maxRepoNameLen = visibleRepoUpdates.reduce(
+    (m, c) => Math.max(m, (c.repo ?? c.sha).length),
+    0
+  )
+
   function formatDate(dateStr: string) {
     const date = new Date(dateStr + 'T00:00:00')
     return date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
@@ -354,7 +360,14 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   : 'Ver mais'}
               </span>
             </div>
-            <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
+            <div
+              className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}
+              style={
+                {
+                  '--repo-badge-width': `${Math.max(maxRepoNameLen + 2, 8)}ch`,
+                } as React.CSSProperties
+              }
+            >
               {visibleRepoUpdates.map((c, i) => (
                 <a
                   key={`${c.sha}-${i}`}
