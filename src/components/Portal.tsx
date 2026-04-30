@@ -52,6 +52,7 @@ type RepoUpdate = {
   title: string
   author: string
   date: string
+  repo?: string
 }
 
 type Repo = {
@@ -354,9 +355,9 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </span>
             </div>
             <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
-              {visibleRepoUpdates.map((c) => (
+              {visibleRepoUpdates.map((c, i) => (
                 <a
-                  key={c.sha}
+                  key={`${c.sha}-${i}`}
                   className="update-item"
                   href={c.url}
                   target="_blank"
@@ -364,7 +365,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   onClick={() => trackClick(c.url, c.title, 'repo-updates')}
                 >
                   <span className="update-date">{formatIsoDate(c.date)}</span>
-                  <span className="update-type atualizado">{c.sha}</span>
+                  <span className="update-type atualizado">{c.repo ?? c.sha}</span>
                   <span className="update-title">{c.title}</span>
                   <span className="update-arrow">→</span>
                 </a>

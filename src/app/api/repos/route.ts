@@ -24,7 +24,7 @@ export async function GET() {
     }
 
     const res = await fetch(
-      'https://api.github.com/orgs/inematds/repos?per_page=100&type=public',
+      'https://api.github.com/users/inematds/repos?per_page=100&type=owner&sort=updated',
       { headers, next: { revalidate: 600 } }
     )
 
