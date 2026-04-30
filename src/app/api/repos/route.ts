@@ -40,6 +40,7 @@ export async function GET() {
     const items = repos
       .filter((r) => !r.fork && !r.archived && r.name !== 'portal')
       .sort((a, b) => b.stargazers_count - a.stargazers_count)
+      .slice(0, 15)
       .map((r) => ({
         name: r.name,
         url: r.html_url,
