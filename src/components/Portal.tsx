@@ -582,6 +582,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/makeclaudex/',         label: 'MakeClaudeX', desc: 'Do Prompt ao Plugin de Produção' },
               { href: 'https://inematds.github.io/ruflo/',               label: 'Ruflo',       desc: 'Orquestração de Agentes Multi-IA' },
               { href: 'https://inematds.github.io/mastercodex/',          label: 'Master Codex', desc: 'Fábrica de SaaS com Agentes de IA' },
+              { href: 'https://inematds.github.io/deepclaudex/',          label: 'DeepClaudeX',  desc: 'Multi-Modelo 70/20/10' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">

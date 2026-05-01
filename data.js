@@ -201,6 +201,14 @@ const platformsData = [
         url: "https://inematds.github.io/DBA-FO/"
     },
     {
+        id: 82,
+        title: "DeepClaudeX - Multi-Modelo 70/20/10",
+        description: "Orquestre 3 modelos de IA (GPT-5.5, Claude Opus 4.7, DeepSeek V4) com eficiência máxima. 3 trilhas (Conceito, Configuração, Projetos), 18 módulos, 108 tópicos em ~10 horas. Reduza custos mantendo qualidade com distribuição inteligente: 70% DeepSeek, 20% GPT, 10% Claude.",
+        icon: "🔀",
+        tags: ["Multi-modelo", "Orquestração", "Claude Code", "DeepSeek", "GPT", "Custos", "IA"],
+        url: "https://inematds.github.io/deepclaudex/"
+    },
+    {
         id: 64,
         title: "DeerFlow 2.0 - Framework de Agentes ByteDance",
         description: "Curso completo do framework open-source de agentes da ByteDance. 4 trilhas, 21 modulos com labs praticos. Cobre fundamentos, arquitetura LangGraph, extensao com skills e MCP, plataforma avancada e comparativo com Claude Code.",

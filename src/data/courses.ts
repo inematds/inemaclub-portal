@@ -645,6 +645,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ruflo/',
   },
   {
+    id: 82,
+    title: 'DeepClaudeX - Multi-Modelo 70/20/10',
+    description:
+      'Orquestre 3 modelos de IA (GPT-5.5, Claude Opus 4.7, DeepSeek V4) com eficiência máxima. 3 trilhas (Conceito, Configuração, Projetos), 18 módulos, 108 tópicos em ~10 horas. Reduza custos mantendo qualidade com distribuição inteligente: 70% DeepSeek, 20% GPT, 10% Claude.',
+    icon: '🔀',
+    tags: ['Multi-modelo', 'Orquestração', 'Claude Code', 'DeepSeek', 'GPT', 'Custos', 'IA'],
+    url: 'https://inematds.github.io/deepclaudex/',
+  },
+  {
     id: 81,
     title: 'Master Codex - A Fábrica de SaaS com Agentes de IA',
     description:
@@ -746,6 +755,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-01',
+    title: 'DeepClaudeX - Multi-Modelo 70/20/10',
+    type: 'novo',
+    url: 'https://inematds.github.io/deepclaudex/',
+  },
   {
     date: '2026-05-01',
     title: 'Master Codex - A Fábrica de SaaS com Agentes de IA',
