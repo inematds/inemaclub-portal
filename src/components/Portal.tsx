@@ -580,6 +580,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills', desc: 'Skills como Funcionários Digitais (Karpathy)' },
               { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',    desc: 'Planejamento com Claude + Codex no Terminal' },
               { href: 'https://inematds.github.io/makeclaudex/',         label: 'MakeClaudeX', desc: 'Do Prompt ao Plugin de Produção' },
+              { href: 'https://inematds.github.io/ruflo/',               label: 'Ruflo',       desc: 'Orquestração de Agentes Multi-IA' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">

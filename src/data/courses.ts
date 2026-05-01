@@ -636,6 +636,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop/',
   },
   {
+    id: 80,
+    title: 'Ruflo - Orquestração de Agentes Multi-IA',
+    description:
+      'Coordene enxames de agentes especializados com Claude Code, AgentDB+HNSW, federation zero-trust e auto-aprendizado SONA. 3 trilhas (Fundamentos, Uso Prático, Avançado), 21 módulos, 126 tópicos, ~45 horas. Deploy em produção com consenso distribuído e 33 plugins nativos.',
+    icon: '🤖',
+    tags: ['Claude Code', 'Multi-agente', 'Orquestração', 'Zero-trust', 'SONA', 'AgentDB', 'IA'],
+    url: 'https://inematds.github.io/ruflo/',
+  },
+  {
     id: 79,
     title: 'MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin',
     description:
@@ -728,6 +737,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-01',
+    title: 'Ruflo - Orquestração de Agentes Multi-IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/ruflo/',
+  },
   {
     date: '2026-04-30',
     title: 'MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin',

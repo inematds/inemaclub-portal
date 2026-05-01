@@ -65,6 +65,14 @@ const platformsData = [
         url: "https://inematds.github.io/ccguide2026"
     },
     {
+        id: 80,
+        title: "Ruflo - Orquestração de Agentes Multi-IA",
+        description: "Coordene enxames de agentes especializados com Claude Code, AgentDB+HNSW, federation zero-trust e auto-aprendizado SONA. 3 trilhas (Fundamentos, Uso Prático, Avançado), 21 módulos, 126 tópicos, ~45 horas. Deploy em produção com consenso distribuído e 33 plugins nativos.",
+        icon: "🤖",
+        tags: ["Claude Code", "Multi-agente", "Orquestração", "Zero-trust", "SONA", "AgentDB", "IA"],
+        url: "https://inematds.github.io/ruflo/"
+    },
+    {
         id: 79,
         title: "MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin",
         description: "Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.",
