@@ -73,6 +73,14 @@ const platformsData = [
         url: "https://inematds.github.io/ruflo/"
     },
     {
+        id: 81,
+        title: "Master Codex - A Fábrica de SaaS com Agentes de IA",
+        description: "Evolua de curioso a operador de fábrica de software com agentes IA. 6 trilhas, 24 módulos, 144 tópicos em ~27 horas. Cobre protocolos de comunicação (AGENTS.md), UI/UX com IA, backend multi-tenant, WhatsApp, orquestração multi-agente paralela e metodologia de micro-SaaS semanal. Projeto-âncora: InboxAI.",
+        icon: "⚡",
+        tags: ["Claude Code", "SaaS", "Multi-agente", "WhatsApp", "Automação", "Produção", "IA"],
+        url: "https://inematds.github.io/mastercodex/"
+    },
+    {
         id: 79,
         title: "MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin",
         description: "Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.",

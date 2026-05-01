@@ -499,6 +499,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',      desc: 'Planejamento com Claude + Codex no Terminal' },
               { href: 'https://inematds.github.io/makeclaudex/',         label: 'MakeClaudeX',   desc: 'Do Prompt ao Plugin de Produção' },
               { href: 'https://inematds.github.io/ruflo/',               label: 'Ruflo',         desc: 'Orquestração de Agentes Multi-IA' },
+              { href: 'https://inematds.github.io/mastercodex/',          label: 'Master Codex', desc: 'Fábrica de SaaS com Agentes de IA' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>
