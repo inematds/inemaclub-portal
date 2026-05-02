@@ -645,6 +645,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ruflo/',
   },
   {
+    id: 84,
+    title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
+    description:
+      'Construa um agente de IA pessoal de ponta a ponta em TypeScript. Vive no Telegram, opera 24/7 com autonomia, memória multi-camada, function calling, voz, skills auto-geradas e MCP. 3 trilhas (Fundamentos, Vida do Agente, Produção), 9 módulos, 54 tópicos em ~6 horas. Sem frameworks fechados.',
+    icon: '🤖',
+    tags: ['Agente IA', 'Telegram', 'TypeScript', 'MCP', 'Memória', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/agentejax/',
+  },
+  {
     id: 83,
     title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',
     description:
@@ -764,6 +773,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-02',
+    title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
+    type: 'novo',
+    url: 'https://inematds.github.io/agentejax/',
+  },
   {
     date: '2026-05-02',
     title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',

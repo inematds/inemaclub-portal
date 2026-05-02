@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 84,
+        title: "AgenteJAX - Construa seu Agente de IA Pessoal",
+        description: "Construa um agente de IA pessoal de ponta a ponta em TypeScript. Vive no Telegram, opera 24/7 com autonomia, memória multi-camada, function calling, voz, skills auto-geradas e MCP. 3 trilhas (Fundamentos, Vida do Agente, Produção), 9 módulos, 54 tópicos em ~6 horas. Sem frameworks fechados.",
+        icon: "🤖",
+        tags: ["Agente IA", "Telegram", "TypeScript", "MCP", "Memória", "Produção", "IA"],
+        url: "https://inematds.github.io/agentejax/"
+    },
+    {
         id: 2,
         title: "ATIA - Oportunidades Digitais com IA",
         description: "Oportunidades Digitais com IA - Explore o mundo da Inteligência Artificial e suas aplicações práticas.",
