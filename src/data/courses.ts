@@ -645,6 +645,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ruflo/',
   },
   {
+    id: 83,
+    title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',
+    description:
+      'Alternativa local-first e BYOK ao Claude Design. 3 trilhas (Fundamentos, Exemplos, Avançado), 18 módulos, 100+ tópicos em ~30 horas. Conduzido por 31 skills, 72 design systems e CLI de agente. Cobre prompt stack, pitch decks, landing pages, dashboards, critique loops, ACP e daemon/sidecar.',
+    icon: '🎨',
+    tags: ['Open Design', 'Design', 'Skills', 'BYOK', 'Claude Code', 'UI/UX', 'IA'],
+    url: 'https://inematds.github.io/curso-od/',
+  },
+  {
     id: 82,
     title: 'DeepClaudeX - Multi-Modelo 70/20/10',
     description:
@@ -755,6 +764,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-02',
+    title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',
+    type: 'novo',
+    url: 'https://inematds.github.io/curso-od/',
+  },
   {
     date: '2026-05-01',
     title: 'DeepClaudeX - Multi-Modelo 70/20/10',

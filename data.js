@@ -185,6 +185,14 @@ const platformsData = [
         url: "https://inematds.github.io/claudedesign/"
     },
     {
+        id: 83,
+        title: "Curso Open Design - Alternativa Open-Source ao Claude Design",
+        description: "Alternativa local-first e BYOK ao Claude Design. 3 trilhas (Fundamentos, Exemplos, Avançado), 18 módulos, 100+ tópicos em ~30 horas. Conduzido por 31 skills, 72 design systems e CLI de agente. Cobre prompt stack, pitch decks, landing pages, dashboards, critique loops, ACP e daemon/sidecar.",
+        icon: "🎨",
+        tags: ["Open Design", "Design", "Skills", "BYOK", "Claude Code", "UI/UX", "IA"],
+        url: "https://inematds.github.io/curso-od/"
+    },
+    {
         id: 5,
         title: "Dashboard Mastery",
         description: "Supercurso de Dashboards Profissionais - Domine a criação de dashboards com Next.js e React.",
