@@ -273,6 +273,14 @@ const platformsData = [
         url: "https://inematds.github.io/enxamesagentes/"
     },
     {
+        id: 87,
+        title: "FEC - Formação de Engenharia de Contexto",
+        description: "Engenharia de Contexto para quem leva LLM a produção. 6 trilhas, 14 módulos, 3 projetos cumulativos. Cobre janelas de contexto, message engineering, RAG, tools e agentes, memória e compressão, avaliação e deploy. Cada módulo com ilustrações e exercícios automatizados.",
+        icon: "🧩",
+        tags: ["Engenharia de Contexto", "LLM", "RAG", "Agentes", "Memória", "Produção", "IA"],
+        url: "https://inematds.github.io/FEC/"
+    },
+    {
         id: 8,
         title: "FDB - Fundamentos de Banco de Dados",
         description: "Formação em Desenvolvimento de Base - Fundamentos essenciais para desenvolvedores.",

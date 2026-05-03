@@ -654,6 +654,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mentesbrilhantes1/',
   },
   {
+    id: 87,
+    title: 'FEC - Formação de Engenharia de Contexto',
+    description:
+      'Engenharia de Contexto para quem leva LLM a produção. 6 trilhas, 14 módulos, 3 projetos cumulativos. Cobre janelas de contexto, message engineering, RAG, tools e agentes, memória e compressão, avaliação e deploy. Cada módulo com ilustrações e exercícios automatizados.',
+    icon: '🧩',
+    tags: ['Engenharia de Contexto', 'LLM', 'RAG', 'Agentes', 'Memória', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/FEC/',
+  },
+  {
     id: 86,
     title: 'Multiagentes - Equipes de Agentes na Prática',
     description:
@@ -791,6 +800,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-03',
+    title: 'FEC - Formação de Engenharia de Contexto',
+    type: 'novo',
+    url: 'https://inematds.github.io/FEC/',
+  },
   {
     date: '2026-05-03',
     title: 'Multiagentes - Equipes de Agentes na Prática',
