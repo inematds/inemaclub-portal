@@ -489,6 +489,14 @@ const platformsData = [
         url: "https://inematds.github.io/portal/"
     },
     {
+        id: 88,
+        title: "Power Design - Os 20 Princípios",
+        description: "Os 20 princípios de design fundamentais aplicados a slides e apresentações profissionais com Claude Code. 7 seções (Carga Cognitiva, Hierarquia Visual, Gestalt, Tipografia, Cor, Sistemas Espaciais, Alinhamento), 72+ brand systems, referências Tufte/Reynolds/Duarte. Slides que não parecem feitos por IA.",
+        icon: "🎨",
+        tags: ["Design", "Slides", "Claude Code", "Tipografia", "Gestalt", "Apresentações", "IA"],
+        url: "https://inematds.github.io/power-design/"
+    },
+    {
         id: 28,
         title: "Prompts",
         description: "Formação de Engenheiros de Prompts - Técnicas avançadas de engenharia de prompts para IA.",

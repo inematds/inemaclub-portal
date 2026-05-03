@@ -654,6 +654,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mentesbrilhantes1/',
   },
   {
+    id: 88,
+    title: 'Power Design - Os 20 Princípios',
+    description:
+      'Os 20 princípios de design fundamentais aplicados a slides e apresentações profissionais com Claude Code. 7 seções (Carga Cognitiva, Hierarquia Visual, Gestalt, Tipografia, Cor, Sistemas Espaciais, Alinhamento), 72+ brand systems, referências Tufte/Reynolds/Duarte. Slides que não parecem feitos por IA.',
+    icon: '🎨',
+    tags: ['Design', 'Slides', 'Claude Code', 'Tipografia', 'Gestalt', 'Apresentações', 'IA'],
+    url: 'https://inematds.github.io/power-design/',
+  },
+  {
     id: 87,
     title: 'FEC - Formação de Engenharia de Contexto',
     description:
@@ -800,6 +809,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-03',
+    title: 'Power Design - Os 20 Princípios',
+    type: 'novo',
+    url: 'https://inematds.github.io/power-design/',
+  },
   {
     date: '2026-05-03',
     title: 'FEC - Formação de Engenharia de Contexto',
