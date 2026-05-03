@@ -645,6 +645,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ruflo/',
   },
   {
+    id: 85,
+    title: 'Mentes Brilhantes - A Fórmula 1-20-79',
+    description:
+      '1% ideia, 20% produto, 79% venda. Curso gratuito de mentalidade empreendedora com case Cal AI ($100M+). 6 trilhas, 24 módulos, 144+ tópicos. Cobre validação de ideias, MVP, marketing, distribuição, vendas, retenção e escala. 100% gratuito.',
+    icon: '💡',
+    tags: ['Empreendedorismo', 'Vendas', 'Marketing', 'MVP', 'Mindset', 'Gratuito'],
+    url: 'https://inematds.github.io/mentesbrilhantes1/',
+  },
+  {
     id: 84,
     title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
     description:
@@ -778,6 +787,12 @@ export const updatesData: Update[] = [
     title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
     type: 'novo',
     url: 'https://inematds.github.io/agentejax/',
+  },
+  {
+    date: '2026-05-02',
+    title: 'Mentes Brilhantes - A Fórmula 1-20-79',
+    type: 'novo',
+    url: 'https://inematds.github.io/mentesbrilhantes1/',
   },
   {
     date: '2026-05-02',

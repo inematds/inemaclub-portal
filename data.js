@@ -89,6 +89,14 @@ const platformsData = [
         url: "https://inematds.github.io/mastercodex/"
     },
     {
+        id: 85,
+        title: "Mentes Brilhantes - A Fórmula 1-20-79",
+        description: "1% ideia, 20% produto, 79% venda. Curso gratuito de mentalidade empreendedora com case Cal AI ($100M+). 6 trilhas, 24 módulos, 144+ tópicos. Cobre validação de ideias, MVP, marketing, distribuição, vendas, retenção e escala. 100% gratuito.",
+        icon: "💡",
+        tags: ["Empreendedorismo", "Vendas", "Marketing", "MVP", "Mindset", "Gratuito"],
+        url: "https://inematds.github.io/mentesbrilhantes1/"
+    },
+    {
         id: 79,
         title: "MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin",
         description: "Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.",
