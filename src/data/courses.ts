@@ -654,6 +654,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mentesbrilhantes1/',
   },
   {
+    id: 86,
+    title: 'Multiagentes - Equipes de Agentes na Prática',
+    description:
+      'Projete, orquestre e opere squads de agentes IA que entregam software de produção. 5 trilhas, 20 módulos, 120 tópicos em ~16h + 4h de projeto final. Cobre Claude Code, OpenAI Codex, Gemini CLI, coordenação multi-agente, diagnóstico, custos e multi-runtime.',
+    icon: '🤖',
+    tags: ['Multi-agente', 'Claude Code', 'Codex', 'Gemini', 'Orquestração', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/multiagentes/',
+  },
+  {
     id: 84,
     title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
     description:
@@ -782,6 +791,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-03',
+    title: 'Multiagentes - Equipes de Agentes na Prática',
+    type: 'novo',
+    url: 'https://inematds.github.io/multiagentes/',
+  },
   {
     date: '2026-05-02',
     title: 'AgenteJAX - Construa seu Agente de IA Pessoal',

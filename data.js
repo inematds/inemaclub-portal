@@ -97,6 +97,14 @@ const platformsData = [
         url: "https://inematds.github.io/mentesbrilhantes1/"
     },
     {
+        id: 86,
+        title: "Multiagentes - Equipes de Agentes na Prática",
+        description: "Projete, orquestre e opere squads de agentes IA que entregam software de produção. 5 trilhas, 20 módulos, 120 tópicos em ~16h + 4h de projeto final. Cobre Claude Code, OpenAI Codex, Gemini CLI, coordenação multi-agente, diagnóstico, custos e multi-runtime.",
+        icon: "🤖",
+        tags: ["Multi-agente", "Claude Code", "Codex", "Gemini", "Orquestração", "Produção", "IA"],
+        url: "https://inematds.github.io/multiagentes/"
+    },
+    {
         id: 79,
         title: "MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin",
         description: "Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.",

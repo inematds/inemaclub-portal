@@ -504,6 +504,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/mastercodex/',          label: 'Master Codex', desc: 'Fábrica de SaaS com Agentes de IA' },
               { href: 'https://inematds.github.io/deepclaudex/',          label: 'DeepClaudeX',  desc: 'Multi-Modelo 70/20/10' },
               { href: 'https://inematds.github.io/curso-od/',             label: 'Open Design',  desc: 'Alternativa Open-Source ao Claude Design' },
+              { href: 'https://inematds.github.io/multiagentes/',         label: 'Multiagentes', desc: 'Equipes de Agentes na Prática' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>
