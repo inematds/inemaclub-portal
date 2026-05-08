@@ -499,7 +499,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="learning-path-header">
             <h3>Trilhas de Aprendizado</h3>
-            <p>11 trilhas temáticas — escolha seu caminho e avance com foco</p>
+            <p>12 trilhas temáticas — escolha seu caminho e avance com foco</p>
           </div>
           {([
             { title: '⚡ Automação', steps: [
@@ -589,6 +589,9 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/multiagentes/',         label: 'Multiagentes', desc: 'Equipes de Agentes na Prática' },
               { href: 'https://inematds.github.io/FEC/',                  label: 'FEC',          desc: 'Engenharia de Contexto para LLM' },
               { href: 'https://inematds.github.io/power-design/',         label: 'Power Design', desc: 'Os 20 Princípios de Design' },
+            ]},
+            { title: '🧬 Neurociência & Futuro', steps: [
+              { href: 'https://inematds.github.io/prof2030/', label: 'Prof2030', desc: 'O Tripé do Profissional do Futuro' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">

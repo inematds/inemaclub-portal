@@ -497,6 +497,14 @@ const platformsData = [
         url: "https://inematds.github.io/power-design/"
     },
     {
+        id: 89,
+        title: "Prof2030 - O Profissional do Futuro",
+        description: "O Tripé do Profissional do Futuro: comunicar com a máquina, empreender pela automação e liderar com humanidade. 3 trilhas, 18 módulos, 108 tópicos, ~13h. AI literacy, prompt engineering, n8n, solopreneurs, caráter e legado humano.",
+        icon: "🧬",
+        tags: ["Neurociência", "Futuro", "IA", "Automação", "Liderança", "Empreendedorismo"],
+        url: "https://inematds.github.io/prof2030/"
+    },
+    {
         id: 28,
         title: "Prompts",
         description: "Formação de Engenheiros de Prompts - Técnicas avançadas de engenharia de prompts para IA.",

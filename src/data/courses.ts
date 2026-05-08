@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 89,
+    title: 'Prof2030 - O Profissional do Futuro',
+    description:
+      'O Tripé do Profissional do Futuro: comunicar com a máquina, empreender pela automação e liderar com humanidade. 3 trilhas, 18 módulos, 108 tópicos, ~13h.',
+    icon: '🧬',
+    tags: ['Neurociência', 'Futuro', 'IA', 'Automação', 'Liderança', 'Empreendedorismo'],
+    url: 'https://inematds.github.io/prof2030/',
+  },
+  {
     id: 45,
     title: 'Imersao Vibe Coding',
     description:
@@ -809,6 +818,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-08',
+    title: 'Prof2030 - O Profissional do Futuro',
+    type: 'novo',
+    url: 'https://inematds.github.io/prof2030/',
+  },
   {
     date: '2026-05-03',
     title: 'Power Design - Os 20 Princípios',
