@@ -510,6 +510,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             ]},
             { title: '🧬 Neurociência & Futuro', steps: [
               { href: 'https://inematds.github.io/prof2030/', label: 'Prof2030', desc: 'O Tripé do Profissional do Futuro' },
+              { href: 'https://inematds.github.io/mentesbrilhantes1/', label: 'Mentes Brilhantes', desc: 'A Fórmula 1-20-79' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>
