@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 90,
+        title: "Agente Hermes - Assistente IA Self-Hosted",
+        description: "Suba um agente IA na sua própria infra com Docker, Telegram e GitHub. 6 trilhas: Fundamentos, Setup do Zero, 5 Pilares (Memory/Skills/Soul/Crons), Segurança, Hermes vs Mercado e Escala Multi-Agente. Comparações com Claude Code, n8n, LangChain e CrewAI.",
+        icon: "🏛️",
+        tags: ["Agente IA", "Self-Hosted", "Docker", "Telegram", "Open Source", "Hermes"],
+        url: "https://inematds.github.io/agentehermes"
+    },
+    {
         id: 84,
         title: "AgenteJAX - Construa seu Agente de IA Pessoal",
         description: "Construa um agente de IA pessoal de ponta a ponta em TypeScript. Vive no Telegram, opera 24/7 com autonomia, memória multi-camada, function calling, voz, skills auto-geradas e MCP. 3 trilhas (Fundamentos, Vida do Agente, Produção), 9 módulos, 54 tópicos em ~6 horas. Sem frameworks fechados.",

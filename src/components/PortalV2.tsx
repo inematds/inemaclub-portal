@@ -418,7 +418,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             </div>
             <h2 className={s.sectionTitle}>Trilhas de Aprendizado</h2>
             <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
-              12 trilhas temáticas — escolha seu caminho e avance com foco
+              13 trilhas temáticas — escolha seu caminho e avance com foco
             </p>
           </Reveal>
 
@@ -511,6 +511,13 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             { title: '🧬 Neurociência & Futuro', steps: [
               { href: 'https://inematds.github.io/prof2030/', label: 'Prof2030', desc: 'O Tripé do Profissional do Futuro' },
               { href: 'https://inematds.github.io/mentesbrilhantes1/', label: 'Mentes Brilhantes', desc: 'A Fórmula 1-20-79' },
+            ]},
+            { title: '🤖 Agentes Jarvis', steps: [
+              { href: 'https://inematds.github.io/agentehermes',       label: 'Agente Hermes',   desc: 'Assistente IA Self-Hosted com Docker' },
+              { href: 'https://inematds.github.io/docker-openclaw/',   label: 'Docker OpenClaw', desc: 'Assistente IA Autônomo e Multi-Canal' },
+              { href: 'https://inematds.github.io/intelecto-curso/',   label: 'INTELECTO Curso', desc: 'Do Zero ao Expert em IA' },
+              { href: 'https://inematds.github.io/intelecto',          label: 'INTELECTO',       desc: 'Inteligência Pessoal sem Frameworks' },
+              { href: 'https://inematds.github.io/agentejax/',         label: 'AgenteJAX',       desc: 'Agente de IA Pessoal em TypeScript' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>

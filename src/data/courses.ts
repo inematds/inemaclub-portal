@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 90,
+    title: 'Agente Hermes - Assistente IA Self-Hosted',
+    description:
+      'Suba um agente IA na sua própria infra com Docker, Telegram e GitHub. 6 trilhas: Fundamentos, Setup, 5 Pilares, Segurança, Hermes vs Mercado e Escala Multi-Agente.',
+    icon: '🏛️',
+    tags: ['Agente IA', 'Self-Hosted', 'Docker', 'Telegram', 'Open Source', 'Hermes'],
+    url: 'https://inematds.github.io/agentehermes',
+  },
+  {
     id: 89,
     title: 'Prof2030 - O Profissional do Futuro',
     description:
@@ -818,6 +827,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-10',
+    title: 'Agente Hermes - Assistente IA Self-Hosted',
+    type: 'novo',
+    url: 'https://inematds.github.io/agentehermes',
+  },
   {
     date: '2026-05-08',
     title: 'Prof2030 - O Profissional do Futuro',
