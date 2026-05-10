@@ -129,7 +129,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             <a href="#trilha-vibe" className={s.navItem}>Trilha Vibe</a>
             <a href="#trilhas"     className={s.navItem}>Trilhas</a>
             <a href="#github"    className={s.navItem}>GitHub</a>
-            <a href="#comunidade" className={s.navItem}>Comunidade</a>
+            <a href="#comunidade" className={s.navItem}>Projetos</a>
             <a href="https://inema.vip" target="_blank" rel="noopener noreferrer"
                className={s.navBtn}
                onClick={() => click('https://inema.vip', 'Entrar', 'navbar')}>
@@ -592,7 +592,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             <div className={s.sectionTop} style={{ justifyContent: 'center', marginBottom: '2.5rem' }}>
               <span className={s.sectionNum}>07</span>
               <span className={s.sectionLine} />
-              <span className={s.sectionLabel}>Comunidade Premium</span>
+              <span className={s.sectionLabel}>Projetos</span>
             </div>
           </Reveal>
           <Reveal delay={60}>

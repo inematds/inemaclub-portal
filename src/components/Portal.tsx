@@ -39,7 +39,7 @@ const communityProjects: Array<{
   { icon: '📱', name: 'redessociais', desc: 'Gestao de redes sociais com IA', url: 'https://github.com/inematds/redessociais', badge: 'GitHub' },
   { icon: '📲', name: 'redessociais2026', desc: 'Redes sociais 2026', url: 'https://github.com/inematds/redessociais2026', badge: 'GitHub' },
   { icon: '🔍', name: 'deepsearchagent', desc: 'Agente de pesquisa profunda com IA', url: 'https://github.com/inematds/deepsearchagent', badge: 'GitHub' },
-  { icon: '🎬', name: 'yt-pub-lives2', desc: 'Pipeline automatizado de clipes de lives do YouTube', url: 'https://github.com/inematds/yt-pub-lives2', badge: 'GitHub' },
+  { icon: '📈', name: 'timesmkt3', desc: 'Plataforma de marketing e campanhas com IA', url: 'https://github.com/inematds/timesmkt3', badge: 'GitHub' },
   { icon: '🎥', name: 'aisf', desc: 'Produção de vídeos em lote com IA (SkyReels V3)', url: 'https://github.com/inematds/aisf', badge: 'GitHub' },
   { icon: '🐟', name: 'BettaFish', desc: 'Plataforma de pesquisa e analise com IA multi-engine', url: 'https://github.com/inematds/BettaFish', badge: 'GitHub' },
   { icon: '🌊', name: 'MiroFish', desc: 'Motor de predicao com inteligencia de enxame e agentes IA', url: 'https://github.com/inematds/mirofish', badge: 'GitHub' },
@@ -228,7 +228,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <a href="#cursos" className="section-nav-link">🎓 Cursos</a>
             <a href="#trilha-vibe" className="section-nav-link">⚡ Vibe Code</a>
             <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
-            <a href="#comunidade" className="section-nav-link">🚀 Comunidade</a>
+            <a href="#comunidade" className="section-nav-link">🚀 Projetos</a>
             <a href="#github" className="section-nav-link">💻 GitHub</a>
             <a href="#telegram" className="section-nav-link">💬 Telegram</a>
             <a href="#social" className="section-nav-link">📱 Social</a>
@@ -613,12 +613,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* Projetos da Comunidade */}
+      {/* Projetos */}
       <section id="comunidade" className="community-projects-section">
         <div className="container">
           <div className="community-projects-header">
-            <h3>Projetos da Comunidade</h3>
-            <p>Cards com os projetos citados pela comunidade INEMA</p>
+            <h3>Projetos</h3>
+            <p>Cards com os projetos desenvolvidos pela INEMA</p>
           </div>
           <div className="community-projects-grid">
             {communityProjects.map((project) =>
