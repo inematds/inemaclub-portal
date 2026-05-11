@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 91,
+        title: "Agentic OS - O Sistema Operacional do Trabalho com IA",
+        description: "Claude Code, Codex e agentes como sistema operacional. 6 trilhas: Fundamentos (Software 3.0, Karpathy), Identidade (CLAUDE.md, AGENTS.md), Conhecimento (Silver Platters, MCP, Context Engineering), Trabalhadores (orquestrador, A2A), Automação (hooks, n8n) e Deploy. 36 módulos, 216+ tópicos, ~24h.",
+        icon: "⚙️",
+        tags: ["Agentic OS", "Claude Code", "MCP", "A2A", "Hooks", "Skills", "Orquestração"],
+        url: "https://inematds.github.io/agenticos/"
+    },
+    {
         id: 90,
         title: "Agente Hermes - Assistente IA Self-Hosted",
         description: "Suba um agente IA na sua própria infra com Docker, Telegram e GitHub. 6 trilhas: Fundamentos, Setup do Zero, 5 Pilares (Memory/Skills/Soul/Crons), Segurança, Hermes vs Mercado e Escala Multi-Agente. Comparações com Claude Code, n8n, LangChain e CrewAI.",

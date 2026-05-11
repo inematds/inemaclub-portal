@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 91,
+    title: 'Agentic OS - O Sistema Operacional do Trabalho com IA',
+    description:
+      'Claude Code, Codex e agentes como sistema operacional. 6 trilhas: Fundamentos, Identidade, Conhecimento, Trabalhadores, Automação e Deploy. 36 módulos, 216+ tópicos, ~24h.',
+    icon: '⚙️',
+    tags: ['Agentic OS', 'Claude Code', 'MCP', 'A2A', 'Hooks', 'Skills', 'Orquestração'],
+    url: 'https://inematds.github.io/agenticos/',
+  },
+  {
     id: 90,
     title: 'Agente Hermes - Assistente IA Self-Hosted',
     description:
@@ -827,6 +836,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-10',
+    title: 'Agentic OS - O Sistema Operacional do Trabalho com IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/agenticos/',
+  },
   {
     date: '2026-05-10',
     title: 'Agente Hermes - Assistente IA Self-Hosted',
