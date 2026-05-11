@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 92,
+    title: 'CAIP - Certified AI Professional',
+    description:
+      'Certificação profissional em IA aplicada. 6 trilhas, 6 selos, ~58h. Do modo execução ao modo comando com IA.',
+    icon: '🎓',
+    tags: ['Certificação', 'IA', 'CAIP', 'Profissional', 'Agentes', 'Automação'],
+    url: 'https://inematds.github.io/prof2031CAIP',
+  },
+  {
     id: 91,
     title: 'Agentic OS - O Sistema Operacional do Trabalho com IA',
     description:
@@ -836,6 +845,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-11',
+    title: 'CAIP - Certified AI Professional',
+    type: 'novo',
+    url: 'https://inematds.github.io/prof2031CAIP',
+  },
   {
     date: '2026-05-10',
     title: 'Agentic OS - O Sistema Operacional do Trabalho com IA',

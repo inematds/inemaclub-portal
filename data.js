@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 92,
+        title: "CAIP - Certified AI Professional",
+        description: "Certificação profissional em IA aplicada. 6 trilhas: Fundamentos, Comando e Engenharia de Contexto, Agentes e Automação, Aplicação Profissional, Projeto Certificador e Especializações. 6 selos independentes, ~58h. Do modo execução ao modo comando.",
+        icon: "🎓",
+        tags: ["Certificação", "IA", "CAIP", "Profissional", "Agentes", "Automação"],
+        url: "https://inematds.github.io/prof2031CAIP"
+    },
+    {
         id: 91,
         title: "Agentic OS - O Sistema Operacional do Trabalho com IA",
         description: "Claude Code, Codex e agentes como sistema operacional. 6 trilhas: Fundamentos (Software 3.0, Karpathy), Identidade (CLAUDE.md, AGENTS.md), Conhecimento (Silver Platters, MCP, Context Engineering), Trabalhadores (orquestrador, A2A), Automação (hooks, n8n) e Deploy. 36 módulos, 216+ tópicos, ~24h.",

@@ -512,6 +512,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             { title: '🧬 Neurociência & Futuro', steps: [
               { href: 'https://inematds.github.io/prof2030/', label: 'Prof2030', desc: 'O Tripé do Profissional do Futuro' },
               { href: 'https://inematds.github.io/mentesbrilhantes1/', label: 'Mentes Brilhantes', desc: 'A Fórmula 1-20-79' },
+              { href: 'https://inematds.github.io/prof2031CAIP', label: 'CAIP', desc: 'Certified AI Professional' },
             ]},
             { title: '🤖 Agentes Jarvis', steps: [
               { href: 'https://inematds.github.io/agentehermes',       label: 'Agente Hermes',   desc: 'Assistente IA Self-Hosted com Docker' },
