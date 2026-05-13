@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 94,
+        title: "TimesMarketing 3 - Automação de Conteúdo com IA",
+        description: "Sistema de automação de conteúdo para marketing digital com agentes de IA coordenados via Telegram. Pipeline de 5 estágios: pesquisa, narrativa, imagens, vídeos e publicação. Bot + orchestrator + workers + UI read-only. Docker, Redis, Remotion, multi-modelo.",
+        icon: "📈",
+        tags: ["Marketing", "Automação", "Agentes", "Telegram", "Vídeo", "IA", "Docker"],
+        url: "https://github.com/inematds/timesmkt3"
+    },
+    {
         id: 93,
         title: "5 Níveis do Claude Code",
         description: "Em qual nível do Claude você está? Da conversa simples à automação autônoma. 6 trilhas: Entusiasta, Iniciante, Intermediário, Avançado, Arquiteto e Prova Final. 13 módulos, 80+ tópicos, ~6h. Diagnóstico de nível, cheat codes entre cada salto e certificado.",

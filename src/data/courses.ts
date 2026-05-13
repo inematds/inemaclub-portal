@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 94,
+    title: 'TimesMarketing 3 - Automação de Conteúdo com IA',
+    description:
+      'Sistema de automação de marketing com agentes IA via Telegram. Pipeline: pesquisa, narrativa, imagens, vídeos e publicação. Docker + Redis + Remotion.',
+    icon: '📈',
+    tags: ['Marketing', 'Automação', 'Agentes', 'Telegram', 'Vídeo', 'IA', 'Docker'],
+    url: 'https://github.com/inematds/timesmkt3',
+  },
+  {
     id: 93,
     title: '5 Níveis do Claude Code',
     description:
@@ -854,6 +863,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-12',
+    title: 'TimesMarketing 3 - Automação de Conteúdo com IA',
+    type: 'novo',
+    url: 'https://github.com/inematds/timesmkt3',
+  },
   {
     date: '2026-05-12',
     title: '5 Níveis do Claude Code',
