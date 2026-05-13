@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 95,
+    title: 'Printing Press - CLI para Agentes de IA',
+    description:
+      'Por que CLI vence MCP e API para agentes. 35x menos tokens, 100% confiabilidade. Conceitos, instalação, criar sua CLI, BrasilAPI, n8n + Supabase. 7 módulos, ~2h.',
+    icon: '🖨️',
+    tags: ['CLI', 'Agentes', 'MCP', 'Printing Press', 'n8n', 'Supabase'],
+    url: 'https://inematds.github.io/pp-cli/',
+  },
+  {
     id: 94,
     title: 'TimesMarketing 3 - Automação de Conteúdo com IA',
     description:
@@ -863,6 +872,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-13',
+    title: 'Printing Press - CLI para Agentes de IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/pp-cli/',
+  },
   {
     date: '2026-05-12',
     title: 'TimesMarketing 3 - Automação de Conteúdo com IA',

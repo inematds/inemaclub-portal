@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 95,
+        title: "Printing Press - CLI para Agentes de IA",
+        description: "Por que CLI vence MCP e API para agentes. 35x menos tokens, 100% confiabilidade em tarefas longas. Trilha única: conceitos, instalação, primeiros comandos, criar sua CLI, caso prático com BrasilAPI, integração n8n + Supabase e publicação no library. 7 módulos, 42 tópicos, ~2h.",
+        icon: "🖨️",
+        tags: ["CLI", "Agentes", "MCP", "Printing Press", "n8n", "Supabase"],
+        url: "https://inematds.github.io/pp-cli/"
+    },
+    {
         id: 94,
         title: "TimesMarketing 3 - Automação de Conteúdo com IA",
         description: "Sistema de automação de conteúdo para marketing digital com agentes de IA coordenados via Telegram. Pipeline de 5 estágios: pesquisa, narrativa, imagens, vídeos e publicação. Bot + orchestrator + workers + UI read-only. Docker, Redis, Remotion, multi-modelo.",
