@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 93,
+    title: '5 Níveis do Claude Code',
+    description:
+      'Em qual nível do Claude você está? 6 trilhas: Entusiasta, Iniciante, Intermediário, Avançado, Arquiteto e Prova Final. 13 módulos, 80+ tópicos, ~6h.',
+    icon: '📊',
+    tags: ['Claude Code', 'Níveis', 'Diagnóstico', 'Skills', 'Hooks', 'Automação'],
+    url: 'https://inematds.github.io/5niveiscc/',
+  },
+  {
     id: 92,
     title: 'CAIP - Certified AI Professional',
     description:
@@ -845,6 +854,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-12',
+    title: '5 Níveis do Claude Code',
+    type: 'novo',
+    url: 'https://inematds.github.io/5niveiscc/',
+  },
   {
     date: '2026-05-11',
     title: 'CAIP - Certified AI Professional',

@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 93,
+        title: "5 Níveis do Claude Code",
+        description: "Em qual nível do Claude você está? Da conversa simples à automação autônoma. 6 trilhas: Entusiasta, Iniciante, Intermediário, Avançado, Arquiteto e Prova Final. 13 módulos, 80+ tópicos, ~6h. Diagnóstico de nível, cheat codes entre cada salto e certificado.",
+        icon: "📊",
+        tags: ["Claude Code", "Níveis", "Diagnóstico", "Skills", "Hooks", "Automação"],
+        url: "https://inematds.github.io/5niveiscc/"
+    },
+    {
         id: 92,
         title: "CAIP - Certified AI Professional",
         description: "Certificação profissional em IA aplicada. 6 trilhas: Fundamentos, Comando e Engenharia de Contexto, Agentes e Automação, Aplicação Profissional, Projeto Certificador e Especializações. 6 selos independentes, ~58h. Do modo execução ao modo comando.",
