@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 96,
+    title: 'Skills Premium - Do Iniciante ao Expert',
+    description:
+      'Domine skills no Claude Code. 3 trilhas: Fundamentos, Dicas Técnicas e No Expert. 20 módulos, sub-agentes, prompts canhão, skills auto-iterativas.',
+    icon: '⚡',
+    tags: ['Skills', 'Claude Code', 'Agentes', 'Sub-agentes', 'IA', 'Expert'],
+    url: 'https://inematds.github.io/skills-premium/',
+  },
+  {
     id: 95,
     title: 'Printing Press - CLI para Agentes de IA',
     description:
@@ -872,6 +881,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-14',
+    title: 'Skills Premium - Do Iniciante ao Expert',
+    type: 'novo',
+    url: 'https://inematds.github.io/skills-premium/',
+  },
   {
     date: '2026-05-13',
     title: 'Printing Press - CLI para Agentes de IA',

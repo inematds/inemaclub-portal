@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 96,
+        title: "Skills Premium - Do Iniciante ao Expert",
+        description: "Domine skills no Claude Code do zero ao avançado. 3 trilhas: Fundamentos (6 módulos), Dicas Técnicas (8 módulos) e No Expert (6 módulos). Anatomia de skills, progressive disclosure, auditoria, sub-agentes, prompts canhão e skills auto-iterativas.",
+        icon: "⚡",
+        tags: ["Skills", "Claude Code", "Agentes", "Sub-agentes", "IA", "Expert"],
+        url: "https://inematds.github.io/skills-premium/"
+    },
+    {
         id: 95,
         title: "Printing Press - CLI para Agentes de IA",
         description: "Por que CLI vence MCP e API para agentes. 35x menos tokens, 100% confiabilidade em tarefas longas. Trilha única: conceitos, instalação, primeiros comandos, criar sua CLI, caso prático com BrasilAPI, integração n8n + Supabase e publicação no library. 7 módulos, 42 tópicos, ~2h.",
