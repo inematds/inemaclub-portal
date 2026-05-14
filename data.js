@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 97,
+        title: "Engenharia de Dados com IA",
+        description: "A base dos sistemas de IA e agentes. 3 trilhas: Fundamentos (stack em camadas, pirâmide de dados), Dicas Técnicas (auditoria 4 eixos, DuckDB, pipelines) e Visão Avançada (Text-to-SQL, data dictionary, enterprise vs PME). 16 módulos, 96 tópicos, ~9h30.",
+        icon: "🗄️",
+        tags: ["Dados", "Engenharia", "DuckDB", "Pipeline", "SQL", "IA", "Agentes"],
+        url: "https://inematds.github.io/engdadosai"
+    },
+    {
         id: 96,
         title: "Skills Premium - Do Iniciante ao Expert",
         description: "Domine skills no Claude Code do zero ao avançado. 3 trilhas: Fundamentos (6 módulos), Dicas Técnicas (8 módulos) e No Expert (6 módulos). Anatomia de skills, progressive disclosure, auditoria, sub-agentes, prompts canhão e skills auto-iterativas.",

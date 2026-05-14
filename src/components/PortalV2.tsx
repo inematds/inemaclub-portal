@@ -418,7 +418,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             </div>
             <h2 className={s.sectionTitle}>Trilhas de Aprendizado</h2>
             <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
-              13 trilhas temáticas — escolha seu caminho e avance com foco
+              14 trilhas temáticas — escolha seu caminho e avance com foco
             </p>
           </Reveal>
 
@@ -523,6 +523,9 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/intelecto-curso/',   label: 'INTELECTO Curso', desc: 'Do Zero ao Expert em IA' },
               { href: 'https://inematds.github.io/intelecto',          label: 'INTELECTO',       desc: 'Inteligência Pessoal sem Frameworks' },
               { href: 'https://inematds.github.io/agentejax/',         label: 'AgenteJAX',       desc: 'Agente de IA Pessoal em TypeScript' },
+            ]},
+            { title: '🗄️ Dados & IA', steps: [
+              { href: 'https://inematds.github.io/engdadosai', label: 'Eng. Dados com IA', desc: 'A Base dos Sistemas de IA e Agentes' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail, ti) => (
             <Reveal key={trail.title} delay={ti * 30}>

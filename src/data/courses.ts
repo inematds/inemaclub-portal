@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 97,
+    title: 'Engenharia de Dados com IA',
+    description:
+      'A base dos sistemas de IA e agentes. 3 trilhas: Fundamentos, Dicas Técnicas e Visão Avançada. DuckDB, Text-to-SQL, pipelines, auditoria de dados. 16 módulos, ~9h30.',
+    icon: '🗄️',
+    tags: ['Dados', 'Engenharia', 'DuckDB', 'Pipeline', 'SQL', 'IA', 'Agentes'],
+    url: 'https://inematds.github.io/engdadosai',
+  },
+  {
     id: 96,
     title: 'Skills Premium - Do Iniciante ao Expert',
     description:
@@ -881,6 +890,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-14',
+    title: 'Engenharia de Dados com IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/engdadosai',
+  },
   {
     date: '2026-05-14',
     title: 'Skills Premium - Do Iniciante ao Expert',
