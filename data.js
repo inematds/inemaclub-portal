@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 99,
+        title: "Prompt Director - Imagens e Cinema com IA",
+        description: "Domine a linguagem por trás de imagens e vídeos gerados por IA. Gramática fotográfica, Midjourney, Sora 2, Veo 3, Runway Gen-4, Flux, Seedance, Kling, Nano Banana. 4 trilhas: Fundamentos, Técnicas, Avançado e Biblioteca. 19 módulos, 114 tópicos, +80 prompts prontos.",
+        icon: "🎬",
+        tags: ["Prompt", "Cinema", "Imagens", "Vídeo", "Midjourney", "Sora", "IA"],
+        url: "https://inematds.github.io/promptfilmes/"
+    },
+    {
         id: 98,
         title: "TRIAD - Automação Multi-Modelo com Hermes Agent",
         description: "Sistema de IA multi-modelo que trabalha 24/7. Claude Opus (condutor), DeepSeek V4 (executor ~100x mais barato), GPT-5.5 (crítico). 4 trilhas: Fundamentos, Implementação Técnica, Avançado e Construção/Escala. OpenRouter, soul.md, Pantheon para times.",

@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 99,
+    title: 'Prompt Director - Imagens e Cinema com IA',
+    description:
+      'Direção de arte com IA. Midjourney, Sora 2, Veo 3, Runway Gen-4, Flux, Seedance, Kling. 4 trilhas, 19 módulos, 114 tópicos, +80 prompts prontos.',
+    icon: '🎬',
+    tags: ['Prompt', 'Cinema', 'Imagens', 'Vídeo', 'Midjourney', 'Sora', 'IA'],
+    url: 'https://inematds.github.io/promptfilmes/',
+  },
+  {
     id: 98,
     title: 'TRIAD - Automação Multi-Modelo com Hermes Agent',
     description:
@@ -899,6 +908,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-17',
+    title: 'Prompt Director - Imagens e Cinema com IA',
+    type: 'novo',
+    url: 'https://inematds.github.io/promptfilmes/',
+  },
   {
     date: '2026-05-17',
     title: 'TRIAD - Automação Multi-Modelo com Hermes Agent',
