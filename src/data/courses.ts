@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 101,
+    title: 'iAmasters OS - Sistema Operativo Agêntico',
+    description:
+      'Sistema operativo agêntico que converte o Claude Code numa máquina de operação profissional. 3 trilhas, 9 módulos, 54 tópicos. Arquitetura agêntica, brand context, operação multi-cliente.',
+    icon: '🦎',
+    tags: ['IA', 'Agentes', 'Claude Code', 'Operação', 'Multi-Cliente', 'Skills'],
+    url: 'https://inematds.github.io/curso-iamasters-os/',
+  },
+  {
     id: 100,
     title: 'CAIO - Chief AI Officer 2030',
     description:
@@ -917,6 +926,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-17',
+    title: 'iAmasters OS - Sistema Operativo Agêntico',
+    type: 'novo',
+    url: 'https://inematds.github.io/curso-iamasters-os/',
+  },
   {
     date: '2026-05-17',
     title: 'CAIO - Chief AI Officer 2030',

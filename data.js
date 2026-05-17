@@ -17,6 +17,14 @@ const platformsData = [
         url: "https://inematds.github.io/6chapeus/"
     },
     {
+        id: 101,
+        title: "iAmasters OS - Sistema Operativo Agentico",
+        description: "Sistema operativo agentico que converte o Claude Code numa maquina de operacao profissional. 3 trilhas (Fundamentos, Skills Curadas, Operacao), 9 modulos, 54 topicos em ~8 horas. Arquitetura agentica, brand context, operacao multi-cliente.",
+        icon: "🦎",
+        tags: ["IA", "Agentes", "Claude Code", "Operacao", "Multi-Cliente", "Skills"],
+        url: "https://inematds.github.io/curso-iamasters-os/"
+    },
+    {
         id: 42,
         title: "Agentic Engineering Masterclass",
         description: "Engenharia de Agentic - Masterclass completa com 6 trilhas, 42 módulos e 252+ tópicos em 21 semanas. Do básico à orquestração multi-agente enterprise com LangGraph, CrewAI e AutoGen.",
