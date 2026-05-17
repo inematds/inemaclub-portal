@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 98,
+        title: "TRIAD - Automação Multi-Modelo com Hermes Agent",
+        description: "Sistema de IA multi-modelo que trabalha 24/7. Claude Opus (condutor), DeepSeek V4 (executor ~100x mais barato), GPT-5.5 (crítico). 4 trilhas: Fundamentos, Implementação Técnica, Avançado e Construção/Escala. OpenRouter, soul.md, Pantheon para times.",
+        icon: "🎭",
+        tags: ["Agentes", "Multi-Modelo", "Hermes", "OpenRouter", "Automação", "IA"],
+        url: "https://inematds.github.io/triad"
+    },
+    {
         id: 97,
         title: "Engenharia de Dados com IA",
         description: "A base dos sistemas de IA e agentes. 3 trilhas: Fundamentos (stack em camadas, pirâmide de dados), Dicas Técnicas (auditoria 4 eixos, DuckDB, pipelines) e Visão Avançada (Text-to-SQL, data dictionary, enterprise vs PME). 16 módulos, 96 tópicos, ~9h30.",

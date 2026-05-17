@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 98,
+    title: 'TRIAD - Automação Multi-Modelo com Hermes Agent',
+    description:
+      'Sistema multi-modelo 24/7: Claude Opus (condutor), DeepSeek V4 (executor), GPT-5.5 (crítico). 4 trilhas, OpenRouter, Pantheon para times.',
+    icon: '🎭',
+    tags: ['Agentes', 'Multi-Modelo', 'Hermes', 'OpenRouter', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/triad',
+  },
+  {
     id: 97,
     title: 'Engenharia de Dados com IA',
     description:
@@ -890,6 +899,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-17',
+    title: 'TRIAD - Automação Multi-Modelo com Hermes Agent',
+    type: 'novo',
+    url: 'https://inematds.github.io/triad',
+  },
   {
     date: '2026-05-14',
     title: 'Engenharia de Dados com IA',
