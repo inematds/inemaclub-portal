@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 100,
+    title: 'CAIO - Chief AI Officer 2030',
+    description:
+      'Profissional de IA 2030. De analista a Chief AI Officer. 6 trilhas, 36 módulos, 216 tópicos. Playbooks por função, plano de 12 semanas.',
+    icon: '💼',
+    tags: ['Negócios', 'Carreira', 'Chief AI Officer', 'Liderança', 'IA', 'Estratégia'],
+    url: 'https://inematds.github.io/caio/',
+  },
+  {
     id: 99,
     title: 'Prompt Director - Imagens e Cinema com IA',
     description:
@@ -908,6 +917,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-17',
+    title: 'CAIO - Chief AI Officer 2030',
+    type: 'novo',
+    url: 'https://inematds.github.io/caio/',
+  },
   {
     date: '2026-05-17',
     title: 'Prompt Director - Imagens e Cinema com IA',

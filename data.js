@@ -33,6 +33,14 @@ const platformsData = [
         url: "https://inematds.github.io/AIWCF"
     },
     {
+        id: 100,
+        title: "CAIO - Chief AI Officer 2030",
+        description: "Profissional de IA 2030. 6 trilhas: A Nova Realidade (IBM study), Os Dois Caminhos (consultor vs AI-native interno), 6 Skills Core, Posicionamento e Marketing Pessoal, Playbooks por Função (Marketing/Finanças/RH/Ops/Vendas/Jurídico) e Plano de 12 Semanas. 36 módulos, 216 tópicos, ~27h.",
+        icon: "💼",
+        tags: ["Negócios", "Carreira", "Chief AI Officer", "Liderança", "IA", "Estratégia"],
+        url: "https://inematds.github.io/caio/"
+    },
+    {
         id: 99,
         title: "Prompt Director - Imagens e Cinema com IA",
         description: "Domine a linguagem por trás de imagens e vídeos gerados por IA. Gramática fotográfica, Midjourney, Sora 2, Veo 3, Runway Gen-4, Flux, Seedance, Kling, Nano Banana. 4 trilhas: Fundamentos, Técnicas, Avançado e Biblioteca. 19 módulos, 114 tópicos, +80 prompts prontos.",
