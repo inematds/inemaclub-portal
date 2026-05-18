@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 104,
+    title: 'Hermes + NotebookLM - O Sistema de Agente AI Definitivo',
+    description:
+      'Integra Hermes com NotebookLM via Telegram. 3 trilhas, 15 módulos, 108+ tópicos, ~12h. RAG grátis, podcasts, infográficos, n8n, Triad multi-modelo. $0 por consulta.',
+    icon: '📱',
+    tags: ['Hermes', 'NotebookLM', 'Telegram', 'RAG', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/hnotebooklm',
+  },
+  {
     id: 103,
     title: 'New Agentic OS - Do Executivo ao Jarvis Multi-Cliente',
     description:
@@ -944,6 +953,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-18',
+    title: 'Hermes + NotebookLM - Agente AI Definitivo',
+    type: 'novo',
+    url: 'https://inematds.github.io/hnotebooklm',
+  },
   {
     date: '2026-05-18',
     title: 'New Agentic OS - Do Executivo ao Jarvis Multi-Cliente',

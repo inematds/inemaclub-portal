@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 104,
+        title: "Hermes + NotebookLM - O Sistema de Agente AI Definitivo",
+        description: "Integra Hermes com NotebookLM via Telegram. 3 trilhas (Fundamentos, Pratica, Avancado), 15 modulos, 108+ topicos, ~12 horas. RAG gratis, podcasts, infograficos, n8n, Triad multi-modelo. Custo zero por consulta.",
+        icon: "📱",
+        tags: ["Hermes", "NotebookLM", "Telegram", "RAG", "Agentes", "IA"],
+        url: "https://inematds.github.io/hnotebooklm"
+    },
+    {
         id: 103,
         title: "New Agentic OS - Do Executivo ao Jarvis Multi-Cliente",
         description: "Disciplina de engenharia agentica completa. 4 trilhas (Executivo, Builder, Multi-usuario, iAmasters OS), 24 modulos, ~25 horas. Vocabulario, ROI, arquitetura multi-usuario, caso real implementado.",
