@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 102,
+        title: "CCXCX - Claude e Codex Tool-Agnostic AI Coding",
+        description: "Domina Claude Code e Codex como ferramentas complementares. 3 trilhas (Fundamentos, Dicas Praticas, Avancado), 11 modulos, ~7 horas. AGENTS.md vs CLAUDE.md, handoff entre agentes, subagentes em paralelo, zero lock-in.",
+        icon: "⚡",
+        tags: ["Claude Code", "Codex", "Agentes", "Tool-Agnostic", "AGENTS.md", "IA"],
+        url: "https://inematds.github.io/ccxcx"
+    },
+    {
         id: 60,
         title: "2Cerebro - Segundo Cerebro com LLM + Obsidian",
         description: "Construa um sistema de conhecimento persistente onde o LLM funciona como compilador. 3 trilhas (Fundamentos, Implementacao, Avancado), 12 modulos, ~8 horas. Cobre Obsidian vault, ingestao, grafos, RAG e multi-agentes.",

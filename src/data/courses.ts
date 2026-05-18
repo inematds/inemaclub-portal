@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 102,
+    title: 'CCXCX - Claude e Codex Tool-Agnostic AI Coding',
+    description:
+      'Domina Claude Code e Codex como ferramentas complementares. 3 trilhas, 11 módulos. AGENTS.md vs CLAUDE.md, handoff entre agentes, subagentes em paralelo, zero lock-in.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Codex', 'Agentes', 'Tool-Agnostic', 'AGENTS.md', 'IA'],
+    url: 'https://inematds.github.io/ccxcx',
+  },
+  {
     id: 101,
     title: 'iAmasters OS - Sistema Operativo Agêntico',
     description:
@@ -926,6 +935,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-18',
+    title: 'CCXCX - Claude e Codex Tool-Agnostic',
+    type: 'novo',
+    url: 'https://inematds.github.io/ccxcx',
+  },
   {
     date: '2026-05-17',
     title: 'iAmasters OS - Sistema Operativo Agêntico',
