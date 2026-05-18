@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 103,
+    title: 'New Agentic OS - Do Executivo ao Jarvis Multi-Cliente',
+    description:
+      'Disciplina de engenharia agêntica completa. 4 trilhas (Executivo, Builder, Multi-usuário, iAmasters OS), 24 módulos, ~25h. Vocabulário, ROI, arquitetura multi-usuário, caso real.',
+    icon: '🏛️',
+    tags: ['Agentes', 'Agentic OS', 'Multi-Cliente', 'Arquitetura', 'IA', 'Jarvis'],
+    url: 'https://inematds.github.io/newagenticos/',
+  },
+  {
     id: 102,
     title: 'CCXCX - Claude e Codex Tool-Agnostic AI Coding',
     description:
@@ -935,6 +944,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-18',
+    title: 'New Agentic OS - Do Executivo ao Jarvis Multi-Cliente',
+    type: 'novo',
+    url: 'https://inematds.github.io/newagenticos/',
+  },
   {
     date: '2026-05-18',
     title: 'CCXCX - Claude e Codex Tool-Agnostic',

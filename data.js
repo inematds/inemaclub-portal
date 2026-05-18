@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 103,
+        title: "New Agentic OS - Do Executivo ao Jarvis Multi-Cliente",
+        description: "Disciplina de engenharia agentica completa. 4 trilhas (Executivo, Builder, Multi-usuario, iAmasters OS), 24 modulos, ~25 horas. Vocabulario, ROI, arquitetura multi-usuario, caso real implementado.",
+        icon: "🏛️",
+        tags: ["Agentes", "Agentic OS", "Multi-Cliente", "Arquitetura", "IA", "Jarvis"],
+        url: "https://inematds.github.io/newagenticos/"
+    },
+    {
         id: 102,
         title: "CCXCX - Claude e Codex Tool-Agnostic AI Coding",
         description: "Domina Claude Code e Codex como ferramentas complementares. 3 trilhas (Fundamentos, Dicas Praticas, Avancado), 11 modulos, ~7 horas. AGENTS.md vs CLAUDE.md, handoff entre agentes, subagentes em paralelo, zero lock-in.",
