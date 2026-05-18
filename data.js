@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 105,
+        title: "Claude Cowork - Equipe de Marketing de US$ 10.000/mes",
+        description: "Monte uma equipe de marketing autonoma com Claude Code. 3 trilhas (Fundamentos, 7 Skills de Marketing, Avancado), 20 modulos, 120+ topicos, ~14 horas. Skills, conectores MCP, tarefas agendadas, sem codigo.",
+        icon: "💸",
+        tags: ["Claude Code", "Marketing", "Skills", "MCP", "Automacao", "IA"],
+        url: "https://inematds.github.io/cccowork/"
+    },
+    {
         id: 104,
         title: "Hermes + NotebookLM - O Sistema de Agente AI Definitivo",
         description: "Integra Hermes com NotebookLM via Telegram. 3 trilhas (Fundamentos, Pratica, Avancado), 15 modulos, 108+ topicos, ~12 horas. RAG gratis, podcasts, infograficos, n8n, Triad multi-modelo. Custo zero por consulta.",

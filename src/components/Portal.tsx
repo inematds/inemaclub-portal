@@ -597,6 +597,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skills-premium/',     label: 'Skills Premium', desc: 'Skills do Iniciante ao Expert' },
               { href: 'https://inematds.github.io/ccxcx',              label: 'CCXCX',          desc: 'Claude e Codex Tool-Agnostic' },
               { href: 'https://inematds.github.io/newagenticos/',     label: 'New Agentic OS', desc: 'Do Executivo ao Jarvis Multi-Cliente' },
+              { href: 'https://inematds.github.io/cccowork/',         label: 'Claude Cowork',  desc: 'Equipe de Marketing de US$ 10k/mês' },
             ]},
             { title: '🧬 Neurociência & Futuro', steps: [
               { href: 'https://inematds.github.io/prof2030/', label: 'Prof2030', desc: 'O Tripé do Profissional do Futuro' },

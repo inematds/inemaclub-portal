@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 105,
+    title: 'Claude Cowork - Equipe de Marketing de US$ 10.000/mês',
+    description:
+      'Equipe de marketing autônoma com Claude Code. 3 trilhas, 20 módulos, 120+ tópicos, ~14h. 7 skills de marketing, conectores MCP, tarefas agendadas, sem código.',
+    icon: '💸',
+    tags: ['Claude Code', 'Marketing', 'Skills', 'MCP', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/cccowork/',
+  },
+  {
     id: 104,
     title: 'Hermes + NotebookLM - O Sistema de Agente AI Definitivo',
     description:
@@ -953,6 +962,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-18',
+    title: 'Claude Cowork - Equipe de Marketing',
+    type: 'novo',
+    url: 'https://inematds.github.io/cccowork/',
+  },
   {
     date: '2026-05-18',
     title: 'Hermes + NotebookLM - Agente AI Definitivo',
