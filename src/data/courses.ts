@@ -44,7 +44,7 @@ export const platformsData: Course[] = [
   },
   {
     id: 98,
-    title: 'TRIAD - Automação Multi-Modelo com Hermes Agent',
+    title: 'TRIAD - Automação de IA Multi-Modelo com Hermes e DeepSeek',
     description:
       'Sistema multi-modelo 24/7: Claude Opus (condutor), DeepSeek V4 (executor), GPT-5.5 (crítico). 4 trilhas, OpenRouter, Pantheon para times.',
     icon: '🎭',
@@ -946,7 +946,7 @@ export const updatesData: Update[] = [
   },
   {
     date: '2026-05-17',
-    title: 'TRIAD - Automação Multi-Modelo com Hermes Agent',
+    title: 'TRIAD - Automação de IA Multi-Modelo com Hermes e DeepSeek',
     type: 'novo',
     url: 'https://inematds.github.io/triad',
   },

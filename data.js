@@ -58,7 +58,7 @@ const platformsData = [
     },
     {
         id: 98,
-        title: "TRIAD - Automação Multi-Modelo com Hermes Agent",
+        title: "TRIAD - Automação de IA Multi-Modelo com Hermes e DeepSeek",
         description: "Sistema de IA multi-modelo que trabalha 24/7. Claude Opus (condutor), DeepSeek V4 (executor ~100x mais barato), GPT-5.5 (crítico). 4 trilhas: Fundamentos, Implementação Técnica, Avançado e Construção/Escala. OpenRouter, soul.md, Pantheon para times.",
         icon: "🎭",
         tags: ["Agentes", "Multi-Modelo", "Hermes", "OpenRouter", "Automação", "IA"],
