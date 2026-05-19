@@ -418,7 +418,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             </div>
             <h2 className={s.sectionTitle}>Trilhas de Aprendizado</h2>
             <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
-              14 trilhas temáticas — escolha seu caminho e avance com foco
+              15 trilhas temáticas — escolha seu caminho e avance com foco
             </p>
           </Reveal>
 
@@ -515,6 +515,8 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skills-premium/',     label: 'Skills Premium', desc: 'Skills do Iniciante ao Expert' },
               { href: 'https://inematds.github.io/ccxcx',              label: 'CCXCX',          desc: 'Claude e Codex Tool-Agnostic' },
               { href: 'https://inematds.github.io/newagenticos/',     label: 'New Agentic OS', desc: 'Do Executivo ao Jarvis Multi-Cliente' },
+            ]},
+            { title: '🤝 Claude Cowork', steps: [
               { href: 'https://inematds.github.io/cccowork/',         label: 'Claude Cowork',  desc: 'Equipe de Marketing de US$ 10k/mês' },
               { href: 'https://inematds.github.io/cccoworkexec/',     label: 'Cowork Exec',    desc: 'Playbook para Treinadores de Cowork' },
             ]},
