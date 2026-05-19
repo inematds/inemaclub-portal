@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 107,
+        title: "Claude Cowork - Guia Completo",
+        description: "Guia completo do Claude Cowork (Projects). 3 trilhas (Fundamentos, Recursos Centrais, Workflows e Operacao), 18 modulos, ~12 horas. Custom instructions, knowledge files, artifacts, modelos, integrações MCP, skills e metricas.",
+        icon: "🚗",
+        tags: ["Claude", "Cowork", "Projects", "Knowledge", "MCP", "IA"],
+        url: "https://inematds.github.io/cccoworkfull/"
+    },
+    {
         id: 106,
         title: "Ensinando Claude Cowork - Playbook para Treinadores",
         description: "Playbook completo para quem ensina Claude Cowork. 5 trilhas (Enquadramento, Tres Produtos, Pre-producao Demos, Tour Interface, Fechamento), 30 modulos, ~13 horas. Da palestra a consultoria recorrente.",

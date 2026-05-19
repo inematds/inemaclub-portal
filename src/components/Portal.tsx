@@ -606,6 +606,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             ]},
             { title: '🤝 Claude Cowork', steps: [
               { href: 'https://inematds.github.io/cccowork/',         label: 'Claude Cowork',  desc: 'Equipe de Marketing de US$ 10k/mês' },
+              { href: 'https://inematds.github.io/cccoworkfull/',      label: 'Cowork Full',    desc: 'Guia Completo do Claude Cowork' },
               { href: 'https://inematds.github.io/cccoworkexec/',     label: 'Cowork Exec',    desc: 'Playbook para Treinadores de Cowork' },
             ]},
             { title: '🧬 Neurociência & Futuro', steps: [

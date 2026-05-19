@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 107,
+    title: 'Claude Cowork - Guia Completo',
+    description:
+      'Guia completo do Claude Cowork (Projects). 3 trilhas, 18 módulos, ~12h. Custom instructions, knowledge files, artifacts, modelos, integrações MCP, skills e métricas.',
+    icon: '🚗',
+    tags: ['Claude', 'Cowork', 'Projects', 'Knowledge', 'MCP', 'IA'],
+    url: 'https://inematds.github.io/cccoworkfull/',
+  },
+  {
     id: 106,
     title: 'Ensinando Claude Cowork - Playbook para Treinadores',
     description:
@@ -971,6 +980,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-19',
+    title: 'Claude Cowork - Guia Completo',
+    type: 'novo',
+    url: 'https://inematds.github.io/cccoworkfull/',
+  },
   {
     date: '2026-05-18',
     title: 'Ensinando Claude Cowork - Playbook Treinadores',
