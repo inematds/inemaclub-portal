@@ -485,6 +485,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/docker-openclaw/',   label: 'Docker OpenClaw', desc: 'Assistente IA Autônomo e Multi-Canal' },
               { href: 'https://inematds.github.io/deerflow/',          label: 'DeerFlow',        desc: 'Framework de Agentes ByteDance' },
               { href: 'https://inematds.github.io/agentejax/',        label: 'AgenteJAX',      desc: 'Agente de IA Pessoal em TypeScript' },
+              { href: 'https://inematds.github.io/ruflo/',               label: 'Ruflo',         desc: 'Orquestração de Agentes Multi-IA' },
             ]},
             { title: '🖥️ Claude Code', steps: [
               { href: 'https://inematds.github.io/ccguide2026',          label: 'CCGuide',          desc: 'Claude Code 2026 - Completo' },
@@ -502,7 +503,6 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills',    desc: 'Skills como Funcionários Digitais (Karpathy)' },
               { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',      desc: 'Planejamento com Claude + Codex no Terminal' },
               { href: 'https://inematds.github.io/makeclaudex/',         label: 'MakeClaudeX',   desc: 'Do Prompt ao Plugin de Produção' },
-              { href: 'https://inematds.github.io/ruflo/',               label: 'Ruflo',         desc: 'Orquestração de Agentes Multi-IA' },
               { href: 'https://inematds.github.io/mastercodex/',          label: 'Master Codex', desc: 'Fábrica de SaaS com Agentes de IA' },
               { href: 'https://inematds.github.io/deepclaudex/',          label: 'DeepClaudeX',  desc: 'Multi-Modelo 70/20/10' },
               { href: 'https://inematds.github.io/curso-od/',             label: 'Open Design',  desc: 'Alternativa Open-Source ao Claude Design' },
