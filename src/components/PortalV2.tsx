@@ -418,7 +418,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             </div>
             <h2 className={s.sectionTitle}>Trilhas de Aprendizado</h2>
             <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
-              15 trilhas temáticas — escolha seu caminho e avance com foco
+              16 trilhas temáticas — escolha seu caminho e avance com foco
             </p>
           </Reveal>
 
@@ -501,10 +501,6 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/superpowers/',        label: 'Superpowers',      desc: 'Desenvolvimento com Agentes de IA' },
               { href: 'https://inematds.github.io/ccopen/',             label: 'CCOpen',           desc: 'Claude Code de Graça ou por Quase Nada' },
               { href: 'https://inematds.github.io/superskills-karpathy/', label: 'SuperSkills',    desc: 'Skills como Funcionários Digitais (Karpathy)' },
-              { href: 'https://inematds.github.io/iclaudex/',             label: 'iClaudeX',      desc: 'Planejamento com Claude + Codex no Terminal' },
-              { href: 'https://inematds.github.io/makeclaudex/',         label: 'MakeClaudeX',   desc: 'Do Prompt ao Plugin de Produção' },
-              { href: 'https://inematds.github.io/mastercodex/',          label: 'Master Codex', desc: 'Fábrica de SaaS com Agentes de IA' },
-              { href: 'https://inematds.github.io/deepclaudex/',          label: 'DeepClaudeX',  desc: 'Multi-Modelo 70/20/10' },
               { href: 'https://inematds.github.io/curso-od/',             label: 'Open Design',  desc: 'Alternativa Open-Source ao Claude Design' },
               { href: 'https://inematds.github.io/multiagentes/',         label: 'Multiagentes', desc: 'Equipes de Agentes na Prática' },
               { href: 'https://inematds.github.io/FEC/',                  label: 'FEC',          desc: 'Engenharia de Contexto para LLM' },
@@ -513,8 +509,15 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/5niveiscc/',           label: '5 Níveis',     desc: 'Em qual nível do Claude você está?' },
               { href: 'https://inematds.github.io/pp-cli/',              label: 'Printing Press', desc: 'CLI para Agentes — 35x menos tokens que MCP' },
               { href: 'https://inematds.github.io/skills-premium/',     label: 'Skills Premium', desc: 'Skills do Iniciante ao Expert' },
-              { href: 'https://inematds.github.io/ccxcx',              label: 'CCXCX',          desc: 'Claude e Codex Tool-Agnostic' },
               { href: 'https://inematds.github.io/newagenticos/',     label: 'New Agentic OS', desc: 'Do Executivo ao Jarvis Multi-Cliente' },
+            ]},
+            { title: '🧩 Codex', steps: [
+              { href: 'https://inematds.github.io/iclaudex/',           label: 'iClaudeX',     desc: 'Planejamento com Claude + Codex no Terminal' },
+              { href: 'https://inematds.github.io/makeclaudex/',        label: 'MakeClaudeX',  desc: 'Do Prompt ao Plugin de Produção' },
+              { href: 'https://inematds.github.io/mastercodex/',        label: 'Master Codex', desc: 'Fábrica de SaaS com Agentes de IA' },
+              { href: 'https://inematds.github.io/deepclaudex/',        label: 'DeepClaudeX',  desc: 'Multi-Modelo 70/20/10' },
+              { href: 'https://inematds.github.io/ccxcx',              label: 'CCXCX',        desc: 'Claude e Codex Tool-Agnostic' },
+              { href: 'https://inematds.github.io/ruflo/',              label: 'Ruflo',        desc: 'Orquestração de Agentes Multi-IA' },
             ]},
             { title: '🤝 Claude Cowork', steps: [
               { href: 'https://inematds.github.io/cccowork/',         label: 'Claude Cowork',  desc: 'Equipe de Marketing de US$ 10k/mês' },
