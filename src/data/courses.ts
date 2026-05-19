@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 106,
+    title: 'Ensinando Claude Cowork - Playbook para Treinadores',
+    description:
+      'Playbook para quem ensina Claude Cowork. 5 trilhas, 30 módulos, ~13h. Enquadramento, 3 produtos, pré-produção de demos, tour da interface, fechamento e continuidade.',
+    icon: '🎤',
+    tags: ['Claude Code', 'Cowork', 'Treinamento', 'Workshop', 'Consultoria', 'IA'],
+    url: 'https://inematds.github.io/cccoworkexec/',
+  },
+  {
     id: 105,
     title: 'Claude Cowork - Equipe de Marketing de US$ 10.000/mês',
     description:
@@ -962,6 +971,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-18',
+    title: 'Ensinando Claude Cowork - Playbook Treinadores',
+    type: 'novo',
+    url: 'https://inematds.github.io/cccoworkexec/',
+  },
   {
     date: '2026-05-18',
     title: 'Claude Cowork - Equipe de Marketing',
