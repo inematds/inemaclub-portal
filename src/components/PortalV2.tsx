@@ -451,6 +451,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/FGMD/',        label: 'FGMD',       desc: 'Gatilhos Mentais Digitais' },
               { href: 'https://inematds.github.io/Playbook-IA/', label: 'Playbook-IA',desc: 'Formação de Consultoria IA' },
               { href: 'https://inematds.github.io/tiktokshop',   label: 'TikTok Shop',desc: 'Vendas no TikTok Shop' },
+              { href: 'https://inematds.github.io/whatsapp-bsuid/', label: 'WhatsApp BSUID', desc: 'Privacidade e Identidade no WhatsApp' },
             ]},
             { title: '📊 Dados & IA', steps: [
               { href: 'https://inematds.github.io/FDB/',       label: 'FDB',       desc: 'Fundamentos de Banco de Dados' },

@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 108,
+    title: 'WhatsApp Username & BSUID',
+    description:
+      'Privacidade e identidade no WhatsApp. 3 trilhas, 9 módulos, ~5h. Username, BSUID, Cloud API, CRM, compliance.',
+    icon: '📱',
+    tags: ['WhatsApp', 'BSUID', 'Username', 'Privacidade', 'API', 'Empresas'],
+    url: 'https://inematds.github.io/whatsapp-bsuid/',
+  },
+  {
     id: 107,
     title: 'Claude Cowork - Guia Completo',
     description:
@@ -980,6 +989,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-21',
+    title: 'WhatsApp Username & BSUID',
+    type: 'novo',
+    url: 'https://inematds.github.io/whatsapp-bsuid/',
+  },
   {
     date: '2026-05-19',
     title: 'Claude Cowork - Guia Completo',

@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 108,
+        title: "WhatsApp Username & BSUID",
+        description: "Privacidade e identidade no WhatsApp. 3 trilhas (Fundamentos, Para Pessoas, Para Empresas), 9 modulos, ~5 horas. Username, BSUID, Cloud API, CRM, compliance.",
+        icon: "📱",
+        tags: ["WhatsApp", "BSUID", "Username", "Privacidade", "API", "Empresas"],
+        url: "https://inematds.github.io/whatsapp-bsuid/"
+    },
+    {
         id: 107,
         title: "Claude Cowork - Guia Completo",
         description: "Guia completo do Claude Cowork (Projects). 3 trilhas (Fundamentos, Recursos Centrais, Workflows e Operacao), 18 modulos, ~12 horas. Custom instructions, knowledge files, artifacts, modelos, integrações MCP, skills e metricas.",
@@ -756,6 +764,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-21", title: "WhatsApp Username & BSUID", type: "novo", url: "https://inematds.github.io/whatsapp-bsuid/" },
     { date: "2026-04-23", title: "CCMasterMemory - Memory Injection via Hooks", type: "novo", url: "https://inematds.github.io/ccmastermemory/" },
     { date: "2026-04-21", title: "CCTop - Mestre em Contexto e Tokens", type: "novo", url: "https://inematds.github.io/cctop/" },
     { date: "2026-04-21", title: "6 Chapeus + Anti-Ancora", type: "novo", url: "https://inematds.github.io/6chapeus/" },
