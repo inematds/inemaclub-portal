@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 109,
+        title: "Vendendo AIOS 2026",
+        description: "Como vender Sistemas Operacionais de IA como servico. 6 trilhas (Mentalidade, Oferta, Aquisicao, Escada, Estrutura, Escala), 22 modulos, ~16.5 horas. Da primeira hora cobrada ao SaaS.",
+        icon: "💰",
+        tags: ["Vendas", "AIOS", "Consultoria", "Negócios", "SaaS", "IA"],
+        url: "https://inematds.github.io/vendasaios/curso/"
+    },
+    {
         id: 108,
         title: "WhatsApp Username & BSUID",
         description: "Privacidade e identidade no WhatsApp. 3 trilhas (Fundamentos, Para Pessoas, Para Empresas), 9 modulos, ~5 horas. Username, BSUID, Cloud API, CRM, compliance.",
@@ -764,6 +772,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-22", title: "Vendendo AIOS 2026", type: "novo", url: "https://inematds.github.io/vendasaios/curso/" },
     { date: "2026-05-21", title: "WhatsApp Username & BSUID", type: "novo", url: "https://inematds.github.io/whatsapp-bsuid/" },
     { date: "2026-04-23", title: "CCMasterMemory - Memory Injection via Hooks", type: "novo", url: "https://inematds.github.io/ccmastermemory/" },
     { date: "2026-04-21", title: "CCTop - Mestre em Contexto e Tokens", type: "novo", url: "https://inematds.github.io/cctop/" },

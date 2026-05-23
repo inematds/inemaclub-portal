@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 109,
+    title: 'Vendendo AIOS 2026',
+    description:
+      'Como vender Sistemas Operacionais de IA como serviço. 6 trilhas, 22 módulos, ~16.5h. Da primeira hora cobrada ao SaaS.',
+    icon: '💰',
+    tags: ['Vendas', 'AIOS', 'Consultoria', 'Negócios', 'SaaS', 'IA'],
+    url: 'https://inematds.github.io/vendasaios/curso/',
+  },
+  {
     id: 108,
     title: 'WhatsApp Username & BSUID',
     description:
@@ -989,6 +998,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-22',
+    title: 'Vendendo AIOS 2026',
+    type: 'novo',
+    url: 'https://inematds.github.io/vendasaios/curso/',
+  },
   {
     date: '2026-05-21',
     title: 'WhatsApp Username & BSUID',
