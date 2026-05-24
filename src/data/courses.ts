@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 111,
+    title: 'PolySkills — Claude Code & Codex lado a lado',
+    description:
+      'Da terminologia básica aos fluxos avançados com os dois agentes em paralelo. 6 trilhas, 10 módulos, ~7.5h. Skills cross-runtime, conversão zero-loss.',
+    icon: '🔀',
+    tags: ['Claude Code', 'Codex', 'PolySkill', 'Cross-Runtime', 'Skills', 'IA'],
+    url: 'https://inematds.github.io/polyskills',
+  },
+  {
     id: 110,
     title: 'Mapa do Cliente — Formação DICA',
     description:
@@ -1007,6 +1016,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-24',
+    title: 'PolySkills — Claude Code & Codex lado a lado',
+    type: 'novo',
+    url: 'https://inematds.github.io/polyskills',
+  },
   {
     date: '2026-05-24',
     title: 'Mapa do Cliente — Formação DICA',

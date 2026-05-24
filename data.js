@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 111,
+        title: "PolySkills — Claude Code & Codex lado a lado",
+        description: "Da terminologia basica aos fluxos avancados de quem trabalha com os dois agentes em paralelo. 6 trilhas, 10 modulos, ~7.5 horas. Skills cross-runtime, conversao zero-loss, workflow side-by-side.",
+        icon: "🔀",
+        tags: ["Claude Code", "Codex", "PolySkill", "Cross-Runtime", "Skills", "IA"],
+        url: "https://inematds.github.io/polyskills"
+    },
+    {
         id: 110,
         title: "Mapa do Cliente — Formação DICA",
         description: "Consultor de IA para Pequenos Negócios. Método DICA (Diagnosticar, Implementar, Capacitar, Acompanhar). 6 trilhas, 28 modulos, ~15 horas. Da venda consultiva a escala profissional.",
@@ -780,6 +788,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-24", title: "PolySkills — Claude Code & Codex lado a lado", type: "novo", url: "https://inematds.github.io/polyskills" },
     { date: "2026-05-24", title: "Mapa do Cliente — Formação DICA", type: "novo", url: "https://inematds.github.io/mapacliente/" },
     { date: "2026-05-22", title: "Vendendo AIOS 2026", type: "novo", url: "https://inematds.github.io/vendasaios/curso/" },
     { date: "2026-05-21", title: "WhatsApp Username & BSUID", type: "novo", url: "https://inematds.github.io/whatsapp-bsuid/" },
