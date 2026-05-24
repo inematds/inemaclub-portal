@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 113,
+    title: 'Hermes Agent — Curso Completo Avançado',
+    description:
+      'Agente IA open-source da Nous Research. Cria skills, memória persistente, 200+ modelos via OpenRouter. 6 trilhas, 12 módulos, ~11h.',
+    icon: '🤖',
+    tags: ['Hermes', 'Agente', 'Open-Source', 'Docker', 'OpenRouter', 'IA'],
+    url: 'https://inematds.github.io/hermesagent/',
+  },
+  {
     id: 112,
     title: 'Profissional 2027 — Implementadores de IA para PMEs',
     description:
@@ -1025,6 +1034,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'Hermes Agent — Curso Completo Avançado',
+    type: 'novo',
+    url: 'https://inematds.github.io/hermesagent/',
+  },
   {
     date: '2026-05-24',
     title: 'Profissional 2027 — Implementadores de IA para PMEs',
