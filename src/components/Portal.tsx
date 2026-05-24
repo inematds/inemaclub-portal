@@ -46,6 +46,7 @@ const communityProjects: Array<{
   { icon: '🧪', name: 'intelecto-testes', desc: 'Testes e validacao do assistente pessoal Intelecto com IA', url: 'https://github.com/inematds/intelecto-testes', badge: 'GitHub' },
   { icon: '🎨', name: 'open-design', desc: 'Alternativa open-source ao Claude Design', url: 'https://github.com/inematds/open-design', badge: 'GitHub' },
   { icon: '🚀', name: 'inemaupsk', desc: 'Plataforma de upskilling da comunidade', url: 'https://github.com/inematds/inemaupsk', badge: 'GitHub' },
+  { icon: '📺', name: 'yt-pub-livesx', desc: 'Publicação e lives no YouTube com IA', url: 'https://github.com/inematds/yt-pub-livesx', badge: 'GitHub' },
 ]
 
 type RepoUpdate = {
