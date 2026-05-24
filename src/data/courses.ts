@@ -49,7 +49,7 @@ export const platformsData: Course[] = [
       'Como vender Sistemas Operacionais de IA como serviço. 6 trilhas, 22 módulos, ~16.5h. Da primeira hora cobrada ao SaaS.',
     icon: '💰',
     tags: ['Vendas', 'AIOS', 'Consultoria', 'Negócios', 'SaaS', 'IA'],
-    url: 'https://inematds.github.io/vendasaios/curso/',
+    url: 'https://inematds.github.io/vendasaios/',
   },
   {
     id: 108,
@@ -1047,7 +1047,7 @@ export const updatesData: Update[] = [
     date: '2026-05-22',
     title: 'Vendendo AIOS 2026',
     type: 'novo',
-    url: 'https://inematds.github.io/vendasaios/curso/',
+    url: 'https://inematds.github.io/vendasaios/',
   },
   {
     date: '2026-05-21',

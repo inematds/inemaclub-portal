@@ -30,7 +30,7 @@ const platformsData = [
         description: "Como vender Sistemas Operacionais de IA como servico. 6 trilhas (Mentalidade, Oferta, Aquisicao, Escada, Estrutura, Escala), 22 modulos, ~16.5 horas. Da primeira hora cobrada ao SaaS.",
         icon: "💰",
         tags: ["Vendas", "AIOS", "Consultoria", "Negócios", "SaaS", "IA"],
-        url: "https://inematds.github.io/vendasaios/curso/"
+        url: "https://inematds.github.io/vendasaios/"
     },
     {
         id: 108,
@@ -799,7 +799,7 @@ const updatesData = [
     { date: "2026-05-24", title: "Profissional 2027 — Implementadores de IA para PMEs", type: "novo", url: "https://inematds.github.io/profissional2027x" },
     { date: "2026-05-24", title: "PolySkills — Claude Code & Codex lado a lado", type: "novo", url: "https://inematds.github.io/polyskills" },
     { date: "2026-05-24", title: "Mapa do Cliente — Formação DICA", type: "novo", url: "https://inematds.github.io/mapacliente/" },
-    { date: "2026-05-22", title: "Vendendo AIOS 2026", type: "novo", url: "https://inematds.github.io/vendasaios/curso/" },
+    { date: "2026-05-22", title: "Vendendo AIOS 2026", type: "novo", url: "https://inematds.github.io/vendasaios/" },
     { date: "2026-05-21", title: "WhatsApp Username & BSUID", type: "novo", url: "https://inematds.github.io/whatsapp-bsuid/" },
     { date: "2026-04-23", title: "CCMasterMemory - Memory Injection via Hooks", type: "novo", url: "https://inematds.github.io/ccmastermemory/" },
     { date: "2026-04-21", title: "CCTop - Mestre em Contexto e Tokens", type: "novo", url: "https://inematds.github.io/cctop/" },

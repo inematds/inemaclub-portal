@@ -452,7 +452,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/Playbook-IA/', label: 'Playbook-IA',desc: 'Formação de Consultoria IA' },
               { href: 'https://inematds.github.io/tiktokshop',   label: 'TikTok Shop',desc: 'Vendas no TikTok Shop' },
               { href: 'https://inematds.github.io/whatsapp-bsuid/', label: 'WhatsApp BSUID', desc: 'Privacidade e Identidade no WhatsApp' },
-              { href: 'https://inematds.github.io/vendasaios/curso/', label: 'Vendendo AIOS', desc: 'Como Vender Sistemas Operacionais de IA' },
+              { href: 'https://inematds.github.io/vendasaios/', label: 'Vendendo AIOS', desc: 'Como Vender Sistemas Operacionais de IA' },
               { href: 'https://inematds.github.io/mapacliente/', label: 'Mapa do Cliente', desc: 'Formação DICA — Consultor de IA para Pequenos Negócios' },
               { href: 'https://inematds.github.io/profissional2027x', label: 'Profissional 2027', desc: 'Implementadores de IA para PMEs — Método DPIA' },
             ]},
