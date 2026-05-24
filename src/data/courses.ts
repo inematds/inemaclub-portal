@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 110,
+    title: 'Mapa do Cliente — Formação DICA',
+    description:
+      'Consultor de IA para Pequenos Negócios. Método DICA (Diagnosticar, Implementar, Capacitar, Acompanhar). 6 trilhas, 28 módulos, ~15h.',
+    icon: '🗺️',
+    tags: ['Consultoria', 'DICA', 'Vendas', 'Pequenos Negócios', 'IA'],
+    url: 'https://inematds.github.io/mapacliente/',
+  },
+  {
     id: 109,
     title: 'Vendendo AIOS 2026',
     description:
@@ -998,6 +1007,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-24',
+    title: 'Mapa do Cliente — Formação DICA',
+    type: 'novo',
+    url: 'https://inematds.github.io/mapacliente/',
+  },
   {
     date: '2026-05-22',
     title: 'Vendendo AIOS 2026',

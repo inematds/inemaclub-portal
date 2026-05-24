@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 110,
+        title: "Mapa do Cliente — Formação DICA",
+        description: "Consultor de IA para Pequenos Negócios. Método DICA (Diagnosticar, Implementar, Capacitar, Acompanhar). 6 trilhas, 28 modulos, ~15 horas. Da venda consultiva a escala profissional.",
+        icon: "🗺️",
+        tags: ["Consultoria", "DICA", "Vendas", "Pequenos Negócios", "IA"],
+        url: "https://inematds.github.io/mapacliente/"
+    },
+    {
         id: 109,
         title: "Vendendo AIOS 2026",
         description: "Como vender Sistemas Operacionais de IA como servico. 6 trilhas (Mentalidade, Oferta, Aquisicao, Escada, Estrutura, Escala), 22 modulos, ~16.5 horas. Da primeira hora cobrada ao SaaS.",
@@ -772,6 +780,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-24", title: "Mapa do Cliente — Formação DICA", type: "novo", url: "https://inematds.github.io/mapacliente/" },
     { date: "2026-05-22", title: "Vendendo AIOS 2026", type: "novo", url: "https://inematds.github.io/vendasaios/curso/" },
     { date: "2026-05-21", title: "WhatsApp Username & BSUID", type: "novo", url: "https://inematds.github.io/whatsapp-bsuid/" },
     { date: "2026-04-23", title: "CCMasterMemory - Memory Injection via Hooks", type: "novo", url: "https://inematds.github.io/ccmastermemory/" },
