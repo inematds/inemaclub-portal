@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 114,
+        title: "AIOS — AI Agent Operating System",
+        description: "Curso completo sobre AIOS (Rutgers AGI Research). Kernel, SDK Cerebrum, scheduler, memória, ferramentas, computer-use e MCP. 2 modulos, 12 topicos, ~1.5 horas.",
+        icon: "⚙️",
+        tags: ["AIOS", "Agente", "Kernel", "SDK", "MCP", "IA"],
+        url: "https://inematds.github.io/aiosagi/"
+    },
+    {
         id: 113,
         title: "Hermes Agent — Curso Completo Avançado",
         description: "Agente IA open-source da Nous Research. Cria skills, memória persistente, 200+ modelos via OpenRouter. 6 trilhas, 12 modulos, ~11 horas. Docker, VPS, AWS Bedrock.",
@@ -804,6 +812,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-25", title: "AIOS — AI Agent Operating System", type: "novo", url: "https://inematds.github.io/aiosagi/" },
     { date: "2026-05-25", title: "Hermes Agent — Curso Completo Avançado", type: "novo", url: "https://inematds.github.io/hermesagent/" },
     { date: "2026-05-24", title: "Profissional 2027 — Implementadores de IA para PMEs", type: "novo", url: "https://inematds.github.io/profissional2027x" },
     { date: "2026-05-24", title: "PolySkills — Claude Code & Codex lado a lado", type: "novo", url: "https://inematds.github.io/polyskills" },

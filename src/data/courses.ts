@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 114,
+    title: 'AIOS — AI Agent Operating System',
+    description:
+      'Curso completo sobre AIOS (Rutgers AGI Research). Kernel, SDK Cerebrum, scheduler, memória, ferramentas, computer-use e MCP. 2 módulos, 12 tópicos, ~1.5h.',
+    icon: '⚙️',
+    tags: ['AIOS', 'Agente', 'Kernel', 'SDK', 'MCP', 'IA'],
+    url: 'https://inematds.github.io/aiosagi/',
+  },
+  {
     id: 113,
     title: 'Hermes Agent — Curso Completo Avançado',
     description:
@@ -1034,6 +1043,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'AIOS — AI Agent Operating System',
+    type: 'novo',
+    url: 'https://inematds.github.io/aiosagi/',
+  },
   {
     date: '2026-05-25',
     title: 'Hermes Agent — Curso Completo Avançado',
