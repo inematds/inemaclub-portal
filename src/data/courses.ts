@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 112,
+    title: 'Profissional 2027 — Implementadores de IA para PMEs',
+    description:
+      'Formação de implementadores de IA para PMEs. Método DPIA (Diagnosticar, Processar, Instruir, Automatizar). 6 trilhas, ~100h em 10-12 semanas.',
+    icon: '🎯',
+    tags: ['Consultoria', 'PME', 'DPIA', 'Implementação', 'n8n', 'IA'],
+    url: 'https://inematds.github.io/profissional2027x',
+  },
+  {
     id: 111,
     title: 'PolySkills — Claude Code & Codex lado a lado',
     description:
@@ -1016,6 +1025,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-24',
+    title: 'Profissional 2027 — Implementadores de IA para PMEs',
+    type: 'novo',
+    url: 'https://inematds.github.io/profissional2027x',
+  },
   {
     date: '2026-05-24',
     title: 'PolySkills — Claude Code & Codex lado a lado',

@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 112,
+        title: "Profissional 2027 — Implementadores de IA para PMEs",
+        description: "Formação completa de implementadores de IA para pequenas e médias empresas. Método DPIA (Diagnosticar, Processar, Instruir, Automatizar). 6 trilhas, ~100 horas em 10-12 semanas.",
+        icon: "🎯",
+        tags: ["Consultoria", "PME", "DPIA", "Implementação", "n8n", "IA"],
+        url: "https://inematds.github.io/profissional2027x"
+    },
+    {
         id: 111,
         title: "PolySkills — Claude Code & Codex lado a lado",
         description: "Da terminologia basica aos fluxos avancados de quem trabalha com os dois agentes em paralelo. 6 trilhas, 10 modulos, ~7.5 horas. Skills cross-runtime, conversao zero-loss, workflow side-by-side.",
@@ -788,6 +796,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-24", title: "Profissional 2027 — Implementadores de IA para PMEs", type: "novo", url: "https://inematds.github.io/profissional2027x" },
     { date: "2026-05-24", title: "PolySkills — Claude Code & Codex lado a lado", type: "novo", url: "https://inematds.github.io/polyskills" },
     { date: "2026-05-24", title: "Mapa do Cliente — Formação DICA", type: "novo", url: "https://inematds.github.io/mapacliente/" },
     { date: "2026-05-22", title: "Vendendo AIOS 2026", type: "novo", url: "https://inematds.github.io/vendasaios/curso/" },
