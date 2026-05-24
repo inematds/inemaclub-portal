@@ -47,6 +47,7 @@ const communityProjects: Array<{
   { icon: '🎨', name: 'open-design', desc: 'Alternativa open-source ao Claude Design', url: 'https://github.com/inematds/open-design', badge: 'GitHub' },
   { icon: '🚀', name: 'inemaupsk', desc: 'Plataforma de upskilling da comunidade', url: 'https://github.com/inematds/inemaupsk', badge: 'GitHub' },
   { icon: '📺', name: 'yt-pub-livesx', desc: 'Publicação e lives no YouTube com IA', url: 'https://github.com/inematds/yt-pub-livesx', badge: 'GitHub' },
+  { icon: '🎬', name: 'VideosDGX', desc: 'Geração de vídeos com IA (DGX)', url: 'https://github.com/inematds/VideosDGX', badge: 'GitHub' },
 ]
 
 type RepoUpdate = {
