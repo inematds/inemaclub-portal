@@ -48,6 +48,7 @@ const communityProjects: Array<{
   { icon: '🚀', name: 'inemaupsk', desc: 'Plataforma de upskilling da comunidade', url: 'https://github.com/inematds/inemaupsk', badge: 'GitHub' },
   { icon: '📺', name: 'yt-pub-livesx', desc: 'Publicação e lives no YouTube com IA', url: 'https://github.com/inematds/yt-pub-livesx', badge: 'GitHub' },
   { icon: '🎬', name: 'VideosDGX', desc: 'Geração de vídeos com IA (DGX)', url: 'https://github.com/inematds/VideosDGX', badge: 'GitHub' },
+  { icon: '🌌', name: 'skyreelsv3', desc: 'Geração de vídeos com SkyReels V3', url: 'https://github.com/inematds/skyreelsv3', badge: 'GitHub' },
 ]
 
 type RepoUpdate = {
