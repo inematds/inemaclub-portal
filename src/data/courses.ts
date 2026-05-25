@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 116,
+    title: 'mkbook — Seu livro em 30 dias com Claude Code',
+    description:
+      'Escreva, publique e lance um livro em 30 dias com Claude Code. 4 trilhas, 16 módulos, ~12h. EPUB, PDF, MOBI para Amazon KDP.',
+    icon: '📖',
+    tags: ['Livro', 'Claude Code', 'Publicação', 'KDP', 'EPUB', 'IA'],
+    url: 'https://inematds.github.io/mkbook/',
+  },
+  {
     id: 115,
     title: 'MkBlogs — Publicação Multi-Plataforma',
     description:
@@ -1052,6 +1061,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'mkbook — Seu livro em 30 dias com Claude Code',
+    type: 'novo',
+    url: 'https://inematds.github.io/mkbook/',
+  },
   {
     date: '2026-05-25',
     title: 'MkBlogs — Publicação Multi-Plataforma',
