@@ -50,6 +50,7 @@ const communityProjects: Array<{
   { icon: '🎬', name: 'VideosDGX', desc: 'Geração de vídeos com IA (DGX)', url: 'https://github.com/inematds/VideosDGX', badge: 'GitHub' },
   { icon: '🌌', name: 'skyreelsv3', desc: 'Geração de vídeos com SkyReels V3', url: 'https://github.com/inematds/skyreelsv3', badge: 'GitHub' },
   { icon: '🖼️', name: 'inemaimg', desc: 'Geração de imagens com IA', url: 'https://github.com/inematds/inemaimg', badge: 'GitHub' },
+  { icon: '📝', name: 'mkblogs', desc: 'Publicação multi-plataforma open-source', url: 'https://github.com/inematds/mkblogs', badge: 'GitHub' },
 ]
 
 type RepoUpdate = {
@@ -555,6 +556,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/BMAD-Academy/',       label: 'BMAD',             desc: 'BMAD Academy' },
               { href: 'https://inematds.github.io/github/',              label: 'GitHub',           desc: 'Repositórios INEMA' },
               { href: 'https://inematds.github.io/dash/',                label: 'Dashboard',        desc: 'Dashboard Mastery' },
+              { href: 'https://inematds.github.io/mkblogs/',              label: 'MkBlogs',          desc: 'Publicação Multi-Plataforma sem SaaS' },
             ]},
             { title: '🌱 Transformação Digital', steps: [
               { href: 'https://inematds.github.io/FTD/',  label: 'FTD',  desc: 'Formação Transformação Digital' },

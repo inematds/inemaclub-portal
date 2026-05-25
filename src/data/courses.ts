@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 115,
+    title: 'MkBlogs — Publicação Multi-Plataforma',
+    description:
+      'Publicação em escala sem SaaS pago. Postiz self-hosted, redes sociais, blogs, deploy. 6 trilhas, 28 módulos, ~20h.',
+    icon: '📝',
+    tags: ['Publicação', 'Blog', 'Redes Sociais', 'Open-Source', 'Deploy', 'IA'],
+    url: 'https://inematds.github.io/mkblogs/',
+  },
+  {
     id: 114,
     title: 'AIOS — AI Agent Operating System',
     description:
@@ -1043,6 +1052,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'MkBlogs — Publicação Multi-Plataforma',
+    type: 'novo',
+    url: 'https://inematds.github.io/mkblogs/',
+  },
   {
     date: '2026-05-25',
     title: 'AIOS — AI Agent Operating System',

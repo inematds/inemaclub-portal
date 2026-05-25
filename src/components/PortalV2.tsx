@@ -467,6 +467,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/BMAD-Academy/', label: 'BMAD',      desc: 'BMAD Academy' },
               { href: 'https://inematds.github.io/github/',        label: 'GitHub',    desc: 'Repositórios INEMA' },
               { href: 'https://inematds.github.io/dash/',          label: 'Dashboard', desc: 'Dashboard Mastery' },
+              { href: 'https://inematds.github.io/mkblogs/',    label: 'MkBlogs',   desc: 'Publicação Multi-Plataforma sem SaaS' },
             ]},
             { title: '🌱 Transformação Digital', steps: [
               { href: 'https://inematds.github.io/FTD/',   label: 'FTD',   desc: 'Formação Transformação Digital' },

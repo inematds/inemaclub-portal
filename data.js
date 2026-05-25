@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 115,
+        title: "MkBlogs — Publicação Multi-Plataforma",
+        description: "Publicação em escala sem SaaS pago. Postiz self-hosted, conexão de redes sociais, blogs, deploy. 6 trilhas, 28 modulos, ~20 horas. Open-source ou construa do zero.",
+        icon: "📝",
+        tags: ["Publicação", "Blog", "Redes Sociais", "Open-Source", "Deploy", "IA"],
+        url: "https://inematds.github.io/mkblogs/"
+    },
+    {
         id: 114,
         title: "AIOS — AI Agent Operating System",
         description: "Curso completo sobre AIOS (Rutgers AGI Research). Kernel, SDK Cerebrum, scheduler, memória, ferramentas, computer-use e MCP. 2 modulos, 12 topicos, ~1.5 horas.",
@@ -812,6 +820,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-25", title: "MkBlogs — Publicação Multi-Plataforma", type: "novo", url: "https://inematds.github.io/mkblogs/" },
     { date: "2026-05-25", title: "AIOS — AI Agent Operating System", type: "novo", url: "https://inematds.github.io/aiosagi/" },
     { date: "2026-05-25", title: "Hermes Agent — Curso Completo Avançado", type: "novo", url: "https://inematds.github.io/hermesagent/" },
     { date: "2026-05-24", title: "Profissional 2027 — Implementadores de IA para PMEs", type: "novo", url: "https://inematds.github.io/profissional2027x" },
