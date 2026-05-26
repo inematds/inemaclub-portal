@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 117,
+    title: 'Skills For Real Engineers',
+    description:
+      'Skills do Matt Pocock para Claude Code. Anatomia de SKILL.md, triggers, workflow, exemplos práticos (handoffs, code review, debugging).',
+    icon: '🛠️',
+    tags: ['Skills', 'Claude Code', 'Matt Pocock', 'SKILL.md', 'Workflow', 'IA'],
+    url: 'https://inematds.github.io/mp-skill/curso-skills/',
+  },
+  {
     id: 116,
     title: 'mkbook — Seu livro em 30 dias com Claude Code',
     description:
@@ -1061,6 +1070,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'Skills For Real Engineers',
+    type: 'novo',
+    url: 'https://inematds.github.io/mp-skill/curso-skills/',
+  },
   {
     date: '2026-05-25',
     title: 'mkbook — Seu livro em 30 dias com Claude Code',

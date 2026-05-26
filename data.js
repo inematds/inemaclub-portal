@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 117,
+        title: "Skills For Real Engineers",
+        description: "Skills do Matt Pocock para Claude Code. Anatomia de SKILL.md, triggers, workflow, exemplos práticos (handoffs, code review, debugging). 1 trilha, Fundamentos de Skills.",
+        icon: "🛠️",
+        tags: ["Skills", "Claude Code", "Matt Pocock", "SKILL.md", "Workflow", "IA"],
+        url: "https://inematds.github.io/mp-skill/curso-skills/"
+    },
+    {
         id: 116,
         title: "mkbook — Seu livro em 30 dias com Claude Code",
         description: "Escreva, publique e lance um livro em 30 dias usando Claude Code. 4 trilhas (Fundamentos, Escrita, Publicação, Lançamento), 16 modulos, ~12 horas. EPUB, PDF, MOBI para Amazon KDP.",
@@ -828,6 +836,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-25", title: "Skills For Real Engineers", type: "novo", url: "https://inematds.github.io/mp-skill/curso-skills/" },
     { date: "2026-05-25", title: "mkbook — Seu livro em 30 dias com Claude Code", type: "novo", url: "https://inematds.github.io/mkbook/" },
     { date: "2026-05-25", title: "MkBlogs — Publicação Multi-Plataforma", type: "novo", url: "https://inematds.github.io/mkblogs/" },
     { date: "2026-05-25", title: "AIOS — AI Agent Operating System", type: "novo", url: "https://inematds.github.io/aiosagi/" },
