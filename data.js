@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 121,
+        title: "Agentic Básico",
+        description: "Aprenda agentes de IA em 2 caminhos: Visual Quick (15 min) e Curso Completo (3h, 9 módulos). 5 pilares agênticos + Multi-Agent Arena no browser. Gratuito.",
+        icon: "🤖",
+        tags: ["Agentes", "IA", "Básico", "Multi-Agent", "Arena", "Gratuito"],
+        url: "https://inematds.github.io/agenticbasico/"
+    },
+    {
         id: 120,
         title: "Understand Anything",
         description: "Análise de código com LLM + dashboards interativos. Static analysis, knowledge graphs, plugins para Claude Code, Cursor e Copilot. 3 trilhas, ~6 horas. Open-source.",
@@ -860,6 +868,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-26", title: "Agentic Básico", type: "novo", url: "https://inematds.github.io/agenticbasico/" },
     { date: "2026-05-26", title: "Understand Anything", type: "novo", url: "https://inematds.github.io/u-any/curso/" },
     { date: "2026-05-25", title: "OpenHuman Mastery", type: "novo", url: "https://inematds.github.io/openhuman/" },
     { date: "2026-05-25", title: "Karpathy Guidelines — 4 Princípios para Código Limpo com LLM", type: "novo", url: "https://inematds.github.io/akarpathy-skill/curso-pt/" },

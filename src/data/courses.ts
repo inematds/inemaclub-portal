@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 121,
+    title: 'Agentic Básico',
+    description:
+      'Aprenda agentes de IA em 2 caminhos: Visual Quick (15 min) e Curso Completo (3h, 9 módulos). 5 pilares agênticos + Multi-Agent Arena no browser. Gratuito.',
+    icon: '🤖',
+    tags: ['Agentes', 'IA', 'Básico', 'Multi-Agent', 'Arena', 'Gratuito'],
+    url: 'https://inematds.github.io/agenticbasico/',
+  },
+  {
     id: 120,
     title: 'Understand Anything',
     description:
@@ -1097,6 +1106,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-26',
+    title: 'Agentic Básico',
+    type: 'novo',
+    url: 'https://inematds.github.io/agenticbasico/',
+  },
   {
     date: '2026-05-26',
     title: 'Understand Anything',
