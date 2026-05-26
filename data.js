@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 120,
+        title: "Understand Anything",
+        description: "Análise de código com LLM + dashboards interativos. Static analysis, knowledge graphs, plugins para Claude Code, Cursor e Copilot. 3 trilhas, ~6 horas. Open-source.",
+        icon: "🔍",
+        tags: ["Análise", "Código", "LLM", "Dashboard", "Claude Code", "IA"],
+        url: "https://inematds.github.io/u-any/curso/"
+    },
+    {
         id: 119,
         title: "OpenHuman Mastery",
         description: "Assistente IA para comunidades. Arquitetura local, multi-canal, memória, skills, contribuição open-source. 6 trilhas, 18 modulos, ~14.5 horas. Rust, React, Tauri v2.",
@@ -852,6 +860,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-26", title: "Understand Anything", type: "novo", url: "https://inematds.github.io/u-any/curso/" },
     { date: "2026-05-25", title: "OpenHuman Mastery", type: "novo", url: "https://inematds.github.io/openhuman/" },
     { date: "2026-05-25", title: "Karpathy Guidelines — 4 Princípios para Código Limpo com LLM", type: "novo", url: "https://inematds.github.io/akarpathy-skill/curso-pt/" },
     { date: "2026-05-25", title: "Skills For Real Engineers", type: "novo", url: "https://inematds.github.io/mp-skill/curso-skills/" },

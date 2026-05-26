@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 120,
+    title: 'Understand Anything',
+    description:
+      'Análise de código com LLM + dashboards interativos. Knowledge graphs, plugins para Claude Code, Cursor e Copilot. 3 trilhas, ~6h.',
+    icon: '🔍',
+    tags: ['Análise', 'Código', 'LLM', 'Dashboard', 'Claude Code', 'IA'],
+    url: 'https://inematds.github.io/u-any/curso/',
+  },
+  {
     id: 119,
     title: 'OpenHuman Mastery',
     description:
@@ -1088,6 +1097,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-26',
+    title: 'Understand Anything',
+    type: 'novo',
+    url: 'https://inematds.github.io/u-any/curso/',
+  },
   {
     date: '2026-05-25',
     title: 'OpenHuman Mastery',
