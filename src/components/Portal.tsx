@@ -51,6 +51,7 @@ const communityProjects: Array<{
   { icon: '🌌', name: 'skyreelsv3', desc: 'Geração de vídeos com SkyReels V3', url: 'https://github.com/inematds/skyreelsv3', badge: 'GitHub' },
   { icon: '🖼️', name: 'inemaimg', desc: 'Geração de imagens com IA', url: 'https://github.com/inematds/inemaimg', badge: 'GitHub' },
   { icon: '📝', name: 'mkblogs', desc: 'Publicação multi-plataforma open-source', url: 'https://github.com/inematds/mkblogs', badge: 'GitHub' },
+  { icon: '🧬', name: 'openhuman', desc: 'Assistente IA para comunidades (Rust/Tauri)', url: 'https://github.com/inematds/openhuman', badge: 'GitHub' },
 ]
 
 type RepoUpdate = {
