@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 118,
+        title: "Karpathy Guidelines — 4 Princípios para Código Limpo com LLM",
+        description: "Baseado nas observações de Andrej Karpathy sobre falhas na programação com LLM. Think Before Coding, Simplicity First, Surgical Changes, Goal-Oriented. 1 trilha, 4 modulos, ~2 horas.",
+        icon: "🧠",
+        tags: ["Karpathy", "Claude Code", "CLAUDE.md", "Princípios", "LLM", "IA"],
+        url: "https://inematds.github.io/akarpathy-skill/curso-pt/"
+    },
+    {
         id: 117,
         title: "Skills For Real Engineers",
         description: "Skills do Matt Pocock para Claude Code. Anatomia de SKILL.md, triggers, workflow, exemplos práticos (handoffs, code review, debugging). 1 trilha, Fundamentos de Skills.",
@@ -836,6 +844,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-25", title: "Karpathy Guidelines — 4 Princípios para Código Limpo com LLM", type: "novo", url: "https://inematds.github.io/akarpathy-skill/curso-pt/" },
     { date: "2026-05-25", title: "Skills For Real Engineers", type: "novo", url: "https://inematds.github.io/mp-skill/curso-skills/" },
     { date: "2026-05-25", title: "mkbook — Seu livro em 30 dias com Claude Code", type: "novo", url: "https://inematds.github.io/mkbook/" },
     { date: "2026-05-25", title: "MkBlogs — Publicação Multi-Plataforma", type: "novo", url: "https://inematds.github.io/mkblogs/" },

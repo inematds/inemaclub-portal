@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 118,
+    title: 'Karpathy Guidelines — 4 Princípios para Código Limpo com LLM',
+    description:
+      'Baseado em Andrej Karpathy. Think Before Coding, Simplicity First, Surgical Changes, Goal-Oriented. 1 trilha, 4 módulos, ~2h.',
+    icon: '🧠',
+    tags: ['Karpathy', 'Claude Code', 'CLAUDE.md', 'Princípios', 'LLM', 'IA'],
+    url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
+  },
+  {
     id: 117,
     title: 'Skills For Real Engineers',
     description:
@@ -1070,6 +1079,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'Karpathy Guidelines',
+    type: 'novo',
+    url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
+  },
   {
     date: '2026-05-25',
     title: 'Skills For Real Engineers',
