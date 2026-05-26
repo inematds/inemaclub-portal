@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 119,
+    title: 'OpenHuman Mastery',
+    description:
+      'Assistente IA para comunidades. Arquitetura local, multi-canal, memória, skills, open-source. 6 trilhas, 18 módulos, ~14.5h. Rust, React, Tauri v2.',
+    icon: '🧬',
+    tags: ['OpenHuman', 'Assistente', 'Comunidade', 'Rust', 'Tauri', 'IA'],
+    url: 'https://inematds.github.io/openhuman/',
+  },
+  {
     id: 118,
     title: 'Karpathy Guidelines — 4 Princípios para Código Limpo com LLM',
     description:
@@ -1079,6 +1088,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-25',
+    title: 'OpenHuman Mastery',
+    type: 'novo',
+    url: 'https://inematds.github.io/openhuman/',
+  },
   {
     date: '2026-05-25',
     title: 'Karpathy Guidelines',

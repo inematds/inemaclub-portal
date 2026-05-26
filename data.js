@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 119,
+        title: "OpenHuman Mastery",
+        description: "Assistente IA para comunidades. Arquitetura local, multi-canal, memória, skills, contribuição open-source. 6 trilhas, 18 modulos, ~14.5 horas. Rust, React, Tauri v2.",
+        icon: "🧬",
+        tags: ["OpenHuman", "Assistente", "Comunidade", "Rust", "Tauri", "IA"],
+        url: "https://inematds.github.io/openhuman/"
+    },
+    {
         id: 118,
         title: "Karpathy Guidelines — 4 Princípios para Código Limpo com LLM",
         description: "Baseado nas observações de Andrej Karpathy sobre falhas na programação com LLM. Think Before Coding, Simplicity First, Surgical Changes, Goal-Oriented. 1 trilha, 4 modulos, ~2 horas.",
@@ -844,6 +852,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-25", title: "OpenHuman Mastery", type: "novo", url: "https://inematds.github.io/openhuman/" },
     { date: "2026-05-25", title: "Karpathy Guidelines — 4 Princípios para Código Limpo com LLM", type: "novo", url: "https://inematds.github.io/akarpathy-skill/curso-pt/" },
     { date: "2026-05-25", title: "Skills For Real Engineers", type: "novo", url: "https://inematds.github.io/mp-skill/curso-skills/" },
     { date: "2026-05-25", title: "mkbook — Seu livro em 30 dias com Claude Code", type: "novo", url: "https://inematds.github.io/mkbook/" },
