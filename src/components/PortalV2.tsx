@@ -503,6 +503,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/ccmastermemory/',    label: 'MasterMemory',     desc: 'Memory Injection via Hooks' },
               { href: 'https://inematds.github.io/cctop/',             label: 'CCTop',            desc: 'Mestre em Contexto e Tokens' },
               { href: 'https://inematds.github.io/opus47/',            label: 'Opus 4.7',         desc: 'Dominando o Opus 4.7' },
+              { href: 'https://inematds.github.io/opus48/curso/',      label: 'Opus 4.8',         desc: 'Raciocínio Híbrido, Effort Control e Dynamic Workflows' },
               { href: 'https://inematds.github.io/ccfast32/',           label: 'CCFast32',         desc: '32 Hacks do Claude Code' },
               { href: 'https://inematds.github.io/superpowers/',        label: 'Superpowers',      desc: 'Desenvolvimento com Agentes de IA' },
               { href: 'https://inematds.github.io/ccopen/',             label: 'CCOpen',           desc: 'Claude Code de Graça ou por Quase Nada' },

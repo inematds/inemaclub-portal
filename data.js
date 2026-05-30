@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 122,
+        title: "Dominando o Opus 4.8",
+        description: "Raciocínio híbrido, 1M de contexto, controle de esforço e codificação de longo horizonte. 3 trilhas, 21 módulos, 24 exercícios, 30+ prompts. Baseado no relatório oficial com 25 claims validados.",
+        icon: "🧠",
+        tags: ["Opus", "Claude", "4.8", "Effort", "Workflows", "Coding"],
+        url: "https://inematds.github.io/opus48/curso/"
+    },
+    {
         id: 121,
         title: "Agentic Básico",
         description: "Aprenda agentes de IA em 2 caminhos: Visual Quick (15 min) e Curso Completo (3h, 9 módulos). 5 pilares agênticos + Multi-Agent Arena no browser. Gratuito.",
@@ -868,6 +876,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-05-30", title: "Dominando o Opus 4.8", type: "novo", url: "https://inematds.github.io/opus48/curso/" },
     { date: "2026-05-26", title: "Agentic Básico", type: "novo", url: "https://inematds.github.io/agenticbasico/" },
     { date: "2026-05-26", title: "Understand Anything", type: "novo", url: "https://inematds.github.io/u-any/curso/" },
     { date: "2026-05-25", title: "OpenHuman Mastery", type: "novo", url: "https://inematds.github.io/openhuman/" },

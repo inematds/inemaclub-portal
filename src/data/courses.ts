@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 122,
+    title: 'Dominando o Opus 4.8',
+    description:
+      'Raciocínio híbrido, 1M de contexto, controle de esforço e codificação de longo horizonte. 3 trilhas, 21 módulos, 24 exercícios, 30+ prompts. Baseado no relatório oficial com 25 claims validados.',
+    icon: '🧠',
+    tags: ['Opus', 'Claude', '4.8', 'Effort', 'Workflows', 'Coding'],
+    url: 'https://inematds.github.io/opus48/curso/',
+  },
+  {
     id: 121,
     title: 'Agentic Básico',
     description:
@@ -1106,6 +1115,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-05-30',
+    title: 'Dominando o Opus 4.8',
+    type: 'novo',
+    url: 'https://inematds.github.io/opus48/curso/',
+  },
   {
     date: '2026-05-26',
     title: 'Agentic Básico',
