@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 125,
+        title: "VLA — Vision Language Action para Robótica",
+        description: "Curso profundo sobre IA Incorporada: modelos VLA (RT-2, OpenVLA, π0, Qwen-VLA, GR00T N1), frameworks (LeRobot, ROS2, MuJoCo, Isaac Sim), treinamento, sim-to-real, mercado $7.2B. 3 trilhas, 18 módulos, 50+ fontes.",
+        icon: "🦾",
+        tags: ["VLA", "Robótica", "LeRobot", "ROS2", "Humanoides", "Sim-to-Real"],
+        url: "https://inematds.github.io/vla/"
+    },
+    {
         id: 124,
         title: "Consultor de IA — Do Rótulo ao Resultado",
         description: "Formação prática para atuar como consultor de IA: mapear a restrição real, auditar a prontidão e montar planos de execução. IA é a caixa de ferramentas, não o cargo — pirâmide determinístico→IA→agentes, começa pela base. 5 trilhas, 20 módulos, 120 tópicos. Ancorado em Anthropic, McKinsey, NIST AI RMF, MITRE e Gartner.",
@@ -892,6 +900,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-06-01", title: "VLA — Vision Language Action para Robótica", type: "novo", url: "https://inematds.github.io/vla/" },
     { date: "2026-06-01", title: "segROBOT — Requalificação Humana para Ambientes Robotizados", type: "novo", url: "https://inematds.github.io/segrobot/" },
     { date: "2026-05-30", title: "Dominando o Opus 4.8", type: "novo", url: "https://inematds.github.io/opus48/curso/" },
     { date: "2026-05-26", title: "Agentic Básico", type: "novo", url: "https://inematds.github.io/agenticbasico/" },

@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 126,
+    title: 'VLA — Vision Language Action para Robótica',
+    description:
+      'Curso profundo sobre IA Incorporada: modelos VLA (RT-2, OpenVLA, π0, Qwen-VLA, GR00T N1), frameworks (LeRobot, ROS2, MuJoCo, Isaac Sim), treinamento, sim-to-real, mercado $7.2B. 3 trilhas, 18 módulos, 50+ fontes.',
+    icon: '🦾',
+    tags: ['VLA', 'Robótica', 'LeRobot', 'ROS2', 'Humanoides', 'Sim-to-Real'],
+    url: 'https://inematds.github.io/vla/',
+  },
+  {
     id: 125,
     title: 'Consultor de IA — Do Rótulo ao Resultado',
     description:
@@ -1142,6 +1151,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-06-01',
+    title: 'VLA — Vision Language Action para Robótica',
+    type: 'novo',
+    url: 'https://inematds.github.io/vla/',
+  },
   {
     date: '2026-06-01',
     title: 'Consultor de IA — Do Rótulo ao Resultado',

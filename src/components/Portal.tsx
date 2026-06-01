@@ -533,6 +533,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/FTH/',   label: 'FTH',   desc: 'Treinamento de Humanoides' },
               { href: 'https://inematds.github.io/HG1',    label: 'HG1',   desc: 'Academia dos Humanoides G1' },
               { href: 'https://inematds.github.io/segrobot/', label: 'segROBOT', desc: 'Requalificação Humana p/ Ambientes Robotizados' },
+              { href: 'https://inematds.github.io/vla/', label: 'VLA', desc: 'Vision Language Action para Robótica' },
             ]},
             { title: '💼 Consultoria IA & Negócios', steps: [
               { href: 'https://inematds.github.io/ATIA/',        label: 'ATIA',        desc: 'Oportunidades Digitais com IA' },
