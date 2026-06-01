@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 124,
+        title: "Consultor de IA — Do Rótulo ao Resultado",
+        description: "Formação prática para atuar como consultor de IA: mapear a restrição real, auditar a prontidão e montar planos de execução. IA é a caixa de ferramentas, não o cargo — pirâmide determinístico→IA→agentes, começa pela base. 5 trilhas, 20 módulos, 120 tópicos. Ancorado em Anthropic, McKinsey, NIST AI RMF, MITRE e Gartner.",
+        icon: "🧭",
+        tags: ["Consultoria", "IA", "Mapeamento", "Auditoria", "NIST", "Roadmap"],
+        url: "https://inematds.github.io/consultoria2k/"
+    },
+    {
         id: 123,
         title: "segROBOT — Requalificação Humana para Ambientes Robotizados",
         description: "Pesquisa profunda sobre integração humano-robô. ISO 10218:2025, cobots, AMRs, humanoides, digital twins, gestão de mudança. 3 trilhas, 18 módulos. 50+ fontes acadêmicas (WEF, IFR, BCG, Brookings).",
