@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 131,
+    title: 'Claude Code — Do Zero ao Projeto',
+    description:
+      'Curso completo de Claude Code: dos fundamentos à instalação, criando skills e automações, até desenvolver e publicar projetos reais de longo prazo. 6 trilhas, 24 módulos, 144 tópicos, ~18h. Com dois estudos de caso de produção: a skill ads-skill (Arcads) e o projeto ClaudeOS.',
+    icon: '🤖',
+    tags: ['Claude Code', 'Skills', 'Automação', 'Deploy', 'Iniciante', 'IA'],
+    url: 'https://inematds.github.io/jccode23/',
+  },
+  {
     id: 130,
     title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas',
     description:
@@ -1187,6 +1196,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-01', title: 'Claude Code — Do Zero ao Projeto', type: 'novo', url: 'https://inematds.github.io/jccode23/' },
   { date: '2026-06-01', title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas', type: 'novo', url: 'https://inematds.github.io/skill-design/' },
   { date: '2026-06-01', title: 'HyperFrames — Vídeos Explicativos com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-hyperframes-videos/' },
   {
