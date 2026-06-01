@@ -16,6 +16,24 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 130,
+    title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas',
+    description:
+      'Curso-catálogo dos 16 skills do Claude Code para criar e melhorar páginas, agrupados em 4 trilhas (Construir, Identidade, Mídia, Apoio). Analisa frontend-design, impeccable, web-artifacts-builder, theme-factory, brand-guidelines, animation-designer, remotion, agent-browser (Playwright), website-intelligence e mais — cada um com o que faz, quando dispara, como melhora a página e prompts prontos.',
+    icon: '🎨',
+    tags: ['Claude Code', 'Skills', 'Design', 'Frontend', 'IA'],
+    url: 'https://inematds.github.io/skill-design/',
+  },
+  {
+    id: 129,
+    title: 'HyperFrames — Vídeos Explicativos com Claude Code',
+    description:
+      'Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final, com a própria Skill incluída para download.',
+    icon: '🎬',
+    tags: ['Claude Code', 'Skills', 'Vídeo', 'HyperFrames', 'IA'],
+    url: 'https://inematds.github.io/skill-hyperframes-videos/',
+  },
+  {
     id: 128,
     title: 'Formação em IA Incorporada (VLA) — A Escola da Robótica Inteligente',
     description:
@@ -1169,6 +1187,8 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-01', title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas', type: 'novo', url: 'https://inematds.github.io/skill-design/' },
+  { date: '2026-06-01', title: 'HyperFrames — Vídeos Explicativos com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-hyperframes-videos/' },
   {
     date: '2026-06-01',
     title: 'Formação em IA Incorporada (VLA) — A Escola da Robótica Inteligente',
