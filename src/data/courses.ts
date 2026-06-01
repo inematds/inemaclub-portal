@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 133,
+    title: 'AIS-OS — Seu AI Operating System no Claude Code',
+    description:
+      'Transforme o Claude Code num AI Operating System pessoal: conhece seu negócio, alcança suas ferramentas, sabe fazer o trabalho e roda sem ser pedido. Baseado no kit AIS-OS (MIT) de Nate Herk — frameworks 3 Ms (Mindset/Method/Machine) e 4 Cs (Context/Connections/Capabilities/Cadence) + as skills /onboard, /audit e /level-up. 3 trilhas, 11 módulos, ~70 tópicos, ~7h, com diagramas SVG.',
+    icon: '⚙️',
+    tags: ['AIOS', 'Claude Code', '3 Ms', '4 Cs', 'Skills', 'Automação'],
+    url: 'https://inematds.github.io/ais-os/',
+  },
+  {
     id: 132,
     title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill',
     description:
@@ -1205,6 +1214,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-01', title: 'AIS-OS — Seu AI Operating System no Claude Code', type: 'novo', url: 'https://inematds.github.io/ais-os/' },
   { date: '2026-06-01', title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill', type: 'novo', url: 'https://inematds.github.io/skills-craft/' },
   { date: '2026-06-01', title: 'Claude Code — Do Zero ao Projeto', type: 'novo', url: 'https://inematds.github.io/jccode23/' },
   { date: '2026-06-01', title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas', type: 'novo', url: 'https://inematds.github.io/skill-design/' },
