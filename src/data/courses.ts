@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 128,
+    title: 'Formação em IA Incorporada (VLA) — A Escola da Robótica Inteligente',
+    description:
+      'Página de apresentação da formação profissional em Vision-Language-Action: por que agora (o "momento ChatGPT" da robótica), pesquisa de mercado real 2024-2026 (US$ 38 bi até 2035, +78 mi de empregos, gap de 530 mil profissionais no Brasil), como China, EUA, Europa e Japão qualificam talento, casos reais por setor e o currículo em 3 trilhas. Ligada ao curso aberto VLA.',
+    icon: '🎓',
+    tags: ['Formação', 'VLA', 'Carreira', 'Mercado', 'Robótica', 'IA Incorporada'],
+    url: 'https://inematds.github.io/vla-formacao/',
+  },
+  {
     id: 127,
     title: 'VLA Mastery — Da Teoria aos Robôs que Agem',
     description:
@@ -1160,6 +1169,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-06-01',
+    title: 'Formação em IA Incorporada (VLA) — A Escola da Robótica Inteligente',
+    type: 'novo',
+    url: 'https://inematds.github.io/vla-formacao/',
+  },
   {
     date: '2026-06-01',
     title: 'VLA Mastery — Da Teoria aos Robôs que Agem',
