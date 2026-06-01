@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 127,
+    title: 'VLA Mastery — Da Teoria aos Robôs que Agem',
+    description:
+      'Curso avançado de modelos Vision-Language-Action e IA Incorporada. Anatomia VLA, RT-1→π0, behavior cloning, diffusion policy e flow matching, tokenização FAST, LeRobot, MuJoCo/Isaac, ROS2, datasets (Open X-Embodiment, DROID, LIBERO), sim-to-real, humanoides (GR00T, Figure Helix, Optimus), arquiteturas híbridas e fronteira 2026-2030. 3 trilhas, 18 módulos, 108 tópicos, com diagramas SVG.',
+    icon: '🦾',
+    tags: ['VLA', 'Robótica', 'Diffusion Policy', 'LeRobot', 'Humanoides', 'Sim-to-Real'],
+    url: 'https://inematds.github.io/vla-mastery/',
+  },
+  {
     id: 126,
     title: 'VLA — Vision Language Action para Robótica',
     description:
@@ -1151,6 +1160,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-06-01',
+    title: 'VLA Mastery — Da Teoria aos Robôs que Agem',
+    type: 'novo',
+    url: 'https://inematds.github.io/vla-mastery/',
+  },
   {
     date: '2026-06-01',
     title: 'VLA — Vision Language Action para Robótica',
