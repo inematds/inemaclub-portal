@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 125,
+    title: 'Consultor de IA — Do Rótulo ao Resultado',
+    description:
+      'Formação prática para atuar como consultor de IA: mapear a restrição real, auditar a prontidão e montar planos de execução. IA é a caixa de ferramentas, não o cargo — pirâmide determinístico→IA→agentes, comece pela base. 5 trilhas, 20 módulos, 120 tópicos. Ancorado em Anthropic, McKinsey, NIST AI RMF, MITRE e Gartner.',
+    icon: '🧭',
+    tags: ['Consultoria', 'IA', 'Mapeamento', 'Auditoria', 'NIST', 'Roadmap'],
+    url: 'https://inematds.github.io/consultoria2k/',
+  },
+  {
     id: 124,
     title: 'Hermes 21C — Todos os Conceitos do Hermes',
     description:
@@ -1133,6 +1142,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-06-01',
+    title: 'Consultor de IA — Do Rótulo ao Resultado',
+    type: 'novo',
+    url: 'https://inematds.github.io/consultoria2k/',
+  },
   {
     date: '2026-06-01',
     title: 'Hermes 21C — Todos os Conceitos do Hermes',
