@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 124,
+    title: 'Hermes 21C — Todos os Conceitos do Hermes',
+    description:
+      'Os 21 conceitos do agente Hermes explicados para pessoas comuns, do mais simples ao mais poderoso. Agente vs chatbot, um cérebro 22 bocas, memória, soul.md, MCPs, sub-agentes, heartbeat, operating system. 3 trilhas, 21 módulos, ~7h, com diagramas SVG.',
+    icon: '🪽',
+    tags: ['Hermes', 'Agente', 'MCP', 'Sub-agentes', 'Memória', 'IA'],
+    url: 'https://inematds.github.io/hermes21c/',
+  },
+  {
     id: 123,
     title: 'segROBOT — Requalificação Humana para Ambientes Robotizados',
     description:
@@ -1124,6 +1133,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-06-01',
+    title: 'Hermes 21C — Todos os Conceitos do Hermes',
+    type: 'novo',
+    url: 'https://inematds.github.io/hermes21c/',
+  },
   {
     date: '2026-06-01',
     title: 'segROBOT — Requalificação Humana para Ambientes Robotizados',
