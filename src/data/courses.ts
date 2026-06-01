@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 132,
+    title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill',
+    description:
+      'Curso data-driven sobre Agent Skills: parte de uma análise real de 39.366 skills coletadas do skills.sh (5.075 repos, 53,9M instalações). Você entende o ecossistema e a lei de potência, aprende a reconhecer skills boas, disseca as melhores por grupo com exemplos reais, e aprende a criar a sua. 5 trilhas, 10 módulos. Inclui o dataset completo e 25 SKILL.md reais.',
+    icon: '🛠️',
+    tags: ['Skills', 'Agent Skills', 'skills.sh', 'Criar', 'Catálogo', 'IA'],
+    url: 'https://inematds.github.io/skills-craft/',
+  },
+  {
     id: 131,
     title: 'Claude Code — Do Zero ao Projeto',
     description:
@@ -1196,6 +1205,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-01', title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill', type: 'novo', url: 'https://inematds.github.io/skills-craft/' },
   { date: '2026-06-01', title: 'Claude Code — Do Zero ao Projeto', type: 'novo', url: 'https://inematds.github.io/jccode23/' },
   { date: '2026-06-01', title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas', type: 'novo', url: 'https://inematds.github.io/skill-design/' },
   { date: '2026-06-01', title: 'HyperFrames — Vídeos Explicativos com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-hyperframes-videos/' },
