@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 123,
+    title: 'segROBOT — Requalificação Humana para Ambientes Robotizados',
+    description:
+      'Pesquisa profunda sobre integração humano-robô. ISO 10218:2025, cobots, AMRs, humanoides, digital twins, gestão de mudança. 3 trilhas, 18 módulos. 50+ fontes.',
+    icon: '🦾',
+    tags: ['Robótica', 'Requalificação', 'ISO', 'Cobots', 'Humanoides', 'HRC'],
+    url: 'https://inematds.github.io/segrobot/',
+  },
+  {
     id: 122,
     title: 'Dominando o Opus 4.8',
     description:
@@ -1115,6 +1124,12 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  {
+    date: '2026-06-01',
+    title: 'segROBOT — Requalificação Humana para Ambientes Robotizados',
+    type: 'novo',
+    url: 'https://inematds.github.io/segrobot/',
+  },
   {
     date: '2026-05-30',
     title: 'Dominando o Opus 4.8',

@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 123,
+        title: "segROBOT — Requalificação Humana para Ambientes Robotizados",
+        description: "Pesquisa profunda sobre integração humano-robô. ISO 10218:2025, cobots, AMRs, humanoides, digital twins, gestão de mudança. 3 trilhas, 18 módulos. 50+ fontes acadêmicas (WEF, IFR, BCG, Brookings).",
+        icon: "🦾",
+        tags: ["Robótica", "Requalificação", "ISO", "Cobots", "Humanoides", "HRC"],
+        url: "https://inematds.github.io/segrobot/"
+    },
+    {
         id: 122,
         title: "Dominando o Opus 4.8",
         description: "Raciocínio híbrido, 1M de contexto, controle de esforço e codificação de longo horizonte. 3 trilhas, 21 módulos, 24 exercícios, 30+ prompts. Baseado no relatório oficial com 25 claims validados.",
@@ -876,6 +884,7 @@ const platformsData = [
 
 // Histórico de atualizações recentes (mais recentes primeiro)
 const updatesData = [
+    { date: "2026-06-01", title: "segROBOT — Requalificação Humana para Ambientes Robotizados", type: "novo", url: "https://inematds.github.io/segrobot/" },
     { date: "2026-05-30", title: "Dominando o Opus 4.8", type: "novo", url: "https://inematds.github.io/opus48/curso/" },
     { date: "2026-05-26", title: "Agentic Básico", type: "novo", url: "https://inematds.github.io/agenticbasico/" },
     { date: "2026-05-26", title: "Understand Anything", type: "novo", url: "https://inematds.github.io/u-any/curso/" },
