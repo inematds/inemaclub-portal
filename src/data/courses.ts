@@ -28,7 +28,7 @@ export const platformsData: Course[] = [
     id: 132,
     title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill',
     description:
-      'Curso data-driven sobre Agent Skills: parte de uma análise real de 39.366 skills coletadas do skills.sh (5.075 repos, 53,9M instalações). Você entende o ecossistema e a lei de potência, aprende a reconhecer skills boas, disseca as melhores por grupo com exemplos reais, e aprende a criar a sua. 5 trilhas, 10 módulos. Inclui o dataset completo e 25 SKILL.md reais.',
+      'Curso data-driven sobre Agent Skills: parte de uma análise real de 39.366 skills coletadas do skills.sh (5.075 repos, 53,9M instalações). Você entende o ecossistema e a lei de potência, aprende a reconhecer skills boas, disseca as melhores por grupo com exemplos reais, e aprende a criar a sua. 5 trilhas, 25 módulos — cada trilha fecha com As Melhores, Como Criar e Dicas Avançadas. Inclui o dataset completo e 25 SKILL.md reais.',
     icon: '🛠️',
     tags: ['Skills', 'Agent Skills', 'skills.sh', 'Criar', 'Catálogo', 'IA'],
     url: 'https://inematds.github.io/skills-craft/',
