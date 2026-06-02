@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 134,
+    title: 'Formação em Automação Estratégica com IA',
+    description:
+      'De 10 horas para 10 segundos: identificar, desenhar e construir automações com IA que economizam tempo e têm valor comercial. O diferencial é saber o que construir, não só mexer em ferramentas. Ciclo completo Identificar→Mapear→Desenhar→Construir→Comercializar + prática. 6 trilhas, 19 módulos, exercícios, prompts e skills prontas. Baseado na tese "10 Hours to 10 Seconds".',
+    icon: '⚙️',
+    tags: ['Automação', 'IA', 'n8n', 'Make', 'ROI', 'Serviço'],
+    url: 'https://inematds.github.io/fae-ai/',
+  },
+  {
     id: 133,
     title: 'AIS-OS — Seu AI Operating System no Claude Code',
     description:
@@ -1214,6 +1223,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-02', title: 'Formação em Automação Estratégica com IA', type: 'novo', url: 'https://inematds.github.io/fae-ai/' },
   { date: '2026-06-01', title: 'AIS-OS — Seu AI Operating System no Claude Code', type: 'novo', url: 'https://inematds.github.io/ais-os/' },
   { date: '2026-06-01', title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill', type: 'novo', url: 'https://inematds.github.io/skills-craft/' },
   { date: '2026-06-01', title: 'Claude Code — Do Zero ao Projeto', type: 'novo', url: 'https://inematds.github.io/jccode23/' },
