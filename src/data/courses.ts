@@ -1167,6 +1167,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vibecode-imersao/',
   },
   {
+    id: 135,
+    title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code',
+    description:
+      'Curso completo da Skill video-demonstrativo: gere vídeos de demonstração (walkthrough) de uma aplicação web a partir do link do app. O Claude Code navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo e monta um vídeo narrado com moldura de navegador, cursor animado, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API. 3 trilhas, 10 módulos, com a Skill incluída para download.',
+    icon: '🖱️',
+    tags: ['Claude Code', 'Skills', 'Vídeo', 'HyperFrames', 'Playwright', 'IA'],
+    url: 'https://inematds.github.io/skill-video-demonstrativo/',
+  },
+  {
     id: 34,
     title: 'VISION',
     description:
@@ -1223,6 +1232,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-03', title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-video-demonstrativo/' },
   { date: '2026-06-02', title: 'Formação em Automação Estratégica com IA', type: 'novo', url: 'https://inematds.github.io/fae-ai/' },
   { date: '2026-06-01', title: 'AIS-OS — Seu AI Operating System no Claude Code', type: 'novo', url: 'https://inematds.github.io/ais-os/' },
   { date: '2026-06-01', title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill', type: 'novo', url: 'https://inematds.github.io/skills-craft/' },
