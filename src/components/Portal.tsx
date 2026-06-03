@@ -235,6 +235,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
             <a href="#cursos" className="section-nav-link">🎓 Cursos</a>
             <a href="#trilha-vibe" className="section-nav-link">⚡ Vibe Code</a>
+            <a href="#trilha-skills" className="section-nav-link">🧩 Skills</a>
             <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
             <a href="#comunidade" className="section-nav-link">🚀 Projetos</a>
             <a href="#github" className="section-nav-link">💻 GitHub</a>
@@ -494,6 +495,40 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </div>
           <div className="learning-path-footer">
             <p>Trilha completa para dominar o desenvolvimento de software com IA — do vibe ao agente</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Trilha Skills */}
+      <section id="trilha-skills" className="learning-path-section">
+        <div className="container">
+          <div className="learning-path-header">
+            <h3>🧩 Trilha Skills</h3>
+            <p>Domine as Agent Skills do Claude Code — do catálogo à sua própria Skill</p>
+          </div>
+          <div className="learning-path-cards">
+            {[
+              { href: 'https://inematds.github.io/skills-craft/',           label: 'Criando Skills',          desc: 'Do Catálogo à Sua Primeira Skill',   n: 1 },
+              { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames',             desc: 'Vídeos Explicativos com Claude Code', n: 2 },
+              { href: 'https://inematds.github.io/akarpathy-skill/curso-pt/', label: 'Karpathy Guidelines',     desc: '4 Princípios pra Código Limpo',      n: 3 },
+              { href: 'https://inematds.github.io/polyskills',              label: 'PolySkills',              desc: 'Claude Code & Codex lado a lado',    n: 4 },
+              { href: 'https://inematds.github.io/skill-design/',           label: 'Skill Design',            desc: 'Arsenal de Skills pra Páginas',      n: 5 },
+              { href: 'https://inematds.github.io/skills',                  label: 'Skills',                  desc: 'Agent Skills Mastery',               n: 6 },
+              { href: 'https://inematds.github.io/mp-skill/curso-skills/',  label: 'Skills For Real Engineers', desc: 'Skills pra Engenheiros de Verdade', n: 7 },
+              { href: 'https://inematds.github.io/skills-premium/',         label: 'Skills Premium',          desc: 'Do Iniciante ao Expert',             n: 8 },
+              { href: 'https://inematds.github.io/superskills-karpathy/',   label: 'SuperSkills Karpathy',    desc: 'Skills como Funcionários Digitais',  n: 9 },
+            ].map((p) => (
+              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                 className={`path-card path-card-${p.n}`}
+                 onClick={() => trackClick(p.href, p.label, 'trilha-skills')}>
+                <div className="path-number">{p.n}</div>
+                <h4>{p.label}</h4>
+                <p>{p.desc}</p>
+              </a>
+            ))}
+          </div>
+          <div className="learning-path-footer">
+            <p>Skills transformam o Claude Code em especialistas sob demanda — aprenda a criar e usar as suas</p>
           </div>
         </div>
       </section>

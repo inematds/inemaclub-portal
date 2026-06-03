@@ -16,373 +16,13 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
-    id: 134,
-    title: 'Formação em Automação Estratégica com IA',
+    id: 60,
+    title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
     description:
-      'De 10 horas para 10 segundos: identificar, desenhar e construir automações com IA que economizam tempo e têm valor comercial. O diferencial é saber o que construir, não só mexer em ferramentas. Ciclo completo Identificar→Mapear→Desenhar→Construir→Comercializar + prática. 6 trilhas, 19 módulos, exercícios, prompts e skills prontas. Baseado na tese "10 Hours to 10 Seconds".',
-    icon: '⚙️',
-    tags: ['Automação', 'IA', 'n8n', 'Make', 'ROI', 'Serviço'],
-    url: 'https://inematds.github.io/fae-ai/',
-  },
-  {
-    id: 133,
-    title: 'AIS-OS — Seu AI Operating System no Claude Code',
-    description:
-      'Transforme o Claude Code num AI Operating System pessoal: conhece seu negócio, alcança suas ferramentas, sabe fazer o trabalho e roda sem ser pedido. Baseado no kit AIS-OS (MIT) de Nate Herk — frameworks 3 Ms (Mindset/Method/Machine) e 4 Cs (Context/Connections/Capabilities/Cadence) + as skills /onboard, /audit e /level-up. 3 trilhas, 11 módulos, ~70 tópicos, ~7h, com diagramas SVG.',
-    icon: '⚙️',
-    tags: ['AIOS', 'Claude Code', '3 Ms', '4 Cs', 'Skills', 'Automação'],
-    url: 'https://inematds.github.io/ais-os/',
-  },
-  {
-    id: 132,
-    title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill',
-    description:
-      'Curso data-driven sobre Agent Skills: parte de uma análise real de 39.366 skills coletadas do skills.sh (5.075 repos, 53,9M instalações). Você entende o ecossistema e a lei de potência, aprende a reconhecer skills boas, disseca as melhores por grupo com exemplos reais, e aprende a criar a sua. 5 trilhas, 25 módulos — cada trilha fecha com As Melhores, Como Criar e Dicas Avançadas. Inclui o dataset completo e 25 SKILL.md reais.',
-    icon: '🛠️',
-    tags: ['Skills', 'Agent Skills', 'skills.sh', 'Criar', 'Catálogo', 'IA'],
-    url: 'https://inematds.github.io/skills-craft/',
-  },
-  {
-    id: 131,
-    title: 'Claude Code — Do Zero ao Projeto',
-    description:
-      'Curso completo de Claude Code: dos fundamentos à instalação, criando skills e automações, até desenvolver e publicar projetos reais de longo prazo. 6 trilhas, 24 módulos, 144 tópicos, ~18h. Com dois estudos de caso de produção: a skill ads-skill (Arcads) e o projeto ClaudeOS.',
-    icon: '🤖',
-    tags: ['Claude Code', 'Skills', 'Automação', 'Deploy', 'Iniciante', 'IA'],
-    url: 'https://inematds.github.io/jccode23/',
-  },
-  {
-    id: 130,
-    title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas',
-    description:
-      'Curso-catálogo dos 16 skills do Claude Code para criar e melhorar páginas, agrupados em 4 trilhas (Construir, Identidade, Mídia, Apoio). Analisa frontend-design, impeccable, web-artifacts-builder, theme-factory, brand-guidelines, animation-designer, remotion, agent-browser (Playwright), website-intelligence e mais — cada um com o que faz, quando dispara, como melhora a página e prompts prontos.',
-    icon: '🎨',
-    tags: ['Claude Code', 'Skills', 'Design', 'Frontend', 'IA'],
-    url: 'https://inematds.github.io/skill-design/',
-  },
-  {
-    id: 129,
-    title: 'HyperFrames — Vídeos Explicativos com Claude Code',
-    description:
-      'Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final, com a própria Skill incluída para download.',
-    icon: '🎬',
-    tags: ['Claude Code', 'Skills', 'Vídeo', 'HyperFrames', 'IA'],
-    url: 'https://inematds.github.io/skill-video-explicativo/',
-  },
-  {
-    id: 128,
-    title: 'Formação em IA Incorporada (VLA) — A Escola da Robótica Inteligente',
-    description:
-      'Página de apresentação da formação profissional em Vision-Language-Action: por que agora (o "momento ChatGPT" da robótica), pesquisa de mercado real 2024-2026 (US$ 38 bi até 2035, +78 mi de empregos, gap de 530 mil profissionais no Brasil), como China, EUA, Europa e Japão qualificam talento, casos reais por setor e o currículo em 3 trilhas. Ligada ao curso aberto VLA.',
-    icon: '🎓',
-    tags: ['Formação', 'VLA', 'Carreira', 'Mercado', 'Robótica', 'IA Incorporada'],
-    url: 'https://inematds.github.io/vla-formacao/',
-  },
-  {
-    id: 127,
-    title: 'VLA Mastery — Da Teoria aos Robôs que Agem',
-    description:
-      'Curso avançado de modelos Vision-Language-Action e IA Incorporada. Anatomia VLA, RT-1→π0, behavior cloning, diffusion policy e flow matching, tokenização FAST, LeRobot, MuJoCo/Isaac, ROS2, datasets (Open X-Embodiment, DROID, LIBERO), sim-to-real, humanoides (GR00T, Figure Helix, Optimus), arquiteturas híbridas e fronteira 2026-2030. 3 trilhas, 18 módulos, 108 tópicos, com diagramas SVG.',
-    icon: '🦾',
-    tags: ['VLA', 'Robótica', 'Diffusion Policy', 'LeRobot', 'Humanoides', 'Sim-to-Real'],
-    url: 'https://inematds.github.io/vla-mastery/',
-  },
-  {
-    id: 126,
-    title: 'VLA — Vision Language Action para Robótica',
-    description:
-      'Curso profundo sobre IA Incorporada: modelos VLA (RT-2, OpenVLA, π0, Qwen-VLA, GR00T N1), frameworks (LeRobot, ROS2, MuJoCo, Isaac Sim), treinamento, sim-to-real, mercado $7.2B. 3 trilhas, 18 módulos, 50+ fontes.',
-    icon: '🦾',
-    tags: ['VLA', 'Robótica', 'LeRobot', 'ROS2', 'Humanoides', 'Sim-to-Real'],
-    url: 'https://inematds.github.io/vla/',
-  },
-  {
-    id: 125,
-    title: 'Consultor de IA — Do Rótulo ao Resultado',
-    description:
-      'Formação prática para atuar como consultor de IA: mapear a restrição real, auditar a prontidão e montar planos de execução. IA é a caixa de ferramentas, não o cargo — pirâmide determinístico→IA→agentes, comece pela base. 5 trilhas, 20 módulos, 120 tópicos. Ancorado em Anthropic, McKinsey, NIST AI RMF, MITRE e Gartner.',
-    icon: '🧭',
-    tags: ['Consultoria', 'IA', 'Mapeamento', 'Auditoria', 'NIST', 'Roadmap'],
-    url: 'https://inematds.github.io/consultoria2k/',
-  },
-  {
-    id: 124,
-    title: 'Hermes 21C — Todos os Conceitos do Hermes',
-    description:
-      'Os 21 conceitos do agente Hermes explicados para pessoas comuns, do mais simples ao mais poderoso. Agente vs chatbot, um cérebro 22 bocas, memória, soul.md, MCPs, sub-agentes, heartbeat, operating system. 3 trilhas, 21 módulos, ~7h, com diagramas SVG.',
-    icon: '🪽',
-    tags: ['Hermes', 'Agente', 'MCP', 'Sub-agentes', 'Memória', 'IA'],
-    url: 'https://inematds.github.io/hermes21c/',
-  },
-  {
-    id: 123,
-    title: 'segROBOT — Requalificação Humana para Ambientes Robotizados',
-    description:
-      'Pesquisa profunda sobre integração humano-robô. ISO 10218:2025, cobots, AMRs, humanoides, digital twins, gestão de mudança. 3 trilhas, 18 módulos. 50+ fontes.',
-    icon: '🦾',
-    tags: ['Robótica', 'Requalificação', 'ISO', 'Cobots', 'Humanoides', 'HRC'],
-    url: 'https://inematds.github.io/segrobot/',
-  },
-  {
-    id: 122,
-    title: 'Dominando o Opus 4.8',
-    description:
-      'Raciocínio híbrido, 1M de contexto, controle de esforço e codificação de longo horizonte. 3 trilhas, 21 módulos, 24 exercícios, 30+ prompts. Baseado no relatório oficial com 25 claims validados.',
+      'Construa um sistema de conhecimento persistente onde o LLM funciona como compilador. 3 trilhas (Fundamentos, Implementacao, Avancado), 12 modulos, ~8 horas. Cobre Obsidian vault, ingestao, grafos, RAG e multi-agentes.',
     icon: '🧠',
-    tags: ['Opus', 'Claude', '4.8', 'Effort', 'Workflows', 'Coding'],
-    url: 'https://inematds.github.io/opus48/curso/',
-  },
-  {
-    id: 121,
-    title: 'Agentic Básico',
-    description:
-      'Aprenda agentes de IA em 2 caminhos: Visual Quick (15 min) e Curso Completo (3h, 9 módulos). 5 pilares agênticos + Multi-Agent Arena no browser. Gratuito.',
-    icon: '🤖',
-    tags: ['Agentes', 'IA', 'Básico', 'Multi-Agent', 'Arena', 'Gratuito'],
-    url: 'https://inematds.github.io/agenticbasico/',
-  },
-  {
-    id: 120,
-    title: 'Understand Anything',
-    description:
-      'Análise de código com LLM + dashboards interativos. Knowledge graphs, plugins para Claude Code, Cursor e Copilot. 3 trilhas, ~6h.',
-    icon: '🔍',
-    tags: ['Análise', 'Código', 'LLM', 'Dashboard', 'Claude Code', 'IA'],
-    url: 'https://inematds.github.io/u-any/curso/',
-  },
-  {
-    id: 119,
-    title: 'OpenHuman Mastery',
-    description:
-      'Assistente IA para comunidades. Arquitetura local, multi-canal, memória, skills, open-source. 6 trilhas, 18 módulos, ~14.5h. Rust, React, Tauri v2.',
-    icon: '🧬',
-    tags: ['OpenHuman', 'Assistente', 'Comunidade', 'Rust', 'Tauri', 'IA'],
-    url: 'https://inematds.github.io/openhuman/',
-  },
-  {
-    id: 118,
-    title: 'Karpathy Guidelines — 4 Princípios para Código Limpo com LLM',
-    description:
-      'Baseado em Andrej Karpathy. Think Before Coding, Simplicity First, Surgical Changes, Goal-Oriented. 1 trilha, 4 módulos, ~2h.',
-    icon: '🧠',
-    tags: ['Karpathy', 'Claude Code', 'CLAUDE.md', 'Princípios', 'LLM', 'IA'],
-    url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
-  },
-  {
-    id: 117,
-    title: 'Skills For Real Engineers',
-    description:
-      'Skills do Matt Pocock para Claude Code. Anatomia de SKILL.md, triggers, workflow, exemplos práticos (handoffs, code review, debugging).',
-    icon: '🛠️',
-    tags: ['Skills', 'Claude Code', 'Matt Pocock', 'SKILL.md', 'Workflow', 'IA'],
-    url: 'https://inematds.github.io/mp-skill/curso-skills/',
-  },
-  {
-    id: 116,
-    title: 'mkbook — Seu livro em 30 dias com Claude Code',
-    description:
-      'Escreva, publique e lance um livro em 30 dias com Claude Code. 4 trilhas, 16 módulos, ~12h. EPUB, PDF, MOBI para Amazon KDP.',
-    icon: '📖',
-    tags: ['Livro', 'Claude Code', 'Publicação', 'KDP', 'EPUB', 'IA'],
-    url: 'https://inematds.github.io/mkbook/',
-  },
-  {
-    id: 115,
-    title: 'MkBlogs — Publicação Multi-Plataforma',
-    description:
-      'Publicação em escala sem SaaS pago. Postiz self-hosted, redes sociais, blogs, deploy. 6 trilhas, 28 módulos, ~20h.',
-    icon: '📝',
-    tags: ['Publicação', 'Blog', 'Redes Sociais', 'Open-Source', 'Deploy', 'IA'],
-    url: 'https://inematds.github.io/mkblogs/',
-  },
-  {
-    id: 114,
-    title: 'AIOS — AI Agent Operating System',
-    description:
-      'Curso completo sobre AIOS (Rutgers AGI Research). Kernel, SDK Cerebrum, scheduler, memória, ferramentas, computer-use e MCP. 2 módulos, 12 tópicos, ~1.5h.',
-    icon: '⚙️',
-    tags: ['AIOS', 'Agente', 'Kernel', 'SDK', 'MCP', 'IA'],
-    url: 'https://inematds.github.io/aiosagi/',
-  },
-  {
-    id: 113,
-    title: 'Hermes Agent — Curso Completo Avançado',
-    description:
-      'Agente IA open-source da Nous Research. Cria skills, memória persistente, 200+ modelos via OpenRouter. 6 trilhas, 12 módulos, ~11h.',
-    icon: '🤖',
-    tags: ['Hermes', 'Agente', 'Open-Source', 'Docker', 'OpenRouter', 'IA'],
-    url: 'https://inematds.github.io/hermesagent/',
-  },
-  {
-    id: 112,
-    title: 'Profissional 2027 — Implementadores de IA para PMEs',
-    description:
-      'Formação de implementadores de IA para PMEs. Método DPIA (Diagnosticar, Processar, Instruir, Automatizar). 6 trilhas, ~100h em 10-12 semanas.',
-    icon: '🎯',
-    tags: ['Consultoria', 'PME', 'DPIA', 'Implementação', 'n8n', 'IA'],
-    url: 'https://inematds.github.io/profissional2027x',
-  },
-  {
-    id: 111,
-    title: 'PolySkills — Claude Code & Codex lado a lado',
-    description:
-      'Da terminologia básica aos fluxos avançados com os dois agentes em paralelo. 6 trilhas, 10 módulos, ~7.5h. Skills cross-runtime, conversão zero-loss.',
-    icon: '🔀',
-    tags: ['Claude Code', 'Codex', 'PolySkill', 'Cross-Runtime', 'Skills', 'IA'],
-    url: 'https://inematds.github.io/polyskills',
-  },
-  {
-    id: 110,
-    title: 'Mapa do Cliente — Formação DICA',
-    description:
-      'Consultor de IA para Pequenos Negócios. Método DICA (Diagnosticar, Implementar, Capacitar, Acompanhar). 6 trilhas, 28 módulos, ~15h.',
-    icon: '🗺️',
-    tags: ['Consultoria', 'DICA', 'Vendas', 'Pequenos Negócios', 'IA'],
-    url: 'https://inematds.github.io/mapacliente/',
-  },
-  {
-    id: 109,
-    title: 'Vendendo AIOS 2026',
-    description:
-      'Como vender Sistemas Operacionais de IA como serviço. 6 trilhas, 22 módulos, ~16.5h. Da primeira hora cobrada ao SaaS.',
-    icon: '💰',
-    tags: ['Vendas', 'AIOS', 'Consultoria', 'Negócios', 'SaaS', 'IA'],
-    url: 'https://inematds.github.io/vendasaios/',
-  },
-  {
-    id: 108,
-    title: 'WhatsApp Username & BSUID',
-    description:
-      'Privacidade e identidade no WhatsApp. 3 trilhas, 9 módulos, ~5h. Username, BSUID, Cloud API, CRM, compliance.',
-    icon: '📱',
-    tags: ['WhatsApp', 'BSUID', 'Username', 'Privacidade', 'API', 'Empresas'],
-    url: 'https://inematds.github.io/whatsapp-bsuid/',
-  },
-  {
-    id: 107,
-    title: 'Claude Cowork - Guia Completo',
-    description:
-      'Guia completo do Claude Cowork (Projects). 3 trilhas, 18 módulos, ~12h. Custom instructions, knowledge files, artifacts, modelos, integrações MCP, skills e métricas.',
-    icon: '🚗',
-    tags: ['Claude', 'Cowork', 'Projects', 'Knowledge', 'MCP', 'IA'],
-    url: 'https://inematds.github.io/cccoworkfull/',
-  },
-  {
-    id: 106,
-    title: 'Ensinando Claude Cowork - Playbook para Treinadores',
-    description:
-      'Playbook para quem ensina Claude Cowork. 5 trilhas, 30 módulos, ~13h. Enquadramento, 3 produtos, pré-produção de demos, tour da interface, fechamento e continuidade.',
-    icon: '🎤',
-    tags: ['Claude Code', 'Cowork', 'Treinamento', 'Workshop', 'Consultoria', 'IA'],
-    url: 'https://inematds.github.io/cccoworkexec/',
-  },
-  {
-    id: 105,
-    title: 'Claude Cowork - Equipe de Marketing de US$ 10.000/mês',
-    description:
-      'Equipe de marketing autônoma com Claude Code. 3 trilhas, 20 módulos, 120+ tópicos, ~14h. 7 skills de marketing, conectores MCP, tarefas agendadas, sem código.',
-    icon: '💸',
-    tags: ['Claude Code', 'Marketing', 'Skills', 'MCP', 'Automação', 'IA'],
-    url: 'https://inematds.github.io/cccowork/',
-  },
-  {
-    id: 104,
-    title: 'Hermes + NotebookLM - O Sistema de Agente AI Definitivo',
-    description:
-      'Integra Hermes com NotebookLM via Telegram. 3 trilhas, 15 módulos, 108+ tópicos, ~12h. RAG grátis, podcasts, infográficos, n8n, Triad multi-modelo. $0 por consulta.',
-    icon: '📱',
-    tags: ['Hermes', 'NotebookLM', 'Telegram', 'RAG', 'Agentes', 'IA'],
-    url: 'https://inematds.github.io/hnotebooklm',
-  },
-  {
-    id: 103,
-    title: 'New Agentic OS - Do Executivo ao Jarvis Multi-Cliente',
-    description:
-      'Disciplina de engenharia agêntica completa. 4 trilhas (Executivo, Builder, Multi-usuário, iAmasters OS), 24 módulos, ~25h. Vocabulário, ROI, arquitetura multi-usuário, caso real.',
-    icon: '🏛️',
-    tags: ['Agentes', 'Agentic OS', 'Multi-Cliente', 'Arquitetura', 'IA', 'Jarvis'],
-    url: 'https://inematds.github.io/newagenticos/',
-  },
-  {
-    id: 102,
-    title: 'CCXCX - Claude e Codex Tool-Agnostic AI Coding',
-    description:
-      'Domina Claude Code e Codex como ferramentas complementares. 3 trilhas, 11 módulos. AGENTS.md vs CLAUDE.md, handoff entre agentes, subagentes em paralelo, zero lock-in.',
-    icon: '⚡',
-    tags: ['Claude Code', 'Codex', 'Agentes', 'Tool-Agnostic', 'AGENTS.md', 'IA'],
-    url: 'https://inematds.github.io/ccxcx',
-  },
-  {
-    id: 101,
-    title: 'iAmasters OS - Sistema Operativo Agêntico',
-    description:
-      'Sistema operativo agêntico que converte o Claude Code numa máquina de operação profissional. 3 trilhas, 9 módulos, 54 tópicos. Arquitetura agêntica, brand context, operação multi-cliente.',
-    icon: '🦎',
-    tags: ['IA', 'Agentes', 'Claude Code', 'Operação', 'Multi-Cliente', 'Skills'],
-    url: 'https://inematds.github.io/curso-iamasters-os/',
-  },
-  {
-    id: 100,
-    title: 'CAIO - Chief AI Officer 2030',
-    description:
-      'Profissional de IA 2030. De analista a Chief AI Officer. 6 trilhas, 36 módulos, 216 tópicos. Playbooks por função, plano de 12 semanas.',
-    icon: '💼',
-    tags: ['Negócios', 'Carreira', 'Chief AI Officer', 'Liderança', 'IA', 'Estratégia'],
-    url: 'https://inematds.github.io/caio/',
-  },
-  {
-    id: 99,
-    title: 'Prompt Director - Imagens e Cinema com IA',
-    description:
-      'Direção de arte com IA. Midjourney, Sora 2, Veo 3, Runway Gen-4, Flux, Seedance, Kling. 4 trilhas, 19 módulos, 114 tópicos, +80 prompts prontos.',
-    icon: '🎬',
-    tags: ['Prompt', 'Cinema', 'Imagens', 'Vídeo', 'Midjourney', 'Sora', 'IA'],
-    url: 'https://inematds.github.io/promptfilmes/',
-  },
-  {
-    id: 98,
-    title: 'TRIAD - Automação de IA Multi-Modelo com Hermes e DeepSeek',
-    description:
-      'Sistema multi-modelo 24/7: Claude Opus (condutor), DeepSeek V4 (executor), GPT-5.5 (crítico). 4 trilhas, OpenRouter, Pantheon para times.',
-    icon: '🎭',
-    tags: ['Agentes', 'Multi-Modelo', 'Hermes', 'OpenRouter', 'Automação', 'IA'],
-    url: 'https://inematds.github.io/triad',
-  },
-  {
-    id: 97,
-    title: 'Engenharia de Dados com IA',
-    description:
-      'A base dos sistemas de IA e agentes. 3 trilhas: Fundamentos, Dicas Técnicas e Visão Avançada. DuckDB, Text-to-SQL, pipelines, auditoria de dados. 16 módulos, ~9h30.',
-    icon: '🗄️',
-    tags: ['Dados', 'Engenharia', 'DuckDB', 'Pipeline', 'SQL', 'IA', 'Agentes'],
-    url: 'https://inematds.github.io/engdadosai',
-  },
-  {
-    id: 96,
-    title: 'Skills Premium - Do Iniciante ao Expert',
-    description:
-      'Domine skills no Claude Code. 3 trilhas: Fundamentos, Dicas Técnicas e No Expert. 20 módulos, sub-agentes, prompts canhão, skills auto-iterativas.',
-    icon: '⚡',
-    tags: ['Skills', 'Claude Code', 'Agentes', 'Sub-agentes', 'IA', 'Expert'],
-    url: 'https://inematds.github.io/skills-premium/',
-  },
-  {
-    id: 95,
-    title: 'Printing Press - CLI para Agentes de IA',
-    description:
-      'Por que CLI vence MCP e API para agentes. 35x menos tokens, 100% confiabilidade. Conceitos, instalação, criar sua CLI, BrasilAPI, n8n + Supabase. 7 módulos, ~2h.',
-    icon: '🖨️',
-    tags: ['CLI', 'Agentes', 'MCP', 'Printing Press', 'n8n', 'Supabase'],
-    url: 'https://inematds.github.io/pp-cli/',
-  },
-  {
-    id: 94,
-    title: 'TimesMarketing 3 - Automação de Conteúdo com IA',
-    description:
-      'Sistema de automação de marketing com agentes IA via Telegram. Pipeline: pesquisa, narrativa, imagens, vídeos e publicação. Docker + Redis + Remotion.',
-    icon: '📈',
-    tags: ['Marketing', 'Automação', 'Agentes', 'Telegram', 'Vídeo', 'IA', 'Docker'],
-    url: 'https://github.com/inematds/timesmkt3',
+    tags: ['LLM', 'Obsidian', 'Knowledge Management', 'RAG', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/2cerebro/',
   },
   {
     id: 93,
@@ -394,58 +34,13 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/5niveiscc/',
   },
   {
-    id: 92,
-    title: 'CAIP - Certified AI Professional',
+    id: 68,
+    title: '6 Chapeus + Anti-Ancora',
     description:
-      'Certificação profissional em IA aplicada. 6 trilhas, 6 selos, ~58h. Do modo execução ao modo comando com IA.',
-    icon: '🎓',
-    tags: ['Certificação', 'IA', 'CAIP', 'Profissional', 'Agentes', 'Automação'],
-    url: 'https://inematds.github.io/prof2031CAIP',
-  },
-  {
-    id: 91,
-    title: 'Agentic OS - O Sistema Operacional do Trabalho com IA',
-    description:
-      'Claude Code, Codex e agentes como sistema operacional. 6 trilhas: Fundamentos, Identidade, Conhecimento, Trabalhadores, Automação e Deploy. 36 módulos, 216+ tópicos, ~24h.',
-    icon: '⚙️',
-    tags: ['Agentic OS', 'Claude Code', 'MCP', 'A2A', 'Hooks', 'Skills', 'Orquestração'],
-    url: 'https://inematds.github.io/agenticos/',
-  },
-  {
-    id: 90,
-    title: 'Agente Hermes - Assistente IA Self-Hosted',
-    description:
-      'Suba um agente IA na sua própria infra com Docker, Telegram e GitHub. 6 trilhas: Fundamentos, Setup, 5 Pilares, Segurança, Hermes vs Mercado e Escala Multi-Agente.',
-    icon: '🏛️',
-    tags: ['Agente IA', 'Self-Hosted', 'Docker', 'Telegram', 'Open Source', 'Hermes'],
-    url: 'https://inematds.github.io/agentehermes',
-  },
-  {
-    id: 89,
-    title: 'Prof2030 - O Profissional do Futuro',
-    description:
-      'O Tripé do Profissional do Futuro: comunicar com a máquina, empreender pela automação e liderar com humanidade. 3 trilhas, 18 módulos, 108 tópicos, ~13h.',
-    icon: '🧬',
-    tags: ['Neurociência', 'Futuro', 'IA', 'Automação', 'Liderança', 'Empreendedorismo'],
-    url: 'https://inematds.github.io/prof2030/',
-  },
-  {
-    id: 45,
-    title: 'Imersao Vibe Coding',
-    description:
-      'Do Zero ao SaaS com IA em 3 Dias. Construa uma plataforma de assistentes com agentes, skills, MCP, multibots, billing e deploy. 6 turnos intensivos, 36 topicos.',
-    icon: '🚀',
-    tags: ['Vibe Coding', 'SaaS', 'Agentes', 'IA', 'MCP', 'Deploy'],
-    url: 'https://inematds.github.io/vb-imersao/',
-  },
-  {
-    id: 46,
-    title: '6 Pilares do Claude Code - Completa',
-    description:
-      '6 Pilares do Claude Code - Edicao Completa 2026. Domine o Claude Code do zero ao avancado com 6 trilhas, 49 modulos, 294 topicos e 49 exercicios praticos.',
-    icon: '🧠',
-    tags: ['Claude Code', 'CLI', 'IA', 'Produtividade', 'Skills', 'MCP'],
-    url: 'https://inematds.github.io/6pilarccfull/',
+      'Curso completo do metodo dos 6 Chapeus de Edward de Bono com fase anti-ancora para quebrar vieses cognitivos. 3 trilhas (Metodo, Pratica, Construcao), 18 modulos, 108 topicos em ~9 horas. Pensamento estruturado em 8 etapas: fatos, beneficios, riscos, alternativas e intuicao.',
+    icon: '🎩',
+    tags: ['Pensamento', 'Decisao', '6 Chapeus', 'De Bono', 'Metodologia', 'Produtividade'],
+    url: 'https://inematds.github.io/6chapeus/',
   },
   {
     id: 43,
@@ -457,13 +52,49 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/6pilarccb/',
   },
   {
-    id: 44,
-    title: 'Engenharia Agentic - Workflow',
+    id: 46,
+    title: '6 Pilares do Claude Code - Completa',
     description:
-      'Engenharia Agentic prática: especifique workflows, desenhe tools, rode evals, depure traces e opere sistemas agentic em ambiente real. 3 trilhas, 18 módulos, 100+ aulas e labs.',
-    icon: '🔄',
-    tags: ['Agentic', 'Workflows', 'Tools', 'Evals', 'IA', 'Engenharia'],
-    url: 'https://inematds.github.io/agentic-workflow/',
+      '6 Pilares do Claude Code - Edicao Completa 2026. Domine o Claude Code do zero ao avancado com 6 trilhas, 49 modulos, 294 topicos e 49 exercicios praticos.',
+    icon: '🧠',
+    tags: ['Claude Code', 'CLI', 'IA', 'Produtividade', 'Skills', 'MCP'],
+    url: 'https://inematds.github.io/6pilarccfull/',
+  },
+  {
+    id: 57,
+    title: '8020 - Vendas, Gestão e Estratégia Comercial',
+    description:
+      'Construa um sistema comercial integrado. 8 trilhas cobrindo diagnóstico de equipes, treinamento de vendedores, scripts práticos, níveis de consciência do consumidor, estratégias B2B/B2C e IA aplicada a vendas.',
+    icon: '💰',
+    tags: ['Vendas', 'Gestão Comercial', 'Estratégia', 'B2B', 'B2C', 'IA'],
+    url: 'https://inematds.github.io/8020',
+  },
+  {
+    id: 90,
+    title: 'Agente Hermes - Assistente IA Self-Hosted',
+    description:
+      'Suba um agente IA na sua própria infra com Docker, Telegram e GitHub. 6 trilhas: Fundamentos, Setup, 5 Pilares, Segurança, Hermes vs Mercado e Escala Multi-Agente.',
+    icon: '🏛️',
+    tags: ['Agente IA', 'Self-Hosted', 'Docker', 'Telegram', 'Open Source', 'Hermes'],
+    url: 'https://inematds.github.io/agentehermes',
+  },
+  {
+    id: 84,
+    title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
+    description:
+      'Construa um agente de IA pessoal de ponta a ponta em TypeScript. Vive no Telegram, opera 24/7 com autonomia, memória multi-camada, function calling, voz, skills auto-geradas e MCP. 3 trilhas (Fundamentos, Vida do Agente, Produção), 9 módulos, 54 tópicos em ~6 horas. Sem frameworks fechados.',
+    icon: '🤖',
+    tags: ['Agente IA', 'Telegram', 'TypeScript', 'MCP', 'Memória', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/agentejax/',
+  },
+  {
+    id: 121,
+    title: 'Agentic Básico',
+    description:
+      'Aprenda agentes de IA em 2 caminhos: Visual Quick (15 min) e Curso Completo (3h, 9 módulos). 5 pilares agênticos + Multi-Agent Arena no browser. Gratuito.',
+    icon: '🤖',
+    tags: ['Agentes', 'IA', 'Básico', 'Multi-Agent', 'Arena', 'Gratuito'],
+    url: 'https://inematds.github.io/agenticbasico/',
   },
   {
     id: 42,
@@ -475,6 +106,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agentic/',
   },
   {
+    id: 91,
+    title: 'Agentic OS - O Sistema Operacional do Trabalho com IA',
+    description:
+      'Claude Code, Codex e agentes como sistema operacional. 6 trilhas: Fundamentos, Identidade, Conhecimento, Trabalhadores, Automação e Deploy. 36 módulos, 216+ tópicos, ~24h.',
+    icon: '⚙️',
+    tags: ['Agentic OS', 'Claude Code', 'MCP', 'A2A', 'Hooks', 'Skills', 'Orquestração'],
+    url: 'https://inematds.github.io/agenticos/',
+  },
+  {
+    id: 114,
+    title: 'AIOS — AI Agent Operating System',
+    description:
+      'Curso completo sobre AIOS (Rutgers AGI Research). Kernel, SDK Cerebrum, scheduler, memória, ferramentas, computer-use e MCP. 2 módulos, 12 tópicos, ~1.5h.',
+    icon: '⚙️',
+    tags: ['AIOS', 'Agente', 'Kernel', 'SDK', 'MCP', 'IA'],
+    url: 'https://inematds.github.io/aiosagi/',
+  },
+  {
+    id: 133,
+    title: 'AIS-OS — Seu AI Operating System no Claude Code',
+    description:
+      'Transforme o Claude Code num AI Operating System pessoal: conhece seu negócio, alcança suas ferramentas, sabe fazer o trabalho e roda sem ser pedido. Baseado no kit AIS-OS (MIT) de Nate Herk — frameworks 3 Ms (Mindset/Method/Machine) e 4 Cs (Context/Connections/Capabilities/Cadence) + as skills /onboard, /audit e /level-up. 3 trilhas, 11 módulos, ~70 tópicos, ~7h, com diagramas SVG.',
+    icon: '⚙️',
+    tags: ['AIOS', 'Claude Code', '3 Ms', '4 Cs', 'Skills', 'Automação'],
+    url: 'https://inematds.github.io/ais-os/',
+  },
+  {
     id: 1,
     title: 'AIWCF - Vibe Coding',
     description:
@@ -484,15 +142,6 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/AIWCF',
   },
   {
-    id: 2,
-    title: 'ATIA - Oportunidades Digitais com IA',
-    description:
-      'Oportunidades Digitais com IA - Explore o mundo da Inteligência Artificial e suas aplicações práticas.',
-    icon: '🤖',
-    tags: ['IA', 'Oportunidades', 'Digital'],
-    url: 'https://inematds.github.io/ATIA/',
-  },
-  {
     id: 52,
     title: 'Arquitetura 2030 - Arquitetura de Software com IA',
     description:
@@ -500,6 +149,15 @@ export const platformsData: Course[] = [
     icon: '🏗️',
     tags: ['Arquitetura', 'Software', 'IA', 'DevOps', 'Escalabilidade', 'Design Patterns'],
     url: 'https://inematds.github.io/arqdev2030',
+  },
+  {
+    id: 2,
+    title: 'ATIA - Oportunidades Digitais com IA',
+    description:
+      'Oportunidades Digitais com IA - Explore o mundo da Inteligência Artificial e suas aplicações práticas.',
+    icon: '🤖',
+    tags: ['IA', 'Oportunidades', 'Digital'],
+    url: 'https://inematds.github.io/ATIA/',
   },
   {
     id: 3,
@@ -520,6 +178,24 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/BMAD-Academy/',
   },
   {
+    id: 100,
+    title: 'CAIO - Chief AI Officer 2030',
+    description:
+      'Profissional de IA 2030. De analista a Chief AI Officer. 6 trilhas, 36 módulos, 216 tópicos. Playbooks por função, plano de 12 semanas.',
+    icon: '💼',
+    tags: ['Negócios', 'Carreira', 'Chief AI Officer', 'Liderança', 'IA', 'Estratégia'],
+    url: 'https://inematds.github.io/caio/',
+  },
+  {
+    id: 92,
+    title: 'CAIP - Certified AI Professional',
+    description:
+      'Certificação profissional em IA aplicada. 6 trilhas, 6 selos, ~58h. Do modo execução ao modo comando com IA.',
+    icon: '🎓',
+    tags: ['Certificação', 'IA', 'CAIP', 'Profissional', 'Agentes', 'Automação'],
+    url: 'https://inematds.github.io/prof2031CAIP',
+  },
+  {
     id: 53,
     title: 'CCA-Q1 - Claude Certified Architect Foundations',
     description:
@@ -538,13 +214,13 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cca-q2',
   },
   {
-    id: 55,
-    title: 'CLI-x - O Terminal como Interface dos Agentes',
+    id: 72,
+    title: 'CCFast32 - 32 Hacks do Claude Code',
     description:
-      'O terminal como interface padrão dos agentes de IA em 2026. 6 trilhas, 30 módulos cobrindo fundamentos CLI, arquitetura MCP, CLI-Anything, ecossistema de agentes e projetos práticos. ~15 horas.',
-    icon: '💻',
-    tags: ['CLI', 'Terminal', 'MCP', 'Agentes', 'Claude Code', 'Gemini CLI'],
-    url: 'https://inematds.github.io/CLI-x',
+      'Do Iniciante ao Power User: 32 hacks práticos em 3 trilhas (Iniciante, Intermediário, Avançado), 11 módulos. Cobre /init, CLAUDE.md, tokens, plan mode, subagentes paralelos, slash commands, hooks, worktrees, ultrathink, multi-agente e CI/CD.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Hacks', 'Power User', 'Multi-agente', 'Worktrees', 'Hooks', 'IA'],
+    url: 'https://inematds.github.io/ccfast32/',
   },
   {
     id: 37,
@@ -554,6 +230,123 @@ export const platformsData: Course[] = [
     icon: '🖥️',
     tags: ['Claude Code', 'CLI', 'Anthropic', 'IA'],
     url: 'https://inematds.github.io/ccguide2026',
+  },
+  {
+    id: 70,
+    title: 'CCMasterMemory - Memory Injection via Hooks',
+    description:
+      'Resolva as limitacoes de memoria do Claude Code com hooks deterministicos. 6 trilhas, 36 modulos, ~24 horas + 6 labs praticos. Cobre hierarquia de 7 niveis de memoria, anatomia de 18 hooks, arquitetura de backend (Markdown, SQLite, vector DB) e memoria multi-agente.',
+    icon: '🧠',
+    tags: ['Claude Code', 'Memory', 'Hooks', 'Anthropic', 'IA', 'SQLite'],
+    url: 'https://inematds.github.io/ccmastermemory/',
+  },
+  {
+    id: 75,
+    title: 'CCOpen - Claude Code de Graça ou por Quase Nada',
+    description:
+      'Use Claude Code com Ollama (local, gratuito) ou OpenRouter (cloud, quase nada) trocando o motor sem mudar a interface. 5 trilhas, 19 módulos: fundamentos, instalação (Linux/macOS/Windows WSL), Ollama, OpenRouter e prática real.',
+    icon: '🆓',
+    tags: ['Claude Code', 'Ollama', 'OpenRouter', 'Gratuito', 'Local LLM', 'vLLM', 'IA'],
+    url: 'https://inematds.github.io/ccopen/',
+  },
+  {
+    id: 69,
+    title: 'CCTop - Mestre em Contexto e Tokens',
+    description:
+      'Domine o gerenciamento de contexto e tokens no Claude Code. 6 trilhas, 18 modulos, ~108 topicos em ~12 horas. Cobre mecanica de tokens, prompt caching, context rot, handoff inteligente, delegacao sub-agente e orquestracao multi-modelo.',
+    icon: '📊',
+    tags: ['Claude Code', 'Tokens', 'Contexto', 'Anthropic', 'Otimizacao', 'IA'],
+    url: 'https://inematds.github.io/cctop/',
+  },
+  {
+    id: 102,
+    title: 'CCXCX - Claude e Codex Tool-Agnostic AI Coding',
+    description:
+      'Domina Claude Code e Codex como ferramentas complementares. 3 trilhas, 11 módulos. AGENTS.md vs CLAUDE.md, handoff entre agentes, subagentes em paralelo, zero lock-in.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Codex', 'Agentes', 'Tool-Agnostic', 'AGENTS.md', 'IA'],
+    url: 'https://inematds.github.io/ccxcx',
+  },
+  {
+    id: 131,
+    title: 'Claude Code — Do Zero ao Projeto',
+    description:
+      'Curso completo de Claude Code: dos fundamentos à instalação, criando skills e automações, até desenvolver e publicar projetos reais de longo prazo. 6 trilhas, 24 módulos, 144 tópicos, ~18h. Com dois estudos de caso de produção: a skill ads-skill (Arcads) e o projeto ClaudeOS.',
+    icon: '🤖',
+    tags: ['Claude Code', 'Skills', 'Automação', 'Deploy', 'Iniciante', 'IA'],
+    url: 'https://inematds.github.io/jccode23/',
+  },
+  {
+    id: 59,
+    title: 'Claude Code Deep Dive',
+    description:
+      'Mergulho profundo no codigo-fonte do Claude Code. Analise de 1.902 arquivos cobrindo arquitetura core, sistema de tools, inteligencia do agente, infra, conectividade e features nao lancadas. 8 trilhas, 50 aulas, ~25 horas. Nivel avancado.',
+    icon: '🔍',
+    tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'Source Code', 'IA', 'Tools'],
+    url: 'https://inematds.github.io/claudecode-manual/',
+  },
+  {
+    id: 105,
+    title: 'Claude Cowork - Equipe de Marketing de US$ 10.000/mês',
+    description:
+      'Equipe de marketing autônoma com Claude Code. 3 trilhas, 20 módulos, 120+ tópicos, ~14h. 7 skills de marketing, conectores MCP, tarefas agendadas, sem código.',
+    icon: '💸',
+    tags: ['Claude Code', 'Marketing', 'Skills', 'MCP', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/cccowork/',
+  },
+  {
+    id: 107,
+    title: 'Claude Cowork - Guia Completo',
+    description:
+      'Guia completo do Claude Cowork (Projects). 3 trilhas, 18 módulos, ~12h. Custom instructions, knowledge files, artifacts, modelos, integrações MCP, skills e métricas.',
+    icon: '🚗',
+    tags: ['Claude', 'Cowork', 'Projects', 'Knowledge', 'MCP', 'IA'],
+    url: 'https://inematds.github.io/cccoworkfull/',
+  },
+  {
+    id: 66,
+    title: 'Claude Design - Zero ao Expert',
+    description:
+      'Curso completo de Claude Design, a ferramenta de design da Anthropic. 5 trilhas, ~35 modulos, 200+ topicos. Cobre fundamentos, design systems, context stacking, canvas iteration, prompts prontos e automacao. Substitui Figma, Gamma e Canva numa interface conversacional.',
+    icon: '🎨',
+    tags: ['Claude Design', 'Anthropic', 'Design', 'No-Code', 'UI/UX', 'Canva'],
+    url: 'https://inematds.github.io/claudedesign/',
+  },
+  {
+    id: 55,
+    title: 'CLI-x - O Terminal como Interface dos Agentes',
+    description:
+      'O terminal como interface padrão dos agentes de IA em 2026. 6 trilhas, 30 módulos cobrindo fundamentos CLI, arquitetura MCP, CLI-Anything, ecossistema de agentes e projetos práticos. ~15 horas.',
+    icon: '💻',
+    tags: ['CLI', 'Terminal', 'MCP', 'Agentes', 'Claude Code', 'Gemini CLI'],
+    url: 'https://inematds.github.io/CLI-x',
+  },
+  {
+    id: 125,
+    title: 'Consultor de IA — Do Rótulo ao Resultado',
+    description:
+      'Formação prática para atuar como consultor de IA: mapear a restrição real, auditar a prontidão e montar planos de execução. IA é a caixa de ferramentas, não o cargo — pirâmide determinístico→IA→agentes, comece pela base. 5 trilhas, 20 módulos, 120 tópicos. Ancorado em Anthropic, McKinsey, NIST AI RMF, MITRE e Gartner.',
+    icon: '🧭',
+    tags: ['Consultoria', 'IA', 'Mapeamento', 'Auditoria', 'NIST', 'Roadmap'],
+    url: 'https://inematds.github.io/consultoria2k/',
+  },
+  {
+    id: 132,
+    title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill',
+    description:
+      'Curso data-driven sobre Agent Skills: parte de uma análise real de 39.366 skills coletadas do skills.sh (5.075 repos, 53,9M instalações). Você entende o ecossistema e a lei de potência, aprende a reconhecer skills boas, disseca as melhores por grupo com exemplos reais, e aprende a criar a sua. 5 trilhas, 25 módulos — cada trilha fecha com As Melhores, Como Criar e Dicas Avançadas. Inclui o dataset completo e 25 SKILL.md reais.',
+    icon: '🛠️',
+    tags: ['Skills', 'Agent Skills', 'skills.sh', 'Criar', 'Catálogo', 'IA'],
+    url: 'https://inematds.github.io/skills-craft/',
+  },
+  {
+    id: 83,
+    title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',
+    description:
+      'Alternativa local-first e BYOK ao Claude Design. 3 trilhas (Fundamentos, Exemplos, Avançado), 18 módulos, 100+ tópicos em ~30 horas. Conduzido por 31 skills, 72 design systems e CLI de agente. Cobre prompt stack, pitch decks, landing pages, dashboards, critique loops, ACP e daemon/sidecar.',
+    icon: '🎨',
+    tags: ['Open Design', 'Design', 'Skills', 'BYOK', 'Claude Code', 'UI/UX', 'IA'],
+    url: 'https://inematds.github.io/curso-od/',
   },
   {
     id: 5,
@@ -574,6 +367,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/DBA-FO/',
   },
   {
+    id: 82,
+    title: 'DeepClaudeX - Multi-Modelo 70/20/10',
+    description:
+      'Orquestre 3 modelos de IA (GPT-5.5, Claude Opus 4.7, DeepSeek V4) com eficiência máxima. 3 trilhas (Conceito, Configuração, Projetos), 18 módulos, 108 tópicos em ~10 horas. Reduza custos mantendo qualidade com distribuição inteligente: 70% DeepSeek, 20% GPT, 10% Claude.',
+    icon: '🔀',
+    tags: ['Multi-modelo', 'Orquestração', 'Claude Code', 'DeepSeek', 'GPT', 'Custos', 'IA'],
+    url: 'https://inematds.github.io/deepclaudex/',
+  },
+  {
+    id: 64,
+    title: 'DeerFlow 2.0 - Framework de Agentes ByteDance',
+    description:
+      'Curso completo do framework open-source de agentes da ByteDance. 4 trilhas, 21 modulos com labs praticos. Cobre fundamentos, arquitetura LangGraph, extensao com skills e MCP, plataforma avancada e comparativo com Claude Code.',
+    icon: '🦌',
+    tags: ['DeerFlow', 'ByteDance', 'Agentes', 'LangGraph', 'MCP', 'Python'],
+    url: 'https://inematds.github.io/deerflow/',
+  },
+  {
+    id: 65,
+    title: 'Design + Video com IA (Hyperframes)',
+    description:
+      'Produza materiais visuais profissionais de ponta a ponta com Claude Design e Hyperframes. 3 trilhas, 9 modulos, 54 topicos em ~22 horas. Cobre design, brand systems, motion graphics, pitch decks, videos verticais e promocionais.',
+    icon: '🎨',
+    tags: ['Design', 'Video', 'IA', 'Hyperframes', 'Claude Design', 'Motion Graphics'],
+    url: 'https://inematds.github.io/cchyperframes/',
+  },
+  {
     id: 51,
     title: 'DEV2K6 - Engenharia de Software com IA Avançada',
     description:
@@ -583,6 +403,24 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/dev2k6/',
   },
   {
+    id: 76,
+    title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
+    description:
+      'Configure um assistente pessoal de IA rodando localmente com Docker, 200+ modelos via OpenRouter, Telegram, WhatsApp, Discord e Slack. 6 trilhas, 24 módulos, 144 tópicos, ~12 horas. Cobre instalação, canais, workspace, uso avançado e segurança.',
+    icon: '🦞',
+    tags: ['Docker', 'OpenClaw', 'OpenRouter', 'Telegram', 'WhatsApp', 'Self-hosted', 'IA'],
+    url: 'https://inematds.github.io/docker-openclaw/',
+  },
+  {
+    id: 122,
+    title: 'Dominando o Opus 4.8',
+    description:
+      'Raciocínio híbrido, 1M de contexto, controle de esforço e codificação de longo horizonte. 3 trilhas, 21 módulos, 24 exercícios, 30+ prompts. Baseado no relatório oficial com 25 claims validados.',
+    icon: '🧠',
+    tags: ['Opus', 'Claude', '4.8', 'Effort', 'Workflows', 'Coding'],
+    url: 'https://inematds.github.io/opus48/curso/',
+  },
+  {
     id: 7,
     title: 'EAI - Games Educativos',
     description:
@@ -590,6 +428,33 @@ export const platformsData: Course[] = [
     icon: '🎮',
     tags: ['Games', 'Educação', 'Gamificação'],
     url: 'https://inematds.github.io/EAI/',
+  },
+  {
+    id: 44,
+    title: 'Engenharia Agentic - Workflow',
+    description:
+      'Engenharia Agentic prática: especifique workflows, desenhe tools, rode evals, depure traces e opere sistemas agentic em ambiente real. 3 trilhas, 18 módulos, 100+ aulas e labs.',
+    icon: '🔄',
+    tags: ['Agentic', 'Workflows', 'Tools', 'Evals', 'IA', 'Engenharia'],
+    url: 'https://inematds.github.io/agentic-workflow/',
+  },
+  {
+    id: 97,
+    title: 'Engenharia de Dados com IA',
+    description:
+      'A base dos sistemas de IA e agentes. 3 trilhas: Fundamentos, Dicas Técnicas e Visão Avançada. DuckDB, Text-to-SQL, pipelines, auditoria de dados. 16 módulos, ~9h30.',
+    icon: '🗄️',
+    tags: ['Dados', 'Engenharia', 'DuckDB', 'Pipeline', 'SQL', 'IA', 'Agentes'],
+    url: 'https://inematds.github.io/engdadosai',
+  },
+  {
+    id: 106,
+    title: 'Ensinando Claude Cowork - Playbook para Treinadores',
+    description:
+      'Playbook para quem ensina Claude Cowork. 5 trilhas, 30 módulos, ~13h. Enquadramento, 3 produtos, pré-produção de demos, tour da interface, fechamento e continuidade.',
+    icon: '🎤',
+    tags: ['Claude Code', 'Cowork', 'Treinamento', 'Workshop', 'Consultoria', 'IA'],
+    url: 'https://inematds.github.io/cccoworkexec/',
   },
   {
     id: 47,
@@ -626,6 +491,15 @@ export const platformsData: Course[] = [
     icon: '🧠',
     tags: ['IA', 'Agentes', 'Engenharia'],
     url: 'https://inematds.github.io/FEA-IA/',
+  },
+  {
+    id: 87,
+    title: 'FEC - Formação de Engenharia de Contexto',
+    description:
+      'Engenharia de Contexto para quem leva LLM a produção. 6 trilhas, 14 módulos, 3 projetos cumulativos. Cobre janelas de contexto, message engineering, RAG, tools e agentes, memória e compressão, avaliação e deploy. Cada módulo com ilustrações e exercícios automatizados.',
+    icon: '🧩',
+    tags: ['Engenharia de Contexto', 'LLM', 'RAG', 'Agentes', 'Memória', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/FEC/',
   },
   {
     id: 11,
@@ -682,6 +556,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FIA2026/',
   },
   {
+    id: 134,
+    title: 'Formação em Automação Estratégica com IA',
+    description:
+      'De 10 horas para 10 segundos: identificar, desenhar e construir automações com IA que economizam tempo e têm valor comercial. O diferencial é saber o que construir, não só mexer em ferramentas. Ciclo completo Identificar→Mapear→Desenhar→Construir→Comercializar + prática. 6 trilhas, 19 módulos, exercícios, prompts e skills prontas. Baseado na tese "10 Hours to 10 Seconds".',
+    icon: '⚙️',
+    tags: ['Automação', 'IA', 'n8n', 'Make', 'ROI', 'Serviço'],
+    url: 'https://inematds.github.io/fae-ai/',
+  },
+  {
+    id: 128,
+    title: 'Formação em IA Incorporada (VLA) — A Escola da Robótica Inteligente',
+    description:
+      'Página de apresentação da formação profissional em Vision-Language-Action: por que agora (o "momento ChatGPT" da robótica), pesquisa de mercado real 2024-2026 (US$ 38 bi até 2035, +78 mi de empregos, gap de 530 mil profissionais no Brasil), como China, EUA, Europa e Japão qualificam talento, casos reais por setor e o currículo em 3 trilhas. Ligada ao curso aberto VLA.',
+    icon: '🎓',
+    tags: ['Formação', 'VLA', 'Carreira', 'Mercado', 'Robótica', 'IA Incorporada'],
+    url: 'https://inematds.github.io/vla-formacao/',
+  },
+  {
+    id: 61,
+    title: 'FPFilm - Crie Filmes com IA',
+    description:
+      'Criacao cinematografica com Freepik Spaces. Do roteiro ao export final usando workflows visuais baseados em nodes. 6 trilhas, 34 modulos, 200+ topicos. Cobre fundamentos de cinema, camera, producao e projeto completo.',
+    icon: '🎬',
+    tags: ['Freepik', 'Cinema', 'IA', 'Video', 'Filmes', 'Producao'],
+    url: 'https://inematds.github.io/fpfilm1/',
+  },
+  {
     id: 16,
     title: 'FTD - Formação Transformação Digital',
     description:
@@ -700,6 +601,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FTH/',
   },
   {
+    id: 19,
+    title: 'GIPM - Projetos com IA Governada',
+    description:
+      'Método de Projetos com IA Governada - Aprenda a construir projetos onde a IA é um componente controlado, não o decisor.',
+    icon: '🏛️',
+    tags: ['IA', 'Projetos', 'Governança', 'Arquitetura'],
+    url: 'https://inematds.github.io/GIPM/',
+  },
+  {
     id: 18,
     title: 'GitHub',
     description:
@@ -709,13 +619,40 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/github/',
   },
   {
-    id: 19,
-    title: 'GIPM - Projetos com IA Governada',
+    id: 56,
+    title: 'Hack do Algoritmo Meta 2026',
     description:
-      'Método de Projetos com IA Governada - Aprenda a construir projetos onde a IA é um componente controlado, não o decisor.',
-    icon: '🏛️',
-    tags: ['IA', 'Projetos', 'Governança', 'Arquitetura'],
-    url: 'https://inematds.github.io/GIPM/',
+      'Domine o algoritmo da Meta (Facebook e Instagram) em 2026. 4 trilhas, 20 módulos e 120+ tópicos cobrindo fundamentos do algoritmo, estratégia de conteúdo, produção de vídeos e escala de 0 a 10K+ seguidores. ~10 horas.',
+    icon: '📱',
+    tags: ['Meta', 'Instagram', 'Facebook', 'Marketing Digital', 'Reels', 'IA'],
+    url: 'https://inematds.github.io/hack7meta',
+  },
+  {
+    id: 104,
+    title: 'Hermes + NotebookLM - O Sistema de Agente AI Definitivo',
+    description:
+      'Integra Hermes com NotebookLM via Telegram. 3 trilhas, 15 módulos, 108+ tópicos, ~12h. RAG grátis, podcasts, infográficos, n8n, Triad multi-modelo. $0 por consulta.',
+    icon: '📱',
+    tags: ['Hermes', 'NotebookLM', 'Telegram', 'RAG', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/hnotebooklm',
+  },
+  {
+    id: 124,
+    title: 'Hermes 21C — Todos os Conceitos do Hermes',
+    description:
+      'Os 21 conceitos do agente Hermes explicados para pessoas comuns, do mais simples ao mais poderoso. Agente vs chatbot, um cérebro 22 bocas, memória, soul.md, MCPs, sub-agentes, heartbeat, operating system. 3 trilhas, 21 módulos, ~7h, com diagramas SVG.',
+    icon: '🪽',
+    tags: ['Hermes', 'Agente', 'MCP', 'Sub-agentes', 'Memória', 'IA'],
+    url: 'https://inematds.github.io/hermes21c/',
+  },
+  {
+    id: 113,
+    title: 'Hermes Agent — Curso Completo Avançado',
+    description:
+      'Agente IA open-source da Nous Research. Cria skills, memória persistente, 200+ modelos via OpenRouter. 6 trilhas, 12 módulos, ~11h.',
+    icon: '🤖',
+    tags: ['Hermes', 'Agente', 'Open-Source', 'Docker', 'OpenRouter', 'IA'],
+    url: 'https://inematds.github.io/hermesagent/',
   },
   {
     id: 20,
@@ -727,6 +664,78 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/HG1',
   },
   {
+    id: 129,
+    title: 'HyperFrames — Vídeos Explicativos com Claude Code',
+    description:
+      'Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final, com a própria Skill incluída para download.',
+    icon: '🎬',
+    tags: ['Claude Code', 'Skills', 'Vídeo', 'HyperFrames', 'IA'],
+    url: 'https://inematds.github.io/skill-video-explicativo/',
+  },
+  {
+    id: 101,
+    title: 'iAmasters OS - Sistema Operativo Agêntico',
+    description:
+      'Sistema operativo agêntico que converte o Claude Code numa máquina de operação profissional. 3 trilhas, 9 módulos, 54 tópicos. Arquitetura agêntica, brand context, operação multi-cliente.',
+    icon: '🦎',
+    tags: ['IA', 'Agentes', 'Claude Code', 'Operação', 'Multi-Cliente', 'Skills'],
+    url: 'https://inematds.github.io/curso-iamasters-os/',
+  },
+  {
+    id: 62,
+    title: 'IAMed - Medico IA-Native',
+    description:
+      'Qualificacao de medicos em IA. 9 trilhas, 54 modulos: entendendo IA, prompt clinico, pesquisa, consultorio, vibe code, segundo cerebro medico. Do fundamento a pratica. 100% gratuito.',
+    icon: '🩺',
+    tags: ['Medicina', 'IA', 'Saude', 'Pesquisa', 'Obsidian', 'Vibe Coding'],
+    url: 'https://inematds.github.io/IAMed/',
+  },
+  {
+    id: 78,
+    title: 'iClaudeX - Planejamento Inteligente com Claude + Codex',
+    description:
+      'Duas IAs discutem o seu plano para você não precisar fazer isso. Claude drafta, Codex critica de múltiplas perspectivas profissionais, iteram até validar — tudo no terminal. Plugin open source para Claude Code com arquitetura de loops iterativos.',
+    icon: '🤝',
+    tags: ['Claude Code', 'Codex', 'OpenAI', 'Planejamento', 'Plugin', 'Open Source', 'IA'],
+    url: 'https://inematds.github.io/iclaudex/',
+  },
+  {
+    id: 45,
+    title: 'Imersao Vibe Coding',
+    description:
+      'Do Zero ao SaaS com IA em 3 Dias. Construa uma plataforma de assistentes com agentes, skills, MCP, multibots, billing e deploy. 6 turnos intensivos, 36 topicos.',
+    icon: '🚀',
+    tags: ['Vibe Coding', 'SaaS', 'Agentes', 'IA', 'MCP', 'Deploy'],
+    url: 'https://inematds.github.io/vb-imersao/',
+  },
+  {
+    id: 71,
+    title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
+    description:
+      'Compare 9 frameworks de IA (OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw, Agent Zero), escolha os ingredientes certos para o seu assistente pessoal e entenda os 8 corredores de funcionalidades e 6 padrões de arquitetura.',
+    icon: '🧠',
+    tags: ['Frameworks', 'IA', 'Assistente', 'Comparativo', 'Arquitetura', 'Agentes'],
+    url: 'https://inematds.github.io/intelecto',
+  },
+  {
+    id: 74,
+    title: 'INTELECTO Curso - Do Zero ao Expert em IA',
+    description:
+      'Curso completo de construção de assistentes de IA pessoais: 6 trilhas (Fundamentos, Identidade e Canais, Segurança Zero-Trust, Memória e Integrações, Arquiteturas Avançadas, Projeto Final: Seu Jarvis), 18 módulos, ~21 horas.',
+    icon: '🤖',
+    tags: ['Assistente IA', 'Frameworks', 'Segurança', 'Memória', 'Arquitetura', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/intelecto-curso/',
+  },
+  {
+    id: 118,
+    title: 'Karpathy Guidelines — 4 Princípios para Código Limpo com LLM',
+    description:
+      'Baseado em Andrej Karpathy. Think Before Coding, Simplicity First, Surgical Changes, Goal-Oriented. 1 trilha, 4 módulos, ~2h.',
+    icon: '🧠',
+    tags: ['Karpathy', 'Claude Code', 'CLAUDE.md', 'Princípios', 'LLM', 'IA'],
+    url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
+  },
+  {
     id: 21,
     title: 'MAKE - Automações',
     description:
@@ -736,6 +745,42 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/MAKE/',
   },
   {
+    id: 79,
+    title: 'MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin',
+    description:
+      'Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.',
+    icon: '🔧',
+    tags: ['Claude Code', 'Hooks', 'Plugins', 'Skills', 'Engenharia', 'YAML', 'IA'],
+    url: 'https://inematds.github.io/makeclaudex/',
+  },
+  {
+    id: 110,
+    title: 'Mapa do Cliente — Formação DICA',
+    description:
+      'Consultor de IA para Pequenos Negócios. Método DICA (Diagnosticar, Implementar, Capacitar, Acompanhar). 6 trilhas, 28 módulos, ~15h.',
+    icon: '🗺️',
+    tags: ['Consultoria', 'DICA', 'Vendas', 'Pequenos Negócios', 'IA'],
+    url: 'https://inematds.github.io/mapacliente/',
+  },
+  {
+    id: 81,
+    title: 'Master Codex - A Fábrica de SaaS com Agentes de IA',
+    description:
+      'Evolua de curioso a operador de fábrica de software com agentes IA. 6 trilhas, 24 módulos, 144 tópicos em ~27 horas. Cobre protocolos de comunicação (AGENTS.md), UI/UX com IA, backend multi-tenant, WhatsApp, orquestração multi-agente paralela e metodologia de micro-SaaS semanal. Projeto-âncora: InboxAI.',
+    icon: '⚡',
+    tags: ['Claude Code', 'SaaS', 'Multi-agente', 'WhatsApp', 'Automação', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/mastercodex/',
+  },
+  {
+    id: 85,
+    title: 'Mentes Brilhantes - A Fórmula 1-20-79',
+    description:
+      '1% ideia, 20% produto, 79% venda. Curso gratuito de mentalidade empreendedora com case Cal AI ($100M+). 6 trilhas, 24 módulos, 144+ tópicos. Cobre validação de ideias, MVP, marketing, distribuição, vendas, retenção e escala. 100% gratuito.',
+    icon: '💡',
+    tags: ['Empreendedorismo', 'Vendas', 'Marketing', 'MVP', 'Mindset', 'Gratuito'],
+    url: 'https://inematds.github.io/mentesbrilhantes1/',
+  },
+  {
     id: 49,
     title: 'MiroFish - Ecossistema de Predição Multiagente',
     description:
@@ -743,6 +788,33 @@ export const platformsData: Course[] = [
     icon: '🐟',
     tags: ['IA', 'Multiagente', 'Simulação', 'Predição', 'GraphRAG'],
     url: 'https://inematds.github.io/mirofishcurso/',
+  },
+  {
+    id: 115,
+    title: 'MkBlogs — Publicação Multi-Plataforma',
+    description:
+      'Publicação em escala sem SaaS pago. Postiz self-hosted, redes sociais, blogs, deploy. 6 trilhas, 28 módulos, ~20h.',
+    icon: '📝',
+    tags: ['Publicação', 'Blog', 'Redes Sociais', 'Open-Source', 'Deploy', 'IA'],
+    url: 'https://inematds.github.io/mkblogs/',
+  },
+  {
+    id: 116,
+    title: 'mkbook — Seu livro em 30 dias com Claude Code',
+    description:
+      'Escreva, publique e lance um livro em 30 dias com Claude Code. 4 trilhas, 16 módulos, ~12h. EPUB, PDF, MOBI para Amazon KDP.',
+    icon: '📖',
+    tags: ['Livro', 'Claude Code', 'Publicação', 'KDP', 'EPUB', 'IA'],
+    url: 'https://inematds.github.io/mkbook/',
+  },
+  {
+    id: 86,
+    title: 'Multiagentes - Equipes de Agentes na Prática',
+    description:
+      'Projete, orquestre e opere squads de agentes IA que entregam software de produção. 5 trilhas, 20 módulos, 120 tópicos em ~16h + 4h de projeto final. Cobre Claude Code, OpenAI Codex, Gemini CLI, coordenação multi-agente, diagnóstico, custos e multi-runtime.',
+    icon: '🤖',
+    tags: ['Multi-agente', 'Claude Code', 'Codex', 'Gemini', 'Orquestração', 'Produção', 'IA'],
+    url: 'https://inematds.github.io/multiagentes/',
   },
   {
     id: 22,
@@ -772,6 +844,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/NanoBanana/',
   },
   {
+    id: 103,
+    title: 'New Agentic OS - Do Executivo ao Jarvis Multi-Cliente',
+    description:
+      'Disciplina de engenharia agêntica completa. 4 trilhas (Executivo, Builder, Multi-usuário, iAmasters OS), 24 módulos, ~25h. Vocabulário, ROI, arquitetura multi-usuário, caso real.',
+    icon: '🏛️',
+    tags: ['Agentes', 'Agentic OS', 'Multi-Cliente', 'Arquitetura', 'IA', 'Jarvis'],
+    url: 'https://inematds.github.io/newagenticos/',
+  },
+  {
     id: 40,
     title: 'NotebookLM - Do Zero ao Avançado',
     description:
@@ -779,6 +860,24 @@ export const platformsData: Course[] = [
     icon: '📓',
     tags: ['NotebookLM', 'Google AI', 'Documentos', 'IA', 'RAG'],
     url: 'https://inematds.github.io/notebooklm',
+  },
+  {
+    id: 119,
+    title: 'OpenHuman Mastery',
+    description:
+      'Assistente IA para comunidades. Arquitetura local, multi-canal, memória, skills, open-source. 6 trilhas, 18 módulos, ~14.5h. Rust, React, Tauri v2.',
+    icon: '🧬',
+    tags: ['OpenHuman', 'Assistente', 'Comunidade', 'Rust', 'Tauri', 'IA'],
+    url: 'https://inematds.github.io/openhuman/',
+  },
+  {
+    id: 67,
+    title: 'Opus 4.7 - Dominando o Claude Code',
+    description:
+      'Treinamento pratico para dominar o Opus 4.7 no Claude Code. 4 trilhas, 28 modulos, 180+ topicos em ~20 horas. Cobre transicao do 4.6, orquestracao agentica, fan-out paralelo, framework ICCA, auditoria e migracao para producao.',
+    icon: '🧬',
+    tags: ['Claude Code', 'Opus 4.7', 'Anthropic', 'Agentic', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/opus47/',
   },
   {
     id: 50,
@@ -808,6 +907,24 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/Playbook-IA/',
   },
   {
+    id: 111,
+    title: 'PolySkills — Claude Code & Codex lado a lado',
+    description:
+      'Da terminologia básica aos fluxos avançados com os dois agentes em paralelo. 6 trilhas, 10 módulos, ~7.5h. Skills cross-runtime, conversão zero-loss.',
+    icon: '🔀',
+    tags: ['Claude Code', 'Codex', 'PolySkill', 'Cross-Runtime', 'Skills', 'IA'],
+    url: 'https://inematds.github.io/polyskills',
+  },
+  {
+    id: 58,
+    title: 'Por Dentro do Claude Code',
+    description:
+      'A arquitetura revelada do agente de IA mais sofisticado ja construido. Baseado em 512k linhas de TypeScript. 3 trilhas (Fundamentos, Nucleo, Avancado), 12 modulos, 72 topicos em ~6 horas.',
+    icon: '🔬',
+    tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'TypeScript', 'IA', 'Agentes'],
+    url: 'https://inematds.github.io/claudecode-estrutura/',
+  },
+  {
     id: 27,
     title: 'Portal INEMA',
     description:
@@ -815,6 +932,51 @@ export const platformsData: Course[] = [
     icon: '🌐',
     tags: ['Portal', 'Projetos', 'Plataformas'],
     url: 'https://inematds.github.io/portal/',
+  },
+  {
+    id: 88,
+    title: 'Power Design - Os 20 Princípios',
+    description:
+      'Os 20 princípios de design fundamentais aplicados a slides e apresentações profissionais com Claude Code. 7 seções (Carga Cognitiva, Hierarquia Visual, Gestalt, Tipografia, Cor, Sistemas Espaciais, Alinhamento), 72+ brand systems, referências Tufte/Reynolds/Duarte. Slides que não parecem feitos por IA.',
+    icon: '🎨',
+    tags: ['Design', 'Slides', 'Claude Code', 'Tipografia', 'Gestalt', 'Apresentações', 'IA'],
+    url: 'https://inematds.github.io/power-design/',
+  },
+  {
+    id: 95,
+    title: 'Printing Press - CLI para Agentes de IA',
+    description:
+      'Por que CLI vence MCP e API para agentes. 35x menos tokens, 100% confiabilidade. Conceitos, instalação, criar sua CLI, BrasilAPI, n8n + Supabase. 7 módulos, ~2h.',
+    icon: '🖨️',
+    tags: ['CLI', 'Agentes', 'MCP', 'Printing Press', 'n8n', 'Supabase'],
+    url: 'https://inematds.github.io/pp-cli/',
+  },
+  {
+    id: 89,
+    title: 'Prof2030 - O Profissional do Futuro',
+    description:
+      'O Tripé do Profissional do Futuro: comunicar com a máquina, empreender pela automação e liderar com humanidade. 3 trilhas, 18 módulos, 108 tópicos, ~13h.',
+    icon: '🧬',
+    tags: ['Neurociência', 'Futuro', 'IA', 'Automação', 'Liderança', 'Empreendedorismo'],
+    url: 'https://inematds.github.io/prof2030/',
+  },
+  {
+    id: 112,
+    title: 'Profissional 2027 — Implementadores de IA para PMEs',
+    description:
+      'Formação de implementadores de IA para PMEs. Método DPIA (Diagnosticar, Processar, Instruir, Automatizar). 6 trilhas, ~100h em 10-12 semanas.',
+    icon: '🎯',
+    tags: ['Consultoria', 'PME', 'DPIA', 'Implementação', 'n8n', 'IA'],
+    url: 'https://inematds.github.io/profissional2027x',
+  },
+  {
+    id: 99,
+    title: 'Prompt Director - Imagens e Cinema com IA',
+    description:
+      'Direção de arte com IA. Midjourney, Sora 2, Veo 3, Runway Gen-4, Flux, Seedance, Kling. 4 trilhas, 19 módulos, 114 tópicos, +80 prompts prontos.',
+    icon: '🎬',
+    tags: ['Prompt', 'Cinema', 'Imagens', 'Vídeo', 'Midjourney', 'Sora', 'IA'],
+    url: 'https://inematds.github.io/promptfilmes/',
   },
   {
     id: 28,
@@ -834,6 +996,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/robot/',
   },
   {
+    id: 80,
+    title: 'Ruflo - Orquestração de Agentes Multi-IA',
+    description:
+      'Coordene enxames de agentes especializados com Claude Code, AgentDB+HNSW, federation zero-trust e auto-aprendizado SONA. 3 trilhas (Fundamentos, Uso Prático, Avançado), 21 módulos, 126 tópicos, ~45 horas. Deploy em produção com consenso distribuído e 33 plugins nativos.',
+    icon: '🤖',
+    tags: ['Claude Code', 'Multi-agente', 'Orquestração', 'Zero-trust', 'SONA', 'AgentDB', 'IA'],
+    url: 'https://inematds.github.io/ruflo/',
+  },
+  {
+    id: 63,
+    title: 'Seedance 2.0 Mastery - Video com IA',
+    description:
+      'Curso completo de geracao de video com Seedance 2.0 (ByteDance). 3 trilhas (Iniciante, Aplicado, Tecnico), ~85 aulas. Cobre prompts, cinema, storytelling, reverse engineering e pipeline de producao. Audio nativo, faces reais e image references.',
+    icon: '🎥',
+    tags: ['Seedance', 'Video', 'IA', 'ByteDance', 'Cinema', 'Prompts'],
+    url: 'https://inematds.github.io/seedance2/',
+  },
+  {
+    id: 123,
+    title: 'segROBOT — Requalificação Humana para Ambientes Robotizados',
+    description:
+      'Pesquisa profunda sobre integração humano-robô. ISO 10218:2025, cobots, AMRs, humanoides, digital twins, gestão de mudança. 3 trilhas, 18 módulos. 50+ fontes.',
+    icon: '🦾',
+    tags: ['Robótica', 'Requalificação', 'ISO', 'Cobots', 'Humanoides', 'HRC'],
+    url: 'https://inematds.github.io/segrobot/',
+  },
+  {
     id: 30,
     title: 'SHIA - Super Humanos Inteligência Ampliada',
     description:
@@ -841,6 +1030,15 @@ export const platformsData: Course[] = [
     icon: '🧬',
     tags: ['IA', 'Super Humanos', 'Inteligência'],
     url: 'https://inematds.github.io/SHIA/',
+  },
+  {
+    id: 130,
+    title: 'Skill Design — Arsenal de Skills pra Melhorar Páginas',
+    description:
+      'Curso-catálogo dos 16 skills do Claude Code para criar e melhorar páginas, agrupados em 4 trilhas (Construir, Identidade, Mídia, Apoio). Analisa frontend-design, impeccable, web-artifacts-builder, theme-factory, brand-guidelines, animation-designer, remotion, agent-browser (Playwright), website-intelligence e mais — cada um com o que faz, quando dispara, como melhora a página e prompts prontos.',
+    icon: '🎨',
+    tags: ['Claude Code', 'Skills', 'Design', 'Frontend', 'IA'],
+    url: 'https://inematds.github.io/skill-design/',
   },
   {
     id: 39,
@@ -852,6 +1050,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skills',
   },
   {
+    id: 117,
+    title: 'Skills For Real Engineers',
+    description:
+      'Skills do Matt Pocock para Claude Code. Anatomia de SKILL.md, triggers, workflow, exemplos práticos (handoffs, code review, debugging).',
+    icon: '🛠️',
+    tags: ['Skills', 'Claude Code', 'Matt Pocock', 'SKILL.md', 'Workflow', 'IA'],
+    url: 'https://inematds.github.io/mp-skill/curso-skills/',
+  },
+  {
+    id: 96,
+    title: 'Skills Premium - Do Iniciante ao Expert',
+    description:
+      'Domine skills no Claude Code. 3 trilhas: Fundamentos, Dicas Técnicas e No Expert. 20 módulos, sub-agentes, prompts canhão, skills auto-iterativas.',
+    icon: '⚡',
+    tags: ['Skills', 'Claude Code', 'Agentes', 'Sub-agentes', 'IA', 'Expert'],
+    url: 'https://inematds.github.io/skills-premium/',
+  },
+  {
+    id: 73,
+    title: 'Superpowers - Desenvolvimento com Agentes de IA',
+    description:
+      'Metodologia completa do brainstorming ao deploy com agentes: TDD, subagentes, debugging sistemático, worktrees, agentes paralelos e criação de skills. 1 trilha, 10 módulos, 42 tópicos, ~5 horas. Intermediate.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Agentes', 'TDD', 'Metodologia', 'Worktrees', 'Skills', 'IA'],
+    url: 'https://inematds.github.io/superpowers/',
+  },
+  {
     id: 31,
     title: 'SuperProf',
     description:
@@ -859,6 +1084,15 @@ export const platformsData: Course[] = [
     icon: '🎓',
     tags: ['Educação', 'Professores', 'Formação'],
     url: 'https://inematds.github.io/SuperProf/',
+  },
+  {
+    id: 77,
+    title: 'SuperSkills Karpathy - Transforme Skills em Funcionários Digitais',
+    description:
+      'Método Karpathy para criar skills que funcionam como funcionários digitais reais: contexto, memória, integração de dados e melhoria contínua. 3 trilhas, 9 módulos, 54 tópicos, ~5 horas. Cobre Memory OS, Signal Dashboard e Claude Code.',
+    icon: '🧑‍💻',
+    tags: ['Claude Code', 'Skills', 'Karpathy', 'Memory OS', 'Agentes', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/superskills-karpathy/',
   },
   {
     id: 32,
@@ -877,6 +1111,42 @@ export const platformsData: Course[] = [
     icon: '🛒',
     tags: ['TikTok', 'E-commerce', 'Vendas'],
     url: 'https://inematds.github.io/tiktokshop',
+  },
+  {
+    id: 94,
+    title: 'TimesMarketing 3 - Automação de Conteúdo com IA',
+    description:
+      'Sistema de automação de marketing com agentes IA via Telegram. Pipeline: pesquisa, narrativa, imagens, vídeos e publicação. Docker + Redis + Remotion.',
+    icon: '📈',
+    tags: ['Marketing', 'Automação', 'Agentes', 'Telegram', 'Vídeo', 'IA', 'Docker'],
+    url: 'https://github.com/inematds/timesmkt3',
+  },
+  {
+    id: 98,
+    title: 'TRIAD - Automação de IA Multi-Modelo com Hermes e DeepSeek',
+    description:
+      'Sistema multi-modelo 24/7: Claude Opus (condutor), DeepSeek V4 (executor), GPT-5.5 (crítico). 4 trilhas, OpenRouter, Pantheon para times.',
+    icon: '🎭',
+    tags: ['Agentes', 'Multi-Modelo', 'Hermes', 'OpenRouter', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/triad',
+  },
+  {
+    id: 120,
+    title: 'Understand Anything',
+    description:
+      'Análise de código com LLM + dashboards interativos. Knowledge graphs, plugins para Claude Code, Cursor e Copilot. 3 trilhas, ~6h.',
+    icon: '🔍',
+    tags: ['Análise', 'Código', 'LLM', 'Dashboard', 'Claude Code', 'IA'],
+    url: 'https://inematds.github.io/u-any/curso/',
+  },
+  {
+    id: 109,
+    title: 'Vendendo AIOS 2026',
+    description:
+      'Como vender Sistemas Operacionais de IA como serviço. 6 trilhas, 22 módulos, ~16.5h. Da primeira hora cobrada ao SaaS.',
+    icon: '💰',
+    tags: ['Vendas', 'AIOS', 'Consultoria', 'Negócios', 'SaaS', 'IA'],
+    url: 'https://inematds.github.io/vendasaios/',
   },
   {
     id: 41,
@@ -915,6 +1185,24 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/VisionPro',
   },
   {
+    id: 126,
+    title: 'VLA — Vision Language Action para Robótica',
+    description:
+      'Curso profundo sobre IA Incorporada: modelos VLA (RT-2, OpenVLA, π0, Qwen-VLA, GR00T N1), frameworks (LeRobot, ROS2, MuJoCo, Isaac Sim), treinamento, sim-to-real, mercado $7.2B. 3 trilhas, 18 módulos, 50+ fontes.',
+    icon: '🦾',
+    tags: ['VLA', 'Robótica', 'LeRobot', 'ROS2', 'Humanoides', 'Sim-to-Real'],
+    url: 'https://inematds.github.io/vla/',
+  },
+  {
+    id: 127,
+    title: 'VLA Mastery — Da Teoria aos Robôs que Agem',
+    description:
+      'Curso avançado de modelos Vision-Language-Action e IA Incorporada. Anatomia VLA, RT-1→π0, behavior cloning, diffusion policy e flow matching, tokenização FAST, LeRobot, MuJoCo/Isaac, ROS2, datasets (Open X-Embodiment, DROID, LIBERO), sim-to-real, humanoides (GR00T, Figure Helix, Optimus), arquiteturas híbridas e fronteira 2026-2030. 3 trilhas, 18 módulos, 108 tópicos, com diagramas SVG.',
+    icon: '🦾',
+    tags: ['VLA', 'Robótica', 'Diffusion Policy', 'LeRobot', 'Humanoides', 'Sim-to-Real'],
+    url: 'https://inematds.github.io/vla-mastery/',
+  },
+  {
     id: 36,
     title: 'WebP - Designer 2026',
     description:
@@ -924,301 +1212,13 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/webp',
   },
   {
-    id: 56,
-    title: 'Hack do Algoritmo Meta 2026',
+    id: 108,
+    title: 'WhatsApp Username & BSUID',
     description:
-      'Domine o algoritmo da Meta (Facebook e Instagram) em 2026. 4 trilhas, 20 módulos e 120+ tópicos cobrindo fundamentos do algoritmo, estratégia de conteúdo, produção de vídeos e escala de 0 a 10K+ seguidores. ~10 horas.',
+      'Privacidade e identidade no WhatsApp. 3 trilhas, 9 módulos, ~5h. Username, BSUID, Cloud API, CRM, compliance.',
     icon: '📱',
-    tags: ['Meta', 'Instagram', 'Facebook', 'Marketing Digital', 'Reels', 'IA'],
-    url: 'https://inematds.github.io/hack7meta',
-  },
-  {
-    id: 57,
-    title: '8020 - Vendas, Gestão e Estratégia Comercial',
-    description:
-      'Construa um sistema comercial integrado. 8 trilhas cobrindo diagnóstico de equipes, treinamento de vendedores, scripts práticos, níveis de consciência do consumidor, estratégias B2B/B2C e IA aplicada a vendas.',
-    icon: '💰',
-    tags: ['Vendas', 'Gestão Comercial', 'Estratégia', 'B2B', 'B2C', 'IA'],
-    url: 'https://inematds.github.io/8020',
-  },
-  {
-    id: 58,
-    title: 'Por Dentro do Claude Code',
-    description:
-      'A arquitetura revelada do agente de IA mais sofisticado ja construido. Baseado em 512k linhas de TypeScript. 3 trilhas (Fundamentos, Nucleo, Avancado), 12 modulos, 72 topicos em ~6 horas.',
-    icon: '🔬',
-    tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'TypeScript', 'IA', 'Agentes'],
-    url: 'https://inematds.github.io/claudecode-estrutura/',
-  },
-  {
-    id: 62,
-    title: 'IAMed - Medico IA-Native',
-    description:
-      'Qualificacao de medicos em IA. 9 trilhas, 54 modulos: entendendo IA, prompt clinico, pesquisa, consultorio, vibe code, segundo cerebro medico. Do fundamento a pratica. 100% gratuito.',
-    icon: '🩺',
-    tags: ['Medicina', 'IA', 'Saude', 'Pesquisa', 'Obsidian', 'Vibe Coding'],
-    url: 'https://inematds.github.io/IAMed/',
-  },
-  {
-    id: 61,
-    title: 'FPFilm - Crie Filmes com IA',
-    description:
-      'Criacao cinematografica com Freepik Spaces. Do roteiro ao export final usando workflows visuais baseados em nodes. 6 trilhas, 34 modulos, 200+ topicos. Cobre fundamentos de cinema, camera, producao e projeto completo.',
-    icon: '🎬',
-    tags: ['Freepik', 'Cinema', 'IA', 'Video', 'Filmes', 'Producao'],
-    url: 'https://inematds.github.io/fpfilm1/',
-  },
-  {
-    id: 60,
-    title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
-    description:
-      'Construa um sistema de conhecimento persistente onde o LLM funciona como compilador. 3 trilhas (Fundamentos, Implementacao, Avancado), 12 modulos, ~8 horas. Cobre Obsidian vault, ingestao, grafos, RAG e multi-agentes.',
-    icon: '🧠',
-    tags: ['LLM', 'Obsidian', 'Knowledge Management', 'RAG', 'IA', 'Produtividade'],
-    url: 'https://inematds.github.io/2cerebro/',
-  },
-  {
-    id: 59,
-    title: 'Claude Code Deep Dive',
-    description:
-      'Mergulho profundo no codigo-fonte do Claude Code. Analise de 1.902 arquivos cobrindo arquitetura core, sistema de tools, inteligencia do agente, infra, conectividade e features nao lancadas. 8 trilhas, 50 aulas, ~25 horas. Nivel avancado.',
-    icon: '🔍',
-    tags: ['Claude Code', 'Anthropic', 'Arquitetura', 'Source Code', 'IA', 'Tools'],
-    url: 'https://inematds.github.io/claudecode-manual/',
-  },
-  {
-    id: 63,
-    title: 'Seedance 2.0 Mastery - Video com IA',
-    description:
-      'Curso completo de geracao de video com Seedance 2.0 (ByteDance). 3 trilhas (Iniciante, Aplicado, Tecnico), ~85 aulas. Cobre prompts, cinema, storytelling, reverse engineering e pipeline de producao. Audio nativo, faces reais e image references.',
-    icon: '🎥',
-    tags: ['Seedance', 'Video', 'IA', 'ByteDance', 'Cinema', 'Prompts'],
-    url: 'https://inematds.github.io/seedance2/',
-  },
-  {
-    id: 64,
-    title: 'DeerFlow 2.0 - Framework de Agentes ByteDance',
-    description:
-      'Curso completo do framework open-source de agentes da ByteDance. 4 trilhas, 21 modulos com labs praticos. Cobre fundamentos, arquitetura LangGraph, extensao com skills e MCP, plataforma avancada e comparativo com Claude Code.',
-    icon: '🦌',
-    tags: ['DeerFlow', 'ByteDance', 'Agentes', 'LangGraph', 'MCP', 'Python'],
-    url: 'https://inematds.github.io/deerflow/',
-  },
-  {
-    id: 65,
-    title: 'Design + Video com IA (Hyperframes)',
-    description:
-      'Produza materiais visuais profissionais de ponta a ponta com Claude Design e Hyperframes. 3 trilhas, 9 modulos, 54 topicos em ~22 horas. Cobre design, brand systems, motion graphics, pitch decks, videos verticais e promocionais.',
-    icon: '🎨',
-    tags: ['Design', 'Video', 'IA', 'Hyperframes', 'Claude Design', 'Motion Graphics'],
-    url: 'https://inematds.github.io/cchyperframes/',
-  },
-  {
-    id: 66,
-    title: 'Claude Design - Zero ao Expert',
-    description:
-      'Curso completo de Claude Design, a ferramenta de design da Anthropic. 5 trilhas, ~35 modulos, 200+ topicos. Cobre fundamentos, design systems, context stacking, canvas iteration, prompts prontos e automacao. Substitui Figma, Gamma e Canva numa interface conversacional.',
-    icon: '🎨',
-    tags: ['Claude Design', 'Anthropic', 'Design', 'No-Code', 'UI/UX', 'Canva'],
-    url: 'https://inematds.github.io/claudedesign/',
-  },
-  {
-    id: 67,
-    title: 'Opus 4.7 - Dominando o Claude Code',
-    description:
-      'Treinamento pratico para dominar o Opus 4.7 no Claude Code. 4 trilhas, 28 modulos, 180+ topicos em ~20 horas. Cobre transicao do 4.6, orquestracao agentica, fan-out paralelo, framework ICCA, auditoria e migracao para producao.',
-    icon: '🧬',
-    tags: ['Claude Code', 'Opus 4.7', 'Anthropic', 'Agentic', 'IA', 'Produtividade'],
-    url: 'https://inematds.github.io/opus47/',
-  },
-  {
-    id: 68,
-    title: '6 Chapeus + Anti-Ancora',
-    description:
-      'Curso completo do metodo dos 6 Chapeus de Edward de Bono com fase anti-ancora para quebrar vieses cognitivos. 3 trilhas (Metodo, Pratica, Construcao), 18 modulos, 108 topicos em ~9 horas. Pensamento estruturado em 8 etapas: fatos, beneficios, riscos, alternativas e intuicao.',
-    icon: '🎩',
-    tags: ['Pensamento', 'Decisao', '6 Chapeus', 'De Bono', 'Metodologia', 'Produtividade'],
-    url: 'https://inematds.github.io/6chapeus/',
-  },
-  {
-    id: 69,
-    title: 'CCTop - Mestre em Contexto e Tokens',
-    description:
-      'Domine o gerenciamento de contexto e tokens no Claude Code. 6 trilhas, 18 modulos, ~108 topicos em ~12 horas. Cobre mecanica de tokens, prompt caching, context rot, handoff inteligente, delegacao sub-agente e orquestracao multi-modelo.',
-    icon: '📊',
-    tags: ['Claude Code', 'Tokens', 'Contexto', 'Anthropic', 'Otimizacao', 'IA'],
-    url: 'https://inematds.github.io/cctop/',
-  },
-  {
-    id: 80,
-    title: 'Ruflo - Orquestração de Agentes Multi-IA',
-    description:
-      'Coordene enxames de agentes especializados com Claude Code, AgentDB+HNSW, federation zero-trust e auto-aprendizado SONA. 3 trilhas (Fundamentos, Uso Prático, Avançado), 21 módulos, 126 tópicos, ~45 horas. Deploy em produção com consenso distribuído e 33 plugins nativos.',
-    icon: '🤖',
-    tags: ['Claude Code', 'Multi-agente', 'Orquestração', 'Zero-trust', 'SONA', 'AgentDB', 'IA'],
-    url: 'https://inematds.github.io/ruflo/',
-  },
-  {
-    id: 85,
-    title: 'Mentes Brilhantes - A Fórmula 1-20-79',
-    description:
-      '1% ideia, 20% produto, 79% venda. Curso gratuito de mentalidade empreendedora com case Cal AI ($100M+). 6 trilhas, 24 módulos, 144+ tópicos. Cobre validação de ideias, MVP, marketing, distribuição, vendas, retenção e escala. 100% gratuito.',
-    icon: '💡',
-    tags: ['Empreendedorismo', 'Vendas', 'Marketing', 'MVP', 'Mindset', 'Gratuito'],
-    url: 'https://inematds.github.io/mentesbrilhantes1/',
-  },
-  {
-    id: 88,
-    title: 'Power Design - Os 20 Princípios',
-    description:
-      'Os 20 princípios de design fundamentais aplicados a slides e apresentações profissionais com Claude Code. 7 seções (Carga Cognitiva, Hierarquia Visual, Gestalt, Tipografia, Cor, Sistemas Espaciais, Alinhamento), 72+ brand systems, referências Tufte/Reynolds/Duarte. Slides que não parecem feitos por IA.',
-    icon: '🎨',
-    tags: ['Design', 'Slides', 'Claude Code', 'Tipografia', 'Gestalt', 'Apresentações', 'IA'],
-    url: 'https://inematds.github.io/power-design/',
-  },
-  {
-    id: 87,
-    title: 'FEC - Formação de Engenharia de Contexto',
-    description:
-      'Engenharia de Contexto para quem leva LLM a produção. 6 trilhas, 14 módulos, 3 projetos cumulativos. Cobre janelas de contexto, message engineering, RAG, tools e agentes, memória e compressão, avaliação e deploy. Cada módulo com ilustrações e exercícios automatizados.',
-    icon: '🧩',
-    tags: ['Engenharia de Contexto', 'LLM', 'RAG', 'Agentes', 'Memória', 'Produção', 'IA'],
-    url: 'https://inematds.github.io/FEC/',
-  },
-  {
-    id: 86,
-    title: 'Multiagentes - Equipes de Agentes na Prática',
-    description:
-      'Projete, orquestre e opere squads de agentes IA que entregam software de produção. 5 trilhas, 20 módulos, 120 tópicos em ~16h + 4h de projeto final. Cobre Claude Code, OpenAI Codex, Gemini CLI, coordenação multi-agente, diagnóstico, custos e multi-runtime.',
-    icon: '🤖',
-    tags: ['Multi-agente', 'Claude Code', 'Codex', 'Gemini', 'Orquestração', 'Produção', 'IA'],
-    url: 'https://inematds.github.io/multiagentes/',
-  },
-  {
-    id: 84,
-    title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
-    description:
-      'Construa um agente de IA pessoal de ponta a ponta em TypeScript. Vive no Telegram, opera 24/7 com autonomia, memória multi-camada, function calling, voz, skills auto-geradas e MCP. 3 trilhas (Fundamentos, Vida do Agente, Produção), 9 módulos, 54 tópicos em ~6 horas. Sem frameworks fechados.',
-    icon: '🤖',
-    tags: ['Agente IA', 'Telegram', 'TypeScript', 'MCP', 'Memória', 'Produção', 'IA'],
-    url: 'https://inematds.github.io/agentejax/',
-  },
-  {
-    id: 83,
-    title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',
-    description:
-      'Alternativa local-first e BYOK ao Claude Design. 3 trilhas (Fundamentos, Exemplos, Avançado), 18 módulos, 100+ tópicos em ~30 horas. Conduzido por 31 skills, 72 design systems e CLI de agente. Cobre prompt stack, pitch decks, landing pages, dashboards, critique loops, ACP e daemon/sidecar.',
-    icon: '🎨',
-    tags: ['Open Design', 'Design', 'Skills', 'BYOK', 'Claude Code', 'UI/UX', 'IA'],
-    url: 'https://inematds.github.io/curso-od/',
-  },
-  {
-    id: 82,
-    title: 'DeepClaudeX - Multi-Modelo 70/20/10',
-    description:
-      'Orquestre 3 modelos de IA (GPT-5.5, Claude Opus 4.7, DeepSeek V4) com eficiência máxima. 3 trilhas (Conceito, Configuração, Projetos), 18 módulos, 108 tópicos em ~10 horas. Reduza custos mantendo qualidade com distribuição inteligente: 70% DeepSeek, 20% GPT, 10% Claude.',
-    icon: '🔀',
-    tags: ['Multi-modelo', 'Orquestração', 'Claude Code', 'DeepSeek', 'GPT', 'Custos', 'IA'],
-    url: 'https://inematds.github.io/deepclaudex/',
-  },
-  {
-    id: 81,
-    title: 'Master Codex - A Fábrica de SaaS com Agentes de IA',
-    description:
-      'Evolua de curioso a operador de fábrica de software com agentes IA. 6 trilhas, 24 módulos, 144 tópicos em ~27 horas. Cobre protocolos de comunicação (AGENTS.md), UI/UX com IA, backend multi-tenant, WhatsApp, orquestração multi-agente paralela e metodologia de micro-SaaS semanal. Projeto-âncora: InboxAI.',
-    icon: '⚡',
-    tags: ['Claude Code', 'SaaS', 'Multi-agente', 'WhatsApp', 'Automação', 'Produção', 'IA'],
-    url: 'https://inematds.github.io/mastercodex/',
-  },
-  {
-    id: 79,
-    title: 'MakeClaudeX - Engenharia com Claude Code: Do Prompt ao Plugin',
-    description:
-      'Construa plugins de produção com Claude Code usando o método real do Claudex. 4 trilhas (Fundamentos, Construindo, O Método, Avançado), 24 módulos, 144 tópicos, ~19 horas. Cobre hooks, slash commands, skills, state management YAML/CAS, Git e GitHub API.',
-    icon: '🔧',
-    tags: ['Claude Code', 'Hooks', 'Plugins', 'Skills', 'Engenharia', 'YAML', 'IA'],
-    url: 'https://inematds.github.io/makeclaudex/',
-  },
-  {
-    id: 78,
-    title: 'iClaudeX - Planejamento Inteligente com Claude + Codex',
-    description:
-      'Duas IAs discutem o seu plano para você não precisar fazer isso. Claude drafta, Codex critica de múltiplas perspectivas profissionais, iteram até validar — tudo no terminal. Plugin open source para Claude Code com arquitetura de loops iterativos.',
-    icon: '🤝',
-    tags: ['Claude Code', 'Codex', 'OpenAI', 'Planejamento', 'Plugin', 'Open Source', 'IA'],
-    url: 'https://inematds.github.io/iclaudex/',
-  },
-  {
-    id: 77,
-    title: 'SuperSkills Karpathy - Transforme Skills em Funcionários Digitais',
-    description:
-      'Método Karpathy para criar skills que funcionam como funcionários digitais reais: contexto, memória, integração de dados e melhoria contínua. 3 trilhas, 9 módulos, 54 tópicos, ~5 horas. Cobre Memory OS, Signal Dashboard e Claude Code.',
-    icon: '🧑‍💻',
-    tags: ['Claude Code', 'Skills', 'Karpathy', 'Memory OS', 'Agentes', 'IA', 'Produtividade'],
-    url: 'https://inematds.github.io/superskills-karpathy/',
-  },
-  {
-    id: 76,
-    title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
-    description:
-      'Configure um assistente pessoal de IA rodando localmente com Docker, 200+ modelos via OpenRouter, Telegram, WhatsApp, Discord e Slack. 6 trilhas, 24 módulos, 144 tópicos, ~12 horas. Cobre instalação, canais, workspace, uso avançado e segurança.',
-    icon: '🦞',
-    tags: ['Docker', 'OpenClaw', 'OpenRouter', 'Telegram', 'WhatsApp', 'Self-hosted', 'IA'],
-    url: 'https://inematds.github.io/docker-openclaw/',
-  },
-  {
-    id: 75,
-    title: 'CCOpen - Claude Code de Graça ou por Quase Nada',
-    description:
-      'Use Claude Code com Ollama (local, gratuito) ou OpenRouter (cloud, quase nada) trocando o motor sem mudar a interface. 5 trilhas, 19 módulos: fundamentos, instalação (Linux/macOS/Windows WSL), Ollama, OpenRouter e prática real.',
-    icon: '🆓',
-    tags: ['Claude Code', 'Ollama', 'OpenRouter', 'Gratuito', 'Local LLM', 'vLLM', 'IA'],
-    url: 'https://inematds.github.io/ccopen/',
-  },
-  {
-    id: 74,
-    title: 'INTELECTO Curso - Do Zero ao Expert em IA',
-    description:
-      'Curso completo de construção de assistentes de IA pessoais: 6 trilhas (Fundamentos, Identidade e Canais, Segurança Zero-Trust, Memória e Integrações, Arquiteturas Avançadas, Projeto Final: Seu Jarvis), 18 módulos, ~21 horas.',
-    icon: '🤖',
-    tags: ['Assistente IA', 'Frameworks', 'Segurança', 'Memória', 'Arquitetura', 'Agentes', 'IA'],
-    url: 'https://inematds.github.io/intelecto-curso/',
-  },
-  {
-    id: 73,
-    title: 'Superpowers - Desenvolvimento com Agentes de IA',
-    description:
-      'Metodologia completa do brainstorming ao deploy com agentes: TDD, subagentes, debugging sistemático, worktrees, agentes paralelos e criação de skills. 1 trilha, 10 módulos, 42 tópicos, ~5 horas. Intermediate.',
-    icon: '⚡',
-    tags: ['Claude Code', 'Agentes', 'TDD', 'Metodologia', 'Worktrees', 'Skills', 'IA'],
-    url: 'https://inematds.github.io/superpowers/',
-  },
-  {
-    id: 72,
-    title: 'CCFast32 - 32 Hacks do Claude Code',
-    description:
-      'Do Iniciante ao Power User: 32 hacks práticos em 3 trilhas (Iniciante, Intermediário, Avançado), 11 módulos. Cobre /init, CLAUDE.md, tokens, plan mode, subagentes paralelos, slash commands, hooks, worktrees, ultrathink, multi-agente e CI/CD.',
-    icon: '⚡',
-    tags: ['Claude Code', 'Hacks', 'Power User', 'Multi-agente', 'Worktrees', 'Hooks', 'IA'],
-    url: 'https://inematds.github.io/ccfast32/',
-  },
-  {
-    id: 71,
-    title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
-    description:
-      'Compare 9 frameworks de IA (OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw, Agent Zero), escolha os ingredientes certos para o seu assistente pessoal e entenda os 8 corredores de funcionalidades e 6 padrões de arquitetura.',
-    icon: '🧠',
-    tags: ['Frameworks', 'IA', 'Assistente', 'Comparativo', 'Arquitetura', 'Agentes'],
-    url: 'https://inematds.github.io/intelecto',
-  },
-  {
-    id: 70,
-    title: 'CCMasterMemory - Memory Injection via Hooks',
-    description:
-      'Resolva as limitacoes de memoria do Claude Code com hooks deterministicos. 6 trilhas, 36 modulos, ~24 horas + 6 labs praticos. Cobre hierarquia de 7 niveis de memoria, anatomia de 18 hooks, arquitetura de backend (Markdown, SQLite, vector DB) e memoria multi-agente.',
-    icon: '🧠',
-    tags: ['Claude Code', 'Memory', 'Hooks', 'Anthropic', 'IA', 'SQLite'],
-    url: 'https://inematds.github.io/ccmastermemory/',
+    tags: ['WhatsApp', 'BSUID', 'Username', 'Privacidade', 'API', 'Empresas'],
+    url: 'https://inematds.github.io/whatsapp-bsuid/',
   },
 ]
 

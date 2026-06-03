@@ -127,6 +127,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             <a href="#cursos"      className={s.navItem}>Cursos</a>
             <a href="#trilha"      className={s.navItem}>Trilha</a>
             <a href="#trilha-vibe" className={s.navItem}>Trilha Vibe</a>
+            <a href="#trilha-skills" className={s.navItem}>Skills</a>
             <a href="#trilhas"     className={s.navItem}>Trilhas</a>
             <a href="#github"    className={s.navItem}>GitHub</a>
             <a href="#comunidade" className={s.navItem}>Projetos</a>
@@ -325,13 +326,62 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* ══════════════════════════════════════════
-          04 — CURSOS
+          04 — TRILHA SKILLS
+      ══════════════════════════════════════════ */}
+      <section id="trilha-skills" className={s.sectionDark}>
+        <div className={s.wrap}>
+          <Reveal>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>04</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Agent Skills</span>
+            </div>
+            <h2 className={s.sectionTitle}>Trilha Skills</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              Domine as Agent Skills do Claude Code — do catálogo à sua própria Skill
+            </p>
+          </Reveal>
+          <Reveal delay={80}>
+            <div className={s.pathRow}>
+              {[
+                { href: 'https://inematds.github.io/skills-craft/',           label: 'Criando Skills',            desc: 'Do Catálogo à Sua Primeira Skill',    tag: 'Skill' },
+                { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames',               desc: 'Vídeos Explicativos com Claude Code', tag: 'Skill' },
+                { href: 'https://inematds.github.io/akarpathy-skill/curso-pt/', label: 'Karpathy Guidelines',       desc: '4 Princípios pra Código Limpo',       tag: 'Skill' },
+                { href: 'https://inematds.github.io/polyskills',              label: 'PolySkills',                desc: 'Claude Code & Codex lado a lado',     tag: 'Skill' },
+                { href: 'https://inematds.github.io/skill-design/',           label: 'Skill Design',              desc: 'Arsenal de Skills pra Páginas',       tag: 'Skill' },
+                { href: 'https://inematds.github.io/skills',                  label: 'Skills',                    desc: 'Agent Skills Mastery',                tag: 'Skill' },
+                { href: 'https://inematds.github.io/mp-skill/curso-skills/',  label: 'Skills For Real Engineers', desc: 'Skills pra Engenheiros de Verdade',   tag: 'Skill' },
+                { href: 'https://inematds.github.io/skills-premium/',         label: 'Skills Premium',            desc: 'Do Iniciante ao Expert',              tag: 'Skill' },
+                { href: 'https://inematds.github.io/superskills-karpathy/',   label: 'SuperSkills Karpathy',      desc: 'Skills como Funcionários Digitais',   tag: 'Skill' },
+              ].map((p, i) => (
+                <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                   className={s.pathCard}
+                   onClick={() => click(p.href, p.label, 'trilha-skills')}>
+                  <div className={s.pathNum}>{String(i + 1).padStart(2, '0')}</div>
+                  <span className={s.pathTag}>{p.tag}</span>
+                  <h4>{p.label}</h4>
+                  <p>{p.desc}</p>
+                  <span className={s.pathArrow}>Acessar →</span>
+                </a>
+              ))}
+            </div>
+          </Reveal>
+          <Reveal delay={160}>
+            <div className={s.pathNote}>
+              Skills transformam o Claude Code em especialistas sob demanda — aprenda a criar e usar as suas
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          05 — CURSOS
       ══════════════════════════════════════════ */}
       <section id="cursos" className={s.sectionDark}>
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>04</span>
+              <span className={s.sectionNum}>05</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Biblioteca completa</span>
             </div>
@@ -413,7 +463,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>05</span>
+              <span className={s.sectionNum}>06</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Percursos temáticos</span>
             </div>
@@ -598,7 +648,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>06</span>
+              <span className={s.sectionNum}>07</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Open Source</span>
             </div>
@@ -644,7 +694,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop} style={{ justifyContent: 'center', marginBottom: '2.5rem' }}>
-              <span className={s.sectionNum}>07</span>
+              <span className={s.sectionNum}>08</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Projetos</span>
             </div>
@@ -674,7 +724,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>08</span>
+              <span className={s.sectionNum}>09</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Grupos e canais</span>
             </div>
@@ -710,7 +760,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
         <div className={s.wrap}>
           <Reveal>
             <div className={s.sectionTop}>
-              <span className={s.sectionNum}>09</span>
+              <span className={s.sectionNum}>10</span>
               <span className={s.sectionLine} />
               <span className={s.sectionLabel}>Siga-nos</span>
             </div>
