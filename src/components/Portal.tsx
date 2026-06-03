@@ -480,7 +480,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/agentic-workflow/', label: 'Agentic Workflow', desc: 'Workflows Agentic na Prática', n: 5 },
               { href: 'https://inematds.github.io/CLI-x',            label: 'CLI-x',            desc: 'O Terminal como Interface dos Agentes', n: 6 },
               { href: 'https://inematds.github.io/skill-design/',    label: 'Skill Design',     desc: 'Skills pra Melhorar Páginas',  n: 7 },
-              { href: 'https://inematds.github.io/skill-hyperframes-videos/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code', n: 8 },
+              { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code', n: 8 },
               { href: 'https://inematds.github.io/skills-craft/',    label: 'Criando Skills',   desc: 'Do Catálogo à Sua Primeira Skill', n: 9 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"

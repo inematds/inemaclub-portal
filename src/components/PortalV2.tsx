@@ -524,7 +524,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/akarpathy-skill/curso-pt/', label: 'Karpathy Guidelines', desc: '4 Princípios para Código Limpo com LLM' },
               { href: 'https://inematds.github.io/u-any/curso/', label: 'Understand Anything', desc: 'Análise de Código com LLM e Dashboards Interativos' },
               { href: 'https://inematds.github.io/skill-design/', label: 'Skill Design', desc: 'Arsenal de Skills pra Melhorar Páginas' },
-              { href: 'https://inematds.github.io/skill-hyperframes-videos/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code' },
+              { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code' },
             ]},
             { title: '⚙️ Agentic OS', steps: [
               { href: 'https://inematds.github.io/agenticbasico/', label: 'Agentic Básico', desc: 'Fundamentos de Agentes IA — 5 Pilares + Arena' },
