@@ -286,7 +286,7 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudecode-manual/',
   },
   {
-    id: 126,
+    id: 136,
     title: 'Claude Code Tier S — os 12 recursos que mudam seu dia',
     description:
       'Tier list completa do ecossistema Claude (D→S) com o Top 12 em contagem regressiva até o #1. O critério não é hype: é quanto cada recurso muda seu dia de trabalho real (conhecimento + automação). 3 trilhas, 6 módulos, 36 tópicos + deck futurista navegável e 20 imagens. Skills, Status Line, Routines, Subagents, /loop, /goal, Agent Teams e mais.',
