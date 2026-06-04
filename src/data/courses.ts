@@ -286,6 +286,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudecode-manual/',
   },
   {
+    id: 126,
+    title: 'Claude Code Tier S — os 12 recursos que mudam seu dia',
+    description:
+      'Tier list completa do ecossistema Claude (D→S) com o Top 12 em contagem regressiva até o #1. O critério não é hype: é quanto cada recurso muda seu dia de trabalho real (conhecimento + automação). 3 trilhas, 6 módulos, 36 tópicos + deck futurista navegável e 20 imagens. Skills, Status Line, Routines, Subagents, /loop, /goal, Agent Teams e mais.',
+    icon: '🏆',
+    tags: ['Claude Code', 'Tier List', 'Skills', 'Top 12', 'Produtividade', 'IA'],
+    url: 'https://inematds.github.io/cctop12/',
+  },
+  {
     id: 105,
     title: 'Claude Cowork - Equipe de Marketing de US$ 10.000/mês',
     description:
@@ -1232,6 +1241,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-04', title: 'Claude Code Tier S — os 12 recursos que mudam seu dia', type: 'novo', url: 'https://inematds.github.io/cctop12/' },
   { date: '2026-06-03', title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-video-demonstrativo/' },
   { date: '2026-06-02', title: 'Formação em Automação Estratégica com IA', type: 'novo', url: 'https://inematds.github.io/fae-ai/' },
   { date: '2026-06-01', title: 'AIS-OS — Seu AI Operating System no Claude Code', type: 'novo', url: 'https://inematds.github.io/ais-os/' },
