@@ -817,6 +817,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mkbook/',
   },
   {
+    id: 137,
+    title: 'mkivideos — Fila de Vídeos com IA',
+    description:
+      'Motor de fila para criar vídeos (explicativo/curso/demo) um por vez, comandado por Telegram (/mkivideos) e visível num painel. Host-agnóstico: roda em qualquer bot jarvis ou standalone. Concorrência controlada pra não sobrecarregar a máquina.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Fila', 'Automação', 'Telegram', 'IA', 'Ferramenta'],
+    url: 'https://github.com/inematds/mkivideos',
+  },
+  {
     id: 86,
     title: 'Multiagentes - Equipes de Agentes na Prática',
     description:
@@ -1241,6 +1250,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-04', title: 'mkivideos — Fila de Vídeos com IA', type: 'novo', url: 'https://github.com/inematds/mkivideos' },
   { date: '2026-06-04', title: 'Claude Code Tier S — os 12 recursos que mudam seu dia', type: 'novo', url: 'https://inematds.github.io/cctop12/' },
   { date: '2026-06-03', title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-video-demonstrativo/' },
   { date: '2026-06-02', title: 'Formação em Automação Estratégica com IA', type: 'novo', url: 'https://inematds.github.io/fae-ai/' },
