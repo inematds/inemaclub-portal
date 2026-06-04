@@ -2,7 +2,7 @@
 const platformsData = [
     {
         id: 127,
-        title: "Nano Banana 2 — Character Design Styles",
+        title: "10cara-design — Character Design Styles",
         description: "Uma pessoa, seis mundos visuais. Pacote com 10 prompts que movem um único personagem por estilos completamente diferentes — óleo surreal, doodle-meme, card de Fortnite, pôster Pokémon, promo estilo GTA, editorial sentai, claymation, ID falsa, sketch de moda e toy 3D. O sistema: Referência 1 trava a identidade, Referência 2 dirige só o figurino, pose e mundo novos sempre. Landing + trilha com 3 módulos, 22 tópicos e galeria de exemplos gerados localmente.",
         icon: "🎭",
         tags: ["Nano Banana 2", "Character Design", "Prompts", "IA Generativa", "Imagem", "Lead Magnet"],
