@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 127,
+        title: "Nano Banana 2 — Character Design Styles",
+        description: "Uma pessoa, seis mundos visuais. Pacote com 10 prompts que movem um único personagem por estilos completamente diferentes — óleo surreal, doodle-meme, card de Fortnite, pôster Pokémon, promo estilo GTA, editorial sentai, claymation, ID falsa, sketch de moda e toy 3D. O sistema: Referência 1 trava a identidade, Referência 2 dirige só o figurino, pose e mundo novos sempre. Landing + trilha com 3 módulos, 22 tópicos e galeria de exemplos gerados localmente.",
+        icon: "🎭",
+        tags: ["Nano Banana 2", "Character Design", "Prompts", "IA Generativa", "Imagem", "Lead Magnet"],
+        url: "https://inematds.github.io/10cara-design/"
+    },
+    {
         id: 126,
         title: "Claude Code Tier S — os 12 recursos que mudam seu dia",
         description: "Tier list completa do ecossistema Claude (D→S) com o Top 12 em contagem regressiva até o #1. O critério não é hype: é quanto cada recurso muda seu dia de trabalho real (conhecimento + automação). 3 trilhas, 6 módulos, 36 tópicos + deck futurista navegável e 20 imagens. Skills, Status Line, Routines, Subagents, /loop, /goal, Agent Teams e mais.",
