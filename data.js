@@ -1,6 +1,14 @@
 // Dados dos cursos e plataformas INEMA
 const platformsData = [
     {
+        id: 126,
+        title: "Claude Code Tier S — os 12 recursos que mudam seu dia",
+        description: "Tier list completa do ecossistema Claude (D→S) com o Top 12 em contagem regressiva até o #1. O critério não é hype: é quanto cada recurso muda seu dia de trabalho real (conhecimento + automação). 3 trilhas, 6 módulos, 36 tópicos + deck futurista navegável e 20 imagens. Skills, Status Line, Routines, Subagents, /loop, /goal, Agent Teams e mais.",
+        icon: "🏆",
+        tags: ["Claude Code", "Tier List", "Skills", "Top 12", "Produtividade", "IA"],
+        url: "https://inematds.github.io/cctop12/"
+    },
+    {
         id: 125,
         title: "VLA — Vision Language Action para Robótica",
         description: "Curso profundo sobre IA Incorporada: modelos VLA (RT-2, OpenVLA, π0, Qwen-VLA, GR00T N1), frameworks (LeRobot, ROS2, MuJoCo, Isaac Sim), treinamento, sim-to-real, mercado $7.2B. 3 trilhas, 18 módulos, 50+ fontes.",
