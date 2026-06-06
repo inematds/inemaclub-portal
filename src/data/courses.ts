@@ -1006,6 +1006,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/prompts/',
   },
   {
+    id: 138,
+    title: 'Remotion - Vídeo Programático com React',
+    description:
+      'Curso gratuito de Remotion: do conceito de frame aos 81 templates prontos, até projetos completos. Vídeo com código em React, sem keyframes de CSS.',
+    icon: '🎬',
+    tags: ['Remotion', 'React', 'Vídeo', 'IA'],
+    url: 'https://inematds.github.io/remotion-templates/',
+  },
+  {
     id: 29,
     title: 'Robot',
     description: 'Plataforma Robot - Robótica e automação inteligente.',
@@ -1250,6 +1259,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-06', title: 'Remotion - Vídeo Programático com React', type: 'novo', url: 'https://inematds.github.io/remotion-templates/' },
   { date: '2026-06-04', title: 'mkivideos — Fila de Vídeos com IA', type: 'novo', url: 'https://github.com/inematds/mkivideos' },
   { date: '2026-06-04', title: 'Claude Code Tier S — os 12 recursos que mudam seu dia', type: 'novo', url: 'https://inematds.github.io/cctop12/' },
   { date: '2026-06-03', title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-video-demonstrativo/' },
