@@ -295,6 +295,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cctop12/',
   },
   {
+    id: 139,
+    title: 'Claude Code × Remotion - Motion Graphics com Código',
+    description:
+      'Gere motion graphics de produção com código: Claude Code + Remotion + GSAP, D3, Three.js e Lottie. 4 trilhas, 16 módulos, com demonstrações visuais animadas ao vivo. Inclui 4 projetos práticos (SaaS, data-story, comercial 3D, onboarding).',
+    icon: '🎞️',
+    tags: ['Remotion', 'Motion Graphics', 'Claude Code', 'GSAP', 'React', 'IA'],
+    url: 'https://inematds.github.io/claude-remotion-motion/',
+  },
+  {
     id: 105,
     title: 'Claude Cowork - Equipe de Marketing de US$ 10.000/mês',
     description:
@@ -1259,6 +1268,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-07', title: 'Claude Code × Remotion - Motion Graphics com Código', type: 'novo', url: 'https://inematds.github.io/claude-remotion-motion/' },
   { date: '2026-06-06', title: 'Remotion - Vídeo Programático com React', type: 'novo', url: 'https://inematds.github.io/remotion-templates/' },
   { date: '2026-06-04', title: 'mkivideos — Fila de Vídeos com IA', type: 'novo', url: 'https://github.com/inematds/mkivideos' },
   { date: '2026-06-04', title: 'Claude Code Tier S — os 12 recursos que mudam seu dia', type: 'novo', url: 'https://inematds.github.io/cctop12/' },
