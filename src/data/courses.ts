@@ -832,7 +832,7 @@ export const platformsData: Course[] = [
       'Motor de fila para criar vídeos (explicativo/curso/demo) um por vez, comandado por Telegram (/mkivideos) e visível num painel. Host-agnóstico: roda em qualquer bot jarvis ou standalone. Concorrência controlada pra não sobrecarregar a máquina.',
     icon: '🎬',
     tags: ['Vídeo', 'Fila', 'Automação', 'Telegram', 'IA', 'Ferramenta'],
-    url: 'https://github.com/inematds/mkivideos',
+    url: 'https://inematds.github.io/mkivideos/',
   },
   {
     id: 86,
@@ -1270,7 +1270,7 @@ export const platformsData: Course[] = [
 export const updatesData: Update[] = [
   { date: '2026-06-07', title: 'Claude Code × Remotion - Motion Graphics com Código', type: 'novo', url: 'https://inematds.github.io/claude-remotion-motion/' },
   { date: '2026-06-06', title: 'Remotion - Vídeo Programático com React', type: 'novo', url: 'https://inematds.github.io/remotion-templates/' },
-  { date: '2026-06-04', title: 'mkivideos — Fila de Vídeos com IA', type: 'novo', url: 'https://github.com/inematds/mkivideos' },
+  { date: '2026-06-04', title: 'mkivideos — Fila de Vídeos com IA', type: 'novo', url: 'https://inematds.github.io/mkivideos/' },
   { date: '2026-06-04', title: 'Claude Code Tier S — os 12 recursos que mudam seu dia', type: 'novo', url: 'https://inematds.github.io/cctop12/' },
   { date: '2026-06-03', title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code', type: 'novo', url: 'https://inematds.github.io/skill-video-demonstrativo/' },
   { date: '2026-06-02', title: 'Formação em Automação Estratégica com IA', type: 'novo', url: 'https://inematds.github.io/fae-ai/' },
