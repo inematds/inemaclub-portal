@@ -115,6 +115,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agenticos/',
   },
   {
+    id: 140,
+    title: 'AI FILMMAKING — Do Conceito ao Filme Final',
+    description:
+      'Curso completo de filmmaking com IA: pense como diretor, não como usuário de prompt. 7 trilhas, 31 módulos — linguagem e lógica de câmera, roteiro→storyboard→frames, direção e diálogo, composição/iluminação/profundidade, geração de vídeo (Seedance, Kling, Luma, Runway), YAML, efeitos visuais, edição e narrativa visual. Com exemplos cinematográficos e prompts reais.',
+    icon: '🎬',
+    tags: ['Filmmaking', 'Vídeo IA', 'Cinema', 'Seedance', 'Kling', 'Runway', 'IA'],
+    url: 'https://inematds.github.io/aifilmmaking/',
+  },
+  {
     id: 114,
     title: 'AIOS — AI Agent Operating System',
     description:
@@ -1268,6 +1277,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-08', title: 'AI FILMMAKING — Do Conceito ao Filme Final', type: 'novo', url: 'https://inematds.github.io/aifilmmaking/' },
   { date: '2026-06-07', title: 'Claude Code × Remotion - Motion Graphics com Código', type: 'novo', url: 'https://inematds.github.io/claude-remotion-motion/' },
   { date: '2026-06-06', title: 'Remotion - Vídeo Programático com React', type: 'novo', url: 'https://inematds.github.io/remotion-templates/' },
   { date: '2026-06-04', title: 'mkivideos — Fila de Vídeos com IA', type: 'novo', url: 'https://inematds.github.io/mkivideos/' },
