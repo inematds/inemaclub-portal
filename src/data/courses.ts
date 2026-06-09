@@ -1230,6 +1230,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skill-video-demonstrativo/',
   },
   {
+    id: 142,
+    title: 'video-plan-editor — Plano de Edição de Vídeo',
+    description:
+      'Skill (Claude Code) + pacote Python (vpe) que transforma um assunto ou link num plano profissional de edição de vídeo — JSON estruturado e renderer-agnóstico (plano-edicao.json + RESUMO.md). Detecta o input, escolhe um de 5 presets (acao/suave/promo/vendas/viral) e valida guardrails. Render opcional via HyperFrames + b-roll flux2-klein, local e sem chave de API.',
+    icon: '🎞️',
+    tags: ['Vídeo', 'Edição', 'Python', 'Plano', 'IA', 'Skill'],
+    url: 'https://inematds.github.io/skill-video-plan-editor/',
+  },
+  {
     id: 34,
     title: 'VISION',
     description:
@@ -1286,6 +1295,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-09', title: 'video-plan-editor — Plano de Edição de Vídeo', type: 'novo', url: 'https://inematds.github.io/skill-video-plan-editor/' },
   { date: '2026-06-09', title: 'MDD — Mestre de Direção Dinâmica', type: 'novo', url: 'https://inematds.github.io/mdd/' },
   { date: '2026-06-08', title: 'AI FILMMAKING — Do Conceito ao Filme Final', type: 'novo', url: 'https://inematds.github.io/aifilmmaking/' },
   { date: '2026-06-07', title: 'Claude Code × Remotion - Motion Graphics com Código', type: 'novo', url: 'https://inematds.github.io/claude-remotion-motion/' },
