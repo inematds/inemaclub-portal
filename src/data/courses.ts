@@ -934,6 +934,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/pha2030-aula',
   },
   {
+    id: 144,
+    title: 'PixFlow — Imagens estáticas viram filme',
+    description:
+      'Recria a qualidade do pixflow.net em código aberto: transforma imagens estáticas em vídeos cinematográficos (parallax 2.5D real, grain, color grade, vinheta, aberração, bloom, câmera e transições) de forma determinística — sem geradores de vídeo por IA. Skill pixflow-motion: movie spec YAML → Depth-Anything → WebGL/GLSL → Remotion → FFmpeg → MP4. Tudo local.',
+    icon: '🪄',
+    tags: ['Vídeo', 'Parallax', 'Remotion', 'WebGL', 'Código Aberto', 'Skill'],
+    url: 'https://inematds.github.io/pixflow/',
+  },
+  {
     id: 25,
     title: 'Playbook - Formação Consultor IA - Inglês',
     description:
@@ -1304,6 +1313,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-09', title: 'PixFlow — Imagens estáticas viram filme', type: 'novo', url: 'https://inematds.github.io/pixflow/' },
   { date: '2026-06-09', title: 'videoprodutor — O Produtor de Vídeo Profissional', type: 'novo', url: 'https://inematds.github.io/skill-videoprodutor/' },
   { date: '2026-06-09', title: 'video-plan-editor — Plano de Edição de Vídeo', type: 'novo', url: 'https://inematds.github.io/skill-video-plan-editor/' },
   { date: '2026-06-09', title: 'MDD — Mestre de Direção Dinâmica', type: 'novo', url: 'https://inematds.github.io/mdd/' },
