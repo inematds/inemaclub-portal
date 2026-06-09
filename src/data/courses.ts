@@ -1239,6 +1239,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skill-video-plan-editor/',
   },
   {
+    id: 143,
+    title: 'videoprodutor — O Produtor de Vídeo Profissional',
+    description:
+      'Skill (Claude Code) que orquestra link/fonte → plano + execução de um vídeo profissional (propaganda ou explicativo), ponta a ponta. Coordena as peças que já existem (plano, direção, imagem, voz, render) numa linha de montagem única, em 3 camadas (cinema + texto cinético + ilustração). Saída 16:9 e 9:16, dark premium, tudo local; imagem flux2-klein com fallback SVG automático.',
+    icon: '🏭',
+    tags: ['Vídeo', 'Orquestrador', 'Render', 'HyperFrames', 'IA', 'Skill'],
+    url: 'https://inematds.github.io/skill-videoprodutor/',
+  },
+  {
     id: 34,
     title: 'VISION',
     description:
@@ -1295,6 +1304,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-09', title: 'videoprodutor — O Produtor de Vídeo Profissional', type: 'novo', url: 'https://inematds.github.io/skill-videoprodutor/' },
   { date: '2026-06-09', title: 'video-plan-editor — Plano de Edição de Vídeo', type: 'novo', url: 'https://inematds.github.io/skill-video-plan-editor/' },
   { date: '2026-06-09', title: 'MDD — Mestre de Direção Dinâmica', type: 'novo', url: 'https://inematds.github.io/mdd/' },
   { date: '2026-06-08', title: 'AI FILMMAKING — Do Conceito ao Filme Final', type: 'novo', url: 'https://inematds.github.io/aifilmmaking/' },
