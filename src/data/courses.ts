@@ -826,6 +826,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mkblogs/',
   },
   {
+    id: 141,
+    title: 'MDD — Mestre de Direção Dinâmica',
+    description:
+      'Skill para Claude Code que transforma qualquer assunto em um pacote completo de direção de vídeo dinâmico (cartão, pacote de cena, storyboard, faixa do diretor, prompt final e prompt negativo), pronto pra gerar em Seedance, Kling, Runway, Veo ou Luma.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Storyboard', 'Prompt', 'IA', 'Claude Code', 'Skill'],
+    url: 'https://inematds.github.io/mdd/',
+  },
+  {
     id: 116,
     title: 'mkbook — Seu livro em 30 dias com Claude Code',
     description:
@@ -1277,6 +1286,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-09', title: 'MDD — Mestre de Direção Dinâmica', type: 'novo', url: 'https://inematds.github.io/mdd/' },
   { date: '2026-06-08', title: 'AI FILMMAKING — Do Conceito ao Filme Final', type: 'novo', url: 'https://inematds.github.io/aifilmmaking/' },
   { date: '2026-06-07', title: 'Claude Code × Remotion - Motion Graphics com Código', type: 'novo', url: 'https://inematds.github.io/claude-remotion-motion/' },
   { date: '2026-06-06', title: 'Remotion - Vídeo Programático com React', type: 'novo', url: 'https://inematds.github.io/remotion-templates/' },
