@@ -736,6 +736,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vb-imersao/',
   },
   {
+    id: 145,
+    title: 'inemaref — Foto vira história em quadrinhos',
+    description:
+      'Fábrica de conteúdo a partir de uma referência de pessoa real: ficha de personagem → página de HQ → motion comic narrado (câmera viaja sobre a página). Textless + camada, tudo local (flux2-klein, inemavox, ffmpeg).',
+    icon: '🎭',
+    tags: ['Quadrinhos', 'Motion Comic', 'Vídeo', 'IA', 'Local'],
+    url: 'https://inematds.github.io/inemaref/',
+  },
+  {
     id: 71,
     title: 'INTELECTO - Inteligência Pessoal sem Frameworks Inchados',
     description:
@@ -1313,6 +1322,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-10', title: 'inemaref — Foto vira história em quadrinhos', type: 'novo', url: 'https://inematds.github.io/inemaref/' },
   { date: '2026-06-09', title: 'PixFlow — Imagens estáticas viram filme', type: 'novo', url: 'https://inematds.github.io/pixflow/' },
   { date: '2026-06-09', title: 'videoprodutor — O Produtor de Vídeo Profissional', type: 'novo', url: 'https://inematds.github.io/skill-videoprodutor/' },
   { date: '2026-06-09', title: 'video-plan-editor — Plano de Edição de Vídeo', type: 'novo', url: 'https://inematds.github.io/skill-video-plan-editor/' },
