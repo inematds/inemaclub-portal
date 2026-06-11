@@ -1284,6 +1284,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skill-videoprodutor/',
   },
   {
+    id: 148,
+    title: 'videos-cursos-inema — Cursos viram vídeos narrados',
+    description:
+      'Motor que transforma um curso INEMA (site estático, ex.: FEP) numa série de vídeos narrados e animados — HTML→MP4 via HyperFrames, dark premium âmbar. Três níveis: Landing (visão geral), Trilhas (módulos/tópicos) e Conteúdo completo (aula profunda por módulo, ilustrada com SVG). Timing vindo do áudio, narração local (inemavox bella/rachel), 16:9 e 9:16, CTA INEMA.CLUB.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Cursos', 'HyperFrames', 'TTS', 'Render', 'INEMA'],
+    url: 'https://inematds.github.io/videos-cursos-inema/',
+  },
+  {
     id: 34,
     title: 'VISION',
     description:
@@ -1340,6 +1349,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-11', title: 'videos-cursos-inema — Cursos viram vídeos narrados', type: 'novo', url: 'https://inematds.github.io/videos-cursos-inema/' },
   { date: '2026-06-11', title: 'Diretor de Animação — Imagens + Narração viram Filme', type: 'novo', url: 'https://inematds.github.io/diretor-animacao/' },
   { date: '2026-06-11', title: 'Pirâmide da IA — Engenharia de Conhecimento da IA', type: 'novo', url: 'https://inematds.github.io/aiengenharia/' },
   { date: '2026-06-10', title: 'inemaref — Foto vira história em quadrinhos', type: 'novo', url: 'https://inematds.github.io/inemaref/' },
