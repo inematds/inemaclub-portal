@@ -943,6 +943,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/opus47/',
   },
   {
+    id: 149,
+    title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução',
+    description:
+      'Engenharia de system prompts revelada pelos prompts reais de Claude, GPT, Gemini, Cursor e outros. Anatomia das 6 seções universais, catálogo de 12 padrões nomeados + 5 antipadrões, e a evolução por diffs (Opus 4.8 → Fable 5) com citações originais.',
+    icon: '📜',
+    tags: ['System Prompts', 'Engenharia de Prompts', 'Claude', 'LLM', 'IA'],
+    url: 'https://inematds.github.io/system_prompts_leaks/',
+  },
+  {
     id: 50,
     title: 'PHA 2030 - Da Capacitação à Transformação',
     description:
@@ -1349,6 +1358,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-11', title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução', type: 'novo', url: 'https://inematds.github.io/system_prompts_leaks/' },
   { date: '2026-06-11', title: 'videos-cursos-inema — Cursos viram vídeos narrados', type: 'novo', url: 'https://inematds.github.io/videos-cursos-inema/' },
   { date: '2026-06-11', title: 'Diretor de Animação — Imagens + Narração viram Filme', type: 'novo', url: 'https://inematds.github.io/diretor-animacao/' },
   { date: '2026-06-11', title: 'Pirâmide da IA — Engenharia de Conhecimento da IA', type: 'novo', url: 'https://inematds.github.io/aiengenharia/' },
