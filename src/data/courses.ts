@@ -943,6 +943,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/pha2030-aula',
   },
   {
+    id: 146,
+    title: 'Pirâmide da IA — Engenharia de Conhecimento da IA',
+    description:
+      'Suba a Pirâmide da Inteligência Aplicada camada por camada: Prompt, Intenção, Contexto, Aproveitamento, Arquitetura e Evolução. 6 trilhas, 13 módulos, diagnóstico de nível e 6 artefatos prontos — feito pra quem está entrando tarde na IA.',
+    icon: '🔺',
+    tags: ['IA', 'Prompt', 'Engenharia de Contexto', 'Método', 'Requalificação'],
+    url: 'https://inematds.github.io/aiengenharia/',
+  },
+  {
     id: 144,
     title: 'PixFlow — Imagens estáticas viram filme',
     description:
@@ -1322,6 +1331,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-11', title: 'Pirâmide da IA — Engenharia de Conhecimento da IA', type: 'novo', url: 'https://inematds.github.io/aiengenharia/' },
   { date: '2026-06-10', title: 'inemaref — Foto vira história em quadrinhos', type: 'novo', url: 'https://inematds.github.io/inemaref/' },
   { date: '2026-06-09', title: 'PixFlow — Imagens estáticas viram filme', type: 'novo', url: 'https://inematds.github.io/pixflow/' },
   { date: '2026-06-09', title: 'videoprodutor — O Produtor de Vídeo Profissional', type: 'novo', url: 'https://inematds.github.io/skill-videoprodutor/' },
