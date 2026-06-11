@@ -430,6 +430,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/dev2k6/',
   },
   {
+    id: 147,
+    title: 'Diretor de Animação — Imagens + Narração viram Filme',
+    description:
+      'Skill de direção cinematográfica para Claude Code: analisa cada imagem com visão, decide câmera, cortes, transições, música e SFX seguindo gramática de cinema, e renderiza determinístico via pixflow — sem IA generativa de vídeo.',
+    icon: '🎬',
+    tags: ['IA', 'Vídeo', 'Claude Code', 'Skill'],
+    url: 'https://inematds.github.io/diretor-animacao/',
+  },
+  {
     id: 76,
     title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
     description:
@@ -1331,6 +1340,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-11', title: 'Diretor de Animação — Imagens + Narração viram Filme', type: 'novo', url: 'https://inematds.github.io/diretor-animacao/' },
   { date: '2026-06-11', title: 'Pirâmide da IA — Engenharia de Conhecimento da IA', type: 'novo', url: 'https://inematds.github.io/aiengenharia/' },
   { date: '2026-06-10', title: 'inemaref — Foto vira história em quadrinhos', type: 'novo', url: 'https://inematds.github.io/inemaref/' },
   { date: '2026-06-09', title: 'PixFlow — Imagens estáticas viram filme', type: 'novo', url: 'https://inematds.github.io/pixflow/' },

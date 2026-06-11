@@ -43,6 +43,7 @@ const communityProjects: Array<{
   { icon: '🎥', name: 'aisf', desc: 'Produção de vídeos em lote com IA (SkyReels V3)', url: 'https://github.com/inematds/aisf', badge: 'GitHub' },
   { icon: '🐟', name: 'BettaFish', desc: 'Plataforma de pesquisa e analise com IA multi-engine', url: 'https://github.com/inematds/BettaFish', badge: 'GitHub' },
   { icon: '🌊', name: 'MiroFish', desc: 'Motor de predicao com inteligencia de enxame e agentes IA', url: 'https://github.com/inematds/mirofish', badge: 'GitHub' },
+  { icon: '🎬', name: 'diretor-animacao', desc: 'Imagens + narração viram filme, sem IA de vídeo', url: 'https://github.com/inematds/diretor-animacao', badge: 'GitHub' },
   { icon: '🧪', name: 'intelecto-testes', desc: 'Testes e validacao do assistente pessoal Intelecto com IA', url: 'https://github.com/inematds/intelecto-testes', badge: 'GitHub' },
   { icon: '🎨', name: 'open-design', desc: 'Alternativa open-source ao Claude Design', url: 'https://github.com/inematds/open-design', badge: 'GitHub' },
   { icon: '🚀', name: 'inemaupsk', desc: 'Plataforma de upskilling da comunidade', url: 'https://github.com/inematds/inemaupsk', badge: 'GitHub' },
