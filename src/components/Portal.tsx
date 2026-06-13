@@ -484,6 +484,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skill-design/',    label: 'Skill Design',     desc: 'Skills pra Melhorar Páginas',  n: 7 },
               { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code', n: 8 },
               { href: 'https://inematds.github.io/skills-craft/',    label: 'Criando Skills',   desc: 'Do Catálogo à Sua Primeira Skill', n: 9 },
+              { href: 'https://inematds.github.io/subagentes/',     label: 'Subagentes',       desc: 'Especialistas do Claude Code', n: 10 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}

@@ -1167,6 +1167,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skills-premium/',
   },
   {
+    id: 150,
+    title: 'Subagentes — Especialistas do Claude Code',
+    description:
+      'Curso completo sobre subagentes do Claude Code (e Codex): fundamentos, criação na prática, modelo/custo/orquestração e avançado. 4 trilhas, 24 módulos, com exemplos .md, prompts prontos, exercícios e desenhos.',
+    icon: '🤖',
+    tags: ['Claude Code', 'Subagentes', 'Skills', 'Agentes', 'Codex', 'IA'],
+    url: 'https://inematds.github.io/subagentes/',
+  },
+  {
     id: 73,
     title: 'Superpowers - Desenvolvimento com Agentes de IA',
     description:
@@ -1358,6 +1367,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-13', title: 'Subagentes — Especialistas do Claude Code', type: 'novo', url: 'https://inematds.github.io/subagentes/' },
   { date: '2026-06-11', title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução', type: 'novo', url: 'https://inematds.github.io/system_prompts_leaks/' },
   { date: '2026-06-11', title: 'videos-cursos-inema — Cursos viram vídeos narrados', type: 'novo', url: 'https://inematds.github.io/videos-cursos-inema/' },
   { date: '2026-06-11', title: 'Diretor de Animação — Imagens + Narração viram Filme', type: 'novo', url: 'https://inematds.github.io/diretor-animacao/' },

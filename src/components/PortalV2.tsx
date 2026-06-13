@@ -304,6 +304,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
                 { href: 'https://inematds.github.io/skills',    label: 'Skills',       desc: 'Agent Skills Mastery',                 tag: 'Passo 2' },
                 { href: 'https://inematds.github.io/agentic/',  label: 'Agentic',      desc: 'Engenharia de Agentic Masterclass',    tag: 'Passo 3' },
                 { href: 'https://inematds.github.io/skills-craft/', label: 'Criando Skills', desc: 'Do Catálogo à Sua Primeira Skill', tag: 'Passo 4' },
+                { href: 'https://inematds.github.io/subagentes/', label: 'Subagentes', desc: 'Especialistas do Claude Code', tag: 'Passo 5' },
               ].map((p, i) => (
                 <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                    className={s.pathCard}
