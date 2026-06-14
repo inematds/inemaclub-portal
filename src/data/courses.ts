@@ -124,6 +124,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/aifilmmaking/',
   },
   {
+    id: 151,
+    title: 'AI Strategy Factory — Estratégia de IA Completa para Qualquer Empresa',
+    description:
+      'Gere um pacote de consultoria de IA completo para qualquer empresa em minutos: 15 documentos (diagnóstico, roadmap, ROI, governança, prompts), 2 apresentações, 2 relatórios Word e diagramas. Curso didático em PT-BR para iniciantes — instalar, usar (web e CLI) e aproveitar os entregáveis. Usa Perplexity + Google Gemini. 3 trilhas, 9 módulos, ~60 tópicos.',
+    icon: '🏭',
+    tags: ['Estratégia IA', 'Perplexity', 'Gemini', 'Consultoria', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/AI-CONSULT/',
+  },
+  {
     id: 114,
     title: 'AIOS — AI Agent Operating System',
     description:
@@ -1367,6 +1376,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-14', title: 'AI Strategy Factory — Estratégia de IA Completa para Qualquer Empresa', type: 'novo', url: 'https://inematds.github.io/AI-CONSULT/' },
   { date: '2026-06-13', title: 'Subagentes — Especialistas do Claude Code', type: 'novo', url: 'https://inematds.github.io/subagentes/' },
   { date: '2026-06-11', title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução', type: 'novo', url: 'https://inematds.github.io/system_prompts_leaks/' },
   { date: '2026-06-11', title: 'videos-cursos-inema — Cursos viram vídeos narrados', type: 'novo', url: 'https://inematds.github.io/videos-cursos-inema/' },
