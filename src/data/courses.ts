@@ -511,6 +511,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/enxamesagentes/',
   },
   {
+    id: 152,
+    title: 'Fábrica de Estratégia de IA — Vire Consultor de IA',
+    description:
+      'Construa sua própria fábrica de estratégia de IA com Claude Code e vire consultor de IA — do zero ao entregável que vende.',
+    icon: '🏭',
+    tags: ['IA', 'Consultoria', 'Claude Code', 'Estratégia'],
+    url: 'https://inematds.github.io/aiestrategia/',
+  },
+  {
     id: 8,
     title: 'FDB - Fundamentos de Banco de Dados',
     description:
@@ -1376,6 +1385,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-14', title: 'Fábrica de Estratégia de IA — Vire Consultor de IA', type: 'novo', url: 'https://inematds.github.io/aiestrategia/' },
   { date: '2026-06-14', title: 'AI Strategy Factory — Estratégia de IA Completa para Qualquer Empresa', type: 'novo', url: 'https://inematds.github.io/AI-CONSULT/' },
   { date: '2026-06-13', title: 'Subagentes — Especialistas do Claude Code', type: 'novo', url: 'https://inematds.github.io/subagentes/' },
   { date: '2026-06-11', title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução', type: 'novo', url: 'https://inematds.github.io/system_prompts_leaks/' },
