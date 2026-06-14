@@ -1105,6 +1105,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/prompts/',
   },
   {
+    id: 154,
+    title: 'Prompts Prontos — 13 System Prompts Copiáveis',
+    description:
+      '13 system prompts completos e prontos pra usar (agente de código, pesquisa, persona, subagente, destilador de cérebro…), montados a partir das técnicas do Manual Oculto da IA. Copie, troque os campos, cole.',
+    icon: '📋',
+    tags: ['System Prompts', 'Prompt Engineering', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/prompts-prontos/',
+  },
+  {
     id: 138,
     title: 'Remotion - Vídeo Programático com React',
     description:
@@ -1394,6 +1403,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-14', title: 'Prompts Prontos — 13 System Prompts Copiáveis', type: 'novo', url: 'https://inematds.github.io/prompts-prontos/' },
   { date: '2026-06-14', title: 'O Manual Oculto da IA — do fundamento ao cérebro do Fable', type: 'novo', url: 'https://inematds.github.io/manual-oculto-ia/' },
   { date: '2026-06-14', title: 'Fábrica de Estratégia de IA — Vire Consultor de IA', type: 'novo', url: 'https://inematds.github.io/aiestrategia/' },
   { date: '2026-06-14', title: 'AI Strategy Factory — Estratégia de IA Completa para Qualquer Empresa', type: 'novo', url: 'https://inematds.github.io/AI-CONSULT/' },

@@ -486,6 +486,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/FEP2/',     label: 'FEP2',    desc: 'Prompt Engineering Masterclass' },
               { href: 'https://inematds.github.io/prompts/',  label: 'Prompts', desc: 'Engenharia de Prompts Avançada' },
               { href: 'https://inematds.github.io/FEI/',      label: 'FEI',     desc: 'Engenharia da Intenção' },
+              { href: 'https://inematds.github.io/prompts-prontos/', label: 'Prompts Prontos', desc: '13 System Prompts Copiáveis' },
             ]},
             { title: '🎨 Design & Visual', steps: [
               { href: 'https://inematds.github.io/webp',       label: 'WebP',       desc: 'Designer 2026' },
