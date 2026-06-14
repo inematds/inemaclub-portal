@@ -943,6 +943,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/notebooklm',
   },
   {
+    id: 153,
+    title: 'O Manual Oculto da IA — do Fundamento ao Cérebro do Fable',
+    description:
+      'System prompts e disciplina de agentes destilados de prompts reais (Anthropic, OpenAI, xAI, Cursor, Perplexity) + o método de recuperar o "cérebro" de um bom agente a partir dos logs. 3 trilhas, 20 módulos, 120 tópicos.',
+    icon: '🧠',
+    tags: ['System Prompts', 'Agentes', 'Prompt Engineering', 'Claude Code', 'IA'],
+    url: 'https://inematds.github.io/manual-oculto-ia/',
+  },
+  {
     id: 119,
     title: 'OpenHuman Mastery',
     description:
@@ -1385,6 +1394,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-14', title: 'O Manual Oculto da IA — do fundamento ao cérebro do Fable', type: 'novo', url: 'https://inematds.github.io/manual-oculto-ia/' },
   { date: '2026-06-14', title: 'Fábrica de Estratégia de IA — Vire Consultor de IA', type: 'novo', url: 'https://inematds.github.io/aiestrategia/' },
   { date: '2026-06-14', title: 'AI Strategy Factory — Estratégia de IA Completa para Qualquer Empresa', type: 'novo', url: 'https://inematds.github.io/AI-CONSULT/' },
   { date: '2026-06-13', title: 'Subagentes — Especialistas do Claude Code', type: 'novo', url: 'https://inematds.github.io/subagentes/' },
