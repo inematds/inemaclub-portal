@@ -549,9 +549,14 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="learning-path-header">
             <h3>Trilhas de Aprendizado</h3>
-            <p>17 trilhas temáticas — escolha seu caminho e avance com foco</p>
+            <p>18 trilhas temáticas — escolha seu caminho e avance com foco</p>
           </div>
           {([
+            { title: '🎯 Arquitetura de IA', steps: [
+              { href: 'https://inematds.github.io/arquitetura-de-intencao/', label: 'Arquitetura de Intenção', desc: 'Imersão de 3 dias — do prompt ao sistema' },
+              { href: 'https://inematds.github.io/manual-oculto-ia/',        label: 'Manual Oculto',         desc: 'System Prompts como os Labs Fazem — o cérebro do Fable' },
+              { href: 'https://inematds.github.io/fablelite/',               label: 'Fable Lite',            desc: 'Garimpando o Raciocínio dos Modelos' },
+            ]},
             { title: '⚡ Automação', steps: [
               { href: 'https://inematds.github.io/FIA2026/', label: 'FIA2026',    desc: 'Automações com IA 2026' },
               { href: 'https://inematds.github.io/N8Nb',    label: 'N8Nb',       desc: 'Fundamentos N8N' },
