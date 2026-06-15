@@ -631,6 +631,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             ]},
             { title: '🖥️ Claude Code', steps: [
               { href: 'https://inematds.github.io/jccode23/',             label: 'Do Zero ao Projeto', desc: 'Claude Code dos Fundamentos ao Deploy' },
+              { href: 'https://inematds.github.io/claude-code-na-pratica/', label: 'Na Prática', desc: 'Do Zero ao Produto: sites, apps e automações' },
               { href: 'https://inematds.github.io/ccguide2026',           label: 'CCGuide',     desc: 'Claude Code 2026 - Completo' },
               { href: 'https://inematds.github.io/6pilarccb/',            label: '6 Pilares',   desc: '6 Pilares do Claude Code' },
               { href: 'https://inematds.github.io/6pilarccfull/',         label: '6 Pilares Full', desc: 'Edição Completa 2026' },

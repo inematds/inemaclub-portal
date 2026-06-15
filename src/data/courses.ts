@@ -304,6 +304,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/jccode23/',
   },
   {
+    id: 157,
+    title: 'Claude Code na Prática — do Zero ao Produto',
+    description:
+      'Curso prático e gratuito de Claude Code, do zero ao produto. 3 trilhas (Fundamentos, Construir, Operar & Lucrar) + Biblioteca com 48 prompts, skills e agentes. 12 módulos com exemplos, exercícios e prompts prontos, sem pré-requisito de programação.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Iniciante', 'Website', 'Apps', 'Prompts', 'IA'],
+    url: 'https://inematds.github.io/claude-code-na-pratica/',
+  },
+  {
     id: 59,
     title: 'Claude Code Deep Dive',
     description:
@@ -1421,6 +1430,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-15', title: 'Claude Code na Prática — do Zero ao Produto', type: 'novo', url: 'https://inematds.github.io/claude-code-na-pratica/' },
   { date: '2026-06-15', title: 'AntiGravity — do Zero ao App Publicado com IA', type: 'novo', url: 'https://inematds.github.io/antigravity/' },
   { date: '2026-06-15', title: 'Claude Skills na Prática — Construa Agent Skills do Claude Code', type: 'novo', url: 'https://inematds.github.io/claude-skills/' },
   { date: '2026-06-14', title: 'Prompts Prontos — 13 System Prompts Copiáveis', type: 'novo', url: 'https://inematds.github.io/prompts-prontos/' },
