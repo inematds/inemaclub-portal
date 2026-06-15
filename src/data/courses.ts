@@ -179,12 +179,21 @@ export const platformsData: Course[] = [
   },
   {
     id: 159,
-    title: 'Arquitetura de Intenção — Imersão de 3 dias',
+    title: 'Arquitetura de Intenção — Imersão Intensiva (3 dias)',
     description:
       'Prompt não basta. Do prompt à Arquitetura de Intenção: estruture contexto, regras, memória, objetivos e validação para a IA entregar resultado confiável. Imersão prática de 3 dias.',
     icon: '🎯',
     tags: ['Arquitetura de Intenção', 'Vibe Coding', 'IA', 'Imersão', 'Prompt'],
     url: 'https://inematds.github.io/arquitetura-de-intencao/',
+  },
+  {
+    id: 160,
+    title: 'Arquitetura de Intenção da IA — Curso Completo (Método JARVIS)',
+    description:
+      'A versão completa da Arquitetura de Intenção: 3 dias, 18 módulos e 111 seções no método JARVIS. Forma arquitetos de soluções com IA nas empresas — da infraestrutura à "alma" do sistema (identidade, serviços, agentes, habilidades, memória, segurança e ferramentas) até entregar uma solução real, medida e em evolução.',
+    icon: '🧠',
+    tags: ['Arquitetura de Intenção', 'Agentes', 'IA', 'Curso Completo', 'JARVIS'],
+    url: 'https://inematds.github.io/arquitetura-de-intencao-da-ia/',
   },
   {
     id: 2,
@@ -1448,7 +1457,8 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
-  { date: '2026-06-15', title: 'Arquitetura de Intenção — Imersão de 3 dias', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao/' },
+  { date: '2026-06-15', title: 'Arquitetura de Intenção da IA — Curso Completo (Método JARVIS)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao-da-ia/' },
+  { date: '2026-06-15', title: 'Arquitetura de Intenção — Imersão Intensiva (3 dias)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao/' },
   { date: '2026-06-15', title: 'Fable Lite — Garimpando o Raciocínio dos Modelos', type: 'novo', url: 'https://inematds.github.io/fablelite/' },
   { date: '2026-06-15', title: 'Claude Code na Prática — do Zero ao Produto', type: 'novo', url: 'https://inematds.github.io/claude-code-na-pratica/' },
   { date: '2026-06-15', title: 'AntiGravity — do Zero ao App Publicado com IA', type: 'novo', url: 'https://inematds.github.io/antigravity/' },
