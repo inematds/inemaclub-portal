@@ -538,6 +538,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/enxamesagentes/',
   },
   {
+    id: 158,
+    title: 'Fable Lite — Garimpando o Raciocínio dos Modelos',
+    description:
+      'Destile seus logs do Claude Code, meça em números reais como cada modelo trabalha e gere um playbook que faz o Opus agir mais como o Fable 5. Inclui scripts, skill e o curso completo.',
+    icon: '🔶',
+    tags: ['Claude Code', 'Agentic', 'Logs', 'Playbook', 'IA'],
+    url: 'https://inematds.github.io/fablelite/',
+  },
+  {
     id: 152,
     title: 'Fábrica de Estratégia de IA — Vire Consultor de IA',
     description:
@@ -1430,6 +1439,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-15', title: 'Fable Lite — Garimpando o Raciocínio dos Modelos', type: 'novo', url: 'https://inematds.github.io/fablelite/' },
   { date: '2026-06-15', title: 'Claude Code na Prática — do Zero ao Produto', type: 'novo', url: 'https://inematds.github.io/claude-code-na-pratica/' },
   { date: '2026-06-15', title: 'AntiGravity — do Zero ao App Publicado com IA', type: 'novo', url: 'https://inematds.github.io/antigravity/' },
   { date: '2026-06-15', title: 'Claude Skills na Prática — Construa Agent Skills do Claude Code', type: 'novo', url: 'https://inematds.github.io/claude-skills/' },
