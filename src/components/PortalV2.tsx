@@ -354,6 +354,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
                 { href: 'https://inematds.github.io/mp-skill/curso-skills/',  label: 'Skills For Real Engineers', desc: 'Skills pra Engenheiros de Verdade',   tag: 'Skill' },
                 { href: 'https://inematds.github.io/skills-premium/',         label: 'Skills Premium',            desc: 'Do Iniciante ao Expert',              tag: 'Skill' },
                 { href: 'https://inematds.github.io/superskills-karpathy/',   label: 'SuperSkills Karpathy',      desc: 'Skills como Funcionários Digitais',   tag: 'Skill' },
+                { href: 'https://inematds.github.io/claude-skills/',          label: 'Claude Skills na Prática',  desc: 'Construa Agent Skills do Claude Code', tag: 'Skill' },
               ].map((p, i) => (
                 <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                    className={s.pathCard}

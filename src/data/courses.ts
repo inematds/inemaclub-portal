@@ -349,6 +349,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudedesign/',
   },
   {
+    id: 155,
+    title: 'Claude Skills na Prática — Construa Agent Skills do Claude Code',
+    description:
+      'Curso prático sobre construir Agent Skills do Claude Code, do SKILL.md à arquitetura multi-agente. 6 trilhas, 16 módulos, 96 tópicos, dissecando 12 skills reais (geradores, automação n8n, lead scoring, SEO/AEO, RAG, memória multi-agente) com prompts, exemplos e exercícios. Inclui Central de Skills para download.',
+    icon: '⚡',
+    tags: ['Claude Code', 'Agent Skills', 'SKILL.md', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/claude-skills/',
+  },
+  {
     id: 55,
     title: 'CLI-x - O Terminal como Interface dos Agentes',
     description:
@@ -1403,6 +1412,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-15', title: 'Claude Skills na Prática — Construa Agent Skills do Claude Code', type: 'novo', url: 'https://inematds.github.io/claude-skills/' },
   { date: '2026-06-14', title: 'Prompts Prontos — 13 System Prompts Copiáveis', type: 'novo', url: 'https://inematds.github.io/prompts-prontos/' },
   { date: '2026-06-14', title: 'O Manual Oculto da IA — do fundamento ao cérebro do Fable', type: 'novo', url: 'https://inematds.github.io/manual-oculto-ia/' },
   { date: '2026-06-14', title: 'Fábrica de Estratégia de IA — Vire Consultor de IA', type: 'novo', url: 'https://inematds.github.io/aiestrategia/' },
