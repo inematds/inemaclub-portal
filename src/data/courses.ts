@@ -178,6 +178,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/arqdev2030',
   },
   {
+    id: 159,
+    title: 'Arquitetura de Intenção — Imersão de 3 dias',
+    description:
+      'Prompt não basta. Do prompt à Arquitetura de Intenção: estruture contexto, regras, memória, objetivos e validação para a IA entregar resultado confiável. Imersão prática de 3 dias.',
+    icon: '🎯',
+    tags: ['Arquitetura de Intenção', 'Vibe Coding', 'IA', 'Imersão', 'Prompt'],
+    url: 'https://inematds.github.io/arquitetura-de-intencao/',
+  },
+  {
     id: 2,
     title: 'ATIA - Oportunidades Digitais com IA',
     description:
@@ -1439,6 +1448,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-15', title: 'Arquitetura de Intenção — Imersão de 3 dias', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao/' },
   { date: '2026-06-15', title: 'Fable Lite — Garimpando o Raciocínio dos Modelos', type: 'novo', url: 'https://inematds.github.io/fablelite/' },
   { date: '2026-06-15', title: 'Claude Code na Prática — do Zero ao Produto', type: 'novo', url: 'https://inematds.github.io/claude-code-na-pratica/' },
   { date: '2026-06-15', title: 'AntiGravity — do Zero ao App Publicado com IA', type: 'novo', url: 'https://inematds.github.io/antigravity/' },
