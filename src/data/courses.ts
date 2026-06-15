@@ -160,6 +160,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/AIWCF',
   },
   {
+    id: 156,
+    title: 'AntiGravity — do Zero ao App Publicado com IA',
+    description:
+      'Construa, publique e escale apps reais com IA usando o AntiGravity (o IDE com agentes da Google). 5 trilhas, 11 módulos, 77 tópicos — do problema ao deploy seguro, clonagem em escala, GoHighLevel/WordPress, QA profissional e o framework CODA. Com exemplos, exercícios e biblioteca de prompts prontos.',
+    icon: '🛰️',
+    tags: ['AntiGravity', 'IDE', 'Agentes IA', 'Deploy', 'No-Code', 'CODA', 'IA'],
+    url: 'https://inematds.github.io/antigravity/',
+  },
+  {
     id: 52,
     title: 'Arquitetura 2030 - Arquitetura de Software com IA',
     description:
@@ -1412,6 +1421,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-15', title: 'AntiGravity — do Zero ao App Publicado com IA', type: 'novo', url: 'https://inematds.github.io/antigravity/' },
   { date: '2026-06-15', title: 'Claude Skills na Prática — Construa Agent Skills do Claude Code', type: 'novo', url: 'https://inematds.github.io/claude-skills/' },
   { date: '2026-06-14', title: 'Prompts Prontos — 13 System Prompts Copiáveis', type: 'novo', url: 'https://inematds.github.io/prompts-prontos/' },
   { date: '2026-06-14', title: 'O Manual Oculto da IA — do fundamento ao cérebro do Fable', type: 'novo', url: 'https://inematds.github.io/manual-oculto-ia/' },
