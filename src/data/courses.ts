@@ -16,6 +16,15 @@ export interface Update {
 
 export const platformsData: Course[] = [
   {
+    id: 161,
+    title: 'Integra sua Profissão com IA',
+    description:
+      'Integre a sua profissão com IA em vez de trocar de carreira. 3 trilhas (Fundamentos, Carreiras, Avançado), 12 módulos, 72 tópicos, ~7h30. As 6 habilidades + o caminho de carreira (diagnóstico, plano 30-60-90, blindagem) com dados de mercado (WEF 2025, Stanford AI Index, IBM). Camada de aprendizagem v2 e Guia de Ação baixável.',
+    icon: '🧭',
+    tags: ['Carreira', 'IA', 'Produtividade', 'Profissão', 'Agentes', 'Contexto'],
+    url: 'https://inematds.github.io/profissionalai/',
+  },
+  {
     id: 60,
     title: '2Cerebro - Segundo Cerebro com LLM + Obsidian',
     description:
@@ -1457,6 +1466,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-15', title: 'Integra sua Profissão com IA — 3 Trilhas e as 6 Habilidades', type: 'novo', url: 'https://inematds.github.io/profissionalai/' },
   { date: '2026-06-15', title: 'Arquitetura de Intenção da IA — Curso Completo (Método JARVIS)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao-da-ia/' },
   { date: '2026-06-15', title: 'Arquitetura de Intenção — Imersão Intensiva (3 dias)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao/' },
   { date: '2026-06-15', title: 'Fable Lite — Garimpando o Raciocínio dos Modelos', type: 'novo', url: 'https://inematds.github.io/fablelite/' },
