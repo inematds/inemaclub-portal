@@ -331,6 +331,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/jccode23/',
   },
   {
+    id: 163,
+    title: 'Claude Code Básico — Curso Completo',
+    description:
+      'Curso completo de Claude Code em 6 trilhas, 39 módulos: do básico e instalação (Windows/macOS/Linux/WSL) ao contexto e comandos, skills, plugins e memória, MCP e integrações, agentes e Cowork. Conteúdo extraído e curado do canal Claude Code (INEMA) no Telegram.',
+    icon: '✳️',
+    tags: ['Claude Code', 'Iniciante', 'Instalação', 'Skills', 'MCP', 'IA'],
+    url: 'https://inematds.github.io/ccodebasico/',
+  },
+  {
     id: 157,
     title: 'Claude Code na Prática — do Zero ao Produto',
     description:
@@ -1475,6 +1484,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-16', title: 'Claude Code Básico — Curso Completo', type: 'novo', url: 'https://inematds.github.io/ccodebasico/' },
   { date: '2026-06-16', title: 'Codex Básico — Curso Completo do Codex CLI', type: 'novo', url: 'https://inematds.github.io/codexbasico/' },
   { date: '2026-06-15', title: 'Integra sua Profissão com IA — 3 Trilhas e as 6 Habilidades', type: 'novo', url: 'https://inematds.github.io/profissionalai/' },
   { date: '2026-06-15', title: 'Arquitetura de Intenção da IA — Curso Completo (Método JARVIS)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao-da-ia/' },
