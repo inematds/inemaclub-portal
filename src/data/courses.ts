@@ -412,6 +412,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/CLI-x',
   },
   {
+    id: 162,
+    title: 'Codex Básico — Curso Completo do Codex CLI',
+    description:
+      'Curso completo do Codex CLI da OpenAI em 6 trilhas, 46 módulos: do básico ao avançado, terminal e interface gráfica, Agent Builder sem código, BMAD Method, equipe de 5 agentes de marketing e chatbot de WhatsApp. Conteúdo extraído e curado do canal INEMA.Codex.',
+    icon: '⚡',
+    tags: ['Codex', 'OpenAI', 'CLI', 'Agent Builder', 'BMAD', 'IA'],
+    url: 'https://inematds.github.io/codexbasico/',
+  },
+  {
     id: 125,
     title: 'Consultor de IA — Do Rótulo ao Resultado',
     description:
@@ -1466,6 +1475,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-16', title: 'Codex Básico — Curso Completo do Codex CLI', type: 'novo', url: 'https://inematds.github.io/codexbasico/' },
   { date: '2026-06-15', title: 'Integra sua Profissão com IA — 3 Trilhas e as 6 Habilidades', type: 'novo', url: 'https://inematds.github.io/profissionalai/' },
   { date: '2026-06-15', title: 'Arquitetura de Intenção da IA — Curso Completo (Método JARVIS)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao-da-ia/' },
   { date: '2026-06-15', title: 'Arquitetura de Intenção — Imersão Intensiva (3 dias)', type: 'novo', url: 'https://inematds.github.io/arquitetura-de-intencao/' },
