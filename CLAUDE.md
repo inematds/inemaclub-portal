@@ -1,79 +1,86 @@
-# Portal INEMA - Guia de Atualizações
+# Portal INEMA — Guia de Atualizações
 
-## Estrutura do Projeto
+## Arquitetura
 
-- `data.js` - Dados dos cursos (platformsData) e histórico de atualizações (updatesData)
-- `index.html` - Estrutura HTML do portal
-- `styles.css` - Estilos CSS
-- `script.js` - Funcionalidades JavaScript
+App **Next.js 16 (App Router)** hospedado no **Vercel**, servindo `inema.club`. Deploy é automático via webhook GitHub → Vercel ao dar push em `main`.
 
-## Padrões para Adicionar Novos Cursos
+**Arquivos legados (NÃO EDITAR mais — ignorados em produção):**
+- `data.js`, `index.html`, `styles.css`, `script.js` — vestígios da versão estática antiga. O Vercel/Next ignora.
 
-### 1. Adicionar curso em `data.js`
+**Arquivos que valem:**
+- `src/data/courses.ts` — fonte única dos cursos (`platformsData`) e do histórico (`updatesData`). Consumido por Portal.tsx e PortalV2.tsx via `import`.
+- `src/components/Portal.tsx` — rota `/` (versão atual). Tem também uma **lista hardcoded de trilhas** que precisa ser atualizada manualmente quando o curso pertencer a alguma trilha.
+- `src/components/PortalV2.tsx` — rota `/new`. **CONGELADO — NÃO ATUALIZAR MAIS** (descontinuado, mantido só por histórico). Toda atualização de curso/trilha vai apenas no `Portal.tsx`.
+- `src/app/page.tsx` → renderiza `Portal`. `src/app/new/page.tsx` → renderiza `PortalV2`.
 
-Os cursos devem estar em **ordem alfabética** pelo título.
+## Como adicionar um curso novo
 
-```javascript
+### 1. `src/data/courses.ts` — `platformsData`
+
+Entrar em **ordem alfabética por title**. ID = `MAX(id) + 1`.
+
+```ts
 {
-    id: [próximo ID sequencial],
-    title: "SIGLA - Nome do Curso",
-    description: "Descrição breve do curso.",
-    icon: "[emoji apropriado]",
-    tags: ["Tag1", "Tag2", "Tag3"],
-    url: "https://inematds.github.io/[REPOSITORIO]"
-}
+  id: 117,
+  title: 'NOME — Subtítulo',
+  description: 'Descrição breve, 1-2 frases.',
+  icon: '📚',
+  tags: ['Tag1', 'Tag2', 'IA'],
+  url: 'https://inematds.github.io/repo/',
+},
 ```
 
-### 2. Adicionar ao histórico de atualizações
+### 2. `src/data/courses.ts` — `updatesData`
 
-Adicionar no **início** do array `updatesData` (mais recente primeiro):
+Adicionar no **topo** (mais recente primeiro):
 
-```javascript
-{ date: "YYYY-MM-DD", title: "Nome do Curso", type: "novo", url: "URL" }
+```ts
+{ date: '2026-MM-DD', title: 'NOME — Subtítulo', type: 'novo', url: 'https://inematds.github.io/repo/' },
 ```
 
-Tipos: `"novo"` ou `"atualizado"`
+`type` ∈ `'novo' | 'atualizado'`.
 
-### 3. Commit pattern
+### 3. Trilhas em `Portal.tsx` (se aplicável)
 
+Se o curso pertence a uma trilha existente (Claude Code, Agentes Jarvis, etc), adicionar o item à lista hardcoded no `Portal.tsx`. Procurar pelo bloco da trilha e inserir:
+
+```ts
+{ href: 'https://inematds.github.io/repo/', label: 'nome-curto', desc: 'Descrição curta' },
 ```
-feat: Adiciona curso [NOME DO CURSO]
 
-Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+`PortalV2.tsx` (rota `/new`) está **congelado** — não precisa mais ser atualizado.
+
+### 4. Commit + push
+
+```bash
+git add src/data/courses.ts src/components/Portal.tsx
+git commit -m "Add <NOME> course (id <N>) to portal"
+git push
 ```
 
-## Seção "Últimas Atualizações"
+Vercel detecta o push e dispara build automaticamente. Build leva ~1-2 min. Cache CDN limpa em ~5 min.
 
-- Mostra **5 atualizações** por padrão
-- Expande para **20 atualizações** ao clicar em "Ver mais"
-- Localização: acima da busca de cursos
+## Como verificar que apareceu no ar
 
-## Repositórios GitHub
+1. Vercel dashboard: https://vercel.com/dashboard → projeto portal-inema → Deployments. Confirmar que o último deploy está `Ready`.
+2. `fetch('https://inema.club/')` no terminal e procurar pelo slug do repo.
+3. Se Vercel falhar, ler o build log. Erro comum: TypeScript fora de tipo em `courses.ts` (faltou vírgula, tag duplicada).
 
-- Mostrar **12 repositórios mais recentes** (excluindo "portal")
-- Adicionar **6 repositórios com mais estrelas** no final
-- Total: 18 repositórios
+## Buscar dados de um curso novo
+
+Quando o user manda só a URL do curso (`https://inematds.github.io/X/`), usar WebFetch / fetch direto pra extrair:
+- Título completo
+- Descrição (primeira frase do hero ou meta description)
+- Trilhas / módulos / duração (se aparecer)
+- Escolher ícone temático adequado
+
+## Comunidade — repositórios GitHub
+
+Listagem no portal: 12 mais recentes (excluindo `portal`) + 6 com mais estrelas. Atualização separada do fluxo de cursos.
 
 ## Badge "Participe da Comunidade"
 
-- Localização: topo esquerdo do header
-- Imagem: `doc/conviteinemap.png`
-- Largura da imagem: 120px
-- Texto abaixo: "Participe da Comunidade" (1.1rem, mesmo tamanho da tagline)
+- Topo esquerdo do header
+- Imagem: `public/doc/conviteinemap.png` (120px)
+- Texto: "Participe da Comunidade" (1.1rem)
 - Link: https://inema.vip
-- Centralizado verticalmente no header
-
-## Buscar informações de novo curso
-
-Usar WebFetch na URL do curso para extrair:
-- Nome completo
-- Descrição
-- Tags relevantes
-- Escolher ícone apropriado
-
-## Comandos Git
-
-Sempre fazer commit e push após alterações:
-```bash
-git add [arquivos] && git commit -m "mensagem" && git push
-```

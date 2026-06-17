@@ -395,17 +395,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="learning-path-header">
             <h3>🧭 Trilha Profissional com IA</h3>
-            <p>Do espectador ao especialista, em 2 estágios — integre, implemente e lidere</p>
+            <p>Do espectador ao especialista, em 3 estágios — desperte, lidere e construa sua estratégia</p>
           </div>
 
-          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#34d399', margin: '0 0 .9rem' }}>1 · Despertar &amp; Implementar — integre a IA e vire quem produz com ela</div>
+          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#34d399', margin: '0 0 .9rem' }}>1 · Despertar — integre a IA na sua profissão</div>
           <div className="learning-path-cards">
             {[
               { href: 'https://inematds.github.io/profissionalai/',    label: 'Integra sua Profissão', desc: 'Integre a IA na profissão que você já tem', n: 1 },
               { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 2 },
               { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 3 },
               { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 4 },
-              { href: 'https://inematds.github.io/fae-ai/',            label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',            n: 5 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
@@ -423,7 +422,22 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/caio/',          label: 'CAIO',             desc: 'Chief AI Officer 2030',                  n: 1 },
               { href: 'https://inematds.github.io/prof2031CAIP/',  label: 'CAIP',             desc: 'Certified AI Professional',              n: 2 },
               { href: 'https://inematds.github.io/consultoria2k/', label: 'Consultor de IA',  desc: 'Do Rótulo ao Resultado',                 n: 3 },
-              { href: 'https://inematds.github.io/aiestrategia/',  label: 'Estratégia de IA', desc: 'Fábrica de Estratégia — Vire Consultor',  n: 4 },
+            ].map((p) => (
+              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                 className={`path-card path-card-${p.n}`}
+                 onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
+                <div className="path-number">{p.n}</div>
+                <h4>{p.label}</h4>
+                <p>{p.desc}</p>
+              </a>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#38bdf8', margin: '1.6rem 0 .9rem' }}>3 · Estratégia — automação e estratégia com IA</div>
+          <div className="learning-path-cards">
+            {[
+              { href: 'https://inematds.github.io/fae-ai/',       label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',           n: 1 },
+              { href: 'https://inematds.github.io/aiestrategia/', label: 'Estratégia de IA',      desc: 'Fábrica de Estratégia — Vire Consultor', n: 2 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
