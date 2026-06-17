@@ -339,6 +339,28 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               <h4>Vision</h4>
               <p>Processamento de Imagens com IA</p>
             </a>
+            <a
+              href="https://inematds.github.io/ccodebasico/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-5"
+              onClick={() => trackClick('https://inematds.github.io/ccodebasico/', 'Claude Code Básico', 'trilha')}
+            >
+              <div className="path-number">5</div>
+              <h4>Claude Code Básico</h4>
+              <p>Do Zero: Instalação, Comandos, Skills, MCP e Cowork</p>
+            </a>
+            <a
+              href="https://inematds.github.io/codexbasico/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-6"
+              onClick={() => trackClick('https://inematds.github.io/codexbasico/', 'Codex Básico', 'trilha')}
+            >
+              <div className="path-number">6</div>
+              <h4>Codex Básico</h4>
+              <p>Curso Completo do Codex CLI em 6 Trilhas</p>
+            </a>
           </div>
           <div className="learning-path-footer">
             <p>Após completar esta trilha, explore outros cursos conforme seu interesse abaixo</p>

@@ -576,6 +576,32 @@ html {
     background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
 }
 
+.path-card-5::before {
+    background: linear-gradient(90deg, #06b6d4 0%, #0891b2 100%);
+}
+
+.path-card-6::before {
+    background: linear-gradient(90deg, #f43f5e 0%, #e11d48 100%);
+}
+
+.path-card-5:hover {
+    border-color: #06b6d4;
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.4), var(--shadow-hover);
+}
+
+.path-card-6:hover {
+    border-color: #f43f5e;
+    box-shadow: 0 0 30px rgba(244, 63, 94, 0.4), var(--shadow-hover);
+}
+
+.path-card-5 .path-number {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+}
+
+.path-card-6 .path-number {
+    background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+}
+
 .path-card h4 {
     font-size: 1.5rem;
     font-weight: 700;

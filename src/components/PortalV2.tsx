@@ -260,6 +260,8 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
                 { href: 'https://inematds.github.io/ATIA/',   label: 'ATIA',   desc: 'AI Tools in Action',                    tag: 'Passo 2' },
                 { href: 'https://inematds.github.io/FDB/',    label: 'FDB',    desc: 'Fundamentos de Banco de Dados',         tag: 'Passo 3' },
                 { href: 'https://inematds.github.io/VISION/', label: 'Vision', desc: 'Processamento de Imagens com IA',      tag: 'Passo 4' },
+                { href: 'https://inematds.github.io/ccodebasico/', label: 'Claude Code Básico', desc: 'Do Zero: Instalação, Comandos, Skills, MCP e Cowork', tag: 'Passo 5' },
+                { href: 'https://inematds.github.io/codexbasico/', label: 'Codex Básico', desc: 'Curso Completo do Codex CLI em 6 Trilhas', tag: 'Passo 6' },
               ].map((p, i) => (
                 <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                    className={s.pathCard}
