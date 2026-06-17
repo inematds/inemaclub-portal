@@ -279,10 +279,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                 que te torna mais produtivo, mais estratégico e mais preparado para o futuro do
                 trabalho.
               </p>
-              <p className="recruitment-cta">
-                O INEMA Club é a comunidade prática para aprender IA, aplicar em projetos reais e
-                evoluir profissionalmente — com apoio, conteúdo e ferramentas atualizadas.
-              </p>
             </div>
           </div>
         </div>
@@ -633,6 +629,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skills-premium/',         label: 'Skills Premium',          desc: 'Do Iniciante ao Expert',             n: 8 },
               { href: 'https://inematds.github.io/superskills-karpathy/',   label: 'SuperSkills Karpathy',    desc: 'Skills como Funcionários Digitais',  n: 9 },
               { href: 'https://inematds.github.io/claude-skills/',          label: 'Claude Skills na Prática', desc: 'Construa Agent Skills do Claude Code', n: 10 },
+              { href: 'https://inematds.github.io/claude-watch/',           label: 'claude-watch',            desc: 'Dê ao Claude olhos pra assistir vídeo', n: 11 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}

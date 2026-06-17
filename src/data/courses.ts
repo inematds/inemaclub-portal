@@ -412,6 +412,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claude-skills/',
   },
   {
+    id: 166,
+    title: 'claude-watch — Dê ao Claude a capacidade de assistir vídeo',
+    description:
+      'Skill /watch que dá ao Claude entrada de vídeo: baixa via yt-dlp, extrai frames por corte de cena, microscopa o hook 0-10s, transcreve por captions ou Whisper (Groq/OpenAI) e emite um report.md estruturado, com auto-save opcional no Obsidian. Plugin para Claude Code, Codex e claude.ai.',
+    icon: '🎬',
+    tags: ['Skills', 'Claude Code', 'Vídeo', 'yt-dlp', 'ffmpeg', 'Whisper', 'IA'],
+    url: 'https://inematds.github.io/claude-watch/',
+  },
+  {
     id: 55,
     title: 'CLI-x - O Terminal como Interface dos Agentes',
     description:
@@ -1502,6 +1511,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-17', title: 'claude-watch — Dê ao Claude a capacidade de assistir vídeo', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
   { date: '2026-06-17', title: 'Cultura de Inovação — Da Teoria à Prática', type: 'novo', url: 'https://inematds.github.io/cultura-inovacao/' },
   { date: '2026-06-17', title: 'Do Zero ao Deploy — Da Primeira Linha no Terminal ao Assistente IA', type: 'novo', url: 'https://inematds.github.io/do-zero-ao-deploy/' },
   { date: '2026-06-16', title: 'Claude Code Básico — Curso Completo', type: 'novo', url: 'https://inematds.github.io/ccodebasico/' },
