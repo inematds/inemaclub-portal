@@ -361,6 +361,28 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               <h4>Codex Básico</h4>
               <p>Curso Completo do Codex CLI em 6 Trilhas</p>
             </a>
+            <a
+              href="https://inematds.github.io/do-zero-ao-deploy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-7"
+              onClick={() => trackClick('https://inematds.github.io/do-zero-ao-deploy/', 'Do Zero ao Deploy', 'trilha')}
+            >
+              <div className="path-number">7</div>
+              <h4>Do Zero ao Deploy</h4>
+              <p>Da primeira linha no terminal ao seu assistente IA</p>
+            </a>
+            <a
+              href="https://inematds.github.io/intelecto-curso/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-8"
+              onClick={() => trackClick('https://inematds.github.io/intelecto-curso/', 'INTELECTO Curso', 'trilha')}
+            >
+              <div className="path-number">8</div>
+              <h4>INTELECTO Curso</h4>
+              <p>Do Zero ao Expert em IA</p>
+            </a>
           </div>
           <div className="learning-path-footer">
             <p>Após completar esta trilha, explore outros cursos conforme seu interesse abaixo</p>
@@ -373,16 +395,17 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="learning-path-header">
             <h3>🧭 Trilha Profissional com IA</h3>
-            <p>Do espectador ao especialista, em 3 estágios — integre, implemente e lidere</p>
+            <p>Do espectador ao especialista, em 2 estágios — integre, implemente e lidere</p>
           </div>
 
-          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#34d399', margin: '0 0 .9rem' }}>1 · Despertar — integre a IA na sua profissão</div>
+          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#34d399', margin: '0 0 .9rem' }}>1 · Despertar &amp; Implementar — integre a IA e vire quem produz com ela</div>
           <div className="learning-path-cards">
             {[
-              { href: 'https://inematds.github.io/profissionalai/', label: 'Integra sua Profissão', desc: 'Integre a IA na profissão que você já tem', n: 1 },
-              { href: 'https://inematds.github.io/pha2030-aula/',    label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 2 },
-              { href: 'https://inematds.github.io/ATIA/',            label: 'ATIA',                  desc: 'Oportunidades Digitais com IA',           n: 3 },
-              { href: 'https://inematds.github.io/intelecto-curso/', label: 'INTELECTO',             desc: 'Do Zero ao Expert em IA',                 n: 4 },
+              { href: 'https://inematds.github.io/profissionalai/',    label: 'Integra sua Profissão', desc: 'Integre a IA na profissão que você já tem', n: 1 },
+              { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 2 },
+              { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 3 },
+              { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 4 },
+              { href: 'https://inematds.github.io/fae-ai/',            label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',            n: 5 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
@@ -394,24 +417,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#38bdf8', margin: '1.6rem 0 .9rem' }}>2 · Implementar — vire quem produz com IA</div>
-          <div className="learning-path-cards">
-            {[
-              { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs', n: 1 },
-              { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',        n: 2 },
-              { href: 'https://inematds.github.io/fae-ai/',            label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',    n: 3 },
-            ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
-                 className={`path-card path-card-${p.n}`}
-                 onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
-                <div className="path-number">{p.n}</div>
-                <h4>{p.label}</h4>
-                <p>{p.desc}</p>
-              </a>
-            ))}
-          </div>
-
-          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#a78bfa', margin: '1.6rem 0 .9rem' }}>3 · Liderar &amp; Monetizar — consultor, CAIO, certificação</div>
+          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#a78bfa', margin: '1.6rem 0 .9rem' }}>2 · Liderar &amp; Monetizar — consultor, CAIO, certificação</div>
           <div className="learning-path-cards">
             {[
               { href: 'https://inematds.github.io/caio/',          label: 'CAIO',             desc: 'Chief AI Officer 2030',                  n: 1 },

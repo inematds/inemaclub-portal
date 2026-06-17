@@ -262,6 +262,8 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
                 { href: 'https://inematds.github.io/VISION/', label: 'Vision', desc: 'Processamento de Imagens com IA',      tag: 'Passo 4' },
                 { href: 'https://inematds.github.io/ccodebasico/', label: 'Claude Code Básico', desc: 'Do Zero: Instalação, Comandos, Skills, MCP e Cowork', tag: 'Passo 5' },
                 { href: 'https://inematds.github.io/codexbasico/', label: 'Codex Básico', desc: 'Curso Completo do Codex CLI em 6 Trilhas', tag: 'Passo 6' },
+                { href: 'https://inematds.github.io/do-zero-ao-deploy/', label: 'Do Zero ao Deploy', desc: 'Da primeira linha no terminal ao seu assistente IA', tag: 'Passo 7' },
+                { href: 'https://inematds.github.io/intelecto-curso/', label: 'INTELECTO Curso', desc: 'Do Zero ao Expert em IA', tag: 'Passo 8' },
               ].map((p, i) => (
                 <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                    className={s.pathCard}

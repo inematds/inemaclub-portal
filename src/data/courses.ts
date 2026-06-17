@@ -520,6 +520,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/diretor-animacao/',
   },
   {
+    id: 164,
+    title: 'Do Zero ao Deploy — Da Primeira Linha no Terminal ao Assistente IA',
+    description:
+      'Curso para iniciantes sem pré-requisitos: comece do zero no terminal e termine com seu próprio servidor, deploy automático e um assistente de IA funcionando. 5 trilhas, 18 módulos, 108 tópicos — Terminal & Git, Deploy Moderno, Servidor Próprio, Docker & Automação e Assistentes IA.',
+    icon: '🚀',
+    tags: ['Iniciantes', 'Terminal', 'Deploy', 'Docker', 'IA'],
+    url: 'https://inematds.github.io/do-zero-ao-deploy/',
+  },
+  {
     id: 76,
     title: 'Docker OpenClaw - Assistente IA Autônomo e Multi-Canal',
     description:
@@ -1484,6 +1493,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-17', title: 'Do Zero ao Deploy — Da Primeira Linha no Terminal ao Assistente IA', type: 'novo', url: 'https://inematds.github.io/do-zero-ao-deploy/' },
   { date: '2026-06-16', title: 'Claude Code Básico — Curso Completo', type: 'novo', url: 'https://inematds.github.io/ccodebasico/' },
   { date: '2026-06-16', title: 'Codex Básico — Curso Completo do Codex CLI', type: 'novo', url: 'https://inematds.github.io/codexbasico/' },
   { date: '2026-06-15', title: 'Integra sua Profissão com IA — 3 Trilhas e as 6 Habilidades', type: 'novo', url: 'https://inematds.github.io/profissionalai/' },
