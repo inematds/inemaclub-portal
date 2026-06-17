@@ -254,7 +254,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <div className="recruitment-image-wrapper">
               <div className="recruitment-image">
                 <img
-                  src="/doc/inema-hero-aprenda-pratique-evolua.png"
+                  src="/doc/inema-hero-aprenda-pratique-evolua.webp"
                   alt="INEMA.CLUB — Aprenda. Pratique. Evolua. O ecossistema para dominar IA na prática."
                 />
               </div>
