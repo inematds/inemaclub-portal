@@ -254,33 +254,34 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <div className="recruitment-image-wrapper">
               <div className="recruitment-image">
                 <img
-                  src="/doc/7e25b078-3996-4a42-abf6-48103e2ba422.jpg"
-                  alt="Crie seu time. Lidere sua jornada."
+                  src="/doc/inema-hero-aprenda-pratique-evolua.png"
+                  alt="INEMA.CLUB — Aprenda. Pratique. Evolua. O ecossistema para dominar IA na prática."
                 />
               </div>
               <p className="recruitment-image-caption">
                 <strong>
-                  Comece sua jornada agora e compartilhe as trilhas especiais para iniciantes. É
-                  aqui que o futuro começa — e ele precisa de você.
+                  Aprenda. Pratique. Evolua. — uma base sólida de conhecimento em IA, para aplicar
+                  no trabalho, nos projetos e na carreira.
                 </strong>
               </p>
             </div>
             <div className="recruitment-text">
-              <h2>Crie sua Equipe, Seu Time. Nós Ajudamos.</h2>
+              <h2>Construa uma base sólida de conhecimento em IA.</h2>
               <p>
-                O INEMA Clube é o ponto de partida para quem quer se preparar para o futuro. Nosso
-                foco é ajudar você a formar e desenvolver seu próprio time — pessoas com propósito,
-                visão e capacidade de atuar em um mundo onde a Inteligência Artificial e a Robótica
-                estarão em todos os lugares. Num cenário em que apenas os profissionais especiais,
-                criativos e adaptáveis terão valor, o segredo é unir forças e construir juntos.
+                O INEMA Club é um ecossistema de aprendizado prático para quem quer dominar
+                inteligência artificial e aplicar IA no trabalho, nos projetos e na carreira. A ideia
+                central é simples: aprender, praticar e evoluir com IA de forma contínua.
               </p>
               <p>
-                O INEMA não é apenas uma plataforma de conhecimento — é uma comunidade viva, feita
-                por pessoas que acreditam no poder do aprendizado, da inovação e da colaboração para
-                transformar o futuro.
+                Aqui você encontra cursos práticos diretos ao ponto, projetos reais para colocar a
+                mão na massa, trilhas organizadas para cada nível, uma comunidade ativa e a curadoria
+                das melhores ferramentas. Tudo voltado a construir uma base sólida de conhecimento —
+                que te torna mais produtivo, mais estratégico e mais preparado para o futuro do
+                trabalho.
               </p>
               <p className="recruitment-cta">
-                Você está pronto para criar, liderar e construir o amanhã conosco?
+                O INEMA Club é a comunidade prática para aprender IA, aplicar em projetos reais e
+                evoluir profissionalmente — com apoio, conteúdo e ferramentas atualizadas.
               </p>
             </div>
           </div>
