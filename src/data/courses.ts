@@ -448,6 +448,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skills-craft/',
   },
   {
+    id: 165,
+    title: 'Cultura de Inovação — Da Teoria à Prática',
+    description:
+      'A parte mais difícil de copiar é a cultura. Construa, meça e escale cultura de inovação — dos fundamentos (pilares, mindset, liderança, métricas) às técnicas (Design Thinking, Lean, Sprint, JTBD, OKRs) e à escala corporativa (programa, intraempreendedorismo, inovação aberta, IA como acelerador, ROI, governança). 3 trilhas, 28 módulos, 168 tópicos em ~14h, com camada de aprendizagem (progresso, anotações, minha jornada).',
+    icon: '💡',
+    tags: ['Inovação', 'Cultura', 'Gestão', 'Estratégia', 'IA'],
+    url: 'https://inematds.github.io/cultura-inovacao/',
+  },
+  {
     id: 83,
     title: 'Curso Open Design - Alternativa Open-Source ao Claude Design',
     description:
@@ -1493,6 +1502,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-17', title: 'Cultura de Inovação — Da Teoria à Prática', type: 'novo', url: 'https://inematds.github.io/cultura-inovacao/' },
   { date: '2026-06-17', title: 'Do Zero ao Deploy — Da Primeira Linha no Terminal ao Assistente IA', type: 'novo', url: 'https://inematds.github.io/do-zero-ao-deploy/' },
   { date: '2026-06-16', title: 'Claude Code Básico — Curso Completo', type: 'novo', url: 'https://inematds.github.io/ccodebasico/' },
   { date: '2026-06-16', title: 'Codex Básico — Curso Completo do Codex CLI', type: 'novo', url: 'https://inematds.github.io/codexbasico/' },
