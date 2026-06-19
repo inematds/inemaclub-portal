@@ -430,6 +430,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/CLI-x',
   },
   {
+    id: 167,
+    title: 'CLI Printing Press — Imprima CLIs Perfeitas para Agentes',
+    description:
+      'Gerador de CLIs otimizadas para agentes de IA: lê docs oficiais, estuda CLIs populares, aplica o playbook de Peter Steinberger (SQLite local, compound commands, agent-native flags) e imprime Go CLI + Claude Code skill + MCP server para qualquer API. Inclui ESPN, Flight Goat, Linear e catálogo completo.',
+    icon: '🖨️',
+    tags: ['CLI', 'Go', 'MCP', 'Agentes', 'Claude Code', 'Codex', 'Open Source'],
+    url: 'https://github.com/mvanhorn/cli-printing-press',
+  },
+  {
     id: 162,
     title: 'Codex Básico — Curso Completo do Codex CLI',
     description:
@@ -1511,6 +1520,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-18', title: 'CLI Printing Press — Imprima CLIs Perfeitas para Agentes', type: 'novo', url: 'https://github.com/mvanhorn/cli-printing-press' },
   { date: '2026-06-17', title: 'claude-watch — Dê ao Claude a capacidade de assistir vídeo', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
   { date: '2026-06-17', title: 'Cultura de Inovação — Da Teoria à Prática', type: 'novo', url: 'https://inematds.github.io/cultura-inovacao/' },
   { date: '2026-06-17', title: 'Do Zero ao Deploy — Da Primeira Linha no Terminal ao Assistente IA', type: 'novo', url: 'https://inematds.github.io/do-zero-ao-deploy/' },
