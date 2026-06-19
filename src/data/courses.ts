@@ -799,6 +799,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/hack7meta',
   },
   {
+    id: 168,
+    title: 'HARNESS — Engenharia Agêntica de Matt Pocock',
+    description:
+      'O método Matt Pocock: pare de obcecar pelo modelo, domine o harness. 5 trilhas, 30 módulos, 180 tópicos — fundamentos do harness, habilidades humanas, skills de IA, técnicas avançadas (AFK, sandboxes, filas) e soluções prontas pra copiar.',
+    icon: '🏎️',
+    tags: ['Agentes', 'Claude Code', 'Engenharia', 'Skills', 'IA'],
+    url: 'https://inematds.github.io/hardnessai/',
+  },
+  {
     id: 104,
     title: 'Hermes + NotebookLM - O Sistema de Agente AI Definitivo',
     description:
@@ -1520,6 +1529,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-19', title: 'HARNESS — Engenharia Agêntica de Matt Pocock', type: 'novo', url: 'https://inematds.github.io/hardnessai/' },
   { date: '2026-06-18', title: 'CLI Printing Press — Imprima CLIs Perfeitas para Agentes', type: 'novo', url: 'https://github.com/mvanhorn/cli-printing-press' },
   { date: '2026-06-17', title: 'claude-watch — Dê ao Claude a capacidade de assistir vídeo', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
   { date: '2026-06-17', title: 'Cultura de Inovação — Da Teoria à Prática', type: 'novo', url: 'https://inematds.github.io/cultura-inovacao/' },
