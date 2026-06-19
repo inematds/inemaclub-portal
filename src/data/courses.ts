@@ -925,6 +925,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
   },
   {
+    id: 169,
+    title: 'Loop Agentes v2 — Engenharia de Loops',
+    description:
+      'Pare de promptar seus agentes — projete os loops que promptam eles. Do esqueleto reason→act→observe ao Loop Engineering, com diagramas e exemplos prontos pra copiar e rodar. 4 trilhas, 13 módulos, 86 tópicos.',
+    icon: '🔁',
+    tags: ['Agentes', 'Loops', 'Loop Engineering', 'Claude Code', 'Verificação', 'IA'],
+    url: 'https://inematds.github.io/loop-agentes-v2/',
+  },
+  {
     id: 21,
     title: 'MAKE - Automações',
     description:
@@ -1529,6 +1538,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-19', title: 'Loop Agentes v2 — Engenharia de Loops', type: 'novo', url: 'https://inematds.github.io/loop-agentes-v2/' },
   { date: '2026-06-19', title: 'HARNESS — Engenharia Agêntica de Matt Pocock', type: 'novo', url: 'https://inematds.github.io/hardnessai/' },
   { date: '2026-06-18', title: 'CLI Printing Press — Imprima CLIs Perfeitas para Agentes', type: 'novo', url: 'https://github.com/mvanhorn/cli-printing-press' },
   { date: '2026-06-17', title: 'claude-watch — Dê ao Claude a capacidade de assistir vídeo', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
