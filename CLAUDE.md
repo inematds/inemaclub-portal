@@ -84,3 +84,23 @@ Listagem no portal: 12 mais recentes (excluindo `portal`) + 6 com mais estrelas.
 - Imagem: `public/doc/conviteinemap.png` (120px)
 - Texto: "Participe da Comunidade" (1.1rem)
 - Link: https://inema.vip
+
+## GUIAS DE PROJETO (≠ cursos)
+
+Guia de projeto = página landing+guia (padrão INEMA, skill `projetos-landing-guia`) de um **projeto** da comunidade. **Nunca entra em cursos** (`platformsData`/`updatesData`). Entra na seção **Projetos** e no quadro **"Últimas Atualizações de Projetos"**.
+
+**Onde fica no código:**
+- `src/components/Portal.tsx` → array `communityProjects` (seção "Projetos"). Renderizado em **ordem alfabética** (`sortedProjects` com `localeCompare`). Card do guia: `badge: 'Guia'`, `url` = a URL do guia.
+- `src/data/courses.ts` → `projectUpdatesData` (tipo `Update`) alimenta o quadro "Últimas Atualizações de Projetos" no `Portal.tsx`. Adicionar no topo.
+
+**Hospedagem (GitHub Pages, org `inematds`):** decidir por repo:
+- Repo do projeto **sem** Pages → publicar o guia num branch **`gh-pages`** do próprio repo (não toca o `main`/app). URL limpa: `inematds.github.io/<slug>/`.
+- Repo que **já serve** Pages, ou repo **externo**, ou **sem** repo → repo dedicado **`inematds/<slug>-guia`** (Pages do `main`). URL: `inematds.github.io/<slug>-guia/`.
+- Checar antes: `gh api repos/inematds/<slug>/pages` (200 = já tem Pages).
+
+**Ferramentas reutilizáveis** (build feito em 2026-06-20, ~34 guias):
+- `~/projetos/guias-build/` — uma subpasta por guia (`<slug>/index.html` + `.nojekyll`), fonte local para editar/re-publicar.
+- `~/projetos/guias-build/_publish.sh ghpages <slug>...` | `_publish.sh separate <slug>...` — publica e habilita Pages (idempotente, force-push).
+- `~/projetos/guias-build/_template.html` — cópia do template da skill.
+
+Sem fonte acessível não se inventa guia: `Restaurante Brutal` (sem repo) e `book-genesis` (PhilipStark, 404) ficaram **sem** guia, com o card apontando para o destino original.
