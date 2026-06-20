@@ -412,6 +412,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claudedesign/',
   },
   {
+    id: 172,
+    title: 'Claude OS — Sistema Operacional do Claude Code + Hermes',
+    description:
+      'Dashboard local que lê seu Claude Code, Codex, Obsidian, Pinecone e OpenRouter e vira um painel vivo: gasto por modelo, grafo de memória 3D, skills e conexões. Inclui o Dream (melhoria diária automática), o Mission Control (planejamento de metas) e o assistente Hermes embutido. Você baixa, manda o Claude abrir e ele se monta sozinho.',
+    icon: '🪽',
+    tags: ['Claude Code', 'Hermes', 'Dashboard', 'Produtividade', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/claude-hermes-os/',
+  },
+  {
     id: 155,
     title: 'Claude Skills na Prática — Construa Agent Skills do Claude Code',
     description:
@@ -1556,6 +1565,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-20', title: 'Claude OS — Sistema Operacional do Claude Code + Hermes', type: 'novo', url: 'https://inematds.github.io/claude-hermes-os/' },
   { date: '2026-06-20', title: 'Cérebro INEMA — Segundo Cérebro com 3 Cérebros', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
   { date: '2026-06-19', title: 'Loop Engineering — Sistemas com IA no Loop', type: 'novo', url: 'https://inematds.github.io/loop-engineering/' },
   { date: '2026-06-19', title: 'Loop Agentes v2 — Engenharia de Loops', type: 'novo', url: 'https://inematds.github.io/loop-agentes-v2/' },

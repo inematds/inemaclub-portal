@@ -774,6 +774,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/akarpathy-skill/curso-pt/', label: 'Karpathy Guidelines', desc: '4 Princípios para Código Limpo com LLM' },
               { href: 'https://inematds.github.io/u-any/curso/', label: 'Understand Anything', desc: 'Análise de Código com LLM e Dashboards Interativos' },
               { href: 'https://inematds.github.io/manual-oculto-ia/', label: 'Manual Oculto', desc: 'System Prompts como os Labs Fazem — do Fundamento ao Cérebro do Fable' },
+              { href: 'https://inematds.github.io/claude-hermes-os/', label: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes com Dream e Mission Control' },
             ]},
             { title: '⚙️ Agentic OS', steps: [
               { href: 'https://inematds.github.io/agenticbasico/', label: 'Agentic Básico', desc: 'Fundamentos de Agentes IA — 5 Pilares + Arena' },
