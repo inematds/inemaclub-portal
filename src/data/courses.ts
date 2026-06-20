@@ -934,6 +934,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/loop-agentes-v2/',
   },
   {
+    id: 170,
+    title: 'Loop Engineering — Sistemas com IA no Loop',
+    description:
+      'Cole Medin explica Loop Engineering: como criar sistemas onde a IA opera em loops contínuos com verificação humana. 4 trilhas (Fundamentos, Vantagens vs Desvantagens, Implementação Técnica, Exemplos Práticos), 14 módulos, ~4h. Camada de aprendizagem v2.',
+    icon: '🔄',
+    tags: ['Loop Engineering', 'Agentes', 'IA', 'Sistemas', 'Verificação', 'Cole Medin'],
+    url: 'https://inematds.github.io/loop-engineering/',
+  },
+  {
     id: 21,
     title: 'MAKE - Automações',
     description:
@@ -1538,6 +1547,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-19', title: 'Loop Engineering — Sistemas com IA no Loop', type: 'novo', url: 'https://inematds.github.io/loop-engineering/' },
   { date: '2026-06-19', title: 'Loop Agentes v2 — Engenharia de Loops', type: 'novo', url: 'https://inematds.github.io/loop-agentes-v2/' },
   { date: '2026-06-19', title: 'HARNESS — Engenharia Agêntica de Matt Pocock', type: 'novo', url: 'https://inematds.github.io/hardnessai/' },
   { date: '2026-06-18', title: 'CLI Printing Press — Imprima CLIs Perfeitas para Agentes', type: 'novo', url: 'https://github.com/mvanhorn/cli-printing-press' },
