@@ -322,6 +322,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ccxcx',
   },
   {
+    id: 171,
+    title: 'Cérebro INEMA — Segundo Cérebro com 3 Cérebros',
+    description:
+      'Segundo cérebro de IA com 3 cérebros (Projeto, Self, Conhecimento), em PT-BR, roda no Linux. Obsidian + Claude Code: o cérebro são os arquivos e o CLAUDE.md é o mapa. Inclui skills de triagem, nota e socrática, instalador e guia de uso.',
+    icon: '🧠',
+    tags: ['Segundo Cérebro', 'Claude Code', 'Obsidian', 'PKM', 'PT-BR', 'IA'],
+    url: 'https://inematds.github.io/cerebro-inema/',
+  },
+  {
     id: 131,
     title: 'Claude Code — Do Zero ao Projeto',
     description:
@@ -1547,6 +1556,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-20', title: 'Cérebro INEMA — Segundo Cérebro com 3 Cérebros', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
   { date: '2026-06-19', title: 'Loop Engineering — Sistemas com IA no Loop', type: 'novo', url: 'https://inematds.github.io/loop-engineering/' },
   { date: '2026-06-19', title: 'Loop Agentes v2 — Engenharia de Loops', type: 'novo', url: 'https://inematds.github.io/loop-agentes-v2/' },
   { date: '2026-06-19', title: 'HARNESS — Engenharia Agêntica de Matt Pocock', type: 'novo', url: 'https://inematds.github.io/hardnessai/' },
