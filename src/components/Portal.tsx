@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
-import { platformsData, updatesData, type Course } from '@/data/courses'
+import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
 
 interface VisitStats {
   total: number
@@ -53,6 +53,7 @@ const communityProjects: Array<{
   { icon: '🖼️', name: 'inemaimg', desc: 'Geração de imagens com IA', url: 'https://github.com/inematds/inemaimg', badge: 'GitHub' },
   { icon: '📝', name: 'mkblogs', desc: 'Publicação multi-plataforma open-source', url: 'https://github.com/inematds/mkblogs', badge: 'GitHub' },
   { icon: '🧬', name: 'openhuman', desc: 'Assistente IA para comunidades (Rust/Tauri)', url: 'https://github.com/inematds/openhuman', badge: 'GitHub' },
+  { icon: '🪽', name: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes (Dream, Mission Control e assistente Hermes)', url: 'https://inematds.github.io/claude-hermes-os/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
@@ -92,6 +93,7 @@ const LANG_ICON: Record<string, string> = {
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
+  const [projectUpdatesExpanded, setProjectUpdatesExpanded] = useState(false)
   const [repoUpdatesExpanded, setRepoUpdatesExpanded] = useState(false)
   const [repoUpdates, setRepoUpdates] = useState<RepoUpdate[]>([])
   const [repos, setRepos] = useState<Repo[]>([])
@@ -179,7 +181,11 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
 
   // Lista de atualizações a exibir
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
+  const visibleProjectUpdates = projectUpdatesData.slice(0, projectUpdatesExpanded ? 20 : 5)
   const visibleRepoUpdates = repoUpdates.slice(0, repoUpdatesExpanded ? 20 : 5)
+  const sortedProjects = [...communityProjects].sort((a, b) =>
+    a.name.localeCompare(b.name, 'pt', { sensitivity: 'base' })
+  )
 
 
   function formatDate(dateStr: string) {
@@ -524,6 +530,35 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             </div>
           </section>
 
+          {/* Updates de Projetos */}
+          <section className="updates-section">
+            <div
+              className="updates-header"
+              onClick={() => setProjectUpdatesExpanded((v) => !v)}
+              style={{ cursor: 'pointer' }}
+            >
+              <h3>Últimas Atualizações de Projetos</h3>
+              <span className="updates-toggle">{projectUpdatesExpanded ? 'Ver menos' : 'Ver mais'}</span>
+            </div>
+            <div className={`updates-list${projectUpdatesExpanded ? ' expanded' : ''}`}>
+              {visibleProjectUpdates.map((update, i) => (
+                <a
+                  key={i}
+                  className="update-item"
+                  href={update.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackClick(update.url, update.title, 'atualizacoes-projetos')}
+                >
+                  <span className="update-date">{formatDate(update.date)}</span>
+                  <span className={`update-type ${update.type}`}>{update.type}</span>
+                  <span className="update-title">{update.title}</span>
+                  <span className="update-arrow">→</span>
+                </a>
+              ))}
+            </div>
+          </section>
+
           {/* Search */}
           <section id="cursos" className="search-section">
             <input
@@ -775,7 +810,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/akarpathy-skill/curso-pt/', label: 'Karpathy Guidelines', desc: '4 Princípios para Código Limpo com LLM' },
               { href: 'https://inematds.github.io/u-any/curso/', label: 'Understand Anything', desc: 'Análise de Código com LLM e Dashboards Interativos' },
               { href: 'https://inematds.github.io/manual-oculto-ia/', label: 'Manual Oculto', desc: 'System Prompts como os Labs Fazem — do Fundamento ao Cérebro do Fable' },
-              { href: 'https://inematds.github.io/claude-hermes-os/', label: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes com Dream e Mission Control' },
             ]},
             { title: '⚙️ Agentic OS', steps: [
               { href: 'https://inematds.github.io/agenticbasico/', label: 'Agentic Básico', desc: 'Fundamentos de Agentes IA — 5 Pilares + Arena' },
@@ -844,7 +878,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <p>Cards com os projetos desenvolvidos pela INEMA</p>
           </div>
           <div className="community-projects-grid">
-            {communityProjects.map((project) =>
+            {sortedProjects.map((project) =>
               project.url ? (
                 <a
                   key={project.name}
