@@ -1464,6 +1464,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vibecode',
   },
   {
+    id: 172,
+    title: 'Vibe Coding: Domínio Completo',
+    description:
+      'Curso completo reorganizado por abordagem: fundamentos & glossário, técnica (CLAUDE.md, framework WAT, MCP, RAG), biblioteca de prompts copy-run, skills & agentes, projetos end-to-end e produção/deploy. 6 trilhas, 21 módulos, ~150 tópicos.',
+    icon: '🧭',
+    tags: ['Vibe Coding', 'Claude Code', 'Agentes', 'MCP', 'n8n', 'IA'],
+    url: 'https://inematds.github.io/vibe-coding-completo/',
+  },
+  {
     id: 48,
     title: 'Vibe Coding Imersão - Do Zero ao SaaS',
     description:
@@ -1565,6 +1574,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-20', title: 'Vibe Coding: Domínio Completo — 6 trilhas, 21 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding-completo/' },
   { date: '2026-06-20', title: 'Claude OS — Sistema Operacional do Claude Code + Hermes', type: 'novo', url: 'https://inematds.github.io/claude-hermes-os/' },
   { date: '2026-06-20', title: 'Cérebro INEMA — Segundo Cérebro com 3 Cérebros', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
   { date: '2026-06-19', title: 'Loop Engineering — Sistemas com IA no Loop', type: 'novo', url: 'https://inematds.github.io/loop-engineering/' },

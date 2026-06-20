@@ -594,6 +594,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skills-craft/',    label: 'Criando Skills',   desc: 'Do Catálogo à Sua Primeira Skill', n: 9 },
               { href: 'https://inematds.github.io/subagentes/',     label: 'Subagentes',       desc: 'Especialistas do Claude Code', n: 10 },
               { href: 'https://inematds.github.io/fablelite/',       label: 'Fable Lite',       desc: 'Garimpe o Raciocínio dos Modelos', n: 11 },
+              { href: 'https://inematds.github.io/vibe-coding-completo/', label: 'Domínio Completo', desc: 'Fundamentos, Técnica, Prompts, Skills, Agentes e Produção', n: 12 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
