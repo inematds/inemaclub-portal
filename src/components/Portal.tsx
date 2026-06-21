@@ -56,6 +56,7 @@ const communityProjects: Array<{
   { icon: '🪽', name: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes (Dream, Mission Control e assistente Hermes)', url: 'https://inematds.github.io/claude-hermes-os/', badge: 'Guia' },
   { icon: '🎬', name: 'recursos de vídeo', desc: 'Catálogo-guia dos ~30 projetos do ecossistema INEMA para gerar e processar vídeo', url: 'https://inematds.github.io/recursos-video/', badge: 'Guia' },
   { icon: '🧭', name: 'O Caminho Certo da IA', desc: 'Manifesto de qualificação real em IA: usar IA de verdade e desenvolver o que a IA não substitui, com dados verificados (Gartner, MIT, WEF)', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/', badge: 'Guia' },
+  { icon: '🔬', name: 'inemathink', desc: 'Laboratório de pesquisa por trás de O Caminho Certo da IA: deep research verificado, manifesto, curso e gráficos de IA/humanoides 2019-2030', url: 'https://inematds.github.io/inemathink/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
