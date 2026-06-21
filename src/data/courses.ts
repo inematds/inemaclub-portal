@@ -57,7 +57,7 @@ export const projectUpdatesData: Update[] = [
 
 export const platformsData: Course[] = [
   {
-    id: 173,
+    id: 174,
     title: 'O Caminho Certo da IA',
     description:
       'Qualificação real em IA, sem hype e sem medo. 2 trilhas (Alavancar com IA · Ser insubstituível), 3 módulos, 19 tópicos. Os 7 hábitos práticos de usar IA + as 12 habilidades humanas que a IA não substitui, ancorados em dados verificados (Gartner, MIT, NBER, METR, Princeton, WEF). Camada de aprendizagem v2.',
