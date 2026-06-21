@@ -57,6 +57,15 @@ export const projectUpdatesData: Update[] = [
 
 export const platformsData: Course[] = [
   {
+    id: 173,
+    title: 'O Caminho Certo da IA',
+    description:
+      'Qualificação real em IA, sem hype e sem medo. 2 trilhas (Alavancar com IA · Ser insubstituível), 3 módulos, 19 tópicos. Os 7 hábitos práticos de usar IA + as 12 habilidades humanas que a IA não substitui, ancorados em dados verificados (Gartner, MIT, NBER, METR, Princeton, WEF). Camada de aprendizagem v2.',
+    icon: '🧭',
+    tags: ['IA', 'Carreira', 'Qualificação', 'Habilidades Humanas', 'Futuro do Trabalho', 'Produtividade'],
+    url: 'https://inematds.github.io/caminho-certo-da-ia/',
+  },
+  {
     id: 161,
     title: 'Integra sua Profissão com IA',
     description:
@@ -1615,6 +1624,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-21', title: 'O Caminho Certo da IA — Qualificação real, sem hype e sem medo', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia/' },
   { date: '2026-06-20', title: 'Vibe Coding na Prática — 4 trilhas, 10 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding/' },
   { date: '2026-06-20', title: 'Vibe Coding: Domínio Completo — 6 trilhas, 21 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding-completo/' },
   { date: '2026-06-20', title: 'Cérebro INEMA — Segundo Cérebro com 3 Cérebros', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
