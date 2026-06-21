@@ -55,6 +55,7 @@ const communityProjects: Array<{
   { icon: '🧬', name: 'openhuman', desc: 'Assistente de IA agêntico open-source, local-first, com 118+ integrações OAuth', url: 'https://inematds.github.io/openhuman-guia/', badge: 'Guia' },
   { icon: '🪽', name: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes (Dream, Mission Control e assistente Hermes)', url: 'https://inematds.github.io/claude-hermes-os/', badge: 'Guia' },
   { icon: '🎬', name: 'recursos de vídeo', desc: 'Catálogo-guia dos ~30 projetos do ecossistema INEMA para gerar e processar vídeo', url: 'https://inematds.github.io/recursos-video/', badge: 'Guia' },
+  { icon: '🧭', name: 'O Caminho Certo da IA', desc: 'Manifesto de qualificação real em IA: usar IA de verdade e desenvolver o que a IA não substitui, com dados verificados (Gartner, MIT, WEF)', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
@@ -631,6 +632,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/subagentes/',     label: 'Subagentes',       desc: 'Especialistas do Claude Code', n: 10 },
               { href: 'https://inematds.github.io/fablelite/',       label: 'Fable Lite',       desc: 'Garimpe o Raciocínio dos Modelos', n: 11 },
               { href: 'https://inematds.github.io/vibe-coding-completo/', label: 'Domínio Completo', desc: 'Fundamentos, Técnica, Prompts, Skills, Agentes e Produção', n: 12 },
+              { href: 'https://inematds.github.io/vibe-coding/', label: 'Vibe Coding na Prática', desc: 'Do Primeiro Workflow ao App no Ar', n: 13 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}

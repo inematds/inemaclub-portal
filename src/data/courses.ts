@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-06-20', title: 'O Caminho Certo da IA — guia de qualificação real (anti-hype, com dados)', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/' },
   { date: '2026-06-20', title: 'recursos de vídeo — Catálogo do ecossistema de vídeo', type: 'novo', url: 'https://inematds.github.io/recursos-video/' },
   { date: '2026-06-20', title: 'pet360 — SaaS multi-tenant para pets', type: 'novo', url: 'https://inematds.github.io/pet360/' },
   { date: '2026-06-20', title: 'bela360 — Gestão para salões e estética', type: 'novo', url: 'https://inematds.github.io/bela360/' },
@@ -1513,6 +1514,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vibecode-imersao/',
   },
   {
+    id: 173,
+    title: 'Vibe Coding na Prática',
+    description:
+      'Construa automações e agentes de IA conversando — do primeiro workflow ao app no ar. 4 trilhas, 10 módulos: fundamentos, domínio do agente de código, hospedagem & deploy e construção de frontends.',
+    icon: '⚡',
+    tags: ['Vibe Coding', 'Claude Code', 'n8n', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/vibe-coding/',
+  },
+  {
     id: 135,
     title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code',
     description:
@@ -1605,6 +1615,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-20', title: 'Vibe Coding na Prática — 4 trilhas, 10 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding/' },
   { date: '2026-06-20', title: 'Vibe Coding: Domínio Completo — 6 trilhas, 21 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding-completo/' },
   { date: '2026-06-20', title: 'Cérebro INEMA — Segundo Cérebro com 3 Cérebros', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
   { date: '2026-06-19', title: 'Loop Engineering — Sistemas com IA no Loop', type: 'novo', url: 'https://inematds.github.io/loop-engineering/' },
