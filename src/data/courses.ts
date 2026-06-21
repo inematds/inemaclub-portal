@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-06-20', title: 'recursos de vídeo — Catálogo do ecossistema de vídeo', type: 'novo', url: 'https://inematds.github.io/recursos-video/' },
   { date: '2026-06-20', title: 'pet360 — SaaS multi-tenant para pets', type: 'novo', url: 'https://inematds.github.io/pet360/' },
   { date: '2026-06-20', title: 'bela360 — Gestão para salões e estética', type: 'novo', url: 'https://inematds.github.io/bela360/' },
   { date: '2026-06-20', title: 'inemavox — Suíte de voz com IA local', type: 'novo', url: 'https://inematds.github.io/inemavox/' },

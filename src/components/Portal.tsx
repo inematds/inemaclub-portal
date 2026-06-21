@@ -54,6 +54,7 @@ const communityProjects: Array<{
   { icon: '📝', name: 'mkblogs', desc: 'Publicação multi-plataforma open-source com Postiz self-hosted e APIs', url: 'https://inematds.github.io/mkblogs-guia/', badge: 'Guia' },
   { icon: '🧬', name: 'openhuman', desc: 'Assistente de IA agêntico open-source, local-first, com 118+ integrações OAuth', url: 'https://inematds.github.io/openhuman-guia/', badge: 'Guia' },
   { icon: '🪽', name: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes (Dream, Mission Control e assistente Hermes)', url: 'https://inematds.github.io/claude-hermes-os/', badge: 'Guia' },
+  { icon: '🎬', name: 'recursos de vídeo', desc: 'Catálogo-guia dos ~30 projetos do ecossistema INEMA para gerar e processar vídeo', url: 'https://inematds.github.io/recursos-video/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
