@@ -139,6 +139,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agentehermes',
   },
   {
+    id: 175,
+    title: 'Agente Hermes + Ollama — Seu SO de IA 100% Privado',
+    description:
+      'Rode um agente de IA completo e privado na sua máquina com Ollama: sem mensalidade, offline e sem nenhum dado saindo de casa. Dos fundamentos a 7 projetos passo a passo — 3 trilhas, 19 módulos.',
+    icon: '🔒',
+    tags: ['IA Local', 'Ollama', 'Agente IA', 'Privacidade', 'Hermes', 'IA'],
+    url: 'https://inematds.github.io/agente-hermes-local/',
+  },
+  {
     id: 84,
     title: 'AgenteJAX - Construa seu Agente de IA Pessoal',
     description:
@@ -1625,6 +1634,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-21', title: 'Agente Hermes + Ollama — Seu SO de IA 100% Privado', type: 'novo', url: 'https://inematds.github.io/agente-hermes-local/' },
   { date: '2026-06-21', title: 'O Caminho Certo da IA — Qualificação real, sem hype e sem medo', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia/' },
   { date: '2026-06-20', title: 'Vibe Coding na Prática — 4 trilhas, 10 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding/' },
   { date: '2026-06-20', title: 'Vibe Coding: Domínio Completo — 6 trilhas, 21 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding-completo/' },
