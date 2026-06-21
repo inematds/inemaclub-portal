@@ -958,6 +958,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vb-imersao/',
   },
   {
+    id: 176,
+    title: 'INEMA.NCIA — Habilidades Humanas na Era da IA',
+    description:
+      'O canal de Telegram INEMA.NCIA virado curso de leitura: 27 tópicos em 6 trilhas sobre atenção, percepção, hábitos, neurociência do foco, persuasão e os talentos humanos que seguem escassos quando a máquina assume o resto. Reading-mode editorial, leitura no seu ritmo.',
+    icon: '🧠',
+    tags: ['Habilidades Humanas', 'Neurociência', 'Persuasão', 'Foco', 'IA'],
+    url: 'https://inematds.github.io/inemancia/',
+  },
+  {
     id: 145,
     title: 'inemaref — Foto vira história em quadrinhos',
     description:
@@ -1634,6 +1643,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-21', title: 'INEMA.NCIA — Habilidades Humanas na Era da IA', type: 'novo', url: 'https://inematds.github.io/inemancia/' },
   { date: '2026-06-21', title: 'Agente Hermes + Ollama — Seu SO de IA 100% Privado', type: 'novo', url: 'https://inematds.github.io/agente-hermes-local/' },
   { date: '2026-06-21', title: 'O Caminho Certo da IA — Qualificação real, sem hype e sem medo', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia/' },
   { date: '2026-06-20', title: 'Vibe Coding na Prática — 4 trilhas, 10 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding/' },
