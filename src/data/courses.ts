@@ -1649,9 +1649,19 @@ export const platformsData: Course[] = [
     tags: ['WhatsApp', 'BSUID', 'Username', 'Privacidade', 'API', 'Empresas'],
     url: 'https://inematds.github.io/whatsapp-bsuid/',
   },
+  {
+    id: 178,
+    title: 'Transição para o Claude Code',
+    description:
+      'De zero a produtivo em 12 semanas. 5 trilhas, 30 módulos, 180 tópicos. CLI, Plan/Loop, MCP Servers, Subagentes, Git, Python e Ship.',
+    icon: '🤖',
+    tags: ['Claude Code', 'CLI', 'MCP', 'Agentes', 'Python', 'Git', 'IA', '2026'],
+    url: 'https://inematds.github.io/claude-code-curso/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-22', title: 'Transição para o Claude Code — 5 trilhas, 30 módulos (INEMA v2)', type: 'novo', url: 'https://inematds.github.io/claude-code-curso/' },
   { date: '2026-06-22', title: '33 Viral Hooks — 165 hooks (5 nichos × 33) com imagens', type: 'novo', url: 'https://inematds.github.io/33viralhooks/' },
   { date: '2026-06-21', title: 'INEMA.NCIA — Habilidades Humanas na Era da IA', type: 'novo', url: 'https://inematds.github.io/inemancia/' },
   { date: '2026-06-21', title: 'Agente Hermes + Ollama — Seu SO de IA 100% Privado', type: 'novo', url: 'https://inematds.github.io/agente-hermes-local/' },
