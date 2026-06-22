@@ -868,6 +868,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/github/',
   },
   {
+    id: 180,
+    title: 'Grill Me — Extraia o que está na sua cabeça',
+    description:
+      'O skill grill-me: ser entrevistado sem dó para extrair o que está na sua cabeça e virar contexto reutilizável para a IA. 4 trilhas — fundamentos, técnicas, o skill por dentro e os prompts avançados.',
+    icon: '🔥',
+    tags: ['Claude Code', 'Skills', 'Contexto', 'Prompts', 'IA'],
+    url: 'https://inematds.github.io/grillme/',
+  },
+  {
     id: 56,
     title: 'Hack do Algoritmo Meta 2026',
     description:
@@ -1670,6 +1679,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-22', title: 'Grill Me — Extraia o que está na sua cabeça (4 trilhas, INEMA v2)', type: 'novo', url: 'https://inematds.github.io/grillme/' },
   { date: '2026-06-22', title: 'O Mundo Após o Claude — de usuário a maestro (Trilha 1: Fundamentos)', type: 'novo', url: 'https://inematds.github.io/mundo-apos-claude/' },
   { date: '2026-06-22', title: 'Transição para o Claude Code — 5 trilhas, 30 módulos (INEMA v2)', type: 'novo', url: 'https://inematds.github.io/claude-code-curso/' },
   { date: '2026-06-22', title: '33 Viral Hooks — 165 hooks (5 nichos × 33) com imagens', type: 'novo', url: 'https://inematds.github.io/33viralhooks/' },
