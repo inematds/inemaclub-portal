@@ -58,6 +58,15 @@ export const projectUpdatesData: Update[] = [
 
 export const platformsData: Course[] = [
   {
+    id: 177,
+    title: '33 Viral Hooks',
+    description:
+      'Os 33 viral hooks de cada um dos 5 nichos mais populares (165 no total) para vídeo curto — TikTok, Reels e Shorts. 3 trilhas (Fundamentos, Técnicas, Avançado), 10 módulos, 60 tópicos. Cada hook traz a frase falada, o Visual Hook, o Text Hook e uma imagem de referência gerada por IA; a fórmula Context Lean → Scroll Stop → Contrarian Snapback, prompts copy-run e uma skill "Hook Machine". Camada de aprendizagem v2.',
+    icon: '🪝',
+    tags: ['Conteúdo', 'Vídeo Curto', 'Copywriting', 'TikTok', 'Reels', 'IA'],
+    url: 'https://inematds.github.io/33viralhooks/',
+  },
+  {
     id: 174,
     title: 'O Caminho Certo da IA',
     description:
@@ -1643,6 +1652,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-22', title: '33 Viral Hooks — 165 hooks (5 nichos × 33) com imagens', type: 'novo', url: 'https://inematds.github.io/33viralhooks/' },
   { date: '2026-06-21', title: 'INEMA.NCIA — Habilidades Humanas na Era da IA', type: 'novo', url: 'https://inematds.github.io/inemancia/' },
   { date: '2026-06-21', title: 'Agente Hermes + Ollama — Seu SO de IA 100% Privado', type: 'novo', url: 'https://inematds.github.io/agente-hermes-local/' },
   { date: '2026-06-21', title: 'O Caminho Certo da IA — Qualificação real, sem hype e sem medo', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia/' },
