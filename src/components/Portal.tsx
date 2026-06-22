@@ -465,45 +465,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       {/* Main — Updates + Search + Cards */}
       <main className="main">
         <div className="container">
-          {/* Repo Updates (GitHub) */}
-          <section className="updates-section">
-            <div
-              className="updates-header"
-              onClick={() => setRepoUpdatesExpanded((v) => !v)}
-              style={{ cursor: 'pointer' }}
-            >
-              <h3>Últimas Atualizações do Repositório</h3>
-              <span className="updates-toggle">
-                {repoUpdates.length === 0
-                  ? 'carregando…'
-                  : repoUpdatesExpanded
-                  ? 'Ver menos'
-                  : 'Ver mais'}
-              </span>
-            </div>
-            <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
-              {visibleRepoUpdates.map((r, i) => (
-                <a
-                  key={`${r.name}-${i}`}
-                  className="update-item"
-                  href={r.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackClick(r.url, r.name, 'repo-updates')}
-                  title={r.description || r.name}
-                >
-                  <span className="update-date">{formatIsoDate(r.date)}</span>
-                  <span className={`update-type ${r.type}`}>{r.type}</span>
-                  <span className="update-title">
-                    {r.name}
-                    {r.description ? ` — ${r.description}` : ''}
-                  </span>
-                  <span className="update-arrow">→</span>
-                </a>
-              ))}
-            </div>
-          </section>
-
           {/* Updates de Cursos */}
           <section className="updates-section">
             <div
@@ -556,6 +517,45 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   <span className="update-date">{formatDate(update.date)}</span>
                   <span className={`update-type ${update.type}`}>{update.type}</span>
                   <span className="update-title">{update.title}</span>
+                  <span className="update-arrow">→</span>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {/* Repo Updates (GitHub) */}
+          <section className="updates-section">
+            <div
+              className="updates-header"
+              onClick={() => setRepoUpdatesExpanded((v) => !v)}
+              style={{ cursor: 'pointer' }}
+            >
+              <h3>Últimas Atualizações do Repositório</h3>
+              <span className="updates-toggle">
+                {repoUpdates.length === 0
+                  ? 'carregando…'
+                  : repoUpdatesExpanded
+                  ? 'Ver menos'
+                  : 'Ver mais'}
+              </span>
+            </div>
+            <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
+              {visibleRepoUpdates.map((r, i) => (
+                <a
+                  key={`${r.name}-${i}`}
+                  className="update-item"
+                  href={r.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackClick(r.url, r.name, 'repo-updates')}
+                  title={r.description || r.name}
+                >
+                  <span className="update-date">{formatIsoDate(r.date)}</span>
+                  <span className={`update-type ${r.type}`}>{r.type}</span>
+                  <span className="update-title">
+                    {r.name}
+                    {r.description ? ` — ${r.description}` : ''}
+                  </span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}
