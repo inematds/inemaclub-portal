@@ -1183,6 +1183,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/manual-oculto-ia/',
   },
   {
+    id: 179,
+    title: 'O Mundo Após o Claude',
+    description:
+      'De usuário a maestro: comande a IA para construir qualquer coisa e monte seu próprio Jarvis. Para público leigo — não precisa programar. 3 trilhas, 16 módulos; Trilha 1 (Fundamentos) no ar.',
+    icon: '🎼',
+    tags: ['Jarvis', 'Agentes', 'Iniciante', 'Claude', 'IA'],
+    url: 'https://inematds.github.io/mundo-apos-claude/',
+  },
+  {
     id: 119,
     title: 'OpenHuman Mastery',
     description:
@@ -1661,6 +1670,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-22', title: 'O Mundo Após o Claude — de usuário a maestro (Trilha 1: Fundamentos)', type: 'novo', url: 'https://inematds.github.io/mundo-apos-claude/' },
   { date: '2026-06-22', title: 'Transição para o Claude Code — 5 trilhas, 30 módulos (INEMA v2)', type: 'novo', url: 'https://inematds.github.io/claude-code-curso/' },
   { date: '2026-06-22', title: '33 Viral Hooks — 165 hooks (5 nichos × 33) com imagens', type: 'novo', url: 'https://inematds.github.io/33viralhooks/' },
   { date: '2026-06-21', title: 'INEMA.NCIA — Habilidades Humanas na Era da IA', type: 'novo', url: 'https://inematds.github.io/inemancia/' },
