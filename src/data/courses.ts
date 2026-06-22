@@ -1012,6 +1012,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/intelecto-curso/',
   },
   {
+    id: 181,
+    title: 'Jarvis — Seu Sistema Operacional de IA',
+    description:
+      'Curso aberto e para leigos sobre Jarvis e sistemas operacionais de IA: fundamentos, panorama dos sistemas (OpenClaw, GravityClaw, Hermes, Intelecto, AIOS), a anatomia (canais, identidade, ferramentas, skills, agentes, cérebros) e trilhas práticas — construir um Jarvis eficaz, no celular e para crianças (educativo, socrático). 6 trilhas, 21 módulos, 126 tópicos.',
+    icon: '🤖',
+    tags: ['Jarvis', 'SO de IA', 'Agentes', 'MCP', 'Assistente IA', 'IA'],
+    url: 'https://inematds.github.io/jarvis/',
+  },
+  {
     id: 118,
     title: 'Karpathy Guidelines — 4 Princípios para Código Limpo com LLM',
     description:
@@ -1679,6 +1688,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-22', title: 'Jarvis — Seu Sistema Operacional de IA (6 trilhas, 21 módulos, 126 tópicos)', type: 'novo', url: 'https://inematds.github.io/jarvis/' },
   { date: '2026-06-22', title: 'Grill Me — Extraia o que está na sua cabeça (4 trilhas, INEMA v2)', type: 'novo', url: 'https://inematds.github.io/grillme/' },
   { date: '2026-06-22', title: 'O Mundo Após o Claude — de usuário a maestro (Trilha 1: Fundamentos)', type: 'novo', url: 'https://inematds.github.io/mundo-apos-claude/' },
   { date: '2026-06-22', title: 'Transição para o Claude Code — 5 trilhas, 30 módulos (INEMA v2)', type: 'novo', url: 'https://inematds.github.io/claude-code-curso/' },
