@@ -1729,6 +1729,7 @@ export const updatesData: Update[] = [
   { date: '2026-06-23', title: 'Anúncios Virais com IA — desconstruir e recriar anúncios que vendem', type: 'novo', url: 'https://inematds.github.io/viralads/' },
   { date: '2026-06-23', title: 'iAmasters OS — sistema operativo agêntico para operadores de IA', type: 'novo', url: 'https://inematds.github.io/iamasters-os/' },
   { date: '2026-06-23', title: 'videoprodutor — orquestrador link → vídeo profissional (3 camadas)', type: 'novo', url: 'https://inematds.github.io/videoprodutor/' },
+  { date: '2026-06-23', title: 'mcp-video — servidor MCP de edição de vídeo com guardrails (119 ferramentas)', type: 'novo', url: 'https://inematds.github.io/mcp-video/' },
   { date: '2026-06-23', title: 'LLMs Orquestradas — Multi-LLM, Fugu Ultra e OpenRouter Fusion (3 trilhas, 6 módulos)', type: 'novo', url: 'https://inematds.github.io/sakanafugu/' },
   { date: '2026-06-22', title: 'Jarvis — Seu Sistema Operacional de IA (6 trilhas, 21 módulos, 126 tópicos)', type: 'novo', url: 'https://inematds.github.io/jarvis/' },
   { date: '2026-06-22', title: 'Grill Me — Extraia o que está na sua cabeça (4 trilhas, INEMA v2)', type: 'novo', url: 'https://inematds.github.io/grillme/' },
