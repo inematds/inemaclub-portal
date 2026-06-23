@@ -982,7 +982,7 @@ export const platformsData: Course[] = [
       'O canal de Telegram INEMA.NCIA virado curso de leitura: 27 tópicos em 6 trilhas sobre atenção, percepção, hábitos, neurociência do foco, persuasão e os talentos humanos que seguem escassos quando a máquina assume o resto. Reading-mode editorial, leitura no seu ritmo.',
     icon: '🧠',
     tags: ['Habilidades Humanas', 'Neurociência', 'Persuasão', 'Foco', 'IA'],
-    url: 'https://inematds.github.io/inemancia/',
+    url: 'https://inematds.github.io/inemancia2/',
   },
   {
     id: 145,
@@ -1703,7 +1703,7 @@ export const updatesData: Update[] = [
   { date: '2026-06-22', title: 'O Mundo Após o Claude — de usuário a maestro (Trilha 1: Fundamentos)', type: 'novo', url: 'https://inematds.github.io/mundo-apos-claude/' },
   { date: '2026-06-22', title: 'Transição para o Claude Code — 5 trilhas, 30 módulos (INEMA v2)', type: 'novo', url: 'https://inematds.github.io/claude-code-curso/' },
   { date: '2026-06-22', title: '33 Viral Hooks — 165 hooks (5 nichos × 33) com imagens', type: 'novo', url: 'https://inematds.github.io/33viralhooks/' },
-  { date: '2026-06-21', title: 'INEMA.NCIA — Habilidades Humanas na Era da IA', type: 'novo', url: 'https://inematds.github.io/inemancia/' },
+  { date: '2026-06-21', title: 'INEMA.NCIA — Habilidades Humanas na Era da IA', type: 'novo', url: 'https://inematds.github.io/inemancia2/' },
   { date: '2026-06-21', title: 'Agente Hermes + Ollama — Seu SO de IA 100% Privado', type: 'novo', url: 'https://inematds.github.io/agente-hermes-local/' },
   { date: '2026-06-21', title: 'O Caminho Certo da IA — Qualificação real, sem hype e sem medo', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia/' },
   { date: '2026-06-20', title: 'Vibe Coding na Prática — 4 trilhas, 10 módulos', type: 'novo', url: 'https://inematds.github.io/vibe-coding/' },
