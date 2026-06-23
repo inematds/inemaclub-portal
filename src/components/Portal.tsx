@@ -169,18 +169,71 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
     })
   }
 
-  // Filtra cursos pela busca
-  const filteredCourses: Course[] =
-    searchTerm.trim() === ''
-      ? platformsData
-      : platformsData.filter((p) => {
-          const term = searchTerm.toLowerCase()
-          return (
-            p.title.toLowerCase().includes(term) ||
-            p.description.toLowerCase().includes(term) ||
-            p.tags.some((t) => t.toLowerCase().includes(term))
+  // Busca unificada: cursos + projetos + repos
+  const isSearching = searchTerm.trim() !== ''
+  const term = searchTerm.toLowerCase()
+
+  const filteredCourses: Course[] = isSearching
+    ? platformsData.filter(
+        (p) =>
+          p.title.toLowerCase().includes(term) ||
+          p.description.toLowerCase().includes(term) ||
+          p.tags.some((t) => t.toLowerCase().includes(term))
+      )
+    : platformsData
+
+  type ContentType = 'Curso' | 'Projeto' | 'Repo'
+  type UnifiedResult = {
+    key: string
+    icon: string
+    title: string
+    description: string
+    url?: string
+    type: ContentType
+    tags?: string[]
+  }
+
+  const unifiedResults: UnifiedResult[] = isSearching
+    ? [
+        ...filteredCourses.map((p) => ({
+          key: `curso-${p.id}`,
+          icon: p.icon,
+          title: p.title,
+          description: p.description,
+          url: p.url,
+          type: 'Curso' as ContentType,
+          tags: p.tags,
+        })),
+        ...communityProjects
+          .filter(
+            (p) =>
+              p.name.toLowerCase().includes(term) ||
+              p.desc.toLowerCase().includes(term)
           )
-        })
+          .map((p) => ({
+            key: `projeto-${p.name}`,
+            icon: p.icon,
+            title: p.name,
+            description: p.desc,
+            url: p.url,
+            type: 'Projeto' as ContentType,
+          })),
+        ...repos
+          .filter(
+            (r) =>
+              r.name.toLowerCase().includes(term) ||
+              (r.description ?? '').toLowerCase().includes(term)
+          )
+          .map((r) => ({
+            key: `repo-${r.name}`,
+            icon: LANG_ICON[r.language ?? ''] ?? '📦',
+            title: r.name,
+            description: r.description,
+            url: r.url,
+            type: 'Repo' as ContentType,
+          })),
+      ]
+    : []
 
   // Lista de atualizações a exibir
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
@@ -567,7 +620,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <input
               type="text"
               className="search-input"
-              placeholder="Buscar cursos ou plataformas..."
+              placeholder="Buscar cursos, projetos ou repositórios..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               onKeyDown={(e) => {
@@ -578,11 +631,46 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
 
           {/* Cards */}
           <section className="cards-grid">
-            {filteredCourses.length === 0 ? (
-              <div className="empty-state">
-                <div className="empty-state-icon">🔍</div>
-                <p className="empty-state-text">Nenhuma plataforma encontrada</p>
-              </div>
+            {isSearching ? (
+              unifiedResults.length === 0 ? (
+                <div className="empty-state">
+                  <div className="empty-state-icon">🔍</div>
+                  <p className="empty-state-text">Nenhum conteúdo encontrado</p>
+                </div>
+              ) : (
+                unifiedResults.map((item) => (
+                  <div key={item.key} className="card">
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                      <div className="card-icon">{item.icon}</div>
+                      <span className={`content-type-badge content-type-badge--${item.type.toLowerCase()}`}>
+                        {item.type}
+                      </span>
+                    </div>
+                    <h2 className="card-title">{item.title}</h2>
+                    <p className="card-description">{item.description}</p>
+                    {item.tags && (
+                      <div className="card-tags">
+                        {item.tags.map((tag) => (
+                          <span key={tag} className="tag">{tag}</span>
+                        ))}
+                      </div>
+                    )}
+                    {item.url ? (
+                      <a
+                        href={item.url}
+                        className="card-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => trackClick(item.url!, item.title, 'busca')}
+                      >
+                        Acessar →
+                      </a>
+                    ) : (
+                      <span className="card-link" style={{ opacity: 0.4, cursor: 'default' }}>Sem link</span>
+                    )}
+                  </div>
+                ))
+              )
             ) : (
               filteredCourses.map((course) => (
                 <div key={course.id} className="card">
