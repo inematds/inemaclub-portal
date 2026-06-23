@@ -58,6 +58,33 @@ export const projectUpdatesData: Update[] = [
 
 export const platformsData: Course[] = [
   {
+    id: 183,
+    title: '10 Cara Design — Character Design Styles',
+    description:
+      'Uma pessoa, dez mundos visuais. 10 prompts de character design para Nano Banana 2: trave a identidade na Referência 1, aplique styling na Referência 2 e atravesse 10 estilos visuais distintos.',
+    icon: '🎨',
+    tags: ['Design', 'IA', 'Personagem', 'Prompts', 'Nano Banana'],
+    url: 'https://inematds.github.io/10cara-design/',
+  },
+  {
+    id: 184,
+    title: 'AI Filmmaking — Parte 1',
+    description:
+      'Pensar como diretor antes de gerar. Caderno editorial de estudo sobre filmmaking com IA — pré-produção, linguagem cinematográfica e visão de diretor.',
+    icon: '🎬',
+    tags: ['Filmmaking', 'IA', 'Vídeo', 'Direção', 'Pré-produção'],
+    url: 'https://inematds.github.io/ai-filmaking-p1/',
+  },
+  {
+    id: 185,
+    title: 'Anúncios Virais com IA',
+    description:
+      'Aprenda a encontrar, desconstruir e recriar anúncios que vendem usando IA. Curso passo a passo, linguagem simples, foco em resultado.',
+    icon: '📣',
+    tags: ['Marketing', 'IA', 'Anúncios', 'Viral', 'Copywriting'],
+    url: 'https://inematds.github.io/viralads/',
+  },
+  {
     id: 177,
     title: '33 Viral Hooks',
     description:
@@ -1697,6 +1724,9 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-23', title: '10 Cara Design — Character Design Styles (10 prompts para Nano Banana 2)', type: 'novo', url: 'https://inematds.github.io/10cara-design/' },
+  { date: '2026-06-23', title: 'AI Filmmaking — Parte 1 (pensar como diretor antes de gerar)', type: 'novo', url: 'https://inematds.github.io/ai-filmaking-p1/' },
+  { date: '2026-06-23', title: 'Anúncios Virais com IA — desconstruir e recriar anúncios que vendem', type: 'novo', url: 'https://inematds.github.io/viralads/' },
   { date: '2026-06-23', title: 'LLMs Orquestradas — Multi-LLM, Fugu Ultra e OpenRouter Fusion (3 trilhas, 6 módulos)', type: 'novo', url: 'https://inematds.github.io/sakanafugu/' },
   { date: '2026-06-22', title: 'Jarvis — Seu Sistema Operacional de IA (6 trilhas, 21 módulos, 126 tópicos)', type: 'novo', url: 'https://inematds.github.io/jarvis/' },
   { date: '2026-06-22', title: 'Grill Me — Extraia o que está na sua cabeça (4 trilhas, INEMA v2)', type: 'novo', url: 'https://inematds.github.io/grillme/' },
