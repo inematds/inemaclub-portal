@@ -1030,6 +1030,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
   },
   {
+    id: 182,
+    title: 'LLMs Orquestradas — Multi-LLM, Fugu Ultra e OpenRouter Fusion',
+    description:
+      'A nova forma de rodar vários modelos de IA juntos: o que é orquestrar, do conceito ao Sakana Fugu Ultra (decompõe e delega) e à OpenRouter Fusion (ensemble paralelo + juiz), com o benchmark real de quando vale o custo. 3 trilhas, 6 módulos, camada de aprendizagem v2.',
+    icon: '🐟',
+    tags: ['Orquestração', 'Multi-LLM', 'Fugu', 'OpenRouter', 'Claude Code', 'IA'],
+    url: 'https://inematds.github.io/sakanafugu/',
+  },
+  {
     id: 169,
     title: 'Loop Agentes v2 — Engenharia de Loops',
     description:
@@ -1688,6 +1697,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-23', title: 'LLMs Orquestradas — Multi-LLM, Fugu Ultra e OpenRouter Fusion (3 trilhas, 6 módulos)', type: 'novo', url: 'https://inematds.github.io/sakanafugu/' },
   { date: '2026-06-22', title: 'Jarvis — Seu Sistema Operacional de IA (6 trilhas, 21 módulos, 126 tópicos)', type: 'novo', url: 'https://inematds.github.io/jarvis/' },
   { date: '2026-06-22', title: 'Grill Me — Extraia o que está na sua cabeça (4 trilhas, INEMA v2)', type: 'novo', url: 'https://inematds.github.io/grillme/' },
   { date: '2026-06-22', title: 'O Mundo Após o Claude — de usuário a maestro (Trilha 1: Fundamentos)', type: 'novo', url: 'https://inematds.github.io/mundo-apos-claude/' },
