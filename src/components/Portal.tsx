@@ -63,7 +63,6 @@ const communityProjects: Array<{
   { icon: '🎬', name: 'fontefilm', desc: 'Ferramenta de direção de cinema com IA para filmes em quadrinhos — storyboard, prompts e linguagem visual.', url: 'https://inematds.github.io/fontefilm/', badge: 'Guia' },
   { icon: '🧭', name: 'O Caminho Certo da IA', desc: 'Manifesto de qualificação real em IA: usar IA de verdade e desenvolver o que a IA não substitui, com dados verificados (Gartner, MIT, WEF)', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/', badge: 'Guia' },
   { icon: '🔬', name: 'inemathink', desc: 'Laboratório de pesquisa por trás de O Caminho Certo da IA: deep research verificado, manifesto, curso e gráficos de IA/humanoides 2019-2030', url: 'https://inematds.github.io/inemathink/', badge: 'Guia' },
-  { icon: '🧪', name: 'projetoxxx', desc: 'Projeto de teste (sobre o Wagner) — página-demo no padrão landing + guia do INEMA', url: 'https://inematds.github.io/projetoxxx-guia/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
