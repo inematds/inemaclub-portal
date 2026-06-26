@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-06-26', title: 'projetoxxx — Projeto de teste (sobre o Wagner)', type: 'novo', url: 'https://inematds.github.io/projetoxxx-guia/' },
   { date: '2026-06-21', title: 'inemathink — Laboratório de pesquisa de O Caminho Certo da IA', type: 'novo', url: 'https://inematds.github.io/inemathink/' },
   { date: '2026-06-20', title: 'O Caminho Certo da IA — guia de qualificação real (anti-hype, com dados)', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/' },
   { date: '2026-06-20', title: 'recursos de vídeo — Catálogo do ecossistema de vídeo', type: 'novo', url: 'https://inematds.github.io/recursos-video/' },
