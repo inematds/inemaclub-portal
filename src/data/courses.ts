@@ -16,6 +16,12 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-06-26', title: 'cerebro-inema — Segundo cérebro de IA com 3 cérebros (PT-BR)', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
+  { date: '2026-06-26', title: 'claude-watch — Skill /watch: o Claude assiste vídeo e gera report', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
+  { date: '2026-06-26', title: 'gravityclaw — Agente Telegram lean com hub de recursos', type: 'novo', url: 'https://inematds.github.io/gravityclaw/' },
+  { date: '2026-06-26', title: 'inemaref — Referência real vira HQ e motion comic', type: 'novo', url: 'https://inematds.github.io/inemaref/' },
+  { date: '2026-06-26', title: 'mdd — Mestre de Direção Dinâmica (pacote de vídeo)', type: 'novo', url: 'https://inematds.github.io/mdd/' },
+  { date: '2026-06-26', title: 'video-plan-editor — Plano de edição de vídeo renderer-agnóstico', type: 'novo', url: 'https://inematds.github.io/skill-video-plan-editor/' },
   { date: '2026-06-21', title: 'inemathink — Laboratório de pesquisa de O Caminho Certo da IA', type: 'novo', url: 'https://inematds.github.io/inemathink/' },
   { date: '2026-06-20', title: 'O Caminho Certo da IA — guia de qualificação real (anti-hype, com dados)', type: 'novo', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/' },
   { date: '2026-06-20', title: 'recursos de vídeo — Catálogo do ecossistema de vídeo', type: 'novo', url: 'https://inematds.github.io/recursos-video/' },

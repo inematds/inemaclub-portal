@@ -45,9 +45,7 @@ const communityProjects: Array<{
   { icon: '🌊', name: 'MiroFish', desc: 'Motor de previsão por inteligência de enxame: simula agentes em redes sociais', url: 'https://inematds.github.io/mirofish/', badge: 'Guia' },
   { icon: '🎬', name: 'diretor-animacao', desc: 'Imagens prontas + narração viram filme MP4 pro, sem IA de vídeo (render via pixflow)', url: 'https://inematds.github.io/diretor-animacao-guia/', badge: 'Guia' },
   { icon: '🧪', name: 'intelecto-testes', desc: 'Agente de IA no WhatsApp via Evolution API + OpenRouter, sobe em Docker', url: 'https://inematds.github.io/intelecto-testes/', badge: 'Guia' },
-  { icon: '🎨', name: 'open-design', desc: 'Alternativa open-source ao Claude Design: sua CLI de agente vira o motor de design', url: 'https://inematds.github.io/open-design/', badge: 'Guia' },
-  { icon: '🚀', name: 'inemaupsk', desc: 'Servidor de upscaling 4x (super-resolution) com 4 modelos ESRGAN, API HTTP e UI web', url: 'https://inematds.github.io/inemaupsk/', badge: 'Guia' },
-  { icon: '📺', name: 'yt-pub-livesx', desc: 'Corta lives do YouTube em clips por tópico com IA e republica em outro canal', url: 'https://inematds.github.io/yt-pub-livesx/', badge: 'Guia' },
+  { icon: '🎨', name: 'open-design', desc: 'Alternativa open-source ao Claude Design: sua CLI de agente vira o motor de design', url: 'https://inematds.github.io/open-design/', badge: 'Guia' },  { icon: '📺', name: 'yt-pub-livesx', desc: 'Corta lives do YouTube em clips por tópico com IA e republica em outro canal', url: 'https://inematds.github.io/yt-pub-livesx/', badge: 'Guia' },
   { icon: '🎬', name: 'VideosDGX', desc: 'Docker multi-container para 4 Video LLMs (LTX-2, Wan 2.1, MAGI-1, Waver) no DGX Spark', url: 'https://inematds.github.io/VideosDGX/', badge: 'Guia' },
   { icon: '🌌', name: 'skyreelsv3', desc: 'Fork do SkyReels V3 com Web UI: filas de episódios, talking avatar e import em batch', url: 'https://inematds.github.io/skyreelsv3/', badge: 'Guia' },
   { icon: '🖼️', name: 'inemaimg', desc: 'Servidor local multi-modelo de imagens com hot-swap entre Qwen-Edit, FLUX.2 e ERNIE', url: 'https://inematds.github.io/inemaimg/', badge: 'Guia' },
@@ -63,6 +61,12 @@ const communityProjects: Array<{
   { icon: '🎬', name: 'fontefilm', desc: 'Ferramenta de direção de cinema com IA para filmes em quadrinhos — storyboard, prompts e linguagem visual.', url: 'https://inematds.github.io/fontefilm/', badge: 'Guia' },
   { icon: '🧭', name: 'O Caminho Certo da IA', desc: 'Manifesto de qualificação real em IA: usar IA de verdade e desenvolver o que a IA não substitui, com dados verificados (Gartner, MIT, WEF)', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/', badge: 'Guia' },
   { icon: '🔬', name: 'inemathink', desc: 'Laboratório de pesquisa por trás de O Caminho Certo da IA: deep research verificado, manifesto, curso e gráficos de IA/humanoides 2019-2030', url: 'https://inematds.github.io/inemathink/', badge: 'Guia' },
+  { icon: '🧩', name: 'cerebro-inema', desc: 'Segundo cérebro de IA com 3 cérebros (Projeto, Self, Conhecimento) em PT-BR, local e privado: Obsidian + Claude Code', url: 'https://inematds.github.io/cerebro-inema/', badge: 'Guia' },
+  { icon: '👁️', name: 'claude-watch', desc: 'Skill /watch: cola uma URL ou arquivo e o Claude baixa, extrai frames por cena, transcreve e emite um report.md (auto-save no Obsidian)', url: 'https://inematds.github.io/claude-watch/', badge: 'Guia' },
+  { icon: '🪐', name: 'gravityclaw', desc: 'Agente Telegram com loop agêntico construído do zero — lean e seguro — com hub de recursos e gerador de prompts por features', url: 'https://inematds.github.io/gravityclaw/', badge: 'Guia' },
+  { icon: '💥', name: 'inemaref', desc: 'Fábrica de conteúdo a partir de uma referência real: foto/história → ficha de personagem → página de HQ → motion comic narrado, local e determinístico', url: 'https://inematds.github.io/inemaref/', badge: 'Guia' },
+  { icon: '🎥', name: 'mdd', desc: 'Mestre de Direção Dinâmica: transforma qualquer assunto num pacote completo de direção de vídeo pronto pra Seedance, Kling, Runway, Veo ou Luma', url: 'https://inematds.github.io/mdd/', badge: 'Guia' },
+  { icon: '📋', name: 'video-plan-editor', desc: 'Skill + pacote Python (vpe) que transforma um assunto ou link num plano de edição de vídeo estruturado e renderer-agnóstico, com render via HyperFrames', url: 'https://inematds.github.io/skill-video-plan-editor/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
