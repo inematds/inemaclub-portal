@@ -67,6 +67,7 @@ const communityProjects: Array<{
   { icon: '💥', name: 'inemaref', desc: 'Fábrica de conteúdo a partir de uma referência real: foto/história → ficha de personagem → página de HQ → motion comic narrado, local e determinístico', url: 'https://inematds.github.io/inemaref/', badge: 'Guia' },
   { icon: '🎥', name: 'mdd', desc: 'Mestre de Direção Dinâmica: transforma qualquer assunto num pacote completo de direção de vídeo pronto pra Seedance, Kling, Runway, Veo ou Luma', url: 'https://inematds.github.io/mdd/', badge: 'Guia' },
   { icon: '📋', name: 'video-plan-editor', desc: 'Skill + pacote Python (vpe) que transforma um assunto ou link num plano de edição de vídeo estruturado e renderer-agnóstico, com render via HyperFrames', url: 'https://inematds.github.io/skill-video-plan-editor/', badge: 'Guia' },
+  { icon: '🎬', name: 'VideosAvatar', desc: 'Avatar falante no HeyGen a partir de um roteiro (9:16, 720p, voz PT-BR) entregue no bot do openpcbot — dois caminhos de crédito: API pay-as-you-go (heygen-cli) e assinatura via MCP (heygen-mcp)', url: 'https://inematds.github.io/videosavatar-guia/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {

@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-06-28', title: 'VideosAvatar — Avatar falante no HeyGen, do roteiro ao bot (API + assinatura)', type: 'novo', url: 'https://inematds.github.io/videosavatar-guia/' },
   { date: '2026-06-26', title: 'cerebro-inema — Segundo cérebro de IA com 3 cérebros (PT-BR)', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
   { date: '2026-06-26', title: 'claude-watch — Skill /watch: o Claude assiste vídeo e gera report', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
   { date: '2026-06-26', title: 'gravityclaw — Agente Telegram lean com hub de recursos', type: 'novo', url: 'https://inematds.github.io/gravityclaw/' },
