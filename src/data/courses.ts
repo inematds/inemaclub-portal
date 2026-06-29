@@ -984,6 +984,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skill-video-explicativo/',
   },
   {
+    id: 187,
+    title: 'IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7',
+    description:
+      'Curso completo e profundo de IA local: por que rodar modelos na sua máquina (soberania, privacidade, uso ilimitado), que hardware usar, e o passo a passo prático — Ollama, GGUF/quantização, Open WebUI, API local, RAG e agentes 24/7. 4 trilhas, 20 módulos, 120 tópicos.',
+    icon: '🖥️',
+    tags: ['IA Local', 'Ollama', 'LLM', 'Hardware', 'RAG', 'Agentes', 'Privacidade', 'IA'],
+    url: 'https://inematds.github.io/local-ai-masterclass/',
+  },
+  {
     id: 101,
     title: 'iAmasters OS - Sistema Operativo Agêntico',
     description:
@@ -1741,6 +1750,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-29', title: 'IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7 (4 trilhas, 20 módulos, 120 tópicos)', type: 'novo', url: 'https://inematds.github.io/local-ai-masterclass/' },
   { date: '2026-06-29', title: 'Alerta IA 2028 — curso + explainer sobre auto-aperfeiçoamento recursivo (RSI) da IA', type: 'novo', url: 'https://inematds.github.io/ia2028alerta/' },
   { date: '2026-06-23', title: '10 Cara Design — Character Design Styles (10 prompts para Nano Banana 2)', type: 'novo', url: 'https://inematds.github.io/10cara-design/' },
   { date: '2026-06-23', title: 'AI Filmmaking — Parte 1 (pensar como diretor antes de gerar)', type: 'novo', url: 'https://inematds.github.io/ai-filmaking-p1/' },
