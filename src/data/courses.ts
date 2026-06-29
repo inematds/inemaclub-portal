@@ -84,6 +84,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ai-filmaking-p1/',
   },
   {
+    id: 186,
+    title: 'Alerta IA 2028 — A IA que constrói a próxima IA',
+    description:
+      'Curso + explainer sobre auto-aperfeiçoamento recursivo (RSI) da IA com horizonte 2028. Destila o alerta dos labs de fronteira (Anthropic, DeepMind, OpenAI), mostra a evidência (METR, MirrorCode) e separa o que é sólido do que é especulação.',
+    icon: '🚨',
+    tags: ['IA', 'AI Safety', 'RSI', 'Fronteira', 'Curso'],
+    url: 'https://inematds.github.io/ia2028alerta/',
+  },
+  {
     id: 185,
     title: 'Anúncios Virais com IA',
     description:
@@ -1732,6 +1741,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-29', title: 'Alerta IA 2028 — curso + explainer sobre auto-aperfeiçoamento recursivo (RSI) da IA', type: 'novo', url: 'https://inematds.github.io/ia2028alerta/' },
   { date: '2026-06-23', title: '10 Cara Design — Character Design Styles (10 prompts para Nano Banana 2)', type: 'novo', url: 'https://inematds.github.io/10cara-design/' },
   { date: '2026-06-23', title: 'AI Filmmaking — Parte 1 (pensar como diretor antes de gerar)', type: 'novo', url: 'https://inematds.github.io/ai-filmaking-p1/' },
   { date: '2026-06-23', title: 'Anúncios Virais com IA — desconstruir e recriar anúncios que vendem', type: 'novo', url: 'https://inematds.github.io/viralads/' },
