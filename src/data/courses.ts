@@ -1488,6 +1488,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/segrobot/',
   },
   {
+    id: 189,
+    title: 'Segundo Cérebro pro Claude Code — Graphify + Obsidian',
+    description:
+      'Dê memória persistente ao Claude Code: o Graphify (graphifyy) transforma um repositório ou uma pasta de documentos num grafo de conhecimento e exporta pro Obsidian, que o agente consulta. 3 trilhas, 14 módulos, com passo a passo copy-run.',
+    icon: '🧠',
+    tags: ['Claude Code', 'Graphify', 'Obsidian', 'Knowledge Graph', 'Memória', 'IA'],
+    url: 'https://inematds.github.io/segundo-cerebro/',
+  },
+  {
     id: 30,
     title: 'SHIA - Super Humanos Inteligência Ampliada',
     description:
@@ -1760,6 +1769,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-29', title: 'Segundo Cérebro pro Claude Code — Graphify + Obsidian (3 trilhas, 14 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/segundo-cerebro/' },
   { date: '2026-06-29', title: 'Engenharia de Sistemas Operacionais de IA (AIOS) — do zero ao OS vivo (5 trilhas, 21 módulos, 155 tópicos)', type: 'novo', url: 'https://inematds.github.io/oscoach/' },
   { date: '2026-06-29', title: 'IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7 (4 trilhas, 20 módulos, 120 tópicos)', type: 'novo', url: 'https://inematds.github.io/local-ai-masterclass/' },
   { date: '2026-06-29', title: 'Alerta IA 2028 — curso + explainer sobre auto-aperfeiçoamento recursivo (RSI) da IA', type: 'novo', url: 'https://inematds.github.io/ia2028alerta/' },
