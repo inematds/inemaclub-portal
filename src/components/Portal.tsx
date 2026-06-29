@@ -68,6 +68,7 @@ const communityProjects: Array<{
   { icon: '🎥', name: 'mdd', desc: 'Mestre de Direção Dinâmica: transforma qualquer assunto num pacote completo de direção de vídeo pronto pra Seedance, Kling, Runway, Veo ou Luma', url: 'https://inematds.github.io/mdd/', badge: 'Guia' },
   { icon: '📋', name: 'video-plan-editor', desc: 'Skill + pacote Python (vpe) que transforma um assunto ou link num plano de edição de vídeo estruturado e renderer-agnóstico, com render via HyperFrames', url: 'https://inematds.github.io/skill-video-plan-editor/', badge: 'Guia' },
   { icon: '🎬', name: 'VideosAvatar', desc: 'Avatar falante no HeyGen a partir de um roteiro (9:16, 720p, voz PT-BR) entregue no bot do openpcbot — dois caminhos de crédito: API pay-as-you-go (heygen-cli) e assinatura via MCP (heygen-mcp)', url: 'https://inematds.github.io/videosavatar-guia/', badge: 'Guia' },
+  { icon: '🏗️', name: 'inema engenharia civil', desc: 'Plataforma de agentes de IA para cálculos de engenharia civil: o agente escolhe o método normativo e o Python calcula, valida (unidades/física/NBR/equilíbrio) e gera o memorial. 18 domínios, com aviso de responsabilidade técnica (ART).', url: 'https://inematds.github.io/inemaengenhariacivil/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
