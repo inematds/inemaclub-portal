@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-06-29', title: 'os-coach — skill /os-coach que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://github.com/earlyaidopters/os-coach' },
   { date: '2026-06-29', title: 'INEMA Engenharia Civil — Agentes de IA para cálculos de engenharia civil (validação NBR + memorial)', type: 'novo', url: 'https://inematds.github.io/inemaengenhariacivil/' },
   { date: '2026-06-28', title: 'VideosAvatar — Avatar falante no HeyGen, do roteiro ao bot (API + assinatura)', type: 'novo', url: 'https://inematds.github.io/videosavatar-guia/' },
   { date: '2026-06-26', title: 'cerebro-inema — Segundo cérebro de IA com 3 cérebros (PT-BR)', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
@@ -721,6 +722,15 @@ export const platformsData: Course[] = [
     icon: '🗄️',
     tags: ['Dados', 'Engenharia', 'DuckDB', 'Pipeline', 'SQL', 'IA', 'Agentes'],
     url: 'https://inematds.github.io/engdadosai',
+  },
+  {
+    id: 188,
+    title: 'Engenharia de Sistemas Operacionais de IA — do zero ao OS vivo',
+    description:
+      'Construa centros de comando de IA (AIOS), uma camada por vez, sem virar engenheiro. As 6 camadas (Identidade, Substrato, Regras, Skills, Tools, Agentes), passo a passo com /os-coach e domínios reais: tributário, vendas, suporte, conteúdo e consultoria. 5 trilhas, 21 módulos.',
+    icon: '🧩',
+    tags: ['AIOS', 'Agentes', 'Claude Code', 'Contexto', 'Skills', 'IA'],
+    url: 'https://inematds.github.io/oscoach/',
   },
   {
     id: 106,
@@ -1750,6 +1760,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-29', title: 'Engenharia de Sistemas Operacionais de IA (AIOS) — do zero ao OS vivo (5 trilhas, 21 módulos, 155 tópicos)', type: 'novo', url: 'https://inematds.github.io/oscoach/' },
   { date: '2026-06-29', title: 'IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7 (4 trilhas, 20 módulos, 120 tópicos)', type: 'novo', url: 'https://inematds.github.io/local-ai-masterclass/' },
   { date: '2026-06-29', title: 'Alerta IA 2028 — curso + explainer sobre auto-aperfeiçoamento recursivo (RSI) da IA', type: 'novo', url: 'https://inematds.github.io/ia2028alerta/' },
   { date: '2026-06-23', title: '10 Cara Design — Character Design Styles (10 prompts para Nano Banana 2)', type: 'novo', url: 'https://inematds.github.io/10cara-design/' },
