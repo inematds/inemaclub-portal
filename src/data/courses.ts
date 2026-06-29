@@ -1542,6 +1542,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skills-premium/',
   },
   {
+    id: 190,
+    title: 'STORM Research — Pesquisa Multi-Perspectiva Verificada com Claude',
+    description:
+      'Método STORM (Stanford) como skill do Claude Code: 5 lentes de especialistas, mapa de contradições e verificação de citações contra a fonte primária. 3 trilhas, 11 módulos, 66 tópicos. Inclui download da skill + template do relatório.',
+    icon: '🌩️',
+    tags: ['Claude Code', 'Skills', 'Pesquisa', 'STORM', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/storm-research/',
+  },
+  {
     id: 150,
     title: 'Subagentes — Especialistas do Claude Code',
     description:
@@ -1769,6 +1778,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-29', title: 'STORM Research — Pesquisa Multi-Perspectiva Verificada com Claude (3 trilhas, 11 módulos, 66 tópicos)', type: 'novo', url: 'https://inematds.github.io/storm-research/' },
   { date: '2026-06-29', title: 'Segundo Cérebro pro Claude Code — Graphify + Obsidian (3 trilhas, 14 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/segundo-cerebro/' },
   { date: '2026-06-29', title: 'Engenharia de Sistemas Operacionais de IA (AIOS) — do zero ao OS vivo (5 trilhas, 21 módulos, 155 tópicos)', type: 'novo', url: 'https://inematds.github.io/oscoach/' },
   { date: '2026-06-29', title: 'IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7 (4 trilhas, 20 módulos, 120 tópicos)', type: 'novo', url: 'https://inematds.github.io/local-ai-masterclass/' },
