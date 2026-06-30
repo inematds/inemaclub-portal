@@ -956,6 +956,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/hermesagent/',       label: 'Hermes Agent',     desc: 'Curso Completo Avançado — Nous Research' },
               { href: 'https://inematds.github.io/manual-oculto-ia/', label: 'Manual Oculto', desc: 'O Loop Operacional e a Destilação do Cérebro do Fable' },
               { href: 'https://inematds.github.io/mundo-apos-claude/',  label: 'O Mundo Após o Claude', desc: 'De usuário a maestro: construa qualquer coisa e monte seu Jarvis' },
+              { href: 'https://inematds.github.io/healthos/',           label: 'HealthOS',         desc: 'Coach de saúde pessoal com IA no Telegram' },
             ]},
             { title: '🗄️ Dados & IA', steps: [
               { href: 'https://inematds.github.io/engdadosai', label: 'Eng. Dados com IA', desc: 'A Base dos Sistemas de IA e Agentes' },

@@ -950,6 +950,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/hardnessai/',
   },
   {
+    id: 191,
+    title: 'HealthOS — Coach de Saúde Pessoal com IA',
+    description:
+      'Construa e opere um coach de saúde pessoal num bot do Telegram, aterrado nos seus dados — wearable (WHOOP), exames de sangue, DNA e dieta — com Supabase + pgvector, visão (Gemini) e memória semântica. 3 trilhas, 12 módulos, 84 tópicos: Fundamentos, Passo a passo e Como usar. Não é conselho médico.',
+    icon: '🫀',
+    tags: ['HealthOS', 'Saúde', 'Agentes', 'Telegram', 'Supabase', 'WHOOP', 'IA'],
+    url: 'https://inematds.github.io/healthos/',
+  },
+  {
     id: 104,
     title: 'Hermes + NotebookLM - O Sistema de Agente AI Definitivo',
     description:
@@ -1779,6 +1788,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-06-30', title: 'HealthOS — Coach de Saúde Pessoal com IA (3 trilhas, 12 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/healthos/' },
   { date: '2026-06-29', title: 'STORM Research — Pesquisa Multi-Perspectiva Verificada com Claude (3 trilhas, 11 módulos, 66 tópicos)', type: 'novo', url: 'https://inematds.github.io/storm-research/' },
   { date: '2026-06-29', title: 'Segundo Cérebro pro Claude Code — Graphify + Obsidian (3 trilhas, 14 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/segundo-cerebro/' },
   { date: '2026-06-29', title: 'Engenharia de Sistemas Operacionais de IA (AIOS) — do zero ao OS vivo (5 trilhas, 21 módulos, 155 tópicos)', type: 'novo', url: 'https://inematds.github.io/oscoach/' },
