@@ -70,6 +70,7 @@ const communityProjects: Array<{
   { icon: '🎬', name: 'VideosAvatar', desc: 'Avatar falante no HeyGen a partir de um roteiro (9:16, 720p, voz PT-BR) entregue no bot do openpcbot — dois caminhos de crédito: API pay-as-you-go (heygen-cli) e assinatura via MCP (heygen-mcp)', url: 'https://inematds.github.io/videosavatar-guia/', badge: 'Guia' },
   { icon: '🏗️', name: 'inema engenharia civil', desc: 'Plataforma de agentes de IA para cálculos de engenharia civil: o agente escolhe o método normativo e o Python calcula, valida (unidades/física/NBR/equilíbrio) e gera o memorial. 18 domínios, com aviso de responsabilidade técnica (ART).', url: 'https://inematds.github.io/inemaengenhariacivil/', badge: 'Guia' },
   { icon: '🧭', name: 'os-coach', desc: 'Skill /os-coach que guia uma pessoa não técnica na construção do próprio OS agêntico de 6 camadas, uma de cada vez, com memória entre sessões e auditoria por objetivo. Base do curso AIOS do INEMA.', url: 'https://inematds.github.io/os-coach/', badge: 'Guia' },
+  { icon: '🩺', name: 'Health OS', desc: 'Blueprint de um coach de saúde pessoal com IA no Telegram: Supabase próprio + WHOOP, fundamentado nos seus exames, genética e metas. Não é aconselhamento médico.', url: 'https://inematds.github.io/health-os/', badge: 'Guia' },
 ]
 
 type RepoUpdate = {
