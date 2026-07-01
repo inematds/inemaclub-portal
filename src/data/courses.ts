@@ -19,7 +19,7 @@ export const projectUpdatesData: Update[] = [
   { date: '2026-06-30', title: 'Health OS — Coach de saúde pessoal com IA (Telegram + Supabase + WHOOP)', type: 'novo', url: 'https://inematds.github.io/health-os/' },
   { date: '2026-06-29', title: 'os-coach — skill /os-coach que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://inematds.github.io/os-coach/' },
   { date: '2026-06-29', title: 'INEMA Engenharia Civil — Agentes de IA para cálculos de engenharia civil (validação NBR + memorial)', type: 'novo', url: 'https://inematds.github.io/inemaengenhariacivil/' },
-  { date: '2026-06-28', title: 'VideosAvatar — Avatar falante no HeyGen, do roteiro ao bot (API + assinatura)', type: 'novo', url: 'https://inematds.github.io/videosavatar-guia/' },
+  { date: '2026-06-28', title: 'VideosAvatar — Avatar falante no HeyGen, do roteiro ao bot (API + assinatura)', type: 'novo', url: 'https://inematds.github.io/videosavatar/' },
   { date: '2026-06-26', title: 'cerebro-inema — Segundo cérebro de IA com 3 cérebros (PT-BR)', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
   { date: '2026-06-26', title: 'claude-watch — Skill /watch: o Claude assiste vídeo e gera report', type: 'novo', url: 'https://inematds.github.io/claude-watch/' },
   { date: '2026-06-26', title: 'gravityclaw — Agente Telegram lean com hub de recursos', type: 'novo', url: 'https://inematds.github.io/gravityclaw/' },
