@@ -526,6 +526,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div className="learning-path-footer">
             <p>Uma jornada do INEMA.CLUB: integre a IA na sua profissão, vire implementador e depois consultor ou CAIO</p>
           </div>
+
+          <a
+            href="https://inema.pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inemapro-banner inemapro-banner--wide"
+            onClick={() => trackClick('https://inema.pro', 'INEMA.PRO — Jornada', 'banner-inemapro')}
+          >
+            <img src="/doc/inema-pro-banner-jornada.webp" alt="INEMA.PRO — Desenvolva. Construa. Escale." loading="lazy" />
+          </a>
         </div>
       </section>
 
@@ -713,6 +723,21 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </section>
         </div>
       </main>
+
+      {/* Banner INEMA.PRO */}
+      <section className="inemapro-banner-section">
+        <div className="container">
+          <a
+            href="https://inema.pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inemapro-banner inemapro-banner--wide"
+            onClick={() => trackClick('https://inema.pro', 'INEMA.PRO — Completo', 'banner-inemapro')}
+          >
+            <img src="/doc/inema-pro-banner-completo.webp" alt="INEMA.PRO — A plataforma para quem quer usar IA para crescer na prática" loading="lazy" />
+          </a>
+        </div>
+      </section>
 
       {/* Trilha Vibe Code */}
       <section id="trilha-vibe" className="learning-path-section">
