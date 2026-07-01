@@ -1175,6 +1175,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mentesbrilhantes1/',
   },
   {
+    id: 192,
+    title: 'Mente, Poder e Máquina — Neurociência, Vieses e Comportamento',
+    description:
+      'Neurociência, vieses cognitivos e futuro do comportamento humano. Baseado em Marcus Bruzzo, Kahneman, Milgram, Thaler e Chalmers. 6 trilhas, 18 módulos, 108 tópicos.',
+    icon: '🧠',
+    tags: ['Neurociência', 'Comportamento', 'Vieses Cognitivos', 'Filosofia', 'IA', 'Ética'],
+    url: 'https://inematds.github.io/neurociencia-comportamento/',
+  },
+  {
     id: 49,
     title: 'MiroFish - Ecossistema de Predição Multiagente',
     description:
@@ -1788,6 +1797,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-01', title: 'Mente, Poder e Máquina — Neurociência, Vieses e Comportamento (6 trilhas, 18 módulos, 108 tópicos)', type: 'novo', url: 'https://inematds.github.io/neurociencia-comportamento/' },
   { date: '2026-06-30', title: 'HealthOS — Coach de Saúde Pessoal com IA (3 trilhas, 12 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/healthos/' },
   { date: '2026-06-29', title: 'STORM Research — Pesquisa Multi-Perspectiva Verificada com Claude (3 trilhas, 11 módulos, 66 tópicos)', type: 'novo', url: 'https://inematds.github.io/storm-research/' },
   { date: '2026-06-29', title: 'Segundo Cérebro pro Claude Code — Graphify + Obsidian (3 trilhas, 14 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/segundo-cerebro/' },
