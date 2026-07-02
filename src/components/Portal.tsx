@@ -726,7 +726,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                     ))}
                   </div>
                   <a
-                    href={course.url}
+                    href="https://inema.pro"
                     className="card-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -779,7 +779,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/vibe-coding-completo/', label: 'Domínio Completo', desc: 'Fundamentos, Técnica, Prompts, Skills, Agentes e Produção', n: 12 },
               { href: 'https://inematds.github.io/vibe-coding/', label: 'Vibe Coding na Prática', desc: 'Do Primeiro Workflow ao App no Ar', n: 13 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href="https://inema.pro" target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-vibe')}>
                 <div className="path-number">{p.n}</div>
@@ -816,7 +816,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/claude-watch/',           label: 'claude-watch',            desc: 'Dê ao Claude olhos pra assistir vídeo', n: 11 },
               { href: 'https://inematds.github.io/grillme/',                label: 'Grill Me',                desc: 'Extraia o que está na sua cabeça',     n: 12 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href="https://inema.pro" target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-skills')}>
                 <div className="path-number">{p.n}</div>
@@ -1008,7 +1008,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               <h4 className="trilha-group-title">{trail.title}</h4>
               <div className="learning-path-cards">
                 {trail.steps.map((p, i) => (
-                  <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                  <a key={p.label} href="https://inema.pro" target="_blank" rel="noopener noreferrer"
                      className={`path-card path-card-${(i % 4) + 1}`}
                      onClick={() => trackClick(p.href, p.label, 'trilhas')}>
                     <div className="path-number">{i + 1}</div>
@@ -1034,7 +1034,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               project.url ? (
                 <a
                   key={project.name}
-                  href={project.url}
+                  href="https://inema.pro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="community-project-card community-project-card-linked"
