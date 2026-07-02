@@ -639,6 +639,22 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             </div>
           </section>
 
+          {/* Banner Perfis IA */}
+          <section className="perfis-ia-section">
+            <img
+              src="/doc/perfis-ia-topo.webp"
+              alt="Descubra como usar IA para evoluir na sua profissão"
+              className="perfis-ia-topo"
+              loading="lazy"
+            />
+            <div className="perfis-ia-grid">
+              <img src="/doc/perfis-ia-operacional.webp" alt="Profissional Operacional — mais produtividade com IA" loading="lazy" />
+              <img src="/doc/perfis-ia-empreendedor.webp" alt="Empreendedor Estratégico com IA" loading="lazy" />
+              <img src="/doc/perfis-ia-liberal.webp" alt="Profissional Liberal Experiente com IA" loading="lazy" />
+              <img src="/doc/perfis-ia-gestor.webp" alt="Gestor e Líder — lidere melhor com IA" loading="lazy" />
+            </div>
+          </section>
+
           {/* Search */}
           <section id="cursos" className="search-section">
             <input

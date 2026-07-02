@@ -247,6 +247,42 @@ html {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Perfis IA banner (topo + 4 perfis) */
+.perfis-ia-section {
+    margin: 2.5rem 0;
+}
+
+.perfis-ia-topo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0 0;
+    border: 2px solid var(--border-color);
+    border-bottom: none;
+}
+
+.perfis-ia-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 2px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+}
+
+.perfis-ia-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .perfis-ia-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Featured Banner */
 .featured-banner {
     background: var(--bg-secondary);
