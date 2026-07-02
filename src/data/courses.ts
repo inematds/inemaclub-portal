@@ -1436,6 +1436,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/profissional2027x',
   },
   {
+    id: 194,
+    title: 'Profissional Liberal Experiente com IA — Aprenda a usar IA para atender melhor, produzir mais e transformar sua experiência em autoridade',
+    description:
+      'Curso prático para profissionais liberais (advogados, médicos, contadores, arquitetos, consultores). 5 trilhas, 15 módulos, 90 tópicos. Saia com 1 assistente configurado, 10 prompts essenciais, 3 templates (proposta, resposta, conteúdo), 1 checklist e 1 rotina semanal de IA. Camada de aprendizagem v2.',
+    icon: '🧑‍💼',
+    tags: ['IA', 'Profissional Liberal', 'Produtividade', 'Prompts', 'Templates'],
+    url: 'https://inematds.github.io/pro-liberal-ia/',
+  },
+  {
     id: 99,
     title: 'Prompt Director - Imagens e Cinema com IA',
     description:
@@ -1806,6 +1815,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-02', title: 'Profissional Liberal Experiente com IA — 5 trilhas, 15 módulos, 90 tópicos', type: 'novo', url: 'https://inematds.github.io/pro-liberal-ia/' },
   { date: '2026-07-02', title: 'Prompting Claude Fable 5 — 2 Trilhas, 14 Módulos (Trilha 2: agente de trabalho)', type: 'atualizado', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial (1 trilha, 7 módulos, 42 tópicos)', type: 'novo', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Mente, Poder e Máquina — Neurociência, Vieses e Comportamento (6 trilhas, 18 módulos, 108 tópicos)', type: 'novo', url: 'https://inematds.github.io/neurociencia-comportamento/' },

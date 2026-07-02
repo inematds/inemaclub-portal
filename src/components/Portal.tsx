@@ -475,9 +475,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div className="learning-path-cards">
             {[
               { href: 'https://inematds.github.io/profissionalai/',    label: 'Integra sua Profissão', desc: 'Integre a IA na profissão que você já tem', n: 1 },
-              { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 2 },
-              { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 3 },
-              { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 4 },
+              { href: 'https://inematds.github.io/pro-liberal-ia/',    label: 'Liberal com IA',        desc: 'Assistente + prompts + templates pro liberal', n: 2 },
+              { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 3 },
+              { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 4 },
+              { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 5 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
