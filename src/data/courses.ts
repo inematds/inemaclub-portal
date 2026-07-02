@@ -1446,9 +1446,9 @@ export const platformsData: Course[] = [
   },
   {
     id: 193,
-    title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial',
+    title: 'Prompting Claude Fable 5 — 2 Trilhas, 14 Módulos',
     description:
-      'As 6 técnicas de prompting pro Claude Fable 5, verificadas contra a documentação oficial da Anthropic (effort levels, pricing, refusals/fallback pro Opus 4.8) + módulo bônus com subagents, memória e send_to_user.',
+      'Trilha 1: as 6 técnicas de prompting pro Claude Fable 5, verificadas contra a documentação oficial da Anthropic (effort levels, pricing, refusals/fallback pro Opus 4.8). Trilha 2: 12 dicas práticas pra usar o Fable 5 como agente de trabalho — tarefa certa, limites, verificação, subagentes, memória e loops.',
     icon: '🐉',
     tags: ['Prompting', 'Claude', 'Fable 5', 'Anthropic', 'IA'],
     url: 'https://inematds.github.io/fable5back/',
@@ -1806,6 +1806,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-02', title: 'Prompting Claude Fable 5 — 2 Trilhas, 14 Módulos (Trilha 2: agente de trabalho)', type: 'atualizado', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial (1 trilha, 7 módulos, 42 tópicos)', type: 'novo', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Mente, Poder e Máquina — Neurociência, Vieses e Comportamento (6 trilhas, 18 módulos, 108 tópicos)', type: 'novo', url: 'https://inematds.github.io/neurociencia-comportamento/' },
   { date: '2026-06-30', title: 'HealthOS — Coach de Saúde Pessoal com IA (3 trilhas, 12 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/healthos/' },
