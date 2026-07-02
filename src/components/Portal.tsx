@@ -698,7 +698,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                     )}
                     {item.url ? (
                       <a
-                        href={item.url}
+                        href={item.type === 'Repo' ? item.url : 'https://inema.pro'}
                         className="card-link"
                         target="_blank"
                         rel="noopener noreferrer"
