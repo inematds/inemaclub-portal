@@ -1445,6 +1445,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/promptfilmes/',
   },
   {
+    id: 193,
+    title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial',
+    description:
+      'As 6 técnicas de prompting pro Claude Fable 5, verificadas contra a documentação oficial da Anthropic (effort levels, pricing, refusals/fallback pro Opus 4.8) + módulo bônus com subagents, memória e send_to_user.',
+    icon: '🐉',
+    tags: ['Prompting', 'Claude', 'Fable 5', 'Anthropic', 'IA'],
+    url: 'https://inematds.github.io/fable5back/',
+  },
+  {
     id: 28,
     title: 'Prompts',
     description:
@@ -1797,6 +1806,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-01', title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial (1 trilha, 7 módulos, 42 tópicos)', type: 'novo', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Mente, Poder e Máquina — Neurociência, Vieses e Comportamento (6 trilhas, 18 módulos, 108 tópicos)', type: 'novo', url: 'https://inematds.github.io/neurociencia-comportamento/' },
   { date: '2026-06-30', title: 'HealthOS — Coach de Saúde Pessoal com IA (3 trilhas, 12 módulos, 84 tópicos)', type: 'novo', url: 'https://inematds.github.io/healthos/' },
   { date: '2026-06-29', title: 'STORM Research — Pesquisa Multi-Perspectiva Verificada com Claude (3 trilhas, 11 módulos, 66 tópicos)', type: 'novo', url: 'https://inematds.github.io/storm-research/' },
