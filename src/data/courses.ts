@@ -384,6 +384,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cca-q2',
   },
   {
+    id: 204,
+    title: 'cccache — Prompt Caching no Claude Code',
+    description:
+      'Entenda de verdade o cache que roda por baixo quando você conversa com o Claude Code. 3 trilhas, 8 módulos: fundamentos de prefixo, economia de tokens, invalidação silenciosa, cache vs compactação e prompts prontos copy-run.',
+    icon: '💰',
+    tags: ['Claude Code', 'Cache', 'Tokens', 'Economia', 'Otimização', 'IA'],
+    url: 'https://inematds.github.io/cccache/',
+  },
+  {
     id: 72,
     title: 'CCFast32 - 32 Hacks do Claude Code',
     description:
@@ -1890,6 +1899,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-03', title: 'cccache — Prompt Caching no Claude Code (3 trilhas, 8 módulos)', type: 'novo', url: 'https://inematds.github.io/cccache/' },
   { date: '2026-07-02', title: 'videos-edit — Forja Reel: monte seu editor de reels com IA (curso + skill, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit/' },
   { date: '2026-07-02', title: 'Profissional Liberal Experiente com IA — 5 trilhas, 15 módulos, 90 tópicos', type: 'novo', url: 'https://inematds.github.io/pro-liberal-ia/' },
   { date: '2026-07-02', title: 'Prompting Claude Fable 5 — 2 Trilhas, 14 Módulos (Trilha 2: agente de trabalho)', type: 'atualizado', url: 'https://inematds.github.io/fable5back/' },
