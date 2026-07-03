@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-03', title: 'claude-video — /watch: input de vídeo multi-host (Claude Code, Codex, +50)', type: 'novo', url: 'https://inematds.github.io/claude-video/guia/' },
   { date: '2026-06-30', title: 'Health OS — Coach de saúde pessoal com IA (Telegram + Supabase + WHOOP)', type: 'novo', url: 'https://inematds.github.io/health-os/' },
   { date: '2026-06-29', title: 'os-coach — skill /os-coach que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://inematds.github.io/os-coach/' },
   { date: '2026-06-29', title: 'INEMA Engenharia Civil — Agentes de IA para cálculos de engenharia civil (validação NBR + memorial)', type: 'novo', url: 'https://inematds.github.io/inemaengenhariacivil/' },
@@ -536,8 +537,17 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claude-skills/',
   },
   {
+    id: 196,
+    title: 'claude-video — /watch: input de vídeo multi-host (Claude Code, Codex, +50)',
+    description:
+      'A skill /watch dá ao seu agente entrada de vídeo: baixa via yt-dlp, extrai frames (dial de 4 modos — transcript, keyframes, cena, sem cap) com dedup de quadros quase-idênticos, e transcreve por captions ou Whisper (Groq/OpenAI) com auto-chunking. Pasta self-contained: instala em Claude Code, Codex, Cursor, Copilot, Gemini CLI e +50 hosts de Agent Skills.',
+    icon: '🎬',
+    tags: ['Agent Skills', 'Vídeo', 'yt-dlp', 'Whisper', 'IA'],
+    url: 'https://inematds.github.io/claude-video/guia/',
+  },
+  {
     id: 166,
-    title: 'claude-watch — Dê ao Claude a capacidade de assistir vídeo',
+    title: 'claude-watch — /watch: analista de vídeo com report + Obsidian',
     description:
       'Skill /watch que dá ao Claude entrada de vídeo: baixa via yt-dlp, extrai frames por corte de cena, microscopa o hook 0-10s, transcreve por captions ou Whisper (Groq/OpenAI) e emite um report.md estruturado, com auto-save opcional no Obsidian. Plugin para Claude Code, Codex e claude.ai.',
     icon: '🎬',
@@ -1820,6 +1830,62 @@ export const platformsData: Course[] = [
     icon: '🤖',
     tags: ['Claude Code', 'CLI', 'MCP', 'Agentes', 'Python', 'Git', 'IA', '2026'],
     url: 'https://inematds.github.io/claude-code-curso/',
+  },
+  {
+    id: 197,
+    title: "PHA 2030 — Potencial Humano Aumentado",
+    description: "PHA 2030 — Potencial Humano Aumentado: curso completo em HTML com 6 trilhas de conteúdo.",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/pha2030/",
+  },
+  {
+    id: 198,
+    title: "Profissional 2027 — Implementador de IA para PMEs",
+    description: "Curso gratuito de Implementador de Soluções de IA para PMEs brasileiras — método DPIA em 4 trilhas e módulos completos.",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/profissional2027/",
+  },
+  {
+    id: 199,
+    title: "MCP — Model Context Protocol do Zero",
+    description: "Curso INEMA sobre Model Context Protocol — do zero à construção de servidores, organizado em 5 trilhas.",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/MCP/",
+  },
+  {
+    id: 200,
+    title: "INTELECTO 4D — Workshop do Zero ao Jarvis",
+    description: "Landpage promocional do workshop INTELECTO (2 dias, do zero ao seu Jarvis).",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/intelecto4d/",
+  },
+  {
+    id: 201,
+    title: "HyperFrames — Vídeos Explicativos com Claude Code",
+    description: "Curso HyperFrames (formato INEMA.CLUB): criar vídeos explicativos HTML→MP4 com Claude Code e a Skill video-explicativo.",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/skill-hyperframes-videos/",
+  },
+  {
+    id: 202,
+    title: "INEMA.NCIA — Leitura Editorial",
+    description: "Curso de leitura editorial (formato-curso v3) com 6 trilhas e 27 seções, adaptado do canal de Telegram INEMA.NCIA.",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/inemancia/",
+  },
+  {
+    id: 203,
+    title: "Skills CLI — do Zero ao Expert em Agent Skills",
+    description: "Curso completo Skills CLI - do zero ao expert em agent skills.",
+    icon: "🎓",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://github.com/inematds/skills-curso",
   },
 ]
 
