@@ -860,15 +860,6 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FIA2026/',
   },
   {
-    id: 195,
-    title: 'Forja Reel — Monte seu editor de reels com IA',
-    description:
-      'Meta-skill que transforma um vídeo bruto (com cortes, silêncios e erros) num reel profissional — corte limpo, motion graphics, B-roll real, legendas e SFX — sem abrir um editor de vídeo. Em vez de um editor pronto, ela te entrevista e gera o SEU próprio editor. Curso em 4 trilhas + a skill pronta para baixar.',
-    icon: '🎬',
-    tags: ['Vídeo', 'Reels', 'Claude Code', 'IA'],
-    url: 'https://inematds.github.io/videos-edit/',
-  },
-  {
     id: 134,
     title: 'Formação em Automação Estratégica com IA',
     description:
@@ -1723,6 +1714,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vibe-coding/',
   },
   {
+    id: 195,
+    title: 'videos-edit — Forja Reel: monte seu editor de reels com IA',
+    description:
+      'Forja Reel: meta-skill que transforma um vídeo bruto (cortes, silêncios e erros) num reel profissional — corte limpo, motion graphics, B-roll real, legendas e SFX — sem abrir um editor de vídeo. Em vez de um editor pronto, ela te entrevista e gera o SEU próprio editor. Curso em 4 trilhas + a skill pronta para baixar.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Reels', 'Edição', 'Claude Code', 'IA'],
+    url: 'https://inematds.github.io/videos-edit/',
+  },
+  {
     id: 135,
     title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code',
     description:
@@ -1824,7 +1824,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
-  { date: '2026-07-02', title: 'Forja Reel — Monte seu editor de reels com IA (curso + skill, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit/' },
+  { date: '2026-07-02', title: 'videos-edit — Forja Reel: monte seu editor de reels com IA (curso + skill, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit/' },
   { date: '2026-07-02', title: 'Profissional Liberal Experiente com IA — 5 trilhas, 15 módulos, 90 tópicos', type: 'novo', url: 'https://inematds.github.io/pro-liberal-ia/' },
   { date: '2026-07-02', title: 'Prompting Claude Fable 5 — 2 Trilhas, 14 Módulos (Trilha 2: agente de trabalho)', type: 'atualizado', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial (1 trilha, 7 módulos, 42 tópicos)', type: 'novo', url: 'https://inematds.github.io/fable5back/' },

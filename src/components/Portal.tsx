@@ -815,6 +815,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/claude-skills/',          label: 'Claude Skills na Prática', desc: 'Construa Agent Skills do Claude Code', n: 10 },
               { href: 'https://inematds.github.io/claude-watch/',           label: 'claude-watch',            desc: 'Dê ao Claude olhos pra assistir vídeo', n: 11 },
               { href: 'https://inematds.github.io/grillme/',                label: 'Grill Me',                desc: 'Extraia o que está na sua cabeça',     n: 12 },
+              { href: 'https://inematds.github.io/videos-edit/',            label: 'videos-edit',             desc: 'Forja Reel — editor de reels com IA',  n: 13 },
             ].map((p) => (
               <a key={p.label} href="https://inema.pro" target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
@@ -919,6 +920,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/fpfilm1/',     label: 'FPFilm',       desc: 'Crie Filmes com IA (Freepik)' },
               { href: 'https://inematds.github.io/VISION/',      label: 'VISION',       desc: 'Visão Computacional com IA' },
               { href: 'https://inematds.github.io/promptfilmes/', label: 'Prompt Director', desc: 'Imagens e Cinema com IA' },
+              { href: 'https://inematds.github.io/videos-edit/', label: 'videos-edit', desc: 'Forja Reel — reel pro a partir do bruto, sem editor' },
             ]},
             { title: '🧠 Frameworks & Assistentes', steps: [
               { href: 'https://inematds.github.io/intelecto-curso/',   label: 'INTELECTO Curso', desc: 'Do Zero ao Expert em IA — 6 trilhas, 18 módulos' },
