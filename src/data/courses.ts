@@ -1338,6 +1338,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/opus47/',
   },
   {
+    id: 205,
+    title: 'os-coach — construa seu OS agêntico, uma camada por vez',
+    description:
+      'Skill /os-coach do Claude Code que guia quem nunca abriu um terminal a construir o próprio OS agêntico, uma camada por vez: Identidade, Substrato, Regras, Skills, Tools e Agentes. Fala como gente, persiste tudo em memory.md e audita por objetivo. Zero dependências.',
+    icon: '🧭',
+    tags: ['Claude Code', 'Skill', 'OS Agêntico', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/os-coach/',
+  },
+  {
     id: 149,
     title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução',
     description:
