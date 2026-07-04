@@ -330,6 +330,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/ATIA/',
   },
   {
+    id: 206,
+    title: 'Automação & Hooks no Claude Code',
+    description:
+      'Curso web (formato v4, página única): hooks do Claude Code — eventos, settings.json, travas de segurança e integração com CI. Leitura viva (uma ideia por seção) + retenção (grifo vira flashcard, revisão espaçada). 5 aulas.',
+    icon: '🪝',
+    tags: ['Claude Code', 'Hooks', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/cchooks/',
+  },
+  {
     id: 3,
     title: 'Automação 2026',
     description:
@@ -481,15 +490,6 @@ export const platformsData: Course[] = [
     icon: '⚡',
     tags: ['Claude Code', 'Iniciante', 'Website', 'Apps', 'Prompts', 'IA'],
     url: 'https://inematds.github.io/claude-code-na-pratica/',
-  },
-  {
-    id: 206,
-    title: 'Claude Code na prática — Automação & Hooks (Trilha 03)',
-    description:
-      'Curso web (formato v4, página única): hooks do Claude Code — eventos, settings.json, travas de segurança e integração com CI. Leitura viva (uma ideia por seção) + retenção (grifo vira flashcard, revisão espaçada). 5 aulas.',
-    icon: '🪝',
-    tags: ['Claude Code', 'Hooks', 'Automação', 'IA'],
-    url: 'https://inematds.github.io/cchooks/',
   },
   {
     id: 59,
@@ -1917,7 +1917,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
-  { date: '2026-07-04', title: 'Claude Code na prática — Automação & Hooks (Trilha 03, 5 aulas)', type: 'novo', url: 'https://inematds.github.io/cchooks/' },
+  { date: '2026-07-04', title: 'Automação & Hooks no Claude Code (Trilha 03, 5 aulas)', type: 'novo', url: 'https://inematds.github.io/cchooks/' },
   { date: '2026-07-03', title: 'cccache — Prompt Caching no Claude Code (3 trilhas, 8 módulos)', type: 'novo', url: 'https://inematds.github.io/cccache/' },
   { date: '2026-07-02', title: 'videos-edit — Forja Reel: monte seu editor de reels com IA (curso + skill, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit/' },
   { date: '2026-07-02', title: 'Profissional Liberal Experiente com IA — 5 trilhas, 15 módulos, 90 tópicos', type: 'novo', url: 'https://inematds.github.io/pro-liberal-ia/' },
