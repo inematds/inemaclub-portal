@@ -549,12 +549,14 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#34d399', margin: '0 0 .9rem' }}>1 · Despertar — integre a IA na sua profissão</div>
           <div className="learning-path-cards">
             {[
-              { href: 'https://inematds.github.io/profissionalai/',    label: 'Integra sua Profissão', desc: 'Integre a IA na profissão que você já tem', n: 1 },
-              { href: 'https://inematds.github.io/pro-liberal-ia/',    label: 'Liberal com IA',        desc: 'Assistente + prompts + templates pro liberal', n: 2 },
-              { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 3 },
-              { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 4 },
-              { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 5 },
-              { href: 'https://inematds.github.io/os-coach/',          label: 'OS Coach',              desc: 'Construa seu OS agêntico, uma camada por vez', n: 6 },
+              { href: 'https://inematds.github.io/mentesbrilhantes1/',  label: 'Mentes Brilhantes',     desc: 'Transforme sua profissão com IA',          n: 1 },
+              { href: 'https://inematds.github.io/caminho-certo-da-ia-guia/', label: 'O Caminho Certo da IA', desc: 'Guia de qualificação real em IA',         n: 2 },
+              { href: 'https://inematds.github.io/profissionalai/',    label: 'Integra sua Profissão', desc: 'Integre a IA na profissão que você já tem', n: 3 },
+              { href: 'https://inematds.github.io/pro-liberal-ia/',    label: 'Liberal com IA',        desc: 'Assistente + prompts + templates pro liberal', n: 4 },
+              { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 5 },
+              { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 6 },
+              { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 7 },
+              { href: 'https://inematds.github.io/os-coach/',          label: 'OS Coach',              desc: 'Construa seu OS agêntico, uma camada por vez', n: 8 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
@@ -569,10 +571,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#a78bfa', margin: '1.6rem 0 .9rem' }}>2 · Liderar &amp; Monetizar — consultor, CAIO, certificação</div>
           <div className="learning-path-cards">
             {[
-              { href: 'https://inematds.github.io/caio/',          label: 'CAIO',             desc: 'Chief AI Officer 2030',                  n: 1 },
-              { href: 'https://inematds.github.io/prof2031CAIP/',  label: 'CAIP',             desc: 'Certified AI Professional',              n: 2 },
-              { href: 'https://inematds.github.io/consultoria2k/', label: 'Consultor de IA',  desc: 'Do Rótulo ao Resultado',                 n: 3 },
-              { href: 'https://inematds.github.io/cultura-inovacao/', label: 'Cultura de Inovação', desc: 'Da Teoria à Prática',                  n: 4 },
+              { href: 'https://inematds.github.io/neurociencia-comportamento/', label: 'Neurociência & Comportamento', desc: 'Entenda o comportamento humano com IA',      n: 1 },
+              { href: 'https://inematds.github.io/pro-liberal-ia/',  label: 'Pro Liberal com IA', desc: 'Do atendimento ao lucro', n: 2 },
+              { href: 'https://inematds.github.io/caio/',          label: 'CAIO',             desc: 'Chief AI Officer 2030',                  n: 3 },
+              { href: 'https://inematds.github.io/prof2031CAIP/',  label: 'CAIP',             desc: 'Certified AI Professional',              n: 4 },
+              { href: 'https://inematds.github.io/consultoria2k/', label: 'Consultor de IA',  desc: 'Do Rótulo ao Resultado',                 n: 5 },
+              { href: 'https://inematds.github.io/cultura-inovacao/', label: 'Cultura de Inovação', desc: 'Da Teoria à Prática',                  n: 6 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
@@ -587,8 +591,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#38bdf8', margin: '1.6rem 0 .9rem' }}>3 · Estratégia — automação e estratégia com IA</div>
           <div className="learning-path-cards">
             {[
-              { href: 'https://inematds.github.io/fae-ai/',       label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',           n: 1 },
-              { href: 'https://inematds.github.io/aiestrategia/', label: 'Estratégia de IA',      desc: 'Fábrica de Estratégia — Vire Consultor', n: 2 },
+              { href: 'https://inematds.github.io/local-ai-masterclass/', label: 'Local AI Masterclass', desc: 'IA local, rápida e sem dependências',        n: 1 },
+              { href: 'https://inematds.github.io/storm-research/',       label: 'Storm Research',       desc: 'Pesquisa avançada com IA',                 n: 2 },
+              { href: 'https://inematds.github.io/fae-ai/',       label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',           n: 3 },
+              { href: 'https://inematds.github.io/aiestrategia/', label: 'Estratégia de IA',      desc: 'Fábrica de Estratégia — Vire Consultor', n: 4 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
