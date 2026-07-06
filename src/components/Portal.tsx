@@ -577,6 +577,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/prof2031CAIP/',  label: 'CAIP',             desc: 'Certified AI Professional',              n: 4 },
               { href: 'https://inematds.github.io/consultoria2k/', label: 'Consultor de IA',  desc: 'Do Rótulo ao Resultado',                 n: 5 },
               { href: 'https://inematds.github.io/cultura-inovacao/', label: 'Cultura de Inovação', desc: 'Da Teoria à Prática',                  n: 6 },
+              { href: 'https://inematds.github.io/mapacliente/', label: 'Mapa do Cliente', desc: 'Formação DICA — Consultor de IA para Pequenos Negócios', n: 7 },
+              { href: 'https://inematds.github.io/profissional2027x', label: 'Profissional 2027', desc: 'Implementadores de IA para PMEs — Método DPIA', n: 8 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
