@@ -606,8 +606,44 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             ))}
           </div>
 
+          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#f472b6', margin: '1.6rem 0 .9rem' }}>4 · Vibe Code — do conceito à engenharia com IA</div>
+          <div className="learning-path-cards">
+            {[
+              { href: 'https://inematds.github.io/vibecode',          label: 'Vibe Coding',      desc: 'Da Ideia ao Produto com IA',    n: 1 },
+              { href: 'https://inematds.github.io/vb-imersao/',      label: 'VB Imersao',       desc: 'Do Zero ao SaaS em 3 Dias',    n: 2 },
+              { href: 'https://inematds.github.io/skills',            label: 'Skills',           desc: 'Agent Skills Mastery',         n: 3 },
+              { href: 'https://inematds.github.io/agentic/',          label: 'Agentic',          desc: 'Engenharia de Agentic',        n: 4 },
+            ].map((p) => (
+              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                 className={`path-card path-card-${p.n}`}
+                 onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
+                <div className="path-number">{p.n}</div>
+                <h4>{p.label}</h4>
+                <p>{p.desc}</p>
+              </a>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#fbbf24', margin: '1.6rem 0 .9rem' }}>5 · Filmes &amp; Vídeos — crie conteúdo profissional</div>
+          <div className="learning-path-cards">
+            {[
+              { href: 'https://inematds.github.io/yt-pub-livesx/',    label: 'YT Pub LivesX', desc: 'Corte lives em clips com IA',        n: 1 },
+              { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code', n: 2 },
+              { href: 'https://inematds.github.io/timesmkt3/',        label: 'TimesMkt3',      desc: 'Fábrica de Conteúdo + Vídeos',     n: 3 },
+              { href: 'https://inematds.github.io/inemavox/',         label: 'Inemavox',       desc: 'Suíte de Voz e Vídeo com IA',     n: 4 },
+            ].map((p) => (
+              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                 className={`path-card path-card-${p.n}`}
+                 onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
+                <div className="path-number">{p.n}</div>
+                <h4>{p.label}</h4>
+                <p>{p.desc}</p>
+              </a>
+            ))}
+          </div>
+
           <div className="learning-path-footer">
-            <p>Uma jornada do INEMA.CLUB: integre a IA na sua profissão, vire implementador e depois consultor ou CAIO</p>
+            <p>Uma jornada do INEMA.CLUB: integre a IA na sua profissão, vire implementador, consultor, especialista em Vibe Code e produtor de conteúdo</p>
           </div>
 
           <a
