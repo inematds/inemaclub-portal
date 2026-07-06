@@ -1563,6 +1563,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/segrobot/',
   },
   {
+    id: 207,
+    title: 'Segunda Opinião — IA para Gestores e Líderes',
+    description:
+      '5 aulas para líderes de PME sem base técnica usarem IA como espelho, conselheira e simuladora de decisão — nunca como substituta da liderança. Decisão, conversas difíceis, comunicação, desenvolvimento de pessoas e ritual semanal.',
+    icon: '🪞',
+    tags: ['Liderança', 'IA', 'Gestão', 'Decisão'],
+    url: 'https://inematds.github.io/segunda-opiniao/',
+  },
+  {
     id: 189,
     title: 'Segundo Cérebro pro Claude Code — Graphify + Obsidian',
     description:
@@ -1918,6 +1927,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-06', title: 'Segunda Opinião — IA para Gestores e Líderes (5 aulas)', type: 'novo', url: 'https://inematds.github.io/segunda-opiniao/' },
   { date: '2026-07-04', title: 'Automação & Hooks no Claude Code (Trilha 03, 5 aulas)', type: 'novo', url: 'https://inematds.github.io/cchooks/' },
   { date: '2026-07-03', title: 'cccache — Prompt Caching no Claude Code (3 trilhas, 8 módulos)', type: 'novo', url: 'https://inematds.github.io/cccache/' },
   { date: '2026-07-02', title: 'videos-edit — Forja Reel: monte seu editor de reels com IA (curso + skill, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit/' },
