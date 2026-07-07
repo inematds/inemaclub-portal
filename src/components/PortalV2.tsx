@@ -399,12 +399,13 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             </p>
           </Reveal>
           <Reveal delay={80}>
+            <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#fb923c', margin: '0 0 .9rem' }}>6 · Profissionais Experientes — agentes para quem vive da expertise</div>
             <div className={s.pathRow}>
               {[
                 { href: 'https://inematds.github.io/profissionalai/',                 label: 'Profissional IA',   desc: 'Integre sua Profissão com IA',                    tag: 'Passo 1' },
                 { href: 'https://inematds.github.io/agentes-office/',                  label: 'Agentes Office',    desc: 'O Novo Office — Formação por Perfil',             tag: 'Passo 2' },
-                { href: 'https://inematds.github.io/agentes-office/curso/liberal/',     label: 'Office Liberal',    desc: 'Agentes Office para o Profissional Liberal',      tag: 'Passo 3' },
-                { href: 'https://inematds.github.io/segunda-opiniao/',                  label: 'Segunda Opinião',   desc: 'IA para Gestores e Líderes',                      tag: 'Passo 4' },
+                { href: 'https://inematds.github.io/agentes-office/curso/liberal/landing.html', label: 'Office Liberal', desc: 'Agentes Office para o Profissional Liberal', tag: 'Passo 3' },
+                { href: 'https://inematds.github.io/segunda-opiniao/landing.html',      label: 'Segunda Opinião',   desc: 'IA para Gestores e Líderes',                      tag: 'Passo 4' },
                 { href: 'https://inematds.github.io/pro-liberal-ia/',                   label: 'Pro Liberal IA',    desc: 'Profissional Liberal Experiente com IA',           tag: 'Passo 5' },
                 { href: 'https://inematds.github.io/prof2030/',                         label: 'Prof 2030',         desc: 'De Analista a Chief AI Officer',                   tag: 'Passo 6' },
               ].map((p, i) => (
