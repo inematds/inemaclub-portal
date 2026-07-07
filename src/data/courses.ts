@@ -1626,6 +1626,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skills-premium/',
   },
   {
+    id: 208,
+    title: 'SSH e Chaves SSH — Acesse sua VPS sem Depender de Suporte',
+    description:
+      'Curso web (formato-curso v5, 9 aulas) para quem nunca abriu um terminal: conectar numa VPS, criar e usar chaves SSH, colocar a chave no servidor e diagnosticar os erros de conexão mais comuns.',
+    icon: '🔑',
+    tags: ['SSH', 'VPS', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/ssh-basico/',
+  },
+  {
     id: 190,
     title: 'STORM Research — Pesquisa Multi-Perspectiva Verificada com Claude',
     description:
@@ -1927,6 +1936,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-06', title: 'SSH e Chaves SSH — Acesse sua VPS sem Depender de Suporte (9 aulas)', type: 'novo', url: 'https://inematds.github.io/ssh-basico/' },
   { date: '2026-07-06', title: 'Segunda Opinião — IA para Gestores e Líderes (5 aulas)', type: 'novo', url: 'https://inematds.github.io/segunda-opiniao/' },
   { date: '2026-07-04', title: 'Automação & Hooks no Claude Code (Trilha 03, 5 aulas)', type: 'novo', url: 'https://inematds.github.io/cchooks/' },
   { date: '2026-07-03', title: 'cccache — Prompt Caching no Claude Code (3 trilhas, 8 módulos)', type: 'novo', url: 'https://inematds.github.io/cccache/' },
