@@ -128,6 +128,7 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
             <a href="#trilha"      className={s.navItem}>Trilha</a>
             <a href="#trilha-vibe" className={s.navItem}>Trilha Vibe</a>
             <a href="#trilha-skills" className={s.navItem}>Skills</a>
+            <a href="#trilha-pro"  className={s.navItem}>Profissional</a>
             <a href="#trilhas"     className={s.navItem}>Trilhas</a>
             <a href="#github"    className={s.navItem}>GitHub</a>
             <a href="#comunidade" className={s.navItem}>Projetos</a>
@@ -382,6 +383,52 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
       </section>
 
       {/* ══════════════════════════════════════════
+          04b — TRILHA PROFISSIONAL DE IA
+      ══════════════════════════════════════════ */}
+      <section id="trilha-pro" className={s.section}>
+        <div className={s.wrap}>
+          <Reveal>
+            <div className={s.sectionTop}>
+              <span className={s.sectionNum}>05</span>
+              <span className={s.sectionLine} />
+              <span className={s.sectionLabel}>Carreira com IA</span>
+            </div>
+            <h2 className={s.sectionTitle}>Trilha Profissional de IA</h2>
+            <p className={s.sectionSub} style={{ marginBottom: '3rem' }}>
+              Integre IA na sua profissão — do diagnóstico à prática diária
+            </p>
+          </Reveal>
+          <Reveal delay={80}>
+            <div className={s.pathRow}>
+              {[
+                { href: 'https://inematds.github.io/profissionalai/',                 label: 'Profissional IA',   desc: 'Integre sua Profissão com IA',                    tag: 'Passo 1' },
+                { href: 'https://inematds.github.io/agentes-office/',                  label: 'Agentes Office',    desc: 'O Novo Office — Formação por Perfil',             tag: 'Passo 2' },
+                { href: 'https://inematds.github.io/agentes-office/curso/liberal/',     label: 'Office Liberal',    desc: 'Agentes Office para o Profissional Liberal',      tag: 'Passo 3' },
+                { href: 'https://inematds.github.io/segunda-opiniao/',                  label: 'Segunda Opinião',   desc: 'IA para Gestores e Líderes',                      tag: 'Passo 4' },
+                { href: 'https://inematds.github.io/pro-liberal-ia/',                   label: 'Pro Liberal IA',    desc: 'Profissional Liberal Experiente com IA',           tag: 'Passo 5' },
+                { href: 'https://inematds.github.io/prof2030/',                         label: 'Prof 2030',         desc: 'De Analista a Chief AI Officer',                   tag: 'Passo 6' },
+              ].map((p, i) => (
+                <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                   className={s.pathCard}
+                   onClick={() => click(p.href, p.label, 'trilha-pro')}>
+                  <div className={s.pathNum}>0{i + 1}</div>
+                  <span className={s.pathTag}>{p.tag}</span>
+                  <h4>{p.label}</h4>
+                  <p>{p.desc}</p>
+                  <span className={s.pathArrow}>Acessar →</span>
+                </a>
+              ))}
+            </div>
+          </Reveal>
+          <Reveal delay={160}>
+            <div className={s.pathNote}>
+              De qualquer profissão ao domínio prático de IA — sem trocar de carreira
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
           05 — CURSOS
       ══════════════════════════════════════════ */}
       <section id="cursos" className={s.sectionDark}>
@@ -523,8 +570,6 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/profissional2027x', label: 'Profissional 2027', desc: 'Implementadores de IA para PMEs — Método DPIA' },
               { href: 'https://inematds.github.io/AI-CONSULT/', label: 'AI Strategy Factory', desc: 'Estratégia de IA Completa para Qualquer Empresa' },
               { href: 'https://inematds.github.io/aiestrategia/', label: 'Fábrica de Estratégia de IA', desc: 'Curso — vire consultor de IA construindo a sua própria fábrica' },
-              { href: 'https://inematds.github.io/agentes-office/', label: 'Agentes Office', desc: 'O Novo Office — Formação por Perfil' },
-              { href: 'https://inematds.github.io/agentes-office/curso/liberal/', label: 'Office Liberal', desc: 'Agentes Office para o Profissional Liberal' },
             ]},
             { title: '📊 Dados & IA', steps: [
               { href: 'https://inematds.github.io/FDB/',       label: 'FDB',       desc: 'Fundamentos de Banco de Dados' },
