@@ -82,7 +82,7 @@ export const platformsData: Course[] = [
     id: 204,
     title: 'Agentes: o Novo Office — Formação por Perfil',
     description:
-      'A terceira virada do trabalho de escritório: formação prática em agentes de IA por perfil profissional (operacional, empreendedor, liberal, gestor), com isca gratuita de 15 minutos — você cola um prompt-agente e sai com ele rodando no seu trabalho.',
+      'A terceira virada do trabalho de escritório: formação prática em agentes de IA por perfil profissional (operacional, empreendedor, liberal, gestor) — cada módulo termina com algo seu montado e funcionando.',
     icon: '🤖',
     tags: ['Agentes', 'IA', 'Formação', 'Produtividade'],
     url: 'https://inematds.github.io/agentes-office/',
@@ -1955,7 +1955,7 @@ export const platformsData: Course[] = [
 
 export const updatesData: Update[] = [
   { date: '2026-07-07', title: 'Agentes: o Novo Office — Profissional Liberal (aula 0 + 8 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/agentes-office/curso/liberal/' },
-  { date: '2026-07-07', title: 'Agentes: o Novo Office — Formação por Perfil + isca de 15 minutos', type: 'novo', url: 'https://inematds.github.io/agentes-office/' },
+  { date: '2026-07-07', title: 'Agentes: o Novo Office — Formação por Perfil', type: 'novo', url: 'https://inematds.github.io/agentes-office/' },
   { date: '2026-07-06', title: 'SSH e Chaves SSH — Acesse sua VPS sem Depender de Suporte (9 aulas)', type: 'novo', url: 'https://inematds.github.io/ssh-basico/' },
   { date: '2026-07-06', title: 'Segunda Opinião — IA para Gestores e Líderes (5 aulas)', type: 'novo', url: 'https://inematds.github.io/segunda-opiniao/' },
   { date: '2026-07-04', title: 'Automação & Hooks no Claude Code (Trilha 03, 5 aulas)', type: 'novo', url: 'https://inematds.github.io/cchooks/' },

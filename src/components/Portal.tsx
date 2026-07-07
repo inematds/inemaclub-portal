@@ -647,8 +647,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#fb923c', margin: '1.6rem 0 .9rem' }}>6 · Profissionais Experientes — agentes para quem vive da expertise</div>
           <div className="learning-path-cards">
             {[
-              { href: 'https://inematds.github.io/agentes-office/',               label: 'Agentes: o Novo Office', desc: 'Formação por perfil + isca de 15 minutos', n: 1 },
-              { href: 'https://inematds.github.io/agentes-office/curso/liberal/', label: 'Curso Liberal',          desc: 'Aula 0 + 8 módulos — o segundo cérebro do liberal', n: 2 },
+              { href: 'https://inematds.github.io/agentes-office/',                             label: 'Agentes: o Novo Office', desc: 'Formação em agentes de IA por perfil', n: 1 },
+              { href: 'https://inematds.github.io/agentes-office/curso/liberal/landing.html', label: 'Curso Liberal',          desc: 'Aula 0 + 8 módulos — o segundo cérebro do liberal', n: 2 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
