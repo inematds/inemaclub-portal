@@ -649,6 +649,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             {[
               { href: 'https://inematds.github.io/agentes-office/',                             label: 'Agentes: o Novo Office', desc: 'Formação em agentes de IA por perfil', n: 1 },
               { href: 'https://inematds.github.io/agentes-office/curso/liberal/landing.html', label: 'Curso Liberal',          desc: 'Aula 0 + 8 módulos — o segundo cérebro do liberal', n: 2 },
+              { href: 'https://inematds.github.io/segunda-opiniao/landing.html',                label: 'Segunda Opinião',       desc: 'IA para Gestores e Líderes',                        n: 3 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
