@@ -523,6 +523,8 @@ export default function PortalV2({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/profissional2027x', label: 'Profissional 2027', desc: 'Implementadores de IA para PMEs — Método DPIA' },
               { href: 'https://inematds.github.io/AI-CONSULT/', label: 'AI Strategy Factory', desc: 'Estratégia de IA Completa para Qualquer Empresa' },
               { href: 'https://inematds.github.io/aiestrategia/', label: 'Fábrica de Estratégia de IA', desc: 'Curso — vire consultor de IA construindo a sua própria fábrica' },
+              { href: 'https://inematds.github.io/agentes-office/', label: 'Agentes Office', desc: 'O Novo Office — Formação por Perfil' },
+              { href: 'https://inematds.github.io/agentes-office/curso/liberal/', label: 'Office Liberal', desc: 'Agentes Office para o Profissional Liberal' },
             ]},
             { title: '📊 Dados & IA', steps: [
               { href: 'https://inematds.github.io/FDB/',       label: 'FDB',       desc: 'Fundamentos de Banco de Dados' },
