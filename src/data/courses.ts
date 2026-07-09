@@ -1367,7 +1367,7 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/opus47/',
   },
   {
-    id: 205,
+    id: 209,
     title: 'os-agentes — Skill Cria Agentic',
     description:
       'Sistema de criação de agentes passo a passo: guia você, camada por camada, na construção do seu próprio OS agêntico (Identidade, Substrato, Regras, Skills, Ferramentas, Agentes), sem precisar saber programar.',
