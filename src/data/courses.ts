@@ -19,7 +19,7 @@ export const projectUpdatesData: Update[] = [
   { date: '2026-07-06', title: 'Infinite Brain OS — Sistema operacional de conhecimento para negócios com IA (git-backed)', type: 'novo', url: 'https://inematds.github.io/infinite-brain-os/guia/' },
   { date: '2026-07-03', title: 'claude-video — /watch: input de vídeo multi-host (Claude Code, Codex, +50)', type: 'novo', url: 'https://inematds.github.io/claude-video/guia/' },
   { date: '2026-06-30', title: 'Health OS — Coach de saúde pessoal com IA (Telegram + Supabase + WHOOP)', type: 'novo', url: 'https://inematds.github.io/health-os/' },
-  { date: '2026-06-29', title: 'os-coach — skill /os-coach que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://inematds.github.io/os-coach/' },
+  { date: '2026-06-29', title: 'os-agentes — skill /os-agentes que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://inematds.github.io/os-agentes/' },
   { date: '2026-06-29', title: 'INEMA Engenharia Civil — Agentes de IA para cálculos de engenharia civil (validação NBR + memorial)', type: 'novo', url: 'https://inematds.github.io/inemaengenhariacivil/' },
   { date: '2026-06-28', title: 'VideosAvatar — Avatar falante no HeyGen, do roteiro ao bot (API + assinatura)', type: 'novo', url: 'https://inematds.github.io/videosavatar/' },
   { date: '2026-06-26', title: 'cerebro-inema — Segundo cérebro de IA com 3 cérebros (PT-BR)', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
@@ -775,7 +775,7 @@ export const platformsData: Course[] = [
     id: 188,
     title: 'Engenharia de Sistemas Operacionais de IA — do zero ao OS vivo',
     description:
-      'Construa centros de comando de IA (AIOS), uma camada por vez, sem virar engenheiro. As 6 camadas (Identidade, Substrato, Regras, Skills, Tools, Agentes), passo a passo com /os-coach e domínios reais: tributário, vendas, suporte, conteúdo e consultoria. 5 trilhas, 21 módulos.',
+      'Construa centros de comando de IA (AIOS), uma camada por vez, sem virar engenheiro. As 6 camadas (Identidade, Substrato, Regras, Skills, Tools, Agentes), passo a passo com /os-agentes e domínios reais: tributário, vendas, suporte, conteúdo e consultoria. 5 trilhas, 21 módulos.',
     icon: '🧩',
     tags: ['AIOS', 'Agentes', 'Claude Code', 'Contexto', 'Skills', 'IA'],
     url: 'https://inematds.github.io/oscoach/',
@@ -1367,12 +1367,12 @@ export const platformsData: Course[] = [
   },
   {
     id: 205,
-    title: 'os-coach — construa seu OS agêntico, uma camada por vez',
+    title: 'os-agentes — construa seu OS agêntico, uma camada por vez',
     description:
-      'Skill /os-coach do Claude Code que guia quem nunca abriu um terminal a construir o próprio OS agêntico, uma camada por vez: Identidade, Substrato, Regras, Skills, Tools e Agentes. Fala como gente, persiste tudo em memory.md e audita por objetivo. Zero dependências.',
+      'Skill /os-agentes do Claude Code que guia quem nunca abriu um terminal a construir o próprio OS agêntico, uma camada por vez: Identidade, Substrato, Regras, Skills, Tools e Agentes. Fala como gente, persiste tudo em memory.md e audita por objetivo. Zero dependências.',
     icon: '🧭',
     tags: ['Claude Code', 'Skill', 'OS Agêntico', 'Agentes', 'IA'],
-    url: 'https://inematds.github.io/os-coach/',
+    url: 'https://inematds.github.io/os-agentes/',
   },
   {
     id: 149,

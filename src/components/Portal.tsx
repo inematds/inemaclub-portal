@@ -70,7 +70,7 @@ const communityProjects: Array<{
   { icon: '📋', name: 'video-plan-editor', desc: 'Skill + pacote Python (vpe) que transforma um assunto ou link num plano de edição de vídeo estruturado e renderer-agnóstico, com render via HyperFrames', url: 'https://inematds.github.io/skill-video-plan-editor/', badge: 'Guia' },
   { icon: '🎬', name: 'VideosAvatar', desc: 'Avatar falante no HeyGen a partir de um roteiro (9:16, 720p, voz PT-BR) entregue no bot do openpcbot — dois caminhos de crédito: API pay-as-you-go (heygen-cli) e assinatura via MCP (heygen-mcp)', url: 'https://inematds.github.io/videosavatar/', badge: 'Guia' },
   { icon: '🏗️', name: 'inema engenharia civil', desc: 'Plataforma de agentes de IA para cálculos de engenharia civil: o agente escolhe o método normativo e o Python calcula, valida (unidades/física/NBR/equilíbrio) e gera o memorial. 18 domínios, com aviso de responsabilidade técnica (ART).', url: 'https://inematds.github.io/inemaengenhariacivil/', badge: 'Guia' },
-  { icon: '🧭', name: 'os-coach', desc: 'Skill /os-coach que guia uma pessoa não técnica na construção do próprio OS agêntico de 6 camadas, uma de cada vez, com memória entre sessões e auditoria por objetivo. Base do curso AIOS do INEMA.', url: 'https://inematds.github.io/os-coach/', badge: 'Guia' },
+  { icon: '🧭', name: 'os-agentes', desc: 'Skill /os-agentes que guia uma pessoa não técnica na construção do próprio OS agêntico de 6 camadas, uma de cada vez, com memória entre sessões e auditoria por objetivo. Base do curso AIOS do INEMA.', url: 'https://inematds.github.io/os-agentes/', badge: 'Guia' },
   { icon: '🩺', name: 'Health OS', desc: 'Blueprint de um coach de saúde pessoal com IA no Telegram: Supabase próprio + WHOOP, fundamentado nos seus exames, genética e metas. Não é aconselhamento médico.', url: 'https://inematds.github.io/health-os/', badge: 'Guia' },
   { icon: "🩺", name: "bs-benchmark", desc: "BullshitBench: benchmark que mede se LLMs detectam e apontam premissas absurdas em perguntas técnicas, com visualizador público.", url: "https://inematds.github.io/bs-benchmark/", badge: "Guia" },
   { icon: "🎬", name: "my-inema", desc: "Andaime: plataforma pedagógica com IA socrática (livros ilustrados, tutor de matemática e filmes) para sala de aula.", url: "https://github.com/inematds/my-inema", badge: "GitHub" },
@@ -556,7 +556,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/pha2030-aula/',      label: 'PHA 2030',              desc: 'Potencial Humano Aumentado',              n: 5 },
               { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 6 },
               { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 7 },
-              { href: 'https://inematds.github.io/os-coach/',          label: 'OS Coach',              desc: 'Construa seu OS agêntico, uma camada por vez', n: 8 },
+              { href: 'https://inematds.github.io/os-agentes/',        label: 'OS Agentes',            desc: 'Construa seu OS agêntico, uma camada por vez', n: 8 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
