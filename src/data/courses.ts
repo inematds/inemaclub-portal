@@ -16,10 +16,11 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-09', title: 'os-agentes — landing + guia de uso publicados (passo a passo das 6 camadas)', type: 'atualizado', url: 'https://inematds.github.io/os-agentes/guia/' },
   { date: '2026-07-06', title: 'Infinite Brain OS — Sistema operacional de conhecimento para negócios com IA (git-backed)', type: 'novo', url: 'https://inematds.github.io/infinite-brain-os/guia/' },
   { date: '2026-07-03', title: 'claude-video — /watch: input de vídeo multi-host (Claude Code, Codex, +50)', type: 'novo', url: 'https://inematds.github.io/claude-video/guia/' },
   { date: '2026-06-30', title: 'Health OS — Coach de saúde pessoal com IA (Telegram + Supabase + WHOOP)', type: 'novo', url: 'https://inematds.github.io/health-os/' },
-  { date: '2026-06-29', title: 'os-agentes — skill /os-agentes que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://inematds.github.io/os-agentes/' },
+  { date: '2026-06-29', title: 'os-agentes — skill /os-agentes que constrói um OS agêntico de 6 camadas, uma de cada vez, com auditoria por objetivo', type: 'novo', url: 'https://inematds.github.io/os-agentes/guia/' },
   { date: '2026-06-29', title: 'INEMA Engenharia Civil — Agentes de IA para cálculos de engenharia civil (validação NBR + memorial)', type: 'novo', url: 'https://inematds.github.io/inemaengenhariacivil/' },
   { date: '2026-06-28', title: 'VideosAvatar — Avatar falante no HeyGen, do roteiro ao bot (API + assinatura)', type: 'novo', url: 'https://inematds.github.io/videosavatar/' },
   { date: '2026-06-26', title: 'cerebro-inema — Segundo cérebro de IA com 3 cérebros (PT-BR)', type: 'novo', url: 'https://inematds.github.io/cerebro-inema/' },
@@ -1372,7 +1373,7 @@ export const platformsData: Course[] = [
       'Skill /os-agentes do Claude Code que guia quem nunca abriu um terminal a construir o próprio OS agêntico, uma camada por vez: Identidade, Substrato, Regras, Skills, Tools e Agentes. Fala como gente, persiste tudo em memory.md e audita por objetivo. Zero dependências.',
     icon: '🧭',
     tags: ['Claude Code', 'Skill', 'OS Agêntico', 'Agentes', 'IA'],
-    url: 'https://inematds.github.io/os-agentes/',
+    url: 'https://inematds.github.io/os-agentes/guia/',
   },
   {
     id: 149,
