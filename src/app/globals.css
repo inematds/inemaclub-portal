@@ -252,6 +252,10 @@ html {
     margin: 2.5rem 0;
 }
 
+.perfis-ia-section a {
+    display: block;
+}
+
 .perfis-ia-topo {
     display: block;
     width: 100%;
