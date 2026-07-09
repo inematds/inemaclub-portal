@@ -1368,9 +1368,9 @@ export const platformsData: Course[] = [
   },
   {
     id: 205,
-    title: 'os-agentes — construa seu OS agêntico, uma camada por vez',
+    title: 'os-agentes — Skill Cria Agentic',
     description:
-      'Skill /os-agentes do Claude Code que guia quem nunca abriu um terminal a construir o próprio OS agêntico, uma camada por vez: Identidade, Substrato, Regras, Skills, Tools e Agentes. Fala como gente, persiste tudo em memory.md e audita por objetivo. Zero dependências.',
+      'Sistema de criação de agentes passo a passo: guia você, camada por camada, na construção do seu próprio OS agêntico (Identidade, Substrato, Regras, Skills, Ferramentas, Agentes), sem precisar saber programar.',
     icon: '🧭',
     tags: ['Claude Code', 'Skill', 'OS Agêntico', 'Agentes', 'IA'],
     url: 'https://inematds.github.io/os-agentes/guia/',
