@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-09', title: 'wacrm — CRM self-hostable para WhatsApp (fork + landing + guia de uso publicados)', type: 'novo', url: 'https://inematds.github.io/wacrm/guia/' },
   { date: '2026-07-09', title: 'OS Coach — landing + guia de uso publicados (você constrói a base do seu OS agêntico)', type: 'novo', url: 'https://inematds.github.io/os-coach/guia/' },
   { date: '2026-07-09', title: 'os-agentes — landing + guia de uso publicados (passo a passo das 6 camadas)', type: 'atualizado', url: 'https://inematds.github.io/os-agentes/guia/' },
   { date: '2026-07-06', title: 'Infinite Brain OS — Sistema operacional de conhecimento para negócios com IA (git-backed)', type: 'novo', url: 'https://inematds.github.io/infinite-brain-os/guia/' },
@@ -1878,6 +1879,15 @@ export const platformsData: Course[] = [
     icon: '🦾',
     tags: ['VLA', 'Robótica', 'Diffusion Policy', 'LeRobot', 'Humanoides', 'Sim-to-Real'],
     url: 'https://inematds.github.io/vla-mastery/',
+  },
+  {
+    id: 211,
+    title: 'wacrm — CRM self-hostable para WhatsApp',
+    description:
+      'Template self-hostable de CRM para WhatsApp Business API — inbox compartilhada, contatos, pipelines de vendas, disparos e automações no-code. Fork it, brand it, host it: seu código, seu Supabase, seu domínio.',
+    icon: '💬',
+    tags: ['CRM', 'WhatsApp', 'Next.js', 'Supabase', 'Self-hosted'],
+    url: 'https://inematds.github.io/wacrm/guia/',
   },
   {
     id: 36,
