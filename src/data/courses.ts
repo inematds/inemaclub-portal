@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-09', title: 'OS Coach — landing + guia de uso publicados (você constrói a base do seu OS agêntico)', type: 'novo', url: 'https://inematds.github.io/os-coach/guia/' },
   { date: '2026-07-09', title: 'os-agentes — landing + guia de uso publicados (passo a passo das 6 camadas)', type: 'atualizado', url: 'https://inematds.github.io/os-agentes/guia/' },
   { date: '2026-07-06', title: 'Infinite Brain OS — Sistema operacional de conhecimento para negócios com IA (git-backed)', type: 'novo', url: 'https://inematds.github.io/infinite-brain-os/guia/' },
   { date: '2026-07-03', title: 'claude-video — /watch: input de vídeo multi-host (Claude Code, Codex, +50)', type: 'novo', url: 'https://inematds.github.io/claude-video/guia/' },
@@ -1365,6 +1366,15 @@ export const platformsData: Course[] = [
     icon: '🧬',
     tags: ['Claude Code', 'Opus 4.7', 'Anthropic', 'Agentic', 'IA', 'Produtividade'],
     url: 'https://inematds.github.io/opus47/',
+  },
+  {
+    id: 210,
+    title: 'OS Coach — Você Constrói a Base do Seu OS Agêntico',
+    description:
+      'Skill do Claude Code que treina você, camada por camada (Identidade, Substrato, Regras, Skills, Ferramentas, Agentes), na construção do seu próprio OS agêntico, sem precisar programar. Um treinador particular que constrói os arquivos de verdade pra você.',
+    icon: '🧑‍🏫',
+    tags: ['Claude Code', 'Skill', 'OS Agêntico', 'Coaching', 'IA'],
+    url: 'https://inematds.github.io/os-coach/guia/',
   },
   {
     id: 209,
