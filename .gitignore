@@ -12,3 +12,4 @@ package-lock.json
 .bmad-core/
 .claude/
 .vercel
+supabase/.temp/

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import AgenteChat from '@/components/AgenteChat/AgenteChat'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -27,7 +28,10 @@ export default function RootLayout({
           window.plausible.init();
         `}</Script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AgenteChat />
+      </body>
     </html>
   )
 }
