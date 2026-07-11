@@ -1172,6 +1172,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
   },
   {
+    id: 214,
+    title: 'Lives 2026 — 7 vídeos estratégicos de serviços de IA',
+    description:
+      'Sete lives curtas e narradas sobre o lado estratégico de vender serviços de IA: negociação real, precificação por valor, o que empresas compram, build to sell, sinal vs ruído, a guerra das ferramentas e a venda que o cliente não pediu. Cada uma em 16:9 e 9:16 (Shorts/Reels).',
+    icon: '🎙️',
+    tags: ['IA', 'Negócios', 'Vídeos', 'Estratégia', 'Serviços'],
+    url: 'https://inematds.github.io/lives2/',
+  },
+  {
     id: 182,
     title: 'LLMs Orquestradas — Multi-LLM, Fugu Ultra e OpenRouter Fusion',
     description:
@@ -1994,6 +2003,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-11', title: 'Lives 2026 — 7 vídeos estratégicos de serviços de IA (16:9 + 9:16)', type: 'novo', url: 'https://inematds.github.io/lives2/' },
   { date: '2026-07-11', title: 'Como Montar um Negócio de Serviços de IA — 8 aulas, sem programar (formato v5)', type: 'novo', url: 'https://inematds.github.io/evai2026/curso-e-live/curso/' },
   { date: '2026-07-07', title: 'Agentes: o Novo Office — Profissional Liberal (aula 0 + 8 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/agentes-office/curso/liberal/' },
   { date: '2026-07-07', title: 'Agentes: o Novo Office — Formação por Perfil', type: 'novo', url: 'https://inematds.github.io/agentes-office/' },
