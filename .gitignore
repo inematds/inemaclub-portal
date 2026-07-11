@@ -13,3 +13,4 @@ package-lock.json
 .claude/
 .vercel
 supabase/.temp/
+scripts/.chat-modelo-atual
