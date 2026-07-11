@@ -632,6 +632,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/codexbasico/',
   },
   {
+    id: 213,
+    title: 'Como Montar um Negócio de Serviços de IA — 8 aulas, sem programar',
+    description:
+      'Curso interativo (formato v5) para profissionais liberais e de escritório fecharem o primeiro serviço de IA pago: mapear oportunidades no próprio círculo, motor de conteúdo, atendente por voz, testes de qualidade com gabarito, assistente com memória do negócio, agentes com salvaguardas e venda para empresas grandes.',
+    icon: '💼',
+    tags: ['Negócios', 'IA', 'Serviços', 'Sem código', 'Curso'],
+    url: 'https://inematds.github.io/evai2026/curso-e-live/curso/',
+  },
+  {
     id: 125,
     title: 'Consultor de IA — Do Rótulo ao Resultado',
     description:
@@ -1985,6 +1994,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-11', title: 'Como Montar um Negócio de Serviços de IA — 8 aulas, sem programar (formato v5)', type: 'novo', url: 'https://inematds.github.io/evai2026/curso-e-live/curso/' },
   { date: '2026-07-07', title: 'Agentes: o Novo Office — Profissional Liberal (aula 0 + 8 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/agentes-office/curso/liberal/' },
   { date: '2026-07-07', title: 'Agentes: o Novo Office — Formação por Perfil', type: 'novo', url: 'https://inematds.github.io/agentes-office/' },
   { date: '2026-07-06', title: 'SSH e Chaves SSH — Acesse sua VPS sem Depender de Suporte (9 aulas)', type: 'novo', url: 'https://inematds.github.io/ssh-basico/' },

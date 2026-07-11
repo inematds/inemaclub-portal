@@ -1062,6 +1062,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/profissional2027x', label: 'Profissional 2027', desc: 'Implementadores de IA para PMEs — Método DPIA' },
               { href: 'https://inematds.github.io/AI-CONSULT/', label: 'AI Strategy Factory', desc: 'Estratégia de IA Completa para Qualquer Empresa' },
               { href: 'https://inematds.github.io/aiestrategia/', label: 'Fábrica de Estratégia de IA', desc: 'Curso — vire consultor de IA construindo a sua própria fábrica' },
+              { href: 'https://inematds.github.io/evai2026/curso-e-live/curso/', label: 'Negócio de Serviços de IA', desc: '8 aulas sem programar — do primeiro cliente ao contrato enterprise' },
             ]},
             { title: '📊 Dados & IA', steps: [
               { href: 'https://inematds.github.io/FDB/',       label: 'FDB',        desc: 'Fundamentos de Banco de Dados' },
@@ -1199,7 +1200,9 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* Projetos */}
+      {/* Projetos — id="projetos" é a âncora canônica (o agente navega pra cá);
+          id="comunidade" fica no section por compatibilidade com links antigos */}
+      <span id="projetos" />
       <section id="comunidade" className="community-projects-section">
         <div className="container">
           <div className="community-projects-header">
