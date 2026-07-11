@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilha para Iniciantes — Por que essa ordem importa | INEMA Club</title>
+<meta name="description" content="Entenda a importância de cada um dos 8 cursos da Trilha para Iniciantes do INEMA Club e por que essa ordem foi pensada assim.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e27; --bg2:#0f1419; --bg3:#111a33;
+  --cyan:#00d9ff; --purple:#a855f7; --white:#f0f4ff; --gray:#8a93ac;
+  --border:rgba(0,217,255,0.16);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg); color:var(--white);
+  font-family:'Inter',sans-serif; line-height:1.7;
+}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif; line-height:1.15;}
+code,.mono{font-family:'Space Mono',monospace;}
+a{color:var(--cyan);}
+.container{max-width:920px; margin:0 auto; padding:0 24px;}
+
+/* NAV */
+.nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(10,14,39,0.85); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{
+  max-width:920px; margin:0 auto; padding:16px 24px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+}
+.nav-brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:1.05rem; text-decoration:none; color:var(--white);}
+.nav-brand span{color:var(--cyan);}
+.nav-back{
+  font-size:.85rem; color:var(--gray); text-decoration:none;
+  border:1px solid var(--border); padding:8px 14px; border-radius:8px;
+  transition:.2s;
+}
+.nav-back:hover{color:var(--cyan); border-color:var(--cyan);}
+
+/* HERO */
+.hero{padding:72px 0 48px; text-align:center; position:relative;}
+.hero-glow{
+  position:absolute; top:-80px; left:50%; transform:translateX(-50%);
+  width:600px; height:300px;
+  background:radial-gradient(ellipse, rgba(0,217,255,0.14) 0%, transparent 70%);
+  pointer-events:none;
+}
+.eyebrow{
+  display:inline-block; font-family:'Space Mono',monospace; font-size:.75rem;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--cyan);
+  border:1px solid var(--border); padding:6px 14px; border-radius:100px;
+  margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(2rem,5vw,3rem); font-weight:800; margin-bottom:18px;
+  background:linear-gradient(135deg,#f0f4ff 40%,var(--cyan));
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+.hero p{color:var(--gray); font-size:1.08rem; max-width:640px; margin:0 auto;}
+
+/* INTRO */
+.intro{padding:8px 0 40px;}
+.intro p{color:#c3cbe0; font-size:1.02rem; margin-bottom:16px;}
+.intro strong{color:var(--white);}
+
+/* TIMELINE */
+.timeline{padding:24px 0 64px; position:relative;}
+.step{
+  position:relative; padding:0 0 40px 56px; border-left:2px solid var(--border);
+  margin-left:19px;
+}
+.step:last-child{border-left:2px solid transparent; padding-bottom:0;}
+.step-num{
+  position:absolute; left:-21px; top:0;
+  width:40px; height:40px; border-radius:50%;
+  background:var(--bg3); border:2px solid var(--cyan);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Space Grotesk',sans-serif; font-weight:800; color:var(--cyan);
+  font-size:1rem;
+}
+.step-card{
+  background:var(--bg2); border:1px solid var(--border); border-radius:14px;
+  padding:22px 24px;
+}
+.step-card h3{font-size:1.2rem; margin-bottom:4px; color:var(--white);}
+.step-card .subtitle{font-size:.85rem; color:var(--purple); font-family:'Space Mono',monospace; margin-bottom:12px;}
+.step-card p{color:#c3cbe0; font-size:.96rem; margin-bottom:14px;}
+.step-card a.course-link{
+  display:inline-flex; align-items:center; gap:6px; font-size:.85rem; font-weight:600;
+  color:var(--cyan); text-decoration:none; border-bottom:1px solid transparent;
+}
+.step-card a.course-link:hover{border-bottom-color:var(--cyan);}
+
+/* CTA */
+.cta{
+  padding:56px 0 88px; text-align:center;
+}
+.cta-box{
+  background:linear-gradient(135deg, rgba(0,217,255,0.08), rgba(168,85,247,0.08));
+  border:1px solid var(--border); border-radius:18px; padding:44px 32px;
+}
+.cta-box h2{font-size:1.5rem; margin-bottom:12px;}
+.cta-box p{color:var(--gray); margin-bottom:24px; max-width:520px; margin-left:auto; margin-right:auto;}
+.btn-primary{
+  display:inline-block; background:var(--cyan); color:#04101f; font-weight:700;
+  padding:14px 30px; border-radius:10px; text-decoration:none; font-size:.95rem;
+  transition:.2s;
+}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,217,255,0.3);}
+
+footer{padding:28px 0; text-align:center; color:var(--gray); font-size:.85rem; border-top:1px solid var(--border);}
+
+@media(max-width:640px){
+  .step{padding-left:44px; margin-left:14px;}
+  .step-num{width:32px; height:32px; font-size:.85rem; left:-17px;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/#trilha-iniciantes">INEMA<span>.CLUB</span></a>
+    <a class="nav-back" href="/#trilha-iniciantes">← Voltar ao Portal</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <span class="eyebrow">Trilha para Iniciantes</span>
+    <h1>Por que essa ordem importa</h1>
+    <p>Os 8 cursos essenciais do INEMA Club, na sequência recomendada — e o motivo de cada um vir onde vem.</p>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="container">
+    <p>A trilha não é uma lista aleatória de cursos bons — é uma <strong>progressão</strong>. Cada curso entrega uma competência que o próximo assume como pré-requisito: primeiro você aprende a <strong>falar</strong> com IA, depois a <strong>usar</strong> as ferramentas certas, depois a <strong>entender dados</strong> e <strong>imagens</strong>, depois a <strong>construir</strong> com agentes de código, e só então a <strong>colocar no ar</strong> e a <strong>arquitetar seu próprio sistema de IA</strong>. Pular etapas funciona, mas cria lacunas — cursos mais avançados vão presumir que você já tem a base dos anteriores.</p>
+  </div>
+</section>
+
+<section class="timeline">
+  <div class="container">
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-card">
+        <h3>FEP — Fundamentos de Engenharia de Prompts</h3>
+        <div class="subtitle">A base de tudo: como falar com a IA</div>
+        <p>Todo o resto da trilha depende de você saber pedir bem. FEP ensina a estrutura de um prompt eficaz — contexto, instrução, formato, exemplos. Sem isso, qualquer ferramenta de IA (inclusive as que vêm mais na frente, como Claude Code e Codex) entrega resultado abaixo do potencial. É o primeiro curso porque é a interface: todos os outros pressupõem que você já sabe se comunicar com um modelo.</p>
+        <a class="course-link" href="https://inematds.github.io/FEP/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-card">
+        <h3>ATIA — Oportunidades Digitais com IA</h3>
+        <div class="subtitle">Prompt bem feito, agora aplicado</div>
+        <p>Com o vocabulário de prompt em mãos, ATIA mostra a IA em ação: casos de uso reais e onde ela abre oportunidade prática. É a ponte entre "sei escrever um prompt" e "sei onde e como aplicar isso" — evita que o aprendizado fique só na teoria.</p>
+        <a class="course-link" href="https://inematds.github.io/ATIA/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-card">
+        <h3>FDB — Fundamentos de Banco de Dados</h3>
+        <div class="subtitle">De "usar IA" para "construir com IA"</div>
+        <p>Todo produto de verdade guarda e organiza dados. FDB entrega os fundamentos de desenvolvimento e banco de dados que sustentam qualquer coisa além de um chat — é o curso que prepara o terreno técnico antes de você tocar em ferramentas de código com IA.</p>
+        <a class="course-link" href="https://inematds.github.io/FDB/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-card">
+        <h3>Vision — Processamento de Imagens com IA</h3>
+        <div class="subtitle">IA não é só texto</div>
+        <p>Antes de ir para os agentes de código, Vision expande o que "IA" significa: visão computacional e processamento de imagem. Isso importa porque boa parte das ferramentas modernas (inclusive as de código) são multimodais — entender essa camada evita que sua base fique presa só a texto.</p>
+        <a class="course-link" href="https://inematds.github.io/VISION/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-card">
+        <h3>Claude Code Básico</h3>
+        <div class="subtitle">Onde tudo se junta: seu primeiro agente de código</div>
+        <p>Instalação, comandos, skills, MCP e Cowork — do zero. Aqui o prompt (curso 1), a aplicação prática (curso 2) e os fundamentos de dados (curso 3) se combinam: você passa a usar um agente de IA para de fato construir e automatizar, não só conversar.</p>
+        <a class="course-link" href="https://inematds.github.io/ccodebasico/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-card">
+        <h3>Codex Básico</h3>
+        <div class="subtitle">Segundo agente, mesma base, mais repertório</div>
+        <p>Curso completo do Codex CLI (OpenAI) em 6 trilhas. Depois de aprender Claude Code, ver um segundo agente de código reforça o que é fundamento (prompt, contexto, ferramentas) versus o que é específico de cada produto — e te dá repertório pra escolher a ferramenta certa em cada situação.</p>
+        <a class="course-link" href="https://inematds.github.io/codexbasico/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">7</div>
+      <div class="step-card">
+        <h3>Do Zero ao Deploy</h3>
+        <div class="subtitle">Tirar do papel: terminal, servidor, produção</div>
+        <p>Reúne tudo que veio antes e transforma em algo real e no ar: terminal, git, deploy moderno, servidor próprio, Docker e um assistente de IA funcionando de verdade. É o curso que prova que a base técnica (prompt + ferramentas + dados + agentes de código) sustenta um produto publicado, não só exercícios.</p>
+        <a class="course-link" href="https://inematds.github.io/do-zero-ao-deploy/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">8</div>
+      <div class="step-card">
+        <h3>INTELECTO Curso</h3>
+        <div class="subtitle">O projeto final: construa seu próprio sistema de IA</div>
+        <p>Fecha a trilha como capstone: arquitetura, identidade e canais, segurança, memória e integrações para construir um assistente de IA pessoal completo. Só faz sentido por último porque assume que você já sabe prompt, já viu ferramentas em ação, entende dados, manuseia agentes de código e sabe colocar algo no ar — aqui você junta tudo num sistema seu.</p>
+        <a class="course-link" href="https://inematds.github.io/intelecto-curso/" target="_blank" rel="noopener noreferrer">Acessar o curso →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Pronto pra começar?</h2>
+      <p>Volte ao portal e siga a trilha na ordem — do primeiro prompt ao seu próprio sistema de IA.</p>
+      <a class="btn-primary" href="/#trilha-iniciantes">Ir para a Trilha para Iniciantes</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">INEMA Club — inema.club</div>
+</footer>
+
+</body>
+</html>

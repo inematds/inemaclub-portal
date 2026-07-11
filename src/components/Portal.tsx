@@ -441,6 +441,14 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           <div className="learning-path-header">
             <h3>Trilha para Iniciantes</h3>
             <p>Comece sua jornada com os cursos essenciais, nesta ordem recomendada</p>
+            <p style={{ maxWidth: '760px', margin: '.6rem auto 0', fontSize: '.95rem', color: 'var(--text-secondary, #94a3b8)' }}>
+              Não é uma lista aleatória: é uma progressão. Você começa aprendendo a falar com a IA (FEP),
+              vê essas habilidades em ação (ATIA), constrói a base técnica de dados (FDB) e amplia para
+              imagens (Vision). Só então entra nas ferramentas de agente de código — Claude Code e Codex —
+              que juntam tudo isso na prática, antes de colocar um projeto real no ar (Do Zero ao Deploy) e
+              fechar construindo seu próprio sistema de IA (INTELECTO). Pular etapas cria lacunas: os
+              cursos mais à frente presumem a base dos anteriores.
+            </p>
           </div>
           <div className="learning-path-cards">
             <a
@@ -534,6 +542,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </div>
           <div className="learning-path-footer">
             <p>Após completar esta trilha, explore outros cursos conforme seu interesse abaixo</p>
+            <p style={{ marginTop: '.5rem' }}>
+              <a
+                href="/guias/trilha-iniciantes.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick('/guias/trilha-iniciantes.html', 'Guia da Trilha para Iniciantes', 'trilha')}
+              >
+                📖 Veja o guia explicando a importância de cada curso desta trilha
+              </a>
+            </p>
           </div>
         </div>
       </section>
