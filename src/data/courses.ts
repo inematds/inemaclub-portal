@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-10', title: 'AIV 2026 — AI Visibility como serviço (playbook AEO/GEO + case INEMA)', type: 'novo', url: 'https://inematds.github.io/aiv2026/guia/' },
   { date: '2026-07-09', title: 'wacrm — CRM self-hostable para WhatsApp (fork + landing + guia de uso publicados)', type: 'novo', url: 'https://inematds.github.io/wacrm/guia/' },
   { date: '2026-07-09', title: 'OS Coach — landing + guia de uso publicados (você constrói a base do seu OS agêntico)', type: 'novo', url: 'https://inematds.github.io/os-coach/guia/' },
   { date: '2026-07-09', title: 'os-agentes — landing + guia de uso publicados (passo a passo das 6 camadas)', type: 'atualizado', url: 'https://inematds.github.io/os-agentes/guia/' },
@@ -296,6 +297,15 @@ export const platformsData: Course[] = [
     icon: '⚙️',
     tags: ['AIOS', 'Claude Code', '3 Ms', '4 Cs', 'Skills', 'Automação'],
     url: 'https://inematds.github.io/ais-os/',
+  },
+  {
+    id: 212,
+    title: 'AIV 2026 — AI Visibility como serviço (AEO/GEO)',
+    description:
+      'Playbook de 5 fases para tornar empresas encontráveis e citáveis por IAs públicas (ChatGPT, Claude, Gemini, Perplexity), com o case completo do cliente-zero INEMA.',
+    icon: '📡',
+    tags: ['AEO/GEO', 'AI Visibility', 'Playbook', 'IA'],
+    url: 'https://inematds.github.io/aiv2026/guia/',
   },
   {
     id: 1,
