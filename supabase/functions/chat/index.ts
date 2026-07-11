@@ -40,7 +40,7 @@ async function callOpenRouter(messages: unknown[], tools: unknown[]) {
       model: MODEL_ID,
       messages,
       tools,
-      max_tokens: 700,
+      max_tokens: 400,
       temperature: 0.4,
     }),
   });
@@ -104,7 +104,12 @@ Deno.serve(async (req) => {
     const sessionToken = crypto.randomUUID();
     const { data, error } = await supabase
       .from('conversations')
-      .insert({ session_token: sessionToken, ip_hash: ipHash, page_context: body.page_context ?? null })
+      .insert({
+        session_token: sessionToken,
+        ip_hash: ipHash,
+        page_context: body.page_context ?? null,
+        user_agent: (req.headers.get('user-agent') ?? '').slice(0, 256) || null,
+      })
       .select()
       .single();
     if (error) return jsonResponse({ error: 'conversation_create_failed' }, 500, origin);

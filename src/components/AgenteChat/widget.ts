@@ -54,7 +54,12 @@ const STYLE = `
 .input { flex: 1; background: #1c1812; color: #e8e6df; border: none; padding: 12px; font-size: 13.5px; outline: none; }
 .send { background: #e0a12c; color: #14110c; border: none; padding: 0 16px; font-weight: 700; cursor: pointer; }
 .send:disabled { opacity: .5; cursor: default; }
-.typing { align-self: flex-start; color: #9a9284; font-size: 12px; padding: 4px 12px; }
+.typing { align-self: flex-start; display: flex; align-items: center; gap: 8px; color: #9a9284; font-size: 12px; padding: 6px 12px; }
+.typing .dots { display: inline-flex; gap: 4px; }
+.typing .dot { width: 6px; height: 6px; border-radius: 50%; background: #9a9284; animation: inema-blink 1.2s infinite; }
+.typing .dot:nth-child(2) { animation-delay: .2s; }
+.typing .dot:nth-child(3) { animation-delay: .4s; }
+@keyframes inema-blink { 0%, 80%, 100% { opacity: .25; } 40% { opacity: 1; } }
 `;
 
 export function mountAgenteChat() {
@@ -121,17 +126,53 @@ export function mountAgenteChat() {
     messagesEl.scrollTop = messagesEl.scrollHeight;
   }
 
+  function makeTyping(): HTMLDivElement {
+    const typing = document.createElement('div');
+    typing.className = 'typing';
+    typing.innerHTML = '<span>o agente está escrevendo</span><span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>';
+    messagesEl.appendChild(typing);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    return typing;
+  }
+
+  // Quebra a resposta completa da LLM em partes curtas (parágrafos; parágrafo
+  // longo quebra por frase) pra entregar aos poucos, como quem digita.
+  function splitReply(text: string): string[] {
+    const parts: string[] = [];
+    for (const para of text.split(/\n{2,}/)) {
+      const frases = para.match(/[^.!?…\n]+[.!?…]+["')\]]?\s*|[^.!?…\n]+$/g) ?? [para];
+      let buf = '';
+      for (const f of frases) {
+        if (buf && (buf + f).length > 180) { parts.push(buf.trim()); buf = f; }
+        else buf += f;
+      }
+      if (buf.trim()) parts.push(buf.trim());
+    }
+    return parts.length ? parts : [text];
+  }
+
+  const wait = (ms: number) => new Promise(res => setTimeout(res, ms));
+
+  async function revealInParts(reply: string) {
+    const parts = splitReply(reply);
+    for (const part of parts) {
+      const typing = makeTyping();
+      // pausa proporcional ao tamanho da parte, como digitação real
+      await wait(Math.min(350 + part.length * 14, 1800));
+      typing.remove();
+      state.messages.push({ role: 'assistant', content: part });
+      renderMessages();
+      saveState(state);
+    }
+  }
+
   async function sendMessage(text: string) {
     state.messages.push({ role: 'user', content: text });
     renderMessages();
     saveState(state);
 
     sendBtn.disabled = true;
-    const typing = document.createElement('div');
-    typing.className = 'typing';
-    typing.textContent = 'digitando...';
-    messagesEl.appendChild(typing);
-    messagesEl.scrollTop = messagesEl.scrollHeight;
+    const typing = makeTyping();
 
     try {
       const res = await fetch(FUNCTION_URL, {
@@ -157,9 +198,10 @@ export function mountAgenteChat() {
 
       const data: ChatResponse = await res.json();
       state.sessionToken = data.session_token;
-      state.messages.push({ role: 'assistant', content: data.reply });
-      renderMessages();
       saveState(state);
+      // segura a resposta completa e entrega em partes, com "escrevendo..."
+      // entre elas — streaming simulado (o SSE real fica pra v2).
+      await revealInParts(data.reply);
 
       if (data.lead_captured) {
         addSystemNote('Contato registrado — alguém do INEMA vai falar com você.');

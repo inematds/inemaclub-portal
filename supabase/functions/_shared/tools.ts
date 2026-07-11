@@ -9,6 +9,7 @@ const PORTAL_ANCHORS = [
   '/#trilha-skills',
   '/#trilhas',
   '/#cursos',
+  '/#projetos',
   '/#comunidade',
   '/#github',
   '/#telegram',
