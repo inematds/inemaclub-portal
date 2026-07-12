@@ -585,6 +585,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </a>
             ))}
           </div>
+          <p style={{ textAlign: 'center', margin: '-.4rem 0 0' }}>
+            <a
+              href="/guias/trilha-profissional/despertar.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick('/guias/trilha-profissional/despertar.html', 'Guia — Despertar', 'trilha-profissional')}
+            >
+              📖 Guia: a importância de cada curso deste estágio
+            </a>
+          </p>
 
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#a78bfa', margin: '1.6rem 0 .9rem' }}>2 · Liderar &amp; Monetizar — consultor, CAIO, certificação</div>
           <div className="learning-path-cards">
@@ -607,6 +617,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </a>
             ))}
           </div>
+          <p style={{ textAlign: 'center', margin: '-.4rem 0 0' }}>
+            <a
+              href="/guias/trilha-profissional/lideranca-monetizacao.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick('/guias/trilha-profissional/lideranca-monetizacao.html', 'Guia — Liderar & Monetizar', 'trilha-profissional')}
+            >
+              📖 Guia: a importância de cada curso deste estágio
+            </a>
+          </p>
 
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#38bdf8', margin: '1.6rem 0 .9rem' }}>3 · Estratégia — automação e estratégia com IA</div>
           <div className="learning-path-cards">
@@ -625,6 +645,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </a>
             ))}
           </div>
+          <p style={{ textAlign: 'center', margin: '-.4rem 0 0' }}>
+            <a
+              href="/guias/trilha-profissional/estrategia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick('/guias/trilha-profissional/estrategia.html', 'Guia — Estratégia', 'trilha-profissional')}
+            >
+              📖 Guia: a importância de cada curso deste estágio
+            </a>
+          </p>
 
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#f472b6', margin: '1.6rem 0 .9rem' }}>4 · Vibe Code — do conceito à engenharia com IA</div>
           <div className="learning-path-cards">
@@ -643,6 +673,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </a>
             ))}
           </div>
+          <p style={{ textAlign: 'center', margin: '-.4rem 0 0' }}>
+            <a
+              href="/guias/trilha-profissional/vibe-code.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick('/guias/trilha-profissional/vibe-code.html', 'Guia — Vibe Code', 'trilha-profissional')}
+            >
+              📖 Guia: a importância de cada curso deste estágio
+            </a>
+          </p>
 
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#fbbf24', margin: '1.6rem 0 .9rem' }}>5 · Filmes &amp; Vídeos — crie conteúdo profissional</div>
           <div className="learning-path-cards">
@@ -661,6 +701,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </a>
             ))}
           </div>
+          <p style={{ textAlign: 'center', margin: '-.4rem 0 0' }}>
+            <a
+              href="/guias/trilha-profissional/filmes-videos.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick('/guias/trilha-profissional/filmes-videos.html', 'Guia — Filmes & Vídeos', 'trilha-profissional')}
+            >
+              📖 Guia: a importância de cada curso deste estágio
+            </a>
+          </p>
 
           <div style={{ textAlign: 'center', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', fontSize: '.82rem', color: '#fb923c', margin: '1.6rem 0 .9rem' }}>6 · Profissionais Experientes — agentes para quem vive da expertise</div>
           <div className="learning-path-cards">
@@ -679,6 +729,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               </a>
             ))}
           </div>
+          <p style={{ textAlign: 'center', margin: '-.4rem 0 0' }}>
+            <a
+              href="/guias/trilha-profissional/profissionais-experientes.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick('/guias/trilha-profissional/profissionais-experientes.html', 'Guia — Profissionais Experientes', 'trilha-profissional')}
+            >
+              📖 Guia: a importância de cada curso deste estágio
+            </a>
+          </p>
 
           <div className="learning-path-footer">
             <p>Uma jornada do INEMA.CLUB: integre a IA na sua profissão, vire implementador, consultor, especialista em Vibe Code, produtor de conteúdo e profissional experiente operando com agentes</p>
