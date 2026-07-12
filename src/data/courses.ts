@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-12', title: 'Arquiteto de Execução — skill que decide paralelo × sequencial × híbrido antes de criar agentes', type: 'novo', url: 'https://inematds.github.io/agenteexecuta/guia/' },
   { date: '2026-07-10', title: 'AIV 2026 — AI Visibility como serviço (playbook AEO/GEO + case INEMA)', type: 'novo', url: 'https://inematds.github.io/aiv2026/guia/' },
   { date: '2026-07-09', title: 'wacrm — CRM self-hostable para WhatsApp (fork + landing + guia de uso publicados)', type: 'novo', url: 'https://inematds.github.io/wacrm/guia/' },
   { date: '2026-07-09', title: 'OS Coach — landing + guia de uso publicados (você constrói a base do seu OS agêntico)', type: 'novo', url: 'https://inematds.github.io/os-coach/guia/' },
@@ -126,6 +127,15 @@ export const platformsData: Course[] = [
     icon: '📣',
     tags: ['Marketing', 'IA', 'Anúncios', 'Viral', 'Copywriting'],
     url: 'https://inematds.github.io/viralads/',
+  },
+  {
+    id: 204,
+    title: 'Arquiteto de Execução — Paralelo × Sequencial para Agentes',
+    description:
+      'Skill que decide entre sequência, paralelismo ou fluxo híbrido antes de criar agentes — portão de proporcionalidade, matriz de decisão com limiar objetivo, executor mais barato e plano antes do primeiro subagente. Inclui script de teste baseline × skill.',
+    icon: '🧭',
+    tags: ['Skill', 'Agentes', 'IA', 'Produtividade'],
+    url: 'https://inematds.github.io/agenteexecuta/guia/',
   },
   {
     id: 177,
