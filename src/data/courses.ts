@@ -671,6 +671,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/consultoria2k/',
   },
   {
+    id: 218,
+    title: 'Construa seu AI OS — Assistente de IA pessoal sem programar',
+    description:
+      'Monte, em português e sem programar, um assistente de IA que lembra de você, alcança suas ferramentas e trabalha em horário marcado. 9 aulas práticas (formato v5) para quem já usa IA de chat: dossiê de memória, conectores com critério, receitas nomeadas, rotinas agendadas e painel diário.',
+    icon: '🧩',
+    tags: ['AI OS', 'Assistente', 'IA', 'Produtividade', 'Sem código'],
+    url: 'https://inematds.github.io/aisskl/builaios/',
+  },
+  {
     id: 132,
     title: 'Criando Agent Skills — Do Catálogo à Sua Primeira Skill',
     description:
@@ -2042,6 +2051,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-13', title: 'Construa seu AI OS — Assistente de IA pessoal sem programar (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/aisskl/builaios/' },
   { date: '2026-07-13', title: 'Claude Code para Pessoas Normais — do zero ao AI Native (10 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/cccompletopn/' },
   { date: '2026-07-11', title: 'Lives 2026 — 7 vídeos estratégicos de serviços de IA (16:9 + 9:16)', type: 'novo', url: 'https://inematds.github.io/lives2/' },
   { date: '2026-07-11', title: 'Como Montar um Negócio de Serviços de IA — 8 aulas, sem programar (formato v5)', type: 'novo', url: 'https://inematds.github.io/evai2026/curso-e-live/curso/' },

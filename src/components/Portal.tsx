@@ -620,6 +620,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/profissional2027x/', label: 'Profissional 2027',     desc: 'Implementadores de IA para PMEs',          n: 6 },
               { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 7 },
               { href: 'https://inematds.github.io/os-agentes/guia/',   label: 'OS Agentes',            desc: 'Construa seu OS agêntico, uma camada por vez', n: 8 },
+              { href: 'https://inematds.github.io/aisskl/builaios/',   label: 'Construa seu AI OS',    desc: 'Assistente de IA pessoal, sem programar', n: 9 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
