@@ -539,6 +539,50 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               <h4>INTELECTO Curso</h4>
               <p>Do Zero ao Expert em IA</p>
             </a>
+            <a
+              href="https://inematds.github.io/cccompletopn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-1"
+              onClick={() => trackClick('https://inematds.github.io/cccompletopn/', 'Claude Code para Pessoas Normais', 'trilha')}
+            >
+              <div className="path-number">9</div>
+              <h4>Claude Code para Pessoas Normais</h4>
+              <p>Do zero ao AI Native — segundo cérebro, sub-agentes e automações</p>
+            </a>
+            <a
+              href="https://inematds.github.io/os-agentes/guia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-2"
+              onClick={() => trackClick('https://inematds.github.io/os-agentes/guia/', 'OS Agentes', 'trilha')}
+            >
+              <div className="path-number">10</div>
+              <h4>OS Agentes</h4>
+              <p>Construa seu OS agêntico, uma camada por vez</p>
+            </a>
+            <a
+              href="https://inematds.github.io/lives2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-3"
+              onClick={() => trackClick('https://inematds.github.io/lives2/', 'Lives 2026', 'trilha')}
+            >
+              <div className="path-number">11</div>
+              <h4>Lives 2026</h4>
+              <p>7 vídeos estratégicos sobre vender serviços de IA</p>
+            </a>
+            <a
+              href="https://inematds.github.io/evai2026/curso-e-live/curso/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-4"
+              onClick={() => trackClick('https://inematds.github.io/evai2026/curso-e-live/curso/', 'Como Montar um Negócio', 'trilha')}
+            >
+              <div className="path-number">12</div>
+              <h4>Como Montar um Negócio</h4>
+              <p>8 aulas sem programar — do primeiro cliente ao contrato</p>
+            </a>
           </div>
           <div className="learning-path-footer">
             <p>Após completar esta trilha, explore outros cursos conforme seu interesse abaixo</p>

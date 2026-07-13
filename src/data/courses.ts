@@ -535,6 +535,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/claude-code-na-pratica/',
   },
   {
+    id: 216,
+    title: 'Claude Code para Pessoas Normais — do zero ao AI Native',
+    description:
+      'Curso completo (10 módulos) pra quem nunca programou: instale o Claude Code, estruture projetos, construa seu segundo cérebro, use sub-agentes, monte automações e publique sites — tudo em linguagem simples.',
+    icon: '🤖',
+    tags: ['Claude Code', 'IA', 'Automação', 'Iniciantes'],
+    url: 'https://inematds.github.io/cccompletopn/',
+  },
+  {
     id: 59,
     title: 'Claude Code Deep Dive',
     description:
@@ -2023,6 +2032,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-13', title: 'Claude Code para Pessoas Normais — do zero ao AI Native (10 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/cccompletopn/' },
   { date: '2026-07-11', title: 'Lives 2026 — 7 vídeos estratégicos de serviços de IA (16:9 + 9:16)', type: 'novo', url: 'https://inematds.github.io/lives2/' },
   { date: '2026-07-11', title: 'Como Montar um Negócio de Serviços de IA — 8 aulas, sem programar (formato v5)', type: 'novo', url: 'https://inematds.github.io/evai2026/curso-e-live/curso/' },
   { date: '2026-07-07', title: 'Agentes: o Novo Office — Profissional Liberal (aula 0 + 8 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/agentes-office/curso/liberal/' },
