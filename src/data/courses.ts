@@ -16,7 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
-  { date: '2026-07-12', title: 'War Game Prompt — prompt reutilizável (EN + PT-BR) pra planejar qualquer build de IA como um war game', type: 'novo', url: 'https://neimaldaner.github.io/promptwargame/guia/' },
+  { date: '2026-07-12', title: 'War Game Prompt — prompt reutilizável (EN + PT-BR) pra planejar qualquer build de IA como um war game', type: 'novo', url: 'https://inematds.github.io/promptwargame/guia/' },
   { date: '2026-07-12', title: 'Arquiteto de Execução — skill que decide paralelo × sequencial × híbrido antes de criar agentes', type: 'novo', url: 'https://inematds.github.io/agenteexecuta/guia/' },
   { date: '2026-07-10', title: 'AIV 2026 — AI Visibility como serviço (playbook AEO/GEO + case INEMA)', type: 'novo', url: 'https://inematds.github.io/aiv2026/guia/' },
   { date: '2026-07-09', title: 'wacrm — CRM self-hostable para WhatsApp (fork + landing + guia de uso publicados)', type: 'novo', url: 'https://inematds.github.io/wacrm/guia/' },
@@ -1935,7 +1935,7 @@ export const platformsData: Course[] = [
       'Prompt reutilizável (EN + PT-BR) que transforma o planejamento de um build de IA num war game: fases com suposição otimista/pessimista, modos de falha, critérios de saída verificáveis e uma tabela mestre de riscos. Inclui dois dossiês de exemplo gerados a partir do prompt.',
     icon: '⚔️',
     tags: ['Prompt Engineering', 'Planejamento', 'IA'],
-    url: 'https://neimaldaner.github.io/promptwargame/guia/',
+    url: 'https://inematds.github.io/promptwargame/guia/',
   },
   {
     id: 36,
