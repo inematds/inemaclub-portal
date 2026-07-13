@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-13', title: 'NVIDIA API Free — Console gratuito para 100+ modelos de IA', type: 'novo', url: 'https://inematds.github.io/nvidiaapifree/guia/' },
   { date: '2026-07-12', title: 'War Game Prompt — prompt reutilizável (EN + PT-BR) pra planejar qualquer build de IA como um war game', type: 'novo', url: 'https://inematds.github.io/promptwargame/guia/' },
   { date: '2026-07-12', title: 'Arquiteto de Execução — skill que decide paralelo × sequencial × híbrido antes de criar agentes', type: 'novo', url: 'https://inematds.github.io/agenteexecuta/guia/' },
   { date: '2026-07-10', title: 'AIV 2026 — AI Visibility como serviço (playbook AEO/GEO + case INEMA)', type: 'novo', url: 'https://inematds.github.io/aiv2026/guia/' },
@@ -1379,6 +1380,15 @@ export const platformsData: Course[] = [
     icon: '📓',
     tags: ['NotebookLM', 'Google AI', 'Documentos', 'IA', 'RAG'],
     url: 'https://inematds.github.io/notebooklm',
+  },
+  {
+    id: 217,
+    title: 'NVIDIA API Free — Console gratuito para 100+ modelos de IA',
+    description:
+      'Acesso gratuito a 100+ modelos NVIDIA NIM (Llama, DeepSeek, Qwen, Mistral, Vision) via API OpenAI-compatible. Console web com chat, arena side-by-side, embeddings. Sem cartão de crédito, 40 RPM.',
+    icon: '⚡',
+    tags: ['NVIDIA', 'API', 'LLM', 'IA'],
+    url: 'https://inematds.github.io/nvidiaapifree/guia/',
   },
   {
     id: 153,
