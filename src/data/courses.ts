@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-14', title: 'Prospector Agent — Esteira de prospecção e venda de sites', type: 'novo', url: 'https://inematds.github.io/prospector-agent/guia/' },
   { date: '2026-07-14', title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex (macOS)', type: 'novo', url: 'https://inematds.github.io/stickshift/guia/' },
   { date: '2026-07-13', title: 'NVIDIA API Free — Console gratuito para 100+ modelos de IA', type: 'novo', url: 'https://inematds.github.io/nvidiaapifree/guia/' },
   { date: '2026-07-12', title: 'War Game Prompt — prompt reutilizável (EN + PT-BR) pra planejar qualquer build de IA como um war game', type: 'novo', url: 'https://inematds.github.io/promptwargame/guia/' },
@@ -1624,6 +1625,15 @@ export const platformsData: Course[] = [
     icon: '📋',
     tags: ['System Prompts', 'Prompt Engineering', 'Agentes', 'IA'],
     url: 'https://inematds.github.io/prompts-prontos/',
+  },
+  {
+    id: 221,
+    title: 'Prospector Agent — Esteira de prospecção e venda de sites',
+    description:
+      'Esteira semi-autônoma que descobre negócios bem avaliados com site ruim, redesenha a página, publica no GitHub Pages e envia a proposta — orquestrador Python + IA, operado por Telegram.',
+    icon: '⛏️',
+    tags: ['Agentes', 'Automação', 'Vendas', 'IA'],
+    url: 'https://inematds.github.io/prospector-agent/guia/',
   },
   {
     id: 138,
