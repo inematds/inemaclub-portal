@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-14', title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex (macOS)', type: 'novo', url: 'https://inematds.github.io/stickshift/guia/' },
   { date: '2026-07-13', title: 'NVIDIA API Free — Console gratuito para 100+ modelos de IA', type: 'novo', url: 'https://inematds.github.io/nvidiaapifree/guia/' },
   { date: '2026-07-12', title: 'War Game Prompt — prompt reutilizável (EN + PT-BR) pra planejar qualquer build de IA como um war game', type: 'novo', url: 'https://inematds.github.io/promptwargame/guia/' },
   { date: '2026-07-12', title: 'Arquiteto de Execução — skill que decide paralelo × sequencial × híbrido antes de criar agentes', type: 'novo', url: 'https://inematds.github.io/agenteexecuta/guia/' },
@@ -1739,6 +1740,15 @@ export const platformsData: Course[] = [
     icon: '🔑',
     tags: ['SSH', 'VPS', 'Automação', 'IA'],
     url: 'https://inematds.github.io/ssh-basico/',
+  },
+  {
+    id: 220,
+    title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex',
+    description:
+      'App de menu-bar e CLI para macOS que troca o modelo e o effort do Claude Code ou Codex CLI na pane de terminal focada, digitando os mesmos comandos que você digitaria à mão. Fail-closed: só age depois de provar pane idle, processo local certo e binário assinado — senão recusa com um motivo.',
+    icon: '⚙️',
+    tags: ['Claude Code', 'Codex', 'CLI', 'macOS', 'Produtividade', 'Automação'],
+    url: 'https://inematds.github.io/stickshift/guia/',
   },
   {
     id: 190,
