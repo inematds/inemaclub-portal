@@ -1221,6 +1221,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/segunda-opiniao/', label: 'Segunda Opinião', desc: 'IA para Gestores e Líderes' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
+              { href: 'https://inematds.github.io/idallai/', label: 'Formação Cinema com IA', desc: '9 cursos, 58 aulas — do zero ao mini-filme final' },
               { href: 'https://inematds.github.io/seedance2/',  label: 'Seedance 2.0', desc: 'Video com IA (ByteDance)' },
               { href: 'https://inematds.github.io/VisionPro',   label: 'VisionPro',    desc: 'Construção Audiovisual com IA' },
               { href: 'https://inematds.github.io/fpfilm1/',     label: 'FPFilm',       desc: 'Crie Filmes com IA (Freepik)' },

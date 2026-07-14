@@ -959,6 +959,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FIA2026/',
   },
   {
+    id: 219,
+    title: 'Formação Cinema com IA',
+    description:
+      'Do primeiro quadro ao filme final: crie imagens com cara de cinema e monte um mini-filme de 30-60s com IA, sem base técnica nenhuma. 9 cursos, 58 aulas — fundamentos, laboratório de imagem (Nano Banana e Midjourney), olhar de diretor, pipeline e câmera, ação e performance, do roteiro ao filme, e central de recursos.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Cinema', 'IA', 'Imagem'],
+    url: 'https://inematds.github.io/idallai/',
+  },
+  {
     id: 134,
     title: 'Formação em Automação Estratégica com IA',
     description:
@@ -2051,6 +2060,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-13', title: 'Formação Cinema com IA — 9 cursos, 58 aulas, do primeiro quadro ao filme final (formato v5)', type: 'novo', url: 'https://inematds.github.io/idallai/' },
   { date: '2026-07-13', title: 'Construa seu AI OS — Assistente de IA pessoal sem programar (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/builaios/' },
   { date: '2026-07-13', title: 'Claude Code para Pessoas Normais — do zero ao AI Native (10 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/cccompletopn/' },
   { date: '2026-07-11', title: 'Lives 2026 — 7 vídeos estratégicos de serviços de IA (16:9 + 9:16)', type: 'novo', url: 'https://inematds.github.io/lives2/' },
