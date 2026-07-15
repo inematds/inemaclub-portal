@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-15', title: 'criaagentes — Um atendente de WhatsApp que nunca inventa (OS agêntico em 6 camadas)', type: 'novo', url: 'https://inematds.github.io/criaagentes/guia/' },
   { date: '2026-07-14', title: 'Prospector Agent — Esteira de prospecção e venda de sites', type: 'novo', url: 'https://inematds.github.io/prospector-agent/guia/' },
   { date: '2026-07-14', title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex (macOS)', type: 'novo', url: 'https://inematds.github.io/stickshift/guia/' },
   { date: '2026-07-13', title: 'NVIDIA API Free — Console gratuito para 100+ modelos de IA', type: 'novo', url: 'https://inematds.github.io/nvidiaapifree/guia/' },
@@ -680,6 +681,15 @@ export const platformsData: Course[] = [
     icon: '🧩',
     tags: ['AI OS', 'Assistente', 'IA', 'Produtividade', 'Sem código'],
     url: 'https://inematds.github.io/builaios/',
+  },
+  {
+    id: 222,
+    title: 'criaagentes — Um atendente de WhatsApp que nunca inventa',
+    description:
+      'Estudo de caso completo de um OS agêntico para a recepção de uma clínica odontológica no WhatsApp, construído camada por camada com a skill /os-coach (inematds/os-agentes): identidade, substrato, regras e hooks, skills, ferramentas e agente. A regra que sustenta tudo: se não está escrito no compêndio, não existe — nada de opinar sobre saúde, negociar desconto ou dizer que tem vaga; o resto vira alerta no Telegram. Inclui memory.md com cada decisão e o porquê, e uma auditoria honesta do que ainda quebra. Dados da clínica são fictícios, para pesquisa e ensino.',
+    icon: '🦷',
+    tags: ['Agentic OS', 'Agentes', 'WhatsApp', 'Claude Code', 'os-coach', 'IA'],
+    url: 'https://inematds.github.io/criaagentes/guia/',
   },
   {
     id: 132,
