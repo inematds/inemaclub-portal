@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-15', title: 'AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)', type: 'novo', url: 'https://inematds.github.io/agnesfree/guia/' },
   { date: '2026-07-15', title: 'criaagentes — Um atendente de WhatsApp que nunca inventa (OS agêntico em 6 camadas)', type: 'novo', url: 'https://inematds.github.io/criaagentes/guia/' },
   { date: '2026-07-14', title: 'Prospector Agent — Esteira de prospecção e venda de sites', type: 'novo', url: 'https://inematds.github.io/prospector-agent/guia/' },
   { date: '2026-07-14', title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex (macOS)', type: 'novo', url: 'https://inematds.github.io/stickshift/guia/' },
@@ -105,6 +106,15 @@ export const platformsData: Course[] = [
     icon: '🧠',
     tags: ['Agentes', 'IA', 'Profissional Liberal', 'Curso'],
     url: 'https://inematds.github.io/agentes-office/curso/liberal/',
+  },
+  {
+    id: 224,
+    title: 'AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)',
+    description:
+      'Guia e análise da Agnes AI (Sapiens AI): API multimodal compatível com OpenAI com texto, imagem e vídeo gratuitos — modelos, limites, planos pagos, privacidade e o veredito prático de onde usar (e onde não depender só dela).',
+    icon: '🅰️',
+    tags: ['IA', 'API', 'Gratuito', 'Multimodal'],
+    url: 'https://inematds.github.io/agnesfree/guia/',
   },
   {
     id: 184,
@@ -1644,6 +1654,15 @@ export const platformsData: Course[] = [
     icon: '⛏️',
     tags: ['Agentes', 'Automação', 'Vendas', 'IA'],
     url: 'https://inematds.github.io/prospector-agent/guia/',
+  },
+  {
+    id: 223,
+    title: 'Recursos de Vídeo — Catálogo do Ecossistema INEMA',
+    description:
+      'Catálogo-guia dos ~30 projetos do ecossistema INEMA para gerar e processar vídeo — encontre a ferramenta certa por caso de uso (avatar falante, motion, dublagem, corte, upscaling e mais).',
+    icon: '🎬',
+    tags: ['Vídeo', 'Catálogo', 'IA'],
+    url: 'https://inematds.github.io/recursos-video/',
   },
   {
     id: 138,

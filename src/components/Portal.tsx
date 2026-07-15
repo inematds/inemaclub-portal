@@ -741,6 +741,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code', n: 2 },
               { href: 'https://inematds.github.io/timesmkt3/',        label: 'TimesMkt3',      desc: 'Fábrica de Conteúdo + Vídeos',     n: 3 },
               { href: 'https://inematds.github.io/inemavox/',         label: 'Inemavox',       desc: 'Suíte de Voz e Vídeo com IA',     n: 4 },
+              { href: 'https://inematds.github.io/recursos-video/',   label: 'Recursos de Vídeo', desc: 'Catálogo-guia dos ~30 projetos de vídeo do ecossistema', n: 5 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
