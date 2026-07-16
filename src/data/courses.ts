@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-15', title: 'Maestro Roteador — Triagem de modelo e esforço para Claude Code', type: 'novo', url: 'https://inematds.github.io/maestro-roteador/guia/' },
   { date: '2026-07-15', title: 'AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)', type: 'novo', url: 'https://inematds.github.io/agnesfree/guia/' },
   { date: '2026-07-15', title: 'criaagentes — Um atendente de WhatsApp que nunca inventa (OS agêntico em 6 camadas)', type: 'novo', url: 'https://inematds.github.io/criaagentes/guia/' },
   { date: '2026-07-14', title: 'Prospector Agent — Esteira de prospecção e venda de sites', type: 'novo', url: 'https://inematds.github.io/prospector-agent/guia/' },
@@ -1267,6 +1268,15 @@ export const platformsData: Course[] = [
     icon: '🔄',
     tags: ['Loop Engineering', 'Agentes', 'IA', 'Sistemas', 'Verificação', 'Cole Medin'],
     url: 'https://inematds.github.io/loop-engineering/',
+  },
+  {
+    id: 225,
+    title: 'Maestro Roteador — Triagem de Modelo e Esforço',
+    description:
+      'Skill de Claude Code que decide qual modelo (haiku/sonnet/opus/fable) e quanto esforço (low→max) cada parte do trabalho merece antes de despachar subagentes ou workflows. Matriz de dois eixos, escada com evidência, armadilhas medidas e economia de cache.',
+    icon: '🎛️',
+    tags: ['Claude Code', 'Skills', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/maestro-roteador/guia/',
   },
   {
     id: 21,

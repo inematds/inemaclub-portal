@@ -1899,6 +1899,19 @@
       "url": "https://inematds.github.io/loop-engineering/"
     },
     {
+      "id": 225,
+      "title": "Maestro Roteador — Triagem de Modelo e Esforço",
+      "description": "Skill de Claude Code que decide qual modelo (haiku/sonnet/opus/fable) e quanto esforço (low→max) cada parte do trabalho merece antes de despachar subagentes ou workflows. Matriz de dois eixos, escada com evidência, armadilhas medidas e economia de cache.",
+      "icon": "🎛️",
+      "tags": [
+        "Claude Code",
+        "Skills",
+        "Agentes",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/maestro-roteador/guia/"
+    },
+    {
       "id": 21,
       "title": "MAKE - Automações",
       "description": "Curso Completo de Automação - Domine automação no-code com Make e IA.",
@@ -4398,6 +4411,12 @@
     }
   ],
   "projectUpdatesData": [
+    {
+      "date": "2026-07-15",
+      "title": "Maestro Roteador — Triagem de modelo e esforço para Claude Code",
+      "type": "novo",
+      "url": "https://inematds.github.io/maestro-roteador/guia/"
+    },
     {
       "date": "2026-07-15",
       "title": "AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)",
