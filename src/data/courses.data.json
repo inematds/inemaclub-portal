@@ -1840,6 +1840,19 @@
       "url": "https://inematds.github.io/akarpathy-skill/curso-pt/"
     },
     {
+      "id": 226,
+      "title": "Kit Local — O Laboratório Local",
+      "description": "Página interativa sobre rodar LLMs na sua máquina com Ollama: modos de uso, slider de tiers por memória, modelos campeões, panorama das 6 famílias e as 2 armadilhas de contexto.",
+      "icon": "🖥️",
+      "tags": [
+        "LLM Local",
+        "Ollama",
+        "Privacidade",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/local-kit/"
+    },
+    {
       "id": 214,
       "title": "Lives 2026 — 7 vídeos estratégicos de serviços de IA",
       "description": "Sete lives curtas e narradas sobre o lado estratégico de vender serviços de IA: negociação real, precificação por valor, o que empresas compram, build to sell, sinal vs ruído, a guerra das ferramentas e a venda que o cliente não pediu. Cada uma em 16:9 e 9:16 (Shorts/Reels).",
@@ -4411,6 +4424,12 @@
     }
   ],
   "projectUpdatesData": [
+    {
+      "date": "2026-07-16",
+      "title": "Kit Local — O Laboratório Local (LLMs locais com Ollama: tiers, campeões e armadilhas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/local-kit/"
+    },
     {
       "date": "2026-07-15",
       "title": "Maestro Roteador — Triagem de modelo e esforço para Claude Code",

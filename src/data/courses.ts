@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-16', title: 'Kit Local — O Laboratório Local (LLMs locais com Ollama: tiers, campeões e armadilhas)', type: 'novo', url: 'https://inematds.github.io/local-kit/' },
   { date: '2026-07-15', title: 'Maestro Roteador — Triagem de modelo e esforço para Claude Code', type: 'novo', url: 'https://inematds.github.io/maestro-roteador/guia/' },
   { date: '2026-07-15', title: 'AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)', type: 'novo', url: 'https://inematds.github.io/agnesfree/guia/' },
   { date: '2026-07-15', title: 'criaagentes — Um atendente de WhatsApp que nunca inventa (OS agêntico em 6 camadas)', type: 'novo', url: 'https://inematds.github.io/criaagentes/guia/' },
@@ -1232,6 +1233,15 @@ export const platformsData: Course[] = [
     icon: '🧠',
     tags: ['Karpathy', 'Claude Code', 'CLAUDE.md', 'Princípios', 'LLM', 'IA'],
     url: 'https://inematds.github.io/akarpathy-skill/curso-pt/',
+  },
+  {
+    id: 226,
+    title: 'Kit Local — O Laboratório Local',
+    description:
+      'Página interativa sobre rodar LLMs na sua máquina com Ollama: modos de uso, slider de tiers por memória, modelos campeões, panorama das 6 famílias e as 2 armadilhas de contexto.',
+    icon: '🖥️',
+    tags: ['LLM Local', 'Ollama', 'Privacidade', 'IA'],
+    url: 'https://inematds.github.io/local-kit/',
   },
   {
     id: 214,
