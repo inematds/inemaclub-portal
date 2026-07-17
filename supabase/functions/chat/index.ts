@@ -12,6 +12,11 @@ const SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
 const OPENROUTER_API_KEY = Deno.env.get('OPENROUTER_API_KEY')!;
 const MODEL_ID = Deno.env.get('CHAT_MODEL_ID') ?? 'anthropic/claude-haiku-4.5';
 
+// Cérebro primário: Agnes (custo US$ 0, OpenAI-compatible). Fallback: OpenRouter.
+const AGNES_API_KEY = Deno.env.get('AGNES_API_KEY') ?? '';
+const AGNES_BASE_URL = Deno.env.get('AGNES_BASE_URL') ?? 'https://apihub.agnes-ai.com/v1';
+const AGNES_MODEL = Deno.env.get('AGNES_MODEL') ?? 'agnes-2.0-flash';
+
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
 async function hashIp(ip: string): Promise<string> {
@@ -48,6 +53,41 @@ async function callOpenRouter(messages: unknown[], tools: unknown[]) {
     throw new Error(`OpenRouter ${res.status}: ${await res.text()}`);
   }
   return res.json();
+}
+
+async function callAgnes(messages: unknown[], tools: unknown[]) {
+  const res = await fetch(`${AGNES_BASE_URL}/chat/completions`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${AGNES_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: AGNES_MODEL,
+      messages,
+      tools,
+      max_tokens: 400,
+      temperature: 0.4,
+    }),
+  });
+  if (!res.ok) {
+    throw new Error(`Agnes ${res.status}: ${await res.text()}`);
+  }
+  return res.json();
+}
+
+// Chama o Agnes primeiro (custo US$ 0); em qualquer falha dura (rede/HTTP),
+// cai pro OpenRouter. Sem chave do Agnes, vai direto pro OpenRouter.
+// Atenção: o fallback só cobre INDISPONIBILIDADE do Agnes, não resposta fraca.
+async function callLLM(messages: unknown[], tools: unknown[]) {
+  if (AGNES_API_KEY) {
+    try {
+      return await callAgnes(messages, tools);
+    } catch (err) {
+      console.error('Agnes failed, falling back to OpenRouter', err);
+    }
+  }
+  return callOpenRouter(messages, tools);
 }
 
 Deno.serve(async (req) => {
@@ -170,7 +210,7 @@ Deno.serve(async (req) => {
 
   let completion;
   try {
-    completion = await callOpenRouter(messages, tools);
+    completion = await callLLM(messages, tools);
   } catch (err) {
     console.error('OpenRouter error', err);
     return jsonResponse({ error: 'model_unavailable' }, 502, origin);
@@ -205,7 +245,7 @@ Deno.serve(async (req) => {
   // Se só houve tool_calls sem texto, pede uma frase curta de narração.
   if (!replyText && toolCalls.length > 0) {
     try {
-      const followUp = await callOpenRouter(
+      const followUp = await callLLM(
         [...messages,
           { role: 'assistant', content: null, tool_calls: toolCalls },
           ...toolCalls.map((c: { id: string }) => ({ role: 'tool', tool_call_id: c.id, content: 'ok' })),
