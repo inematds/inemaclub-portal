@@ -4464,7 +4464,7 @@
       "date": "2026-07-17",
       "title": "heygenmcp — Vídeo de avatar falante no HeyGen",
       "type": "novo",
-      "url": "https://github.com/inematds/heygenmcp"
+      "url": "https://inematds.github.io/heygenmcp/guia/"
     },
     {
       "date": "2026-07-17",
@@ -4863,8 +4863,8 @@
       "icon": "🗣️",
       "name": "heygenmcp",
       "desc": "Skills de Claude Code que viram roteiro em vídeo de avatar falante no HeyGen, com custo real medido",
-      "url": "https://github.com/inematds/heygenmcp",
-      "badge": "GitHub"
+      "url": "https://inematds.github.io/heygenmcp/guia/",
+      "badge": "Guia"
     },
     {
       "icon": "🐾",
