@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-17', title: 'klingaimcp — Kling AI por MCP e CLI: vídeo, imagem e dublagem por comando', type: 'novo', url: 'https://inematds.github.io/klingaimcp/guia/' },
   { date: '2026-07-17', title: 'videoprodutor — O Produtor: do link ao vídeo profissional, tudo local', type: 'novo', url: 'https://inematds.github.io/videoprodutor/guia/' },
   { date: '2026-07-17', title: 'video-explicativo — Vídeo narrado a partir de um assunto (skill em repo próprio)', type: 'novo', url: 'https://inematds.github.io/video-explicativo/guia/' },
   { date: '2026-07-17', title: 'video-demonstrativo — Walkthrough narrado do seu app (skill em repo próprio)', type: 'novo', url: 'https://inematds.github.io/video-demonstrativo/guia/' },

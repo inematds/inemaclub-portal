@@ -4444,6 +4444,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-17",
+      "title": "klingaimcp — Kling AI por MCP e CLI: vídeo, imagem e dublagem por comando",
+      "type": "novo",
+      "url": "https://inematds.github.io/klingaimcp/guia/"
+    },
+    {
+      "date": "2026-07-17",
       "title": "videoprodutor — O Produtor: do link ao vídeo profissional, tudo local",
       "type": "novo",
       "url": "https://inematds.github.io/videoprodutor/guia/"
@@ -4864,6 +4870,13 @@
       "name": "heygenmcp",
       "desc": "Skills de Claude Code que viram roteiro em vídeo de avatar falante no HeyGen, com custo real medido",
       "url": "https://inematds.github.io/heygenmcp/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "klingaimcp",
+      "desc": "Kling AI por MCP e CLI: vídeos e imagens por comando, automação de pipeline e dublagem com voz clonada",
+      "url": "https://inematds.github.io/klingaimcp/guia/",
       "badge": "Guia"
     },
     {
