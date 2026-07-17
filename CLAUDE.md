@@ -8,7 +8,7 @@ Este repo é da conta **`NeiMaldaner`** (remote `git@github-nei:NeiMaldaner/port
 NeiMaldaner <nei.maldaner2014@gmail.com>
 ```
 
-**Não** usar o default global `inematds` aqui. Antes de commitar, conferir `git config user.email` (deve ser `nei.maldaner2014@gmail.com`); o histórico antigo é misto porque commits foram feitos com a conta errada. Se um commit já pushado sair com autor errado: `git commit --amend --reset-author` + `git push --force-with-lease`.
+Este é o autor deste repo em qualquer situação — não existe default ou fallback para outra conta aqui. Antes de commitar, conferir `git config user.email` (deve ser `nei.maldaner2014@gmail.com`). Se um commit já pushado sair com autor errado: `git commit --amend --reset-author` + `git push --force-with-lease`.
 
 ## Arquitetura
 
