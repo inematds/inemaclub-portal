@@ -18,6 +18,7 @@ const communityProjects: Array<{
   badge?: string
 }> = [
   { icon: '🎮', name: 'eai.inema.club', desc: 'Plataforma de jogos + educação (arcade, educacional, profissional) em Next.js 16', url: 'https://inematds.github.io/eai-guia/', badge: 'Guia' },
+  { icon: '🗣️', name: 'heygenmcp', desc: 'Skills de Claude Code que viram roteiro em vídeo de avatar falante no HeyGen, com custo real medido', url: 'https://github.com/inematds/heygenmcp', badge: 'GitHub' },
   { icon: '🐾', name: 'pet360', desc: 'SaaS open source e multi-tenant para clínicas vet, pet shops, hotéis e ONGs', url: 'https://inematds.github.io/pet360/', badge: 'Guia' },
   { icon: '💄', name: 'bela360', desc: 'SaaS de gestão para salões, barbearias e clínicas de estética com WhatsApp', url: 'https://inematds.github.io/bela360/', badge: 'Guia' },
   { icon: '📖', name: 'animabook', desc: 'Plataforma web mobile-first para criar, publicar e ler quadrinhos animados', url: 'https://inematds.github.io/animabook/', badge: 'Guia' },

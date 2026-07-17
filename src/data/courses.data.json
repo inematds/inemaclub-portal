@@ -1572,20 +1572,6 @@
       "url": "https://inematds.github.io/hack7meta"
     },
     {
-      "id": 227,
-      "title": "heygenmcp — Vídeo de avatar falante no HeyGen",
-      "description": "Duas skills de Claude Code que transformam um roteiro de texto em vídeo de avatar falante no HeyGen e entregam o MP4 no Telegram. Uma gasta o pool de API, a outra os créditos da assinatura — os dois cofres são separados. Mede o custo real de cada render, valida tudo antes de gerar e força a engine e o português explicitamente.",
-      "icon": "🗣️",
-      "tags": [
-        "HeyGen",
-        "Avatar",
-        "Vídeo",
-        "Claude Code",
-        "IA"
-      ],
-      "url": "https://inematds.github.io/heygenmcp/guia/"
-    },
-    {
       "id": 168,
       "title": "HARNESS — Engenharia Agêntica de Matt Pocock",
       "description": "O método Matt Pocock: pare de obcecar pelo modelo, domine o harness. 5 trilhas, 30 módulos, 180 tópicos — fundamentos do harness, habilidades humanas, skills de IA, técnicas avançadas (AFK, sandboxes, filas) e soluções prontas pra copiar.",
@@ -4478,7 +4464,7 @@
       "date": "2026-07-17",
       "title": "heygenmcp — Vídeo de avatar falante no HeyGen",
       "type": "novo",
-      "url": "https://inematds.github.io/heygenmcp/guia/"
+      "url": "https://github.com/inematds/heygenmcp"
     },
     {
       "date": "2026-07-17",
@@ -4872,6 +4858,13 @@
       "desc": "Plataforma de jogos + educação (arcade, educacional, profissional) em Next.js 16",
       "url": "https://inematds.github.io/eai-guia/",
       "badge": "Guia"
+    },
+    {
+      "icon": "🗣️",
+      "name": "heygenmcp",
+      "desc": "Skills de Claude Code que viram roteiro em vídeo de avatar falante no HeyGen, com custo real medido",
+      "url": "https://github.com/inematds/heygenmcp",
+      "badge": "GitHub"
     },
     {
       "icon": "🐾",

@@ -19,7 +19,7 @@ export const projectUpdatesData: Update[] = [
   { date: '2026-07-17', title: 'videoprodutor — O Produtor: do link ao vídeo profissional, tudo local', type: 'novo', url: 'https://inematds.github.io/videoprodutor/guia/' },
   { date: '2026-07-17', title: 'video-explicativo — Vídeo narrado a partir de um assunto (skill em repo próprio)', type: 'novo', url: 'https://inematds.github.io/video-explicativo/guia/' },
   { date: '2026-07-17', title: 'video-demonstrativo — Walkthrough narrado do seu app (skill em repo próprio)', type: 'novo', url: 'https://inematds.github.io/video-demonstrativo/guia/' },
-  { date: '2026-07-17', title: 'heygenmcp — Vídeo de avatar falante no HeyGen', type: 'novo', url: 'https://inematds.github.io/heygenmcp/guia/' },
+  { date: '2026-07-17', title: 'heygenmcp — Vídeo de avatar falante no HeyGen', type: 'novo', url: 'https://github.com/inematds/heygenmcp' },
   { date: '2026-07-17', title: 'Forja Reel — meta-skill que entrevista você e gera sua própria skill de edição de reels', type: 'novo', url: 'https://inematds.github.io/videos-edit-cria/guia/' },
   { date: '2026-07-16', title: 'Kit Local — O Laboratório Local (LLMs locais com Ollama: tiers, campeões e armadilhas)', type: 'novo', url: 'https://inematds.github.io/local-kit/' },
   { date: '2026-07-15', title: 'Maestro Roteador — Triagem de modelo e esforço para Claude Code', type: 'novo', url: 'https://inematds.github.io/maestro-roteador/guia/' },
@@ -1076,15 +1076,6 @@ export const platformsData: Course[] = [
     icon: '📱',
     tags: ['Meta', 'Instagram', 'Facebook', 'Marketing Digital', 'Reels', 'IA'],
     url: 'https://inematds.github.io/hack7meta',
-  },
-  {
-    id: 227,
-    title: 'heygenmcp — Vídeo de avatar falante no HeyGen',
-    description:
-      'Duas skills de Claude Code que transformam um roteiro de texto em vídeo de avatar falante no HeyGen e entregam o MP4 no Telegram. Uma gasta o pool de API, a outra os créditos da assinatura — os dois cofres são separados. Mede o custo real de cada render, valida tudo antes de gerar e força a engine e o português explicitamente.',
-    icon: '🗣️',
-    tags: ['HeyGen', 'Avatar', 'Vídeo', 'Claude Code', 'IA'],
-    url: 'https://inematds.github.io/heygenmcp/guia/',
   },
   {
     id: 168,
