@@ -16,6 +16,10 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-17', title: 'videoprodutor — O Produtor: do link ao vídeo profissional, tudo local', type: 'novo', url: 'https://inematds.github.io/videoprodutor/guia/' },
+  { date: '2026-07-17', title: 'video-explicativo — Vídeo narrado a partir de um assunto (skill em repo próprio)', type: 'novo', url: 'https://inematds.github.io/video-explicativo/guia/' },
+  { date: '2026-07-17', title: 'video-demonstrativo — Walkthrough narrado do seu app (skill em repo próprio)', type: 'novo', url: 'https://inematds.github.io/video-demonstrativo/guia/' },
+  { date: '2026-07-17', title: 'heygenmcp — Vídeo de avatar falante no HeyGen', type: 'novo', url: 'https://inematds.github.io/heygenmcp/guia/' },
   { date: '2026-07-17', title: 'Forja Reel — meta-skill que entrevista você e gera sua própria skill de edição de reels', type: 'novo', url: 'https://inematds.github.io/videos-edit-cria/guia/' },
   { date: '2026-07-16', title: 'Kit Local — O Laboratório Local (LLMs locais com Ollama: tiers, campeões e armadilhas)', type: 'novo', url: 'https://inematds.github.io/local-kit/' },
   { date: '2026-07-15', title: 'Maestro Roteador — Triagem de modelo e esforço para Claude Code', type: 'novo', url: 'https://inematds.github.io/maestro-roteador/guia/' },
@@ -1074,6 +1078,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/hack7meta',
   },
   {
+    id: 227,
+    title: 'heygenmcp — Vídeo de avatar falante no HeyGen',
+    description:
+      'Duas skills de Claude Code que transformam um roteiro de texto em vídeo de avatar falante no HeyGen e entregam o MP4 no Telegram. Uma gasta o pool de API, a outra os créditos da assinatura — os dois cofres são separados. Mede o custo real de cada render, valida tudo antes de gerar e força a engine e o português explicitamente.',
+    icon: '🗣️',
+    tags: ['HeyGen', 'Avatar', 'Vídeo', 'Claude Code', 'IA'],
+    url: 'https://inematds.github.io/heygenmcp/guia/',
+  },
+  {
     id: 168,
     title: 'HARNESS — Engenharia Agêntica de Matt Pocock',
     description:
@@ -1131,7 +1144,7 @@ export const platformsData: Course[] = [
     id: 129,
     title: 'HyperFrames — Vídeos Explicativos com Claude Code',
     description:
-      'Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final, com a própria Skill incluída para download.',
+      'Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final; a própria Skill vive em repo próprio, linkado no curso.',
     icon: '🎬',
     tags: ['Claude Code', 'Skills', 'Vídeo', 'HyperFrames', 'IA'],
     url: 'https://inematds.github.io/skill-video-explicativo/',
@@ -1958,10 +1971,28 @@ export const platformsData: Course[] = [
     id: 135,
     title: 'Vídeo Demonstrativo — Walkthroughs de app com Claude Code',
     description:
-      'Curso completo da Skill video-demonstrativo: gere vídeos de demonstração (walkthrough) de uma aplicação web a partir do link do app. O Claude Code navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo e monta um vídeo narrado com moldura de navegador, cursor animado, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API. 3 trilhas, 10 módulos, com a Skill incluída para download.',
+      'Curso completo da Skill video-demonstrativo: gere vídeos de demonstração (walkthrough) de uma aplicação web a partir do link do app. O Claude Code navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo e monta um vídeo narrado com moldura de navegador, cursor animado, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API. 3 trilhas, 10 módulos; a Skill vive em repo próprio, linkado no curso.',
     icon: '🖱️',
     tags: ['Claude Code', 'Skills', 'Vídeo', 'HyperFrames', 'Playwright', 'IA'],
     url: 'https://inematds.github.io/skill-video-demonstrativo/',
+  },
+  {
+    id: 227,
+    title: 'video-demonstrativo — Walkthrough narrado do seu app',
+    description:
+      'Skill (Claude Code) que transforma o link de uma aplicação web num vídeo de demonstração narrado. Navega o app de verdade com navegador automatizado, captura as telas reais passo a passo e monta o vídeo com moldura de navegador, cursor animado na bbox real, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API.',
+    icon: '🖱️',
+    tags: ['Vídeo', 'Walkthrough', 'Playwright', 'HyperFrames', 'IA', 'Skill'],
+    url: 'https://inematds.github.io/video-demonstrativo/guia/',
+  },
+  {
+    id: 228,
+    title: 'video-explicativo — Vídeo narrado a partir de um assunto',
+    description:
+      'Skill (Claude Code) que cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto: roteiro, narração TTS local, cenas animadas dark premium, captions e CTA. Saída 16:9 (YouTube) e 9:16 (Shorts/Reels), renderizado localmente sem chave de API.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Explicativo', 'HyperFrames', 'TTS', 'IA', 'Skill'],
+    url: 'https://inematds.github.io/video-explicativo/guia/',
   },
   {
     id: 142,
@@ -1979,7 +2010,7 @@ export const platformsData: Course[] = [
       'Skill (Claude Code) que orquestra link/fonte → plano + execução de um vídeo profissional (propaganda ou explicativo), ponta a ponta. Coordena as peças que já existem (plano, direção, imagem, voz, render) numa linha de montagem única, em 3 camadas (cinema + texto cinético + ilustração). Saída 16:9 e 9:16, dark premium, tudo local; imagem flux2-klein com fallback SVG automático.',
     icon: '🏭',
     tags: ['Vídeo', 'Orquestrador', 'Render', 'HyperFrames', 'IA', 'Skill'],
-    url: 'https://inematds.github.io/skill-videoprodutor/',
+    url: 'https://inematds.github.io/videoprodutor/guia/',
   },
   {
     id: 148,
@@ -2156,7 +2187,6 @@ export const updatesData: Update[] = [
   { date: '2026-06-23', title: 'AI Filmmaking — Parte 1 (pensar como diretor antes de gerar)', type: 'novo', url: 'https://inematds.github.io/ai-filmaking-p1/' },
   { date: '2026-06-23', title: 'Anúncios Virais com IA — desconstruir e recriar anúncios que vendem', type: 'novo', url: 'https://inematds.github.io/viralads/' },
   { date: '2026-06-23', title: 'iAmasters OS — sistema operativo agêntico para operadores de IA', type: 'novo', url: 'https://inematds.github.io/iamasters-os/' },
-  { date: '2026-06-23', title: 'videoprodutor — orquestrador link → vídeo profissional (3 camadas)', type: 'novo', url: 'https://inematds.github.io/videoprodutor/' },
   { date: '2026-06-23', title: 'mcp-video — servidor MCP de edição de vídeo com guardrails (119 ferramentas)', type: 'novo', url: 'https://inematds.github.io/mcp-video/' },
   { date: '2026-06-25', title: 'inemaupsk — upscaling 4x com 4 modelos ESRGAN, API HTTP e UI web', type: 'novo', url: 'https://inematds.github.io/inemaupsk/' },
   { date: '2026-06-23', title: 'LLMs Orquestradas — Multi-LLM, Fugu Ultra e OpenRouter Fusion (3 trilhas, 6 módulos)', type: 'novo', url: 'https://inematds.github.io/sakanafugu/' },
@@ -2198,7 +2228,6 @@ export const updatesData: Update[] = [
   { date: '2026-06-11', title: 'Pirâmide da IA — Engenharia de Conhecimento da IA', type: 'novo', url: 'https://inematds.github.io/aiengenharia/' },
   { date: '2026-06-10', title: 'inemaref — Foto vira história em quadrinhos', type: 'novo', url: 'https://inematds.github.io/inemaref/' },
   { date: '2026-06-09', title: 'PixFlow — Imagens estáticas viram filme', type: 'novo', url: 'https://inematds.github.io/pixflow/' },
-  { date: '2026-06-09', title: 'videoprodutor — O Produtor de Vídeo Profissional', type: 'novo', url: 'https://inematds.github.io/skill-videoprodutor/' },
   { date: '2026-06-09', title: 'video-plan-editor — Plano de Edição de Vídeo', type: 'novo', url: 'https://inematds.github.io/skill-video-plan-editor/' },
   { date: '2026-06-09', title: 'MDD — Mestre de Direção Dinâmica', type: 'novo', url: 'https://inematds.github.io/mdd/' },
   { date: '2026-06-08', title: 'AI FILMMAKING — Do Conceito ao Filme Final', type: 'novo', url: 'https://inematds.github.io/aifilmmaking/' },

@@ -1572,6 +1572,20 @@
       "url": "https://inematds.github.io/hack7meta"
     },
     {
+      "id": 227,
+      "title": "heygenmcp — Vídeo de avatar falante no HeyGen",
+      "description": "Duas skills de Claude Code que transformam um roteiro de texto em vídeo de avatar falante no HeyGen e entregam o MP4 no Telegram. Uma gasta o pool de API, a outra os créditos da assinatura — os dois cofres são separados. Mede o custo real de cada render, valida tudo antes de gerar e força a engine e o português explicitamente.",
+      "icon": "🗣️",
+      "tags": [
+        "HeyGen",
+        "Avatar",
+        "Vídeo",
+        "Claude Code",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/heygenmcp/guia/"
+    },
+    {
       "id": 168,
       "title": "HARNESS — Engenharia Agêntica de Matt Pocock",
       "description": "O método Matt Pocock: pare de obcecar pelo modelo, domine o harness. 5 trilhas, 30 módulos, 180 tópicos — fundamentos do harness, habilidades humanas, skills de IA, técnicas avançadas (AFK, sandboxes, filas) e soluções prontas pra copiar.",
@@ -1661,7 +1675,7 @@
     {
       "id": 129,
       "title": "HyperFrames — Vídeos Explicativos com Claude Code",
-      "description": "Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final, com a própria Skill incluída para download.",
+      "description": "Curso completo sobre a Skill video-explicativo: criar vídeos explicativos narrados (HTML→MP4 via HyperFrames) com Claude Code, animados, em PT-BR e renderizados localmente sem chave de API, em 16:9 e 9:16. Do conceito de Skill ao render final; a própria Skill vive em repo próprio, linkado no curso.",
       "icon": "🎬",
       "tags": [
         "Claude Code",
@@ -2975,7 +2989,7 @@
     {
       "id": 135,
       "title": "Vídeo Demonstrativo — Walkthroughs de app com Claude Code",
-      "description": "Curso completo da Skill video-demonstrativo: gere vídeos de demonstração (walkthrough) de uma aplicação web a partir do link do app. O Claude Code navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo e monta um vídeo narrado com moldura de navegador, cursor animado, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API. 3 trilhas, 10 módulos, com a Skill incluída para download.",
+      "description": "Curso completo da Skill video-demonstrativo: gere vídeos de demonstração (walkthrough) de uma aplicação web a partir do link do app. O Claude Code navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo e monta um vídeo narrado com moldura de navegador, cursor animado, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API. 3 trilhas, 10 módulos; a Skill vive em repo próprio, linkado no curso.",
       "icon": "🖱️",
       "tags": [
         "Claude Code",
@@ -2986,6 +3000,36 @@
         "IA"
       ],
       "url": "https://inematds.github.io/skill-video-demonstrativo/"
+    },
+    {
+      "id": 227,
+      "title": "video-demonstrativo — Walkthrough narrado do seu app",
+      "description": "Skill (Claude Code) que transforma o link de uma aplicação web num vídeo de demonstração narrado. Navega o app de verdade com navegador automatizado, captura as telas reais passo a passo e monta o vídeo com moldura de navegador, cursor animado na bbox real, zoom e narração local (Kokoro) — tudo na máquina, sem chave de API.",
+      "icon": "🖱️",
+      "tags": [
+        "Vídeo",
+        "Walkthrough",
+        "Playwright",
+        "HyperFrames",
+        "IA",
+        "Skill"
+      ],
+      "url": "https://inematds.github.io/video-demonstrativo/guia/"
+    },
+    {
+      "id": 228,
+      "title": "video-explicativo — Vídeo narrado a partir de um assunto",
+      "description": "Skill (Claude Code) que cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto: roteiro, narração TTS local, cenas animadas dark premium, captions e CTA. Saída 16:9 (YouTube) e 9:16 (Shorts/Reels), renderizado localmente sem chave de API.",
+      "icon": "🎬",
+      "tags": [
+        "Vídeo",
+        "Explicativo",
+        "HyperFrames",
+        "TTS",
+        "IA",
+        "Skill"
+      ],
+      "url": "https://inematds.github.io/video-explicativo/guia/"
     },
     {
       "id": 142,
@@ -3015,7 +3059,7 @@
         "IA",
         "Skill"
       ],
-      "url": "https://inematds.github.io/skill-videoprodutor/"
+      "url": "https://inematds.github.io/videoprodutor/guia/"
     },
     {
       "id": 148,
@@ -3404,12 +3448,6 @@
     },
     {
       "date": "2026-06-23",
-      "title": "videoprodutor — orquestrador link → vídeo profissional (3 camadas)",
-      "type": "novo",
-      "url": "https://inematds.github.io/videoprodutor/"
-    },
-    {
-      "date": "2026-06-23",
       "title": "mcp-video — servidor MCP de edição de vídeo com guardrails (119 ferramentas)",
       "type": "novo",
       "url": "https://inematds.github.io/mcp-video/"
@@ -3653,12 +3691,6 @@
       "title": "PixFlow — Imagens estáticas viram filme",
       "type": "novo",
       "url": "https://inematds.github.io/pixflow/"
-    },
-    {
-      "date": "2026-06-09",
-      "title": "videoprodutor — O Produtor de Vídeo Profissional",
-      "type": "novo",
-      "url": "https://inematds.github.io/skill-videoprodutor/"
     },
     {
       "date": "2026-06-09",
@@ -4424,6 +4456,30 @@
     }
   ],
   "projectUpdatesData": [
+    {
+      "date": "2026-07-17",
+      "title": "videoprodutor — O Produtor: do link ao vídeo profissional, tudo local",
+      "type": "novo",
+      "url": "https://inematds.github.io/videoprodutor/guia/"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "video-explicativo — Vídeo narrado a partir de um assunto (skill em repo próprio)",
+      "type": "novo",
+      "url": "https://inematds.github.io/video-explicativo/guia/"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "video-demonstrativo — Walkthrough narrado do seu app (skill em repo próprio)",
+      "type": "novo",
+      "url": "https://inematds.github.io/video-demonstrativo/guia/"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "heygenmcp — Vídeo de avatar falante no HeyGen",
+      "type": "novo",
+      "url": "https://inematds.github.io/heygenmcp/guia/"
+    },
     {
       "date": "2026-07-17",
       "title": "Forja Reel — meta-skill que entrevista você e gera sua própria skill de edição de reels",
