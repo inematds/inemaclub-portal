@@ -4444,6 +4444,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-17",
+      "title": "inemaccvbot — Bot de Telegram que vira fila de vídeos (pesquisa, transcrição e narração em texto)",
+      "type": "novo",
+      "url": "https://inematds.github.io/inemaccvbot/guia/"
+    },
+    {
+      "date": "2026-07-17",
       "title": "klingaimcp — Kling AI por MCP e CLI: vídeo, imagem e dublagem por comando",
       "type": "novo",
       "url": "https://inematds.github.io/klingaimcp/guia/"
@@ -4912,6 +4918,13 @@
       "name": "inemavox",
       "desc": "Suíte de voz com IA local: dubla, transcreve, corta e baixa vídeos na GPU",
       "url": "https://inematds.github.io/inemavox/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🤖",
+      "name": "inemaccvbot",
+      "desc": "Bot de Telegram que vira fila de vídeos: uma instrução por linha, pesquisa web, transcrição do áudio de origem, narração em texto e entrega na pasta certa",
+      "url": "https://inematds.github.io/inemaccvbot/guia/",
       "badge": "Guia"
     },
     {

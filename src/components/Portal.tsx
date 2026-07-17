@@ -25,6 +25,7 @@ const communityProjects: Array<{
   { icon: '📖', name: 'animabook', desc: 'Plataforma web mobile-first para criar, publicar e ler quadrinhos animados', url: 'https://inematds.github.io/animabook/', badge: 'Guia' },
   { icon: '📕', name: 'book-genesis', desc: 'Criacao de livros com IA', url: 'https://github.com/PhilipStark/book-genesis', badge: 'GitHub' },
   { icon: '🎤', name: 'inemavox', desc: 'Suíte de voz com IA local: dubla, transcreve, corta e baixa vídeos na GPU', url: 'https://inematds.github.io/inemavox/', badge: 'Guia' },
+  { icon: '🤖', name: 'inemaccvbot', desc: 'Bot de Telegram que vira fila de vídeos: uma instrução por linha, pesquisa web, transcrição do áudio de origem, narração em texto e entrega na pasta certa', url: 'https://inematds.github.io/inemaccvbot/guia/', badge: 'Guia' },
   { icon: '🎙️', name: 'dublar pro', desc: 'Pipeline de vídeo com IA: baixa, transcreve, traduz, dubla e corta vídeos', url: 'https://inematds.github.io/dublarv5/', badge: 'Guia' },
   { icon: '🧠', name: 'intelecto', desc: 'Assistente de IA pessoal em Python: Telegram, memória SQLite, OpenRouter/Ollama', url: 'https://inematds.github.io/intelecto-guia/', badge: 'Guia' },
   { icon: '💊', name: 'antidote', desc: 'Assistente de IA pessoal em Python, o antídoto contra frameworks inchados', url: 'https://inematds.github.io/antidote-guia/', badge: 'Guia' },
