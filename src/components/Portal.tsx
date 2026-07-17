@@ -366,7 +366,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             className="community-badge community-badge--pro"
             onClick={() => trackClick('https://inema.pro', 'INEMA.PRO', 'header')}
           >
-            <img src="/doc/inema-pro-logo.webp" alt="INEMA.PRO" />
+            <img src="/doc/inema-pro-badge.webp" alt="INEMA.PRO" />
             <span>Assine o INEMA.PRO</span>
           </a>
           <div className="header-content">
