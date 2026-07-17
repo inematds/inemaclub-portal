@@ -1,5 +1,15 @@
 # Portal INEMA — Guia de Atualizações
 
+## Conta / autor dos commits
+
+Este repo é da conta **`NeiMaldaner`** (remote `git@github-nei:NeiMaldaner/portal.git`). Todo commit vai com autor **e** committer:
+
+```
+NeiMaldaner <nei.maldaner2014@gmail.com>
+```
+
+**Não** usar o default global `inematds` aqui. Antes de commitar, conferir `git config user.email` (deve ser `nei.maldaner2014@gmail.com`); o histórico antigo é misto porque commits foram feitos com a conta errada. Se um commit já pushado sair com autor errado: `git commit --amend --reset-author` + `git push --force-with-lease`.
+
 ## Arquitetura
 
 App **Next.js 16 (App Router)** hospedado no **Vercel**, servindo `inema.club`. Deploy é automático via webhook GitHub → Vercel ao dar push em `main`.
@@ -8,6 +18,7 @@ App **Next.js 16 (App Router)** hospedado no **Vercel**, servindo `inema.club`. 
 - `data.js`, `index.html`, `styles.css`, `script.js` — vestígios da versão estática antiga. O Vercel/Next ignora.
 
 **Arquivos que valem:**
+- `src/app/globals.css` — **o CSS global de verdade** (importado por `src/app/layout.tsx`). As classes globais usadas pelo `Portal.tsx` (`.header`, `.community-badge`, `.section-nav`…) vivem aqui. Cuidado: o `styles.css` da raiz tem cópias antigas dessas MESMAS classes e não é servido — editar lá não muda nada no site.
 - `src/data/courses.ts` — fonte única dos cursos (`platformsData`) e do histórico (`updatesData`). Consumido por Portal.tsx e PortalV2.tsx via `import`.
 - `src/components/Portal.tsx` — rota `/` (versão atual). Tem também uma **lista hardcoded de trilhas** que precisa ser atualizada manualmente quando o curso pertencer a alguma trilha.
 - `src/components/PortalV2.tsx` — rota `/new`. **CONGELADO — NÃO ATUALIZAR MAIS** (descontinuado, mantido só por histórico). Toda atualização de curso/trilha vai apenas no `Portal.tsx`.
