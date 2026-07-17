@@ -2960,8 +2960,8 @@
     },
     {
       "id": 195,
-      "title": "videos-edit — Forja Reel: monte seu editor de reels com IA",
-      "description": "Forja Reel: meta-skill que transforma um vídeo bruto (cortes, silêncios e erros) num reel profissional — corte limpo, motion graphics, B-roll real, legendas e SFX — sem abrir um editor de vídeo. Em vez de um editor pronto, ela te entrevista e gera o SEU próprio editor. Curso em 4 trilhas + a skill pronta para baixar.",
+      "title": "videos-edit-curso — Forja Reel: monte seu editor de reels com IA",
+      "description": "Forja Reel: meta-skill que transforma um vídeo bruto (cortes, silêncios e erros) num reel profissional — corte limpo, motion graphics, B-roll real, legendas e SFX — sem abrir um editor de vídeo. Em vez de um editor pronto, ela te entrevista e gera o SEU próprio editor. Curso navegável em 4 trilhas.",
       "icon": "🎬",
       "tags": [
         "Vídeo",
@@ -2970,7 +2970,7 @@
         "Claude Code",
         "IA"
       ],
-      "url": "https://inematds.github.io/videos-edit/"
+      "url": "https://inematds.github.io/videos-edit-curso/"
     },
     {
       "id": 135,
@@ -3314,9 +3314,9 @@
     },
     {
       "date": "2026-07-02",
-      "title": "videos-edit — Forja Reel: monte seu editor de reels com IA (curso + skill, 4 trilhas)",
+      "title": "videos-edit-curso — Forja Reel: monte seu editor de reels com IA (curso, 4 trilhas)",
       "type": "novo",
-      "url": "https://inematds.github.io/videos-edit/"
+      "url": "https://inematds.github.io/videos-edit-curso/"
     },
     {
       "date": "2026-07-02",
@@ -4424,6 +4424,12 @@
     }
   ],
   "projectUpdatesData": [
+    {
+      "date": "2026-07-17",
+      "title": "Forja Reel — meta-skill que entrevista você e gera sua própria skill de edição de reels",
+      "type": "novo",
+      "url": "https://inematds.github.io/videos-edit-cria/guia/"
+    },
     {
       "date": "2026-07-16",
       "title": "Kit Local — O Laboratório Local (LLMs locais com Ollama: tiers, campeões e armadilhas)",
@@ -5711,6 +5717,13 @@
       "desc": "RPG educacional em Godot para crianças/adolescentes que usa IA (ARIA) como recurso estratégico para ensinar competências do século XXI.",
       "url": "https://github.com/inematds/IAcao",
       "badge": "GitHub"
+    },
+    {
+      "icon": "🎬",
+      "name": "videos-edit-cria",
+      "desc": "Forja Reel: meta-skill que entrevista você e gera sua própria skill de edição de reels — corte limpo, motion graphics, B-roll real, legendas e SFX, sem abrir editor de vídeo.",
+      "url": "https://inematds.github.io/videos-edit-cria/guia/",
+      "badge": "Guia"
     }
   ]
 }

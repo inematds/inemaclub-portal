@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-17', title: 'Forja Reel — meta-skill que entrevista você e gera sua própria skill de edição de reels', type: 'novo', url: 'https://inematds.github.io/videos-edit-cria/guia/' },
   { date: '2026-07-16', title: 'Kit Local — O Laboratório Local (LLMs locais com Ollama: tiers, campeões e armadilhas)', type: 'novo', url: 'https://inematds.github.io/local-kit/' },
   { date: '2026-07-15', title: 'Maestro Roteador — Triagem de modelo e esforço para Claude Code', type: 'novo', url: 'https://inematds.github.io/maestro-roteador/guia/' },
   { date: '2026-07-15', title: 'AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)', type: 'novo', url: 'https://inematds.github.io/agnesfree/guia/' },
@@ -1946,12 +1947,12 @@ export const platformsData: Course[] = [
   },
   {
     id: 195,
-    title: 'videos-edit — Forja Reel: monte seu editor de reels com IA',
+    title: 'videos-edit-curso — Forja Reel: monte seu editor de reels com IA',
     description:
-      'Forja Reel: meta-skill que transforma um vídeo bruto (cortes, silêncios e erros) num reel profissional — corte limpo, motion graphics, B-roll real, legendas e SFX — sem abrir um editor de vídeo. Em vez de um editor pronto, ela te entrevista e gera o SEU próprio editor. Curso em 4 trilhas + a skill pronta para baixar.',
+      'Forja Reel: meta-skill que transforma um vídeo bruto (cortes, silêncios e erros) num reel profissional — corte limpo, motion graphics, B-roll real, legendas e SFX — sem abrir um editor de vídeo. Em vez de um editor pronto, ela te entrevista e gera o SEU próprio editor. Curso navegável em 4 trilhas.',
     icon: '🎬',
     tags: ['Vídeo', 'Reels', 'Edição', 'Claude Code', 'IA'],
-    url: 'https://inematds.github.io/videos-edit/',
+    url: 'https://inematds.github.io/videos-edit-curso/',
   },
   {
     id: 135,
@@ -2140,7 +2141,7 @@ export const updatesData: Update[] = [
   { date: '2026-07-06', title: 'Segunda Opinião — IA para Gestores e Líderes (5 aulas)', type: 'novo', url: 'https://inematds.github.io/segunda-opiniao/' },
   { date: '2026-07-04', title: 'Automação & Hooks no Claude Code (Trilha 03, 5 aulas)', type: 'novo', url: 'https://inematds.github.io/cchooks/' },
   { date: '2026-07-03', title: 'cccache — Prompt Caching no Claude Code (3 trilhas, 8 módulos)', type: 'novo', url: 'https://inematds.github.io/cccache/' },
-  { date: '2026-07-02', title: 'videos-edit — Forja Reel: monte seu editor de reels com IA (curso + skill, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit/' },
+  { date: '2026-07-02', title: 'videos-edit-curso — Forja Reel: monte seu editor de reels com IA (curso, 4 trilhas)', type: 'novo', url: 'https://inematds.github.io/videos-edit-curso/' },
   { date: '2026-07-02', title: 'Profissional Liberal Experiente com IA — 5 trilhas, 15 módulos, 90 tópicos', type: 'novo', url: 'https://inematds.github.io/pro-liberal-ia/' },
   { date: '2026-07-02', title: 'Prompting Claude Fable 5 — 2 Trilhas, 14 Módulos (Trilha 2: agente de trabalho)', type: 'atualizado', url: 'https://inematds.github.io/fable5back/' },
   { date: '2026-07-01', title: 'Prompting Claude Fable 5 — 6 Técnicas + Bônus Oficial (1 trilha, 7 módulos, 42 tópicos)', type: 'novo', url: 'https://inematds.github.io/fable5back/' },
