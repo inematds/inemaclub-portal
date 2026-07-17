@@ -141,7 +141,7 @@ html {
 }
 
 .community-badge img {
-    width: 120px;
+    width: 200px;
     height: auto;
     border-radius: 12px;
     object-fit: contain;
@@ -153,6 +153,15 @@ html {
     color: var(--text-secondary);
     white-space: nowrap;
     text-align: center;
+}
+
+.community-badge--pro {
+    left: auto;
+    right: 0;
+}
+
+.community-badge--pro img {
+    width: 160px;
 }
 
 .header-content {

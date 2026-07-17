@@ -359,6 +359,16 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <img src="/doc/conviteinemap.png" alt="INEMA.VIP" />
             <span>Participe da Comunidade</span>
           </a>
+          <a
+            href="https://inema.pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="community-badge community-badge--pro"
+            onClick={() => trackClick('https://inema.pro', 'INEMA.PRO', 'header')}
+          >
+            <img src="/doc/inema-pro-logo.webp" alt="INEMA.PRO" />
+            <span>Assine o INEMA.PRO</span>
+          </a>
           <div className="header-content">
             <h1 className="logo">INEMA.CLUB Portal INEMA</h1>
             <p className="tagline">Acesso centralizado aos seus cursos e plataformas</p>
@@ -384,6 +394,15 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       <nav className="section-nav">
         <div className="container">
           <div className="section-nav-links">
+            <a
+              href="https://buscas.inema.club"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="section-nav-link"
+              onClick={() => trackClick('https://buscas.inema.club', 'Buscas', 'section-nav')}
+            >
+              🔍 Buscas
+            </a>
             <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
             <a href="#trilha-profissional" className="section-nav-link">🧭 Profissional</a>
             <a href="#cursos" className="section-nav-link">🎓 Cursos</a>
@@ -394,6 +413,15 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <a href="#github" className="section-nav-link">💻 GitHub</a>
             <a href="#telegram" className="section-nav-link">💬 Telegram</a>
             <a href="#social" className="section-nav-link">📱 Social</a>
+            <a
+              href="https://inema.pro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="section-nav-link"
+              onClick={() => trackClick('https://inema.pro', 'INEMA.PRO', 'section-nav')}
+            >
+              ⭐ INEMA.PRO
+            </a>
           </div>
         </div>
       </nav>
