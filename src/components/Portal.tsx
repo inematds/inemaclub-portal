@@ -17,6 +17,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🎬', name: 'videos-agnes', desc: 'Transforma uma história em filme animado narrado via API Agnes AI (imagens, vídeo keyframe A→B e narração local), custo US$ 0 — inclui as skills videos-agnes e imagens-agnes', url: 'https://inematds.github.io/videos-agnes/guia/', badge: 'Guia' },
   { icon: '🎮', name: 'eai.inema.club', desc: 'Plataforma de jogos + educação (arcade, educacional, profissional) em Next.js 16', url: 'https://inematds.github.io/eai-guia/', badge: 'Guia' },
   { icon: '🗣️', name: 'heygenmcp', desc: 'Skills de Claude Code que viram roteiro em vídeo de avatar falante no HeyGen, com custo real medido', url: 'https://inematds.github.io/heygenmcp/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'klingaimcp', desc: 'Kling AI por MCP e CLI: vídeos e imagens por comando, automação de pipeline e dublagem com voz clonada', url: 'https://inematds.github.io/klingaimcp/guia/', badge: 'Guia' },
