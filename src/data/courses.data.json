@@ -4443,6 +4443,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-19",
+      "title": "eve — Framework filesystem-first para agentes de IA duráveis (fork/estudo Vercel)",
+      "type": "novo",
+      "url": "https://inematds.github.io/eve/guia/"
+    },
+    {
       "date": "2026-07-18",
       "title": "inemapromover — Fábrica de reels do INEMA.club por público (texto → avatar HeyGen → reel → canal)",
       "type": "novo",
@@ -4876,6 +4882,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🌱",
+      "name": "eve",
+      "desc": "Framework filesystem-first para agentes de IA duráveis: instruções, tools, skills, canais e schedules são arquivos numa pasta — o eve compila e roda (fork/estudo do projeto da Vercel)",
+      "url": "https://inematds.github.io/eve/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🎬",
       "name": "videos-agnes",

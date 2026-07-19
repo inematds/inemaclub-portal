@@ -17,6 +17,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🌱', name: 'eve', desc: 'Framework filesystem-first para agentes de IA duráveis: instruções, tools, skills, canais e schedules são arquivos numa pasta — o eve compila e roda (fork/estudo do projeto da Vercel)', url: 'https://inematds.github.io/eve/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'videos-agnes', desc: 'Transforma uma história em filme animado narrado via API Agnes AI (imagens, vídeo keyframe A→B e narração local), custo US$ 0 — inclui as skills videos-agnes e imagens-agnes', url: 'https://inematds.github.io/videos-agnes/guia/', badge: 'Guia' },
   { icon: '🎮', name: 'eai.inema.club', desc: 'Plataforma de jogos + educação (arcade, educacional, profissional) em Next.js 16', url: 'https://inematds.github.io/eai-guia/', badge: 'Guia' },
   { icon: '🗣️', name: 'heygenmcp', desc: 'Skills de Claude Code que viram roteiro em vídeo de avatar falante no HeyGen, com custo real medido', url: 'https://inematds.github.io/heygenmcp/guia/', badge: 'Guia' },
