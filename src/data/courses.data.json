@@ -4443,6 +4443,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-18",
+      "title": "inemapromover — Fábrica de reels do INEMA.club por público (texto → avatar HeyGen → reel → canal)",
+      "type": "novo",
+      "url": "https://inematds.github.io/inemapromover/guia/"
+    },
+    {
       "date": "2026-07-17",
       "title": "videos-agnes — História vira filme animado narrado (Agnes AI, custo US$ 0)",
       "type": "novo",
@@ -5811,6 +5817,13 @@
       "name": "videos-edit-cria",
       "desc": "Forja Reel: meta-skill que entrevista você e gera sua própria skill de edição de reels — corte limpo, motion graphics, B-roll real, legendas e SFX, sem abrir editor de vídeo.",
       "url": "https://inematds.github.io/videos-edit-cria/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📣",
+      "name": "inemapromover",
+      "desc": "Fábrica de reels de divulgação do INEMA.club segmentados por público: texto → avatar HeyGen → reel empilhado → publicação automática no canal do público.",
+      "url": "https://inematds.github.io/inemapromover/guia/",
       "badge": "Guia"
     }
   ]

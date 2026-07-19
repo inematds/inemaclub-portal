@@ -151,6 +151,7 @@ const communityProjects: Array<{
   { icon: "💰", name: "bet360", desc: "Plataforma white-label B2B de apostas/iGaming com wallet, KYC e compliance para o mercado brasileiro e LATAM.", url: "https://github.com/inematds/bet360", badge: "GitHub" },
   { icon: "🎓", name: "IAcao", desc: "RPG educacional em Godot para crianças/adolescentes que usa IA (ARIA) como recurso estratégico para ensinar competências do século XXI.", url: "https://github.com/inematds/IAcao", badge: "GitHub" },
   { icon: "🎬", name: "videos-edit-cria", desc: "Forja Reel: meta-skill que entrevista você e gera sua própria skill de edição de reels — corte limpo, motion graphics, B-roll real, legendas e SFX, sem abrir editor de vídeo.", url: "https://inematds.github.io/videos-edit-cria/guia/", badge: "Guia" },
+  { icon: "📣", name: "inemapromover", desc: "Fábrica de reels de divulgação do INEMA.club segmentados por público: texto → avatar HeyGen → reel empilhado → publicação automática no canal do público.", url: "https://inematds.github.io/inemapromover/guia/", badge: "Guia" },
 ]
 
 type RepoUpdate = {

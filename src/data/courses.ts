@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-18', title: 'inemapromover — Fábrica de reels do INEMA.club por público (texto → avatar HeyGen → reel → canal)', type: 'novo', url: 'https://inematds.github.io/inemapromover/guia/' },
   { date: '2026-07-17', title: 'videos-agnes — História vira filme animado narrado (Agnes AI, custo US$ 0)', type: 'novo', url: 'https://inematds.github.io/videos-agnes/guia/' },
   { date: '2026-07-17', title: 'inemaccvbot — Bot de Telegram que vira fila de vídeos (pesquisa, transcrição e narração em texto)', type: 'novo', url: 'https://inematds.github.io/inemaccvbot/guia/' },
   { date: '2026-07-17', title: 'klingaimcp — Kling AI por MCP e CLI: vídeo, imagem e dublagem por comando', type: 'novo', url: 'https://inematds.github.io/klingaimcp/guia/' },
