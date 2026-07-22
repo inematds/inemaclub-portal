@@ -176,6 +176,7 @@ const communityProjects: Array<{
   { icon: "🎓", name: "IAcao", desc: "RPG educacional em Godot para crianças/adolescentes que usa IA (ARIA) como recurso estratégico para ensinar competências do século XXI.", url: "https://github.com/inematds/IAcao", badge: "GitHub" },
   { icon: "🎬", name: "videos-edit-cria", desc: "Forja Reel: meta-skill que entrevista você e gera sua própria skill de edição de reels — corte limpo, motion graphics, B-roll real, legendas e SFX, sem abrir editor de vídeo.", url: "https://inematds.github.io/videos-edit-cria/guia/", badge: "Guia" },
   { icon: "📣", name: "inemapromover", desc: "Fábrica de reels de divulgação do INEMA.club segmentados por público: texto → avatar HeyGen → reel empilhado → publicação automática no canal do público.", url: "https://inematds.github.io/inemapromover/guia/", badge: "Guia" },
+  { icon: "📸", name: "produtoshotad", desc: "Pipeline que transforma 1 foto de produto em 5 imagens de anúncio e 5 vídeos curtos (9:16), com 3 workers: Agnes (US$0), HyperFrames (sem IA de vídeo) e Fal.ai/Seedance + ElevenLabs.", url: "https://inematds.github.io/produtoshotad/guia/", badge: "Guia" },
 ]
 
 type RepoUpdate = {

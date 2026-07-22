@@ -4443,6 +4443,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-21",
+      "title": "produtoshotad — Foto de produto vira 5 anúncios + 5 vídeos (Agnes/HyperFrames/Seedance)",
+      "type": "novo",
+      "url": "https://inematds.github.io/produtoshotad/guia/"
+    },
+    {
       "date": "2026-07-19",
       "title": "eve — Framework filesystem-first para agentes de IA duráveis (fork/estudo Vercel)",
       "type": "novo",
@@ -5998,6 +6004,13 @@
       "name": "inemapromover",
       "desc": "Fábrica de reels de divulgação do INEMA.club segmentados por público: texto → avatar HeyGen → reel empilhado → publicação automática no canal do público.",
       "url": "https://inematds.github.io/inemapromover/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📸",
+      "name": "produtoshotad",
+      "desc": "Pipeline que transforma 1 foto de produto em 5 imagens de anúncio e 5 vídeos curtos (9:16), com 3 workers: Agnes (US$0), HyperFrames (sem IA de vídeo) e Fal.ai/Seedance + ElevenLabs.",
+      "url": "https://inematds.github.io/produtoshotad/guia/",
       "badge": "Guia"
     }
   ]
