@@ -1543,6 +1543,18 @@
       "url": "https://inematds.github.io/github/"
     },
     {
+      "id": 229,
+      "title": "Guia de Engenharia de IA Local — Do hardware ao enxame de agentes",
+      "description": "Guia completo em página única sobre montar sua própria pilha de IA local: hardware, inferência, modelos open-weight, compressão, engenharia de contexto, agentes de código, segurança e produção em escala.",
+      "icon": "🖥️",
+      "tags": [
+        "IA Local",
+        "Infraestrutura",
+        "Agentes"
+      ],
+      "url": "https://inematds.github.io/guiaailocal/"
+    },
+    {
       "id": 180,
       "title": "Grill Me — Extraia o que está na sua cabeça",
       "description": "O skill grill-me: ser entrevistado sem dó para extrair o que está na sua cabeça e virar contexto reutilizável para a IA. 4 trilhas — fundamentos, técnicas, o skill por dentro e os prompts avançados.",
@@ -3276,6 +3288,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-07-23",
+      "title": "Guia de Engenharia de IA Local — Do hardware ao enxame de agentes",
+      "type": "novo",
+      "url": "https://inematds.github.io/guiaailocal/"
+    },
     {
       "date": "2026-07-13",
       "title": "Formação Cinema com IA — 9 cursos, 58 aulas, do primeiro quadro ao filme final (formato v5)",

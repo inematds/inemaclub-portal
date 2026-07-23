@@ -1068,6 +1068,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/github/',
   },
   {
+    id: 229,
+    title: 'Guia de Engenharia de IA Local — Do hardware ao enxame de agentes',
+    description:
+      'Guia completo em página única sobre montar sua própria pilha de IA local: hardware, inferência, modelos open-weight, compressão, engenharia de contexto, agentes de código, segurança e produção em escala.',
+    icon: '🖥️',
+    tags: ['IA Local', 'Infraestrutura', 'Agentes'],
+    url: 'https://inematds.github.io/guiaailocal/',
+  },
+  {
     id: 180,
     title: 'Grill Me — Extraia o que está na sua cabeça',
     description:
@@ -2160,6 +2169,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-07-23', title: 'Guia de Engenharia de IA Local — Do hardware ao enxame de agentes', type: 'novo', url: 'https://inematds.github.io/guiaailocal/' },
   { date: '2026-07-13', title: 'Formação Cinema com IA — 9 cursos, 58 aulas, do primeiro quadro ao filme final (formato v5)', type: 'novo', url: 'https://inematds.github.io/idallai/' },
   { date: '2026-07-13', title: 'Construa seu AI OS — Assistente de IA pessoal sem programar (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/builaios/' },
   { date: '2026-07-13', title: 'Claude Code para Pessoas Normais — do zero ao AI Native (10 módulos, formato v5)', type: 'novo', url: 'https://inematds.github.io/cccompletopn/' },
