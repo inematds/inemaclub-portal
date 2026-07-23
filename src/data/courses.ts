@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-23', title: 'ODS — Servidor de IA privado com um comando (LLM local, chat, agentes, RAG, imagem)', type: 'novo', url: 'https://inematds.github.io/ODS/guia/' },
   { date: '2026-07-23', title: 'fable5skill — Skill de scroll-film (Claude Code): GSAP puro, Higgsfield/Kie.ai/fal ou Agnes AI (US$0)', type: 'novo', url: 'https://inematds.github.io/fable5skill/guia/' },
   { date: '2026-07-21', title: 'produtoshotad — Foto de produto vira 5 anúncios + 5 vídeos (Agnes/HyperFrames/Seedance)', type: 'novo', url: 'https://inematds.github.io/produtoshotad/guia/' },
   { date: '2026-07-19', title: 'eve — Framework filesystem-first para agentes de IA duráveis (fork/estudo Vercel)', type: 'novo', url: 'https://inematds.github.io/eve/guia/' },

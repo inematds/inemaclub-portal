@@ -4443,6 +4443,18 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-23",
+      "title": "ODS — Servidor de IA privado com um comando (LLM local, chat, agentes, RAG, imagem)",
+      "type": "novo",
+      "url": "https://inematds.github.io/ODS/guia/"
+    },
+    {
+      "date": "2026-07-23",
+      "title": "fable5skill — Skill de scroll-film (Claude Code): GSAP puro, Higgsfield/Kie.ai/fal ou Agnes AI (US$0)",
+      "type": "novo",
+      "url": "https://inematds.github.io/fable5skill/guia/"
+    },
+    {
       "date": "2026-07-21",
       "title": "produtoshotad — Foto de produto vira 5 anúncios + 5 vídeos (Agnes/HyperFrames/Seedance)",
       "type": "novo",
@@ -5012,6 +5024,13 @@
       "name": "n8n-ps",
       "desc": "Framework de skills que dá ao Claude expertise para construir, validar e implantar workflows n8n em produção, direto no Claude Code.",
       "url": "https://inematds.github.io/n8n-ps/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🖥️",
+      "name": "ODS",
+      "desc": "Servidor de IA privado com um comando: inferência local, chat, dashboard, voz, agentes, workflows, RAG e geração de imagem no seu próprio hardware (Linux, Windows, macOS).",
+      "url": "https://inematds.github.io/ODS/guia/",
       "badge": "Guia"
     },
     {
@@ -6011,6 +6030,13 @@
       "name": "produtoshotad",
       "desc": "Pipeline que transforma 1 foto de produto em 5 imagens de anúncio e 5 vídeos curtos (9:16), com 3 workers: Agnes (US$0), HyperFrames (sem IA de vídeo) e Fal.ai/Seedance + ElevenLabs.",
       "url": "https://inematds.github.io/produtoshotad/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎞️",
+      "name": "fable5skill",
+      "desc": "Skill de Claude Code que constrói sites scroll-film (a página inteira é um plano-sequência cinematográfico que se dissolve no conteúdo ao rolar), com 3 lanes: GSAP puro, Higgsfield/Kie.ai/fal e Agnes AI (US$0).",
+      "url": "https://inematds.github.io/fable5skill/guia/",
       "badge": "Guia"
     }
   ]
