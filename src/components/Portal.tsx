@@ -496,6 +496,183 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* Evento em destaque — INEMA Agentes Hub V */}
+      <section id="evento-destaque" style={{ padding: '2.5rem 0' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/', 'INEMA Agentes Hub V', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/doc/inema-agentes-hub-v.png"
+              alt="INEMA Agentes Hub V — curso online de cinco dias para construir um hub de agentes"
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '28px',
+                flexWrap: 'wrap',
+                padding: '22px 26px',
+                background: 'oklch(0.15 0.02 28)',
+              }}
+            >
+              <div style={{ minWidth: 0 }}>
+                <span
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '11.5px',
+                    fontWeight: 750,
+                    letterSpacing: '.65px',
+                    textTransform: 'uppercase',
+                    color: 'oklch(0.84 0.17 87)',
+                    marginBottom: '5px',
+                  }}
+                >
+                  Curso online ao vivo
+                </span>
+                <h2 style={{ margin: 0, fontSize: 'clamp(20px, 3vw, 29px)', lineHeight: 1.2, color: '#e8e6e3' }}>
+                  Participe do curso <span style={{ color: 'oklch(0.84 0.17 87)' }}>INEMA Agentes Hub V</span>
+                </h2>
+                <div style={{ color: 'oklch(0.78 0.02 35)', fontSize: '15px', marginTop: '4px' }}>
+                  27 a 31 de julho · das 14h às 16h
+                </div>
+              </div>
+              <span
+                style={{
+                  flex: '0 0 auto',
+                  display: 'inline-block',
+                  background: 'oklch(0.69 0.22 35)',
+                  color: 'oklch(0.12 0.02 28)',
+                  fontWeight: 800,
+                  borderRadius: '10px',
+                  padding: '11px 18px',
+                  fontSize: '14.5px',
+                }}
+              >
+                Participe do curso →
+              </span>
+            </div>
+          </a>
+
+          <h3 style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', color: '#9aa3ad', margin: '2.5rem 0 .9rem' }}>
+            Divisão dos 5 dias do curso
+          </h3>
+          <div style={{ borderTop: '1px solid #23272e' }}>
+            {[
+              {
+                dia: 'Dia 1',
+                titulo: 'Visão geral, infraestrutura, segurança e escala',
+                itens: [
+                  'Visão completa do INEMA Agentes HUB V',
+                  'Arquitetura do sistema',
+                  'Estrutura da VPS',
+                  'Organização das pastas e projetos',
+                  'Docker, Redis, PostgreSQL e armazenamento',
+                  'Segurança de acessos e credenciais',
+                  'Logs, monitoramento, backups e escala',
+                ],
+              },
+              {
+                dia: 'Dia 2',
+                titulo: 'Entrada, atendimento e decisão',
+                itens: [
+                  'Criação do bot no Telegram',
+                  'Configuração do canal de entrada',
+                  'Criação do inemaccvbot',
+                  'Sessões e identificação do usuário',
+                  'Interpretação das solicitações',
+                  'Verificação das skills habilitadas',
+                  'Classificação das tarefas',
+                  'Definição de prioridades',
+                ],
+              },
+              {
+                dia: 'Dia 3',
+                titulo: 'Filas, roteamento e workers',
+                itens: [
+                  'Criação das filas',
+                  'Prioridades: urgente, alta, normal e baixa',
+                  'mkivideos',
+                  'mkitextos',
+                  'mkiservicos',
+                  'Regras de roteamento',
+                  'Controle de status',
+                  'Retentativas, timeouts e tarefas com erro',
+                ],
+              },
+              {
+                dia: 'Dia 4',
+                titulo: 'Agentes, skills e execução',
+                itens: [
+                  'Criação dos agentes especializados',
+                  'Estrutura de um agente',
+                  'Criação e instalação de skills',
+                  'Ferramentas e APIs',
+                  'Modelos de IA',
+                  'Permissões e limites',
+                  'Execução pelo worker',
+                  'Agentes como projetos independentes',
+                  'Testes das atividades',
+                ],
+              },
+              {
+                dia: 'Dia 5',
+                titulo: 'Validação, entrega e publicação',
+                itens: [
+                  'Validação automática dos resultados',
+                  'Tratamento de erros',
+                  'Retorno ao inemaccvbot',
+                  'Entrega pelo Telegram',
+                  'Armazenamento dos arquivos',
+                  'Monitoramento do fluxo completo',
+                  'Testes de segurança e carga',
+                  'Implantação final na VPS',
+                  'Sistema funcionando de ponta a ponta',
+                ],
+              },
+            ].map((d) => (
+              <article
+                key={d.dia}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'minmax(56px, 72px) minmax(180px, .7fr) minmax(0, 1.3fr)',
+                  gap: '26px',
+                  padding: '28px 0',
+                  borderBottom: '1px solid #23272e',
+                }}
+              >
+                <div style={{ fontSize: '13px', fontWeight: 800, letterSpacing: '.8px', textTransform: 'uppercase', color: 'oklch(0.84 0.17 87)' }}>
+                  {d.dia}
+                </div>
+                <h4 style={{ fontSize: '20px', lineHeight: 1.28, margin: 0, color: '#e8e6e3' }}>{d.titulo}</h4>
+                <ul style={{ columns: 2, columnGap: '32px', margin: 0, paddingLeft: '20px', color: '#9aa3ad', fontSize: '14px' }}>
+                  {d.itens.map((i) => (
+                    <li key={i} style={{ breakInside: 'avoid', margin: '0 0 5px' }}>
+                      {i}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Learning Path */}
       <section id="trilha-iniciantes" className="learning-path-section">
         <div className="container">
