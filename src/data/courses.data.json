@@ -4461,6 +4461,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-27",
+      "title": "Personal Benchmark - compare modelos com o seu próprio trabalho no Claude Code",
+      "type": "novo",
+      "url": "https://inematds.github.io/personal-benchmark/guia/"
+    },
+    {
       "date": "2026-07-23",
       "title": "ODS — Servidor de IA privado com um comando (LLM local, chat, agentes, RAG, imagem)",
       "type": "novo",
@@ -6055,6 +6061,13 @@
       "name": "fable5skill",
       "desc": "Skill de Claude Code que constrói sites scroll-film (a página inteira é um plano-sequência cinematográfico que se dissolve no conteúdo ao rolar), com 3 lanes: GSAP puro, Higgsfield/Kie.ai/fal e Agnes AI (US$0).",
       "url": "https://inematds.github.io/fable5skill/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧪",
+      "name": "personal-benchmark",
+      "desc": "Transforma o histórico do Claude Code em um benchmark pessoal, repetível e julgado às cegas para comparar modelos e níveis de esforço.",
+      "url": "https://inematds.github.io/personal-benchmark/guia/",
       "badge": "Guia"
     }
   ]

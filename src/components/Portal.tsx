@@ -179,6 +179,7 @@ const communityProjects: Array<{
   { icon: "📣", name: "inemapromover", desc: "Fábrica de reels de divulgação do INEMA.club segmentados por público: texto → avatar HeyGen → reel empilhado → publicação automática no canal do público.", url: "https://inematds.github.io/inemapromover/guia/", badge: "Guia" },
   { icon: "📸", name: "produtoshotad", desc: "Pipeline que transforma 1 foto de produto em 5 imagens de anúncio e 5 vídeos curtos (9:16), com 3 workers: Agnes (US$0), HyperFrames (sem IA de vídeo) e Fal.ai/Seedance + ElevenLabs.", url: "https://inematds.github.io/produtoshotad/guia/", badge: "Guia" },
   { icon: "🎞️", name: "fable5skill", desc: "Skill de Claude Code que constrói sites scroll-film (a página inteira é um plano-sequência cinematográfico que se dissolve no conteúdo ao rolar), com 3 lanes: GSAP puro, Higgsfield/Kie.ai/fal e Agnes AI (US$0).", url: "https://inematds.github.io/fable5skill/guia/", badge: "Guia" },
+  { icon: "🧪", name: "personal-benchmark", desc: "Transforma o histórico do Claude Code em um benchmark pessoal, repetível e julgado às cegas para comparar modelos e níveis de esforço.", url: "https://inematds.github.io/personal-benchmark/guia/", badge: "Guia" },
 ]
 
 type RepoUpdate = {
