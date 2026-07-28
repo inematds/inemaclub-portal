@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-27",
+      "title": "Scroll-Film Studio — Sites cinematográficos guiados pelo scroll",
+      "type": "novo",
+      "url": "https://inematds.github.io/scroll-film-studio/guia/"
+    },
+    {
+      "date": "2026-07-27",
       "title": "Kimi Code — Claude Code rodando em Kimi K3 via OpenRouter (~1/3 do custo)",
       "type": "novo",
       "url": "https://inematds.github.io/kimicodecc/guia/"
@@ -5095,6 +5101,13 @@
       "name": "skillmktv4",
       "desc": "SkillMKT v4 empacota 6 skills de marketing (criativos, páginas, reels, lançamento pago, mensageria, design) em arquivos .skill prontos pra instalar e distribuir.",
       "url": "https://inematds.github.io/skillmktv4/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎞️",
+      "name": "scroll-film-studio",
+      "desc": "Skill para criar sites cinematográficos contínuos controlados pelo scroll, com motion em código ou footage gerado.",
+      "url": "https://inematds.github.io/scroll-film-studio/guia/",
       "badge": "Guia"
     },
     {

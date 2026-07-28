@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-27', title: 'Scroll-Film Studio — Sites cinematográficos guiados pelo scroll', type: 'novo', url: 'https://inematds.github.io/scroll-film-studio/guia/' },
   { date: '2026-07-27', title: 'Kimi Code — Claude Code rodando em Kimi K3 via OpenRouter (~1/3 do custo)', type: 'novo', url: 'https://inematds.github.io/kimicodecc/guia/' },
   { date: '2026-07-27', title: 'iccmonit v2 — Monitor seguro de sessões Claude Code', type: 'novo', url: 'https://inematds.github.io/iccmonitv2/' },
   { date: '2026-07-27', title: 'Personal Benchmark - compare modelos com o seu próprio trabalho no Claude Code', type: 'novo', url: 'https://inematds.github.io/personal-benchmark/guia/' },
