@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-27",
+      "title": "Kimi Code — Claude Code rodando em Kimi K3 via OpenRouter (~1/3 do custo)",
+      "type": "novo",
+      "url": "https://inematds.github.io/kimicodecc/guia/"
+    },
+    {
+      "date": "2026-07-27",
       "title": "iccmonit v2 — Monitor seguro de sessões Claude Code",
       "type": "novo",
       "url": "https://inematds.github.io/iccmonitv2/"
@@ -5033,6 +5039,13 @@
       "name": "inemafilme",
       "desc": "inemafilme: sistema que transforma um assunto ou roteiro num filme/episódio narrado, motor pixflow (parallax 2.5D determinístico), sem IA de vídeo.",
       "url": "https://inematds.github.io/inemafilme/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🌙",
+      "name": "kimicodecc",
+      "desc": "Skill do Claude Code que abre um terminal novo rodando o harness completo em Kimi K3 (Moonshot AI) via OpenRouter, por ~1/3 do custo, sem tocar na sessão atual nem nas configurações globais.",
+      "url": "https://inematds.github.io/kimicodecc/guia/",
       "badge": "Guia"
     },
     {
