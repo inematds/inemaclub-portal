@@ -4461,6 +4461,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-28",
+      "title": "Virtual Staging Video — de uma foto de interior ao vídeo de reforma",
+      "type": "novo",
+      "url": "https://inematds.github.io/vsvideo-skill/guia/"
+    },
+    {
       "date": "2026-07-27",
       "title": "Scroll-Film Studio — Sites cinematográficos guiados pelo scroll",
       "type": "novo",
@@ -5108,6 +5114,13 @@
       "name": "scroll-film-studio",
       "desc": "Skill para criar sites cinematográficos contínuos controlados pelo scroll, com motion em código ou footage gerado.",
       "url": "https://inematds.github.io/scroll-film-studio/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🏗️",
+      "name": "vsvideo-skill",
+      "desc": "Skill que transforma uma foto de interior finalizado em vídeo time-lapse de reforma: gera o 'antes da obra' com GPT Image (mesma câmera e arquitetura) e o vídeo antes→depois com Higgsfield Seedance 2.0 Mini.",
+      "url": "https://inematds.github.io/vsvideo-skill/guia/",
       "badge": "Guia"
     },
     {
