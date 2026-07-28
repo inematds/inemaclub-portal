@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-28",
+      "title": "zocomputer-dicas — Acessar o Zo Computer via SSH (túnel TCP + scripts prontos)",
+      "type": "novo",
+      "url": "https://github.com/inematds/zocomputer-dicas"
+    },
+    {
+      "date": "2026-07-28",
       "title": "Virtual Staging Video — de uma foto de interior ao vídeo de reforma",
       "type": "novo",
       "url": "https://inematds.github.io/vsvideo-skill/guia/"
@@ -5213,6 +5219,13 @@
       "desc": "Bot de Telegram que vira fila de vídeos: uma instrução por linha, pesquisa web, transcrição do áudio de origem, narração em texto e entrega na pasta certa",
       "url": "https://inematds.github.io/inemaccvbot/guia/",
       "badge": "Guia"
+    },
+    {
+      "icon": "🔑",
+      "name": "zocomputer-dicas",
+      "desc": "Guia + scripts prontos para acessar o Zo Computer via SSH: por que IP direto não funciona, serviço TCP (túnel), autorizar chave e subir o sshd na porta 22.",
+      "url": "https://github.com/inematds/zocomputer-dicas",
+      "badge": "GitHub"
     },
     {
       "icon": "🎙️",

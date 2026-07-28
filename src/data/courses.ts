@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-28', title: 'zocomputer-dicas — Acessar o Zo Computer via SSH (túnel TCP + scripts prontos)', type: 'novo', url: 'https://github.com/inematds/zocomputer-dicas' },
   { date: '2026-07-28', title: 'Virtual Staging Video — de uma foto de interior ao vídeo de reforma', type: 'novo', url: 'https://inematds.github.io/vsvideo-skill/guia/' },
   { date: '2026-07-27', title: 'Scroll-Film Studio — Sites cinematográficos guiados pelo scroll', type: 'novo', url: 'https://inematds.github.io/scroll-film-studio/guia/' },
   { date: '2026-07-27', title: 'Kimi Code — Claude Code rodando em Kimi K3 via OpenRouter (~1/3 do custo)', type: 'novo', url: 'https://inematds.github.io/kimicodecc/guia/' },
