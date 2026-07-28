@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-27",
+      "title": "iccmonit v2 — Monitor seguro de sessões Claude Code",
+      "type": "novo",
+      "url": "https://inematds.github.io/iccmonitv2/"
+    },
+    {
+      "date": "2026-07-27",
       "title": "Personal Benchmark - compare modelos com o seu próprio trabalho no Claude Code",
       "type": "novo",
       "url": "https://inematds.github.io/personal-benchmark/guia/"
@@ -5796,6 +5802,13 @@
       "desc": "TUI em Python que monitora sessões Claude Code ativas em tempo real: cota de uso, métricas por sessão e chat embutido.",
       "url": "https://github.com/inematds/iccmonit",
       "badge": "GitHub"
+    },
+    {
+      "icon": "📊",
+      "name": "iccmonitv2",
+      "desc": "Monitor local e seguro para sessões Claude Code, com painel de cota, contexto, processos e serviços.",
+      "url": "https://inematds.github.io/iccmonitv2/",
+      "badge": "Guia"
     },
     {
       "icon": "🤖",

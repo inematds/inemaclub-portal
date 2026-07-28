@@ -1,0 +1,569 @@
+{
+  "curso": {
+    "titulo": "Open Source AI Command Center - Curso Completo v2",
+    "versao": "2.0",
+    "descricao": "Domine o mundo dos modelos de IA open source e feche a ponte com os fechados para criar seu pr\u00f3prio centro de comando de IA local. Aprenda a usar ambas as tecnologias simultaneamente para obter o melhor de dois mundos.",
+    "autor": "Baseado no conte\u00fado do v\u00eddeo original",
+    "dificuldade": "Intermedi\u00e1rio",
+    "duracao_estimada": "8-10 horas",
+    "requisitos_prerequisitos": [
+      "Conhecimento b\u00e1sico de computa\u00e7\u00e3o",
+      "Acesso a um computador (Windows/Mac/Linux)",
+      "Nenhum conhecimento pr\u00e9vio de IA necess\u00e1rio"
+    ],
+    "objetivo_final": "Criar seu pr\u00f3prio Open Source Command Center com modelos locais, automa\u00e7\u00f5es e agentes",
+    "filosofia": "Neither team wins. Both have pros and cons. Learn to use both effectively as a life skill.",
+    "data_criacao": "2025-07-23",
+    "status": "em_construcao"
+  },
+
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Por Que Open Source AI? O Novo Paradigma",
+      "dificuldade": "iniciante",
+      "descricao": "Entenda o cen\u00e1rio atual da IA e por que ter modelos locais \u00e9 essencial como seguro mental.",
+      "duracao_min": 45,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "Os Sustos Recentes da IA",
+          "texto": "Nos \u00faltimos meses, tivemos m\u00faltiplos sustos de IA. A Anthropic retirou o acesso aos seus modelos rec\u00e9m-lan\u00e7ados Fable 5 e Mythos 5. Overnight, perdemos acesso n\u00e3o a um, mas a dois modelos Frontier. Foi perigoso demais para todos terem, poderoso demais para ser lan\u00e7ado ao p\u00fablico."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "O Precedente Estabelecido",
+          "texto": "Agora os recuperamos, mas aquelas poucas semanas estabeleceram um precedente. Foi um lembrete de que a qualquer momento, o que voc\u00ea faz dia-a-dia com IA pode mudar em uma fra\u00e7\u00e3o de segundo."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "4 Raz\u00f5es Para rodar IA localmente",
+          "subsecoes": [
+            {
+              "nome": "1. Vendor Risk (Risco de Fornecedor)",
+              "descricao": "Modelos podem ser removidos sem aviso (como Fable 5/Mythos 5). Quando recuperados, muitas vezes s\u00e3o vers\u00f5es degradadas com menos qualidade."
+            },
+            {
+              "nome": "2. O Acabamento dos Subs\u00eddios",
+              "descricao": "VCs est\u00e3o subsidiando planos de $100-200 que equivalem a $6-8mil em uso Claude ou $13-15mil OpenAI. Quando acabarem os subs\u00eddios, pre\u00e7os v\u00e3o disparar."
+            },
+            {
+              "nome": "3. Privacidade",
+              "descricao": "Seus dados pessoais n\u00e3o s\u00e3o treinados em modelos de terceiros. Exemplo: processamento de DNA em modelos locais sem enviar informa\u00e7\u00e3o para lugar nenhum."
+            },
+            {
+              "nome": "4. Ambient Agents (Agentes Ambientais)",
+              "descricao": "Agents que rodam 24/7 varrendo seu sistema, checando seguran\u00e7a, fazendo RAG constante nos seus arquivos. Custa dezenas de d\u00f3lares em energia vs milhares em API."
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "A Guerra Fake: Open Source vs Closed Source",
+          "texto": "Team Closed Source acha que open source \u00e9 in\u00fatil. Team Open Source zomba de quem s\u00f3 usa closed source. Ambas est\u00e3o erradas. Use ambas como skill de vida.",
+          "acao": "Pense em open source como redund\u00e2ncia/backup e closed source como ferramenta complementar."
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "titulo": "Fundamentos T\u00e9cnicos - Entendendo as Camadas",
+      "dificuldade": "intermediario",
+      "descricao": "Mapeamento completo do ecossistema de IA local: hardware at\u00e9 interface.",
+      "duracao_min": 90,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "Camada 1: Hardware",
+          "texto": "O que determina o que voc\u00ea pode rodar:",
+          "items": [
+            "RAM do sistema - mem\u00f3ria principal",
+            "VRAM - mem\u00f3ria da GPU",
+            "Capacidade de processamento (tokens/segundo)",
+            "Exemplos: Windows laptop, Mac, Mac Mini, Mac Studio"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "O que s\u00e3o Open Weight Models?",
+          "texto": "Modelos onde voc\u00ea tem acesso completo ao arquivo de pesos que representa como o modelo funciona. Diferente de Claude/GPT onde os pesos s\u00e3o secretos."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Camada 2: Motor de Infer\u00eancia",
+          "texto": "A ponte entre seus modelos e o mundo real:",
+          "items": [
+            "Llama.cpp - motor principal para execu\u00e7\u00e3o local",
+            "VLM - alternativa em escala enterprise"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Camada 3: Gateway (light LLM)",
+          "texto": "Cria APIs que permitem conectar qualquer servi\u00e7o aos seus modelos locais. Pense como um adaptador de plugue que permite todas as aplica\u00e7\u00f5es conversarem com o modelo desejado."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Camada 4: Interface (Open Web UI)",
+          "texto": "Plataforma que d\u00e1 a sensa\u00e7\u00e3o do ChatGPT/Claude para intera\u00e7\u00e3o com modelos locais.",
+          "funcionalidades": [
+            "Drag and drop de arquivos",
+            "Speech to text",
+            "Context window visual",
+            "CPU/RAM monitoring"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Camada 5: Harnesses (Arn\u00eas)",
+          "texto": "Permite que o modelo local funcione como um 'c\u00e9rebro em um pote' com pernas/bra\u00e7os:",
+          "exemplos_harness": [
+            "Ler/escrever arquivos do sistema",
+            "Executar bash scripts",
+            "Manipular dados",
+            "Controle de ambiente"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "titulo": "Open Router - Sua Ponte para Modelos",
+      "dificuldade": "iniciante",
+      "descricao": "Como usar Open Router para acessar modelos open e closed source via API.",
+      "duracao_min": 30,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "O que \u00e9 Open Router?",
+          "texto": "Plataforma que permite conversar com qualquer modelo (open ou closed source) via uma API unificada. Funciona como uma carteira de cr\u00e9ditos."
+        },
+        {
+          "tipo": "atividade",
+          "titulo": "Setup Inicial Open Router",
+          "passos": [
+            "Criar conta em openrouter.ai",
+            "Adicionar cr\u00e9ditos \u00e0 wallet",
+            "Gerar API key",
+            "Configurar no ambiente local"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "titulo": "Montando Seu AI Command Center",
+      "dificuldade": "intermediario",
+      "descricao": "Guia passo a passo para criar seu pr\u00f3prio centro de comando com ODS (Open Source Dashboard).",
+      "duracao_min": 120,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "Vis\u00e3o Geral do Command Center",
+          "texto": "Dashboard pessoal com funcionalidades off-the-shelf que 24 meses atr\u00e1s exigiam setup manual individual."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Componentes Principais",
+          "funcionalidades": [
+            {
+              "nome": "AI Chat",
+              "descricao": "Interface similar a ChatGPT usando Open Web UI, roda no Mac Mini.",
+              "recursos": ["Drag & drop", "Speech to text", "Monitoramento CPU/RAM"]
+            },
+            {
+              "nome": "Hermes Agent",
+              "descricao": "Agent configurado out-of-the-box para automa\u00e7\u00e3o.",
+              "acesso": "Via console session"
+            },
+            {
+              "nome": "Document Q&A (RAG)",
+              "descricao": "Questionamento sobre documentos - era um grande problema para setup."
+            },
+            {
+              "nome": "Workflow Automations",
+              "descricao": "Automa\u00e7\u00f5es usando vers\u00f5es locais de ferramentas como n8n."
+            },
+            {
+              "nome": "Image Generation (Comfy UI)",
+              "descricao": "Pipeline open source para gera\u00e7\u00e3o de imagens.",
+              "observacao": "Qualidade n\u00e3o \u00e9 n\u00edvel DALL-E 3 ou Gemini, mas suficiente para maioria dos casos."
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Extras do Command Center",
+          "componentes": [
+            "Extensions - App store de tech open source (orchestration, vector DBs)",
+            "Integrations - Mapa completo do sistema",
+            "Model Monitor - Modelos rodando (Qwen visual, Qwen 14B, Mistral)"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Setup com Cloud Code/CodeX",
+          "texto": "Todo o command center foi setup usando GitHub repo ODS + Claude Code:",
+          "passos_setup": [
+            "Baixar reposit\u00f3rio ODS do GitHub",
+            "Feed para Claude Code",
+            "Claude Code l\u00ea e expande (fan out) agentes",
+            "Agentes configuram ambiente ideal",
+            "Seleciona melhor modelo para specs de hardware",
+            "Cuida toda a infraestrutura"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Acesso Remoto com Tailscale",
+          "texto": "Mesh network privado permite acessar seu dashboard de qualquer lugar, inclusive pelo celular."
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "titulo": "Escolhendo Modelos - O Que Rodar Onde",
+      "dificuldade": "intermediario",
+      "descricao": "Categoriza\u00e7\u00e3o de modelos e como escolher o certo para cada uso.",
+      "duracao_min": 60,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "Como Selecionar Modelos com IA",
+          "texto": "Use Claude Code/CodeX ou Kimi K3 para analisar seu hardware e sugerir modelos:",
+          "prompt_exemplo": "Analyze my current hardware (RAM, VRAM) and recommend the best open source models I can run that will actually work practically."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Categorias de Modelos",
+          "categorias": [
+            {
+              "nome": "Text-to-Text Generation",
+              "exemplos": ["Llama 3.1", "Kimi K3", "Qwen"],
+              "observacao": "Modelos atuais s\u00e3o muito superiores aos de 2 anos atr\u00e1s"
+            },
+            {
+              "nome": "Multimodal",
+              "exemplos": ["Qwen visual model", "Gemini models"]
+            },
+            {
+              "nome": "Especializados",
+              "exemplos": ["Mistral (email triage)"],
+              "uso": "Tarefas espec\u00edficas leves"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Free vs Paid Models",
+          "texto": "Alguns modelos n\u00e3o s\u00e3o eficientes mas rodam completamente gr\u00e1tis. N\u00e3o os mais perform\u00e1ticos, mas funcionam para tarefas b\u00e1sicas."
+        }
+      ]
+    },
+
+    {
+      "id": 6,
+      "titulo": "Estrat\u00e9gia H\u00edbrida - Melhor dos Dois Mundos",
+      "dificuldade": "avancado",
+      "descricao": "Como usar Claude/Claude Code + Open Source models juntos para m\u00e1ximo efeito.",
+      "duracao_min": 75,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "Fluxo de Trabalho H\u00edbrido Ideal",
+          "passos": [
+            {
+              "etapa": 1,
+              "acao": "Use modelos locais para dados sens\u00edveis (ex: DNA analysis)",
+              "justificativa": "Privacidade total"
+            },
+            {
+              "etapa": 2,
+              "acao": "Synthesis + an\u00e1lise inicial local",
+              "justificativa": "Custo zero em API"
+            },
+            {
+              "etapa": 3,
+              "acao": "Envia s\u00edntese para Claude/OpenAI para fine-tuning",
+              "justificativa": "Pouca informa\u00e7\u00e3o = custo baixo"
+            },
+            {
+              "etapa": 4,
+              "acao": "Constr\u00fai sistema completo com IA fechada assistindo",
+              "justificativa": "Aproveita o melhor de cada mundo"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Claude Code/CodeX como Facilitador",
+          "texto": "Use planos de $20-200/m\u00eas para ajudar a construir toda infraestrutura open source. N\u00e3o substitui, complementa.",
+          "aplicacoes": [
+            "Setup de ambiente local",
+            "Debug e manuten\u00e7\u00e3o",
+            "Sele\u00e7\u00e3o de modelos",
+            "Configura\u00e7\u00e3o de harnesses"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Quando Usar Cada Um",
+          "tabela_decision": [
+            {
+              "situacao": "Dados sens\u00edveis/privados",
+              "usar": "Open Source local"
+            },
+            {
+              "situacao": "Ambient agents 24/7",
+              "usar": "Open Source local"
+            },
+            {
+              "situacao": "Setup inicial e debugging",
+              "usar": "Claude Code ($20-200/m\u00eas)"
+            },
+            {
+              "situacao": "Tarefas complexas de racioc\u00ednio",
+              "usar": "Claude Opus/GPT-4"
+            },
+            {
+              "situacao": "Backup/redund\u00e2ncia",
+              "usar": "Open Source local"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 7,
+      "titulo": "Projetos Pr\u00e1ticos - M\u00e3o na Massa",
+      "dificuldade": "intermediario",
+      "descricao": "Exerc\u00edcios e projetos aplicados para consolidar o aprendizado.",
+      "duracao_min": 180,
+      "projetos": [
+        {
+          "id": "projeto_1",
+          "nome": "Primeiro Modelo Local",
+          "descricao": "Rode seu primeiro modelo open source no computador.",
+          "requisitos": ["Ollama instalado", "Computador com 8GB+ RAM"],
+          "passos": [
+            "Instalar Ollama (ollama.ai)",
+            "Baixar modelo: ollama run llama3.1",
+            "Testar prompts b\u00e1sicos",
+            "Monitorar uso de CPU/RAM"
+          ],
+          "dificuldade": "iniciante"
+        },
+        {
+          "id": "projeto_2",
+          "nome": "Open Web UI Setup",
+          "descricao": "Configure interface web para seus modelos locais.",
+          "requisitos": ["Docker ou Python ambiente", "Modelo local rodando"],
+          "passos": [
+            "Instalar Open Web UI via Docker/Python",
+            "Configurar conex\u00e3o com modelo local (Llama.cpp)",
+            "Testar chat interface",
+            "Adicionar drag-and-drop de arquivos"
+          ],
+          "dificuldade": "intermediario"
+        },
+        {
+          "id": "projeto_3",
+          "nome": "RAG - Document Q&A",
+          "descricao": "Sistema de questionamento sobre documentos usando RAG local.",
+          "requisitos": ["Vector database (Chroma/Pinecone local)", "Embedding model"],
+          "passos": [
+            "Configurar vector DB local",
+            "Adicionar embeddings para documentos",
+            "Implementar busca sem\u00e2ntica",
+            "Conectar ao Open Web UI"
+          ],
+          "dificuldade": "avancado"
+        },
+        {
+          "id": "projeto_4",
+          "nome": "Hermes Agent Setup",
+          "descricao": "Configure Hermes agent para automa\u00e7\u00e3o.",
+          "requisitos": ["Reposit\u00f3rio Hermes dispon\u00edvel"],
+          "passos": [
+            "Clone do reposit\u00f3rio Hermes",
+            "Configurar ambiente de execu\u00e7\u00e3o",
+            "Conectar ao modelo local via gateway",
+            "Testar a\u00e7\u00f5es autom\u00e1ticas"
+          ],
+          "dificuldade": "avancado"
+        },
+        {
+          "id": "projeto_5",
+          "nome": "Image Generation Pipeline",
+          "descricao": "Pipeline de gera\u00e7\u00e3o de imagens com ComfyUI.",
+          "requisitos": ["GPU dedicada recomendada (4GB+ VRAM)", "ComfyUI"],
+          "passos": [
+            "Instalar ComfyUI",
+            "Baixar modelos de imagem (Stable Diffusion/XL)",
+            "Configurar workflow visual",
+            "Testar gera\u00e7\u00e3o"
+          ],
+          "dificuldade": "intermediario"
+        },
+        {
+          "id": "projeto_6",
+          "nome": "Command Center Completo com ODS",
+          "descricao": "Setup completo do AI Command Center usando ODS + Claude Code.",
+          "requisitos": ["Reposit\u00f3rio ODS do GitHub", "Claude Code ou similar"],
+          "passos": [
+            "Clonar reposit\u00f3rio ODS",
+            "Feed para Claude Code para an\u00e1lise e setup autom\u00e1tico",
+            "Configurar Tailscale para acesso remoto",
+            "Conectar todos os componentes (Chat, RAG, Agents, ComfyUI)",
+            "Monitorar via dashboard"
+          ],
+          "dificuldade": "avancado"
+        }
+      ]
+    },
+
+    {
+      "id": 8,
+      "titulo": "Manuten\u00e7\u00e3o, Debug e Escalabilidade",
+      "dificuldade": "intermediario",
+      "descricao": "Como manter seu sistema funcionando a longo prazo.",
+      "duracao_min": 60,
+      "conteudo": [
+        {
+          "tipo": "secao",
+          "titulo": "Debug com IA Fechada",
+          "texto": "Use Claude Code/CodeX ($20-200/m\u00eas) para debug e manuten\u00e7\u00e3o do setup open source.",
+          "aplicacoes": [
+            "Analisar erros de modelo",
+            "Configurar harnesses complexos",
+            "Otimizar performance por hardware",
+            "Atualizar configura\u00e7\u00f5es"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Monitoramento Cont\u00ednuo",
+          "checklist": [
+            "Monitorar CPU/RAM em tempo real via dashboard",
+            "Acompanhar context window usage",
+            "Verificar modelos ativos (Qwen, Mistral, etc)",
+            "Testar conex\u00e3o com Open Router regularmente"
+          ]
+        },
+        {
+          "tipo": "secao",
+          "titulo": "Escalabilidade",
+          "caminhos": [
+            "Adicionar mais GPUs para maior capacidade",
+            "Migrar para Mac Studio/Mac Pro para modelos maiores",
+            "Implementar load balancing entre m\u00faltiplos dispositivos",
+            "Usar Tailscale para mesh network distribu\u00eddo"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "glossario": {
+    "Open Weight Models": "Modelos onde os pesos est\u00e3o dispon\u00edveis publicamente, permitindo execu\u00e7\u00e3o local.",
+    "Inference Engine": "Motor que faz o modelo processar inputs e gerar outputs (ex: Llama.cpp).",
+    "Gateway (light LLM)": "Camada que cria APIs para conectar servi\u00e7os aos modelos locais.",
+    "Harnesses": "Ferramentas que d\u00e3o 'pernas' ao modelo, permitindo interagir com arquivos, bash, etc.",
+    "RAG": "Retrieval-Augmented Generation - t\u00e9cnica de buscar e usar documentos relevantes na resposta.",
+    "Open Web UI": "Interface web para intera\u00e7\u00e3o com modelos locais (estilo ChatGPT).",
+    "ComfyUI": "Interface visual para pipelines de gera\u00e7\u00e3o de imagens open source.",
+    "Hermes Agent": "Agente de automa\u00e7\u00e3o que roda localmente.",
+    "Open Router": "Plataforma/universal API para acessar m\u00faltiplos modelos via cr\u00e9dito.",
+    "Tailscale": "Rede mesh privada para acesso remoto seguro aos dispositivos.",
+    "ODS (Open Source Dashboard)": "Dashboard completo para gerenciar componentes de IA open source.",
+    "Ambient Agents": "Agents que rodam continuamente monitorando e automatizando tarefas.",
+    "VRAM": "Mem\u00f3ria da GPU - determina capacidade de rodar modelos maiores.",
+    "Tokens por segundo": "Medida de velocidade do modelo local."
+  },
+
+  "recursos_adicionais": {
+    "ferramentas_recomendadas": [
+      "Ollama - Gerenciamento de modelos locais",
+      "Llama.cpp - Motor de infer\u00eancia principal",
+      "Open Web UI - Interface web para modelos",
+      "ComfyUI - Gera\u00e7\u00e3o de imagens open source",
+      "Open Router - API unificada para modelos",
+      "Tailscale - Rede mesh privada",
+      "Hermes Agent - Automa\u00e7\u00e3o local",
+      "Claude Code/CodeX - Facilitador de setup ($20-200/m\u00eas)"
+    ],
+    "hardware_recomendado": {
+      "minimo": "8GB RAM, CPU moderno",
+      "ideal": "16GB+ RAM, GPU dedicada com 4GB+ VRAM",
+      "premium": "Mac Studio/Mac Pro ou GPU 24GB+ (RTX 4090/3090)"
+    },
+    "comunidads": [
+      "Discord da comunidade open source AI",
+      "Reddit r/LocalLLaMA",
+      "Hugging Face - modelo e datasets",
+      "GitHub reposit\u00f3rios relacionados"
+    ]
+  },
+
+  "roadmap_aluno": {
+    "fase_1_semana_1": {
+      "nome": "Fundamentos + Setup B\u00e1sico",
+      "acoes": [
+        "Assistir m\u00f3dulos 1-2 (conceitos e camadas)",
+        "Instalar Ollama e rodar modelo b\u00e1sico (projeto 1)",
+        "Entender conceitos de hardware e VRAM"
+      ]
+    },
+    "fase_2_semana_2": {
+      "nome": "Interface + Open Router",
+      "acoes": [
+        "Assistir m\u00f3dulos 3-4",
+        "Configurar Open Web UI (projeto 2)",
+        "Criar conta Open Router e conectar"
+      ]
+    },
+    "fase_3_semana_3": {
+      "nome": "Projetos Avan\u00e7ados",
+      "acoes": [
+        "Assistir m\u00f3dulos 5-6",
+        "Implementar RAG (projeto 3)",
+        "Configurar Hermes Agent (projeto 4)"
+      ]
+    },
+    "fase_4_semana_4": {
+      "nome": "Command Center Completo",
+      "acoes": [
+        "Assistir m\u00f3dulo 7-8",
+        "Montar Command Center com ODS (projeto 6)",
+        "Implementar ComfyUI (projeto 5)",
+        "Configurar Tailscale para acesso remoto"
+      ]
+    }
+  },
+
+  "metrics_curso": {
+    "total_modulos": 8,
+    "total_horas_estimadas": 10.5,
+    "projetos_praticos": 6,
+    "conceitos_chave": [
+      "Open vs Closed Source estrat\u00e9gico",
+      "4 camadas do ecossistema IA local",
+      "Sele\u00e7\u00e3o de modelos por hardware",
+      "Setup completo do Command Center",
+      "Estrat\u00e9gia h\u00edbrida (melhor dos 2 mundos)"
+    ],
+    "habilidades_ao_final": [
+      "Rodar modelos open source localmente com confian\u00e7a",
+      "Configurar interface web para IA pessoal",
+      "Implementar RAG para documentos",
+      "Usar Claude Code para facilitar setup/maintenance",
+      "Criar ambiente de redund\u00e2ncia contra vendor lock-in",
+      "Monitorar e manter sistema 24/7"
+    ]
+  }
+}

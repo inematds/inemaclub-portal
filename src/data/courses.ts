@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-27', title: 'iccmonit v2 — Monitor seguro de sessões Claude Code', type: 'novo', url: 'https://inematds.github.io/iccmonitv2/' },
   { date: '2026-07-27', title: 'Personal Benchmark - compare modelos com o seu próprio trabalho no Claude Code', type: 'novo', url: 'https://inematds.github.io/personal-benchmark/guia/' },
   { date: '2026-07-23', title: 'ODS — Servidor de IA privado com um comando (LLM local, chat, agentes, RAG, imagem)', type: 'novo', url: 'https://inematds.github.io/ODS/guia/' },
   { date: '2026-07-23', title: 'fable5skill — Skill de scroll-film (Claude Code): GSAP puro, Higgsfield/Kie.ai/fal ou Agnes AI (US$0)', type: 'novo', url: 'https://inematds.github.io/fable5skill/guia/' },
