@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-30",
+      "title": "saas-pay — Guia de pagamento Asaas (PIX/cartão/parcelado) + magic link pra copiar no seu SaaS",
+      "type": "novo",
+      "url": "https://inematds.github.io/saas-pay/guia/"
+    },
+    {
+      "date": "2026-07-30",
       "title": "skillmanager3x — 3 skills de gestão de sessão do Claude Code (handoff, statusline, memory-audit)",
       "type": "novo",
       "url": "https://inematds.github.io/skillmanager3x/guia/"
@@ -6146,6 +6152,13 @@
       "name": "personal-benchmark",
       "desc": "Transforma o histórico do Claude Code em um benchmark pessoal, repetível e julgado às cegas para comparar modelos e níveis de esforço.",
       "url": "https://inematds.github.io/personal-benchmark/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "💳",
+      "name": "saas-pay",
+      "desc": "Guia de referência para pagamento Asaas (PIX, cartão à vista, cartão parcelado, boleto) com liberação automática de acesso, mais login sem senha via magic link (Supabase) — código de exemplo pra copiar em qualquer SaaS Next.js.",
+      "url": "https://inematds.github.io/saas-pay/guia/",
       "badge": "Guia"
     }
   ]
