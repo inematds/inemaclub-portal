@@ -4461,6 +4461,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-07-30",
+      "title": "skillmanager3x — 3 skills de gestão de sessão do Claude Code (handoff, statusline, memory-audit)",
+      "type": "novo",
+      "url": "https://inematds.github.io/skillmanager3x/guia/"
+    },
+    {
       "date": "2026-07-28",
       "title": "zocomputer-dicas — Acessar o Zo Computer via SSH (túnel TCP + scripts prontos)",
       "type": "novo",
@@ -5106,6 +5112,13 @@
       "name": "rAgentic-cs",
       "desc": "Controle Claude Code e Codex remotamente pelo Telegram ou GitHub, com sessões persistentes em Docker, clone de repositórios e comandos versionados no seu próprio codebase.",
       "url": "https://inematds.github.io/rAgentic-cs/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧠",
+      "name": "skillmanager3x",
+      "desc": "Três skills de gestão de sessão para o Claude Code (PT/EN): handoff antes do /clear, checkpoint durante o trabalho e auditoria da memória do projeto.",
+      "url": "https://inematds.github.io/skillmanager3x/guia/",
       "badge": "Guia"
     },
     {

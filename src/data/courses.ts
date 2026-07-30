@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-30', title: 'skillmanager3x — 3 skills de gestão de sessão do Claude Code (handoff, statusline, memory-audit)', type: 'novo', url: 'https://inematds.github.io/skillmanager3x/guia/' },
   { date: '2026-07-28', title: 'zocomputer-dicas — Acessar o Zo Computer via SSH (túnel TCP + scripts prontos)', type: 'novo', url: 'https://inematds.github.io/zocomputer-dicas/guia/' },
   { date: '2026-07-28', title: 'Virtual Staging Video — de uma foto de interior ao vídeo de reforma', type: 'novo', url: 'https://inematds.github.io/vsvideo-skill/guia/' },
   { date: '2026-07-27', title: 'Scroll-Film Studio — Sites cinematográficos guiados pelo scroll', type: 'novo', url: 'https://inematds.github.io/scroll-film-studio/guia/' },
