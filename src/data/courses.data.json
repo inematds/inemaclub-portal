@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-30",
+      "title": "clima-skill — Clima, previsão, ar, mar e histórico no Claude via Open-Meteo, sem chave de API",
+      "type": "novo",
+      "url": "https://inematds.github.io/clima-skill/guia/"
+    },
+    {
+      "date": "2026-07-30",
       "title": "okf — Open Knowledge Format: conhecimento como markdown versionável, legível por gente e por agente",
       "type": "novo",
       "url": "https://inematds.github.io/okf/guia/"
@@ -5555,6 +5561,13 @@
       "name": "claude-watch",
       "desc": "Skill /watch: cola uma URL ou arquivo e o Claude baixa, extrai frames por cena, transcreve e emite um report.md (auto-save no Obsidian)",
       "url": "https://inematds.github.io/claude-watch/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🌦️",
+      "name": "clima-skill",
+      "desc": "Skill do Claude que consulta e interpreta clima atual, previsão, qualidade do ar, UV/pólen, condições marítimas, vazão de rios e histórico via Open-Meteo — sem chave de API",
+      "url": "https://inematds.github.io/clima-skill/guia/",
       "badge": "Guia"
     },
     {
