@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-07-30', title: 'nubank-pay — Nubank não tem API de pagamento: BR Code oficial vs. workaround de comunidade', type: 'novo', url: 'https://inematds.github.io/nubank-pay/guia/' },
   { date: '2026-07-30', title: 'saas-pay — Guia de pagamento Asaas (PIX/cartão/parcelado) + magic link pra copiar no seu SaaS', type: 'novo', url: 'https://inematds.github.io/saas-pay/guia/' },
   { date: '2026-07-30', title: 'skillmanager3x — 3 skills de gestão de sessão do Claude Code (handoff, statusline, memory-audit)', type: 'novo', url: 'https://inematds.github.io/skillmanager3x/guia/' },
   { date: '2026-07-28', title: 'zocomputer-dicas — Acessar o Zo Computer via SSH (túnel TCP + scripts prontos)', type: 'novo', url: 'https://inematds.github.io/zocomputer-dicas/guia/' },

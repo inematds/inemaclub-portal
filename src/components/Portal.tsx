@@ -187,6 +187,7 @@ const communityProjects: Array<{
   { icon: "🎞️", name: "fable5skill", desc: "Skill de Claude Code que constrói sites scroll-film (a página inteira é um plano-sequência cinematográfico que se dissolve no conteúdo ao rolar), com 3 lanes: GSAP puro, Higgsfield/Kie.ai/fal e Agnes AI (US$0).", url: "https://inematds.github.io/fable5skill/guia/", badge: "Guia" },
   { icon: "🧪", name: "personal-benchmark", desc: "Transforma o histórico do Claude Code em um benchmark pessoal, repetível e julgado às cegas para comparar modelos e níveis de esforço.", url: "https://inematds.github.io/personal-benchmark/guia/", badge: "Guia" },
   { icon: "💳", name: "saas-pay", desc: "Guia de referência para pagamento Asaas (PIX, cartão à vista, cartão parcelado, boleto) com liberação automática de acesso, mais login sem senha via magic link (Supabase) — código de exemplo pra copiar em qualquer SaaS Next.js.", url: "https://inematds.github.io/saas-pay/guia/", badge: "Guia" },
+  { icon: "🏦", name: "nubank-pay", desc: "Análise honesta: o Nubank não tem API/webhook oficial de pagamento. Documenta o BR Code (padrão público do Banco Central), o workaround de comunidade de ler o email de confirmação via Gmail API, e um fallback de comprovante validado por OCR/visão.", url: "https://inematds.github.io/nubank-pay/guia/", badge: "Guia" },
 ]
 
 type RepoUpdate = {
