@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-07-30",
+      "title": "okf — Open Knowledge Format: conhecimento como markdown versionável, legível por gente e por agente",
+      "type": "novo",
+      "url": "https://inematds.github.io/okf/guia/"
+    },
+    {
+      "date": "2026-07-30",
       "title": "nubank-pay — Nubank não tem API de pagamento: BR Code oficial vs. workaround de comunidade",
       "type": "novo",
       "url": "https://inematds.github.io/nubank-pay/guia/"
@@ -5402,6 +5408,13 @@
       "name": "intelecto-testes",
       "desc": "Agente de IA no WhatsApp via Evolution API + OpenRouter, sobe em Docker",
       "url": "https://inematds.github.io/intelecto-testes/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📚",
+      "name": "okf",
+      "desc": "Open Knowledge Format: formato aberto e vendor-neutral que representa conhecimento como markdown + YAML frontmatter, em bundles versionáveis em git, com agente de referência em Python e visualizador de grafo.",
+      "url": "https://inematds.github.io/okf/guia/",
       "badge": "Guia"
     },
     {
