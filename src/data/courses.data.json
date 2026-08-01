@@ -4461,6 +4461,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-01",
+      "title": "generator-skill — Skill /generate em duas versões: local na GPU (custo zero) e API com portão de custo e livro-caixa",
+      "type": "novo",
+      "url": "https://inematds.github.io/generator-skill/guia/"
+    },
+    {
       "date": "2026-07-30",
       "title": "clima-skill — Clima, previsão, ar, mar e histórico no Claude via Open-Meteo, sem chave de API",
       "type": "novo",
@@ -5568,6 +5574,13 @@
       "name": "clima-skill",
       "desc": "Skill do Claude que consulta e interpreta clima atual, previsão, qualidade do ar, UV/pólen, condições marítimas, vazão de rios e histórico via Open-Meteo — sem chave de API",
       "url": "https://inematds.github.io/clima-skill/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎛️",
+      "name": "generator-skill",
+      "desc": "Skill /generate em duas versões — uma que roda modelo local na GPU (custo zero) e outra 100% por API, com portão de custo, livro-caixa e o prompt guardado ao lado de cada arquivo",
+      "url": "https://inematds.github.io/generator-skill/guia/",
       "badge": "Guia"
     },
     {

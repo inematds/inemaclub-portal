@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-01', title: 'generator-skill — Skill /generate em duas versões: local na GPU (custo zero) e API com portão de custo e livro-caixa', type: 'novo', url: 'https://inematds.github.io/generator-skill/guia/' },
   { date: '2026-07-30', title: 'clima-skill — Clima, previsão, ar, mar e histórico no Claude via Open-Meteo, sem chave de API', type: 'novo', url: 'https://inematds.github.io/clima-skill/guia/' },
   { date: '2026-07-30', title: 'okf — Open Knowledge Format: conhecimento como markdown versionável, legível por gente e por agente', type: 'novo', url: 'https://inematds.github.io/okf/guia/' },
   { date: '2026-07-30', title: 'nubank-pay — Nubank não tem API de pagamento: BR Code oficial vs. workaround de comunidade', type: 'novo', url: 'https://inematds.github.io/nubank-pay/guia/' },
