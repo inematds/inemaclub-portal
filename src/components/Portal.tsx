@@ -460,7 +460,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
             <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
             <a href="#comunidade" className="section-nav-link">🚀 Projetos</a>
-            <a href="#github" className="section-nav-link">💻 GitHub</a>
             <a href="#telegram" className="section-nav-link">💬 Telegram</a>
             <a href="#social" className="section-nav-link">📱 Social</a>
             <a
@@ -1030,6 +1029,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           )}
 
           {/* Repo Updates (GitHub) */}
+          {SHOW_DETALHES && (
           <section className="updates-section">
             <div
               className="updates-header"
@@ -1067,6 +1067,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))}
             </div>
           </section>
+          )}
 
           {/* Banner Perfis IA */}
           <section className="perfis-ia-section">
@@ -1317,6 +1318,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             <h3>Trilhas de Aprendizado do INEMA.PRO</h3>
             <p>Escolha seu caminho e avance com foco — o conteúdo completo de cada trilha está no INEMA.PRO</p>
           </div>
+          <div className={SHOW_DETALHES ? '' : 'trilhas-titles-grid'}>
           {([
             { title: '🧭 Trilha Profissional com IA', steps: [] },
             { title: '⚡ Trilha Vibe Code', steps: [] },
@@ -1502,6 +1504,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               )}
             </div>
           ))}
+          </div>
           <div className="learning-path-footer">
             <div className="guide-link-btn-wrap">
               <a
@@ -1525,9 +1528,12 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="community-projects-header">
             <h3>Projetos</h3>
-            <p>Mais de 400 projetos desenvolvidos pela INEMA — prontos para baixar e usar</p>
+            <p>Projetos desenvolvidos pela INEMA — prontos para baixar e usar</p>
           </div>
-          <div className="learning-path-footer">
+          <div className="projetos-cta">
+            <div className="projetos-cta-number">+400</div>
+            <p>projetos prontos para baixar e usar</p>
+            <p>Aplicativos, agentes, skills e ferramentas construídos pela comunidade INEMA, com código e guia de uso.</p>
             <div className="guide-link-btn-wrap">
               <a
                 className="guide-link-btn"
@@ -1570,7 +1576,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* GitHub Repos */}
+      {/* GitHub Repos — retirado da home, ver SHOW_DETALHES */}
+      {SHOW_DETALHES && (
       <section id="github" className="github-section">
         <div className="container">
           <div className="github-header">
@@ -1624,6 +1631,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </div>
         </div>
       </section>
+      )}
 
       {/* Hero Banners */}
       <section className="hero-banner">

@@ -789,6 +789,60 @@ html {
     padding-left: 0.25rem;
 }
 
+/* Grade de títulos de trilha (home sem os cursos) */
+.trilhas-titles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.trilhas-titles-grid .trilha-group {
+    margin-bottom: 0;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1.1rem 1.2rem;
+    transition: all 0.25s ease;
+}
+
+.trilhas-titles-grid .trilha-group:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.trilhas-titles-grid .trilha-group-title {
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+/* Chamada única de Projetos */
+.projetos-cta {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+}
+
+.projetos-cta-number {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.projetos-cta p {
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+}
+
 /* Social Media Section */
 .social-section {
     background: var(--bg-secondary);
