@@ -19,10 +19,30 @@ App **Next.js 16 (App Router)** hospedado no **Vercel**, servindo `inema.club`. 
 
 **Arquivos que valem:**
 - `src/app/globals.css` — **o CSS global de verdade** (importado por `src/app/layout.tsx`). As classes globais usadas pelo `Portal.tsx` (`.header`, `.community-badge`, `.section-nav`…) vivem aqui. Cuidado: o `styles.css` da raiz tem cópias antigas dessas MESMAS classes e não é servido — editar lá não muda nada no site.
-- `src/data/courses.ts` — fonte única dos cursos (`platformsData`) e do histórico (`updatesData`). Consumido por Portal.tsx e PortalV2.tsx via `import`.
-- `src/components/Portal.tsx` — rota `/` (versão atual). Tem também uma **lista hardcoded de trilhas** que precisa ser atualizada manualmente quando o curso pertencer a alguma trilha.
-- `src/components/PortalV2.tsx` — rota `/new`. **CONGELADO — NÃO ATUALIZAR MAIS** (descontinuado, mantido só por histórico). Toda atualização de curso/trilha vai apenas no `Portal.tsx`.
-- `src/app/page.tsx` → renderiza `Portal`. `src/app/new/page.tsx` → renderiza `PortalV2`.
+- `src/data/courses.ts` — fonte única dos cursos (`platformsData`) e dos feeds `updatesData` / `projectUpdatesData`.
+- `src/components/Portal.tsx` — rota `/`, home única. Tem também o array `communityProjects` (projetos) e a **lista hardcoded de trilhas**.
+- `src/app/page.tsx` → renderiza `Portal`. (`PortalV2.tsx` e a rota `/new` foram **removidos** — não existem mais.)
+
+## Home enxuta (2026-08-01) — flag `SHOW_DETALHES`
+
+O topo do `Portal.tsx` tem `const SHOW_DETALHES = false`. Ele esconde, **sem apagar nada**: o grid de cursos, a busca, o grid de projetos, os itens dentro dos blocos de trilha e a seção de repositórios GitHub. Religar pra `true` traz tudo de volta.
+
+A home hoje: header → evento → Trilha para Iniciantes (completa) → 3 quadros de "Últimas Atualizações" (cursos, projetos, repositório) → banner Perfis IA → banners → "Trilhas de Aprendizado do INEMA.PRO" (só títulos, em grade) → Projetos (chamada única "+400", botão pro `inema.pro`) → Telegram → social → footer.
+
+**Os arrays continuam sendo mantidos normalmente** — `platformsData` e `communityProjects` alimentam o `pro.inema.club` via `courses.data.json` → `cursos.json`/`projetos.json` → `base.json`. Não pare de atualizá-los só porque não renderizam mais aqui.
+
+Snapshot estático da home anterior: `public/index2.html` → `https://inema.club/index2.html`.
+
+## Agente de chat (guia do site)
+
+`src/components/AgenteChat/` monta o widget; a inteligência está na Edge Function do Supabase, em `supabase/functions/`. Dois arquivos importam:
+
+- `_shared/tools.ts` → `PORTAL_ANCHORS`, enum fechado de rotas do `navigate_to`. Hoje: `#trilha-iniciantes`, `#trilhas`, `#projetos`, `#comunidade`, `#telegram`, `#social`. **Mexeu em seção da home? Atualize aqui**, senão o agente leva o visitante pra âncora morta.
+- `_shared/prompts.ts` → system prompt, com o mapa do site e a arquitetura de ofertas.
+
+O catálogo que o agente cita vive na tabela `catalogo_fichas` (Supabase), espelhando as páginas do repo `NeiMaldaner/conhecimento` (servidas em `/conhecimento/*` via rewrite no `src/proxy.ts`). Mudou a ficha? Atualize a página **e** a linha da tabela.
+
+**Edge Function não sai no deploy do Vercel** — depois de editar `supabase/functions/`, rode `npx supabase functions deploy chat`.
 
 ## Como adicionar um curso novo
 
@@ -59,7 +79,7 @@ Se o curso pertence a uma trilha existente (Claude Code, Agentes Jarvis, etc), a
 { href: 'https://inematds.github.io/repo/', label: 'nome-curto', desc: 'Descrição curta' },
 ```
 
-`PortalV2.tsx` (rota `/new`) está **congelado** — não precisa mais ser atualizado.
+Desde 2026-08-01 os itens de trilha **não renderizam** na home (só os títulos das trilhas aparecem) — mas continue adicionando: o dado fica preservado e volta com `SHOW_DETALHES = true`.
 
 ### 4. Commit + push
 
