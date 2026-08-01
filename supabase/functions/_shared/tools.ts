@@ -2,16 +2,14 @@
 // (OpenRouter normaliza assim mesmo para modelos Claude por trás).
 // O modelo NUNCA inventa rota: navigate_to só aceita valores do enum.
 
+// Só âncoras que existem de verdade na home (Portal.tsx). Atualizado em
+// 2026-08-01: saíram #cursos, #github e as trilhas Profissional/Vibe/Skills —
+// a home passou a mostrar só títulos de trilha e uma chamada de projetos.
 const PORTAL_ANCHORS = [
   '/#trilha-iniciantes',
-  '/#trilha-profissional',
-  '/#trilha-vibe',
-  '/#trilha-skills',
   '/#trilhas',
-  '/#cursos',
   '/#projetos',
   '/#comunidade',
-  '/#github',
   '/#telegram',
   '/#social',
 ];
