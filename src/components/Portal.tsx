@@ -967,7 +967,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       <main className="main">
         <div className="container">
           {/* Updates de Cursos */}
-          {SHOW_DETALHES && (
           <section className="updates-section">
             <div
               className="updates-header"
@@ -995,10 +994,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))}
             </div>
           </section>
-          )}
 
           {/* Updates de Projetos */}
-          {SHOW_DETALHES && (
           <section className="updates-section">
             <div
               className="updates-header"
@@ -1026,7 +1023,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))}
             </div>
           </section>
-          )}
 
           {/* Repo Updates (GitHub) */}
           {SHOW_DETALHES && (
