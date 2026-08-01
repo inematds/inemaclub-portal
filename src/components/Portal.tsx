@@ -226,6 +226,16 @@ const LANG_ICON: Record<string, string> = {
   Dockerfile: '🐳',
 }
 
+/**
+ * Flag de conteúdo detalhado (cursos, busca, atualizações de cursos/projetos,
+ * cards das trilhas Profissional/Vibe/Skills e cards de projetos).
+ * Desligado em 2026-08-01: a home passou a mostrar só títulos de trilhas +
+ * chamada única de projetos. O código e os dados ficam preservados aqui para
+ * reaproveitamento — basta voltar para `true`.
+ * Snapshot da versão anterior: /index2.html
+ */
+const SHOW_DETALHES = false
+
 export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
@@ -448,10 +458,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               🔍 Buscas
             </a>
             <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
-            <a href="#trilha-profissional" className="section-nav-link">🧭 Profissional</a>
-            <a href="#cursos" className="section-nav-link">🎓 Cursos</a>
-            <a href="#trilha-vibe" className="section-nav-link">⚡ Vibe Code</a>
-            <a href="#trilha-skills" className="section-nav-link">🧩 Skills</a>
             <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
             <a href="#comunidade" className="section-nav-link">🚀 Projetos</a>
             <a href="#github" className="section-nav-link">💻 GitHub</a>
@@ -748,7 +754,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* Trilha Profissional com IA */}
+      {/* Trilha Profissional com IA — detalhe preservado, ver SHOW_DETALHES */}
+      {SHOW_DETALHES && (
       <section id="trilha-profissional" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
@@ -955,11 +962,13 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </a>
         </div>
       </section>
+      )}
 
       {/* Main — Updates + Search + Cards */}
       <main className="main">
         <div className="container">
           {/* Updates de Cursos */}
+          {SHOW_DETALHES && (
           <section className="updates-section">
             <div
               className="updates-header"
@@ -987,8 +996,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))}
             </div>
           </section>
+          )}
 
           {/* Updates de Projetos */}
+          {SHOW_DETALHES && (
           <section className="updates-section">
             <div
               className="updates-header"
@@ -1016,6 +1027,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))}
             </div>
           </section>
+          )}
 
           {/* Repo Updates (GitHub) */}
           <section className="updates-section">
@@ -1108,6 +1120,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </section>
 
           {/* Search */}
+          {SHOW_DETALHES && (
           <section id="cursos" className="search-section">
             <input
               type="text"
@@ -1120,8 +1133,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               }}
             />
           </section>
+          )}
 
           {/* Cards */}
+          {SHOW_DETALHES && (
           <section className="cards-grid">
             {isSearching ? (
               unifiedResults.length === 0 ? (
@@ -1189,6 +1204,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))
             )}
           </section>
+          )}
         </div>
       </main>
 
@@ -1207,7 +1223,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* Trilha Vibe Code */}
+      {/* Trilha Vibe Code — detalhe preservado, ver SHOW_DETALHES */}
+      {SHOW_DETALHES && (
       <section id="trilha-vibe" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
@@ -1244,8 +1261,10 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </div>
         </div>
       </section>
+      )}
 
-      {/* Trilha Skills */}
+      {/* Trilha Skills — detalhe preservado, ver SHOW_DETALHES */}
+      {SHOW_DETALHES && (
       <section id="trilha-skills" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
@@ -1282,6 +1301,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </div>
         </div>
       </section>
+      )}
 
       {/* Banner */}
       <section className="hero-banner">
@@ -1290,14 +1310,17 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* Trilhas de Aprendizado */}
+      {/* Trilhas de Aprendizado — só os títulos das trilhas */}
       <section id="trilhas" className="trilhas-section">
         <div className="container">
           <div className="learning-path-header">
-            <h3>Trilhas de Aprendizado</h3>
-            <p>18 trilhas temáticas — escolha seu caminho e avance com foco</p>
+            <h3>Trilhas de Aprendizado do INEMA.PRO</h3>
+            <p>Escolha seu caminho e avance com foco — o conteúdo completo de cada trilha está no INEMA.PRO</p>
           </div>
           {([
+            { title: '🧭 Trilha Profissional com IA', steps: [] },
+            { title: '⚡ Trilha Vibe Code', steps: [] },
+            { title: '🧩 Trilha Skills', steps: [] },
             { title: '🎯 Arquitetura de IA', steps: [
               { href: 'https://inematds.github.io/arquitetura-de-intencao/', label: 'Arquitetura de Intenção', desc: 'Imersão de 3 dias — do prompt ao sistema' },
               { href: 'https://inematds.github.io/manual-oculto-ia/',        label: 'Manual Oculto',         desc: 'System Prompts como os Labs Fazem — o cérebro do Fable' },
@@ -1464,6 +1487,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">
               <h4 className="trilha-group-title">{trail.title}</h4>
+              {SHOW_DETALHES && (
               <div className="learning-path-cards">
                 {trail.steps.map((p, i) => (
                   <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
@@ -1475,8 +1499,22 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   </a>
                 ))}
               </div>
+              )}
             </div>
           ))}
+          <div className="learning-path-footer">
+            <div className="guide-link-btn-wrap">
+              <a
+                className="guide-link-btn"
+                href="https://inema.pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick('https://inema.pro', 'Trilhas — INEMA.PRO', 'trilhas')}
+              >
+                🧭 Acesse as trilhas completas no INEMA.PRO
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1487,8 +1525,22 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         <div className="container">
           <div className="community-projects-header">
             <h3>Projetos</h3>
-            <p>Cards com os projetos desenvolvidos pela INEMA</p>
+            <p>Mais de 400 projetos desenvolvidos pela INEMA — prontos para baixar e usar</p>
           </div>
+          <div className="learning-path-footer">
+            <div className="guide-link-btn-wrap">
+              <a
+                className="guide-link-btn"
+                href="https://inema.pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick('https://inema.pro', 'Projetos — INEMA.PRO', 'projetos-comunidade')}
+              >
+                🚀 Ver os projetos no INEMA.PRO
+              </a>
+            </div>
+          </div>
+          {SHOW_DETALHES && (
           <div className="community-projects-grid">
             {sortedProjects.map((project) =>
               project.url ? (
@@ -1514,6 +1566,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               )
             )}
           </div>
+          )}
         </div>
       </section>
 
