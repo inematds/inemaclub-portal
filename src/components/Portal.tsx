@@ -1025,7 +1025,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           </section>
 
           {/* Repo Updates (GitHub) */}
-          {SHOW_DETALHES && (
           <section className="updates-section">
             <div
               className="updates-header"
@@ -1063,7 +1062,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               ))}
             </div>
           </section>
-          )}
 
           {/* Banner Perfis IA */}
           <section className="perfis-ia-section">
