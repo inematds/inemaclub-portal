@@ -18,7 +18,7 @@ export interface Update {
 export const projectUpdatesData: Update[] = [
   { date: '2026-08-02', title: 'inemaccbot — Gateway Telegram + fila durável: skills e fluxos com estado, portão humano e retomada', type: 'novo', url: 'https://inematds.github.io/inemaccbot/guia/' },
   { date: '2026-08-02', title: 'promoavatar — Um assunto vira 12 reels, um por público, com portão humano antes do render', type: 'novo', url: 'https://inematds.github.io/promoavatar/guia/' },
-  { date: '2026-08-02', title: 'promoavatar2 — Três vídeos por público: alcance, autoridade e promocional como funções diferentes', type: 'novo', url: 'https://inematds.github.io/promoavatar2/guia/' },
+  { date: '2026-08-02', title: 'promoavatar3 — Três vídeos por público: alcance, autoridade e promocional como funções diferentes', type: 'novo', url: 'https://inematds.github.io/promoavatar3/guia/' },
   { date: '2026-08-01', title: 'generator-skill — Skill /generate em duas versões: local na GPU (custo zero) e API com portão de custo e livro-caixa', type: 'novo', url: 'https://inematds.github.io/generator-skill/guia/' },
   { date: '2026-07-30', title: 'clima-skill — Clima, previsão, ar, mar e histórico no Claude via Open-Meteo, sem chave de API', type: 'novo', url: 'https://inematds.github.io/clima-skill/guia/' },
   { date: '2026-07-30', title: 'okf — Open Knowledge Format: conhecimento como markdown versionável, legível por gente e por agente', type: 'novo', url: 'https://inematds.github.io/okf/guia/' },
