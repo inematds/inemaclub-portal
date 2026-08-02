@@ -4462,6 +4462,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-02",
+      "title": "inemadlp — Downloader pessoal na sua VPS: cola o link no celular, baixa com yt-dlp e o arquivo expira em 6h",
+      "type": "novo",
+      "url": "https://inematds.github.io/inemadlp/guia/"
+    },
+    {
+      "date": "2026-08-02",
       "title": "inemaccbot — Gateway Telegram + fila durável: skills e fluxos com estado, portão humano e retomada",
       "type": "novo",
       "url": "https://inematds.github.io/inemaccbot/guia/"
@@ -5041,6 +5047,13 @@
       "name": "inemaccbot",
       "desc": "Bot de Telegram com fila durável em SQLite que roda skills de uma etapa e fluxos de várias fases com estado, portão humano e retomada depois de queda — domínio novo entra sem uma linha de código.",
       "url": "https://inematds.github.io/inemaccbot/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "⬇️",
+      "name": "inemadlp",
+      "desc": "Downloader pessoal de vídeo e áudio que roda na sua VPS: você cola o link pelo celular, o yt-dlp baixa e devolve o arquivo, que se apaga sozinho depois de 6 horas.",
+      "url": "https://inematds.github.io/inemadlp/guia/",
       "badge": "Guia"
     },
     {

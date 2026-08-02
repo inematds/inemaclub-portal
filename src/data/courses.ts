@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-02', title: 'inemadlp — Downloader pessoal na sua VPS: cola o link no celular, baixa com yt-dlp e o arquivo expira em 6h', type: 'novo', url: 'https://inematds.github.io/inemadlp/guia/' },
   { date: '2026-08-02', title: 'inemaccbot — Gateway Telegram + fila durável: skills e fluxos com estado, portão humano e retomada', type: 'novo', url: 'https://inematds.github.io/inemaccbot/guia/' },
   { date: '2026-08-02', title: 'promoavatar — Um assunto vira 12 reels, um por público, com portão humano antes do render', type: 'novo', url: 'https://inematds.github.io/promoavatar/guia/' },
   { date: '2026-08-02', title: 'promoavatar3 — Três vídeos por público: alcance, autoridade e promocional como funções diferentes', type: 'novo', url: 'https://inematds.github.io/promoavatar3/guia/' },
