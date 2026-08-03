@@ -1039,6 +1039,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/vla-formacao/',
   },
   {
+    id: 230,
+    title: 'Formação IA — Pedir bem já não basta mais',
+    description:
+      'Nove aulas para sair do pedido solto no chat e montar a estrutura de trabalho em volta da IA: pedido em cinco partes, dossiê de contexto, receita fixa para a tarefa repetida, ficha de memória, três faixas de limite e ciclo de conferência. Escrito para profissionais que produzem texto e decisão, sem nenhuma base técnica — com exemplos de advogada, gestor de marketing e contadora.',
+    icon: '🧰',
+    tags: ['IA no Trabalho', 'Contexto', 'Harness', 'Sem Programar'],
+    url: 'https://inematds.github.io/formacaoia/',
+  },
+  {
     id: 61,
     title: 'FPFilm - Crie Filmes com IA',
     description:
@@ -2019,6 +2028,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/video-explicativo/guia/',
   },
   {
+    id: 230,
+    title: 'Workshop Avançado de Engenharia de Software com IA',
+    description:
+      'Engenharia AI First sem perder o controle: Spec-Driven Development, Harness Engineering, Loop Engineering, automações, code review com IA, quality gates, modernização de legado, arquitetura legível para agentes, playbooks, skills, rules e governança. 6 trilhas, 15 módulos, 90 tópicos — a última é um exercício prático ponta a ponta (spec → harness → loop → gates → revisão → entrega).',
+    icon: '🤖',
+    tags: ['Engenharia de Software', 'Spec-Driven', 'Agentes', 'Quality Gates', 'Governança', 'IA'],
+    url: 'https://inematds.github.io/ws2ia/',
+  },
+  {
     id: 142,
     title: 'video-plan-editor — Plano de Edição de Vídeo',
     description:
@@ -2185,6 +2203,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-03', title: 'Formação IA — Pedir bem já não basta mais (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/formacaoia/' },
   { date: '2026-07-23', title: 'Guia de Engenharia de IA Local — Do hardware ao enxame de agentes', type: 'novo', url: 'https://inematds.github.io/guiaailocal/' },
   { date: '2026-07-13', title: 'Formação Cinema com IA — 9 cursos, 58 aulas, do primeiro quadro ao filme final (formato v5)', type: 'novo', url: 'https://inematds.github.io/idallai/' },
   { date: '2026-07-13', title: 'Construa seu AI OS — Assistente de IA pessoal sem programar (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/builaios/' },

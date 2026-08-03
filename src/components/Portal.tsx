@@ -779,6 +779,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/prof2030/',          label: 'Prof2030',              desc: 'O Profissional do Futuro',                n: 7 },
               { href: 'https://inematds.github.io/os-agentes/guia/',   label: 'OS Agentes',            desc: 'Construa seu OS agêntico, uma camada por vez', n: 8 },
               { href: 'https://inematds.github.io/builaios/',   label: 'Construa seu AI OS',    desc: 'Assistente de IA pessoal, sem programar', n: 9 },
+              { href: 'https://inematds.github.io/formacaoia/', label: 'Formação IA',           desc: 'Pedir bem já não basta: monte a estrutura em volta da IA', n: 10 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
