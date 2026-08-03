@@ -3043,7 +3043,7 @@
       "url": "https://inematds.github.io/video-explicativo/guia/"
     },
     {
-      "id": 230,
+      "id": 231,
       "title": "Workshop Avançado de Engenharia de Software com IA",
       "description": "Engenharia AI First sem perder o controle: Spec-Driven Development, Harness Engineering, Loop Engineering, automações, code review com IA, quality gates, modernização de legado, arquitetura legível para agentes, playbooks, skills, rules e governança. 6 trilhas, 15 módulos, 90 tópicos — a última é um exercício prático ponta a ponta (spec → harness → loop → gates → revisão → entrega).",
       "icon": "🤖",
@@ -3316,6 +3316,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-08-03",
+      "title": "Workshop Avançado de Engenharia de Software com IA — AI First sem perder o controle (6 trilhas, 15 módulos, exercício prático)",
+      "type": "novo",
+      "url": "https://inematds.github.io/ws2ia/"
+    },
     {
       "date": "2026-08-03",
       "title": "Formação IA — Pedir bem já não basta mais (9 aulas, formato v5)",
