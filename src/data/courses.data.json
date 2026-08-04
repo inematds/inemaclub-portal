@@ -4501,6 +4501,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-04",
+      "title": "video-making-of-skill — Uma foto vira maquete e o efeito prático destrói ela: making of em plano único",
+      "type": "novo",
+      "url": "https://inematds.github.io/video-making-of-skill/guia/"
+    },
+    {
       "date": "2026-08-02",
       "title": "inemadlp — Downloader pessoal na sua VPS: cola o link no celular, baixa com yt-dlp e o arquivo expira em 6h",
       "type": "novo",
@@ -5157,6 +5163,13 @@
       "name": "video-explicativo",
       "desc": "Skill (Claude Code) que cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto: roteiro, narração TTS local,…",
       "url": "https://inematds.github.io/video-explicativo/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🌊",
+      "name": "video-making-of-skill",
+      "desc": "Uma foto vira maquete dentro de um rig de efeitos práticos de estúdio e a simulação destrói a maquete em plano único de bastidores — receitas medidas para Kling e Agnes.",
+      "url": "https://inematds.github.io/video-making-of-skill/guia/",
       "badge": "Guia"
     },
     {
