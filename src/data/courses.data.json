@@ -4541,6 +4541,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-05",
+      "title": "musicaclone — Link de música vira clone ou faixa nova no Suno, com portão antes de gastar crédito",
+      "type": "novo",
+      "url": "https://inematds.github.io/musicaclone/guia/"
+    },
+    {
       "date": "2026-08-04",
       "title": "video-making-of-skill — Uma foto vira maquete e o efeito prático destrói ela: making of em plano único",
       "type": "novo",
@@ -5140,6 +5146,13 @@
       "name": "inemadlp",
       "desc": "Downloader pessoal de vídeo e áudio que roda na sua VPS: você cola o link pelo celular, o yt-dlp baixa e devolve o arquivo, que se apaga sozinho depois de 6 horas.",
       "url": "https://inematds.github.io/inemadlp/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎵",
+      "name": "musicaclone",
+      "desc": "CLI que clona ou cria música via Suno (API do Kie): entende o estilo do link, checa se é mesmo música e se a letra está completa, e só gera depois do seu ok — com o custo medido de verdade.",
+      "url": "https://inematds.github.io/musicaclone/guia/",
       "badge": "Guia"
     },
     {

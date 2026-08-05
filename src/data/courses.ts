@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-05', title: 'musicaclone — Link de música vira clone ou faixa nova no Suno, com portão antes de gastar crédito', type: 'novo', url: 'https://inematds.github.io/musicaclone/guia/' },
   { date: '2026-08-04', title: 'video-making-of-skill — Uma foto vira maquete e o efeito prático destrói ela: making of em plano único', type: 'novo', url: 'https://inematds.github.io/video-making-of-skill/guia/' },
   { date: '2026-08-02', title: 'inemadlp — Downloader pessoal na sua VPS: cola o link no celular, baixa com yt-dlp e o arquivo expira em 6h', type: 'novo', url: 'https://inematds.github.io/inemadlp/guia/' },
   { date: '2026-08-02', title: 'inemaccbot — Gateway Telegram + fila durável: skills e fluxos com estado, portão humano e retomada', type: 'novo', url: 'https://inematds.github.io/inemaccbot/guia/' },
