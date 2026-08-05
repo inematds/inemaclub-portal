@@ -1804,6 +1804,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/segundo-cerebro/',
   },
   {
+    id: 233,
+    title: 'Seu Funcionário Digital — 7 dias de automação com Claude Code',
+    description:
+      'Monte um assistente de IA que trabalha sozinho, do zero e sem saber programar. 8 trilhas e 52 módulos cobrindo o framework WAT, servidores MCP, skills, deploy na nuvem, interfaces, tarefas agendadas e o assistente executivo final. Escrito para quem nunca programou: cada termo técnico é definido na hora e cada módulo traz exemplo copy-run.',
+    icon: '🤖',
+    tags: ['Claude Code', 'Automação', 'MCP', 'Skills', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/wat7d/',
+  },
+  {
     id: 30,
     title: 'SHIA - Super Humanos Inteligência Ampliada',
     description:
@@ -2213,6 +2222,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-05', title: 'Seu Funcionário Digital — 7 dias de automação com Claude Code (8 trilhas, 52 módulos, formato v2)', type: 'novo', url: 'https://inematds.github.io/wat7d/' },
   { date: '2026-08-05', title: 'Graph Engineering — De Loops a Grafos (5 trilhas, 15 módulos, 90 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/loopgraph/' },
   { date: '2026-08-03', title: 'Workshop Avançado de Engenharia de Software com IA — AI First sem perder o controle (6 trilhas, 15 módulos, exercício prático)', type: 'novo', url: 'https://inematds.github.io/ws2ia/' },
   { date: '2026-08-03', title: 'Formação IA — Pedir bem já não basta mais (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/formacaoia/' },
