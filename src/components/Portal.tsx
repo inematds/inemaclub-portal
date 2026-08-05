@@ -538,7 +538,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/inema-agentes-hub-v.png"
+              src="/doc/vczero.png"
               alt="INEMA Agentes Hub V — curso online de cinco dias para construir um hub de agentes"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -970,6 +970,34 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
       )}
+
+      {/* Banner INEMA Agentes Hub V */}
+      <section style={{ padding: '0 0 2rem' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/', 'INEMA Agentes Hub V — banner', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/doc/inemaagenteshubv.jpg"
+              alt="INEMA Agentes Hub V"
+              loading="lazy"
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
 
       {/* Main — Updates + Search + Cards */}
       <main className="main">
