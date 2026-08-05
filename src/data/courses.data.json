@@ -1556,6 +1556,19 @@
       "url": "https://inematds.github.io/github/"
     },
     {
+      "id": 232,
+      "title": "Graph Engineering — De Loops a Grafos",
+      "description": "Do nó e da aresta ao grafo de agentes: por que o loop trava, o que o grafo resolve de verdade e o que nele é só hype. 5 trilhas, 15 módulos, 90 tópicos, com prompts prontos.",
+      "icon": "🕸️",
+      "tags": [
+        "Agentes",
+        "Arquitetura",
+        "Orquestração",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/loopgraph/"
+    },
+    {
       "id": 229,
       "title": "Guia de Engenharia de IA Local — Do hardware ao enxame de agentes",
       "description": "Guia completo em página única sobre montar sua própria pilha de IA local: hardware, inferência, modelos open-weight, compressão, engenharia de contexto, agentes de código, segurança e produção em escala.",
@@ -3316,6 +3329,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-08-05",
+      "title": "Graph Engineering — De Loops a Grafos (5 trilhas, 15 módulos, 90 tópicos, formato v2)",
+      "type": "novo",
+      "url": "https://inematds.github.io/loopgraph/"
+    },
     {
       "date": "2026-08-03",
       "title": "Workshop Avançado de Engenharia de Software com IA — AI First sem perder o controle (6 trilhas, 15 módulos, exercício prático)",

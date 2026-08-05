@@ -1094,6 +1094,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/github/',
   },
   {
+    id: 232,
+    title: 'Graph Engineering — De Loops a Grafos',
+    description:
+      'Do nó e da aresta ao grafo de agentes: por que o loop trava, o que o grafo resolve de verdade e o que nele é só hype. 5 trilhas, 15 módulos, 90 tópicos, com prompts prontos.',
+    icon: '🕸️',
+    tags: ['Agentes', 'Arquitetura', 'Orquestração', 'IA'],
+    url: 'https://inematds.github.io/loopgraph/',
+  },
+  {
     id: 229,
     title: 'Guia de Engenharia de IA Local — Do hardware ao enxame de agentes',
     description:
@@ -2204,6 +2213,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-05', title: 'Graph Engineering — De Loops a Grafos (5 trilhas, 15 módulos, 90 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/loopgraph/' },
   { date: '2026-08-03', title: 'Workshop Avançado de Engenharia de Software com IA — AI First sem perder o controle (6 trilhas, 15 módulos, exercício prático)', type: 'novo', url: 'https://inematds.github.io/ws2ia/' },
   { date: '2026-08-03', title: 'Formação IA — Pedir bem já não basta mais (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/formacaoia/' },
   { date: '2026-07-23', title: 'Guia de Engenharia de IA Local — Do hardware ao enxame de agentes', type: 'novo', url: 'https://inematds.github.io/guiaailocal/' },
