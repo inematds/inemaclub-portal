@@ -4541,6 +4541,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-06",
+      "title": "n8n-maker — Sete skills que tornam o Claude Code especialista em workflows do n8n",
+      "type": "novo",
+      "url": "https://inematds.github.io/n8n-maker/guia/"
+    },
+    {
       "date": "2026-08-05",
       "title": "musicaclone — Link de música vira clone ou faixa nova no Suno, com portão antes de gastar crédito",
       "type": "novo",
@@ -5272,6 +5278,13 @@
       "name": "my-inema",
       "desc": "Andaime: plataforma pedagógica com IA socrática.",
       "url": "https://inematds.github.io/my-inema/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧩",
+      "name": "n8n-maker",
+      "desc": "Sete skills que ensinam o Claude Code a desenhar, configurar, validar e depurar workflows do n8n — padrões de arquitetura, configuração de nodes, expressões, Code node em JS/Python e as ferramentas do MCP n8n-mcp.",
+      "url": "https://inematds.github.io/n8n-maker/guia/",
       "badge": "Guia"
     },
     {
