@@ -200,14 +200,6 @@ const communityProjects: Array<{
   { icon: "🏦", name: "nubank-pay", desc: "Análise honesta: o Nubank não tem API/webhook oficial de pagamento. Documenta o BR Code (padrão público do Banco Central), o workaround de comunidade de ler o email de confirmação via Gmail API, e um fallback de comprovante validado por OCR/visão.", url: "https://inematds.github.io/nubank-pay/guia/", badge: "Guia" },
 ]
 
-type RepoUpdate = {
-  name: string
-  url: string
-  description: string
-  date: string
-  type: 'novo' | 'atualizado'
-}
-
 type Repo = {
   name: string
   url: string
@@ -248,8 +240,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
   const [projectUpdatesExpanded, setProjectUpdatesExpanded] = useState(false)
-  const [repoUpdatesExpanded, setRepoUpdatesExpanded] = useState(false)
-  const [repoUpdates, setRepoUpdates] = useState<RepoUpdate[]>([])
   const [repos, setRepos] = useState<Repo[]>([])
 
   // Registra a visita ao montar
@@ -274,23 +264,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       })
     }
     trackVisit()
-  }, [])
-
-  // Busca últimas atualizações dos repositórios GitHub
-  useEffect(() => {
-    let cancelled = false
-    fetch('/api/repos-updates')
-      .then((r) => r.json())
-      .then((data) => {
-        if (cancelled) return
-        if (data?.ok && Array.isArray(data.items)) {
-          setRepoUpdates(data.items)
-        }
-      })
-      .catch(() => {})
-    return () => {
-      cancelled = true
-    }
   }, [])
 
   // Busca repositórios da org (ordenados por estrelas)
@@ -389,7 +362,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   // Lista de atualizações a exibir
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
   const visibleProjectUpdates = projectUpdatesData.slice(0, projectUpdatesExpanded ? 20 : 5)
-  const visibleRepoUpdates = repoUpdates.slice(0, repoUpdatesExpanded ? 20 : 5)
   const sortedProjects = [...communityProjects].sort((a, b) =>
     a.name.localeCompare(b.name, 'pt', { sensitivity: 'base' })
   )
@@ -398,12 +370,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   function formatDate(dateStr: string) {
     const date = new Date(dateStr + 'T00:00:00')
     return date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
-  }
-
-  function formatIsoDate(iso: string) {
-    if (!iso) return ''
-    const d = new Date(iso)
-    return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
   }
 
   return (
@@ -1057,45 +1023,6 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   <span className="update-date">{formatDate(update.date)}</span>
                   <span className={`update-type ${update.type}`}>{update.type}</span>
                   <span className="update-title">{update.title}</span>
-                  <span className="update-arrow">→</span>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          {/* Repo Updates (GitHub) */}
-          <section className="updates-section">
-            <div
-              className="updates-header"
-              onClick={() => setRepoUpdatesExpanded((v) => !v)}
-              style={{ cursor: 'pointer' }}
-            >
-              <h3>Últimas Atualizações do Repositório</h3>
-              <span className="updates-toggle">
-                {repoUpdates.length === 0
-                  ? 'carregando…'
-                  : repoUpdatesExpanded
-                  ? 'Ver menos'
-                  : 'Ver mais'}
-              </span>
-            </div>
-            <div className={`updates-list${repoUpdatesExpanded ? ' expanded' : ''}`}>
-              {visibleRepoUpdates.map((r, i) => (
-                <a
-                  key={`${r.name}-${i}`}
-                  className="update-item"
-                  href={r.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackClick(r.url, r.name, 'repo-updates')}
-                  title={r.description || r.name}
-                >
-                  <span className="update-date">{formatIsoDate(r.date)}</span>
-                  <span className={`update-type ${r.type}`}>{r.type}</span>
-                  <span className="update-title">
-                    {r.name}
-                    {r.description ? ` — ${r.description}` : ''}
-                  </span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}
