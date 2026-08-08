@@ -4541,6 +4541,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-08",
+      "title": "portaflow — Vendedor IA de portas no WhatsApp: orçamento calculado no catálogo, nunca inventado pelo modelo",
+      "type": "novo",
+      "url": "https://inematds.github.io/portaflow/guia/"
+    },
+    {
       "date": "2026-08-06",
       "title": "n8n-maker — Sete skills que tornam o Claude Code especialista em workflows do n8n",
       "type": "novo",
@@ -5173,6 +5179,13 @@
       "name": "nvidiaapifree",
       "desc": "Acesso gratuito a 100+ modelos NVIDIA NIM (Llama, DeepSeek, Qwen, Mistral, Vision) via API OpenAI-compatible.",
       "url": "https://inematds.github.io/nvidiaapifree/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🚪",
+      "name": "portaflow",
+      "desc": "Máquina de vendas B2B de portas internas no WhatsApp: a IA qualifica o lead, um motor determinístico calcula o orçamento no catálogo real (o modelo nunca inventa preço) e o Pix fecha o pedido.",
+      "url": "https://inematds.github.io/portaflow/guia/",
       "badge": "Guia"
     },
     {

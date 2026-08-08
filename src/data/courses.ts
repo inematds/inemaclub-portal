@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-08', title: 'portaflow — Vendedor IA de portas no WhatsApp: orçamento calculado no catálogo, nunca inventado pelo modelo', type: 'novo', url: 'https://inematds.github.io/portaflow/guia/' },
   { date: '2026-08-06', title: 'n8n-maker — Sete skills que tornam o Claude Code especialista em workflows do n8n', type: 'novo', url: 'https://inematds.github.io/n8n-maker/guia/' },
   { date: '2026-08-05', title: 'musicaclone — Link de música vira clone ou faixa nova no Suno, com portão antes de gastar crédito', type: 'novo', url: 'https://inematds.github.io/musicaclone/guia/' },
   { date: '2026-08-04', title: 'video-making-of-skill — Uma foto vira maquete e o efeito prático destrói ela: making of em plano único', type: 'novo', url: 'https://inematds.github.io/video-making-of-skill/guia/' },
