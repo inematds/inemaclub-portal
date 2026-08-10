@@ -487,7 +487,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {// Evento}
+      {/* Evento */}
       <section id="evento-destaque" style={{ padding: '2.5rem 0' }}>
         <div className="container">
           <a
@@ -941,7 +941,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
       )}
 
-      {// Banner}
+      {/* Banner */}
       <section style={{ padding: '0 0 2rem' }}>
         <div className="container">
           <a
