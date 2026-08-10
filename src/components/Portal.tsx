@@ -487,14 +487,14 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
-      {/* Evento em destaque — INEMA Agentes Hub V */}
+      {// Evento}
       <section id="evento-destaque" style={{ padding: '2.5rem 0' }}>
         <div className="container">
           <a
             href="https://eventos.inema.pro/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'INEMA Agentes Hub V', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/', 'Evento', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -508,7 +508,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/vczero.png"
-              alt="INEMA Agentes Hub V — curso online de cinco dias para construir um hub de agentes"
+              alt="Evento INEMA"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
             <div
@@ -534,13 +534,13 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                     marginBottom: '5px',
                   }}
                 >
-                  Curso online ao vivo
+                  Próximo Evento
                 </span>
                 <h2 style={{ margin: 0, fontSize: 'clamp(20px, 3vw, 29px)', lineHeight: 1.2, color: '#e8e6e3' }}>
-                  Participe do curso <span style={{ color: 'oklch(0.84 0.17 87)' }}>INEMA Agentes Hub V</span>
+                  Participe online e ao vivo
                 </h2>
                 <div style={{ color: 'oklch(0.78 0.02 35)', fontSize: '15px', marginTop: '4px' }}>
-                  27 a 31 de julho · das 14h às 16h
+                  12 e 13 de agosto de 2026 · das 14h às 16h
                 </div>
               </div>
               <span
@@ -941,14 +941,14 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       </section>
       )}
 
-      {/* Banner INEMA Agentes Hub V */}
+      {// Banner}
       <section style={{ padding: '0 0 2rem' }}>
         <div className="container">
           <a
             href="https://eventos.inema.pro/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'INEMA Agentes Hub V — banner', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/', 'Banner evento', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -961,7 +961,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/inemaagenteshubv.jpg"
-              alt="INEMA Agentes Hub V"
+              alt="Evento INEMA"
               loading="lazy"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
             />
