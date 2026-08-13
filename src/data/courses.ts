@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-13', title: 'videoanima — História em filme vertical narrado: decupagem cinematográfica, keyframes A/B e provedores trocáveis', type: 'novo', url: 'https://inematds.github.io/videoanima-skill/guia/' },
   { date: '2026-08-13', title: 'cf-dns — DNS do Cloudflare pela linha de comando: um arquivo Python, zero dependências', type: 'novo', url: 'https://inematds.github.io/cf-dns/guia/' },
   { date: '2026-08-08', title: 'portaflow — Vendedor IA de portas no WhatsApp: orçamento calculado no catálogo, nunca inventado pelo modelo', type: 'novo', url: 'https://inematds.github.io/portaflow/guia/' },
   { date: '2026-08-06', title: 'n8n-maker — Sete skills que tornam o Claude Code especialista em workflows do n8n', type: 'novo', url: 'https://inematds.github.io/n8n-maker/guia/' },
