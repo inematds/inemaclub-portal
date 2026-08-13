@@ -4541,6 +4541,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-13",
+      "title": "cf-dns — DNS do Cloudflare pela linha de comando: um arquivo Python, zero dependências",
+      "type": "novo",
+      "url": "https://inematds.github.io/cf-dns/guia/"
+    },
+    {
       "date": "2026-08-08",
       "title": "portaflow — Vendedor IA de portas no WhatsApp: orçamento calculado no catálogo, nunca inventado pelo modelo",
       "type": "novo",
@@ -5137,6 +5143,13 @@
       "name": "aiv2026",
       "desc": "Playbook de 5 fases para tornar empresas encontráveis e citáveis por IAs públicas (ChatGPT, Claude, Gemini, Perplexity), com o case completo do cliente-zero INEMA.",
       "url": "https://inematds.github.io/aiv2026/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🌐",
+      "name": "cf-dns",
+      "desc": "CLI de um arquivo em Python puro para criar, listar e apagar registros DNS no Cloudflare pela API — inclui o par CNAME + TXT que o Vercel exige para verificar um subdomínio novo.",
+      "url": "https://inematds.github.io/cf-dns/guia/",
       "badge": "Guia"
     },
     {
