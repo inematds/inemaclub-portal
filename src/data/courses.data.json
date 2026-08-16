@@ -4541,6 +4541,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-16",
+      "title": "bench-studio-public — Estúdio criativo local: 37 rotas de imagem e vídeo, prompt editável antes de gastar e custo registrado",
+      "type": "novo",
+      "url": "https://inematds.github.io/bench-studio-public/guia/"
+    },
+    {
       "date": "2026-08-13",
       "title": "audit-ablacaocc — Auditoria de ablação do seu Claude Code: o que na config ainda paga o próprio custo",
       "type": "novo",
@@ -5162,6 +5168,13 @@
       "name": "audit-ablacaocc",
       "desc": "Skill de diagnóstico que audita CLAUDE.md, skills e hooks do Claude Code pelo método de ablação do Boris Cherny: classifica cada instrução, propõe a versão mínima e um plano de teste A/B/C — sem alterar nenhum arquivo.",
       "url": "https://inematds.github.io/audit-ablacaocc/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎛️",
+      "name": "bench-studio-public",
+      "desc": "Estúdio criativo local-first para imagem, vídeo, site e PDF: 37 rotas de modelo curadas, refino de prompt editável antes de gastar, arquivos espelhados em disco e ledger de custo — também via MCP para Claude, Codex e Cursor.",
+      "url": "https://inematds.github.io/bench-studio-public/guia/",
       "badge": "Guia"
     },
     {
