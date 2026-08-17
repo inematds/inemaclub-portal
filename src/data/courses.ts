@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-17', title: 'recursos de vídeo — Catálogo ampliado: 44 projetos em 7 caminhos, agora com categoria de Imagem', type: 'atualizado', url: 'https://inematds.github.io/recursos-video/' },
   { date: '2026-08-16', title: 'bench-studio-public — Estúdio criativo local: 37 rotas de imagem e vídeo, prompt editável antes de gastar e custo registrado', type: 'novo', url: 'https://inematds.github.io/bench-studio-public/guia/' },
   { date: '2026-08-13', title: 'audit-ablacaocc — Auditoria de ablação do seu Claude Code: o que na config ainda paga o próprio custo', type: 'novo', url: 'https://inematds.github.io/audit-ablacaocc/guia/' },
   { date: '2026-08-13', title: 'videoanima — História em filme vertical narrado: decupagem cinematográfica, keyframes A/B e provedores trocáveis', type: 'novo', url: 'https://inematds.github.io/videoanima-skill/guia/' },
@@ -1743,7 +1744,7 @@ export const platformsData: Course[] = [
     id: 223,
     title: 'Recursos de Vídeo — Catálogo do Ecossistema INEMA',
     description:
-      'Catálogo-guia dos ~30 projetos do ecossistema INEMA para gerar e processar vídeo — encontre a ferramenta certa por caso de uso (avatar falante, motion, dublagem, corte, upscaling e mais).',
+      'Catálogo-guia dos 44 projetos do ecossistema INEMA para gerar e processar vídeo e imagem, em 7 caminhos: render determinístico, IA na nuvem, IA local na GPU, imagem, direção, orquestradores ponta-a-ponta e voz/música/pós — com o guia de cada um e o que já foi medido em produção.',
     icon: '🎬',
     tags: ['Vídeo', 'Catálogo', 'IA'],
     url: 'https://inematds.github.io/recursos-video/',

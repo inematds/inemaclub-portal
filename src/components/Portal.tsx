@@ -99,7 +99,7 @@ const communityProjects: Array<{
   { icon: '📝', name: 'mkblogs', desc: 'Publicação multi-plataforma open-source com Postiz self-hosted e APIs', url: 'https://inematds.github.io/mkblogs-guia/', badge: 'Guia' },
   { icon: '🧬', name: 'openhuman', desc: 'Assistente de IA agêntico open-source, local-first, com 118+ integrações OAuth', url: 'https://inematds.github.io/openhuman-guia/', badge: 'Guia' },
   { icon: '🪽', name: 'Claude OS', desc: 'Dashboard local do Claude Code + Hermes (Dream, Mission Control e assistente Hermes)', url: 'https://inematds.github.io/claude-hermes-os/', badge: 'Guia' },
-  { icon: '🎬', name: 'recursos de vídeo', desc: 'Catálogo-guia dos ~30 projetos do ecossistema INEMA para gerar e processar vídeo', url: 'https://inematds.github.io/recursos-video/', badge: 'Guia' },
+  { icon: '🎬', name: 'recursos de vídeo', desc: 'Catálogo-guia dos 44 projetos do ecossistema INEMA para gerar e processar vídeo e imagem, em 7 caminhos — com o guia de cada um e o que já foi medido em produção', url: 'https://inematds.github.io/recursos-video/', badge: 'Guia' },
   { icon: '🧠', name: '3cerebros', desc: 'Motor de memória com 3 cérebros (Projeto/Self/Conhecimento), isolado e embutível por qualquer agente. SQLite FTS5 + política de automação.', url: 'https://inematds.github.io/3cerebros/', badge: 'Guia' },
   { icon: '🤖', name: 'iAmasters OS', desc: 'Sistema operativo agêntico para operadores de IA — engine Sinapsis v4.5, brand context, multi-cliente, memória que evolui.', url: 'https://inematds.github.io/iamasters-os/', badge: 'Guia' },
   { icon: '🧠', name: 'Infinite Brain OS', desc: 'Sistema operacional de conhecimento para negócios com IA: git-backed, plain-text, namespaces com promoção operada, sem lock-in.', url: 'https://inematds.github.io/infinite-brain-os/guia/', badge: 'Guia' },
@@ -876,7 +876,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/skill-video-explicativo/', label: 'HyperFrames', desc: 'Vídeos Explicativos com Claude Code', n: 2 },
               { href: 'https://inematds.github.io/timesmkt3/',        label: 'TimesMkt3',      desc: 'Fábrica de Conteúdo + Vídeos',     n: 3 },
               { href: 'https://inematds.github.io/inemavox/',         label: 'Inemavox',       desc: 'Suíte de Voz e Vídeo com IA',     n: 4 },
-              { href: 'https://inematds.github.io/recursos-video/',   label: 'Recursos de Vídeo', desc: 'Catálogo-guia dos ~30 projetos de vídeo do ecossistema', n: 5 },
+              { href: 'https://inematds.github.io/recursos-video/',   label: 'Recursos de Vídeo', desc: 'Catálogo-guia dos 44 projetos de vídeo e imagem do ecossistema', n: 5 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
