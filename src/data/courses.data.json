@@ -4542,6 +4542,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-17",
+      "title": "bench-studio-en — Bench Studio com 73 modelos em 5 provedores: um contrato só, custo visível e chaves que nunca saem da sua máquina",
+      "type": "novo",
+      "url": "https://inematds.github.io/bench-studio-en/guia/"
+    },
+    {
+      "date": "2026-08-17",
       "title": "recursos de vídeo — Catálogo ampliado: 44 projetos em 7 caminhos, agora com categoria de Imagem",
       "type": "atualizado",
       "url": "https://inematds.github.io/recursos-video/"
@@ -5178,8 +5184,15 @@
     },
     {
       "icon": "🎛️",
+      "name": "bench-studio-en",
+      "desc": "Continuação do Bench Studio com 73 rotas de imagem e vídeo em 5 provedores (fal, Kling, Agnes, kie e servidor local) atrás de um contrato só: custo em dólar, crédito ou zero conforme quem cobra, tela de configuração que nunca mostra a chave e senha opcional.",
+      "url": "https://inematds.github.io/bench-studio-en/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎛️",
       "name": "bench-studio-public",
-      "desc": "Estúdio criativo local-first para imagem, vídeo, site e PDF: 37 rotas de modelo curadas, refino de prompt editável antes de gastar, arquivos espelhados em disco e ledger de custo — também via MCP para Claude, Codex e Cursor.",
+      "desc": "Edição original, de um provedor só: estúdio criativo local-first para imagem, vídeo, site e PDF, com 37 rotas de modelo curadas, refino de prompt editável antes de gastar, arquivos espelhados em disco e ledger de custo — também via MCP para Claude, Codex e Cursor.",
       "url": "https://inematds.github.io/bench-studio-public/guia/",
       "badge": "Guia"
     },

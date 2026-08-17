@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-17', title: 'bench-studio-en — Bench Studio com 73 modelos em 5 provedores: um contrato só, custo visível e chaves que nunca saem da sua máquina', type: 'novo', url: 'https://inematds.github.io/bench-studio-en/guia/' },
   { date: '2026-08-17', title: 'recursos de vídeo — Catálogo ampliado: 44 projetos em 7 caminhos, agora com categoria de Imagem', type: 'atualizado', url: 'https://inematds.github.io/recursos-video/' },
   { date: '2026-08-16', title: 'bench-studio-public — Estúdio criativo local: 37 rotas de imagem e vídeo, prompt editável antes de gastar e custo registrado', type: 'novo', url: 'https://inematds.github.io/bench-studio-public/guia/' },
   { date: '2026-08-13', title: 'audit-ablacaocc — Auditoria de ablação do seu Claude Code: o que na config ainda paga o próprio custo', type: 'novo', url: 'https://inematds.github.io/audit-ablacaocc/guia/' },
