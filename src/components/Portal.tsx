@@ -513,41 +513,18 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/vczero.png"
-              alt="Evento INEMA"
+              alt="Curso INEMACCBOT com Promoavatar"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: '28px',
-                flexWrap: 'wrap',
+                justifyContent: 'center',
                 padding: '22px 26px',
                 background: 'oklch(0.15 0.02 28)',
               }}
             >
-              <div style={{ minWidth: 0 }}>
-                <span
-                  style={{
-                    display: 'inline-block',
-                    fontSize: '11.5px',
-                    fontWeight: 750,
-                    letterSpacing: '.65px',
-                    textTransform: 'uppercase',
-                    color: 'oklch(0.84 0.17 87)',
-                    marginBottom: '5px',
-                  }}
-                >
-                  Próximo Evento
-                </span>
-                <h2 style={{ margin: 0, fontSize: 'clamp(20px, 3vw, 29px)', lineHeight: 1.2, color: '#e8e6e3' }}>
-                  Participe online e ao vivo
-                </h2>
-                <div style={{ color: 'oklch(0.78 0.02 35)', fontSize: '15px', marginTop: '4px' }}>
-                  12 e 13 de agosto de 2026 · das 14h às 16h
-                </div>
-              </div>
               <span
                 style={{
                   flex: '0 0 auto',
@@ -560,7 +537,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                   fontSize: '14.5px',
                 }}
               >
-                Participe do curso →
+                Assista o curso →
               </span>
             </div>
           </a>
