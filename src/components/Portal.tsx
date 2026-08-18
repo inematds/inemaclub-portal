@@ -1231,6 +1231,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/claude-watch/',           label: 'claude-watch',            desc: 'Dê ao Claude olhos pra assistir vídeo', n: 11 },
               { href: 'https://inematds.github.io/grillme/',                label: 'Grill Me',                desc: 'Extraia o que está na sua cabeça',     n: 12 },
               { href: 'https://inematds.github.io/videos-edit/',            label: 'videos-edit',             desc: 'Forja Reel — editor de reels com IA',  n: 13 },
+              { href: 'https://inematds.github.io/curso-ablacao/',          label: 'Auditoria de Ablação',    desc: 'Enxugue CLAUDE.md, skills e hooks',    n: 14 },
             ].map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}

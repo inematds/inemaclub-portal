@@ -195,6 +195,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agenteexecuta/guia/',
   },
   {
+    id: 234,
+    title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade',
+    description:
+      'A Anthropic apagou mais de 80% do prompt de sistema do Claude Code quando o Opus 5 saiu. Aprenda a fazer o mesmo com seu CLAUDE.md, suas skills e seus hooks: classifique cada instrução, corte com segurança e prove por teste A/B/C que a versão mínima não piorou. 4 trilhas, 8 módulos, 48 tópicos.',
+    icon: '✂️',
+    tags: ['Claude Code', 'Skill', 'Prompt', 'IA'],
+    url: 'https://inematds.github.io/curso-ablacao/',
+  },
+  {
     id: 177,
     title: '33 Viral Hooks',
     description:
@@ -2232,6 +2241,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-18', title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade (4 trilhas, 8 módulos, 48 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/curso-ablacao/' },
   { date: '2026-08-05', title: 'Seu Funcionário Digital — 7 dias de automação com Claude Code (8 trilhas, 52 módulos, formato v2)', type: 'novo', url: 'https://inematds.github.io/wat7d/' },
   { date: '2026-08-05', title: 'Graph Engineering — De Loops a Grafos (5 trilhas, 15 módulos, 90 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/loopgraph/' },
   { date: '2026-08-03', title: 'Workshop Avançado de Engenharia de Software com IA — AI First sem perder o controle (6 trilhas, 15 módulos, exercício prático)', type: 'novo', url: 'https://inematds.github.io/ws2ia/' },

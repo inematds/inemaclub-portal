@@ -109,6 +109,19 @@
       "url": "https://inematds.github.io/agenteexecuta/guia/"
     },
     {
+      "id": 234,
+      "title": "Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade",
+      "description": "A Anthropic apagou mais de 80% do prompt de sistema do Claude Code quando o Opus 5 saiu. Aprenda a fazer o mesmo com seu CLAUDE.md, suas skills e seus hooks: classifique cada instrução, corte com segurança e prove por teste A/B/C que a versão mínima não piorou. 4 trilhas, 8 módulos, 48 tópicos.",
+      "icon": "✂️",
+      "tags": [
+        "Claude Code",
+        "Skill",
+        "Prompt",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/curso-ablacao/"
+    },
+    {
       "id": 177,
       "title": "33 Viral Hooks",
       "description": "Os 33 viral hooks de cada um dos 5 nichos mais populares (165 no total) para vídeo curto — TikTok, Reels e Shorts. 3 trilhas (Fundamentos, Técnicas, Avançado), 10 módulos, 60 tópicos. Cada hook traz a frase falada, o Visual Hook, o Text Hook e uma imagem de referência gerada por IA; a fórmula Context Lean → Scroll Stop → Contrarian Snapback, prompts copy-run e uma skill \"Hook Machine\". Camada de aprendizagem v2.",
@@ -3344,6 +3357,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-08-18",
+      "title": "Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade (4 trilhas, 8 módulos, 48 tópicos, formato v2)",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-ablacao/"
+    },
     {
       "date": "2026-08-05",
       "title": "Seu Funcionário Digital — 7 dias de automação com Claude Code (8 trilhas, 52 módulos, formato v2)",
