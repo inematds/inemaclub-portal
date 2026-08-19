@@ -4560,6 +4560,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-19",
+      "title": "analisevideo — O que um cineasta ve no seu video: camera, luz, montagem e trilha lidas pelo Gemini e guardadas num banco pesquisavel",
+      "type": "novo",
+      "url": "https://inematds.github.io/analisevideo/guia/"
+    },
+    {
       "date": "2026-08-18",
       "title": "bench-studio-br — Bench Studio em português: keyframes com quadro inicial e final, orçamento honesto e acesso remoto num comando",
       "type": "novo",
@@ -5198,6 +5204,13 @@
       "name": "aiv2026",
       "desc": "Playbook de 5 fases para tornar empresas encontráveis e citáveis por IAs públicas (ChatGPT, Claude, Gemini, Perplexity), com o case completo do cliente-zero INEMA.",
       "url": "https://inematds.github.io/aiv2026/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "analisevideo",
+      "desc": "Analise visual e cinematografica de video com Gemini: camera bloco a bloco, luz e paleta, ritmo de montagem, trilha e som, grafismo e um passo a passo de como refazer — arquivado num banco local pesquisavel.",
+      "url": "https://inematds.github.io/analisevideo/guia/",
       "badge": "Guia"
     },
     {

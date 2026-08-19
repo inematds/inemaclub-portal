@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-19', title: 'analisevideo — O que um cineasta ve no seu video: camera, luz, montagem e trilha lidas pelo Gemini e guardadas num banco pesquisavel', type: 'novo', url: 'https://inematds.github.io/analisevideo/guia/' },
   { date: '2026-08-18', title: 'bench-studio-br — Bench Studio em português: keyframes com quadro inicial e final, orçamento honesto e acesso remoto num comando', type: 'novo', url: 'https://inematds.github.io/bench-studio-br/guia/' },
   { date: '2026-08-17', title: 'bench-studio-en — Bench Studio com 73 modelos em 5 provedores: um contrato só, custo visível e chaves que nunca saem da sua máquina', type: 'novo', url: 'https://inematds.github.io/bench-studio-en/guia/' },
   { date: '2026-08-17', title: 'recursos de vídeo — Catálogo ampliado: 44 projetos em 7 caminhos, agora com categoria de Imagem', type: 'atualizado', url: 'https://inematds.github.io/recursos-video/' },
