@@ -1960,6 +1960,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/tiktokshop',
   },
   {
+    id: 236,
+    title: 'Times de IA — Curso Completo',
+    description:
+      'Seis times de IA especializados acionados com um único comando. Cada trilha ensina todos os componentes do time: o que fazem, quando usar, exemplos reais e as entregas de cada análise. Ads, Trading, Crypto, Imobiliário, Recrutamento e Finanças.',
+    icon: '🧠',
+    tags: ['Agentes', 'Times de IA', 'Automação', 'IA'],
+    url: 'https://inematds.github.io/curso-times-de-ia/',
+  },
+  {
     id: 94,
     title: 'TimesMarketing 3 - Automação de Conteúdo com IA',
     description:
@@ -2251,6 +2260,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-24', title: 'Times de IA — Curso Completo (6 trilhas: Ads, Trading, Crypto, Imobiliário, Recrutamento, Finanças)', type: 'novo', url: 'https://inematds.github.io/curso-times-de-ia/' },
   { date: '2026-08-18', title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade (4 trilhas, 8 módulos, 48 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/curso-ablacao/' },
   { date: '2026-08-05', title: 'Seu Funcionário Digital — 7 dias de automação com Claude Code (8 trilhas, 52 módulos, formato v2)', type: 'novo', url: 'https://inematds.github.io/wat7d/' },
   { date: '2026-08-05', title: 'Graph Engineering — De Loops a Grafos (5 trilhas, 15 módulos, 90 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/loopgraph/' },
