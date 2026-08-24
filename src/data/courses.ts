@@ -2251,6 +2251,14 @@ export const platformsData: Course[] = [
     url: "https://github.com/inematds/skills-curso",
   },
   {
+    id: 237,
+    title: "Sites 3D e Cinematográficos — Curso Completo",
+    description: "Curso completo com 5 trilhas: skill-scroll, prompts para sites, guia de prompting, prompts para espetáculos e Seedance.",
+    icon: "🎬",
+    tags: ["Curso", "IA", "2026"],
+    url: "https://inematds.github.io/curso-sites-3d/",
+  },
+  {
     id: 235,
     title: "Times de IA — Curso Completo",
     description: "Seis times de IA especializados que você aciona com um único comando: ads, trading, crypto, imobiliário, recrutamento e finanças pessoais.",
@@ -2261,6 +2269,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-24', title: 'Sites 3D e Cinematográficos — Curso Completo', type: 'novo', url: 'https://inematds.github.io/curso-sites-3d/' },
   { date: '2026-08-24', title: 'Times de IA — Curso Completo (6 trilhas: Ads, Trading, Crypto, Imobiliário, Recrutamento, Finanças)', type: 'novo', url: 'https://inematds.github.io/curso-times-de-ia/' },
   { date: '2026-08-18', title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade (4 trilhas, 8 módulos, 48 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/curso-ablacao/' },
   { date: '2026-08-05', title: 'Seu Funcionário Digital — 7 dias de automação com Claude Code (8 trilhas, 52 módulos, formato v2)', type: 'novo', url: 'https://inematds.github.io/wat7d/' },
