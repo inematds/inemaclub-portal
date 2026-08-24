@@ -1397,6 +1397,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/newagenticos/',        label: 'New Agentic OS', desc: 'Do Executivo ao Jarvis Multi-Cliente' },
               { href: 'https://inematds.github.io/curso-iamasters-os/',  label: 'iAmasters OS',   desc: 'Sistema Operativo Agêntico para Operadores de IA' },
               { href: 'https://inematds.github.io/loopgraph/',           label: 'Graph Engineering', desc: 'De loops isolados a grafos de agentes' },
+              { href: 'https://inematds.github.io/curso-times-de-ia/',    label: 'Times de IA',       desc: 'Seis times de IA especializados por comando' },
             ]},
             { title: '🧩 Codex', steps: [
               { href: 'https://inematds.github.io/codexbasico/',        label: 'Codex Básico', desc: 'Curso Completo do Codex CLI em 6 Trilhas' },

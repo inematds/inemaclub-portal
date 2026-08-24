@@ -2240,6 +2240,14 @@ export const platformsData: Course[] = [
     tags: ["Curso", "IA", "2026"],
     url: "https://github.com/inematds/skills-curso",
   },
+  {
+    id: 235,
+    title: "Times de IA — Curso Completo",
+    description: "Seis times de IA especializados que você aciona com um único comando: ads, trading, crypto, imobiliário, recrutamento e finanças pessoais.",
+    icon: "🧠",
+    tags: ["Agentes IA", "Automação", "IA"],
+    url: "https://inematds.github.io/curso-times-de-ia/",
+  },
 ]
 
 export const updatesData: Update[] = [
