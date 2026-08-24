@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-24', title: 'scrollcraft — Plugin do Claude Code que constrói páginas scroll-driven premium e verifica o próprio trabalho: contraste, motion morto e clipes travados', type: 'novo', url: 'https://inematds.github.io/scroll-craft/guia/' },
   { date: '2026-08-20', title: 'musicavideo — Uma frase vira música, capa e clipe: plano aprovado antes de gastar, portão em cada parte e provedores plugáveis', type: 'novo', url: 'https://inematds.github.io/musicavideo/guia/' },
   { date: '2026-08-19', title: 'analisevideo — O que um cineasta ve no seu video: camera, luz, montagem e trilha lidas pelo Gemini e guardadas num banco pesquisavel', type: 'novo', url: 'https://inematds.github.io/analisevideo/guia/' },
   { date: '2026-08-18', title: 'bench-studio-br — Bench Studio em português: keyframes com quadro inicial e final, orçamento honesto e acesso remoto num comando', type: 'novo', url: 'https://inematds.github.io/bench-studio-br/guia/' },

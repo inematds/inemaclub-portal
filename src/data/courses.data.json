@@ -2907,6 +2907,19 @@
       "url": "https://inematds.github.io/tiktokshop"
     },
     {
+      "id": 236,
+      "title": "Times de IA — Curso Completo",
+      "description": "Seis times de IA especializados acionados com um único comando. Cada trilha ensina todos os componentes do time: o que fazem, quando usar, exemplos reais e as entregas de cada análise. Ads, Trading, Crypto, Imobiliário, Recrutamento e Finanças.",
+      "icon": "🧠",
+      "tags": [
+        "Agentes",
+        "Times de IA",
+        "Automação",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/curso-times-de-ia/"
+    },
+    {
       "id": 94,
       "title": "TimesMarketing 3 - Automação de Conteúdo com IA",
       "description": "Sistema de automação de marketing com agentes IA via Telegram. Pipeline: pesquisa, narrativa, imagens, vídeos e publicação. Docker + Redis + Remotion.",
@@ -3369,6 +3382,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-08-24",
+      "title": "Times de IA — Curso Completo (6 trilhas: Ads, Trading, Crypto, Imobiliário, Recrutamento, Finanças)",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-times-de-ia/"
+    },
     {
       "date": "2026-08-18",
       "title": "Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade (4 trilhas, 8 módulos, 48 tópicos, formato v2)",
@@ -4572,6 +4591,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-24",
+      "title": "scrollcraft — Plugin do Claude Code que constrói páginas scroll-driven premium e verifica o próprio trabalho: contraste, motion morto e clipes travados",
+      "type": "novo",
+      "url": "https://inematds.github.io/scroll-craft/guia/"
+    },
+    {
       "date": "2026-08-20",
       "title": "musicavideo — Uma frase vira música, capa e clipe: plano aprovado antes de gastar, portão em cada parte e provedores plugáveis",
       "type": "novo",
@@ -5488,6 +5513,13 @@
       "name": "scroll-film-studio",
       "desc": "Skill para criar sites cinematográficos contínuos controlados pelo scroll, com motion em código ou footage gerado.",
       "url": "https://inematds.github.io/scroll-film-studio/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "scrollcraft",
+      "desc": "Plugin do Claude Code (main-design) que constrói páginas scroll-driven premium — scroll vira timeline, gramáticas de página exclusivas por build, e verificação automática de contraste, motion morto e clipes travados.",
+      "url": "https://inematds.github.io/scroll-craft/guia/",
       "badge": "Guia"
     },
     {
