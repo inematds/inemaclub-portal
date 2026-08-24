@@ -2266,9 +2266,89 @@ export const platformsData: Course[] = [
     tags: ["Agentes IA", "Automação", "IA"],
     url: "https://inematds.github.io/curso-times-de-ia/",
   },
+  {
+    id: 238,
+    title: 'Assistente de Voz — JARVIS, CASE & CIA',
+    description:
+      'Galaxia de conhecimento 3D que conversa, robo de mesa que executa missoes, debate entre duas IAs e um agente que faz ligacoes de verdade. Tudo colando prompts, sem programar.',
+    icon: '🎙️',
+    tags: ['Voz', 'Agentes', 'IA', 'No-code'],
+    url: 'https://inematds.github.io/curso-assistente-voz/',
+  },
+  {
+    id: 239,
+    title: 'Agentes no n8n — Automatize Tudo',
+    description:
+      'Do classificador de e-mails ao RAG de vendas: workflows prontos para importar, modelos open-source, APIs e agentes multimodais. Baixe o JSON, suba no n8n e rode.',
+    icon: '🔀',
+    tags: ['n8n', 'Automação', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/curso-agentes-n8n/',
+  },
+  {
+    id: 240,
+    title: 'INEMA Command Language — Domine os 100 Comandos',
+    description:
+      'Uma DSL para dirigir IA com precisao: voce digita /comando e ele carrega o contexto certo. Seis trilhas que vao de /truth e /research ate /redteam e /decide.',
+    icon: '🧭',
+    tags: ['DSL', 'Prompts', 'Claude', 'IA'],
+    url: 'https://inematds.github.io/curso-inema-dsl/',
+  },
+  {
+    id: 241,
+    title: 'Social Media — Seu Funcionario de Conteudo',
+    description:
+      'Um funcionario que aprende seu estilo, escreve seus posts, planeja a semana e pede sua aprovacao antes de publicar. Colando prompts, sem programar.',
+    icon: '📱',
+    tags: ['Social Media', 'Automação', 'Conteúdo', 'IA'],
+    url: 'https://inematds.github.io/curso-social-media/',
+  },
+  {
+    id: 242,
+    title: 'Extras e Comparacoes — Complementos do Workshop',
+    description:
+      'Comparativo entre modelos, GLM no assistente de codigo, Personaplex da NVIDIA e o pacote de prompts de imagem e video do Higgsfield.',
+    icon: '🧩',
+    tags: ['Modelos', 'Prompts', 'Comparativo', 'IA'],
+    url: 'https://inematds.github.io/curso-suporte/',
+  },
+  {
+    id: 243,
+    title: 'Agentes de Voz Comerciais — Venda o Servico',
+    description:
+      'Atendentes de IA prontos por nicho (imobiliaria, saude, consultas, upsell) mais o playbook para vender esse servico como produto.',
+    icon: '🏢',
+    tags: ['Voz', 'Vendas', 'Agentes', 'Negócios'],
+    url: 'https://inematds.github.io/curso-voice-negocios/',
+  },
+  {
+    id: 244,
+    title: 'Fabrica de Videos e Anuncios com IA',
+    description:
+      'Cinema com Seedance, prompts de UGC que convertem e sistemas de video ponta a ponta. Tres trilhas, do primeiro plano ate o anuncio publicado.',
+    icon: '🎬',
+    tags: ['Vídeo', 'Anúncios', 'Seedance', 'IA'],
+    url: 'https://inematds.github.io/curso-videos-ads/',
+  },
+  {
+    id: 245,
+    title: 'Sites e Apps — Construa e Revenda',
+    description:
+      'Monte sites e apps com IA e transforme isso em servico: o caminho da construcao ate a revenda para cliente.',
+    icon: '🛒',
+    tags: ['Sites', 'Apps', 'Revenda', 'IA'],
+    url: 'https://inematds.github.io/curso-sites-apps/',
+  },
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-24', title: 'Assistente de Voz — JARVIS, CASE & CIA', type: 'novo', url: 'https://inematds.github.io/curso-assistente-voz/' },
+  { date: '2026-08-24', title: 'Agentes no n8n — Automatize Tudo', type: 'novo', url: 'https://inematds.github.io/curso-agentes-n8n/' },
+  { date: '2026-08-24', title: 'INEMA Command Language — Domine os 100 Comandos', type: 'novo', url: 'https://inematds.github.io/curso-inema-dsl/' },
+  { date: '2026-08-24', title: 'Social Media — Seu Funcionario de Conteudo', type: 'novo', url: 'https://inematds.github.io/curso-social-media/' },
+  { date: '2026-08-24', title: 'Extras e Comparacoes — Complementos do Workshop', type: 'novo', url: 'https://inematds.github.io/curso-suporte/' },
+  { date: '2026-08-24', title: 'Agentes de Voz Comerciais — Venda o Servico', type: 'novo', url: 'https://inematds.github.io/curso-voice-negocios/' },
+  { date: '2026-08-24', title: 'Fabrica de Videos e Anuncios com IA', type: 'novo', url: 'https://inematds.github.io/curso-videos-ads/' },
+  { date: '2026-08-24', title: 'Sites e Apps — Construa e Revenda', type: 'novo', url: 'https://inematds.github.io/curso-sites-apps/' },
   { date: '2026-08-24', title: 'Sites 3D e Cinematográficos — Curso Completo', type: 'novo', url: 'https://inematds.github.io/curso-sites-3d/' },
   { date: '2026-08-24', title: 'Times de IA — Curso Completo (6 trilhas: Ads, Trading, Crypto, Imobiliário, Recrutamento, Finanças)', type: 'novo', url: 'https://inematds.github.io/curso-times-de-ia/' },
   { date: '2026-08-18', title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade (4 trilhas, 8 módulos, 48 tópicos, formato v2)', type: 'novo', url: 'https://inematds.github.io/curso-ablacao/' },
