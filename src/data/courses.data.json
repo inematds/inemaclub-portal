@@ -4761,6 +4761,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-25",
+      "title": "AI Assistant Decision Kit — decida qual assistente de IA serve pro seu trabalho (MIT, traduzido para pt-BR)",
+      "type": "novo",
+      "url": "https://inematds.github.io/ai-assistant-decision-kit/guia/"
+    },
+    {
       "date": "2026-08-24",
       "title": "scrollcraft — Plugin do Claude Code que constrói páginas scroll-driven premium e verifica o próprio trabalho: contraste, motion morto e clipes travados",
       "type": "novo",
@@ -5398,6 +5404,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🧭",
+      "name": "ai-assistant-decision-kit",
+      "desc": "Kit de decisão (MIT, Mark Kashef) traduzido para pt-BR: compara assistentes de IA por modelo operacional antes da marca — entrevista, pesquisa datada, teste reversível e piloto de 7 dias.",
+      "url": "https://inematds.github.io/ai-assistant-decision-kit/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧭",
       "name": "agenteexecuta",
