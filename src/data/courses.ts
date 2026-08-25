@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-25', title: 'yt-pub-livesx — Import com metadados prontos: título, descrição e capa do manifest.json sobem como vieram, sem a IA gerar por cima', type: 'atualizado', url: 'https://inematds.github.io/yt-pub-livesx/' },
   { date: '2026-08-25', title: 'Open-Generative-AI — Plataforma open source de IA generativa com imagem, vídeo, áudio e agentes', type: 'novo', url: 'https://github.com/inematds/Open-Generative-AI' },
   { date: '2026-08-25', title: 'DSH Orchestrator — DSH, Codex e Claude no mesmo ambiente', type: 'novo', url: 'https://inematds.github.io/dsh-orchestrator/guia/' },
   { date: '2026-08-25', title: 'AI Assistant Decision Kit — decida qual assistente de IA serve pro seu trabalho (MIT, traduzido para pt-BR)', type: 'novo', url: 'https://inematds.github.io/ai-assistant-decision-kit/guia/' },

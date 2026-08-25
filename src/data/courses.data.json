@@ -4762,6 +4762,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-25",
+      "title": "yt-pub-livesx — Import com metadados prontos: título, descrição e capa do manifest.json sobem como vieram, sem a IA gerar por cima",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/yt-pub-livesx/"
+    },
+    {
+      "date": "2026-08-25",
       "title": "Open-Generative-AI — Plataforma open source de IA generativa com imagem, vídeo, áudio e agentes",
       "type": "novo",
       "url": "https://github.com/inematds/Open-Generative-AI"
