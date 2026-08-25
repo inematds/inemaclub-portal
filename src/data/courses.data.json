@@ -4762,6 +4762,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-25",
+      "title": "DSH Orchestrator — DSH, Codex e Claude no mesmo ambiente",
+      "type": "novo",
+      "url": "https://inematds.github.io/dsh-orchestrator/guia/"
+    },
+    {
+      "date": "2026-08-25",
       "title": "AI Assistant Decision Kit — decida qual assistente de IA serve pro seu trabalho (MIT, traduzido para pt-BR)",
       "type": "novo",
       "url": "https://inematds.github.io/ai-assistant-decision-kit/guia/"
@@ -5479,6 +5485,13 @@
       "name": "criaagentes",
       "desc": "Estudo de caso completo de um OS agêntico para a recepção de uma clínica odontológica no WhatsApp, construído camada por camada com a skill…",
       "url": "https://inematds.github.io/criaagentes/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧭",
+      "name": "dsh-orchestrator",
+      "desc": "Orquestrador local para executar DSH, Codex CLI e Claude Code com sessões tmux, GitHub CLI e worktrees isolados.",
+      "url": "https://inematds.github.io/dsh-orchestrator/guia/",
       "badge": "Guia"
     },
     {
