@@ -4762,6 +4762,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-25",
+      "title": "Open-Generative-AI — Plataforma open source de IA generativa com imagem, vídeo, áudio e agentes",
+      "type": "novo",
+      "url": "https://github.com/inematds/Open-Generative-AI"
+    },
+    {
+      "date": "2026-08-25",
       "title": "DSH Orchestrator — DSH, Codex e Claude no mesmo ambiente",
       "type": "novo",
       "url": "https://inematds.github.io/dsh-orchestrator/guia/"
@@ -5535,6 +5541,13 @@
       "desc": "Acesso gratuito a 100+ modelos NVIDIA NIM (Llama, DeepSeek, Qwen, Mistral, Vision) via API OpenAI-compatible.",
       "url": "https://inematds.github.io/nvidiaapifree/guia/",
       "badge": "Guia"
+    },
+    {
+      "icon": "🎨",
+      "name": "Open-Generative-AI",
+      "desc": "Plataforma open source de IA generativa: imagem, vídeo, áudio, agentes, workflows, lip sync e cinema studio — roda local ou na nuvem.",
+      "url": "https://github.com/inematds/Open-Generative-AI",
+      "badge": "GitHub"
     },
     {
       "icon": "🚪",

@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-25', title: 'Open-Generative-AI — Plataforma open source de IA generativa com imagem, vídeo, áudio e agentes', type: 'novo', url: 'https://github.com/inematds/Open-Generative-AI' },
   { date: '2026-08-25', title: 'DSH Orchestrator — DSH, Codex e Claude no mesmo ambiente', type: 'novo', url: 'https://inematds.github.io/dsh-orchestrator/guia/' },
   { date: '2026-08-25', title: 'AI Assistant Decision Kit — decida qual assistente de IA serve pro seu trabalho (MIT, traduzido para pt-BR)', type: 'novo', url: 'https://inematds.github.io/ai-assistant-decision-kit/guia/' },
   { date: '2026-08-24', title: 'scrollcraft — Plugin do Claude Code que constrói páginas scroll-driven premium e verifica o próprio trabalho: contraste, motion morto e clipes travados', type: 'novo', url: 'https://inematds.github.io/scroll-craft/guia/' },
