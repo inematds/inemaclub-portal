@@ -4761,6 +4761,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-26",
+      "title": "Grokky — Cockpit desktop local-first para Codex, OpenRouter e crews de IA coordenados",
+      "type": "novo",
+      "url": "https://github.com/inematds/grokky"
+    },
+    {
       "date": "2026-08-25",
       "title": "yt-pub-livesx — Import com metadados prontos: título, descrição e capa do manifest.json sobem como vieram, sem a IA gerar por cima",
       "type": "atualizado",
@@ -5505,6 +5511,13 @@
       "desc": "Orquestrador local para executar DSH, Codex CLI e Claude Code com sessões tmux, GitHub CLI e worktrees isolados.",
       "url": "https://inematds.github.io/dsh-orchestrator/guia/",
       "badge": "Guia"
+    },
+    {
+      "icon": "🧠",
+      "name": "grokky",
+      "desc": "Cockpit desktop local-first para Codex, OpenRouter e crews de IA coordenados: provedor, ferramentas e orquestração separados, com permissões e credenciais no boundary do Electron.",
+      "url": "https://github.com/inematds/grokky",
+      "badge": "GitHub"
     },
     {
       "icon": "🤖",
