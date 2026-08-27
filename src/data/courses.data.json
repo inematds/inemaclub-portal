@@ -4743,6 +4743,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-27",
+      "title": "otimizevideo — Vídeo de 30 min vira corte de 2 min sem o modelo escolher os timestamps",
+      "type": "novo",
+      "url": "https://inematds.github.io/otimizevideo/guia/"
+    },
+    {
+      "date": "2026-08-27",
       "title": "musicavideo-pub — Vitrine pública do acervo: clipes, faixas e capas servidos do Hugging Face, com like do público",
       "type": "novo",
       "url": "https://musicavideo-pub.vercel.app"
@@ -5567,6 +5573,13 @@
       "desc": "Plataforma open source de IA generativa: imagem, vídeo, áudio, agentes, workflows, lip sync e cinema studio — roda local ou na nuvem.",
       "url": "https://github.com/inematds/Open-Generative-AI",
       "badge": "GitHub"
+    },
+    {
+      "icon": "✂️",
+      "name": "otimizevideo",
+      "desc": "CLI que condensa vídeo longo (20–30 min) em ~2 min: o modelo pontua unidades numeradas da transcrição e o código converte id em tempo e corta — corte em fronteira de palavra, plano de corte editável e re-render de graça.",
+      "url": "https://inematds.github.io/otimizevideo/guia/",
+      "badge": "Guia"
     },
     {
       "icon": "🚪",
