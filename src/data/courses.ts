@@ -2281,15 +2281,6 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/curso-assistente-voz/',
   },
   {
-    id: 239,
-    title: 'Agentes no n8n — Automatize Tudo',
-    description:
-      'Do classificador de e-mails ao RAG de vendas: workflows prontos para importar, modelos open-source, APIs e agentes multimodais. Baixe o JSON, suba no n8n e rode.',
-    icon: '🔀',
-    tags: ['n8n', 'Automação', 'Agentes', 'IA'],
-    url: 'https://inematds.github.io/curso-agentes-n8n/',
-  },
-  {
     id: 240,
     title: 'INEMA Command Language — Domine os 100 Comandos',
     description:
@@ -2347,7 +2338,6 @@ export const platformsData: Course[] = [
 
 export const updatesData: Update[] = [
   { date: '2026-08-24', title: 'Assistente de Voz — JARVIS, CASE & CIA', type: 'novo', url: 'https://inematds.github.io/curso-assistente-voz/' },
-  { date: '2026-08-24', title: 'Agentes no n8n — Automatize Tudo', type: 'novo', url: 'https://inematds.github.io/curso-agentes-n8n/' },
   { date: '2026-08-24', title: 'INEMA Command Language — Domine os 100 Comandos', type: 'novo', url: 'https://inematds.github.io/curso-inema-dsl/' },
   { date: '2026-08-24', title: 'Social Media — Seu Funcionario de Conteudo', type: 'novo', url: 'https://inematds.github.io/curso-social-media/' },
   { date: '2026-08-24', title: 'Extras e Comparacoes — Complementos do Workshop', type: 'novo', url: 'https://inematds.github.io/curso-suporte/' },

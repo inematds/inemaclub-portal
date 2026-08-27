@@ -3406,19 +3406,6 @@
       "url": "https://inematds.github.io/curso-assistente-voz/"
     },
     {
-      "id": 239,
-      "title": "Agentes no n8n — Automatize Tudo",
-      "description": "Do classificador de e-mails ao RAG de vendas: workflows prontos para importar, modelos open-source, APIs e agentes multimodais. Baixe o JSON, suba no n8n e rode.",
-      "icon": "🔀",
-      "tags": [
-        "n8n",
-        "Automação",
-        "Agentes",
-        "IA"
-      ],
-      "url": "https://inematds.github.io/curso-agentes-n8n/"
-    },
-    {
       "id": 240,
       "title": "INEMA Command Language — Domine os 100 Comandos",
       "description": "Uma DSL para dirigir IA com precisao: voce digita /comando e ele carrega o contexto certo. Seis trilhas que vao de /truth e /research ate /redteam e /decide.",
@@ -3503,12 +3490,6 @@
       "title": "Assistente de Voz — JARVIS, CASE & CIA",
       "type": "novo",
       "url": "https://inematds.github.io/curso-assistente-voz/"
-    },
-    {
-      "date": "2026-08-24",
-      "title": "Agentes no n8n — Automatize Tudo",
-      "type": "novo",
-      "url": "https://inematds.github.io/curso-agentes-n8n/"
     },
     {
       "date": "2026-08-24",
