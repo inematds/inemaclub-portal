@@ -4742,6 +4742,18 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-27",
+      "title": "musicavideo-pub — Vitrine pública do acervo: clipes, faixas e capas servidos do Hugging Face, com like do público",
+      "type": "novo",
+      "url": "https://musicavideo-pub.vercel.app"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "musicavideo — O acervo vai para a nuvem: aprovar no painel, um comando publica só o que mudou, e o painel local sobe sozinho",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/musicavideo/guia/"
+    },
+    {
       "date": "2026-08-26",
       "title": "Grokky — Cockpit desktop local-first para Codex, OpenRouter e crews de IA coordenados",
       "type": "novo",
@@ -5533,6 +5545,13 @@
       "name": "musicavideo",
       "desc": "Uma frase vira música, capa e clipe: o plano das três partes é escrito e aprovado antes de qualquer centavo sair, com portão em cada artefato, decupagem que cobre a faixa inteira e provedores plugáveis — capa e vídeo de graça, só a música custa.",
       "url": "https://inematds.github.io/musicavideo/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📺",
+      "name": "musicavideo-pub",
+      "desc": "Vitrine pública do acervo do musicavideo: clipes, faixas e capas servidos direto do dataset no Hugging Face (range request, sem proxy), com o manifesto escrito pelo próprio pipeline e like do público voltando para o painel local.",
+      "url": "https://musicavideo-pub.vercel.app",
       "badge": "Guia"
     },
     {
