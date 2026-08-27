@@ -17,7 +17,7 @@ export interface Update {
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
   { date: '2026-08-27', title: 'otimizevideo — Vídeo de 30 min vira corte de 2 min sem o modelo escolher os timestamps', type: 'novo', url: 'https://inematds.github.io/otimizevideo/guia/' },
-  { date: '2026-08-27', title: 'musicavideo-pub — Vitrine pública do acervo: clipes, faixas e capas servidos do Hugging Face, com like do público', type: 'novo', url: 'https://musicavideo-pub.vercel.app' },
+  { date: '2026-08-27', title: 'musicavideo-pub — App Next.js que serve vídeo pesado sem hospedar mídia: Hugging Face por range request, texto no manifesto', type: 'novo', url: 'https://github.com/inematds/musicavideo-pub' },
   { date: '2026-08-27', title: 'musicavideo — O acervo vai para a nuvem: aprovar no painel, um comando publica só o que mudou, e o painel local sobe sozinho', type: 'atualizado', url: 'https://inematds.github.io/musicavideo/guia/' },
   { date: '2026-08-26', title: 'Grokky — Cockpit desktop local-first para Codex, OpenRouter e crews de IA coordenados', type: 'novo', url: 'https://github.com/inematds/grokky' },
   { date: '2026-08-25', title: 'yt-pub-livesx — Import com metadados prontos: título, descrição e capa do manifest.json sobem como vieram, sem a IA gerar por cima', type: 'atualizado', url: 'https://inematds.github.io/yt-pub-livesx/' },

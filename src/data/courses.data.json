@@ -4749,9 +4749,9 @@
     },
     {
       "date": "2026-08-27",
-      "title": "musicavideo-pub — Vitrine pública do acervo: clipes, faixas e capas servidos do Hugging Face, com like do público",
+      "title": "musicavideo-pub — App Next.js que serve vídeo pesado sem hospedar mídia: Hugging Face por range request, texto no manifesto",
       "type": "novo",
-      "url": "https://musicavideo-pub.vercel.app"
+      "url": "https://github.com/inematds/musicavideo-pub"
     },
     {
       "date": "2026-08-27",
@@ -5556,9 +5556,9 @@
     {
       "icon": "📺",
       "name": "musicavideo-pub",
-      "desc": "Vitrine pública do acervo do musicavideo: clipes, faixas e capas servidos direto do dataset no Hugging Face (range request, sem proxy), com o manifesto escrito pelo próprio pipeline e like do público voltando para o painel local.",
-      "url": "https://musicavideo-pub.vercel.app",
-      "badge": "Guia"
+      "desc": "App Next.js que serve o acervo do musicavideo sem hospedar mídia: os clipes e as faixas vêm de um dataset público no Hugging Face (range request direto no navegador, sem proxy nem storage pago) e o texto viaja no manifesto, escrito pelo próprio pipeline. Uma página por música, com like do público voltando para o painel local.",
+      "url": "https://github.com/inematds/musicavideo-pub",
+      "badge": "GitHub"
     },
     {
       "icon": "⚡",
