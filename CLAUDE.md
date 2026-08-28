@@ -33,6 +33,26 @@ A home hoje: header → evento → Trilha para Iniciantes (completa) → 3 quadr
 
 Snapshot estático da home anterior: `public/index2.html` → `https://inema.club/index2.html`.
 
+## Últimas Novidades (feed do INEMA.VIP) — automático
+
+Seção da home logo **antes** de "Últimas Atualizações de Cursos". Vem do tópico
+`306` do grupo INEMA.VIP no Telegram, que já é um feed curado pelo Nei: cada
+anúncio é um bloco fechado por uma linha de `=====`.
+
+- `scripts/gera-novidades.mjs` — parser. Resolve `t.me/c/<grupo>/<topico>` para
+  `cvip.inema.pro/<slug>/<id>.html`, **só emite o item se a página já existe**
+  (senão espera o ciclo seguinte, nada de 404), e puxa o `**Resumo curto**` do
+  `out2/<grupo>/<topico>/resumo.md`. Bloco sem link do cvip também vira novidade,
+  com link externo quando houver. Sem LLM — custo zero.
+- `src/data/novidades.ts` — **GERADO, não editar à mão.** Lista rolante de 30.
+- `state/novidades-portal.json` (no `telegramtopicosindex`) — dedupe; janela de
+  3 dias, então uma noite que falhar se recupera sozinha na seguinte.
+- Cron: `30 1 * * *`. Tem que ser **depois do cerebro-vip** (00:30, termina
+  ~01:15), que é quem publica a página do cvip.
+
+Mexeu no id `#novidades`? Ele **não** está em `PORTAL_ANCHORS` — se quiser que o
+agente de chat navegue até lá, adicione e rode `npx supabase functions deploy chat`.
+
 ## Agente de chat (guia do site)
 
 `src/components/AgenteChat/` monta o widget; a inteligência está na Edge Function do Supabase, em `supabase/functions/`. Dois arquivos importam:
