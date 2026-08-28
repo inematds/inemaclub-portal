@@ -1,6 +1,6 @@
 // GERADO POR scripts/gera-novidades.mjs — NÃO EDITAR À MÃO.
-// Fonte: tópico 306 do grupo INEMA.VIP no Telegram, todo dia às 01:30.
-// Cada item linka pra nota publicada no cvip.inema.pro (área do assinante).
+// Fonte: tópico 306 do grupo INEMA.VIP no Telegram, todo dia às 01:45.
+// Cada item linka pra rota /cerebro do inema.pro (área do assinante).
 
 export type Novidade = {
   id: string;
@@ -18,7 +18,7 @@ export const novidadesData: Novidade[] = [
     "titulo": "Custo Assinaturas",
     "resumo": "Análise comparativa de custo-benefício entre assinaturas e APIs de LLMs (Claude Max, Kimi Vivace, DeepSeek V4, Codex) para um perfil de uso muito pesado com alto cache. Discussão sobre arquitetura multi-modelo para otimizar custo vs. capacidade.",
     "grupo": "INEMA.LLMS",
-    "url": "https://cvip.inema.pro/inema-llms/4464.html"
+    "url": "https://www.inema.pro/cerebro/inema-llms/4464"
   },
   {
     "id": "2433384436/6406",
@@ -26,7 +26,7 @@ export const novidadesData: Novidade[] = [
     "titulo": "Agente IS Conceito OS-BOT - Jarvis",
     "resumo": "Tópico apresenta o conceito de agente de IA como \"trabalhador digital persistente\" na nuvem, chamado de OS-BOT / Jarvis, com infraestrutura de cinco camadas.",
     "grupo": "INEMA.AGENTES",
-    "url": "https://cvip.inema.pro/inema-agentes/6406.html"
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6406"
   },
   {
     "id": "2463916523/4478",
@@ -34,7 +34,7 @@ export const novidadesData: Novidade[] = [
     "titulo": "5 Topicos IA Confiavel",
     "resumo": "Apresentação do framework VAULT, um conjunto de 5 princípios para construir sistemas de IA mais seguros e confiáveis, inspirado em práticas do Goldman Sachs.",
     "grupo": "INEMA.LLMS",
-    "url": "https://cvip.inema.pro/inema-llms/4478.html"
+    "url": "https://www.inema.pro/cerebro/inema-llms/4478"
   },
   {
     "id": "2463916523/4489",
@@ -42,7 +42,7 @@ export const novidadesData: Novidade[] = [
     "titulo": "OpenAI Chip Kernel Jalapeño",
     "resumo": "Análise do chip Jalapeño, primeiro ASIC próprio da OpenAI para inferência de IA, e das implicações estratégicas do uso de IA no design de hardware.",
     "grupo": "INEMA.LLMS",
-    "url": "https://cvip.inema.pro/inema-llms/4489.html"
+    "url": "https://www.inema.pro/cerebro/inema-llms/4489"
   },
   {
     "id": "vip/2026-08-27/ja esta no  repo  e ele faz parte do inemaccbot",
@@ -82,7 +82,7 @@ export const novidadesData: Novidade[] = [
     "titulo": "Influenciador Pago Morreu?",
     "resumo": "Análise sobre a migração do mercado de influência do modelo de cachê fixo para programas de afiliados, discutindo quais perfis de criadores sobrevivem a essa mudança.",
     "grupo": "INEMA.TDS",
-    "url": "https://cvip.inema.pro/inema-tds/5577.html"
+    "url": "https://www.inema.pro/cerebro/inema-tds/5577"
   },
   {
     "id": "vip/2026-08-25/colocando aqui os videos q crio com o inemaccbot  e o /music",
@@ -98,6 +98,6 @@ export const novidadesData: Novidade[] = [
     "titulo": "WAN 3.0 - Lançamento",
     "resumo": "Apresentação do lançamento do modelo de geração de vídeo Wan 3.0 da Alibaba, com destaque para o recurso Omni Reference que transforma documentos e arquivos variados diretamente em vídeo.",
     "grupo": "INEMA.VIDEOS",
-    "url": "https://cvip.inema.pro/inema-videos/4616.html"
+    "url": "https://www.inema.pro/cerebro/inema-videos/4616"
   }
 ];

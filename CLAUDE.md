@@ -39,16 +39,22 @@ Seção da home logo **antes** de "Últimas Atualizações de Cursos". Vem do t�
 `306` do grupo INEMA.VIP no Telegram, que já é um feed curado pelo Nei: cada
 anúncio é um bloco fechado por uma linha de `=====`.
 
-- `scripts/gera-novidades.mjs` — parser. Resolve `t.me/c/<grupo>/<topico>` para
-  `cvip.inema.pro/<slug>/<id>.html`, **só emite o item se a página já existe**
-  (senão espera o ciclo seguinte, nada de 404), e puxa o `**Resumo curto**` do
+- `scripts/gera-novidades.mjs` — parser. Resolve `t.me/c/<grupo>/<topico>` para a
+  rota **same-origin** `https://www.inema.pro/cerebro/<slug>/<id>`, **só emite o
+  item se a chave já existe no `cerebro.json`** (senão espera o ciclo seguinte,
+  nada de 404), e puxa o `**Resumo curto**` do
   `out2/<grupo>/<topico>/resumo.md`. Bloco sem link do cvip também vira novidade,
   com link externo quando houver. Sem LLM — custo zero.
 - `src/data/novidades.ts` — **GERADO, não editar à mão.** Lista rolante de 30.
 - `state/novidades-portal.json` (no `telegramtopicosindex`) — dedupe; janela de
   3 dias, então uma noite que falhar se recupera sozinha na seguinte.
-- Cron: `30 1 * * *`. Tem que ser **depois do cerebro-vip** (00:30, termina
-  ~01:15), que é quem publica a página do cvip.
+- Cron: `45 1 * * *`. Tem que ser **depois do cerebro-vip** (00:30, termina ~01:15)
+  **e do `sync-cerebro.sh` do inemapro-mono** (01:30), que baka o `cerebro.json`.
+
+**Não linkar pro `cvip.inema.pro/<slug>/<id>.html` direto**: aquele host responde
+`307 -> inema.pro/` e o assinante cai no `/entrar` sem retorno, perdendo o destino.
+O link certo é sempre a rota `/cerebro` do `inema.pro` — mesmo motivo do fix
+`c561bd7` no inemapro-mono.
 
 Mexeu no id `#novidades`? Ele **não** está em `PORTAL_ANCHORS` — se quiser que o
 agente de chat navegue até lá, adicione e rode `npx supabase functions deploy chat`.

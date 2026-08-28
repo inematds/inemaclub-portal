@@ -2,16 +2,16 @@
 # Últimas Novidades do portal: lê o tópico de anúncios do INEMA.VIP no Telegram
 # e regenera src/data/novidades.ts, commitando + pushando quando muda.
 #
-# Roda às 01:30 — DEPOIS do cerebro-vip (00:30, termina ~01:15), porque cada
-# novidade linka pra página publicada no cvip.inema.pro. Rodar antes disso faria
-# o item esperar um dia inteiro (o gerador segura item sem página) ou apontar
-# pra 404 no GitHub Pages.
+# Roda às 01:45 — no fim da cadeia noturna (cerebro-vip 00:30 termina ~01:15,
+# bake do /cerebro em inemapro-mono às 01:30). Rodar antes disso faria
+# o item esperar um dia inteiro — o gerador segura novidade cuja nota ainda
+# não está no cerebro.json.
 #
 # Instalado no cron via:
-#   30 1 * * * /home/nmaldaner/projetos/portal/scripts/gera-novidades.sh >> /home/nmaldaner/projetos/portal/logs/novidades.log 2>&1
+#   45 1 * * * /home/nmaldaner/projetos/portal/scripts/gera-novidades.sh >> /home/nmaldaner/projetos/portal/logs/novidades.log 2>&1
 
 set -e
-trap '/home/nmaldaner/bin/inema-notify "🚨 portal (01:30): geração das Últimas Novidades FALHOU na linha $LINENO. Ver logs/novidades.log" || true' ERR
+trap '/home/nmaldaner/bin/inema-notify "🚨 portal (01:45): geração das Últimas Novidades FALHOU na linha $LINENO. Ver logs/novidades.log" || true' ERR
 
 # cron não herda env
 export PATH="/usr/local/bin:/usr/bin:/bin:$HOME/.local/bin"

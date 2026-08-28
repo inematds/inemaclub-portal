@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 // Gera src/data/novidades.ts a partir do tópico de anúncios do grupo INEMA.VIP
-// no Telegram. Roda toda madrugada (01:30), DEPOIS do ciclo do cerebro-vip
-// (00:30 -> termina ~01:15), porque cada novidade linka pra página do cvip e
-// essa página só existe depois daquele ciclo.
+// no Telegram. Roda toda madrugada (01:45), no fim da cadeia noturna: cada
+// novidade linka pra uma nota do Cérebro, que só existe depois do ciclo do
+// cerebro-vip (00:30 -> termina ~01:15) e do bake do PRO (01:30).
 //
 // Cadeia completa:
 //   23:20  telegramtopicosindex  -> out2/<grupo>/<topico>/{messages.json,content.txt}
 //   00:10  inemabuscas           -> out2/<grupo>/<topico>/resumo.md
-//   00:30  cerebro-vip           -> docs/<slug>/<id>.html  (publica cvip.inema.pro)
-//   01:30  ESTE script           -> portal/src/data/novidades.ts + commit/push
+//   00:30  cerebro-vip           -> content/ + docs/<slug>/<id>.html
+//   01:30  inemapro-mono         -> apps/pro/data/cerebro.json (bake da rota /cerebro)
+//   01:45  ESTE script           -> portal/src/data/novidades.ts + commit/push
+//
+// O destino de cada novidade é a rota SAME-ORIGIN https://www.inema.pro/cerebro/
+// <slug>/<id>, e não o .html cru do cvip.inema.pro: o cvip responde 307 pra
+// inema.pro/ e o assinante perde o destino no meio do login. Por isso o item só
+// sai quando a chave já existe no cerebro.json (bake das 01:30).
 //
 // O tópico 306 do INEMA.VIP já é um feed curado pelo Nei: cada anúncio é um
 // bloco fechado por uma linha de "=====". Não tem LLM aqui — título, chamada e
@@ -19,7 +25,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const TTI = '/home/nmaldaner/projetos/telegramtopicosindex';
-const CVIP = '/home/nmaldaner/projetos/cerebro-vip';
+const MONO = '/home/nmaldaner/projetos/inemapro-mono';
 const PORTAL = path.resolve(new URL('..', import.meta.url).pathname);
 
 const GRUPO_VIP = '2405283087';
@@ -49,6 +55,11 @@ function mapaGrupos() {
   }
   return m;
 }
+
+/** Chaves "<slug>/<id>" já publicadas na rota /cerebro do inema.pro. */
+const CEREBRO_TOPICOS = new Set(
+  Object.keys(lerJSON(path.join(MONO, 'apps/pro/data/cerebro.json'), { topicos: {} }).topicos)
+);
 
 const SEP = /^=+$/;
 const URL_RE = /https?:\/\/\S+/g;
@@ -111,19 +122,19 @@ function montaItem(bloco, grupos) {
   if (tme) {
     const [, gid, tid] = tme;
     const g = grupos.get(gid);
-    // Sem página publicada no cvip o item espera o próximo ciclo (nada de 404).
-    if (!g || !fs.existsSync(path.join(CVIP, 'docs', g.slug, `${tid}.html`))) return null;
+    // Sem nota no bake do /cerebro o item espera o ciclo seguinte (nada de 404).
+    if (!g || !CEREBRO_TOPICOS.has(`${g.slug}/${tid}`)) return null;
     return {
       id: `${gid}/${tid}`,
       date,
       titulo,
       resumo: paragrafoDoResumo(gid, tid) || chamada,
       grupo: g.label,
-      url: `https://cvip.inema.pro/${g.slug}/${tid}.html`,
+      url: `https://www.inema.pro/cerebro/${g.slug}/${tid}`,
     };
   }
 
-  // Opção (b): bloco sem link do cvip também vira novidade. Se houver um link
+  // Opção (b): bloco sem nota no Cérebro também vira novidade. Se houver um link
   // externo (YouTube, inema.club...) ele é o destino; senão o item é só texto.
   const externo = juntos.match(URL_RE);
   return {
@@ -189,8 +200,8 @@ function existentes() {
 
 function arquivoTS(lista) {
   return `// GERADO POR scripts/gera-novidades.mjs — NÃO EDITAR À MÃO.
-// Fonte: tópico ${TOPICO_FEED} do grupo INEMA.VIP no Telegram, todo dia às 01:30.
-// Cada item linka pra nota publicada no cvip.inema.pro (área do assinante).
+// Fonte: tópico ${TOPICO_FEED} do grupo INEMA.VIP no Telegram, todo dia às 01:45.
+// Cada item linka pra rota /cerebro do inema.pro (área do assinante).
 
 export type Novidade = {
   id: string;
