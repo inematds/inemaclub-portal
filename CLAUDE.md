@@ -43,8 +43,19 @@ anúncio é um bloco fechado por uma linha de `=====`.
   rota **same-origin** `https://www.inema.pro/cerebro/<slug>/<id>`, **só emite o
   item se a chave já existe no `cerebro.json`** (senão espera o ciclo seguinte,
   nada de 404), e puxa o `**Resumo curto**` do
-  `out2/<grupo>/<topico>/resumo.md`. Bloco sem link do cvip também vira novidade,
-  com link externo quando houver. Sem LLM — custo zero.
+  `out2/<grupo>/<topico>/resumo.md`. Bloco sem link do Cérebro também vira
+  novidade, com link externo quando houver. Sem LLM — custo zero.
+
+  **Três filtros, e só** (a curadoria é do Nei, não nossa):
+  1. *fonte do Nei* — mensagem de membro nunca entra no item. `AUTORES_NEI` =
+     `Desconhecido` (ele posta como admin anônimo) e `INEMA`; qualquer autor
+     nomeado é membro ou bot.
+  2. *não é resposta* — bloco em que um membro falou e que não anuncia nada
+     (sem link do Cérebro) é conversa: o que o Nei escreveu ali é resposta dele.
+  3. *tem o que mostrar* — sem link e sem parágrafo o card abriria vazio.
+
+  Backtest de 40 dias: 111 blocos → 30 novidades, 24 com link do Cérebro.
+  `NOVIDADES_DIAS=40 node scripts/gera-novidades.mjs` refaz esse backtest.
 - `src/data/novidades.ts` — **GERADO, não editar à mão.** Lista rolante de 30.
 - `state/novidades-portal.json` (no `telegramtopicosindex`) — dedupe; janela de
   3 dias, então uma noite que falhar se recupera sozinha na seguinte.

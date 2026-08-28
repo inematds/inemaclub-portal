@@ -20,6 +20,12 @@
 // bloco fechado por uma linha de "=====". Não tem LLM aqui — título, chamada e
 // link já vêm escritos por ele; o parágrafo sai do resumo.md que a cadeia
 // das 00:10 gerou. Custo zero.
+//
+// Três filtros, e só (a curadoria é do Nei, não nossa):
+//   1. FONTE DO NEI — mensagem de membro nunca entra no item.
+//   2. NÃO É RESPOSTA — bloco em que um membro falou e que não anuncia nada
+//      (sem link do Cérebro) é conversa; o que o Nei escreveu ali é resposta.
+//   3. TEM O QUE MOSTRAR — sem link e sem parágrafo o card abriria vazio.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -30,8 +36,15 @@ const PORTAL = path.resolve(new URL('..', import.meta.url).pathname);
 
 const GRUPO_VIP = '2405283087';
 const TOPICO_FEED = '306';
-const DIAS_LOOKBACK = 3; // janela de blocos considerados; o state evita repetir
+const DIAS_LOOKBACK = Number(process.env.NOVIDADES_DIAS ?? 3); // janela de blocos considerados; o state evita repetir
 const MAX_ITENS = 30; // lista rolante no portal
+
+// Autores que representam o Nei no tópico de anúncios (ele posta como admin
+// anônimo -> "Desconhecido", ou pela conta do canal -> "INEMA"). Qualquer autor
+// NOMEADO é membro do grupo — ou o próprio bot. Ver AUTORES_NEI no README da
+// seção: é o que separa "fonte do Nei" de "conversa no grupo".
+const AUTORES_NEI = new Set(['Desconhecido', 'INEMA', null, undefined, '']);
+const doNei = (m) => AUTORES_NEI.has(m.author);
 
 const SAIDA = path.join(PORTAL, 'src/data/novidades.ts');
 const STATE = path.join(TTI, 'state/novidades-portal.json');
@@ -105,8 +118,14 @@ function blocosFechados(msgs) {
 }
 
 function montaItem(bloco, grupos) {
-  const textos = bloco.map((m) => m.text || '');
+  // Só entra o que o NEI escreveu: mensagem de membro sai fora do item.
+  const temMembro = bloco.some((m) => (m.text || '').trim() && !doNei(m));
+  const textos = bloco.filter(doNei).map((m) => m.text || '');
   const juntos = textos.join('\n');
+
+  // Bloco onde um membro falou e que não anuncia nada (sem link do Cérebro) é
+  // conversa: o que sobra do Nei ali é RESPOSTA dele, não novidade. Fora.
+  if (temMembro && !TME_RE.test(juntos)) return null;
 
   const prosa = [];
   for (const t of textos) for (const l of linhasProsa(t)) if (!prosa.includes(l)) prosa.push(l);
@@ -137,6 +156,9 @@ function montaItem(bloco, grupos) {
   // Opção (b): bloco sem nota no Cérebro também vira novidade. Se houver um link
   // externo (YouTube, inema.club...) ele é o destino; senão o item é só texto.
   const externo = juntos.match(URL_RE);
+  // Sem link e sem parágrafo o card abre vazio — não é novidade, é só um título
+  // solto. Fora.
+  if (!externo && !chamada) return null;
   return {
     id: `vip/${date}/${titulo.slice(0, 60)}`,
     date,
