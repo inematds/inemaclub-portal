@@ -1692,3 +1692,72 @@ html {
         border-radius: 12px;
     }
 }
+
+/* ===== Últimas Novidades (feed do INEMA.VIP) ===== */
+/* Reusa .updates-section/.update-item; o item é um botão que abre o parágrafo
+   resumido inline e só então oferece o link pro cvip.inema.pro. */
+.novidade {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.novidade:last-child {
+    border-bottom: none;
+}
+
+.novidade-head {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.novidade.aberta .novidade-head {
+    background: var(--card-hover);
+}
+
+.update-type.novidade-grupo {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    min-width: 110px;
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+}
+
+.novidade-corpo {
+    padding: 0 1.5rem 1.125rem 7.5rem;
+    background: var(--card-hover);
+}
+
+.novidade-corpo p {
+    margin: 0 0 0.75rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.novidade-corpo a {
+    display: inline-block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #f59e0b;
+    text-decoration: none;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.novidade-corpo a:hover {
+    background: rgba(245, 158, 11, 0.12);
+    border-color: #f59e0b;
+}
+
+@media (max-width: 640px) {
+    .novidade-corpo {
+        padding-left: 1.5rem;
+    }
+}

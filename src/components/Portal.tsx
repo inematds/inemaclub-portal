@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
+import { novidadesData } from '@/data/novidades'
 
 interface VisitStats {
   total: number
@@ -256,6 +257,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
   const [projectUpdatesExpanded, setProjectUpdatesExpanded] = useState(false)
+  const [novidadesExpanded, setNovidadesExpanded] = useState(false)
+  const [novidadeAberta, setNovidadeAberta] = useState<string | null>(null)
   const [repos, setRepos] = useState<Repo[]>([])
 
   // Registra a visita ao montar
@@ -376,6 +379,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
     : []
 
   // Lista de atualizações a exibir
+  const visibleNovidades = novidadesData.slice(0, novidadesExpanded ? 20 : 5)
   const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
   const visibleProjectUpdates = projectUpdatesData.slice(0, projectUpdatesExpanded ? 20 : 5)
   const sortedProjects = [...communityProjects].sort((a, b) =>
@@ -1016,6 +1020,55 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
       {/* Main — Updates + Search + Cards */}
       <main className="main">
         <div className="container">
+          {/* Últimas Novidades — vem do INEMA.VIP no Telegram (gera-novidades.mjs) */}
+          {novidadesData.length > 0 && (
+            <section id="novidades" className="updates-section novidades-section">
+              <div
+                className="updates-header"
+                onClick={() => setNovidadesExpanded((v) => !v)}
+                style={{ cursor: 'pointer' }}
+              >
+                <h3>Últimas Novidades</h3>
+                <span className="updates-toggle">{novidadesExpanded ? 'Ver menos' : 'Ver mais'}</span>
+              </div>
+              <div className={`updates-list${novidadesExpanded ? ' expanded' : ''}`}>
+                {visibleNovidades.map((n) => {
+                  const aberta = novidadeAberta === n.id
+                  return (
+                    <div key={n.id} className={`novidade${aberta ? ' aberta' : ''}`}>
+                      <button
+                        type="button"
+                        className="update-item novidade-head"
+                        aria-expanded={aberta}
+                        onClick={() => setNovidadeAberta(aberta ? null : n.id)}
+                      >
+                        <span className="update-date">{formatDate(n.date)}</span>
+                        <span className="update-type novidade-grupo">{n.grupo}</span>
+                        <span className="update-title">{n.titulo}</span>
+                        <span className="update-arrow">{aberta ? '−' : '+'}</span>
+                      </button>
+                      {aberta && (
+                        <div className="novidade-corpo">
+                          {n.resumo && <p>{n.resumo}</p>}
+                          {n.url && (
+                            <a
+                              href={n.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => trackClick(n.url, n.titulo, 'novidades')}
+                            >
+                              {n.url.includes('cvip.inema.pro') ? 'Ler no INEMA.VIP →' : 'Abrir link →'}
+                            </a>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+            </section>
+          )}
+
           {/* Updates de Cursos */}
           <section className="updates-section">
             <div
