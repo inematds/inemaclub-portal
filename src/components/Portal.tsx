@@ -502,6 +502,58 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* Evento — MUSICAVIDEO */}
+      <section id="evento-musicavideo" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/musicavideo.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/musicavideo.html', 'INEMA MUSICAVIDEO', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/doc/capa-musicavideo-v2.jpg"
+              alt="INEMA MUSICAVIDEO — crie músicas e clipes em escala, de ideia ao hit"
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '22px 26px',
+                background: 'oklch(0.15 0.02 28)',
+              }}
+            >
+              <span
+                style={{
+                  flex: '0 0 auto',
+                  display: 'inline-block',
+                  background: 'oklch(0.69 0.22 35)',
+                  color: 'oklch(0.12 0.02 28)',
+                  fontWeight: 800,
+                  borderRadius: '10px',
+                  padding: '11px 18px',
+                  fontSize: '14.5px',
+                }}
+              >
+                Conheça o MUSICAVIDEO →
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* Evento */}
       <section id="evento-destaque" style={{ padding: '2.5rem 0' }}>
         <div className="container">
