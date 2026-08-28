@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-28', title: 'snagtime — Seu próprio sistema de agendamento: booking, Google Calendar e pagamentos em teste, rodando local', type: 'novo', url: 'https://inematds.github.io/snagtime/guia/' },
   { date: '2026-08-27', title: 'otimizevideo — Vídeo de 30 min vira corte de 2 min sem o modelo escolher os timestamps', type: 'novo', url: 'https://inematds.github.io/otimizevideo/guia/' },
   { date: '2026-08-27', title: 'musicavideo-pub — App Next.js que serve vídeo pesado sem hospedar mídia: Hugging Face por range request, texto no manifesto', type: 'novo', url: 'https://inematds.github.io/musicavideo-pub/guia/' },
   { date: '2026-08-27', title: 'musicavideo — O acervo vai para a nuvem: aprovar no painel, um comando publica só o que mudou, e o painel local sobe sozinho', type: 'atualizado', url: 'https://inematds.github.io/musicavideo/guia/' },

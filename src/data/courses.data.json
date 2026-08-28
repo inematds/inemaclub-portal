@@ -4742,6 +4742,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-28",
+      "title": "snagtime — Seu próprio sistema de agendamento: booking, Google Calendar e pagamentos em teste, rodando local",
+      "type": "novo",
+      "url": "https://inematds.github.io/snagtime/guia/"
+    },
+    {
       "date": "2026-08-27",
       "title": "otimizevideo — Vídeo de 30 min vira corte de 2 min sem o modelo escolher os timestamps",
       "type": "novo",
@@ -5614,6 +5620,13 @@
       "name": "prospector-agent",
       "desc": "Esteira semi-autônoma que descobre negócios bem avaliados com site ruim, redesenha a página, publica no GitHub Pages e envia a proposta —…",
       "url": "https://inematds.github.io/prospector-agent/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📅",
+      "name": "snagtime",
+      "desc": "App de agendamento self-hosted e gratuito (MIT): disponibilidade semanal, links públicos de booking com fuso, Google Calendar, e-mails SMTP e Stripe em modo teste — demo local com SQLite sem nenhuma credencial.",
+      "url": "https://inematds.github.io/snagtime/guia/",
       "badge": "Guia"
     },
     {
