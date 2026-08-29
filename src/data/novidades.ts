@@ -13,6 +13,22 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-08-28/Zhipu identifies Ox Alpha as GLM-5.3-Flash and releases mode",
+    "date": "2026-08-28",
+    "titulo": "Zhipu identifies Ox Alpha as GLM-5.3-Flash and releases model weights · TechNode",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/"
+  },
+  {
+    "id": "vip/2026-08-28/acima eu usei este skill para construir  e olha q tem 3 vers",
+    "date": "2026-08-28",
+    "titulo": "acima eu usei este skill para construir  e olha q tem 3 versoes, 1 foto, 2 video 3 video full",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://eventos.inema.pro/meridiano-voo/"
+  },
+  {
     "id": "2463916523/4464",
     "date": "2026-08-27",
     "titulo": "Custo Assinaturas",
@@ -51,6 +67,14 @@ export const novidadesData: Novidade[] = [
     "resumo": "Gosta de Musica, olha q show",
     "grupo": "INEMA.VIP",
     "url": "https://musicavideo.inema.club/analises"
+  },
+  {
+    "id": "vip/2026-08-26/producao em massa de musicavideo  com kie/suno e agnes image",
+    "date": "2026-08-26",
+    "titulo": "producao em massa de musicavideo  com kie/suno e agnes imagens e video",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://youtube.com/@inematia?si=76ryRSW01KEE8evv"
   },
   {
     "id": "2174331656/5577",
@@ -227,29 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Curadoria de ferramentas open-source para geração de avatares falantes (talking heads) rodando localmente. O tópico agrupa links de repositórios e recursos relacionados ao tema \"Avatares LOCAL\".",
     "grupo": "INEMA.AVATARES",
     "url": "https://www.inema.pro/cerebro/inema-avatares/2194"
-  },
-  {
-    "id": "vip/2026-08-08/Analise Precos  api/plano Token",
-    "date": "2026-08-08",
-    "titulo": "Analise Precos  api/plano Token",
-    "resumo": "tem tudo chat, codigo, imagem videos Minimax H3",
-    "grupo": "INEMA.VIP",
-    "url": "https://platform.minimax.io/subscribe/token-plan?tab=individual"
-  },
-  {
-    "id": "3650752323/3117",
-    "date": "2026-08-08",
-    "titulo": "Web Sites 3D - Videos",
-    "resumo": "Guia técnico de produção de websites premium com 3D, vídeo e interações avançadas, cobrindo o fluxo completo de criação com IA — da referência visual ao deploy.",
-    "grupo": "INEMA.VIBE",
-    "url": "https://www.inema.pro/cerebro/inema-vibe/3117"
-  },
-  {
-    "id": "2174331656/5458",
-    "date": "2026-08-08",
-    "titulo": "Empresa AGENTIC",
-    "resumo": "Publicação de conteúdo conceitual sobre o modelo de \"empresa agentic\" — uma organização que constrói inteligência operacional própria com agentes, skills e governança. Texto formatado para divulgação em redes sociais.",
-    "grupo": "INEMA.TDS",
-    "url": "https://www.inema.pro/cerebro/inema-tds/5458"
   }
 ];
