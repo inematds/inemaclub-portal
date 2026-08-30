@@ -4761,6 +4761,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-08-30",
+      "title": "Content2Video INEMA — Um link vira vídeo editável com voz pt-BR e render sob aprovação",
+      "type": "novo",
+      "url": "https://inematds.github.io/videoimpacto/guia/"
+    },
+    {
       "date": "2026-08-28",
       "title": "snagtime — Seu próprio sistema de agendamento: booking, Google Calendar e pagamentos em teste, rodando local",
       "type": "novo",
@@ -5452,6 +5458,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🎬",
+      "name": "videoimpacto",
+      "desc": "Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.",
+      "url": "https://inematds.github.io/videoimpacto/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧭",
       "name": "ai-assistant-decision-kit",
