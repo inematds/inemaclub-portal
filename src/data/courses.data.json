@@ -4763,8 +4763,8 @@
     {
       "date": "2026-08-30",
       "title": "Content2Video INEMA — Um link vira vídeo editável com voz pt-BR e render sob aprovação",
-      "type": "novo",
-      "url": "https://inematds.github.io/videoimpacto/guia/"
+      "type": "atualizado",
+      "url": "https://inematds.github.io/content2video/guia/"
     },
     {
       "date": "2026-08-28",
@@ -5460,9 +5460,9 @@
   "communityProjects": [
     {
       "icon": "🎬",
-      "name": "videoimpacto",
+      "name": "content2video",
       "desc": "Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.",
-      "url": "https://inematds.github.io/videoimpacto/guia/",
+      "url": "https://inematds.github.io/content2video/guia/",
       "badge": "Guia"
     },
     {

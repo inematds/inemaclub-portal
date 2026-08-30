@@ -18,7 +18,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
-  { icon: '🎬', name: 'videoimpacto', desc: 'Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.', url: 'https://inematds.github.io/videoimpacto/guia/', badge: 'Guia' },
+  { icon: '🎬', name: 'content2video', desc: 'Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.', url: 'https://inematds.github.io/content2video/guia/', badge: 'Guia' },
   { icon: "🧭", name: "ai-assistant-decision-kit", desc: "Kit de decisão (MIT, Mark Kashef) traduzido para pt-BR: compara assistentes de IA por modelo operacional antes da marca — entrevista, pesquisa datada, teste reversível e piloto de 7 dias.", url: "https://inematds.github.io/ai-assistant-decision-kit/guia/", badge: "Guia" },
   { icon: '🧭', name: 'agenteexecuta', desc: "Skill que decide entre sequência, paralelismo ou fluxo híbrido antes de criar agentes — portão de proporcionalidade, matriz de decisão com limiar…", url: 'https://inematds.github.io/agenteexecuta/guia/', badge: 'Guia' },
   { icon: '🅰️', name: 'agnesfree', desc: "Guia e análise da Agnes AI (Sapiens AI): API multimodal compatível com OpenAI com texto, imagem e vídeo gratuitos — modelos, limites, planos pagos,…", url: 'https://inematds.github.io/agnesfree/guia/', badge: 'Guia' },
