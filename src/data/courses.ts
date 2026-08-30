@@ -1080,6 +1080,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/formacaoia/',
   },
   {
+    id: 246,
+    title: 'Formação WebMCP — Sites e Agentes do Zero ao Expert',
+    description:
+      'Transforme sites tradicionais em aplicações compreendidas e operadas por agentes de IA. Inclui diagnóstico de prontidão em webmcp.inema.pro, quatro fases de formação e projeto final.',
+    icon: '🌐',
+    tags: ['WebMCP', 'Agentes de IA', 'JavaScript', 'MCP'],
+    url: 'https://inematds.github.io/webmcp-1-formacao/',
+  },
+  {
     id: 61,
     title: 'FPFilm - Crie Filmes com IA',
     description:
@@ -2341,6 +2350,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-30', title: 'Formação WebMCP — Sites e Agentes do Zero ao Expert', type: 'novo', url: 'https://inematds.github.io/webmcp-1-formacao/' },
   { date: '2026-08-24', title: 'Assistente de Voz — JARVIS, CASE & CIA', type: 'novo', url: 'https://inematds.github.io/curso-assistente-voz/' },
   { date: '2026-08-24', title: 'INEMA Command Language — Domine os 100 Comandos', type: 'novo', url: 'https://inematds.github.io/curso-inema-dsl/' },
   { date: '2026-08-24', title: 'Social Media — Seu Funcionario de Conteudo', type: 'novo', url: 'https://inematds.github.io/curso-social-media/' },

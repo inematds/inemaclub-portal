@@ -1505,6 +1505,19 @@
       "url": "https://inematds.github.io/formacaoia/"
     },
     {
+      "id": 246,
+      "title": "Formação WebMCP — Sites e Agentes do Zero ao Expert",
+      "description": "Transforme sites tradicionais em aplicações compreendidas e operadas por agentes de IA. Inclui diagnóstico de prontidão em webmcp.inema.pro, quatro fases de formação e projeto final.",
+      "icon": "🌐",
+      "tags": [
+        "WebMCP",
+        "Agentes de IA",
+        "JavaScript",
+        "MCP"
+      ],
+      "url": "https://inematds.github.io/webmcp-1-formacao/"
+    },
+    {
       "id": 61,
       "title": "FPFilm - Crie Filmes com IA",
       "description": "Criacao cinematografica com Freepik Spaces. Do roteiro ao export final usando workflows visuais baseados em nodes. 6 trilhas, 34 modulos, 200+ topicos. Cobre fundamentos de cinema, camera, producao e projeto completo.",
@@ -3485,6 +3498,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-08-30",
+      "title": "Formação WebMCP — Sites e Agentes do Zero ao Expert",
+      "type": "novo",
+      "url": "https://inematds.github.io/webmcp-1-formacao/"
+    },
     {
       "date": "2026-08-24",
       "title": "Assistente de Voz — JARVIS, CASE & CIA",
