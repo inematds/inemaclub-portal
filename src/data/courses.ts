@@ -1090,6 +1090,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/webmcp-1-formacao/',
   },
   {
+    id: 247,
+    title: 'Formação WebMCP 2 — Builder',
+    description:
+      'Primeira fase prática da Formação WebMCP. Aprenda a transformar sites em superfícies operáveis por agentes usando formulários declarativos, tools JavaScript, JSON Schema, cancelamento, fallback e um validador avançado de catálogos.',
+    icon: '🧰',
+    tags: ['WebMCP', 'JavaScript', 'JSON Schema', 'Agentes de IA'],
+    url: 'https://inematds.github.io/webmcp-2-builder/',
+  },
+  {
     id: 61,
     title: 'FPFilm - Crie Filmes com IA',
     description:
@@ -2351,6 +2360,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-30', title: 'Formação WebMCP 2 — Builder', type: 'novo', url: 'https://inematds.github.io/webmcp-2-builder/' },
   { date: '2026-08-30', title: 'Formação WebMCP — Sites e Agentes do Zero ao Expert', type: 'novo', url: 'https://inematds.github.io/webmcp-1-formacao/' },
   { date: '2026-08-24', title: 'Assistente de Voz — JARVIS, CASE & CIA', type: 'novo', url: 'https://inematds.github.io/curso-assistente-voz/' },
   { date: '2026-08-24', title: 'INEMA Command Language — Domine os 100 Comandos', type: 'novo', url: 'https://inematds.github.io/curso-inema-dsl/' },
