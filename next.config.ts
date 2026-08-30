@@ -12,6 +12,19 @@ const nextConfig: NextConfig = {
   // passam a redirecionar /stats -> /stats/ (301), igual já fazia ao
   // contrário antes.
   trailingSlash: true,
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
+          },
+        ],
+      },
+    ]
+  },
   async redirects() {
     return [
       // Pós-pagamento Asaas: o successUrl do checkout precisa estar no domínio

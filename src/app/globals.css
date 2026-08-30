@@ -534,6 +534,87 @@ html {
     margin-bottom: 1.5rem;
 }
 
+/* Busca de cursos: fallback humano e tool WebMCP declarativa */
+.webmcp-course-search {
+    padding: 2.5rem 0;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.webmcp-course-search-content {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1.2fr);
+    gap: 3rem;
+    align-items: end;
+}
+
+.webmcp-course-search h2 {
+    margin-bottom: 0.65rem;
+    color: var(--text-primary);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.webmcp-course-search p {
+    max-width: 58ch;
+    color: var(--text-secondary);
+}
+
+.webmcp-course-search form {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.webmcp-course-search label {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.webmcp-course-search-controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.75rem;
+}
+
+.webmcp-course-search input {
+    min-width: 0;
+    min-height: 50px;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    font: inherit;
+}
+
+.webmcp-course-search input::placeholder {
+    color: var(--text-secondary);
+}
+
+.webmcp-course-search button {
+    min-height: 50px;
+    padding: 0.75rem 1.2rem;
+    border: 0;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: var(--accent-dark);
+    font: inherit;
+    font-weight: 750;
+    cursor: pointer;
+}
+
+.webmcp-course-search button:hover {
+    background: var(--primary-hover);
+}
+
+.webmcp-course-search input:focus-visible,
+.webmcp-course-search button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
 /* Learning Path Section */
 .learning-path-section {
     background: var(--bg-color);
@@ -2028,6 +2109,15 @@ html {
 
     .course-catalog-item {
         gap: 1rem;
+    }
+
+    .webmcp-course-search-content,
+    .webmcp-course-search-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .webmcp-course-search-content {
+        gap: 1.5rem;
     }
 }
 

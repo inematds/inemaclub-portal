@@ -510,6 +510,47 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* Busca manual + tool WebMCP declarativa. O formulário continua útil
+          em qualquer navegador e pode ser descoberto por agentes compatíveis. */}
+      <section className="webmcp-course-search" aria-labelledby="webmcp-course-search-title">
+        <div className="container">
+          <div className="webmcp-course-search-content">
+            <div>
+              <h2 id="webmcp-course-search-title">O que você quer aprender hoje?</h2>
+              <p>
+                Pesquise os cursos públicos do INEMA por tema, ferramenta ou objetivo. Mesmo sem
+                WebMCP, você pode continuar manualmente pelo catálogo.
+              </p>
+            </div>
+            <form
+              action="/cursos/"
+              method="get"
+              {...({
+                toolname: 'buscar_cursos',
+                tooldescription: 'Busca cursos públicos do INEMA por tema, ferramenta ou objetivo de aprendizagem.',
+                toolautosubmit: '',
+              } as Record<string, string>)}
+            >
+              <label htmlFor="home-course-search">Tema ou objetivo</label>
+              <div className="webmcp-course-search-controls">
+                <input
+                  id="home-course-search"
+                  type="search"
+                  name="q"
+                  required
+                  maxLength={100}
+                  placeholder="Ex.: WebMCP, agentes, automação"
+                  {...({
+                    toolparamdescription: 'Tema, ferramenta ou objetivo que a pessoa deseja aprender.',
+                  } as Record<string, string>)}
+                />
+                <button type="submit">Buscar cursos</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* Evento — MUSICAVIDEO */}
       <section id="evento-musicavideo" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
