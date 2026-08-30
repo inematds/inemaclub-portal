@@ -552,6 +552,34 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* Evento — WebMCP */}
+      <section id="evento-webmcp" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/', 'WebMCP', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/doc/webmcp2.png"
+              alt="WebMCP — evento INEMA"
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
+
       {/* Evento — MUSICAVIDEO */}
       <section id="evento-musicavideo" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
