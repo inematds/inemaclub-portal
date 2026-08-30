@@ -4838,6 +4838,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-30",
+      "title": "VideoSub — Um tema vira vídeo completo com roteiro, voz, imagens, animação e legendas revisáveis",
+      "type": "novo",
+      "url": "https://inematds.github.io/videosub/guia/"
+    },
+    {
+      "date": "2026-08-30",
       "title": "WebMCP Readiness — Teste o seu SITE",
       "type": "novo",
       "url": "https://webmcp.inema.pro/"
@@ -5776,6 +5782,13 @@
       "name": "videoanima",
       "desc": "Pipeline que transforma uma história em decupagem cinematográfica, keyframes A/B, clipes e filme vertical narrado — provedor de imagem e de vídeo escolhível por parâmetro.",
       "url": "https://inematds.github.io/videoanima-skill/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "videosub",
+      "desc": "Estúdio local que transforma tema ou conteúdo em vídeo completo: roteiro por Codex OAuth, voz ElevenLabs, imagens e animações Agnes, legendas revisáveis e render MP4 por FFmpeg.",
+      "url": "https://inematds.github.io/videosub/guia/",
       "badge": "Guia"
     },
     {
