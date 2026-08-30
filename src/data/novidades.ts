@@ -13,6 +13,86 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "3012468959/7064",
+    "date": "2026-08-29",
+    "titulo": "DSH com o Claude Code e outros",
+    "resumo": "Pesquisa sobre o DeepSeek Harness (DSH) e sua integração com Claude Code e outros provedores de LLM. O tópico reúne notas e capturas de tela sobre o assunto.",
+    "grupo": "INEMA.CCODE",
+    "url": "https://www.inema.pro/cerebro/inema-ccode/7064"
+  },
+  {
+    "id": "2433384436/6425",
+    "date": "2026-08-29",
+    "titulo": "Framework EVE da Verce",
+    "resumo": "Apresentação do framework eve da Vercel, recém-lançado em Public Preview. O tópico traz contexto sobre o lançamento, maturidade e evolução rápida do projeto.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6425"
+  },
+  {
+    "id": "2433384436/6445",
+    "date": "2026-08-29",
+    "titulo": "OKF — Open Knowledge Format",
+    "resumo": "Discussão sobre o OKF (Open Knowledge Format), uma proposta emergente para estruturar conhecimento de forma portátil e legível tanto por humanos quanto por agentes de IA, com potencial de uso como camada de memória compartilhada entre agentes.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6445"
+  },
+  {
+    "id": "2463916523/4513",
+    "date": "2026-08-29",
+    "titulo": "Qwen 3.8 27B localmente",
+    "resumo": "Guia prático para rodar o modelo Qwen 3.8 27B localmente via Ollama no Linux, com variáveis de ambiente otimizadas para GPU.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4513"
+  },
+  {
+    "id": "vip/2026-08-29/Vamos ter uma imersão top em Outubro, se quer participar pre",
+    "date": "2026-08-29",
+    "titulo": "Vamos ter uma imersão top em Outubro, se quer participar presencialmente será em Canela RS",
+    "resumo": "Veja q no link temos um diagnostico q pode ser feito nas Empresas.",
+    "grupo": "INEMA.VIP",
+    "url": "https://eventos.inema.pro/agb2030/"
+  },
+  {
+    "id": "vip/2026-08-29/quando estiver no inema.pro uma caminho para olhar o q temos",
+    "date": "2026-08-29",
+    "titulo": "quando estiver no inema.pro uma caminho para olhar o q temos aqui é https://www.inema.pro/cerebro",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://www.inema.pro/cerebro"
+  },
+  {
+    "id": "vip/2026-08-29/para achar facil os repositorios sobre o q temos de Video",
+    "date": "2026-08-29",
+    "titulo": "para achar facil os repositorios sobre o q temos de Video",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/recursos-video/"
+  },
+  {
+    "id": "3050253806/1298",
+    "date": "2026-08-29",
+    "titulo": "**Ferramentas de Lip Sync**",
+    "resumo": "Levantamento e comparação de ferramentas de lip sync via KIE.ai para uso com vídeo POV e música/canto. Análise de qual ferramenta se encaixa melhor para cada cenário.",
+    "grupo": "INEMA.VOZ",
+    "url": "https://www.inema.pro/cerebro/inema-voz/1298"
+  },
+  {
+    "id": "2307181433/4631",
+    "date": "2026-08-29",
+    "titulo": "LTX 2.5 x MiniMax H3",
+    "resumo": "Análise comparativa de modelos de vídeo generativo (LTX 2.5, MiniMax H3, Seedance 2.5) com foco em lip sync musical e estratégias de uso combinado para produção de videoclipes.",
+    "grupo": "INEMA.VIDEOS",
+    "url": "https://www.inema.pro/cerebro/inema-videos/4631"
+  },
+  {
+    "id": "3050253806/1257",
+    "date": "2026-08-29",
+    "titulo": "Miso TTS 8B",
+    "resumo": "Avaliação do modelo Miso TTS 8B como alternativa de síntese de voz local, e análise de viabilidade para o ecossistema inemavox em PT-BR.",
+    "grupo": "INEMA.VOZ",
+    "url": "https://www.inema.pro/cerebro/inema-voz/1257"
+  },
+  {
     "id": "vip/2026-08-28/Zhipu identifies Ox Alpha as GLM-5.3-Flash and releases mode",
     "date": "2026-08-28",
     "titulo": "Zhipu identifies Ox Alpha as GLM-5.3-Flash and releases model weights · TechNode",
@@ -171,85 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Explicação comparativa das três ferramentas do ecossistema de agentes — BMAD, Superpowers e ECC — com recomendações claras de quando usar cada uma.",
     "grupo": "INEMA.DEV",
     "url": "https://www.inema.pro/cerebro/inema-dev/7145"
-  },
-  {
-    "id": "2389955773/7085",
-    "date": "2026-08-15",
-    "titulo": "MEAA - Minimum Effective Agent Architecture",
-    "resumo": "Análise comparativa aprofundada entre Superpowers, BMAD e ECC (Everything Claude Code) como frameworks de agent engineering para Claude Code, propondo uma arquitetura em camadas chamada MEAA — Minimum Effective Agent Architecture.",
-    "grupo": "INEMA.DEV",
-    "url": "https://www.inema.pro/cerebro/inema-dev/7085"
-  },
-  {
-    "id": "2389955773/7173",
-    "date": "2026-08-15",
-    "titulo": "Claude x Codex - Agosto 2026",
-    "resumo": "Comparativo entre Claude e Codex (agosto 2026) usando um prompt de orquestração de agentes para construir um clone do Typeform. Análise crítica do prompt e proposta de melhoria do fluxo de fases.",
-    "grupo": "INEMA.DEV",
-    "url": "https://www.inema.pro/cerebro/inema-dev/7173"
-  },
-  {
-    "id": "vip/2026-08-14/olha tem desconto nas api, e na openrouter mesma coisa",
-    "date": "2026-08-14",
-    "titulo": "olha tem desconto nas api, e na openrouter mesma coisa",
-    "resumo": "Desde o preço inicial até o **Batch atual**: * **Luna:** de **US$ 1,00 → US$ 0,10** no input e **US$ 6,00 → US$ 0,60** no output = **queda de 90%**. * **Terra:** de **US$ 2,50 → US$ 1,00** no input e **US$ 15,00 → US$ 6,00** no output = **queda de 60%**. Resumo: **Luna caiu 90%** e **Terra caiu 60%** desde o início. Em número de vezes: * **Luna:** ficou **10× mais barato**. * **Terra:** ficou **2,5× mais barato**. Ou seja, hoje no Batch você paga **1/10 do preço original do Luna** e **40% do preço original do Terra**.",
-    "grupo": "INEMA.VIP",
-    "url": "https://developers.openai.com/api/docs/guides/batch"
-  },
-  {
-    "id": "2174331656/5519",
-    "date": "2026-08-13",
-    "titulo": "Negocio de uma Pessoa",
-    "resumo": "Tópico sobre o modelo de \"Negócio de Uma Pessoa\", iniciado pelo INEMA com uma coleção de fotos, documentos e referências. André perguntou se existe videoaula sobre o assunto.",
-    "grupo": "INEMA.TDS",
-    "url": "https://www.inema.pro/cerebro/inema-tds/5519"
-  },
-  {
-    "id": "3012468959/6982",
-    "date": "2026-08-13",
-    "titulo": "Auditoria de Ablação — `CLAUDE.md` + Skills",
-    "resumo": "Discussão sobre ablação de prompts e configurações do Claude Code, baseada em recomendações de Boris Cherny (Anthropic), com geração de uma skill e guia dedicados ao tema.",
-    "grupo": "INEMA.CCODE",
-    "url": "https://www.inema.pro/cerebro/inema-ccode/6982"
-  },
-  {
-    "id": "2414677686/989",
-    "date": "2026-08-13",
-    "titulo": "Futuro da Familia",
-    "resumo": "Reflexões geradas por IA (via ChatGPT) sobre preparação familiar para cenários de crise e colapso, e sobre como educar filhos para o futuro com IA, automação e instabilidade.",
-    "grupo": "INEMA.NCIA",
-    "url": "https://www.inema.pro/cerebro/inema-ncia/989"
-  },
-  {
-    "id": "2433384436/6280",
-    "date": "2026-08-10",
-    "titulo": "Agente Hermes Multi-User",
-    "resumo": "Análise da arquitetura do Hermes Agent (Nous Research) e como utilizá-lo como motor de agentes numa plataforma enterprise multiusuário, com proposta de estruturação para o INEMA AI OS.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6280"
-  },
-  {
-    "id": "2433384436/6300",
-    "date": "2026-08-10",
-    "titulo": "Agente OpenClaw  Multi-user - Empresa",
-    "resumo": "Discussão sobre a arquitetura do OpenClaw como plataforma de execução de agentes de IA e a lacuna existente para uso empresarial multi-usuário. Proposta de uma camada de gestão e governança acima do OpenClaw.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6300"
-  },
-  {
-    "id": "vip/2026-08-09/v0.1.0",
-    "date": "2026-08-09",
-    "titulo": "v0.1.0",
-    "resumo": "OpenAPI 3.2.0 **Omnigent Server** Download OpenAPI Document Omnigent is an open-source meta-harness for building and running AI agents. This is the REST API exposed by the Omnigent server: use it to create and drive **sessions**, manage **agents**, **hosts**, and **runners**, attach **contextual policies**, post **comments**, and work with session **resources** — files, terminals, and sandboxed environments. **Base URL** Omnigent is self-hosted. The server binds `http://127.0.0.1:6767` by default (`omnigent server`); point the base URL at your own deployment.",
-    "grupo": "INEMA.VIP",
-    "url": "https://omnigent.ai/"
-  },
-  {
-    "id": "2471285437/2194",
-    "date": "2026-08-08",
-    "titulo": "Avatares LOCAL",
-    "resumo": "Curadoria de ferramentas open-source para geração de avatares falantes (talking heads) rodando localmente. O tópico agrupa links de repositórios e recursos relacionados ao tema \"Avatares LOCAL\".",
-    "grupo": "INEMA.AVATARES",
-    "url": "https://www.inema.pro/cerebro/inema-avatares/2194"
   }
 ];
