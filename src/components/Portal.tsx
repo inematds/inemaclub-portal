@@ -1513,6 +1513,13 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/loopgraph/',           label: 'Graph Engineering', desc: 'De loops isolados a grafos de agentes' },
               { href: 'https://inematds.github.io/curso-times-de-ia/',    label: 'Times de IA',       desc: 'Seis times de IA especializados por comando' },
             ]},
+            { title: '🌐 Formação WebMCP', steps: [
+              { href: 'https://inematds.github.io/webmcp-1-formacao/',       label: '1 · Visão da Formação', desc: 'Conceito, diagnóstico e mapa do zero ao expert' },
+              { href: 'https://inematds.github.io/webmcp-2-builder/',         label: '2 · Builder',            desc: 'Tools declarativas e imperativas na página' },
+              { href: 'https://inematds.github.io/webmcp-3-integrator/',      label: '3 · Integrator',         desc: 'Estado, migração e frameworks modernos' },
+              { href: 'https://inematds.github.io/webmcp-4-agent-developer/', label: '4 · Agent Developer',    desc: 'Descoberta, execução, permissões e conversa' },
+              { href: 'https://inematds.github.io/webmcp-5-expert/',          label: '5 · Expert',             desc: 'Segurança, evals, produção e governança' },
+            ]},
             { title: '🧩 Codex', steps: [
               { href: 'https://inematds.github.io/codexbasico/',        label: 'Codex Básico', desc: 'Curso Completo do Codex CLI em 6 Trilhas' },
               { href: 'https://inematds.github.io/iclaudex/',           label: 'iClaudeX',     desc: 'Planejamento com Claude + Codex no Terminal' },

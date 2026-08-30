@@ -1099,6 +1099,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/webmcp-2-builder/',
   },
   {
+    id: 248,
+    title: 'Formação WebMCP 3 — Integrator',
+    description:
+      'Projete catálogos coerentes, modele estado e recuperação, migre sites existentes e integre WebMCP a aplicações modernas sem duplicar regras nem remover a jornada humana.',
+    icon: '🔗',
+    tags: ['WebMCP', 'Integração', 'JavaScript', 'Arquitetura'],
+    url: 'https://inematds.github.io/webmcp-3-integrator/',
+  },
+  {
+    id: 249,
+    title: 'Formação WebMCP 4 — Agent Developer',
+    description:
+      'Construa agentes de navegador que descobrem, selecionam e executam tools WebMCP com validação, políticas, permissões, cancelamento e loop conversacional observável.',
+    icon: '🤖',
+    tags: ['WebMCP', 'Agentes de IA', 'LLM', 'JavaScript'],
+    url: 'https://inematds.github.io/webmcp-4-agent-developer/',
+  },
+  {
+    id: 250,
+    title: 'Formação WebMCP 5 — Expert',
+    description:
+      'Leve soluções WebMCP à produção com threat modeling, arquitetura híbrida WebMCP + backend + MCP, evals, observabilidade, rollout e governança.',
+    icon: '🛡️',
+    tags: ['WebMCP', 'Segurança', 'Evals', 'Arquitetura'],
+    url: 'https://inematds.github.io/webmcp-5-expert/',
+  },
+  {
     id: 61,
     title: 'FPFilm - Crie Filmes com IA',
     description:
@@ -2360,6 +2387,9 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-08-30', title: 'Formação WebMCP 5 — Expert', type: 'novo', url: 'https://inematds.github.io/webmcp-5-expert/' },
+  { date: '2026-08-30', title: 'Formação WebMCP 4 — Agent Developer', type: 'novo', url: 'https://inematds.github.io/webmcp-4-agent-developer/' },
+  { date: '2026-08-30', title: 'Formação WebMCP 3 — Integrator', type: 'novo', url: 'https://inematds.github.io/webmcp-3-integrator/' },
   { date: '2026-08-30', title: 'Formação WebMCP 2 — Builder', type: 'novo', url: 'https://inematds.github.io/webmcp-2-builder/' },
   { date: '2026-08-30', title: 'Formação WebMCP — Sites e Agentes do Zero ao Expert', type: 'novo', url: 'https://inematds.github.io/webmcp-1-formacao/' },
   { date: '2026-08-24', title: 'Assistente de Voz — JARVIS, CASE & CIA', type: 'novo', url: 'https://inematds.github.io/curso-assistente-voz/' },
