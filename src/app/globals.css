@@ -1761,3 +1761,315 @@ html {
         padding-left: 1.5rem;
     }
 }
+
+/* ===== Catálogo e fichas canônicas de cursos ===== */
+.course-page-shell {
+    width: min(100% - 3rem, 980px);
+    margin: 0 auto;
+    padding: 2rem 0 5rem;
+}
+
+.course-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.course-breadcrumb a,
+.course-detail a,
+.course-catalog-item a {
+    color: var(--primary-color);
+    text-underline-offset: 0.2em;
+}
+
+.breadcrumb-current {
+    display: inline-flex;
+    gap: 0.55rem;
+}
+
+.course-breadcrumb a:focus-visible,
+.course-detail a:focus-visible,
+.course-catalog-item a:focus-visible,
+.course-search input:focus-visible,
+.course-faq-list summary:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
+.course-index-header,
+.course-detail > header {
+    max-width: 760px;
+    margin-bottom: 3.5rem;
+}
+
+.course-index-header h1,
+.course-detail h1 {
+    max-width: 16ch;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+    font-size: clamp(2.25rem, 7vw, 4.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+
+.course-index-header p,
+.course-direct-answer {
+    max-width: 68ch;
+    color: var(--text-secondary);
+    font-size: clamp(1.05rem, 2.2vw, 1.28rem);
+    line-height: 1.75;
+}
+
+.course-search {
+    display: grid;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+    font-weight: 650;
+}
+
+.course-search input {
+    width: 100%;
+    min-height: 52px;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font: inherit;
+}
+
+.course-search input::placeholder {
+    color: var(--text-secondary);
+}
+
+.course-result-count {
+    margin-bottom: 2.5rem;
+    color: var(--text-secondary);
+}
+
+.course-catalog-list {
+    border-top: 1px solid var(--border-color);
+}
+
+.course-catalog-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 0.32fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.course-catalog-item h2 {
+    margin-bottom: 0.65rem;
+    font-size: clamp(1.25rem, 3vw, 1.7rem);
+    line-height: 1.25;
+}
+
+.course-catalog-item h2 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.course-catalog-item h2 a:hover {
+    color: var(--primary-color);
+}
+
+.course-catalog-item p,
+.course-detail section > p {
+    max-width: 70ch;
+    color: var(--text-secondary);
+}
+
+.course-catalog-item ul,
+.course-topics {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.course-catalog-item li,
+.course-topics li {
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+.course-empty {
+    padding: 2rem 0;
+    color: var(--text-secondary);
+}
+
+.course-primary-action {
+    display: inline-flex;
+    gap: 0.65rem;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: var(--accent-dark) !important;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.course-primary-action:hover {
+    background: var(--primary-hover);
+}
+
+.course-primary-action svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.course-detail section {
+    max-width: 760px;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.course-detail h2 {
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+    font-size: clamp(1.55rem, 3vw, 2.15rem);
+    letter-spacing: -0.02em;
+}
+
+.course-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 2.5rem;
+}
+
+.course-facts div {
+    display: grid;
+    gap: 0.3rem;
+}
+
+.course-facts dt {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.course-facts dd {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+}
+
+.course-topics {
+    margin-bottom: 1.4rem;
+}
+
+.course-faq-list {
+    border-top: 1px solid var(--border-color);
+}
+
+.course-faq-list details {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.course-faq-list summary {
+    padding: 1.15rem 0;
+    color: var(--text-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.course-faq-list details p {
+    max-width: 68ch;
+    padding: 0 0 1.25rem;
+    color: var(--text-secondary);
+}
+
+.related-course-list {
+    display: grid;
+    gap: 0.8rem;
+    padding-left: 1.2rem;
+}
+
+.course-source-note {
+    max-width: 760px;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    .course-page-shell {
+        width: min(100% - 2rem, 980px);
+        padding-top: 1.25rem;
+    }
+
+    .course-breadcrumb {
+        margin-bottom: 2.5rem;
+    }
+
+    .course-catalog-item,
+    .course-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .course-catalog-item {
+        gap: 1rem;
+    }
+}
+
+.knowledge-article article > header {
+    max-width: 800px;
+    margin-bottom: 3.5rem;
+}
+
+.knowledge-article h1 {
+    max-width: 16ch;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+    font-size: clamp(2.25rem, 7vw, 4.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+
+.knowledge-article section {
+    max-width: 760px;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.knowledge-article h2 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(1.55rem, 3vw, 2.15rem);
+    letter-spacing: -0.02em;
+}
+
+.knowledge-article section p {
+    max-width: 70ch;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.knowledge-summary,
+.knowledge-sources {
+    display: grid;
+    gap: 0.8rem;
+    padding-left: 1.25rem;
+}
+
+.knowledge-summary li::marker {
+    color: var(--primary-color);
+}

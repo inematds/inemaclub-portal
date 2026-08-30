@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
 import { novidadesData } from '@/data/novidades'
+import { coursePath } from '@/lib/site'
 
 interface VisitStats {
   total: number
@@ -345,7 +346,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
           icon: p.icon,
           title: p.title,
           description: p.description,
-          url: p.url,
+          url: coursePath(p),
           type: 'Curso' as ContentType,
           tags: p.tags,
         })),
@@ -454,6 +455,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               🔍 Buscas
             </a>
             <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
+            <a href="/cursos/" className="section-nav-link">🎓 Cursos</a>
             <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
             <a href="#comunidade" className="section-nav-link">🚀 Projetos</a>
             <a href="#telegram" className="section-nav-link">💬 Telegram</a>
@@ -1227,8 +1229,8 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                       <a
                         href={item.url}
                         className="card-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target={item.type === 'Curso' ? undefined : '_blank'}
+                        rel={item.type === 'Curso' ? undefined : 'noopener noreferrer'}
                         onClick={() => trackClick(item.url!, item.title, 'busca')}
                       >
                         Acessar →
@@ -1253,13 +1255,11 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
                     ))}
                   </div>
                   <a
-                    href={course.url}
+                    href={coursePath(course)}
                     className="card-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => trackClick(course.url, course.title, 'cursos')}
+                    onClick={() => trackClick(coursePath(course), course.title, 'cursos')}
                   >
-                    Acessar plataforma
+                    Ver detalhes
                   </a>
                 </div>
               ))

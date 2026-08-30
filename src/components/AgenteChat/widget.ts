@@ -41,6 +41,8 @@ const STYLE = `
 .wrap { position: fixed; right: 20px; bottom: 20px; z-index: 2147483000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 .tab { display: flex; align-items: center; gap: 8px; background: #e0a12c; color: #14110c; border: none; border-radius: 999px; padding: 12px 18px; font-weight: 700; font-size: 14px; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
 .tab:hover { filter: brightness(1.05); }
+.tab:focus-visible, .close:focus-visible, .send:focus-visible, .input:focus-visible { outline: 3px solid #f4c361; outline-offset: 3px; }
+.tab svg, .close svg { display: block; width: 18px; height: 18px; }
 .panel { display: none; flex-direction: column; width: 340px; max-width: calc(100vw - 40px); height: 460px; max-height: calc(100vh - 100px); background: #14110c; border: 1px solid #2a2620; border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.5); margin-bottom: 12px; overflow: hidden; }
 .panel.open { display: flex; }
 .header { background: #1c1812; color: #e0a12c; padding: 12px 14px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #2a2620; }
@@ -60,6 +62,12 @@ const STYLE = `
 .typing .dot:nth-child(2) { animation-delay: .2s; }
 .typing .dot:nth-child(3) { animation-delay: .4s; }
 @keyframes inema-blink { 0%, 80%, 100% { opacity: .25; } 40% { opacity: 1; } }
+@media (max-width: 640px) {
+  .wrap { right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); }
+  .tab { width: 48px; height: 48px; justify-content: center; padding: 0; }
+  .tab .tabLabel { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .panel { width: calc(100vw - 24px); max-width: none; height: min(460px, calc(100dvh - 88px)); }
+}
 `;
 
 export function mountAgenteChat() {
@@ -77,10 +85,12 @@ export function mountAgenteChat() {
   const wrap = document.createElement('div');
   wrap.className = 'wrap';
   wrap.innerHTML = `
-    <div class="panel" id="panel">
+    <div class="panel" id="panel" role="dialog" aria-label="Agente guia do INEMA">
       <div class="header">
         <span>Me guie pelo site</span>
-        <button class="close" id="close" aria-label="Fechar">✕</button>
+        <button class="close" id="close" aria-label="Fechar o agente">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
       </div>
       <div class="messages" id="messages"></div>
       <div class="inputRow">
@@ -88,7 +98,10 @@ export function mountAgenteChat() {
         <button class="send" id="send">Enviar</button>
       </div>
     </div>
-    <button class="tab" id="tab">💬 Me guie pelo site</button>
+    <button class="tab" id="tab" aria-expanded="false" aria-controls="panel">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H11l-4.5 3v-3H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span class="tabLabel">Me guie pelo site</span>
+    </button>
   `;
   root.appendChild(wrap);
 
@@ -115,7 +128,10 @@ export function mountAgenteChat() {
   function setOpen(open: boolean) {
     state.open = open;
     panel.classList.toggle('open', open);
+    tab.setAttribute('aria-expanded', String(open));
     saveState(state);
+    if (open) input.focus();
+    else tab.focus();
   }
 
   function addSystemNote(text: string) {
@@ -233,5 +249,8 @@ export function mountAgenteChat() {
   });
 
   renderMessages();
-  if (state.open) panel.classList.add('open');
+  if (state.open) {
+    panel.classList.add('open');
+    tab.setAttribute('aria-expanded', 'true');
+  }
 }

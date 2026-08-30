@@ -12,6 +12,10 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://inema.club/conhecimento/sitemap.xml',
+    host: 'https://www.inema.club',
+    sitemap: [
+      'https://www.inema.club/sitemap.xml',
+      'https://www.inema.club/courses-sitemap.xml',
+    ],
   }
 }
