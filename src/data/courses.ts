@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-08-30', title: 'WebMCP Readiness — Teste o seu SITE', type: 'novo', url: 'https://webmcp.inema.pro/' },
   { date: '2026-08-30', title: 'Content2Video INEMA — Um link vira vídeo editável com voz pt-BR e render sob aprovação', type: 'atualizado', url: 'https://inematds.github.io/content2video/guia/' },
   { date: '2026-08-28', title: 'snagtime — Seu próprio sistema de agendamento: booking, Google Calendar e pagamentos em teste, rodando local', type: 'novo', url: 'https://inematds.github.io/snagtime/guia/' },
   { date: '2026-08-27', title: 'otimizevideo — Vídeo de 30 min vira corte de 2 min sem o modelo escolher os timestamps', type: 'novo', url: 'https://inematds.github.io/otimizevideo/guia/' },

@@ -4838,6 +4838,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-08-30",
+      "title": "WebMCP Readiness — Teste o seu SITE",
+      "type": "novo",
+      "url": "https://webmcp.inema.pro/"
+    },
+    {
+      "date": "2026-08-30",
       "title": "Content2Video INEMA — Um link vira vídeo editável com voz pt-BR e render sob aprovação",
       "type": "atualizado",
       "url": "https://inematds.github.io/content2video/guia/"
@@ -5904,6 +5910,13 @@
       "desc": "Protótipo React/Vite da landing do INEMA.Club: apresentação, diagnóstico de IA (mockado) e planos, rodando 100% em modo demo, sem backend configurado.",
       "url": "https://inematds.github.io/web-AG01/guia/",
       "badge": "Guia"
+    },
+    {
+      "icon": "🔎",
+      "name": "webmcp-readiness",
+      "desc": "Teste o seu SITE — diagnóstico rápido de WebMCP, SEO, GEO e AEO com evidências e sugestões priorizadas.",
+      "url": "https://webmcp.inema.pro/",
+      "badge": "App"
     },
     {
       "icon": "🌱",
