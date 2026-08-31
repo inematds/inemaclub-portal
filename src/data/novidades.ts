@@ -13,6 +13,30 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-08-30/Falei na Live q iria construir um curso e um Diagnostico sob",
+    "date": "2026-08-30",
+    "titulo": "Falei na Live q iria construir um curso e um Diagnostico sobre o WebMCP",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://webmcp.inema.pro/"
+  },
+  {
+    "id": "2389955773/7217",
+    "date": "2026-08-30",
+    "titulo": "WebMCP - Zero to Expert",
+    "resumo": "Tópico dedicado ao planejamento e produção da formação WebMCP — Zero to Expert, cobrindo conceitos, estrutura do curso, prompt de agente para otimização de sites e projeto final prático.",
+    "grupo": "INEMA.DEV",
+    "url": "https://www.inema.pro/cerebro/inema-dev/7217"
+  },
+  {
+    "id": "3650752323/3305",
+    "date": "2026-08-30",
+    "titulo": "Content2Video - Gere Video de Link",
+    "resumo": "Divulgação do projeto Content2Video, ferramenta para gerar vídeos a partir de links, com publicação do guia em GitHub Pages.",
+    "grupo": "INEMA.VIBE",
+    "url": "https://www.inema.pro/cerebro/inema-vibe/3305"
+  },
+  {
     "id": "3012468959/7064",
     "date": "2026-08-29",
     "titulo": "DSH com o Claude Code e outros",
@@ -227,29 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "o link do meet sera colocado aqui free para comunidade instalação na VPS e entender a configucao e os arquivos de bastidores Fala com a Tiza qq  duvida",
     "grupo": "INEMA.VIP",
     "url": ""
-  },
-  {
-    "id": "2187166710/4904",
-    "date": "2026-08-18",
-    "titulo": "Alter - Universidade do Futuro",
-    "resumo": "Análise e síntese do framework ALTER — uso de IA como universidade pessoal adaptativa. O tópico documenta uma conversa/vídeo que propõe transformar a IA de ferramenta de perguntas em sistema contínuo de aprendizagem.",
-    "grupo": "INEMA.EDUC",
-    "url": "https://www.inema.pro/cerebro/inema-educ/4904"
-  },
-  {
-    "id": "3650752323/3167",
-    "date": "2026-08-17",
-    "titulo": "com agnes e bench-studio-en",
-    "resumo": "Apresentação e discussão do Bench Studio, ferramenta de geração de imagens/vídeos com múltiplos provedores de IA, desenvolvida/adaptada por INEMA em três versões (original, en, br).",
-    "grupo": "INEMA.VIBE",
-    "url": "https://www.inema.pro/cerebro/inema-vibe/3167"
-  },
-  {
-    "id": "2389955773/7145",
-    "date": "2026-08-15",
-    "titulo": "BMAD x SuperPowers x  ECC",
-    "resumo": "Explicação comparativa das três ferramentas do ecossistema de agentes — BMAD, Superpowers e ECC — com recomendações claras de quando usar cada uma.",
-    "grupo": "INEMA.DEV",
-    "url": "https://www.inema.pro/cerebro/inema-dev/7145"
   }
 ];
