@@ -2,6 +2,16 @@
 
 Portal centralizado de acesso a cursos e plataformas educacionais do INEMA.
 
+## WebMCP Origin Trial
+
+- Cadastro oficial: https://developer.chrome.com/origintrials/#/view_trial/4163014905550602241
+- Em 30/08/2026, a mesma conta cadastrou `https://www.inema.club`,
+  `https://inema.pro` (com subdomínios) e `https://inema.vip` (com subdomínios).
+- Os três tokens atuais expiram em 17/11/2026.
+- O token do INEMA.club foi emitido para `https://www.inema.club` com
+  Third-party matching e é entregue por `/api/webmcp-origin-trial/`.
+- O valor fica em `.env.local`/Vercel e não deve ser commitado.
+
 ## 🚀 Características
 
 - ✅ **100% HTML/CSS/JS puro** - Sem dependências

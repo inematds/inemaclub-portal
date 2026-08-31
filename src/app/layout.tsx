@@ -46,9 +46,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const originTrialToken = process.env.WEBMCP_ORIGIN_TRIAL_TOKEN?.trim()
+  const originTrialMode = process.env.WEBMCP_ORIGIN_TRIAL_MODE?.trim()
   return (
     <html lang="pt-BR">
       <head>
+        {originTrialToken && originTrialMode === 'third-party' ? (
+          <Script src="/api/webmcp-origin-trial/" strategy="beforeInteractive" />
+        ) : originTrialToken ? (
+          <meta httpEquiv="origin-trial" content={originTrialToken} />
+        ) : null}
         <Script
           src="https://plausible.io/js/pa-kTjsz6v4nJLgQy3_zomx8.js"
           strategy="afterInteractive"
