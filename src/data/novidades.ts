@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-01/Meta just beat OpenAI and Google at real-time transcription ",
+    "date": "2026-09-01",
+    "titulo": "Meta just beat OpenAI and Google at real-time transcription - The New Stack",
+    "resumo": "**👀 Fable 5.1 chegou** Fable 5.1 acaba de ser lançado. Aqui está tudo o que você precisa saber: O QUE HÁ DE NOVO 1) 🧠 Trabalho de longa duração mais confiável: Fable 5.1 mantém a consistência mesmo em tarefas complexas, onde um erro inicial poderia arruinar o resultado final. 2) 💻 Codificação mais robusta: Melhor em grandes refatorações, revisões de código, depuração de causas raiz e funcionalidades que abrangem toda a base de código. 3) 📊 Entregas finalizadas de melhor qualidade: Pode levar a pesquisa até um relatório refinado, uma planilha interativa ou uma apresentação com fontes verificáveis. 4) 🔍 Melhoria na pesquisa e no uso de computadores: Melhor em buscas com várias etapas, leitura de PDFs densos e recuperação quando as ações do navegador ou da área de trabalho falham. 5) 💰 Fluxos de trabalho de agentes mais econômicos: Os preços padrão permanecem US$ 10 para entrada e US$ 50 para saída por milhão de tokens, mas as leituras de cache são 75% mais baratas. Aqui estão cinco coisas boas para saber 👇 a) A pesquisa mais que dobrou, os fluxos de trabalho empresariais aumentaram 84% e a codificação agentiva melhorou 33%. b) Contexto de 1 milhão de tokens, saída máxima de 128 mil e conhecimento atualizado até junho de 2026. c) A Anthropic recomenda o Opus 5, mais barato, para o trabalho diário e o Fable 5.1 para tarefas realmente difíceis. d) A versão Max inclui uso limitado do Fable, enquanto os usuários da versão Pro ainda precisam de créditos pagos conforme o uso. e) Isso adiciona esforço ajustável e atualizações de progresso, mas chamadas forçadas de ferramentas e históricos de conversas editados podem quebrar agentes existentes.",
+    "grupo": "INEMA.VIP",
+    "url": "https://thenewstack.io/meta-muse-voice-transcribe/"
+  },
+  {
     "id": "vip/2026-08-30/Falei na Live q iria construir um curso e um Diagnostico sob",
     "date": "2026-08-30",
     "titulo": "Falei na Live q iria construir um curso e um Diagnostico sobre o WebMCP",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Exploração e design da INEMA DSL — uma linguagem de comandos estilo `/truth`, `/rank`, `/pushback` para uso com modelos de IA (GPT-5.6, Claude Opus 5). O tópico cobre tanto a teoria por trás dos comandos quanto a arquitetura técnica para distribuí-los.",
     "grupo": "INEMA.PROMPTS",
     "url": "https://www.inema.pro/cerebro/inema-prompts/6006"
-  },
-  {
-    "id": "vip/2026-08-18/Quarta e Quinta das 14 as 16 (sempre vai mais kkk)",
-    "date": "2026-08-18",
-    "titulo": "Quarta e Quinta das 14 as 16 (sempre vai mais kkk)",
-    "resumo": "o link do meet sera colocado aqui free para comunidade instalação na VPS e entender a configucao e os arquivos de bastidores Fala com a Tiza qq  duvida",
-    "grupo": "INEMA.VIP",
-    "url": ""
   }
 ];
