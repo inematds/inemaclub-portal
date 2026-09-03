@@ -13,6 +13,38 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-02/A quantidade de empresas apresentando Robots humanos. E uma ",
+    "date": "2026-09-02",
+    "titulo": "A quantidade de empresas apresentando Robots humanos. E uma chamada ubtech fez um tao realista q no lançamento vendeu 13 mil por 140 mil dolares.",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://www.ubtrobot.com/en/?srsltid=AfmBOopoilJ-hlGuP32x7feZ61QqpiQ9wi3G6xwc5GEAiyeXmOSkh4N2"
+  },
+  {
+    "id": "2433384436/6464",
+    "date": "2026-09-02",
+    "titulo": "ConfyUI MCP e CLI",
+    "resumo": "Discussão sobre instalação e configuração do ComfyUI via CLI e MCP, com registro do processo que funcionou localmente.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6464"
+  },
+  {
+    "id": "vip/2026-09-02/MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrin",
+    "date": "2026-09-02",
+    "titulo": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://share.google/oEChghGeOUgGigeAR"
+  },
+  {
+    "id": "vip/2026-09-01/### Resumo — Claude Fable 5.1 e Mythos 5.1",
+    "date": "2026-09-01",
+    "titulo": "### Resumo — Claude Fable 5.1 e Mythos 5.1",
+    "resumo": "Apresenta o **Claude Fable 5.1** como uma evolução importante do Fable 5, principalmente para **programação, agentes e trabalho intelectual complexo**. * **Desempenho:** segundo os benchmarks apresentados, o Fable 5.1 supera significativamente o Fable 5. Um destaque é que, em alguns testes, o **5.1 com baixo esforço supera o Fable 5 usando esforço máximo**. * **Preço por token:** permanece em **US$10/milhão de tokens de entrada e US$50/milhão de saída**, segundo o vídeo. * **Custo efetivo menor:** a alegação é de cerca de **25% de economia em workflows típicos** e potencialmente **até ~50% em tarefas altamente agentic**, principalmente devido à maior eficiência e redução do preço de cache reads. * **Agentes e coding:** os maiores avanços parecem estar em **agentic coding, uso de terminal, raciocínio multidisciplinar e execução autônoma de tarefas**. * **Design/front-end:**  se percebe melhora também na geração visual. Em um teste simples, pediu um **urso 3D andando de bicicleta**; o 5.1 produziu sombras, física e aparência consideradas melhores. * **Teste de custo:** no exemplo mostrado, o Fable 5.1 teria custado aproximadamente **US$4,53**, contra **US$5,41** no Fable 5. Ou seja, cerca de **16% menos** nesse teste específico. * **Mythos 5.1:** seria essencialmente o Fable 5.1 com **salvaguardas mais permissivas**, destinado a usuários verificados em **cibersegurança e ciências da vida**. Não seria de acesso geral. * **Empresas e privacidade:** é mencionado um novo sistema voltado a clientes empresariais, permitindo políticas mais rígidas de **retenção de dados/privacidade**. * **Disponibilidade:** segundo o vídeo, os modelos estariam disponíveis no Claude, API e plataformas de nuvem como AWS, Google Cloud e Azure. ### O ponto mais importante A grande notícia **não seria simplesmente \"um modelo mais inteligente\"**. Seria a combinação: **mais capacidade + menos esforço computacional + menos tokens + menor custo real.** Isso é especialmente importante para **agentes**, porque um agente pode realizar dezenas ou centenas de chamadas ao modelo. Uma redução de 25–50% no custo efetivo, combinada com maior capacidade de resolver tarefas na primeira tentativa, pode alterar bastante a viabilidade econômica de sistemas agentic. **Mas há uma ressalva importante:** O lançamento havia acabado de acontecer e que os testes ainda eram preliminares. Os benchmarks apresentados pelo fabricante e o teste do urso **não são suficientes para concluir que o 5.1 é sempre muito superior ou 25–50% mais barato** em aplicações reais. ● Descobri que usando --setting-sources \"\" e --strict-mcp-config a chamada headless cai de 150 mil tokens para ~760 tokens. Vou repassar essa informação ao agente que está construindo o provedor via claude -p. · summarized",
+    "grupo": "INEMA.VIP",
+    "url": ""
+  },
+  {
     "id": "vip/2026-09-01/Meta just beat OpenAI and Google at real-time transcription ",
     "date": "2026-09-01",
     "titulo": "Meta just beat OpenAI and Google at real-time transcription - The New Stack",
@@ -219,37 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Tópico sobre análise de potencial de hits musicais por IA, com foco na conexão música-público em vez de técnica pura. Inclui referências a ferramentas relacionadas a análise e curadoria de vídeos musicais.",
     "grupo": "INEMA.MUSICAL",
     "url": "https://www.inema.pro/cerebro/inema-musical/2168"
-  },
-  {
-    "id": "3650752323/3279",
-    "date": "2026-08-23",
-    "titulo": "MusicaVideo - Gere musica e Clip",
-    "resumo": "Publicação de dois projetos INEMA com links de guia — MusicaVideo e AnáliseVídeo — acompanhados de mídia e referência ao bot inemaccbot.",
-    "grupo": "INEMA.VIBE",
-    "url": "https://www.inema.pro/cerebro/inema-vibe/3279"
-  },
-  {
-    "id": "3012468959/7026",
-    "date": "2026-08-23",
-    "titulo": "Usando CC Free com OensRouter",
-    "resumo": "Tutorial sobre como usar o Claude Code gratuitamente trocando o modelo subjacente via OpenRouter, mantendo toda a infraestrutura do CC intacta.",
-    "grupo": "INEMA.CCODE",
-    "url": "https://www.inema.pro/cerebro/inema-ccode/7026"
-  },
-  {
-    "id": "2463916523/4423",
-    "date": "2026-08-23",
-    "titulo": "DeepSeek Harness - Liang Wenfeng",
-    "resumo": "Análise técnica da visão de Liang Wenfeng (DeepSeek) sobre o caminho para AGI via melhoria contínua do processo de aprendizado, e não apenas escala de parâmetros.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4423"
-  },
-  {
-    "id": "2494987106/6006",
-    "date": "2026-08-19",
-    "titulo": "INEMA DSL de comandos",
-    "resumo": "Exploração e design da INEMA DSL — uma linguagem de comandos estilo `/truth`, `/rank`, `/pushback` para uso com modelos de IA (GPT-5.6, Claude Opus 5). O tópico cobre tanto a teoria por trás dos comandos quanto a arquitetura técnica para distribuí-los.",
-    "grupo": "INEMA.PROMPTS",
-    "url": "https://www.inema.pro/cerebro/inema-prompts/6006"
   }
 ];
