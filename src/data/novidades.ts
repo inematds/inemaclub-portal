@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-03/estou desenvolvendo as certificacoes, deve estar 100% em 202",
+    "date": "2026-09-03",
+    "titulo": "estou desenvolvendo as certificacoes, deve estar 100% em 2027, mas quem quer testar pode ir se preparando",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://cert.inema.pro/"
+  },
+  {
     "id": "vip/2026-09-02/A quantidade de empresas apresentando Robots humanos. E uma ",
     "date": "2026-09-02",
     "titulo": "A quantidade de empresas apresentando Robots humanos. E uma chamada ubtech fez um tao realista q no lançamento vendeu 13 mil por 140 mil dolares.",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Apresentação do lançamento do modelo de geração de vídeo Wan 3.0 da Alibaba, com destaque para o recurso Omni Reference que transforma documentos e arquivos variados diretamente em vídeo.",
     "grupo": "INEMA.VIDEOS",
     "url": "https://www.inema.pro/cerebro/inema-videos/4616"
-  },
-  {
-    "id": "2286953019/2168",
-    "date": "2026-08-23",
-    "titulo": "Hit não é Sorte é Conexão",
-    "resumo": "Tópico sobre análise de potencial de hits musicais por IA, com foco na conexão música-público em vez de técnica pura. Inclui referências a ferramentas relacionadas a análise e curadoria de vídeos musicais.",
-    "grupo": "INEMA.MUSICAL",
-    "url": "https://www.inema.pro/cerebro/inema-musical/2168"
   }
 ];
