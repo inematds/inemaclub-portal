@@ -13,6 +13,22 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2463916523/4534",
+    "date": "2026-09-05",
+    "titulo": "GPT6 -Asta - Visão",
+    "resumo": "Resumo e análise de uso prático do GPT-6 Astra, com foco em Computer Use, níveis de esforço e mudança de paradigma na forma de interagir com modelos avançados.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4534"
+  },
+  {
+    "id": "2494987106/6048",
+    "date": "2026-09-04",
+    "titulo": "Crie Nicho de Sucesso no yt",
+    "resumo": "Tópico com conteúdo mínimo sobre criação de nicho no YouTube, composto majoritariamente por mídias e mensagens sem texto.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6048"
+  },
+  {
     "id": "vip/2026-09-03/estou desenvolvendo as certificacoes, deve estar 100% em 202",
     "date": "2026-09-03",
     "titulo": "estou desenvolvendo as certificacoes, deve estar 100% em 2027, mas quem quer testar pode ir se preparando",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Análise sobre a migração do mercado de influência do modelo de cachê fixo para programas de afiliados, discutindo quais perfis de criadores sobrevivem a essa mudança.",
     "grupo": "INEMA.TDS",
     "url": "https://www.inema.pro/cerebro/inema-tds/5577"
-  },
-  {
-    "id": "vip/2026-08-25/colocando aqui os videos q crio com o inemaccbot  e o /music",
-    "date": "2026-08-25",
-    "titulo": "colocando aqui os videos q crio com o inemaccbot  e o /musicavideo",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://www.youtube.com/@amoanimais2k"
-  },
-  {
-    "id": "2307181433/4616",
-    "date": "2026-08-25",
-    "titulo": "WAN 3.0 - Lançamento",
-    "resumo": "Apresentação do lançamento do modelo de geração de vídeo Wan 3.0 da Alibaba, com destaque para o recurso Omni Reference que transforma documentos e arquivos variados diretamente em vídeo.",
-    "grupo": "INEMA.VIDEOS",
-    "url": "https://www.inema.pro/cerebro/inema-videos/4616"
   }
 ];
