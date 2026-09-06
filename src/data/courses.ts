@@ -786,6 +786,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/codexbasico/',
   },
   {
+    id: 258,
+    title: 'Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador onde não existe API',
+    description:
+      'Computer use é a ponte para todo software sem API, conector ou MCP. Duas trilhas e 7 módulos: fundamentos e o contrato de prompt em quatro partes (app, resultado, escopo, prova), depois os cinco fluxos do Astra com prompt traduzido e prova de conclusão: busca que vira CLI, teste de MCP dentro do app, um agente testando outro, edição de vídeo até a entrega e o celular operado pelo Mac.',
+    icon: '🖱️',
+    tags: ['Codex', 'Computer Use', 'GPT-6', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/astra-computer-use/',
+  },
+  {
     id: 213,
     title: 'Como Montar um Negócio de Serviços de IA — 8 aulas, sem programar',
     description:
@@ -2452,6 +2461,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-06', title: 'Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)', type: 'novo', url: 'https://inematds.github.io/astra-computer-use/' },
   { date: '2026-09-06', title: 'Astra: 5 Pedidos de Verdade — IA para o seu trabalho com o GPT-6 Astra (6 aulas)', type: 'novo', url: 'https://inematds.github.io/astra-5-prompts/' },
   { date: '2026-09-06', title: 'Fable 5.1 na prática — O que mudou, como usar, como gastar menos', type: 'novo', url: 'https://inematds.github.io/fable51-system/' },
   { date: '2026-09-05', title: 'Formação Vendas com IA 5 — Masterclass: Como Vender Soluções de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/' },
