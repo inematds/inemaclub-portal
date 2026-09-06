@@ -210,6 +210,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agenteexecuta/guia/',
   },
   {
+    id: 257,
+    title: 'Astra: 5 Pedidos de Verdade — IA para o seu trabalho (GPT-6 Astra)',
+    description:
+      'Cinco pedidos prontos para o GPT-6 Astra que entregam resultado de negócio, não joguinho: o gargalo dos seus 90 dias, um painel do trimestre numa tela, o teste do seu site como cliente, uma família visual para posts e a auditoria de onde o dinheiro vaza. Para quem já usa IA no chat e quer conferir o resultado. 6 aulas de ~20 min, sem terminal.',
+    icon: '🧭',
+    tags: ['Prompts', 'GPT-6', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/astra-5-prompts/',
+  },
+  {
     id: 234,
     title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade',
     description:
@@ -2443,6 +2452,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-06', title: 'Astra: 5 Pedidos de Verdade — IA para o seu trabalho com o GPT-6 Astra (6 aulas)', type: 'novo', url: 'https://inematds.github.io/astra-5-prompts/' },
   { date: '2026-09-06', title: 'Fable 5.1 na prática — O que mudou, como usar, como gastar menos', type: 'novo', url: 'https://inematds.github.io/fable51-system/' },
   { date: '2026-09-05', title: 'Formação Vendas com IA 5 — Masterclass: Como Vender Soluções de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/' },
   { date: '2026-09-05', title: 'Formação Vendas com IA 4 — Do Zero ao Primeiro Cliente de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/' },

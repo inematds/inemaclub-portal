@@ -1501,6 +1501,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/prompts/', label: 'Prompts', desc: 'Engenharia de Prompts Avançada' },
               { href: 'https://inematds.github.io/FEI/',     label: 'FEI',     desc: 'Engenharia da Intenção' },
               { href: 'https://inematds.github.io/prompts-prontos/', label: 'Prompts Prontos', desc: '13 System Prompts Copiáveis' },
+              { href: 'https://inematds.github.io/astra-5-prompts/', label: 'Astra: 5 Pedidos', desc: '5 pedidos de resultado para o GPT-6 Astra' },
             ]},
             { title: '🎨 Design & Visual', steps: [
               { href: 'https://inematds.github.io/webp',      label: 'WebP',      desc: 'Designer 2026' },
