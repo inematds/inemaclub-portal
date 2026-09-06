@@ -984,6 +984,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/enxamesagentes/',
   },
   {
+    id: 256,
+    title: 'Fable 5.1 na prática — O que mudou, como usar, como gastar menos',
+    description:
+      'Curso curto em 3 trilhas: entender o que mudou no Claude Fable 5.1 (prompt 2,3x maior, 28 ferramentas novas, memória em arquivos) sem hype, rodar 5 testes na própria conta e calcular custo por tarefa em vez de preço por token. 9 módulos, 54 tópicos, quiz por módulo.',
+    icon: '⚡',
+    tags: ['Claude', 'Fable 5.1', 'Memória', 'Custo', 'IA'],
+    url: 'https://inematds.github.io/fable51-system/',
+  },
+  {
     id: 158,
     title: 'Fable Lite — Garimpando o Raciocínio dos Modelos',
     description:
@@ -2434,6 +2443,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-06', title: 'Fable 5.1 na prática — O que mudou, como usar, como gastar menos', type: 'novo', url: 'https://inematds.github.io/fable51-system/' },
   { date: '2026-09-05', title: 'Formação Vendas com IA 5 — Masterclass: Como Vender Soluções de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/' },
   { date: '2026-09-05', title: 'Formação Vendas com IA 4 — Do Zero ao Primeiro Cliente de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/' },
   { date: '2026-09-05', title: 'Formação Vendas com IA 3 — Fundamentos de Vender IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/' },
