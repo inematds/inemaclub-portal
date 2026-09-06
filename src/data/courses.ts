@@ -228,6 +228,51 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/33viralhooks/',
   },
   {
+    id: 251,
+    title: 'Formação Vendas com IA 1 — 43 Oportunidades de Ganhar Dinheiro com IA',
+    description:
+      '43 oportunidades reais de ganhar dinheiro com IA: o que é, pra quem vender, como cobrar e o primeiro passo de cada uma. 4 trilhas, 8 módulos.',
+    icon: '💰',
+    tags: ['Vendas', 'Oportunidades', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/',
+  },
+  {
+    id: 252,
+    title: 'Formação Vendas com IA 2 — Playbook de Consultoria em IA',
+    description:
+      'Diagnóstico, desenho de solução, preço que escala, autópsia da call, workshops e comunidade B2B. 4 trilhas, 8 módulos.',
+    icon: '🧭',
+    tags: ['Vendas', 'Consultoria', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/formacao-vendas-ia-consultoria/',
+  },
+  {
+    id: 253,
+    title: 'Formação Vendas com IA 3 — Fundamentos de Vender IA',
+    description:
+      'Síndrome do impostor, confiança, posicionamento e fechamento sem forçar, com roteiros prontos e plano de 30 dias. 4 trilhas, 8 módulos.',
+    icon: '🤝',
+    tags: ['Vendas', 'Mentalidade', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/',
+  },
+  {
+    id: 254,
+    title: 'Formação Vendas com IA 4 — Do Zero ao Primeiro Cliente de IA',
+    description:
+      'Auditoria de IA, precificação, cold call, prospecção e entrega: o caminho até o primeiro contrato. 4 trilhas, 8 módulos.',
+    icon: '🚀',
+    tags: ['Vendas', 'Prospecção', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/',
+  },
+  {
+    id: 255,
+    title: 'Formação Vendas com IA 5 — Masterclass: Como Vender Soluções de IA',
+    description:
+      'A venda calma: escuta, diagnóstico, leitura da sala, vieses e sequência de fechamento em três passos. 4 trilhas, 8 módulos.',
+    icon: '🎯',
+    tags: ['Vendas', 'Fechamento', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/',
+  },
+  {
     id: 174,
     title: 'O Caminho Certo da IA',
     description:
@@ -2389,6 +2434,11 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-05', title: 'Formação Vendas com IA 5 — Masterclass: Como Vender Soluções de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/' },
+  { date: '2026-09-05', title: 'Formação Vendas com IA 4 — Do Zero ao Primeiro Cliente de IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/' },
+  { date: '2026-09-05', title: 'Formação Vendas com IA 3 — Fundamentos de Vender IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/' },
+  { date: '2026-09-05', title: 'Formação Vendas com IA 2 — Playbook de Consultoria em IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-consultoria/' },
+  { date: '2026-09-05', title: 'Formação Vendas com IA 1 — 43 Oportunidades de Ganhar Dinheiro com IA', type: 'novo', url: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/' },
   { date: '2026-08-30', title: 'Formação WebMCP 5 — Expert', type: 'novo', url: 'https://inematds.github.io/webmcp-5-expert/' },
   { date: '2026-08-30', title: 'Formação WebMCP 4 — Agent Developer', type: 'novo', url: 'https://inematds.github.io/webmcp-4-agent-developer/' },
   { date: '2026-08-30', title: 'Formação WebMCP 3 — Integrator', type: 'novo', url: 'https://inematds.github.io/webmcp-3-integrator/' },

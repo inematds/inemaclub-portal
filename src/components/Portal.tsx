@@ -1612,6 +1612,13 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/loopgraph/',           label: 'Graph Engineering', desc: 'De loops isolados a grafos de agentes' },
               { href: 'https://inematds.github.io/curso-times-de-ia/',    label: 'Times de IA',       desc: 'Seis times de IA especializados por comando' },
             ]},
+            { title: '💰 Formação Vendas com IA', steps: [
+              { href: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/', label: '1 · 43 Oportunidades', desc: '43 formas de ganhar dinheiro com IA, com preço e primeiro passo' },
+              { href: 'https://inematds.github.io/formacao-vendas-ia-consultoria/', label: '2 · Playbook de Consultoria', desc: 'Diagnóstico, solução, preço e crescimento do consultor de IA' },
+              { href: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/', label: '3 · Fundamentos de Vender IA', desc: 'Impostor, confiança, posicionamento e fechamento leve' },
+              { href: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/', label: '4 · Do Zero ao Primeiro Cliente', desc: 'Auditoria, precificação, cold call e entrega do primeiro contrato' },
+              { href: 'https://inematds.github.io/formacao-vendas-ia-masterclass/', label: '5 · Masterclass', desc: 'A venda calma: escuta, leitura da sala e fechamento em 3 passos' },
+            ]},
             { title: '🌐 Formação WebMCP', steps: [
               { href: 'https://inematds.github.io/webmcp-1-formacao/',       label: '1 · Visão da Formação', desc: 'Conceito, diagnóstico e mapa do zero ao expert' },
               { href: 'https://inematds.github.io/webmcp-2-builder/',         label: '2 · Builder',            desc: 'Tools declarativas e imperativas na página' },
