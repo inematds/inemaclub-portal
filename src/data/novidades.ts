@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "3053650449/1230",
+    "date": "2026-09-06",
+    "titulo": "5 Ações com GPT-6 Astra",
+    "resumo": "Resumo de um material sobre como usar corretamente o GPT-6 Astra, evitando desperdício de capacidade e extraindo valor real com problemas complexos e fluxos agênticos estruturados.",
+    "grupo": "INEMA.CODEX",
+    "url": "https://www.inema.pro/cerebro/inema-codex/1230"
+  },
+  {
     "id": "2463916523/4534",
     "date": "2026-09-05",
     "titulo": "GPT6 -Asta - Visão",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "",
     "grupo": "INEMA.VIP",
     "url": "https://youtube.com/@inematia?si=76ryRSW01KEE8evv"
-  },
-  {
-    "id": "2174331656/5577",
-    "date": "2026-08-25",
-    "titulo": "Influenciador Pago Morreu?",
-    "resumo": "Análise sobre a migração do mercado de influência do modelo de cachê fixo para programas de afiliados, discutindo quais perfis de criadores sobrevivem a essa mudança.",
-    "grupo": "INEMA.TDS",
-    "url": "https://www.inema.pro/cerebro/inema-tds/5577"
   }
 ];
