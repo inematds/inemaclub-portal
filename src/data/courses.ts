@@ -177,6 +177,33 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agentes-office/curso/liberal/',
   },
   {
+    id: 266,
+    title: 'Agentes na Clínica — Caderno de Saúde: o administrativo para a IA, as pessoas para a equipe (3 aulas)',
+    description:
+      'Caderno de profissão do curso Arquiteto de Trabalho com IA. Os dez processos administrativos da clínica (agenda, confirmação, glosas de convênio, planos de tratamento), a linha que o agente nunca cruza, a matriz de permissões com prontuário fora do alcance, e a especificação montada e ensaiada no Kit do Arquiteto de Agentes.',
+    icon: '🩺',
+    tags: ['Saúde', 'Clínica', 'Agentes', 'Governança', 'IA'],
+    url: 'https://inematds.github.io/arquiteto-agentes-saude/',
+  },
+  {
+    id: 267,
+    title: 'Agentes no Contábil e no Financeiro — Caderno: até a porta da assinatura, e nunca além (3 aulas)',
+    description:
+      'Caderno de profissão do curso Arquiteto de Trabalho com IA. Os dez processos do escritório contábil e da área financeira, a segregação de funções aplicada ao agente (quem lança não aprova), o inventário com o critério por cliente escrito, certificado e senhas trancados, e a especificação montada e ensaiada no Kit do Arquiteto de Agentes.',
+    icon: '🧾',
+    tags: ['Contabilidade', 'Financeiro', 'Agentes', 'Governança', 'IA'],
+    url: 'https://inematds.github.io/arquiteto-agentes-contabil/',
+  },
+  {
+    id: 268,
+    title: 'Agentes no Escritório de Advocacia — Caderno: a primeira leitura, nunca a última palavra (3 aulas)',
+    description:
+      'Caderno de profissão do curso Arquiteto de Trabalho com IA. Os dez processos do escritório e do jurídico interno, o agente que lê, conta e prepara enquanto o advogado decide e assina, sigilo profissional e segredo de justiça fora do alcance, prazo sempre chamando humano, e a especificação montada e ensaiada no Kit do Arquiteto de Agentes.',
+    icon: '⚖️',
+    tags: ['Advocacia', 'Jurídico', 'Agentes', 'Governança', 'IA'],
+    url: 'https://inematds.github.io/arquiteto-agentes-advocacia/',
+  },
+  {
     id: 224,
     title: 'AgnesFree — Análise profunda da Agnes AI (texto, imagem e vídeo a US$ 0)',
     description:
@@ -2545,6 +2572,9 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'Agentes na Clínica — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas)', type: 'novo', url: 'https://inematds.github.io/arquiteto-agentes-saude/' },
+  { date: '2026-09-07', title: 'Agentes no Contábil e no Financeiro — Caderno do Arquiteto de Trabalho com IA (3 aulas)', type: 'novo', url: 'https://inematds.github.io/arquiteto-agentes-contabil/' },
+  { date: '2026-09-07', title: 'Agentes no Escritório de Advocacia — Caderno do Arquiteto de Trabalho com IA (3 aulas)', type: 'novo', url: 'https://inematds.github.io/arquiteto-agentes-advocacia/' },
   { date: '2026-09-07', title: 'FEP 2026 — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings)', type: 'novo', url: 'https://inematds.github.io/FEP2026/' },
   { date: '2026-09-07', title: 'IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)', type: 'novo', url: 'https://inematds.github.io/ia-do-zero-curso/' },
   { date: '2026-09-07', title: 'Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/copilot-agentic/' },
