@@ -109,6 +109,20 @@
       "url": "https://inematds.github.io/agenteexecuta/guia/"
     },
     {
+      "id": 259,
+      "title": "Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)",
+      "description": "Curso para gestores e profissionais de área, sem programar: pegue um processo real da empresa, mapeie em seis elos, delegue objetivos a agentes, monte a cadeia de orquestração, o inventário de contexto, a ficha de qualidade e a matriz de permissões, e saia com a especificação do agente numa página, ensaiada num chat de IA.",
+      "icon": "🏗️",
+      "tags": [
+        "Agentes",
+        "Processos",
+        "Governança",
+        "Negócios",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/pffia/"
+    },
+    {
       "id": 257,
       "title": "Astra: 5 Pedidos de Verdade — IA para o seu trabalho (GPT-6 Astra)",
       "description": "Cinco pedidos prontos para o GPT-6 Astra que entregam resultado de negócio, não joguinho: o gargalo dos seus 90 dias, um painel do trimestre numa tela, o teste do seu site como cliente, uma família visual para posts e a auditoria de onde o dinheiro vaza. Para quem já usa IA no chat e quer conferir o resultado. 6 aulas de ~20 min, sem terminal.",
@@ -3656,6 +3670,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-06",
+      "title": "Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/pffia/"
+    },
     {
       "date": "2026-09-06",
       "title": "Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)",

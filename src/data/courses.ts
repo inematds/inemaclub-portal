@@ -211,6 +211,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agenteexecuta/guia/',
   },
   {
+    id: 259,
+    title: 'Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)',
+    description:
+      'Curso para gestores e profissionais de área, sem programar: pegue um processo real da empresa, mapeie em seis elos, delegue objetivos a agentes, monte a cadeia de orquestração, o inventário de contexto, a ficha de qualidade e a matriz de permissões, e saia com a especificação do agente numa página, ensaiada num chat de IA.',
+    icon: '🏗️',
+    tags: ['Agentes', 'Processos', 'Governança', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/pffia/',
+  },
+  {
     id: 257,
     title: 'Astra: 5 Pedidos de Verdade — IA para o seu trabalho (GPT-6 Astra)',
     description:
@@ -2462,6 +2471,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-06', title: 'Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)', type: 'novo', url: 'https://inematds.github.io/pffia/' },
   { date: '2026-09-06', title: 'Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)', type: 'atualizado', url: 'https://inematds.github.io/arquitetura-de-intencao/dia-4.html' },
   { date: '2026-09-06', title: 'Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)', type: 'novo', url: 'https://inematds.github.io/astra-computer-use/' },
   { date: '2026-09-06', title: 'Astra: 5 Pedidos de Verdade — IA para o seu trabalho com o GPT-6 Astra (6 aulas)', type: 'novo', url: 'https://inematds.github.io/astra-5-prompts/' },
