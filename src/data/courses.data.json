@@ -5119,6 +5119,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "copilot-agentes-kit — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5",
+      "type": "novo",
+      "url": "https://inematds.github.io/copilot-agentes-kit/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "astra-2cerebro — Seu segundo cérebro com IA para Claude Code e Codex, em arquivos que você controla",
       "type": "novo",
       "url": "https://inematds.github.io/astra-2cerebro/guia/"
@@ -5868,6 +5874,13 @@
       "name": "content2video",
       "desc": "Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.",
       "url": "https://inematds.github.io/content2video/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧰",
+      "name": "copilot-agentes-kit",
+      "desc": "Kit prático de Copilot + Agentes para Empresas: canvas de automação, prompts do dia a dia e de dados, instruções de agente para o Copilot Studio, fluxos do Power Automate, regra das quatro escolhas, sete conferências de governança, fichas de indicador e plano de três fases — mais verificador e teste headless para cursos INEMA v5.",
+      "url": "https://inematds.github.io/copilot-agentes-kit/guia/",
       "badge": "Guia"
     },
     {

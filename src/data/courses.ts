@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-07', title: 'copilot-agentes-kit — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5', type: 'novo', url: 'https://inematds.github.io/copilot-agentes-kit/guia/' },
   { date: '2026-09-07', title: 'astra-2cerebro — Seu segundo cérebro com IA para Claude Code e Codex, em arquivos que você controla', type: 'novo', url: 'https://inematds.github.io/astra-2cerebro/guia/' },
   { date: '2026-09-07', title: 'Kit do Arquiteto de Agentes — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado', type: 'novo', url: 'https://inematds.github.io/kit-arquiteto-agentes/guia/' },
   { date: '2026-09-07', title: 'openpcbot v3 — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR', type: 'novo', url: 'https://inematds.github.io/openpcbotv3/guia/' },
