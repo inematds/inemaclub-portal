@@ -5119,6 +5119,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "agi-newprof — Vídeo do YouTube vira análise, vídeo completo narrado e 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregues no Telegram",
+      "type": "novo",
+      "url": "https://inematds.github.io/agi-newprof/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "copilot-agentes-kit — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5",
       "type": "novo",
       "url": "https://inematds.github.io/copilot-agentes-kit/guia/"
@@ -5895,6 +5901,13 @@
       "name": "agenteexecuta",
       "desc": "Skill que decide entre sequência, paralelismo ou fluxo híbrido antes de criar agentes — portão de proporcionalidade, matriz de decisão com limiar…",
       "url": "https://inematds.github.io/agenteexecuta/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "agi-newprof",
+      "desc": "Pipeline local que transforma um vídeo do YouTube em análise + vídeo completo narrado (16:9 e 9:16) + 3 reels virais: imagens flux2-klein no inemaimg, clipes-herói na Agnes, voz inemavox, render HyperFrames e entrega no Telegram. Caso: 'GPT-6 Astra' de Nate B. Jones.",
+      "url": "https://inematds.github.io/agi-newprof/guia/",
       "badge": "Guia"
     },
     {
