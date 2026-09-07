@@ -5119,6 +5119,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "IA do Zero — Os primeiros 20 pedidos de quem nunca usou IA, por situação, com dicas práticas",
+      "type": "novo",
+      "url": "https://inematds.github.io/ia-do-zero/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "agi-newprof — Vídeo do YouTube vira análise, vídeo completo narrado e 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregues no Telegram",
       "type": "novo",
       "url": "https://inematds.github.io/agi-newprof/guia/"
@@ -5875,6 +5881,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🌱",
+      "name": "ia-do-zero",
+      "desc": "Kit para quem nunca usou IA: os primeiros 20 pedidos prontos para colar em qualquer chat, por situação do dia a dia, com o que você deve ver na resposta, o erro comum e 10 dicas práticas.",
+      "url": "https://inematds.github.io/ia-do-zero/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🎬",
       "name": "content2video",
