@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-07', title: 'cerebro-duplo — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade', type: 'novo', url: 'https://inematds.github.io/cerebro-duplo/guia/' },
   { date: '2026-09-07', title: 'IA do Zero — Os primeiros 20 pedidos de quem nunca usou IA, por situação, com dicas práticas', type: 'novo', url: 'https://inematds.github.io/ia-do-zero/guia/' },
   { date: '2026-09-07', title: 'agi-newprof — Vídeo do YouTube vira análise, vídeo completo narrado e 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregues no Telegram', type: 'novo', url: 'https://inematds.github.io/agi-newprof/guia/' },
   { date: '2026-09-07', title: 'copilot-agentes-kit — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5', type: 'novo', url: 'https://inematds.github.io/copilot-agentes-kit/guia/' },

@@ -5119,6 +5119,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "cerebro-duplo — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade",
+      "type": "novo",
+      "url": "https://inematds.github.io/cerebro-duplo/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "IA do Zero — Os primeiros 20 pedidos de quem nunca usou IA, por situação, com dicas práticas",
       "type": "novo",
       "url": "https://inematds.github.io/ia-do-zero/guia/"
@@ -5984,6 +5990,13 @@
       "name": "bench-studio-public",
       "desc": "Edição original, de um provedor só: estúdio criativo local-first para imagem, vídeo, site e PDF, com 37 rotas de modelo curadas, refino de prompt editável antes de gastar, arquivos espelhados em disco e ledger de custo — também via MCP para Claude, Codex e Cursor.",
       "url": "https://inematds.github.io/bench-studio-public/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧠",
+      "name": "cerebro-duplo",
+      "desc": "Um cérebro, dois agentes: use o mesmo segundo cérebro (astra-2cerebro) com Claude Code e Codex, com roteamento por perfil, paridade de manuais e skills, e registro de uso.",
+      "url": "https://inematds.github.io/cerebro-duplo/guia/",
       "badge": "Guia"
     },
     {
