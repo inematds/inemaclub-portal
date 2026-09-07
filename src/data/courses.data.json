@@ -5138,6 +5138,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "cerebro-mcp — Servidor MCP que expõe o segundo cérebro como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots",
+      "type": "novo",
+      "url": "https://inematds.github.io/cerebro-mcp/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "cerebro-duplo — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade",
       "type": "novo",
       "url": "https://inematds.github.io/cerebro-duplo/guia/"
@@ -6016,6 +6022,13 @@
       "name": "cerebro-duplo",
       "desc": "Um cérebro, dois agentes: use o mesmo segundo cérebro (astra-2cerebro) com Claude Code e Codex, com roteamento por perfil, paridade de manuais e skills, e registro de uso.",
       "url": "https://inematds.github.io/cerebro-duplo/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧠",
+      "name": "cerebro-mcp",
+      "desc": "Servidor MCP que expõe seu segundo cérebro (pasta Markdown do kit astra-2cerebro) como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots. Leitura por padrão, escrita opt-in.",
+      "url": "https://inematds.github.io/cerebro-mcp/guia/",
       "badge": "Guia"
     },
     {
