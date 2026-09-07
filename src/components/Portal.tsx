@@ -1530,6 +1530,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             { title: '✍️ Engenharia de Prompts', steps: [
               { href: 'https://inematds.github.io/FEP/',     label: 'FEP',     desc: 'Fundamentos de Prompts' },
               { href: 'https://inematds.github.io/FEP2/',    label: 'FEP2',    desc: 'Prompt Engineering Masterclass' },
+              { href: 'https://inematds.github.io/FEP-AGI/', label: 'FEP → AGI', desc: 'Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026' },
               { href: 'https://inematds.github.io/prompts/', label: 'Prompts', desc: 'Engenharia de Prompts Avançada' },
               { href: 'https://inematds.github.io/FEI/',     label: 'FEI',     desc: 'Engenharia da Intenção' },
               { href: 'https://inematds.github.io/prompts-prontos/', label: 'Prompts Prontos', desc: '13 System Prompts Copiáveis' },

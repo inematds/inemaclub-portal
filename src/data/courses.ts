@@ -1097,6 +1097,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FEP/',
   },
   {
+    id: 261,
+    title: 'FEP → AGI — Do prompt à intenção (9 aulas)',
+    description:
+      'A evolução do FEP numa trilha só, para profissionais 40+ sem programar: da era do prompt ao contexto, à skill, à intenção, ao agente e à orquestração, até a virada de setembro de 2026. Saia sabendo em que degrau você e o seu setor estão, com um briefing de intenção e uma skill de uma página prontos.',
+    icon: '🪜',
+    tags: ['Prompts', 'Skills', 'Agentes', 'Intenção', 'IA'],
+    url: 'https://inematds.github.io/FEP-AGI/',
+  },
+  {
     id: 38,
     title: 'FEP2 - Prompt Engineering Masterclass',
     description:
@@ -2493,6 +2502,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026', type: 'novo', url: 'https://inematds.github.io/FEP-AGI/' },
   { date: '2026-09-07', title: 'Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-pratica/' },
   { date: '2026-09-07', title: 'Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-ready/' },
   { date: '2026-09-06', title: 'Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)', type: 'novo', url: 'https://inematds.github.io/pffia/' },
