@@ -1111,6 +1111,21 @@
       "url": "https://inematds.github.io/builaios/"
     },
     {
+      "id": 263,
+      "title": "Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos",
+      "description": "Do usuário de IA ao automatizador de processos, em 9 aulas (formato v5, sem código): Microsoft 365 Copilot no dia a dia, Excel/Analyst/Researcher, redesenho de processo em canvas, primeiro agente no Copilot Studio, fluxo de aprovação no Power Automate, automação de tela e Computer Use, indicadores no Power BI e governança para colocar o caso real em produção.",
+      "icon": "🏢",
+      "tags": [
+        "Copilot",
+        "Copilot Studio",
+        "Power Automate",
+        "Agentes",
+        "Empresas",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/copilot-agentic/"
+    },
+    {
       "id": 222,
       "title": "criaagentes — Um atendente de WhatsApp que nunca inventa",
       "description": "Estudo de caso completo de um OS agêntico para a recepção de uma clínica odontológica no WhatsApp, construído camada por camada com a skill /os-agentes: identidade, substrato, regras e hooks, skills, ferramentas e agente. A regra que sustenta tudo: se não está escrito no compêndio, não existe — nada de opinar sobre saúde, negociar desconto ou dizer que tem vaga; o resto vira alerta no Telegram. Inclui memory.md com cada decisão e o porquê, e uma auditoria honesta do que ainda quebra. Dados da clínica são fictícios, para pesquisa e ensino.",
@@ -3726,6 +3741,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-07",
+      "title": "Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)",
+      "type": "novo",
+      "url": "https://inematds.github.io/copilot-agentic/"
+    },
     {
       "date": "2026-09-07",
       "title": "GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)",

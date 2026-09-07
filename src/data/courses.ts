@@ -837,6 +837,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/builaios/',
   },
   {
+    id: 263,
+    title: 'Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos',
+    description:
+      'Do usuário de IA ao automatizador de processos, em 9 aulas (formato v5, sem código): Microsoft 365 Copilot no dia a dia, Excel/Analyst/Researcher, redesenho de processo em canvas, primeiro agente no Copilot Studio, fluxo de aprovação no Power Automate, automação de tela e Computer Use, indicadores no Power BI e governança para colocar o caso real em produção.',
+    icon: '🏢',
+    tags: ['Copilot', 'Copilot Studio', 'Power Automate', 'Agentes', 'Empresas', 'IA'],
+    url: 'https://inematds.github.io/copilot-agentic/',
+  },
+  {
     id: 222,
     title: 'criaagentes — Um atendente de WhatsApp que nunca inventa',
     description:
@@ -2512,6 +2521,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/copilot-agentic/' },
   { date: '2026-09-07', title: 'GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)', type: 'novo', url: 'https://inematds.github.io/gpt6-astra/' },
   { date: '2026-09-07', title: 'FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026', type: 'novo', url: 'https://inematds.github.io/FEP-AGI/' },
   { date: '2026-09-07', title: 'Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-pratica/' },

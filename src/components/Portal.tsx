@@ -1522,6 +1522,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/fablelite/',               label: 'Fable Lite',            desc: 'Garimpando o Raciocínio dos Modelos' },
             ]},
             { title: '⚡ Automação', steps: [
+              { href: 'https://inematds.github.io/copilot-agentic/', label: 'Copilot + Agentes', desc: 'Copilot, Copilot Studio, Power Automate e Power BI em processos reais (9 aulas)' },
               { href: 'https://inematds.github.io/ssh-basico/', label: 'SSH',    desc: 'Fundamentos SSH e VPS' },
               { href: 'https://inematds.github.io/FIA2026/', label: 'FIA2026',    desc: 'Automações com IA 2026' },
               { href: 'https://inematds.github.io/N8Nb',    label: 'N8Nb',       desc: 'Fundamentos N8N' },
