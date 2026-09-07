@@ -5018,6 +5018,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "Kit do Arquiteto de Agentes — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado",
+      "type": "novo",
+      "url": "https://inematds.github.io/kit-arquiteto-agentes/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "openpcbot v3 — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR",
       "type": "novo",
       "url": "https://inematds.github.io/openpcbotv3/guia/"
@@ -6028,6 +6034,13 @@
       "name": "inemafilme",
       "desc": "inemafilme: sistema que transforma um assunto ou roteiro num filme/episódio narrado, motor pixflow (parallax 2.5D determinístico), sem IA de vídeo.",
       "url": "https://inematds.github.io/inemafilme/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🏗️",
+      "name": "kit-arquiteto-agentes",
+      "desc": "Sete modelos preenchíveis no navegador que viram a especificação de um agente de IA numa página (mapa de seis elos, pedido, cadeia, inventário de contexto, ficha de qualidade, matriz de permissões), com lacunas detectadas e prompt de ensaio simulado. Kit do curso Arquiteto de Trabalho com IA.",
+      "url": "https://inematds.github.io/kit-arquiteto-agentes/guia/",
       "badge": "Guia"
     },
     {

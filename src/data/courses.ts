@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-07', title: 'Kit do Arquiteto de Agentes — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado', type: 'novo', url: 'https://inematds.github.io/kit-arquiteto-agentes/guia/' },
   { date: '2026-09-07', title: 'openpcbot v3 — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR', type: 'novo', url: 'https://inematds.github.io/openpcbotv3/guia/' },
   { date: '2026-09-07', title: 'Anúncios Top com IA — 4 skills pro Claude Code: espionar, dirigir, auditar e montar anúncios em vídeo com IA', type: 'novo', url: 'https://inematds.github.io/anunciostop/guia/' },
   { date: '2026-09-07', title: 'yt-pub-livesx2 — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML', type: 'novo', url: 'https://inematds.github.io/yt-pub-livesx2/guia/' },
