@@ -5017,6 +5017,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-07",
+      "title": "yt-pub-livesx2 — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML",
+      "type": "novo",
+      "url": "https://inematds.github.io/yt-pub-livesx2/guia/"
+    },
+    {
       "date": "2026-09-06",
       "title": "Fable 5.1 · Prompt de Sistema — Análise, índice do dump e fichas práticas (projeto de referência)",
       "type": "novo",
@@ -6372,6 +6378,13 @@
       "name": "yt-pub-livesx",
       "desc": "Corta lives do YouTube em clips por tópico com IA e republica em outro canal",
       "url": "https://inematds.github.io/yt-pub-livesx/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📺",
+      "name": "yt-pub-livesx2",
+      "desc": "Publicador YouTube para N canais: 1 daemon, 1 banco, canais em YAML, fila de jobs com retry e aviso no Telegram (v2 do yt-pub-livesx)",
+      "url": "https://inematds.github.io/yt-pub-livesx2/guia/",
       "badge": "Guia"
     },
     {

@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-07', title: 'yt-pub-livesx2 — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML', type: 'novo', url: 'https://inematds.github.io/yt-pub-livesx2/guia/' },
   { date: '2026-09-06', title: 'Fable 5.1 · Prompt de Sistema — Análise, índice do dump e fichas práticas (projeto de referência)', type: 'novo', url: 'https://inematds.github.io/fable51-system-prompt/guia/' },
   { date: '2026-08-30', title: 'VideoSub — Um tema vira vídeo completo com roteiro, voz, imagens, animação e legendas revisáveis', type: 'novo', url: 'https://inematds.github.io/videosub/guia/' },
   { date: '2026-08-30', title: 'WebMCP Readiness — Teste o seu SITE', type: 'novo', url: 'https://webmcp.inema.pro/' },
