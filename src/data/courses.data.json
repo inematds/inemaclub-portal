@@ -5018,6 +5018,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "Anúncios Top com IA — 4 skills pro Claude Code: espionar, dirigir, auditar e montar anúncios em vídeo com IA",
+      "type": "novo",
+      "url": "https://inematds.github.io/anunciostop/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "yt-pub-livesx2 — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML",
       "type": "novo",
       "url": "https://inematds.github.io/yt-pub-livesx2/guia/"
@@ -5771,6 +5777,13 @@
       "name": "aiv2026",
       "desc": "Playbook de 5 fases para tornar empresas encontráveis e citáveis por IAs públicas (ChatGPT, Claude, Gemini, Perplexity), com o case completo do cliente-zero INEMA.",
       "url": "https://inematds.github.io/aiv2026/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎯",
+      "name": "anunciostop",
+      "desc": "Anúncios em vídeo com IA em quatro decisões: 4 skills pro Claude Code (espionar concorrentes, dirigir o vídeo, auditar antes de gastar, montar pra Meta), com adaptador Agnes a custo zero.",
+      "url": "https://inematds.github.io/anunciostop/guia/",
       "badge": "Guia"
     },
     {
