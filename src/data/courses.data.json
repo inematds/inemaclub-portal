@@ -1768,6 +1768,20 @@
       "url": "https://inematds.github.io/github/"
     },
     {
+      "id": 262,
+      "title": "GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)",
+      "description": "Para profissionais 40+ que já usam o ChatGPT e querem delegar tarefas inteiras ao GPT-6 Astra: ligar o modelo no aplicativo do computador, escrever o pedido com resultado, lugar e prova, deixar o assistente usar o navegador (terminando em rascunho), iterar em versões sem perder nada, dar um guia de estilo de uma página, controlar a cota semanal e pedir ferramentas extras — vídeo, 3D, planilha. Exemplos de uma arquiteta e de uma contadora em todas as aulas.",
+      "icon": "🗂️",
+      "tags": [
+        "GPT-6",
+        "ChatGPT",
+        "Codex",
+        "Produtividade",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/gpt6-astra/"
+    },
+    {
       "id": 232,
       "title": "Graph Engineering — De Loops a Grafos",
       "description": "Do nó e da aresta ao grafo de agentes: por que o loop trava, o que o grafo resolve de verdade e o que nele é só hype. 5 trilhas, 15 módulos, 90 tópicos, com prompts prontos.",
@@ -3712,6 +3726,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-07",
+      "title": "GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/gpt6-astra/"
+    },
     {
       "date": "2026-09-07",
       "title": "FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026",

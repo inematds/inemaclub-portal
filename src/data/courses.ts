@@ -1268,6 +1268,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/github/',
   },
   {
+    id: 262,
+    title: 'GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)',
+    description:
+      'Para profissionais 40+ que já usam o ChatGPT e querem delegar tarefas inteiras ao GPT-6 Astra: ligar o modelo no aplicativo do computador, escrever o pedido com resultado, lugar e prova, deixar o assistente usar o navegador (terminando em rascunho), iterar em versões sem perder nada, dar um guia de estilo de uma página, controlar a cota semanal e pedir ferramentas extras — vídeo, 3D, planilha. Exemplos de uma arquiteta e de uma contadora em todas as aulas.',
+    icon: '🗂️',
+    tags: ['GPT-6', 'ChatGPT', 'Codex', 'Produtividade', 'IA'],
+    url: 'https://inematds.github.io/gpt6-astra/',
+  },
+  {
     id: 232,
     title: 'Graph Engineering — De Loops a Grafos',
     description:
@@ -2502,6 +2511,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)', type: 'novo', url: 'https://inematds.github.io/gpt6-astra/' },
   { date: '2026-09-07', title: 'FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026', type: 'novo', url: 'https://inematds.github.io/FEP-AGI/' },
   { date: '2026-09-07', title: 'Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-pratica/' },
   { date: '2026-09-07', title: 'Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-ready/' },
