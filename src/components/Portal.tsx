@@ -1647,6 +1647,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/curso-iamasters-os/',  label: 'iAmasters OS',   desc: 'Sistema Operativo Agêntico para Operadores de IA' },
               { href: 'https://inematds.github.io/loopgraph/',           label: 'Graph Engineering', desc: 'De loops isolados a grafos de agentes' },
               { href: 'https://inematds.github.io/curso-times-de-ia/',    label: 'Times de IA',       desc: 'Seis times de IA especializados por comando' },
+              { href: 'https://inematds.github.io/agi-pratica/',        label: 'Super-Agentes',     desc: 'Da IA que responde à IA que trabalha: delegue responsabilidades a agentes' },
             ]},
             { title: '💰 Formação Vendas com IA', steps: [
               { href: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/', label: '1 · 43 Oportunidades', desc: '43 formas de ganhar dinheiro com IA, com preço e primeiro passo' },

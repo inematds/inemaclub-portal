@@ -2068,6 +2068,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/subagentes/',
   },
   {
+    id: 260,
+    title: 'Super-Agentes — Da IA que responde à IA que trabalha (8 aulas)',
+    description:
+      'Curso para gestores e donos de pequenas e médias empresas, sem programar: pegue uma responsabilidade real da sua área e entregue a um agente de IA com identidade, memória, ferramentas (MCP), alçada, matriz de autonomia e ficha de confiança, aprenda a dirigir agentes em vez de executar, e saia com o desenho da sua empresa agêntica. O mesmo agente cresce aula a aula.',
+    icon: '🧠',
+    tags: ['Agentes', 'Delegação', 'Governança', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/agi-pratica/',
+  },
+  {
     id: 73,
     title: 'Superpowers - Desenvolvimento com Agentes de IA',
     description:
@@ -2484,6 +2493,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-pratica/' },
   { date: '2026-09-07', title: 'Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-ready/' },
   { date: '2026-09-06', title: 'Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)', type: 'novo', url: 'https://inematds.github.io/pffia/' },
   { date: '2026-09-06', title: 'Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)', type: 'atualizado', url: 'https://inematds.github.io/arquitetura-de-intencao/dia-4.html' },

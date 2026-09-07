@@ -3038,6 +3038,20 @@
       "url": "https://inematds.github.io/subagentes/"
     },
     {
+      "id": 260,
+      "title": "Super-Agentes — Da IA que responde à IA que trabalha (8 aulas)",
+      "description": "Curso para gestores e donos de pequenas e médias empresas, sem programar: pegue uma responsabilidade real da sua área e entregue a um agente de IA com identidade, memória, ferramentas (MCP), alçada, matriz de autonomia e ficha de confiança, aprenda a dirigir agentes em vez de executar, e saia com o desenho da sua empresa agêntica. O mesmo agente cresce aula a aula.",
+      "icon": "🧠",
+      "tags": [
+        "Agentes",
+        "Delegação",
+        "Governança",
+        "Negócios",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/agi-pratica/"
+    },
+    {
       "id": 73,
       "title": "Superpowers - Desenvolvimento com Agentes de IA",
       "description": "Metodologia completa do brainstorming ao deploy com agentes: TDD, subagentes, debugging sistemático, worktrees, agentes paralelos e criação de skills. 1 trilha, 10 módulos, 42 tópicos, ~5 horas. Intermediate.",
@@ -3684,6 +3698,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-07",
+      "title": "Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/agi-pratica/"
+    },
     {
       "date": "2026-09-07",
       "title": "Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)",
