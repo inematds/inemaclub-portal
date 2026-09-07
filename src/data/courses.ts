@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-06', title: 'Fable 5.1 · Prompt de Sistema — Análise, índice do dump e fichas práticas (projeto de referência)', type: 'novo', url: 'https://inematds.github.io/fable51-system-prompt/guia/' },
   { date: '2026-08-30', title: 'VideoSub — Um tema vira vídeo completo com roteiro, voz, imagens, animação e legendas revisáveis', type: 'novo', url: 'https://inematds.github.io/videosub/guia/' },
   { date: '2026-08-30', title: 'WebMCP Readiness — Teste o seu SITE', type: 'novo', url: 'https://webmcp.inema.pro/' },
   { date: '2026-08-30', title: 'Content2Video INEMA — Um link vira vídeo editável com voz pt-BR e render sob aprovação', type: 'atualizado', url: 'https://inematds.github.io/content2video/guia/' },
@@ -481,9 +482,9 @@ export const platformsData: Course[] = [
   },
   {
     id: 159,
-    title: 'Arquitetura de Intenção — Imersão Intensiva (3 dias)',
+    title: 'Arquitetura de Intenção — Imersão Intensiva (4 dias)',
     description:
-      'Prompt não basta. Do prompt à Arquitetura de Intenção: estruture contexto, regras, memória, objetivos e validação para a IA entregar resultado confiável. Imersão prática de 3 dias.',
+      'Prompt não basta. Do prompt à Arquitetura de Intenção: estruture contexto, regras, memória, objetivos e validação para a IA entregar resultado confiável. Imersão prática de 4 dias; o Dia 4 traz a virada de set/2026 (Fable 5.1, GPT-6 Astra).',
     icon: '🎯',
     tags: ['Arquitetura de Intenção', 'Vibe Coding', 'IA', 'Imersão', 'Prompt'],
     url: 'https://inematds.github.io/arquitetura-de-intencao/',
@@ -2461,6 +2462,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-06', title: 'Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)', type: 'atualizado', url: 'https://inematds.github.io/arquitetura-de-intencao/dia-4.html' },
   { date: '2026-09-06', title: 'Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)', type: 'novo', url: 'https://inematds.github.io/astra-computer-use/' },
   { date: '2026-09-06', title: 'Astra: 5 Pedidos de Verdade — IA para o seu trabalho com o GPT-6 Astra (6 aulas)', type: 'novo', url: 'https://inematds.github.io/astra-5-prompts/' },
   { date: '2026-09-06', title: 'Fable 5.1 na prática — O que mudou, como usar, como gastar menos', type: 'novo', url: 'https://inematds.github.io/fable51-system/' },

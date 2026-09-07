@@ -123,6 +123,7 @@ const communityProjects: Array<{
   { icon: '🎬', name: 'videoprodutor', desc: 'Orquestrador link/assunto → vídeo profissional (3 camadas): planejamento, direção+imagem, voz+render. Preset propaganda e explicativo, 16:9 e 9:16.', url: 'https://inematds.github.io/videoprodutor/', badge: 'Guia' },
   { icon: '🎞️', name: 'mcp-video', desc: 'Servidor MCP de edição de vídeo com guardrails para agentes de IA — 119 ferramentas: FFmpeg, legendas, áudio, efeitos, HyperFrames e validação preflight.', url: 'https://inematds.github.io/mcp-video/', badge: 'Guia' },
   { icon: '🚀', name: 'inemaupsk', desc: 'Servidor de upscaling 4x (super-resolution) com 4 modelos ESRGAN, API HTTP e UI web. Local, rápido, sem limite de chamadas.', url: 'https://inematds.github.io/inemaupsk/', badge: 'Guia' },
+  { icon: '🧾', name: 'fable51-system-prompt', desc: 'Prompt de sistema do Claude Fable 5.1: o que é oficial e o que é extração, índice do dump, análise do que mudou e fichas práticas (5 testes, escrever para o Fable, custo e esforço).', url: 'https://inematds.github.io/fable51-system-prompt/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'fontefilm', desc: 'Ferramenta de direção de cinema com IA para filmes em quadrinhos — storyboard, prompts e linguagem visual.', url: 'https://inematds.github.io/fontefilm/', badge: 'Guia' },
   { icon: '🧭', name: 'O Caminho Certo da IA', desc: 'Manifesto de qualificação real em IA: usar IA de verdade e desenvolver o que a IA não substitui, com dados verificados (Gartner, MIT, WEF)', url: 'https://inematds.github.io/caminho-certo-da-ia-guia/', badge: 'Guia' },
   { icon: '🔬', name: 'inemathink', desc: 'Laboratório de pesquisa por trás de O Caminho Certo da IA: deep research verificado, manifesto, curso e gráficos de IA/humanoides 2019-2030', url: 'https://inematds.github.io/inemathink/', badge: 'Guia' },
@@ -1484,7 +1485,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
             { title: '⚡ Trilha Vibe Code', steps: [] },
             { title: '🧩 Trilha Skills', steps: [] },
             { title: '🎯 Arquitetura de IA', steps: [
-              { href: 'https://inematds.github.io/arquitetura-de-intencao/', label: 'Arquitetura de Intenção', desc: 'Imersão de 3 dias — do prompt ao sistema' },
+              { href: 'https://inematds.github.io/arquitetura-de-intencao/', label: 'Arquitetura de Intenção', desc: 'Imersão de 4 dias — do prompt ao sistema (Dia 4: Fable 5.1 e GPT-6 Astra)' },
               { href: 'https://inematds.github.io/manual-oculto-ia/',        label: 'Manual Oculto',         desc: 'System Prompts como os Labs Fazem — o cérebro do Fable' },
               { href: 'https://inematds.github.io/fablelite/',               label: 'Fable Lite',            desc: 'Garimpando o Raciocínio dos Modelos' },
             ]},

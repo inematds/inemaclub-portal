@@ -546,8 +546,8 @@
     },
     {
       "id": 159,
-      "title": "Arquitetura de Intenção — Imersão Intensiva (3 dias)",
-      "description": "Prompt não basta. Do prompt à Arquitetura de Intenção: estruture contexto, regras, memória, objetivos e validação para a IA entregar resultado confiável. Imersão prática de 3 dias.",
+      "title": "Arquitetura de Intenção — Imersão Intensiva (4 dias)",
+      "description": "Prompt não basta. Do prompt à Arquitetura de Intenção: estruture contexto, regras, memória, objetivos e validação para a IA entregar resultado confiável. Imersão prática de 4 dias; o Dia 4 traz a virada de set/2026 (Fable 5.1, GPT-6 Astra).",
       "icon": "🎯",
       "tags": [
         "Arquitetura de Intenção",
@@ -3658,6 +3658,12 @@
   "updatesData": [
     {
       "date": "2026-09-06",
+      "title": "Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/arquitetura-de-intencao/dia-4.html"
+    },
+    {
+      "date": "2026-09-06",
       "title": "Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)",
       "type": "novo",
       "url": "https://inematds.github.io/astra-computer-use/"
@@ -4990,6 +4996,12 @@
     }
   ],
   "projectUpdatesData": [
+    {
+      "date": "2026-09-06",
+      "title": "Fable 5.1 · Prompt de Sistema — Análise, índice do dump e fichas práticas (projeto de referência)",
+      "type": "novo",
+      "url": "https://inematds.github.io/fable51-system-prompt/guia/"
+    },
     {
       "date": "2026-08-30",
       "title": "VideoSub — Um tema vira vídeo completo com roteiro, voz, imagens, animação e legendas revisáveis",
@@ -6431,6 +6443,13 @@
       "name": "inemaupsk",
       "desc": "Servidor de upscaling 4x (super-resolution) com 4 modelos ESRGAN, API HTTP e UI web. Local, rápido, sem limite de chamadas.",
       "url": "https://inematds.github.io/inemaupsk/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧾",
+      "name": "fable51-system-prompt",
+      "desc": "Prompt de sistema do Claude Fable 5.1: o que é oficial e o que é extração, índice do dump, análise do que mudou e fichas práticas (5 testes, escrever para o Fable, custo e esforço).",
+      "url": "https://inematds.github.io/fable51-system-prompt/guia/",
       "badge": "Guia"
     },
     {
