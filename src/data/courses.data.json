@@ -5098,6 +5098,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "astra-2cerebro — Seu segundo cérebro com IA para Claude Code e Codex, em arquivos que você controla",
+      "type": "novo",
+      "url": "https://inematds.github.io/astra-2cerebro/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "Kit do Arquiteto de Agentes — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado",
       "type": "novo",
       "url": "https://inematds.github.io/kit-arquiteto-agentes/guia/"
@@ -5883,6 +5889,13 @@
       "name": "analisevideo",
       "desc": "Analise visual e cinematografica de video com Gemini: camera bloco a bloco, luz e paleta, ritmo de montagem, trilha e som, grafismo e um passo a passo de como refazer — arquivado num banco local pesquisavel.",
       "url": "https://inematds.github.io/analisevideo/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧠",
+      "name": "astra-2cerebro",
+      "desc": "Kit gratuito que transforma o Claude Code ou o Codex em um segundo cérebro com IA: entrevista inicial, wiki interligada, auditoria com nota, rotinas e globo 3D, tudo em arquivos Markdown que você controla.",
+      "url": "https://inematds.github.io/astra-2cerebro/guia/",
       "badge": "Guia"
     },
     {
