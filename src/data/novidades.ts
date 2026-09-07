@@ -13,6 +13,30 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2463916523/4584",
+    "date": "2026-09-07",
+    "titulo": "GPT-6 Astra vs Fable 5.1 em 15 tarefas reais",
+    "resumo": "Comparativo prático entre GPT-6 Astra e Claude Fable 5.1 em 15 tarefas reais do dia a dia, com análise de qualidade, custo e tempo. Resultado geral: Astra 10 × 5 Fable.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4584"
+  },
+  {
+    "id": "2463916523/4548",
+    "date": "2026-09-06",
+    "titulo": "Vazou System Prompt Fable 5.1",
+    "resumo": "Vazamento e análise do system prompt do Claude Fable 5.1, mostrando que o avanço da IA não está só no modelo, mas no ecossistema construído ao redor dele.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4548"
+  },
+  {
+    "id": "2494987106/6061",
+    "date": "2026-09-06",
+    "titulo": "Prompts Exemplo Astra",
+    "resumo": "Coleção de prompts práticos para o Google Astra, cobrindo casos de uso de automação de tarefas, produção de vídeo, auditoria financeira/jurídica e QA de sites.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6061"
+  },
+  {
     "id": "3053650449/1230",
     "date": "2026-09-06",
     "titulo": "5 Ações com GPT-6 Astra",
@@ -227,29 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Apresentação do framework VAULT, um conjunto de 5 princípios para construir sistemas de IA mais seguros e confiáveis, inspirado em práticas do Goldman Sachs.",
     "grupo": "INEMA.LLMS",
     "url": "https://www.inema.pro/cerebro/inema-llms/4478"
-  },
-  {
-    "id": "2463916523/4489",
-    "date": "2026-08-27",
-    "titulo": "OpenAI Chip Kernel Jalapeño",
-    "resumo": "Análise do chip Jalapeño, primeiro ASIC próprio da OpenAI para inferência de IA, e das implicações estratégicas do uso de IA no design de hardware.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4489"
-  },
-  {
-    "id": "vip/2026-08-27/ja esta no  repo  e ele faz parte do inemaccbot",
-    "date": "2026-08-27",
-    "titulo": "ja esta no  repo  e ele faz parte do inemaccbot",
-    "resumo": "Gosta de Musica, olha q show",
-    "grupo": "INEMA.VIP",
-    "url": "https://musicavideo.inema.club/analises"
-  },
-  {
-    "id": "vip/2026-08-26/producao em massa de musicavideo  com kie/suno e agnes image",
-    "date": "2026-08-26",
-    "titulo": "producao em massa de musicavideo  com kie/suno e agnes imagens e video",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://youtube.com/@inematia?si=76ryRSW01KEE8evv"
   }
 ];
