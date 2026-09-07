@@ -1952,6 +1952,19 @@
       "url": "https://inematds.github.io/skill-video-explicativo/"
     },
     {
+      "id": 264,
+      "title": "IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)",
+      "description": "Para quem nunca usou IA no trabalho: as três partes de um pedido, os quatro botões do chat, o que conferir antes de repassar e o seu próprio kit de cinco pedidos, preenchido, testado e guardado. Companheiro do kit IA do Zero (20 pedidos por situação).",
+      "icon": "🌱",
+      "tags": [
+        "Iniciantes",
+        "Prompts",
+        "IA no trabalho",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/ia-do-zero-curso/"
+    },
+    {
       "id": 187,
       "title": "IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7",
       "description": "Curso completo e profundo de IA local: por que rodar modelos na sua máquina (soberania, privacidade, uso ilimitado), que hardware usar, e o passo a passo prático — Ollama, GGUF/quantização, Open WebUI, API local, RAG e agentes 24/7. 4 trilhas, 20 módulos, 120 tópicos.",
@@ -3741,6 +3754,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-07",
+      "title": "IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/ia-do-zero-curso/"
+    },
     {
       "date": "2026-09-07",
       "title": "Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)",

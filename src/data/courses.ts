@@ -1390,6 +1390,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/skill-video-explicativo/',
   },
   {
+    id: 264,
+    title: 'IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)',
+    description:
+      'Para quem nunca usou IA no trabalho: as três partes de um pedido, os quatro botões do chat, o que conferir antes de repassar e o seu próprio kit de cinco pedidos, preenchido, testado e guardado. Companheiro do kit IA do Zero (20 pedidos por situação).',
+    icon: '🌱',
+    tags: ['Iniciantes', 'Prompts', 'IA no trabalho', 'IA'],
+    url: 'https://inematds.github.io/ia-do-zero-curso/',
+  },
+  {
     id: 187,
     title: 'IA Local Masterclass — IA na sua máquina: soberania, privacidade e agentes 24/7',
     description:
@@ -2525,6 +2534,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)', type: 'novo', url: 'https://inematds.github.io/ia-do-zero-curso/' },
   { date: '2026-09-07', title: 'Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/copilot-agentic/' },
   { date: '2026-09-07', title: 'GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)', type: 'novo', url: 'https://inematds.github.io/gpt6-astra/' },
   { date: '2026-09-07', title: 'FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026', type: 'novo', url: 'https://inematds.github.io/FEP-AGI/' },

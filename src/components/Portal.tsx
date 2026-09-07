@@ -1593,6 +1593,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/caio/', label: 'CAIO', desc: 'Chief AI Officer 2030' },
               { href: 'https://inematds.github.io/pffia/', label: 'Arquiteto de Trabalho com IA', desc: 'Redesenhe processos para humanos dirigirem e agentes executarem' },
               { href: 'https://inematds.github.io/agi-ready/', label: 'Os Super-Agentes Chegaram', desc: 'O que muda no seu trabalho quando a IA deixa de esperar ordens' },
+              { href: 'https://inematds.github.io/ia-do-zero-curso/', label: 'IA do Zero', desc: 'Os primeiros pedidos de quem nunca usou IA (4 aulas)' },
               { href: 'https://inematds.github.io/segunda-opiniao/', label: 'Segunda Opinião', desc: 'IA para Gestores e Líderes' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
