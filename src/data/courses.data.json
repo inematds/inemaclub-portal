@@ -5018,6 +5018,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "openpcbot v3 — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR",
+      "type": "novo",
+      "url": "https://inematds.github.io/openpcbotv3/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "Anúncios Top com IA — 4 skills pro Claude Code: espionar, dirigir, auditar e montar anúncios em vídeo com IA",
       "type": "novo",
       "url": "https://inematds.github.io/anunciostop/guia/"
@@ -7064,6 +7070,13 @@
       "desc": "Bot pessoal de Telegram que roda o Claude Code CLI local, com multi-agente (Ollama/Codex/OpenRouter) e segundo cérebro.",
       "url": "https://github.com/inematds/openpcbot",
       "badge": "GitHub"
+    },
+    {
+      "icon": "🤖",
+      "name": "openpcbotv3",
+      "desc": "Assistente pessoal no Telegram com fila durável em SQLite, gestor do Ollama com preflight de RAM, custo por chamada com orçamento e memória PT-BR com consolidação noturna — roda ao lado do v2 sem faltar memória.",
+      "url": "https://inematds.github.io/openpcbotv3/guia/",
+      "badge": "Guia"
     },
     {
       "icon": "📦",
