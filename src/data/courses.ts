@@ -1113,6 +1113,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FEP/',
   },
   {
+    id: 265,
+    title: 'FEP 2026 — A AGI chegou e o prompt quase morreu (7 aulas)',
+    description:
+      'O FEP original reescrito técnica por técnica para os modelos de setembro de 2026: o que morreu (CoT manual, persona-template, temperature, chaining à mão, os 100 prompts), o que só serve às vezes (few-shot, papel, JSON, multimodal), o que continua e o que faltava (contexto com casa, skill, quatro blocos, portas do agente). Com de-para dos 47 tópicos e kit de 12 briefings. Sem código.',
+    icon: '🔧',
+    tags: ['Prompts', 'Skills', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/FEP2026/',
+  },
+  {
     id: 261,
     title: 'FEP → AGI — Do prompt à intenção (9 aulas)',
     description:
@@ -2536,6 +2545,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'FEP 2026 — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings)', type: 'novo', url: 'https://inematds.github.io/FEP2026/' },
   { date: '2026-09-07', title: 'IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)', type: 'novo', url: 'https://inematds.github.io/ia-do-zero-curso/' },
   { date: '2026-09-07', title: 'Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/copilot-agentic/' },
   { date: '2026-09-07', title: 'GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)', type: 'novo', url: 'https://inematds.github.io/gpt6-astra/' },
