@@ -5138,6 +5138,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-07",
+      "title": "cerebro-integra — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências",
+      "type": "novo",
+      "url": "https://inematds.github.io/cerebro-integra/guia/"
+    },
+    {
+      "date": "2026-09-07",
       "title": "cerebro-mcp — Servidor MCP que expõe o segundo cérebro como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots",
       "type": "novo",
       "url": "https://inematds.github.io/cerebro-mcp/guia/"
@@ -6029,6 +6035,13 @@
       "name": "cerebro-mcp",
       "desc": "Servidor MCP que expõe seu segundo cérebro (pasta Markdown do kit astra-2cerebro) como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots. Leitura por padrão, escrita opt-in.",
       "url": "https://inematds.github.io/cerebro-mcp/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🔌",
+      "name": "cerebro-integra",
+      "desc": "Kit que liga o segundo cérebro (astra-2cerebro) a Telegram, site via API local, importadores JSON/CSV/pasta, n8n e voz. Node.js, zero dependências, 73 testes.",
+      "url": "https://inematds.github.io/cerebro-integra/guia/",
       "badge": "Guia"
     },
     {
