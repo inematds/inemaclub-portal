@@ -1557,6 +1557,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/mentesbrilhantes1/', label: 'Mentes Brilhantes', desc: 'A Fórmula 1-20-79' },
               { href: 'https://inematds.github.io/caio/', label: 'CAIO', desc: 'Chief AI Officer 2030' },
               { href: 'https://inematds.github.io/pffia/', label: 'Arquiteto de Trabalho com IA', desc: 'Redesenhe processos para humanos dirigirem e agentes executarem' },
+              { href: 'https://inematds.github.io/agi-ready/', label: 'Os Super-Agentes Chegaram', desc: 'O que muda no seu trabalho quando a IA deixa de esperar ordens' },
               { href: 'https://inematds.github.io/segunda-opiniao/', label: 'Segunda Opinião', desc: 'IA para Gestores e Líderes' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [

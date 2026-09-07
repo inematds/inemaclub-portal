@@ -1718,6 +1718,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/os-coach/guia/',
   },
   {
+    id: 260,
+    title: 'Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)',
+    description:
+      'A partir do vídeo sobre o GPT-6 Astra: da IA que espera ordens ao agente que trabalha por dias. 6 aulas sem código: tarefa vs responsabilidade, delegação num chat de IA, níveis de confiança, competências humanas e a carta de delegação com as seis perguntas.',
+    icon: '🗝️',
+    tags: ['Agentes', 'AGI', 'Delegação', 'Gestão', 'IA'],
+    url: 'https://inematds.github.io/agi-ready/',
+  },
+  {
     id: 209,
     title: 'os-agentes — Skill Cria Agentic',
     description:
@@ -2475,6 +2484,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-07', title: 'Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-ready/' },
   { date: '2026-09-06', title: 'Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)', type: 'novo', url: 'https://inematds.github.io/pffia/' },
   { date: '2026-09-06', title: 'Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)', type: 'atualizado', url: 'https://inematds.github.io/arquitetura-de-intencao/dia-4.html' },
   { date: '2026-09-06', title: 'Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)', type: 'novo', url: 'https://inematds.github.io/astra-computer-use/' },

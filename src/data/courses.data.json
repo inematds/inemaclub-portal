@@ -2490,6 +2490,20 @@
       "url": "https://inematds.github.io/os-coach/guia/"
     },
     {
+      "id": 260,
+      "title": "Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)",
+      "description": "A partir do vídeo sobre o GPT-6 Astra: da IA que espera ordens ao agente que trabalha por dias. 6 aulas sem código: tarefa vs responsabilidade, delegação num chat de IA, níveis de confiança, competências humanas e a carta de delegação com as seis perguntas.",
+      "icon": "🗝️",
+      "tags": [
+        "Agentes",
+        "AGI",
+        "Delegação",
+        "Gestão",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/agi-ready/"
+    },
+    {
       "id": 209,
       "title": "os-agentes — Skill Cria Agentic",
       "description": "Sistema de criação de agentes passo a passo: guia você, camada por camada, na construção do seu próprio OS agêntico (Identidade, Substrato, Regras, Skills, Ferramentas, Agentes), sem precisar saber programar.",
@@ -3670,6 +3684,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-07",
+      "title": "Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/agi-ready/"
+    },
     {
       "date": "2026-09-06",
       "title": "Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)",
