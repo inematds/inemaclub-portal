@@ -1329,6 +1329,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/gpt6-astra/',
   },
   {
+    id: 269,
+    title: 'GPT-6 Astra: operação técnica — Delegar, verificar, iterar e escalar com Codex (8 módulos)',
+    description:
+      'A versão técnica e direta para quem já roda Codex ou Claude Code: contrato de tarefa com resultado, onde e prova; ativação nas três superfícies com config.toml, sandbox e AGENTS.md; computer use no navegador com rascunho obrigatório; iteração num repositório real com critério de aceite e rollback no git; skills de ferramenta e de gosto; MCP e tarefas longas com marcos; leitura de cota, esforço de raciocínio e orquestração com modelos baratos; e memória compartilhada em markdown. Comando e prompt copiáveis, com "como verificar", em cada módulo.',
+    icon: '⚙️',
+    tags: ['GPT-6', 'Codex', 'MCP', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/gpt6-astra-tecnico/',
+  },
+  {
     id: 232,
     title: 'Graph Engineering — De Loops a Grafos',
     description:
@@ -2578,6 +2587,7 @@ export const updatesData: Update[] = [
   { date: '2026-09-07', title: 'FEP 2026 — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings)', type: 'novo', url: 'https://inematds.github.io/FEP2026/' },
   { date: '2026-09-07', title: 'IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)', type: 'novo', url: 'https://inematds.github.io/ia-do-zero-curso/' },
   { date: '2026-09-07', title: 'Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)', type: 'novo', url: 'https://inematds.github.io/copilot-agentic/' },
+  { date: '2026-09-07', title: 'GPT-6 Astra: operação técnica — Delegar, verificar, iterar e escalar com Codex (8 módulos)', type: 'novo', url: 'https://inematds.github.io/gpt6-astra-tecnico/' },
   { date: '2026-09-07', title: 'GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)', type: 'novo', url: 'https://inematds.github.io/gpt6-astra/' },
   { date: '2026-09-07', title: 'FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026', type: 'novo', url: 'https://inematds.github.io/FEP-AGI/' },
   { date: '2026-09-07', title: 'Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)', type: 'novo', url: 'https://inematds.github.io/agi-pratica/' },
