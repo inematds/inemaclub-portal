@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-07/A IA não é mais Projetada é Cultivada",
+    "date": "2026-09-07",
+    "titulo": "A IA não é mais Projetada é Cultivada",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://www.instagram.com/reel/Dc6W8oygjFK/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ=="
+  },
+  {
     "id": "2463916523/4584",
     "date": "2026-09-07",
     "titulo": "GPT-6 Astra vs Fable 5.1 em 15 tarefas reais",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Tópico apresenta o conceito de agente de IA como \"trabalhador digital persistente\" na nuvem, chamado de OS-BOT / Jarvis, com infraestrutura de cinco camadas.",
     "grupo": "INEMA.AGENTES",
     "url": "https://www.inema.pro/cerebro/inema-agentes/6406"
-  },
-  {
-    "id": "2463916523/4478",
-    "date": "2026-08-27",
-    "titulo": "5 Topicos IA Confiavel",
-    "resumo": "Apresentação do framework VAULT, um conjunto de 5 princípios para construir sistemas de IA mais seguros e confiáveis, inspirado em práticas do Goldman Sachs.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4478"
   }
 ];
