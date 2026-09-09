@@ -13,6 +13,30 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-08/olha os Projetos  q produzi, alguns Atualizei tambem",
+    "date": "2026-09-08",
+    "titulo": "olha os Projetos  q produzi, alguns Atualizei tambem",
+    "resumo": "### Últimas Atualizações de Projetos — 07/09 1. **cerebro-integra** — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências. 2. **cerebro-mcp** — Servidor MCP que expõe o segundo cérebro como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots. 3. **cerebro-duplo** — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade. 4. **IA do Zero** — Os primeiros 20 pedidos de quem nunca usou IA, por situação, com dicas práticas. 5. **agi-newprof** — Vídeo do YouTube vira análise, vídeo completo narrado e 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregues no Telegram. 6. **copilot-agentes-kit** — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5. 7. **astra-2cerebro** — Seu segundo cérebro com IA para Claude Code e Codex, em arquivos que você controla. 8. **Kit do Arquiteto de Agentes** — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado. 9. **openpcbot v3** — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR. 10. **Anúncios Top com IA** — 4 skills pro Claude Code: espionar, dirigir, auditar e montar anúncios em vídeo com IA. 11. **yt-pub-livesx2** — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML.",
+    "grupo": "INEMA.VIP",
+    "url": ""
+  },
+  {
+    "id": "vip/2026-09-08/E os Cursos",
+    "date": "2026-09-08",
+    "titulo": "E os Cursos",
+    "resumo": "## Últimas Atualizações de Cursos 07/09 — **NOVO** — **Agentes na Clínica** — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **Agentes no Contábil e no Financeiro** — Caderno do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **Agentes no Escritório de Advocacia** — Caderno do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **FEP 2026** — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings) 07/09 — **NOVO** — **IA do Zero** — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas) 07/09 — **NOVO** — **Copilot + Agentes para Empresas** — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5) 07/09 — **NOVO** — **GPT-6 Astra: operação técnica** — Delegar, verificar, iterar e escalar com Codex (8 módulos) 07/09 — **NOVO** — **GPT-6 Astra na prática** — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas) 07/09 — **NOVO** — **FEP → AGI** — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026 07/09 — **NOVO** — **Super-Agentes** — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas) 07/09 — **NOVO** — **Os Super-Agentes Chegaram** — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas) 06/09 — **NOVO** — **Arquiteto de Trabalho com IA** — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas) Estao no inema.club ou no inema.pro",
+    "grupo": "INEMA.VIP",
+    "url": ""
+  },
+  {
+    "id": "vip/2026-09-08/Olha q eu Falava... Chegando o Momento",
+    "date": "2026-09-08",
+    "titulo": "Olha q eu Falava... Chegando o Momento",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://www.tiktok.com/@inemafuturos/video/7162198751837228293"
+  },
+  {
     "id": "vip/2026-09-07/A IA não é mais Projetada é Cultivada",
     "date": "2026-09-07",
     "titulo": "A IA não é mais Projetada é Cultivada",
@@ -227,29 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "",
     "grupo": "INEMA.VIP",
     "url": "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/"
-  },
-  {
-    "id": "vip/2026-08-28/acima eu usei este skill para construir  e olha q tem 3 vers",
-    "date": "2026-08-28",
-    "titulo": "acima eu usei este skill para construir  e olha q tem 3 versoes, 1 foto, 2 video 3 video full",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://eventos.inema.pro/meridiano-voo/"
-  },
-  {
-    "id": "2463916523/4464",
-    "date": "2026-08-27",
-    "titulo": "Custo Assinaturas",
-    "resumo": "Análise comparativa de custo-benefício entre assinaturas e APIs de LLMs (Claude Max, Kimi Vivace, DeepSeek V4, Codex) para um perfil de uso muito pesado com alto cache. Discussão sobre arquitetura multi-modelo para otimizar custo vs. capacidade.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4464"
-  },
-  {
-    "id": "2433384436/6406",
-    "date": "2026-08-27",
-    "titulo": "Agente IS Conceito OS-BOT - Jarvis",
-    "resumo": "Tópico apresenta o conceito de agente de IA como \"trabalhador digital persistente\" na nuvem, chamado de OS-BOT / Jarvis, com infraestrutura de cinco camadas.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6406"
   }
 ];
