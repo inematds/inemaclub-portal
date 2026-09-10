@@ -918,6 +918,56 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* IA do Zero — porta de entrada para quem nunca usou IA (antes do passo 1 da trilha) */}
+      <section id="ia-do-zero" className="learning-path-section">
+        <div className="container">
+          <div className="learning-path-header">
+            <h3>🌱 Nunca usou IA? Comece pelo IA do Zero</h3>
+            <p>Antes do passo 1 da trilha: quatro aulas curtas, um kit de vinte pedidos prontos e, na sequência, o FEP reescrito para 2026</p>
+            <p style={{ maxWidth: '760px', margin: '.6rem auto 0', fontSize: '.95rem', color: 'var(--text-secondary, #94a3b8)' }}>
+              Sem nada técnico e sem instalar nada. Você aprende as três partes de um pedido, os quatro botões do chat,
+              o que conferir antes de repassar, e sai com o seu próprio kit de cinco pedidos preenchido e testado.
+              Quando terminar, o FEP 2026 mostra o que mudou na forma de pedir agora que a AGI chegou, e a trilha acima faz sentido.
+            </p>
+          </div>
+          <div className="learning-path-cards">
+            <a
+              href="https://inematds.github.io/ia-do-zero-curso/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-1"
+              onClick={() => trackClick('https://inematds.github.io/ia-do-zero-curso/', 'IA do Zero (curso)', 'ia-do-zero')}
+            >
+              <div className="path-number">0</div>
+              <h4>IA do Zero — o curso</h4>
+              <p>4 aulas de 16 a 20 min: pedir bem, usar o chat, conferir, montar o seu kit</p>
+            </a>
+            <a
+              href="https://inematds.github.io/ia-do-zero/guia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-2"
+              onClick={() => trackClick('https://inematds.github.io/ia-do-zero/guia/', 'IA do Zero (kit)', 'ia-do-zero')}
+            >
+              <div className="path-number">📋</div>
+              <h4>IA do Zero — o kit</h4>
+              <p>20 pedidos prontos por situação, com o que você deve ver e o erro comum</p>
+            </a>
+            <a
+              href="https://inematds.github.io/FEP2026/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-3"
+              onClick={() => trackClick('https://inematds.github.io/FEP2026/', 'FEP 2026', 'ia-do-zero')}
+            >
+              <div className="path-number">1</div>
+              <h4>FEP 2026</h4>
+              <p>A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas)</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Trilha Profissional com IA — detalhe preservado, ver SHOW_DETALHES */}
       {SHOW_DETALHES && (
       <section id="trilha-profissional" className="learning-path-section">
