@@ -13,6 +13,22 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-09/A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB",
+    "date": "2026-09-09",
+    "titulo": "A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO",
+    "resumo": "Alibaba's Qwen releases open-source model for autonomous driving · TechNode",
+    "grupo": "INEMA.VIP",
+    "url": "https://share.google/07MtLury057NmGKWO"
+  },
+  {
+    "id": "vip/2026-09-09/**A AGI chegou e o prompt quase morreu · FEP 2026 · ****INEM",
+    "date": "2026-09-09",
+    "titulo": "**A AGI chegou e o prompt quase morreu · FEP 2026 · ****INEMA.CLUB**** PRO**",
+    "resumo": "O ponto central pode ser explicado assim: **o prompt não morreu; ele deixou de ser o “produto final” e virou apenas uma camada de orientação.** Com modelos mais autônomos, o valor migra de “escrever o prompt perfeito” para **definir intenção, contexto, regras, ferramentas, memória, skills e critérios de sucesso**. **Antes:** Prompt → resposta. **Agora:** Objetivo → contexto → agente → skills → ferramentas → execução → validação → resultado. Ou, numa frase forte: > **A era do prompt perfeito está acabando. A nova habilidade é ensinar a IA a trabalhar.** E isso encaixa muito bem em **FEP 2026** como evolução de *Engenharia de Prompt* para algo maior: **Engenharia de Intenção + Contexto + Execução**.",
+    "grupo": "INEMA.VIP",
+    "url": "https://share.google/07MtLury057NmGKWO"
+  },
+  {
     "id": "vip/2026-09-08/olha os Projetos  q produzi, alguns Atualizei tambem",
     "date": "2026-09-08",
     "titulo": "olha os Projetos  q produzi, alguns Atualizei tambem",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Análise comparativa de modelos de vídeo generativo (LTX 2.5, MiniMax H3, Seedance 2.5) com foco em lip sync musical e estratégias de uso combinado para produção de videoclipes.",
     "grupo": "INEMA.VIDEOS",
     "url": "https://www.inema.pro/cerebro/inema-videos/4631"
-  },
-  {
-    "id": "3050253806/1257",
-    "date": "2026-08-29",
-    "titulo": "Miso TTS 8B",
-    "resumo": "Avaliação do modelo Miso TTS 8B como alternativa de síntese de voz local, e análise de viabilidade para o ecossistema inemavox em PT-BR.",
-    "grupo": "INEMA.VOZ",
-    "url": "https://www.inema.pro/cerebro/inema-voz/1257"
-  },
-  {
-    "id": "vip/2026-08-28/Zhipu identifies Ox Alpha as GLM-5.3-Flash and releases mode",
-    "date": "2026-08-28",
-    "titulo": "Zhipu identifies Ox Alpha as GLM-5.3-Flash and releases model weights · TechNode",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/"
   }
 ];
