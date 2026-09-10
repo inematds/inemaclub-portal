@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-10', title: 'astra-2cerebro — Ecossistema: cerebro-mcp, cerebro-duplo e cerebro-integra ligados ao kit, com guia de qual usar', type: 'atualizado', url: 'https://inematds.github.io/astra-2cerebro/guia/' },
   { date: '2026-09-07', title: 'cerebro-integra — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências', type: 'novo', url: 'https://inematds.github.io/cerebro-integra/guia/' },
   { date: '2026-09-07', title: 'cerebro-mcp — Servidor MCP que expõe o segundo cérebro como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots', type: 'novo', url: 'https://inematds.github.io/cerebro-mcp/guia/' },
   { date: '2026-09-07', title: 'cerebro-duplo — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade', type: 'novo', url: 'https://inematds.github.io/cerebro-duplo/guia/' },

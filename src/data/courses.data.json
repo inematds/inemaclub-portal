@@ -5236,6 +5236,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-10",
+      "title": "astra-2cerebro — Ecossistema: cerebro-mcp, cerebro-duplo e cerebro-integra ligados ao kit, com guia de qual usar",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/astra-2cerebro/guia/"
+    },
+    {
       "date": "2026-09-07",
       "title": "cerebro-integra — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências",
       "type": "novo",
@@ -6090,7 +6096,7 @@
     {
       "icon": "🧠",
       "name": "astra-2cerebro",
-      "desc": "Kit gratuito que transforma o Claude Code ou o Codex em um segundo cérebro com IA: entrevista inicial, wiki interligada, auditoria com nota, rotinas e globo 3D, tudo em arquivos Markdown que você controla.",
+      "desc": "Kit gratuito que transforma o Claude Code ou o Codex em um segundo cérebro com IA: entrevista inicial, wiki interligada, auditoria com nota, rotinas e globo 3D em Markdown. Base dos irmãos cerebro-mcp, cerebro-duplo e cerebro-integra.",
       "url": "https://inematds.github.io/astra-2cerebro/guia/",
       "badge": "Guia"
     },
