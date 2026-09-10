@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-10', title: 'Gestoria — Laboratório de gestão de processos e agentes de IA, com simulação, revisão humana, avaliações e LOOP-R', type: 'novo', url: 'https://inematds.github.io/gestoria/guia/' },
   { date: '2026-09-10', title: 'loop-r — Framework para Sistemas e Empresas Autoaperfeiçoáveis: 9 agentes, loop com evidência, experimento, promoção e rollback', type: 'novo', url: 'https://inematds.github.io/loop-r/guia/' },
   { date: '2026-09-10', title: 'astra-2cerebro — Ecossistema: cerebro-mcp, cerebro-duplo e cerebro-integra ligados ao kit, com guia de qual usar', type: 'atualizado', url: 'https://inematds.github.io/astra-2cerebro/guia/' },
   { date: '2026-09-07', title: 'cerebro-integra — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências', type: 'novo', url: 'https://inematds.github.io/cerebro-integra/guia/' },
@@ -1302,6 +1303,15 @@ export const platformsData: Course[] = [
     icon: '🤖',
     tags: ['Robótica', 'Humanoides', 'Treinamento'],
     url: 'https://inematds.github.io/FTH/',
+  },
+  {
+    id: 271,
+    title: 'Gestão de IA — Plano do curso',
+    description:
+      'Plano de uma formação empresarial em 10 módulos e 60 horas propostas: mapear processos, criar cargos digitais, definir autonomia, supervisionar exceções, avaliar resultados e aplicar LOOP-R. Ementa, laboratórios e templates disponíveis; aulas em desenvolvimento.',
+    icon: '🧭',
+    tags: ['Gestão de IA', 'Agentes', 'Processos', 'Negócios'],
+    url: 'https://inematds.github.io/curso-gestao-ia/',
   },
   {
     id: 19,
@@ -2592,6 +2602,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-10', title: 'Gestão de IA — Plano do curso: 10 módulos propostos, ementa e templates; aulas em desenvolvimento', type: 'novo', url: 'https://inematds.github.io/curso-gestao-ia/' },
   { date: '2026-09-10', title: 'LOOP-R — Sua Empresa que Aprende Sozinha (5 trilhas, 21 aulas)', type: 'novo', url: 'https://inematds.github.io/loop-r/curso/' },
   { date: '2026-09-07', title: 'Agentes na Clínica — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas)', type: 'novo', url: 'https://inematds.github.io/arquiteto-agentes-saude/' },
   { date: '2026-09-07', title: 'Agentes no Contábil e no Financeiro — Caderno do Arquiteto de Trabalho com IA (3 aulas)', type: 'novo', url: 'https://inematds.github.io/arquiteto-agentes-contabil/' },

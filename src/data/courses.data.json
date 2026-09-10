@@ -1813,6 +1813,19 @@
       "url": "https://inematds.github.io/FTH/"
     },
     {
+      "id": 271,
+      "title": "Gestão de IA — Plano do curso",
+      "description": "Plano de uma formação empresarial em 10 módulos e 60 horas propostas: mapear processos, criar cargos digitais, definir autonomia, supervisionar exceções, avaliar resultados e aplicar LOOP-R. Ementa, laboratórios e templates disponíveis; aulas em desenvolvimento.",
+      "icon": "🧭",
+      "tags": [
+        "Gestão de IA",
+        "Agentes",
+        "Processos",
+        "Negócios"
+      ],
+      "url": "https://inematds.github.io/curso-gestao-ia/"
+    },
+    {
       "id": 19,
       "title": "GIPM - Projetos com IA Governada",
       "description": "Método de Projetos com IA Governada - Aprenda a construir projetos onde a IA é um componente controlado, não o decisor.",
@@ -3839,6 +3852,12 @@
   "updatesData": [
     {
       "date": "2026-09-10",
+      "title": "Gestão de IA — Plano do curso: 10 módulos propostos, ementa e templates; aulas em desenvolvimento",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-gestao-ia/"
+    },
+    {
+      "date": "2026-09-10",
       "title": "LOOP-R — Sua Empresa que Aprende Sozinha (5 trilhas, 21 aulas)",
       "type": "novo",
       "url": "https://inematds.github.io/loop-r/curso/"
@@ -5257,6 +5276,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-10",
+      "title": "Gestoria — Laboratório de gestão de processos e agentes de IA, com simulação, revisão humana, avaliações e LOOP-R",
+      "type": "novo",
+      "url": "https://inematds.github.io/gestoria/guia/"
+    },
+    {
+      "date": "2026-09-10",
       "title": "loop-r — Framework para Sistemas e Empresas Autoaperfeiçoáveis: 9 agentes, loop com evidência, experimento, promoção e rollback",
       "type": "novo",
       "url": "https://inematds.github.io/loop-r/guia/"
@@ -6194,6 +6219,13 @@
       "name": "dsh-orchestrator",
       "desc": "Orquestrador local para executar DSH, Codex CLI e Claude Code com sessões tmux, GitHub CLI e worktrees isolados.",
       "url": "https://inematds.github.io/dsh-orchestrator/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧭",
+      "name": "gestoria",
+      "desc": "Laboratório de Gestão de IA com processos, cargos digitais, autonomia, decisões humanas, avaliações por versão e melhoria contínua LOOP-R. MVP com dados locais e simulações, sem conexão com modelos ou sistemas externos.",
+      "url": "https://inematds.github.io/gestoria/guia/",
       "badge": "Guia"
     },
     {

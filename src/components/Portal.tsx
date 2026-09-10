@@ -40,6 +40,7 @@ const communityProjects: Array<{
   { icon: '🌐', name: 'cf-dns', desc: "CLI de um arquivo em Python puro para criar, listar e apagar registros DNS no Cloudflare pela API — inclui o par CNAME + TXT que o Vercel exige para verificar um subdomínio novo.", url: 'https://inematds.github.io/cf-dns/guia/', badge: 'Guia' },
   { icon: '🦷', name: 'criaagentes', desc: "Estudo de caso completo de um OS agêntico para a recepção de uma clínica odontológica no WhatsApp, construído camada por camada com a skill…", url: 'https://inematds.github.io/criaagentes/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'dsh-orchestrator', desc: 'Orquestrador local para executar DSH, Codex CLI e Claude Code com sessões tmux, GitHub CLI e worktrees isolados.', url: 'https://inematds.github.io/dsh-orchestrator/guia/', badge: 'Guia' },
+  { icon: '🧭', name: 'gestoria', desc: 'Laboratório de Gestão de IA com processos, cargos digitais, autonomia, decisões humanas, avaliações por versão e melhoria contínua LOOP-R. MVP com dados locais e simulações, sem conexão com modelos ou sistemas externos.', url: 'https://inematds.github.io/gestoria/guia/', badge: 'Guia' },
   { icon: '🧠', name: 'grokky', desc: "Cockpit desktop local-first para Codex, OpenRouter e crews de IA coordenados: provedor, ferramentas e orquestração separados, com permissões e credenciais no boundary do Electron.", url: 'https://github.com/inematds/grokky', badge: 'GitHub' },
   { icon: '🤖', name: 'inemaccbot', desc: "Bot de Telegram com fila durável em SQLite que roda skills de uma etapa e fluxos de várias fases com estado, portão humano e retomada depois de queda — domínio novo entra sem uma linha de código.", url: 'https://inematds.github.io/inemaccbot/guia/', badge: 'Guia' },
   { icon: '⬇️', name: 'inemadlp', desc: "Downloader pessoal de vídeo e áudio que roda na sua VPS: você cola o link pelo celular, o yt-dlp baixa e devolve o arquivo, que se apaga sozinho depois de 6 horas.", url: 'https://inematds.github.io/inemadlp/guia/', badge: 'Guia' },
@@ -1610,6 +1611,7 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
               { href: 'https://inematds.github.io/vla/', label: 'VLA', desc: 'Vision Language Action para Robótica' },
             ]},
             { title: '💼 Consultoria IA & Negócios', steps: [
+              { href: 'https://inematds.github.io/curso-gestao-ia/', label: 'Gestão de IA — plano', desc: 'Plano de formação para gerir processos com humanos e agentes; aulas em desenvolvimento' },
               { href: 'https://inematds.github.io/ATIA/',        label: 'ATIA',        desc: 'Oportunidades Digitais com IA' },
               { href: 'https://inematds.github.io/FGMD/',        label: 'FGMD',        desc: 'Gatilhos Mentais Digitais' },
               { href: 'https://inematds.github.io/Playbook-IA/', label: 'Playbook-IA', desc: 'Formação de Consultoria IA' },
