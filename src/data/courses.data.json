@@ -2273,6 +2273,20 @@
       "url": "https://inematds.github.io/loop-engineering/"
     },
     {
+      "id": 270,
+      "title": "LOOP-R — Sua Empresa que Aprende Sozinha",
+      "description": "Curso v5 para donos e gestores 40+ sem base técnica: monte um loop de melhoria com IA em um processo do seu negócio — objetivo com número, planilha de registro, guarda-corpos, hipótese, experimento, cartão de decisão e botão de voltar. 5 trilhas, 21 aulas, ~7,5h.",
+      "icon": "🔁",
+      "tags": [
+        "LOOP-R",
+        "Negócios",
+        "Agentes",
+        "IA",
+        "Melhoria Contínua"
+      ],
+      "url": "https://inematds.github.io/loop-r/curso/"
+    },
+    {
       "id": 225,
       "title": "Maestro Roteador — Triagem de Modelo e Esforço",
       "description": "Skill de Claude Code que decide qual modelo (haiku/sonnet/opus/fable) e quanto esforço (low→max) cada parte do trabalho merece antes de despachar subagentes ou workflows. Matriz de dois eixos, escada com evidência, armadilhas medidas e economia de cache.",
@@ -3824,6 +3838,12 @@
   ],
   "updatesData": [
     {
+      "date": "2026-09-10",
+      "title": "LOOP-R — Sua Empresa que Aprende Sozinha (5 trilhas, 21 aulas)",
+      "type": "novo",
+      "url": "https://inematds.github.io/loop-r/curso/"
+    },
+    {
       "date": "2026-09-07",
       "title": "Agentes na Clínica — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas)",
       "type": "novo",
@@ -5237,6 +5257,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-10",
+      "title": "loop-r — Framework para Sistemas e Empresas Autoaperfeiçoáveis: 9 agentes, loop com evidência, experimento, promoção e rollback",
+      "type": "novo",
+      "url": "https://inematds.github.io/loop-r/guia/"
+    },
+    {
+      "date": "2026-09-10",
       "title": "astra-2cerebro — Ecossistema: cerebro-mcp, cerebro-duplo e cerebro-integra ligados ao kit, com guia de qual usar",
       "type": "atualizado",
       "url": "https://inematds.github.io/astra-2cerebro/guia/"
@@ -6371,6 +6397,13 @@
       "name": "logfree",
       "desc": "LogFree: API FastAPI + bot Telegram que indica o posto com melhor custo real por km para frotas de última milha.",
       "url": "https://inematds.github.io/logfree/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🔁",
+      "name": "loop-r",
+      "desc": "LOOP-R: framework e runner (Claude Code) que transforma um processo do negócio em loop de melhoria com IA — 9 agentes, evidência, hipótese, experimento, promoção e botão de voltar.",
+      "url": "https://inematds.github.io/loop-r/guia/",
       "badge": "Guia"
     },
     {
