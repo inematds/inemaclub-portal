@@ -567,6 +567,34 @@ export default function Portal({ visitStats }: { visitStats: VisitStats }) {
         </div>
       </section>
 
+      {/* Evento — Gestão de Agentes 2027 (destaque) */}
+      <section id="evento-gestao-agentes-2027" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/', 'Gestão de Agentes 2027', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/doc/gestao-agentes-2027.png"
+              alt="Gestão de Agentes 2027 — o novo papel das empresas. Mesma liderança, uma nova força de trabalho: humanos + agentes = mais valor."
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
+
       {/* Evento — AGI chegou */}
       <section id="evento-agi-chegou" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
