@@ -13,6 +13,46 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2389955773/7272",
+    "date": "2026-09-10",
+    "titulo": "LOOP-R - Desenvovimento por Agentes",
+    "resumo": "Apresentação do LOOP-R, framework metodológico INEMA para sistemas e empresas autoaperfeiçoáveis via ciclos de melhoria contínua baseados em evidências e agentes.",
+    "grupo": "INEMA.DEV",
+    "url": "https://www.inema.pro/cerebro/inema-dev/7272"
+  },
+  {
+    "id": "2433384436/6515",
+    "date": "2026-09-10",
+    "titulo": "Cerebros com o Astra",
+    "resumo": "Publicação completa do ecossistema ASTRA 2º Cérebro — três repositórios satélite finalizados com testes passando, guias online e catalogados no Portal e no PRO.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6515"
+  },
+  {
+    "id": "3650752323/3326",
+    "date": "2026-09-10",
+    "titulo": "Anúncios Top com IA",
+    "resumo": "Apresentação do projeto Anúncios Top com IA, um sistema de produção disciplinada de anúncios em vídeo para Meta usando IA, estruturado em quatro skills com responsabilidades separadas e registro de experimentos.",
+    "grupo": "INEMA.VIBE",
+    "url": "https://www.inema.pro/cerebro/inema-vibe/3326"
+  },
+  {
+    "id": "2433384436/6559",
+    "date": "2026-09-10",
+    "titulo": "Guia de Gestão de Agentes de IA",
+    "resumo": "Compilação de um guia/método de Gestão de Agentes de IA aplicado a empresas, tratando agentes como força de trabalho digital gerenciável com KPIs, níveis de autonomia e melhoria contínua.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6559"
+  },
+  {
+    "id": "3053650449/1289",
+    "date": "2026-09-10",
+    "titulo": "Evoluindo com o Codex",
+    "resumo": "Apresentação do Codex Cheat Sheet — guia para transformar o OpenAI Codex CLI de \"chat de programação\" em agente autônomo de desenvolvimento. Acompanhado de explicação conceitual sobre a diferença entre chat, agente simples, workflow agentic e sistema multiagente.",
+    "grupo": "INEMA.CODEX",
+    "url": "https://www.inema.pro/cerebro/inema-codex/1289"
+  },
+  {
     "id": "vip/2026-09-09/A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB",
     "date": "2026-09-09",
     "titulo": "A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO",
@@ -211,45 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Guia prático para rodar o modelo Qwen 3.8 27B localmente via Ollama no Linux, com variáveis de ambiente otimizadas para GPU.",
     "grupo": "INEMA.LLMS",
     "url": "https://www.inema.pro/cerebro/inema-llms/4513"
-  },
-  {
-    "id": "vip/2026-08-29/Vamos ter uma imersão top em Outubro, se quer participar pre",
-    "date": "2026-08-29",
-    "titulo": "Vamos ter uma imersão top em Outubro, se quer participar presencialmente será em Canela RS",
-    "resumo": "Veja q no link temos um diagnostico q pode ser feito nas Empresas.",
-    "grupo": "INEMA.VIP",
-    "url": "https://eventos.inema.pro/agb2030/"
-  },
-  {
-    "id": "vip/2026-08-29/quando estiver no inema.pro uma caminho para olhar o q temos",
-    "date": "2026-08-29",
-    "titulo": "quando estiver no inema.pro uma caminho para olhar o q temos aqui é https://www.inema.pro/cerebro",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://www.inema.pro/cerebro"
-  },
-  {
-    "id": "vip/2026-08-29/para achar facil os repositorios sobre o q temos de Video",
-    "date": "2026-08-29",
-    "titulo": "para achar facil os repositorios sobre o q temos de Video",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://inematds.github.io/recursos-video/"
-  },
-  {
-    "id": "3050253806/1298",
-    "date": "2026-08-29",
-    "titulo": "**Ferramentas de Lip Sync**",
-    "resumo": "Levantamento e comparação de ferramentas de lip sync via KIE.ai para uso com vídeo POV e música/canto. Análise de qual ferramenta se encaixa melhor para cada cenário.",
-    "grupo": "INEMA.VOZ",
-    "url": "https://www.inema.pro/cerebro/inema-voz/1298"
-  },
-  {
-    "id": "2307181433/4631",
-    "date": "2026-08-29",
-    "titulo": "LTX 2.5 x MiniMax H3",
-    "resumo": "Análise comparativa de modelos de vídeo generativo (LTX 2.5, MiniMax H3, Seedance 2.5) com foco em lip sync musical e estratégias de uso combinado para produção de videoclipes.",
-    "grupo": "INEMA.VIDEOS",
-    "url": "https://www.inema.pro/cerebro/inema-videos/4631"
   }
 ];
