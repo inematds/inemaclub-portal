@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-11/Aqui um sistema e um curso sobre gestao de Agentes de IA,  d",
+    "date": "2026-09-11",
+    "titulo": "Aqui um sistema e um curso sobre gestao de Agentes de IA,  de gestao de pessoas para Gestao de Agentes",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/gestoria/guia/"
+  },
+  {
     "id": "2389955773/7272",
     "date": "2026-09-10",
     "titulo": "LOOP-R - Desenvovimento por Agentes",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Discussão sobre o OKF (Open Knowledge Format), uma proposta emergente para estruturar conhecimento de forma portátil e legível tanto por humanos quanto por agentes de IA, com potencial de uso como camada de memória compartilhada entre agentes.",
     "grupo": "INEMA.AGENTES",
     "url": "https://www.inema.pro/cerebro/inema-agentes/6445"
-  },
-  {
-    "id": "2463916523/4513",
-    "date": "2026-08-29",
-    "titulo": "Qwen 3.8 27B localmente",
-    "resumo": "Guia prático para rodar o modelo Qwen 3.8 27B localmente via Ollama no Linux, com variáveis de ambiente otimizadas para GPU.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4513"
   }
 ];
