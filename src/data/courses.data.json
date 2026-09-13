@@ -5276,6 +5276,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-13",
+      "title": "UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)",
+      "type": "novo",
+      "url": "https://inematds.github.io/ugc-seedance25/guia/"
+    },
+    {
+      "date": "2026-09-13",
       "title": "Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup",
       "type": "atualizado",
       "url": "https://inematds.github.io/astra3d/guia/"
@@ -6371,6 +6377,13 @@
       "name": "stickshift",
       "desc": "App de menu-bar e CLI para macOS que troca o modelo e o effort do Claude Code ou Codex CLI na pane de terminal focada, digitando os mesmos comandos…",
       "url": "https://inematds.github.io/stickshift/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "ugc-seedance25",
+      "desc": "Skill Claude Code + gerador de brief que transforma um produto nos 3 prompts (foto do produto, retrato do creator, vídeo one-take de 30 s com voz e lip-sync) da receita Seedance 2.5 UGC Ads, adaptada pra Magnific, Higgsfield e fal.ai, com 9 formatos, falas em PT-BR, gate de custo e QA em frames.",
+      "url": "https://inematds.github.io/ugc-seedance25/guia/",
       "badge": "Guia"
     },
     {

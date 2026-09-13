@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-13', title: 'UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)', type: 'novo', url: 'https://inematds.github.io/ugc-seedance25/guia/' },
   { date: '2026-09-13', title: 'Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup', type: 'atualizado', url: 'https://inematds.github.io/astra3d/guia/' },
   { date: '2026-09-10', title: 'Astra Effort — Guia em português, dez prompts e sete execuções para comparar níveis de esforço com evidências', type: 'novo', url: 'https://inematds.github.io/astra-effort/guia/' },
   { date: '2026-09-10', title: 'Gestoria — Laboratório de gestão de processos e agentes de IA, com simulação, revisão humana, avaliações e LOOP-R', type: 'novo', url: 'https://inematds.github.io/gestoria/guia/' },
