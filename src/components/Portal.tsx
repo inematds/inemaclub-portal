@@ -19,6 +19,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🧊', name: 'astra3d', desc: 'Editor visual de sites 3D com três modelos personalizáveis: portfólio, agência e publicação. Prévia responsiva, rascunho local, exportação HTML/JSON e planos de evolução.', url: 'https://inematds.github.io/astra3d/guia/', badge: 'Guia' },
   { icon: '🌱', name: 'ia-do-zero', desc: 'Kit para quem nunca usou IA: os primeiros 20 pedidos prontos para colar em qualquer chat, por situação do dia a dia, com o que você deve ver na resposta, o erro comum e 10 dicas práticas.', url: 'https://inematds.github.io/ia-do-zero/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'content2video', desc: 'Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.', url: 'https://inematds.github.io/content2video/guia/', badge: 'Guia' },
   { icon: '🧰', name: 'copilot-agentes-kit', desc: 'Kit prático de Copilot + Agentes para Empresas: canvas de automação, prompts do dia a dia e de dados, instruções de agente para o Copilot Studio, fluxos do Power Automate, regra das quatro escolhas, sete conferências de governança, fichas de indicador e plano de três fases — mais verificador e teste headless para cursos INEMA v5.', url: 'https://inematds.github.io/copilot-agentes-kit/guia/', badge: 'Guia' },
