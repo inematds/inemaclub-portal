@@ -16,7 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
-  { date: '2026-09-13', title: 'Astra3D — Editor visual de sites 3D, três modelos, exportação HTML/JSON e planos V1–V6', type: 'novo', url: 'https://inematds.github.io/astra3d/guia/' },
+  { date: '2026-09-13', title: 'Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup', type: 'atualizado', url: 'https://inematds.github.io/astra3d/guia/' },
   { date: '2026-09-10', title: 'Astra Effort — Guia em português, dez prompts e sete execuções para comparar níveis de esforço com evidências', type: 'novo', url: 'https://inematds.github.io/astra-effort/guia/' },
   { date: '2026-09-10', title: 'Gestoria — Laboratório de gestão de processos e agentes de IA, com simulação, revisão humana, avaliações e LOOP-R', type: 'novo', url: 'https://inematds.github.io/gestoria/guia/' },
   { date: '2026-09-10', title: 'loop-r — Framework para Sistemas e Empresas Autoaperfeiçoáveis: 9 agentes, loop com evidência, experimento, promoção e rollback', type: 'novo', url: 'https://inematds.github.io/loop-r/guia/' },

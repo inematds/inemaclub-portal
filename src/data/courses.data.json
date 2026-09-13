@@ -5276,8 +5276,8 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-13",
-      "title": "Astra3D — Editor visual de sites 3D, três modelos, exportação HTML/JSON e planos V1–V6",
-      "type": "novo",
+      "title": "Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup",
+      "type": "atualizado",
       "url": "https://inematds.github.io/astra3d/guia/"
     },
     {
@@ -6089,7 +6089,7 @@
     {
       "icon": "🧊",
       "name": "astra3d",
-      "desc": "Editor visual de sites 3D com três modelos personalizáveis: portfólio, agência e publicação. Prévia responsiva, rascunho local, exportação HTML/JSON e planos de evolução.",
+      "desc": "Astra3D V2: três demonstrações completas, editor visual, biblioteca de projetos, duplicação, versões salvas e backup. Exporte sites 3D em HTML independente.",
       "url": "https://inematds.github.io/astra3d/guia/",
       "badge": "Guia"
     },
