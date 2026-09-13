@@ -5276,6 +5276,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-13",
+      "title": "Jarvis v7 — Assistente pessoal local com OAuth, conhecimento persistente e estúdio Kie",
+      "type": "novo",
+      "url": "https://inematds.github.io/jarvisv7/guia/"
+    },
+    {
+      "date": "2026-09-13",
       "title": "MS-v7 Social Autopilot — Voz de marca + 3 comandos no Claude Code: posts na sua voz, visual e agendamento com provedores configuráveis, aprovados por você",
       "type": "novo",
       "url": "https://inematds.github.io/ms-v7/guia/"
@@ -6098,6 +6104,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🤖",
+      "name": "jarvisv7",
+      "desc": "Jarvis v7: assistente pessoal local com Codex e Claude OAuth, OpenRouter API, notas e memórias persistentes, estúdio Kie, seleção de modelos e módulos, backup e atualização manual.",
+      "url": "https://inematds.github.io/jarvisv7/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧊",
       "name": "astra3d",

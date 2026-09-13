@@ -19,6 +19,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🤖', name: 'jarvisv7', desc: 'Jarvis v7: assistente pessoal local com Codex e Claude OAuth, OpenRouter API, notas e memórias persistentes, estúdio Kie, seleção de modelos e módulos, backup e atualização manual.', url: 'https://inematds.github.io/jarvisv7/guia/', badge: 'Guia' },
   { icon: '🧊', name: 'astra3d', desc: 'Astra3D V2: três demonstrações completas, editor visual, biblioteca de projetos, duplicação, versões salvas e backup. Exporte sites 3D em HTML independente.', url: 'https://inematds.github.io/astra3d/guia/', badge: 'Guia' },
   { icon: '🌱', name: 'ia-do-zero', desc: 'Kit para quem nunca usou IA: os primeiros 20 pedidos prontos para colar em qualquer chat, por situação do dia a dia, com o que você deve ver na resposta, o erro comum e 10 dicas práticas.', url: 'https://inematds.github.io/ia-do-zero/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'content2video', desc: 'Um link vira vídeo vertical editável: pesquisa, roteiro, voz pt-BR fixa, legendas, revisão no HyperFrames e render MP4 somente após aprovação.', url: 'https://inematds.github.io/content2video/guia/', badge: 'Guia' },

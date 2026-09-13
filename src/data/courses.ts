@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-13', title: 'Jarvis v7 — Assistente pessoal local com OAuth, conhecimento persistente e estúdio Kie', type: 'novo', url: 'https://inematds.github.io/jarvisv7/guia/' },
   { date: '2026-09-13', title: 'MS-v7 Social Autopilot — Voz de marca + 3 comandos no Claude Code: posts na sua voz, visual e agendamento com provedores configuráveis, aprovados por você', type: 'novo', url: 'https://inematds.github.io/ms-v7/guia/' },
   { date: '2026-09-13', title: 'UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)', type: 'novo', url: 'https://inematds.github.io/ugc-seedance25/guia/' },
   { date: '2026-09-13', title: 'Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup', type: 'atualizado', url: 'https://inematds.github.io/astra3d/guia/' },
