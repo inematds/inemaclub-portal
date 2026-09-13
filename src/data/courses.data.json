@@ -5276,6 +5276,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-13",
+      "title": "MS-v7 Social Autopilot — Voz de marca + 3 comandos no Claude Code: posts na sua voz, visual e agendamento com provedores configuráveis, aprovados por você",
+      "type": "novo",
+      "url": "https://inematds.github.io/ms-v7/guia/"
+    },
+    {
+      "date": "2026-09-13",
       "title": "UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)",
       "type": "novo",
       "url": "https://inematds.github.io/ugc-seedance25/guia/"
@@ -6279,6 +6285,13 @@
       "name": "inemadlp",
       "desc": "Downloader pessoal de vídeo e áudio que roda na sua VPS: você cola o link pelo celular, o yt-dlp baixa e devolve o arquivo, que se apaga sozinho depois de 6 horas.",
       "url": "https://inematds.github.io/inemadlp/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📣",
+      "name": "ms-v7",
+      "desc": "Social Autopilot no Claude Code: um arquivo de voz de marca + 3 comandos (post do dia, semana, reaproveitar) que pesquisam, escrevem na sua voz, geram o visual e agendam pelo provedor configurável (Metricool, Blotato ou copiar) — nada vai ao ar sem o seu sim.",
+      "url": "https://inematds.github.io/ms-v7/guia/",
       "badge": "Guia"
     },
     {
