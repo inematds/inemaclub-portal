@@ -2237,7 +2237,7 @@ export const platformsData: Course[] = [
     id: 272,
     title: 'Terminal e Harness — Por que o terminal vence o chat',
     description:
-      'Curso rápido para executivos e profissionais liberais: as quatro camadas de um sistema de IA (chat web, editor, terminal, harness), por que o terminal com agente é a que executa, como o harness faz o agente trabalhar do seu jeito, e onde tudo mora nas pastas (.claude, AGENTS.md, wiki, OKF). 6 aulas + vídeo de 2 min.',
+      'Curso rápido para executivos e profissionais liberais: as quatro camadas de um sistema de IA (chat web, editor, terminal, harness), por que o terminal com agente é a que executa, como o harness faz o agente trabalhar do seu jeito, e onde tudo mora nas pastas (.claude, AGENTS.md, wiki, OKF). 6 aulas + vídeo de 2 min (16:9 e 9:16).',
     icon: '⌨️',
     tags: ['Terminal', 'Agentes', 'Claude Code', 'IA'],
     url: 'https://inematds.github.io/agentes-harness/',
@@ -2623,6 +2623,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-14', title: 'Terminal e Harness — Aula 6 (pastas, .claude, AGENTS.md, wiki, OKF) + vídeo 2:06 com cena das pastas, versões 16:9 e 9:16', type: 'atualizado', url: 'https://inematds.github.io/agentes-harness/' },
   { date: '2026-09-14', title: 'Terminal e Harness — Por que o terminal vence o chat (6 aulas + vídeo, para executivos e profissionais liberais)', type: 'novo', url: 'https://inematds.github.io/agentes-harness/' },
   { date: '2026-09-10', title: 'Gestão de IA — Plano do curso: 10 módulos propostos, ementa e templates; aulas em desenvolvimento', type: 'novo', url: 'https://inematds.github.io/curso-gestao-ia/' },
   { date: '2026-09-10', title: 'LOOP-R — Sua Empresa que Aprende Sozinha (5 trilhas, 21 aulas)', type: 'novo', url: 'https://inematds.github.io/loop-r/curso/' },
