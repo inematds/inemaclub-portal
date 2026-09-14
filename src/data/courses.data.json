@@ -5276,6 +5276,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "videomotival — Canal motivacional automatizado: tema → história → voz → ilustrações → MP4, tudo local e a custo zero",
+      "type": "novo",
+      "url": "https://inematds.github.io/videomotival/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival",
       "type": "novo",
       "url": "https://inematds.github.io/SlopMonster/guia/"
@@ -6477,6 +6483,13 @@
       "name": "videoanima",
       "desc": "Pipeline que transforma uma história em decupagem cinematográfica, keyframes A/B, clipes e filme vertical narrado — provedor de imagem e de vídeo escolhível por parâmetro.",
       "url": "https://inematds.github.io/videoanima-skill/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🎬",
+      "name": "videomotival",
+      "desc": "Canal motivacional automatizado a custo zero: um tema vira história original, narração por cena (inemavox), ilustrações stick-figure consistentes (flux2-klein) e MP4 16:9 pelo FFmpeg. Interface web, CLI e skill do Claude Code.",
+      "url": "https://inematds.github.io/videomotival/guia/",
       "badge": "Guia"
     },
     {
