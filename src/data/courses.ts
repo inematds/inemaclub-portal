@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-14', title: 'astra3dany — Mundo 3D de aprendizagem: três estações animadas que ensinam três hábitos pra usar IA, com World Tour e exploração livre', type: 'novo', url: 'https://inematds.github.io/astra3dany/guia/' },
   { date: '2026-09-14', title: 'videoprodutos — Pasta ou link de loja vira imagens por preset e vídeo promocional automático, com fila web, tudo local', type: 'novo', url: 'https://inematds.github.io/videoprodutos/guia/' },
    { date: '2026-09-14', title: 'videomotival — Canal motivacional automatizado: tema → história → voz → ilustrações → MP4, tudo local e a custo zero', type: 'novo', url: 'https://inematds.github.io/videomotival/guia/' },
   { date: '2026-09-14', title: 'SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival', type: 'novo', url: 'https://inematds.github.io/SlopMonster/guia/' },

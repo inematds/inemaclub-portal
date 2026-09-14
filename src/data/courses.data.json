@@ -5295,6 +5295,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "astra3dany — Mundo 3D de aprendizagem: três estações animadas que ensinam três hábitos pra usar IA, com World Tour e exploração livre",
+      "type": "novo",
+      "url": "https://inematds.github.io/astra3dany/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "videoprodutos — Pasta ou link de loja vira imagens por preset e vídeo promocional automático, com fila web, tudo local",
       "type": "novo",
       "url": "https://inematds.github.io/videoprodutos/guia/"
@@ -6179,6 +6185,13 @@
       "name": "astra3d",
       "desc": "Astra3D V2: três demonstrações completas, editor visual, biblioteca de projetos, duplicação, versões salvas e backup. Exporte sites 3D em HTML independente.",
       "url": "https://inematds.github.io/astra3d/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧭",
+      "name": "astra3dany",
+      "desc": "Mundo 3D de aprendizagem no browser (Babylon.js): três estações com demonstrações animadas, mascote-guia, World Tour de 1 minuto com cards sincronizados e exploração livre. Ensina três hábitos pra usar IA no dia a dia; trocar o assunto é editar um arquivo de configuração. Receita do field guide \"Build a Learning World\".",
+      "url": "https://inematds.github.io/astra3dany/guia/",
       "badge": "Guia"
     },
     {
