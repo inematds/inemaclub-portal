@@ -5301,6 +5301,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "voucontigo — Plataforma de acompanhamento e apoio à rotina: landing, painel de atendimentos, bot Telegram e lembretes (Next.js + Supabase)",
+      "type": "novo",
+      "url": "https://inematds.github.io/voucontigo/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "agentes-fronteiros — Migração de agentes especializados pra agente generalista + skills com contrato, loop de validação e wiki OKF, com inventário e interface kanban",
       "type": "novo",
       "url": "https://inematds.github.io/agentes-fronteiros/guia/"
@@ -6720,6 +6726,13 @@
       "name": "VideosDGX2",
       "desc": "Stack de geração de vídeo com Wan 2.2 + ComfyUI rodando local no NVIDIA DGX Spark, com interface web e fila de jobs.",
       "url": "https://inematds.github.io/VideosDGX2/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "💚",
+      "name": "voucontigo",
+      "desc": "Vou Contigo: plataforma de acompanhamento e apoio à rotina de pessoas mais velhas — landing promocional, painel de agenda e atendimentos com métricas de preço, relatório WhatsApp copiável, bot Telegram de gestão e lembretes (Next.js + Supabase).",
+      "url": "https://inematds.github.io/voucontigo/guia/",
       "badge": "Guia"
     },
     {
