@@ -5295,6 +5295,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "fotos3d — Fotos comuns de um cômodo viram sala em 360°: reconstrução por IA com checagem de costura, interface web e viewer",
+      "type": "novo",
+      "url": "https://inematds.github.io/fotos3d/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "astra3dany — Mundo 3D de aprendizagem: três estações animadas que ensinam três hábitos pra usar IA, com World Tour e exploração livre",
       "type": "novo",
       "url": "https://inematds.github.io/astra3dany/guia/"
@@ -7065,6 +7071,13 @@
       "name": "fontefilm",
       "desc": "Ferramenta de direção de cinema com IA para filmes em quadrinhos — storyboard, prompts e linguagem visual.",
       "url": "https://inematds.github.io/fontefilm/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🏠",
+      "name": "fotos3d",
+      "desc": "Fotos comuns de um cômodo (ou só uma descrição) viram panorâmica 360° equiretangular fiel ao imóvel, com checagem de costura, interface web com viewer e skill property-360",
+      "url": "https://inematds.github.io/fotos3d/guia/",
       "badge": "Guia"
     },
     {
