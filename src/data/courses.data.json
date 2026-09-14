@@ -5301,6 +5301,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "agentes-fronteiros — Migração de agentes especializados pra agente generalista + skills com contrato, loop de validação e wiki OKF, com inventário e interface kanban",
+      "type": "novo",
+      "url": "https://inematds.github.io/agentes-fronteiros/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "claude-session-kit — Statusline com cota real por modelo + skills de checkpoint, auditoria de memória e handoff pro Claude Code",
       "type": "novo",
       "url": "https://inematds.github.io/claude-session-kit/guia/"
@@ -6252,6 +6258,13 @@
       "name": "agente-claude-codex",
       "desc": "Kit pra migrar um setup Claude Code pro Codex ou deixar o trabalho independente de modelo: auditoria somente leitura, CLAUDE.md → AGENTS.md, núcleo portátil (context/tasks/handoffs), skills canônicas via polyskill e teste de continuidade em sessão nova.",
       "url": "https://inematds.github.io/agente-claude-codex/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧭",
+      "name": "agentes-fronteiros",
+      "desc": "Projeto de migração de agentes especializados pra um agente generalista + skills com contrato: inventário automático das skills instaladas, clusters de sobreposição, contratos com acceptance, loop de validação, wiki OKF mantida pelo agente (estilo LLM wiki) e interface kanban de migração.",
+      "url": "https://inematds.github.io/agentes-fronteiros/guia/",
       "badge": "Guia"
     },
     {
