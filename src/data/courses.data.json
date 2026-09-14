@@ -5275,6 +5275,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-14",
+      "title": "SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival",
+      "type": "novo",
+      "url": "https://inematds.github.io/SlopMonster/guia/"
+    },
+    {
       "date": "2026-09-13",
       "title": "Agente Claude → Codex — Migrar do Claude Code pro Codex ou ficar agnóstico: auditoria, adaptadores, núcleo portátil e readback",
       "type": "novo",
@@ -6116,6 +6122,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "👹",
+      "name": "SlopMonster",
+      "desc": "Linter de texto escrito por IA: dá nota de 0 a 5, aponta vocabulário, construções, travessões, listas de três e prova inventada, e limpa o rascunho com um modelo de outra família (Claude ↔ GPT). Python puro, portão de CI pronto, skill pro Claude Code e Codex.",
+      "url": "https://inematds.github.io/SlopMonster/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🎬",
       "name": "hyperframes-student-kit",

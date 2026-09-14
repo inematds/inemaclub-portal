@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-14', title: 'SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival', type: 'novo', url: 'https://inematds.github.io/SlopMonster/guia/' },
   { date: '2026-09-13', title: 'Agente Claude → Codex — Migrar do Claude Code pro Codex ou ficar agnóstico: auditoria, adaptadores, núcleo portátil e readback', type: 'novo', url: 'https://inematds.github.io/agente-claude-codex/guia/' },
   { date: '2026-09-13', title: 'HyperFrames Student Kit — Edição de vídeo com IA no Codex e no Claude Code: cortes por transcrição, motion graphics e reels, em português', type: 'novo', url: 'https://inematds.github.io/hyperframes-student-kit/guia/' },
   { date: '2026-09-13', title: 'Jarvis v7 — Assistente pessoal local com OAuth, conhecimento persistente e estúdio Kie', type: 'novo', url: 'https://inematds.github.io/jarvisv7/guia/' },

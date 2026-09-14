@@ -19,6 +19,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '👹', name: 'SlopMonster', desc: 'Linter de texto escrito por IA: dá nota de 0 a 5, aponta vocabulário, construções, travessões, listas de três e prova inventada, e limpa o rascunho com um modelo de outra família (Claude ↔ GPT). Python puro, portão de CI pronto, skill pro Claude Code e Codex.', url: 'https://inematds.github.io/SlopMonster/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'hyperframes-student-kit', desc: 'Kit de skills em português para editar vídeo com IA no Codex e no Claude Code: transcrição por palavra, corte de silêncios e erros, planejamento de beats, 406 cards de motion graphics com HyperFrames e GSAP, reels 9:16 e guia rápido do tutorial.', url: 'https://inematds.github.io/hyperframes-student-kit/guia/', badge: 'Guia' },
   { icon: '🤖', name: 'jarvisv7', desc: 'Jarvis v7: assistente pessoal local com Codex e Claude OAuth, OpenRouter API, notas e memórias persistentes, estúdio Kie, seleção de modelos e módulos, backup e atualização manual.', url: 'https://inematds.github.io/jarvisv7/guia/', badge: 'Guia' },
   { icon: '🧊', name: 'astra3d', desc: 'Astra3D V2: três demonstrações completas, editor visual, biblioteca de projetos, duplicação, versões salvas e backup. Exporte sites 3D em HTML independente.', url: 'https://inematds.github.io/astra3d/guia/', badge: 'Guia' },
