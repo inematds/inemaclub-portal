@@ -5276,6 +5276,18 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-13",
+      "title": "Agente Claude → Codex — Migrar do Claude Code pro Codex ou ficar agnóstico: auditoria, adaptadores, núcleo portátil e readback",
+      "type": "novo",
+      "url": "https://inematds.github.io/agente-claude-codex/guia/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "HyperFrames Student Kit — Edição de vídeo com IA no Codex e no Claude Code: cortes por transcrição, motion graphics e reels, em português",
+      "type": "novo",
+      "url": "https://inematds.github.io/hyperframes-student-kit/guia/"
+    },
+    {
+      "date": "2026-09-13",
       "title": "Jarvis v7 — Assistente pessoal local com OAuth, conhecimento persistente e estúdio Kie",
       "type": "novo",
       "url": "https://inematds.github.io/jarvisv7/guia/"
@@ -6105,6 +6117,13 @@
   ],
   "communityProjects": [
     {
+      "icon": "🎬",
+      "name": "hyperframes-student-kit",
+      "desc": "Kit de skills em português para editar vídeo com IA no Codex e no Claude Code: transcrição por palavra, corte de silêncios e erros, planejamento de beats, 406 cards de motion graphics com HyperFrames e GSAP, reels 9:16 e guia rápido do tutorial.",
+      "url": "https://inematds.github.io/hyperframes-student-kit/guia/",
+      "badge": "Guia"
+    },
+    {
       "icon": "🤖",
       "name": "jarvisv7",
       "desc": "Jarvis v7: assistente pessoal local com Codex e Claude OAuth, OpenRouter API, notas e memórias persistentes, estúdio Kie, seleção de modelos e módulos, backup e atualização manual.",
@@ -6144,6 +6163,13 @@
       "name": "ai-assistant-decision-kit",
       "desc": "Kit de decisão (MIT, Mark Kashef) traduzido para pt-BR: compara assistentes de IA por modelo operacional antes da marca — entrevista, pesquisa datada, teste reversível e piloto de 7 dias.",
       "url": "https://inematds.github.io/ai-assistant-decision-kit/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🧠",
+      "name": "agente-claude-codex",
+      "desc": "Kit pra migrar um setup Claude Code pro Codex ou deixar o trabalho independente de modelo: auditoria somente leitura, CLAUDE.md → AGENTS.md, núcleo portátil (context/tasks/handoffs), skills canônicas via polyskill e teste de continuidade em sessão nova.",
+      "url": "https://inematds.github.io/agente-claude-codex/guia/",
       "badge": "Guia"
     },
     {

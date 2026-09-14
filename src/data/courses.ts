@@ -16,6 +16,8 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-13', title: 'Agente Claude → Codex — Migrar do Claude Code pro Codex ou ficar agnóstico: auditoria, adaptadores, núcleo portátil e readback', type: 'novo', url: 'https://inematds.github.io/agente-claude-codex/guia/' },
+  { date: '2026-09-13', title: 'HyperFrames Student Kit — Edição de vídeo com IA no Codex e no Claude Code: cortes por transcrição, motion graphics e reels, em português', type: 'novo', url: 'https://inematds.github.io/hyperframes-student-kit/guia/' },
   { date: '2026-09-13', title: 'Jarvis v7 — Assistente pessoal local com OAuth, conhecimento persistente e estúdio Kie', type: 'novo', url: 'https://inematds.github.io/jarvisv7/guia/' },
   { date: '2026-09-13', title: 'MS-v7 Social Autopilot — Voz de marca + 3 comandos no Claude Code: posts na sua voz, visual e agendamento com provedores configuráveis, aprovados por você', type: 'novo', url: 'https://inematds.github.io/ms-v7/guia/' },
   { date: '2026-09-13', title: 'UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)', type: 'novo', url: 'https://inematds.github.io/ugc-seedance25/guia/' },
