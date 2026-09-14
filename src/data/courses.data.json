@@ -5276,6 +5276,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "videoprodutos — Pasta ou link de loja vira imagens por preset e vídeo promocional automático, com fila web, tudo local",
+      "type": "novo",
+      "url": "https://inematds.github.io/videoprodutos/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "videomotival — Canal motivacional automatizado: tema → história → voz → ilustrações → MP4, tudo local e a custo zero",
       "type": "novo",
       "url": "https://inematds.github.io/videomotival/guia/"
@@ -6490,6 +6496,13 @@
       "name": "videomotival",
       "desc": "Canal motivacional automatizado a custo zero: um tema vira história original, narração por cena (inemavox), ilustrações stick-figure consistentes (flux2-klein) e MP4 16:9 pelo FFmpeg. Interface web, CLI e skill do Claude Code.",
       "url": "https://inematds.github.io/videomotival/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🛍️",
+      "name": "videoprodutos",
+      "desc": "Pasta ou link de loja vira imagens por preset de estilo e vídeo promocional automático (16:9 e 9:16), com fila de produção e página web — 100% local (ffmpeg, sharp, rembg), LLM e imagem por IA opcionais.",
+      "url": "https://inematds.github.io/videoprodutos/guia/",
       "badge": "Guia"
     },
     {
