@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-14', title: 'voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar', type: 'atualizado', url: 'https://inematds.github.io/voucontigo/guia/' },
   { date: '2026-09-14', title: 'voucontigo — Plataforma de acompanhamento e apoio à rotina: landing, painel de atendimentos, bot Telegram e lembretes (Next.js + Supabase)', type: 'novo', url: 'https://inematds.github.io/voucontigo/guia/' },
   { date: '2026-09-14', title: 'agentes-fronteiros — Migração de agentes especializados pra agente generalista + skills com contrato, loop de validação e wiki OKF, com inventário e interface kanban', type: 'novo', url: 'https://inematds.github.io/agentes-fronteiros/guia/' },
   { date: '2026-09-14', title: 'claude-session-kit — Statusline com cota real por modelo + skills de checkpoint, auditoria de memória e handoff pro Claude Code', type: 'novo', url: 'https://inematds.github.io/claude-session-kit/guia/' },

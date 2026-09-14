@@ -5301,6 +5301,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-14",
+      "title": "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/voucontigo/guia/"
+    },
+    {
+      "date": "2026-09-14",
       "title": "voucontigo — Plataforma de acompanhamento e apoio à rotina: landing, painel de atendimentos, bot Telegram e lembretes (Next.js + Supabase)",
       "type": "novo",
       "url": "https://inematds.github.io/voucontigo/guia/"
@@ -6731,7 +6737,7 @@
     {
       "icon": "💚",
       "name": "voucontigo",
-      "desc": "Vou Contigo: plataforma de acompanhamento e apoio à rotina de pessoas mais velhas — landing promocional, painel de agenda e atendimentos com métricas de preço, relatório WhatsApp copiável, bot Telegram de gestão e lembretes (Next.js + Supabase).",
+      "desc": "Vou Contigo: plataforma de acompanhamento e apoio à rotina de pessoas mais velhas — landing, painel de atendimentos com métricas de preço, bot WhatsApp (Evolution API) para agendar/cancelar/horários livres, lembretes e relatório automáticos, PIX Asaas, portal do familiar e gestão por Telegram (Next.js + Supabase).",
       "url": "https://inematds.github.io/voucontigo/guia/",
       "badge": "Guia"
     },
