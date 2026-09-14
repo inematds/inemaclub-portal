@@ -13,6 +13,22 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2494987106/6075",
+    "date": "2026-09-14",
+    "titulo": "Vídeos Virais de Pintura em Pedra",
+    "resumo": "Tópico documenta um framework de prompts para criar vídeos virais de pintura em pedra usando IA, com etapa de geração de imagem final seguida de vídeo timelapse image-to-video.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6075"
+  },
+  {
+    "id": "2433384436/6598",
+    "date": "2026-09-14",
+    "titulo": "Como Migrar de Claude para Codex ou outros",
+    "resumo": "Discussão sobre como criar uma estrutura de trabalho com agentes de IA independente de modelo, com foco em migração do Claude Code para o Codex e outros provedores. Apresenta arquitetura concreta, fluxo de handoff e princípios de organização de contexto.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6598"
+  },
+  {
     "id": "vip/2026-09-11/Aqui um sistema e um curso sobre gestao de Agentes de IA,  d",
     "date": "2026-09-11",
     "titulo": "Aqui um sistema e um curso sobre gestao de Agentes de IA,  de gestao de pessoas para Gestao de Agentes",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Pesquisa sobre o DeepSeek Harness (DSH) e sua integração com Claude Code e outros provedores de LLM. O tópico reúne notas e capturas de tela sobre o assunto.",
     "grupo": "INEMA.CCODE",
     "url": "https://www.inema.pro/cerebro/inema-ccode/7064"
-  },
-  {
-    "id": "2433384436/6425",
-    "date": "2026-08-29",
-    "titulo": "Framework EVE da Verce",
-    "resumo": "Apresentação do framework eve da Vercel, recém-lançado em Public Preview. O tópico traz contexto sobre o lançamento, maturidade e evolução rápida do projeto.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6425"
-  },
-  {
-    "id": "2433384436/6445",
-    "date": "2026-08-29",
-    "titulo": "OKF — Open Knowledge Format",
-    "resumo": "Discussão sobre o OKF (Open Knowledge Format), uma proposta emergente para estruturar conhecimento de forma portátil e legível tanto por humanos quanto por agentes de IA, com potencial de uso como camada de memória compartilhada entre agentes.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6445"
   }
 ];
