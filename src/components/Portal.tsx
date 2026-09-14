@@ -19,6 +19,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🧭', name: 'claude-session-kit', desc: 'Kit pra sessões enxutas no Claude Code: statusline com cota real (5 h, semanal geral e semanal por modelo), três skills de sessão (checkpoint, auditoria de memória e handoff) e o plano que liga tudo.', url: 'https://inematds.github.io/claude-session-kit/guia/', badge: 'Guia' },
   { icon: '👹', name: 'SlopMonster', desc: 'Linter de texto escrito por IA: dá nota de 0 a 5, aponta vocabulário, construções, travessões, listas de três e prova inventada, e limpa o rascunho com um modelo de outra família (Claude ↔ GPT). Python puro, portão de CI pronto, skill pro Claude Code e Codex.', url: 'https://inematds.github.io/SlopMonster/guia/', badge: 'Guia' },
   { icon: '🎬', name: 'hyperframes-student-kit', desc: 'Kit de skills em português para editar vídeo com IA no Codex e no Claude Code: transcrição por palavra, corte de silêncios e erros, planejamento de beats, 406 cards de motion graphics com HyperFrames e GSAP, reels 9:16 e guia rápido do tutorial.', url: 'https://inematds.github.io/hyperframes-student-kit/guia/', badge: 'Guia' },
   { icon: '🤖', name: 'jarvisv7', desc: 'Jarvis v7: assistente pessoal local com Codex e Claude OAuth, OpenRouter API, notas e memórias persistentes, estúdio Kie, seleção de modelos e módulos, backup e atualização manual.', url: 'https://inematds.github.io/jarvisv7/guia/', badge: 'Guia' },
