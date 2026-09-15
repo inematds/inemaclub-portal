@@ -44,7 +44,9 @@ Portal único, um idioma por rota: `/` (PT), `/en/`, `/es/`. Sem redirect por `A
 - Modelo híbrido: catálogo continua em PT (selo "PT" nos cards em EN/ES) e a seção "Disponível em <idioma>" lista o que já foi traduzido — **`src/data/translated-courses.ts`**. Para publicar um curso traduzido: adicionar uma linha lá com o `id` do curso em `platformsData`, `locale`, título/descrição no idioma e a URL da versão traduzida. Não mexer no `courses.ts` por causa disso.
 - Chat: o widget manda `locale` e a Edge Function responde nesse idioma (`_shared/prompts.ts`). Mudou o prompt? `npx supabase functions deploy chat`.
 - Widget do chat: textos do launcher, placeholder, botão e avisos em `WIDGET_TEXT` dentro de `src/components/AgenteChat/widget.ts` (pt/en/es), lidos de `document.documentElement.lang`.
-- Fora do escopo por enquanto: `/cursos/`, `/conhecimento/`, `feed.xml`, `llms.txt` e as novidades ficam só em PT.
+- **Banners por idioma:** `public/doc/<en|es>/<mesmo nome>` com o mesmo tamanho e formato do PT; a lista do que tem versão está em `src/i18n/images.ts` (`LOCALIZED_IMAGES`) e o `Portal.tsx` passa todo `src` por `localizedSrc()`. Banner novo em PT → gerar EN/ES com o **Codex** (`codex exec -i <png> "..."`, feature `image_generation`; Magnific NÃO é autorizada pra isso), ajustar ao tamanho original e adicionar o nome no set. Sem versão, cai no PT.
+- **Telegram e redes sociais em EN/ES:** enquanto não existem grupos/perfis por idioma, as seções mostram só um aviso + link (`inema.vip` e os perfis principais). Quando o usuário passar os grupos EN/ES, trocar o bloco `locale !== 'pt'` dessas seções por listas por idioma (dicionário).
+- Fora do escopo por enquanto: `/cursos/`, `/conhecimento/`, `feed.xml`, `llms.txt` e os feeds (novidades/atualizações) ficam só em PT, marcados "conteúdo em português".
 
 ## Últimas Novidades (feed do INEMA.VIP) — automático
 
