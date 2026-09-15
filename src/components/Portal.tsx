@@ -976,7 +976,7 @@ export default function Portal({
       </section>
 
       {locale !== 'pt' && (
-        <section id="translated" className="learning-path-section translated-section">
+        <section id="translated" className="learning-path-section">
           <div className="container">
             <div className="learning-path-header">
               <h3>{t.translated.title}</h3>
