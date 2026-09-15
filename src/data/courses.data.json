@@ -5341,6 +5341,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-15",
+      "title": "newia-oct2026 — 12 Novas IAs de outubro/2026: rumores × versões atuais verificadas (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), com preços, contexto, gráficos e fontes",
+      "type": "novo",
+      "url": "https://inematds.github.io/newia-oct2026/guia/"
+    },
+    {
       "date": "2026-09-14",
       "title": "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar",
       "type": "atualizado",
@@ -6710,6 +6716,13 @@
       "name": "n8n-ps",
       "desc": "Framework de skills que dá ao Claude expertise para construir, validar e implantar workflows n8n em produção, direto no Claude Code.",
       "url": "https://inematds.github.io/n8n-ps/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🔮",
+      "name": "newia-oct2026",
+      "desc": "Dossiê das 12 IAs anunciadas (como rumor) para outubro de 2026 — GPT Bel, GPT-6 Sol, Claude Fable 5.2, Opus 5.1, Grok 4.7, DeepSeek V4.1 Pro, GLM-5.5, Kimi K3.1, Qwen 4.0, Gemini 4.0, Muse Spark 1.4, MiMo-V3 — cada um comparado com a versão atual verificada da linhagem: preço, contexto, benchmarks, linha do tempo, gráficos e fontes.",
+      "url": "https://inematds.github.io/newia-oct2026/guia/",
       "badge": "Guia"
     },
     {
