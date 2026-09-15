@@ -2163,3 +2163,44 @@ html {
 .knowledge-summary li::marker {
     color: var(--primary-color);
 }
+
+/* i18n — seletor de idioma no header e selo de idioma do conteúdo */
+.lang-switcher {
+  display: flex;
+  gap: .35rem;
+  justify-content: center;
+  margin-top: .6rem;
+}
+.lang-switcher a {
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  border: 1px solid oklch(0.45 0.02 260 / .5);
+  color: var(--text-secondary, #94a3b8);
+  text-decoration: none;
+}
+.lang-switcher a:hover { color: var(--text-primary, #f8fafc); }
+.lang-switcher a.active {
+  color: #0b0e14;
+  background: oklch(0.82 0.16 75);
+  border-color: transparent;
+}
+.lang-pill {
+  display: inline-block;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: .1rem .4rem;
+  border-radius: 999px;
+  background: oklch(0.35 0.03 260 / .8);
+  color: var(--text-secondary, #94a3b8);
+  margin-left: .4rem;
+  vertical-align: middle;
+}
+.lang-note {
+  font-size: .7em;
+  font-weight: 400;
+  color: var(--text-secondary, #94a3b8);
+}

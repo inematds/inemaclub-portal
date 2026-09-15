@@ -5,7 +5,8 @@ import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
 import { novidadesData } from '@/data/novidades'
 import { coursePath } from '@/lib/site'
-import type { Locale } from '@/i18n/locales'
+import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, type Locale } from '@/i18n/locales'
+import { getDictionary } from '@/i18n/dictionary'
 
 interface VisitStats {
   total: number
@@ -300,6 +301,7 @@ export default function Portal({
   const [novidadesExpanded, setNovidadesExpanded] = useState(false)
   const [novidadeAberta, setNovidadeAberta] = useState<string | null>(null)
   const [repos, setRepos] = useState<Repo[]>([])
+  const t = getDictionary(locale)
 
   // Registra a visita ao montar
   useEffect(() => {
@@ -429,7 +431,7 @@ export default function Portal({
 
   function formatDate(dateStr: string) {
     const date = new Date(dateStr + 'T00:00:00')
-    return date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+    return date.toLocaleDateString(INTL_LOCALE[locale], { day: '2-digit', month: '2-digit' })
   }
 
   return (
@@ -445,7 +447,7 @@ export default function Portal({
             onClick={() => trackClick('https://inema.vip', 'Participe da Comunidade', 'header')}
           >
             <img src="/doc/conviteinemap.png" alt="INEMA.VIP" />
-            <span>Participe da Comunidade</span>
+            <span>{t.header.communityBadge}</span>
           </a>
           <a
             href="https://inema.pro"
@@ -455,25 +457,32 @@ export default function Portal({
             onClick={() => trackClick('https://inema.pro', 'INEMA.PRO', 'header')}
           >
             <img src="/doc/inema-pro-badge.webp" alt="INEMA.PRO" />
-            <span>Assine o INEMA.PRO</span>
+            <span>{t.header.proBadge}</span>
           </a>
           <div className="header-content">
-            <h1 className="logo">INEMA.CLUB Portal INEMA</h1>
-            <p className="tagline">Acesso centralizado aos seus cursos e plataformas</p>
+            <h1 className="logo">{t.header.logo}</h1>
+            <p className="tagline">{t.header.tagline}</p>
             {/* Chips de visitantes */}
             <div className="visit-chips">
-              <span className="visit-chip" title="acessos">
+              <span className="visit-chip" title={t.header.chipVisits}>
                 👁 {visitStats.total}
               </span>
-              <span className="visit-chip" title="visitantes únicos">
+              <span className="visit-chip" title={t.header.chipUnique}>
                 👤 {visitStats.uniqueAnon}
               </span>
               {visitStats.uniqueLogged > 0 && (
-                <span className="visit-chip" title="logados">
+                <span className="visit-chip" title={t.header.chipLogged}>
                   🔑 {visitStats.uniqueLogged}
                 </span>
               )}
             </div>
+            <nav className="lang-switcher" aria-label={t.langSwitcher.label}>
+              {LOCALES.map((l) => (
+                <a key={l} href={localeHome(l)} className={l === locale ? 'active' : ''} hrefLang={l} lang={l}>
+                  {LOCALE_LABEL[l]}
+                </a>
+              ))}
+            </nav>
           </div>
         </div>
       </header>
@@ -489,14 +498,14 @@ export default function Portal({
               className="section-nav-link"
               onClick={() => trackClick('https://buscas.inema.club', 'Buscas', 'section-nav')}
             >
-              🔍 Buscas
+              {t.nav.search}
             </a>
-            <a href="#trilha-iniciantes" className="section-nav-link">📘 Iniciantes</a>
-            <a href="/cursos/" className="section-nav-link">🎓 Cursos</a>
-            <a href="#trilhas" className="section-nav-link">🗺️ Trilhas</a>
-            <a href="#comunidade" className="section-nav-link">🚀 Projetos</a>
-            <a href="#telegram" className="section-nav-link">💬 Telegram</a>
-            <a href="#social" className="section-nav-link">📱 Social</a>
+            <a href="#trilha-iniciantes" className="section-nav-link">{t.nav.beginners}</a>
+            <a href="/cursos/" className="section-nav-link">{t.nav.courses}</a>
+            <a href="#trilhas" className="section-nav-link">{t.nav.trails}</a>
+            <a href="#comunidade" className="section-nav-link">{t.nav.projects}</a>
+            <a href="#telegram" className="section-nav-link">{t.nav.telegram}</a>
+            <a href="#social" className="section-nav-link">{t.nav.social}</a>
             <a
               href="https://inema.pro"
               target="_blank"
@@ -504,7 +513,7 @@ export default function Portal({
               className="section-nav-link"
               onClick={() => trackClick('https://inema.pro', 'INEMA.PRO', 'section-nav')}
             >
-              ⭐ INEMA.PRO
+              {t.nav.pro}
             </a>
           </div>
         </div>
@@ -518,30 +527,17 @@ export default function Portal({
               <div className="recruitment-image">
                 <img
                   src="/doc/inema-hero-aprenda-pratique-evolua.webp"
-                  alt="INEMA.CLUB — Aprenda. Pratique. Evolua. O ecossistema para dominar IA na prática."
+                  alt={t.hero.imageAlt}
                 />
               </div>
               <p className="recruitment-image-caption">
-                <strong>
-                  Aprenda. Pratique. Evolua. — uma base sólida de conhecimento em IA, para aplicar
-                  no trabalho, nos projetos e na carreira.
-                </strong>
+                <strong>{t.hero.caption}</strong>
               </p>
             </div>
             <div className="recruitment-text">
-              <h2>Construa uma base sólida de conhecimento em IA.</h2>
-              <p>
-                O INEMA Club é um ecossistema de aprendizado prático para quem quer dominar
-                inteligência artificial e aplicar IA no trabalho, nos projetos e na carreira. A ideia
-                central é simples: aprender, praticar e evoluir com IA de forma contínua.
-              </p>
-              <p>
-                Aqui você encontra cursos práticos diretos ao ponto, projetos reais para colocar a
-                mão na massa, trilhas organizadas para cada nível, uma comunidade ativa e a curadoria
-                das melhores ferramentas. Tudo voltado a construir uma base sólida de conhecimento —
-                que te torna mais produtivo, mais estratégico e mais preparado para o futuro do
-                trabalho.
-              </p>
+              <h2>{t.hero.title}</h2>
+              <p>{t.hero.body}</p>
+              <p>{t.hero.body2}</p>
             </div>
           </div>
         </div>
@@ -553,10 +549,10 @@ export default function Portal({
         <div className="container">
           <div className="webmcp-course-search-content">
             <div>
-              <h2 id="webmcp-course-search-title">O que você quer aprender hoje?</h2>
+              <h2 id="webmcp-course-search-title">{t.search.title}</h2>
               <p>
-                Pesquise os cursos públicos do INEMA por tema, ferramenta ou objetivo. Mesmo sem
-                WebMCP, você pode continuar manualmente pelo catálogo.
+                {t.search.body}
+                {locale !== 'pt' && <> {t.search.catalogNote}</>}
               </p>
             </div>
             <form
@@ -568,7 +564,7 @@ export default function Portal({
                 toolautosubmit: '',
               } as Record<string, string>)}
             >
-              <label htmlFor="home-course-search">Tema ou objetivo</label>
+              <label htmlFor="home-course-search">{t.search.label}</label>
               <div className="webmcp-course-search-controls">
                 <input
                   id="home-course-search"
@@ -576,12 +572,12 @@ export default function Portal({
                   name="q"
                   required
                   maxLength={100}
-                  placeholder="Ex.: WebMCP, agentes, automação"
+                  placeholder={t.search.placeholder}
                   {...({
                     toolparamdescription: 'Tema, ferramenta ou objetivo que a pessoa deseja aprender.',
                   } as Record<string, string>)}
                 />
-                <button type="submit">Buscar cursos</button>
+                <button type="submit">{t.search.button}</button>
               </div>
             </form>
           </div>
@@ -609,7 +605,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/gestao-agentes-2027.png"
-              alt="Gestão de Agentes 2027 — o novo papel das empresas. Mesma liderança, uma nova força de trabalho: humanos + agentes = mais valor."
+              alt={t.events.gestao2027Alt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
           </a>
@@ -637,7 +633,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/agi-chegou.png"
-              alt="AGI chegou — não é mais sobre fazer tudo, é sobre comandar agentes. A era dos super-agentes começou."
+              alt={t.events.agiAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
           </a>
@@ -665,7 +661,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/content2video.png"
-              alt="Content2Video — um link entra, um vídeo sai"
+              alt={t.events.content2videoAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
           </a>
@@ -693,7 +689,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/webmcp2.png"
-              alt="WebMCP — evento INEMA"
+              alt={t.events.webmcpAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
           </a>
@@ -721,7 +717,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/capa-musicavideo-v2.jpg"
-              alt="INEMA MUSICAVIDEO — crie músicas e clipes em escala, de ideia ao hit"
+              alt={t.events.musicavideoAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
             <div
@@ -745,7 +741,7 @@ export default function Portal({
                   fontSize: '14.5px',
                 }}
               >
-                Conheça o MUSICAVIDEO →
+                {t.events.musicavideoButton}
               </span>
             </div>
           </a>
@@ -773,7 +769,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/vczero.png"
-              alt="Curso INEMACCBOT com Promoavatar"
+              alt={t.events.destaqueAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
             <div
@@ -797,7 +793,7 @@ export default function Portal({
                   fontSize: '14.5px',
                 }}
               >
-                Assista o curso →
+                {t.events.destaqueButton}
               </span>
             </div>
           </a>
@@ -808,15 +804,10 @@ export default function Portal({
       <section id="trilha-iniciantes" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
-            <h3>Trilha para Iniciantes</h3>
-            <p>Comece sua jornada com os cursos essenciais, nesta ordem recomendada</p>
+            <h3>{t.beginners.title}</h3>
+            <p>{t.beginners.subtitle}</p>
             <p style={{ maxWidth: '760px', margin: '.6rem auto 0', fontSize: '.95rem', color: 'var(--text-secondary, #94a3b8)' }}>
-              Não é uma lista aleatória: é uma progressão. Você começa aprendendo a falar com a IA (FEP),
-              vê essas habilidades em ação (ATIA), constrói a base técnica de dados (FDB) e amplia para
-              imagens (Vision). Só então entra nas ferramentas de agente de código — Claude Code e Codex —
-              que juntam tudo isso na prática, antes de colocar um projeto real no ar (Do Zero ao Deploy) e
-              fechar construindo seu próprio sistema de IA (INTELECTO). Pular etapas cria lacunas: os
-              cursos mais à frente presumem a base dos anteriores.
+              {t.beginners.body}
             </p>
           </div>
           <div className="learning-path-cards">
@@ -828,6 +819,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/FEP/', 'FEP', 'trilha')}
             >
               <div className="path-number">1</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FEP</h4>
               <p>Fundamentos de Engenharia de Prompts</p>
             </a>
@@ -839,6 +831,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/ATIA/', 'ATIA', 'trilha')}
             >
               <div className="path-number">2</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>ATIA</h4>
               <p>AI Tools in Action</p>
             </a>
@@ -850,6 +843,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/FDB/', 'FDB', 'trilha')}
             >
               <div className="path-number">3</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FDB</h4>
               <p>Fundamentos de Banco de Dados</p>
             </a>
@@ -861,6 +855,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/VISION/', 'Vision', 'trilha')}
             >
               <div className="path-number">4</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Vision</h4>
               <p>Processamento de Imagens com IA</p>
             </a>
@@ -872,6 +867,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/ccodebasico/', 'Claude Code Básico', 'trilha')}
             >
               <div className="path-number">5</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Claude Code Básico</h4>
               <p>Do Zero: Instalação, Comandos, Skills, MCP e Cowork</p>
             </a>
@@ -883,6 +879,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/codexbasico/', 'Codex Básico', 'trilha')}
             >
               <div className="path-number">6</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Codex Básico</h4>
               <p>Curso Completo do Codex CLI em 6 Trilhas</p>
             </a>
@@ -894,6 +891,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/do-zero-ao-deploy/', 'Do Zero ao Deploy', 'trilha')}
             >
               <div className="path-number">7</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Do Zero ao Deploy</h4>
               <p>Da primeira linha no terminal ao seu assistente IA</p>
             </a>
@@ -905,6 +903,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/intelecto-curso/', 'INTELECTO Curso', 'trilha')}
             >
               <div className="path-number">8</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>INTELECTO Curso</h4>
               <p>Do Zero ao Expert em IA</p>
             </a>
@@ -916,6 +915,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/cccompletopn/', 'Claude Code para Pessoas Normais', 'trilha')}
             >
               <div className="path-number">9</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Claude Code para Pessoas Normais</h4>
               <p>Do zero ao AI Native — segundo cérebro, sub-agentes e automações</p>
             </a>
@@ -927,6 +927,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/os-agentes/guia/', 'OS Agentes', 'trilha')}
             >
               <div className="path-number">10</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>OS Agentes</h4>
               <p>Construa seu OS agêntico, uma camada por vez</p>
             </a>
@@ -938,6 +939,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/lives2/', 'Lives 2026', 'trilha')}
             >
               <div className="path-number">11</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Lives 2026</h4>
               <p>7 vídeos estratégicos sobre vender serviços de IA</p>
             </a>
@@ -949,12 +951,13 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/evai2026/curso-e-live/curso/', 'Como Montar um Negócio', 'trilha')}
             >
               <div className="path-number">12</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Como Montar um Negócio</h4>
               <p>8 aulas sem programar — do primeiro cliente ao contrato</p>
             </a>
           </div>
           <div className="learning-path-footer">
-            <p>Após completar esta trilha, explore outros cursos conforme seu interesse abaixo</p>
+            <p>{t.beginners.footer}</p>
             <div className="guide-link-btn-wrap">
               <a
                 className="guide-link-btn"
@@ -963,7 +966,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('/guias/trilha-iniciantes.html', 'Guia da Trilha para Iniciantes', 'trilha')}
               >
-                📖 Veja o guia com a importância de cada curso
+                {t.beginners.guideButton}
               </a>
             </div>
           </div>
@@ -974,12 +977,10 @@ export default function Portal({
       <section id="ia-do-zero" className="learning-path-section">
         <div className="container">
           <div className="learning-path-header">
-            <h3>🌱 Nunca usou IA? Comece pelo IA do Zero</h3>
-            <p>Antes do passo 1 da trilha: quatro aulas curtas, um kit de vinte pedidos prontos e, na sequência, o FEP reescrito para 2026</p>
+            <h3>{t.iaZero.title}</h3>
+            <p>{t.iaZero.subtitle}</p>
             <p style={{ maxWidth: '760px', margin: '.6rem auto 0', fontSize: '.95rem', color: 'var(--text-secondary, #94a3b8)' }}>
-              Sem nada técnico e sem instalar nada. Você aprende as três partes de um pedido, os quatro botões do chat,
-              o que conferir antes de repassar, e sai com o seu próprio kit de cinco pedidos preenchido e testado.
-              Quando terminar, o FEP 2026 mostra o que mudou na forma de pedir agora que a AGI chegou, e a trilha acima faz sentido.
+              {t.iaZero.body}
             </p>
           </div>
           <div className="learning-path-cards">
@@ -991,6 +992,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/ia-do-zero-curso/', 'IA do Zero (curso)', 'ia-do-zero')}
             >
               <div className="path-number">0</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>IA do Zero — o curso</h4>
               <p>4 aulas de 16 a 20 min: pedir bem, usar o chat, conferir, montar o seu kit</p>
             </a>
@@ -1002,6 +1004,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/ia-do-zero/guia/', 'IA do Zero (kit)', 'ia-do-zero')}
             >
               <div className="path-number">📋</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>IA do Zero — o kit</h4>
               <p>20 pedidos prontos por situação, com o que você deve ver e o erro comum</p>
             </a>
@@ -1013,6 +1016,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/FEP2026/', 'FEP 2026', 'ia-do-zero')}
             >
               <div className="path-number">1</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FEP 2026</h4>
               <p>A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas)</p>
             </a>
@@ -1254,7 +1258,7 @@ export default function Portal({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/doc/inemaagenteshubv.jpg"
-              alt="Evento INEMA"
+              alt={t.events.eventoAlt}
               loading="lazy"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
             />
@@ -1273,8 +1277,8 @@ export default function Portal({
                 onClick={() => setNovidadesExpanded((v) => !v)}
                 style={{ cursor: 'pointer' }}
               >
-                <h3>Últimas Novidades</h3>
-                <span className="updates-toggle">{novidadesExpanded ? 'Ver menos' : 'Ver mais'}</span>
+                <h3>{t.novidades.title}{locale !== 'pt' && <small className="lang-note"> · {t.novidades.ptNote}</small>}</h3>
+                <span className="updates-toggle">{novidadesExpanded ? t.novidades.less : t.novidades.more}</span>
               </div>
               <div className={`updates-list${novidadesExpanded ? ' expanded' : ''}`}>
                 {visibleNovidades.map((n) => {
@@ -1302,7 +1306,7 @@ export default function Portal({
                               rel="noopener noreferrer"
                               onClick={() => trackClick(n.url, n.titulo, 'novidades')}
                             >
-                              {n.url.includes('cvip.inema.pro') ? 'Ler no INEMA.VIP →' : 'Abrir link →'}
+                              {n.url.includes('cvip.inema.pro') ? t.novidades.readVip : t.novidades.openLink}
                             </a>
                           )}
                         </div>
@@ -1321,8 +1325,8 @@ export default function Portal({
               onClick={() => setUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>Últimas Atualizações de Cursos</h3>
-              <span className="updates-toggle">{updatesExpanded ? 'Ver menos' : 'Ver mais'}</span>
+              <h3>{t.updates.coursesTitle}</h3>
+              <span className="updates-toggle">{updatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
             <div className={`updates-list${updatesExpanded ? ' expanded' : ''}`}>
               {visibleUpdates.map((update, i) => (
@@ -1335,7 +1339,9 @@ export default function Portal({
                   onClick={() => trackClick(update.url, update.title, 'atualizacoes')}
                 >
                   <span className="update-date">{formatDate(update.date)}</span>
-                  <span className={`update-type ${update.type}`}>{update.type}</span>
+                  <span className={`update-type ${update.type}`}>
+                    {update.type === 'novo' ? t.updates.typeNovo : t.updates.typeAtualizado}
+                  </span>
                   <span className="update-title">{update.title}</span>
                   <span className="update-arrow">→</span>
                 </a>
@@ -1350,8 +1356,8 @@ export default function Portal({
               onClick={() => setProjectUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>Últimas Atualizações de Projetos</h3>
-              <span className="updates-toggle">{projectUpdatesExpanded ? 'Ver menos' : 'Ver mais'}</span>
+              <h3>{t.updates.projectsTitle}</h3>
+              <span className="updates-toggle">{projectUpdatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
             <div className={`updates-list${projectUpdatesExpanded ? ' expanded' : ''}`}>
               {visibleProjectUpdates.map((update, i) => (
@@ -1364,7 +1370,9 @@ export default function Portal({
                   onClick={() => trackClick(update.url, update.title, 'atualizacoes-projetos')}
                 >
                   <span className="update-date">{formatDate(update.date)}</span>
-                  <span className={`update-type ${update.type}`}>{update.type}</span>
+                  <span className={`update-type ${update.type}`}>
+                    {update.type === 'novo' ? t.updates.typeNovo : t.updates.typeAtualizado}
+                  </span>
                   <span className="update-title">{update.title}</span>
                   <span className="update-arrow">→</span>
                 </a>
@@ -1382,7 +1390,7 @@ export default function Portal({
             >
               <img
                 src="/doc/perfis-ia-topo.webp"
-                alt="Descubra como usar IA para evoluir na sua profissão"
+                alt={t.perfis.topoAlt}
                 className="perfis-ia-topo"
                 loading="lazy"
               />
@@ -1394,7 +1402,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Operacional', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-operacional.webp" alt="Profissional Operacional — mais produtividade com IA" loading="lazy" />
+                <img src="/doc/perfis-ia-operacional.webp" alt={t.perfis.operacionalAlt} loading="lazy" />
               </a>
               <a
                 href="https://inematds.github.io/agentes-office/"
@@ -1402,7 +1410,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Empreendedor', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-empreendedor.webp" alt="Empreendedor Estratégico com IA" loading="lazy" />
+                <img src="/doc/perfis-ia-empreendedor.webp" alt={t.perfis.empreendedorAlt} loading="lazy" />
               </a>
               <a
                 href="https://inematds.github.io/agentes-office/"
@@ -1410,7 +1418,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Liberal', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-liberal.webp" alt="Profissional Liberal Experiente com IA" loading="lazy" />
+                <img src="/doc/perfis-ia-liberal.webp" alt={t.perfis.liberalAlt} loading="lazy" />
               </a>
               <a
                 href="https://inematds.github.io/agentes-office/"
@@ -1418,7 +1426,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Gestor', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-gestor.webp" alt="Gestor e Líder — lidere melhor com IA" loading="lazy" />
+                <img src="/doc/perfis-ia-gestor.webp" alt={t.perfis.gestorAlt} loading="lazy" />
               </a>
             </div>
           </section>
@@ -1520,7 +1528,7 @@ export default function Portal({
             className="inemapro-banner inemapro-banner--wide"
             onClick={() => trackClick('https://inema.pro', 'INEMA.PRO — Completo', 'banner-inemapro')}
           >
-            <img src="/doc/inema-pro-banner-completo.webp" alt="INEMA.PRO — A plataforma para quem quer usar IA para crescer na prática" loading="lazy" />
+            <img src="/doc/inema-pro-banner-completo.webp" alt={t.proBanner.alt} loading="lazy" />
           </a>
         </div>
       </section>
@@ -1609,7 +1617,7 @@ export default function Portal({
       {/* Banner */}
       <section className="hero-banner">
         <div className="container">
-          <img src="/doc/inemac2.jpg" alt="INEMA.CLUB" className="hero-banner-image" />
+          <img src="/doc/inemac2.jpg" alt={t.banners.clubAlt} className="hero-banner-image" />
         </div>
       </section>
 
@@ -1617,8 +1625,8 @@ export default function Portal({
       <section id="trilhas" className="trilhas-section">
         <div className="container">
           <div className="learning-path-header">
-            <h3>Trilhas de Aprendizado do INEMA.PRO</h3>
-            <p>Escolha seu caminho e avance com foco — o conteúdo completo de cada trilha está no INEMA.PRO</p>
+            <h3>{t.trails.title}</h3>
+            <p>{t.trails.subtitle}</p>
           </div>
           <div className={SHOW_DETALHES ? '' : 'trilhas-titles-grid'}>
           {([
@@ -1853,7 +1861,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inema.pro', 'Trilhas — INEMA.PRO', 'trilhas')}
               >
-                🧭 Acesse as trilhas completas no INEMA.PRO
+                {t.trails.ctaButton}
               </a>
             </div>
           </div>
@@ -1866,13 +1874,13 @@ export default function Portal({
       <section id="comunidade" className="community-projects-section">
         <div className="container">
           <div className="community-projects-header">
-            <h3>Projetos</h3>
-            <p>Projetos desenvolvidos pela INEMA — prontos para baixar e usar</p>
+            <h3>{t.projects.title}</h3>
+            <p>{t.projects.subtitle}</p>
           </div>
           <div className="projetos-cta">
             <div className="projetos-cta-number">+400</div>
-            <p>projetos prontos para baixar e usar</p>
-            <p>Aplicativos, agentes, skills e ferramentas construídos pela comunidade INEMA, com código e guia de uso.</p>
+            <p>{t.projects.ctaLine}</p>
+            <p>{t.projects.ctaBody}</p>
             <div className="guide-link-btn-wrap">
               <a
                 className="guide-link-btn"
@@ -1881,7 +1889,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inema.pro', 'Projetos — INEMA.PRO', 'projetos-comunidade')}
               >
-                🚀 Ver os projetos no INEMA.PRO
+                {t.projects.ctaButton}
               </a>
             </div>
           </div>
@@ -1977,7 +1985,7 @@ export default function Portal({
         <div className="container">
           <img
             src="/doc/inemaclubee.jpg"
-            alt="Crie sua equipe. Lidere o futuro."
+            alt={t.banners.teamAlt}
             className="hero-banner-image"
           />
         </div>
@@ -1987,8 +1995,8 @@ export default function Portal({
       <section id="telegram" className="telegram-section">
         <div className="container">
           <div className="telegram-header">
-            <h3>Grupos e Canais Telegram</h3>
-            <p>Junte-se à nossa comunidade de aprendizado</p>
+            <h3>{t.telegram.title}</h3>
+            <p>{t.telegram.subtitle}</p>
           </div>
           <div className="telegram-grid">
             {[
@@ -2043,16 +2051,14 @@ export default function Portal({
               <div className="featured-logo">
                 <img
                   src="/doc/conviteinemap.png"
-                  alt="INEMA.VIP - Você foi convidado para a comunidade"
+                  alt={t.vip.alt}
                 />
               </div>
               <div className="featured-text">
-                <h2 className="featured-title">INEMA.VIP</h2>
-                <p className="featured-description">
-                  Um espaço de autoaprendizado e transformação com IA e Humanoides
-                </p>
+                <h2 className="featured-title">{t.vip.title}</h2>
+                <p className="featured-description">{t.vip.description}</p>
               </div>
-              <div className="featured-badge">Faça seu Cadastro →</div>
+              <div className="featured-badge">{t.vip.badge}</div>
             </div>
           </a>
         </div>
@@ -2062,8 +2068,8 @@ export default function Portal({
       <section id="social" className="social-section">
         <div className="container">
           <div className="social-header">
-            <h3>Redes Sociais INEMA</h3>
-            <p>Siga-nos nas principais plataformas</p>
+            <h3>{t.social.title}</h3>
+            <p>{t.social.subtitle}</p>
           </div>
           <div className="social-platforms">
             {/* TikTok */}
@@ -2159,7 +2165,7 @@ export default function Portal({
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 Portal INEMA. Todos os direitos reservados.</p>
+          <p>{t.footer.copyright}</p>
         </div>
       </footer>
     </>

@@ -1,5 +1,7 @@
 {
-  "langSwitcher": { "label": "Language" },
+  "langSwitcher": {
+    "label": "Language"
+  },
   "header": {
     "communityBadge": "Join the Community",
     "proBadge": "Subscribe to INEMA.PRO",
@@ -23,7 +25,8 @@
     "imageAlt": "INEMA.CLUB — Learn. Practice. Evolve. The ecosystem for mastering AI in practice.",
     "caption": "Learn. Practice. Evolve. — a solid AI knowledge base to apply at work, in projects and in your career.",
     "title": "Build a solid foundation of AI knowledge.",
-    "body": "INEMA Club is a hands-on learning ecosystem for people who want to master artificial intelligence and apply it at work, in projects and in their careers. The core idea is simple: learn, practice and evolve with AI continuously."
+    "body": "INEMA Club is a hands-on learning ecosystem for people who want to master artificial intelligence and apply it at work, in projects and in their careers. The core idea is simple: learn, practice and evolve with AI continuously.",
+    "body2": "Here you will find practical, to-the-point courses, real projects to get your hands dirty, paths organized for every level, an active community and a curated set of the best tools. All of it aimed at building a solid knowledge base — one that makes you more productive, more strategic and better prepared for the future of work."
   },
   "search": {
     "title": "What do you want to learn today?",
@@ -40,7 +43,9 @@
     "webmcpAlt": "WebMCP — INEMA event",
     "musicavideoAlt": "INEMA MUSICAVIDEO — create songs and music videos at scale, from idea to hit",
     "destaqueAlt": "INEMACCBOT course with Promoavatar",
-    "eventoAlt": "INEMA event"
+    "eventoAlt": "INEMA event",
+    "musicavideoButton": "Discover MUSICAVIDEO →",
+    "destaqueButton": "Watch the course →"
   },
   "beginners": {
     "title": "Beginner Path",
@@ -66,7 +71,9 @@
   },
   "updates": {
     "coursesTitle": "Latest Course Updates",
-    "projectsTitle": "Latest Project Updates"
+    "projectsTitle": "Latest Project Updates",
+    "typeNovo": "new",
+    "typeAtualizado": "updated"
   },
   "perfis": {
     "topoAlt": "Discover how to use AI to grow in your profession",
@@ -75,16 +82,20 @@
     "liberalAlt": "Experienced Independent Professional with AI",
     "gestorAlt": "Manager and Leader — lead better with AI"
   },
-  "proBanner": { "alt": "INEMA.PRO — The platform for people who want to use AI to grow in practice" },
+  "proBanner": {
+    "alt": "INEMA.PRO — The platform for people who want to use AI to grow in practice"
+  },
   "trails": {
     "title": "INEMA.PRO Learning Paths",
-    "subtitle": "Choose your path and move forward with focus — the full content of each path is on INEMA.PRO"
+    "subtitle": "Choose your path and move forward with focus — the full content of each path is on INEMA.PRO",
+    "ctaButton": "🧭 Access the full learning paths on INEMA.PRO"
   },
   "projects": {
     "title": "Projects",
     "subtitle": "Projects built by INEMA — ready to download and use",
     "ctaLine": "projects ready to download and use",
-    "ctaBody": "Apps, agents, skills and tools built by the INEMA community, with code and a usage guide."
+    "ctaBody": "Apps, agents, skills and tools built by the INEMA community, with code and a usage guide.",
+    "ctaButton": "🚀 See the projects on INEMA.PRO"
   },
   "translated": {
     "title": "Available in English",
@@ -109,5 +120,7 @@
     "title": "INEMA Social Media",
     "subtitle": "Follow us on the main platforms"
   },
-  "footer": { "copyright": "© 2025 Portal INEMA. All rights reserved." }
+  "footer": {
+    "copyright": "© 2025 Portal INEMA. All rights reserved."
+  }
 }

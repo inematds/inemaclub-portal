@@ -1,5 +1,7 @@
 {
-  "langSwitcher": { "label": "Idioma" },
+  "langSwitcher": {
+    "label": "Idioma"
+  },
   "header": {
     "communityBadge": "Únete a la Comunidad",
     "proBadge": "Suscríbete a INEMA.PRO",
@@ -23,7 +25,8 @@
     "imageAlt": "INEMA.CLUB — Aprende. Practica. Evoluciona. El ecosistema para dominar la IA en la práctica.",
     "caption": "Aprende. Practica. Evoluciona. — una base sólida de conocimiento en IA para aplicar en el trabajo, en los proyectos y en la carrera.",
     "title": "Construye una base sólida de conocimiento en IA.",
-    "body": "INEMA Club es un ecosistema de aprendizaje práctico para quienes quieren dominar la inteligencia artificial y aplicarla en el trabajo, en los proyectos y en la carrera. La idea central es simple: aprender, practicar y evolucionar con IA de forma continua."
+    "body": "INEMA Club es un ecosistema de aprendizaje práctico para quienes quieren dominar la inteligencia artificial y aplicarla en el trabajo, en los proyectos y en la carrera. La idea central es simple: aprender, practicar y evolucionar con IA de forma continua.",
+    "body2": "Aquí encuentras cursos prácticos y directos al grano, proyectos reales para poner manos a la obra, rutas organizadas para cada nivel, una comunidad activa y la curaduría de las mejores herramientas. Todo orientado a construir una base sólida de conocimiento — que te vuelve más productivo, más estratégico y mejor preparado para el futuro del trabajo."
   },
   "search": {
     "title": "¿Qué quieres aprender hoy?",
@@ -40,7 +43,9 @@
     "webmcpAlt": "WebMCP — evento INEMA",
     "musicavideoAlt": "INEMA MUSICAVIDEO — crea canciones y videoclips a escala, de la idea al hit",
     "destaqueAlt": "Curso INEMACCBOT con Promoavatar",
-    "eventoAlt": "Evento INEMA"
+    "eventoAlt": "Evento INEMA",
+    "musicavideoButton": "Conoce MUSICAVIDEO →",
+    "destaqueButton": "Mira el curso →"
   },
   "beginners": {
     "title": "Ruta para Principiantes",
@@ -66,7 +71,9 @@
   },
   "updates": {
     "coursesTitle": "Últimas Actualizaciones de Cursos",
-    "projectsTitle": "Últimas Actualizaciones de Proyectos"
+    "projectsTitle": "Últimas Actualizaciones de Proyectos",
+    "typeNovo": "nuevo",
+    "typeAtualizado": "actualizado"
   },
   "perfis": {
     "topoAlt": "Descubre cómo usar la IA para evolucionar en tu profesión",
@@ -75,16 +82,20 @@
     "liberalAlt": "Profesional Independiente Experimentado con IA",
     "gestorAlt": "Gestor y Líder — lidera mejor con IA"
   },
-  "proBanner": { "alt": "INEMA.PRO — La plataforma para quienes quieren usar la IA para crecer en la práctica" },
+  "proBanner": {
+    "alt": "INEMA.PRO — La plataforma para quienes quieren usar la IA para crecer en la práctica"
+  },
   "trails": {
     "title": "Rutas de Aprendizaje de INEMA.PRO",
-    "subtitle": "Elige tu camino y avanza con foco — el contenido completo de cada ruta está en INEMA.PRO"
+    "subtitle": "Elige tu camino y avanza con foco — el contenido completo de cada ruta está en INEMA.PRO",
+    "ctaButton": "🧭 Accede a las rutas completas en INEMA.PRO"
   },
   "projects": {
     "title": "Proyectos",
     "subtitle": "Proyectos desarrollados por INEMA — listos para descargar y usar",
     "ctaLine": "proyectos listos para descargar y usar",
-    "ctaBody": "Aplicaciones, agentes, skills y herramientas construidos por la comunidad INEMA, con código y guía de uso."
+    "ctaBody": "Aplicaciones, agentes, skills y herramientas construidos por la comunidad INEMA, con código y guía de uso.",
+    "ctaButton": "🚀 Ver los proyectos en INEMA.PRO"
   },
   "translated": {
     "title": "Disponible en español",
@@ -109,5 +120,7 @@
     "title": "Redes Sociales INEMA",
     "subtitle": "Síguenos en las principales plataformas"
   },
-  "footer": { "copyright": "© 2025 Portal INEMA. Todos los derechos reservados." }
+  "footer": {
+    "copyright": "© 2025 Portal INEMA. Todos los derechos reservados."
+  }
 }
