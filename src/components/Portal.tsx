@@ -5,6 +5,7 @@ import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
 import { novidadesData } from '@/data/novidades'
 import { coursePath } from '@/lib/site'
+import type { Locale } from '@/i18n/locales'
 
 interface VisitStats {
   total: number
@@ -286,7 +287,13 @@ const LANG_ICON: Record<string, string> = {
  */
 const SHOW_DETALHES = false
 
-export default function Portal({ visitStats }: { visitStats: VisitStats }) {
+export default function Portal({
+  visitStats,
+  locale = 'pt',
+}: {
+  visitStats: VisitStats
+  locale?: Locale
+}) {
   const [searchTerm, setSearchTerm] = useState('')
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
   const [projectUpdatesExpanded, setProjectUpdatesExpanded] = useState(false)

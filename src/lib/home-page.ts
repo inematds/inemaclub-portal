@@ -1,17 +1,16 @@
 import { supabaseAdmin } from '@/lib/supabase'
-import Portal from '@/components/Portal'
 import { OFFICIAL_PROFILES, SITE_DESCRIPTION, SITE_URL } from '@/lib/site'
+import { HTML_LANG, localeHome, type Locale } from '@/i18n/locales'
 
-export const revalidate = 60 // revalida a cada 60 segundos
+export type VisitStats = { total: number; uniqueLogged: number; uniqueAnon: number }
 
 const BASE_TOTAL = 100000
 const BASE_UNIQUE_ANON = 50000
 
 type StatsRow = { total: number; unique_anon: number; unique_logged: number }
 
-export default async function Home() {
-  let visitStats = { total: BASE_TOTAL, uniqueLogged: 0, uniqueAnon: BASE_UNIQUE_ANON }
-
+export async function getVisitStats(): Promise<VisitStats> {
+  let visitStats: VisitStats = { total: BASE_TOTAL, uniqueLogged: 0, uniqueAnon: BASE_UNIQUE_ANON }
   try {
     // RPC visit_stats() usa RETURNS TABLE → vem como array [{...}]
     const { data } = await supabaseAdmin.rpc('visit_stats')
@@ -26,7 +25,10 @@ export default async function Home() {
   } catch {
     // Supabase não configurado — retorna valores base
   }
+  return visitStats
+}
 
+export function buildHomeJsonLd(locale: Locale) {
   const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
@@ -57,21 +59,13 @@ export default async function Home() {
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': `${SITE_URL}/#website`,
-    url: SITE_URL,
+    '@id': `${SITE_URL}${localeHome(locale)}#website`,
+    url: `${SITE_URL}${localeHome(locale)}`,
     name: 'INEMA.club',
     description: SITE_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
-    inLanguage: 'pt-BR',
+    inLanguage: HTML_LANG[locale],
   }
 
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationJsonLd, websiteJsonLd]).replace(/</g, '\\u003c') }}
-      />
-      <Portal visitStats={visitStats} />
-    </>
-  )
+  return [organizationJsonLd, websiteJsonLd]
 }
