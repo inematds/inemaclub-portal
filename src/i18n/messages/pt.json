@@ -1,0 +1,113 @@
+{
+  "langSwitcher": { "label": "Idioma" },
+  "header": {
+    "communityBadge": "Participe da Comunidade",
+    "proBadge": "Assine o INEMA.PRO",
+    "logo": "INEMA.CLUB Portal INEMA",
+    "tagline": "Acesso centralizado aos seus cursos e plataformas",
+    "chipVisits": "acessos",
+    "chipUnique": "visitantes únicos",
+    "chipLogged": "logados"
+  },
+  "nav": {
+    "search": "🔍 Buscas",
+    "beginners": "📘 Iniciantes",
+    "courses": "🎓 Cursos",
+    "trails": "🗺️ Trilhas",
+    "projects": "🚀 Projetos",
+    "telegram": "💬 Telegram",
+    "social": "📱 Social",
+    "pro": "⭐ INEMA.PRO"
+  },
+  "hero": {
+    "imageAlt": "INEMA.CLUB — Aprenda. Pratique. Evolua. O ecossistema para dominar IA na prática.",
+    "caption": "Aprenda. Pratique. Evolua. — uma base sólida de conhecimento em IA, para aplicar no trabalho, nos projetos e na carreira.",
+    "title": "Construa uma base sólida de conhecimento em IA.",
+    "body": "O INEMA Club é um ecossistema de aprendizado prático para quem quer dominar inteligência artificial e aplicar IA no trabalho, nos projetos e na carreira. A ideia central é simples: aprender, praticar e evoluir com IA de forma contínua."
+  },
+  "search": {
+    "title": "O que você quer aprender hoje?",
+    "body": "Pesquise os cursos públicos do INEMA por tema, ferramenta ou objetivo. Mesmo sem WebMCP, você pode continuar manualmente pelo catálogo.",
+    "label": "Tema ou objetivo",
+    "placeholder": "Ex.: WebMCP, agentes, automação",
+    "button": "Buscar cursos",
+    "catalogNote": "O catálogo de cursos está em português."
+  },
+  "events": {
+    "gestao2027Alt": "Gestão de Agentes 2027 — o novo papel das empresas. Mesma liderança, uma nova força de trabalho: humanos + agentes = mais valor.",
+    "agiAlt": "AGI chegou — não é mais sobre fazer tudo, é sobre comandar agentes. A era dos super-agentes começou.",
+    "content2videoAlt": "Content2Video — um link entra, um vídeo sai",
+    "webmcpAlt": "WebMCP — evento INEMA",
+    "musicavideoAlt": "INEMA MUSICAVIDEO — crie músicas e clipes em escala, de ideia ao hit",
+    "destaqueAlt": "Curso INEMACCBOT com Promoavatar",
+    "eventoAlt": "Evento INEMA"
+  },
+  "beginners": {
+    "title": "Trilha para Iniciantes",
+    "subtitle": "Comece sua jornada com os cursos essenciais, nesta ordem recomendada",
+    "body": "Não é uma lista aleatória: é uma progressão. Você começa aprendendo a falar com a IA (FEP), vê essas habilidades em ação (ATIA), constrói a base técnica de dados (FDB) e amplia para imagens (Vision). Só então entra nas ferramentas de agente de código — Claude Code e Codex — que juntam tudo isso na prática, antes de colocar um projeto real no ar (Do Zero ao Deploy) e fechar construindo seu próprio sistema de IA (INTELECTO). Pular etapas cria lacunas: os cursos mais à frente presumem a base dos anteriores.",
+    "footer": "Após completar esta trilha, explore outros cursos conforme seu interesse abaixo",
+    "guideButton": "📖 Veja o guia com a importância de cada curso",
+    "ptPill": "PT",
+    "ptPillTitle": "Curso em português"
+  },
+  "iaZero": {
+    "title": "🌱 Nunca usou IA? Comece pelo IA do Zero",
+    "subtitle": "Antes do passo 1 da trilha: quatro aulas curtas, um kit de vinte pedidos prontos e, na sequência, o FEP reescrito para 2026",
+    "body": "Sem nada técnico e sem instalar nada. Você aprende as três partes de um pedido, os quatro botões do chat, o que conferir antes de repassar, e sai com o seu próprio kit de cinco pedidos preenchido e testado. Quando terminar, o FEP 2026 mostra o que mudou na forma de pedir agora que a AGI chegou, e a trilha acima faz sentido."
+  },
+  "novidades": {
+    "title": "Últimas Novidades",
+    "more": "Ver mais",
+    "less": "Ver menos",
+    "readVip": "Ler no INEMA.VIP →",
+    "openLink": "Abrir link →",
+    "ptNote": "Conteúdo em português."
+  },
+  "updates": {
+    "coursesTitle": "Últimas Atualizações de Cursos",
+    "projectsTitle": "Últimas Atualizações de Projetos"
+  },
+  "perfis": {
+    "topoAlt": "Descubra como usar IA para evoluir na sua profissão",
+    "operacionalAlt": "Profissional Operacional — mais produtividade com IA",
+    "empreendedorAlt": "Empreendedor Estratégico com IA",
+    "liberalAlt": "Profissional Liberal Experiente com IA",
+    "gestorAlt": "Gestor e Líder — lidere melhor com IA"
+  },
+  "proBanner": { "alt": "INEMA.PRO — A plataforma para quem quer usar IA para crescer na prática" },
+  "trails": {
+    "title": "Trilhas de Aprendizado do INEMA.PRO",
+    "subtitle": "Escolha seu caminho e avance com foco — o conteúdo completo de cada trilha está no INEMA.PRO"
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Projetos desenvolvidos pela INEMA — prontos para baixar e usar",
+    "ctaLine": "projetos prontos para baixar e usar",
+    "ctaBody": "Aplicativos, agentes, skills e ferramentas construídos pela comunidade INEMA, com código e guia de uso."
+  },
+  "translated": {
+    "title": "Disponível em português",
+    "subtitle": "Cursos e projetos do INEMA já publicados neste idioma",
+    "empty": "Estamos traduzindo o catálogo. Os primeiros cursos neste idioma aparecem aqui assim que forem publicados."
+  },
+  "banners": {
+    "clubAlt": "INEMA.CLUB",
+    "teamAlt": "Crie sua equipe. Lidere o futuro."
+  },
+  "telegram": {
+    "title": "Grupos e Canais Telegram",
+    "subtitle": "Junte-se à nossa comunidade de aprendizado"
+  },
+  "vip": {
+    "alt": "INEMA.VIP - Você foi convidado para a comunidade",
+    "title": "INEMA.VIP",
+    "description": "Um espaço de autoaprendizado e transformação com IA e Humanoides",
+    "badge": "Faça seu Cadastro →"
+  },
+  "social": {
+    "title": "Redes Sociais INEMA",
+    "subtitle": "Siga-nos nas principais plataformas"
+  },
+  "footer": { "copyright": "© 2025 Portal INEMA. Todos os direitos reservados." }
+}
