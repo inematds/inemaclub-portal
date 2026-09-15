@@ -156,7 +156,9 @@
   },
   "telegram": {
     "title": "Grupos e Canais Telegram",
-    "subtitle": "Junte-se à nossa comunidade de aprendizado"
+    "subtitle": "Junte-se à nossa comunidade de aprendizado",
+    "comingSoon": "Grupos neste idioma em breve. Enquanto isso, entre pela comunidade INEMA.VIP.",
+    "ctaLabel": "Entrar no Telegram →"
   },
   "vip": {
     "alt": "INEMA.VIP - Você foi convidado para a comunidade",
@@ -166,7 +168,8 @@
   },
   "social": {
     "title": "Redes Sociais INEMA",
-    "subtitle": "Siga-nos nas principais plataformas"
+    "subtitle": "Siga-nos nas principais plataformas",
+    "comingSoon": "Perfis neste idioma em breve. Enquanto isso, siga os perfis principais do INEMA."
   },
   "footer": {
     "copyright": "© 2025 Portal INEMA. Todos os direitos reservados."

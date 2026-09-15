@@ -8,6 +8,7 @@ import { coursePath } from '@/lib/site'
 import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, HTML_LANG, type Locale } from '@/i18n/locales'
 import { getDictionary } from '@/i18n/dictionary'
 import { translatedFor } from '@/data/translated-courses'
+import { localizedSrc } from '@/i18n/images'
 
 interface VisitStats {
   total: number
@@ -303,6 +304,7 @@ export default function Portal({
   const [novidadeAberta, setNovidadeAberta] = useState<string | null>(null)
   const [repos, setRepos] = useState<Repo[]>([])
   const t = getDictionary(locale)
+  const img = (src: string) => localizedSrc(src, locale)
   const translated = translatedFor(locale)
 
   // Registra a visita ao montar
@@ -458,7 +460,7 @@ export default function Portal({
             className="community-badge"
             onClick={() => trackClick('https://inema.vip', 'Participe da Comunidade', 'header')}
           >
-            <img src="/doc/conviteinemap.png" alt="INEMA.VIP" />
+            <img src={img("/doc/conviteinemap.png")} alt="INEMA.VIP" />
             <span>{t.header.communityBadge}</span>
           </a>
           <a
@@ -468,7 +470,7 @@ export default function Portal({
             className="community-badge community-badge--pro"
             onClick={() => trackClick('https://inema.pro', 'INEMA.PRO', 'header')}
           >
-            <img src="/doc/inema-pro-badge.webp" alt="INEMA.PRO" />
+            <img src={img("/doc/inema-pro-badge.webp")} alt="INEMA.PRO" />
             <span>{t.header.proBadge}</span>
           </a>
           <div className="header-content">
@@ -538,7 +540,7 @@ export default function Portal({
             <div className="recruitment-image-wrapper">
               <div className="recruitment-image">
                 <img
-                  src="/doc/inema-hero-aprenda-pratique-evolua.webp"
+                  src={img("/doc/inema-hero-aprenda-pratique-evolua.webp")}
                   alt={t.hero.imageAlt}
                 />
               </div>
@@ -616,7 +618,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/gestao-agentes-2027.png"
+              src={img("/doc/gestao-agentes-2027.png")}
               alt={t.events.gestao2027Alt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -644,7 +646,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/agi-chegou.png"
+              src={img("/doc/agi-chegou.png")}
               alt={t.events.agiAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -672,7 +674,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/content2video.png"
+              src={img("/doc/content2video.png")}
               alt={t.events.content2videoAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -700,7 +702,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/webmcp2.png"
+              src={img("/doc/webmcp2.png")}
               alt={t.events.webmcpAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -728,7 +730,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/capa-musicavideo-v2.jpg"
+              src={img("/doc/capa-musicavideo-v2.jpg")}
               alt={t.events.musicavideoAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -780,7 +782,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/vczero.png"
+              src={img("/doc/vczero.png")}
               alt={t.events.destaqueAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -1275,7 +1277,7 @@ export default function Portal({
             className="inemapro-banner inemapro-banner--wide"
             onClick={() => trackClick('https://inema.pro', 'INEMA.PRO — Jornada', 'banner-inemapro')}
           >
-            <img src="/doc/inema-pro-banner-jornada.webp" alt="INEMA.PRO — Desenvolva. Construa. Escale." loading="lazy" />
+            <img src={img("/doc/inema-pro-banner-jornada.webp")} alt="INEMA.PRO — Desenvolva. Construa. Escale." loading="lazy" />
           </a>
         </div>
       </section>
@@ -1300,7 +1302,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/doc/inemaagenteshubv.jpg"
+              src={img("/doc/inemaagenteshubv.jpg")}
               alt={t.events.eventoAlt}
               loading="lazy"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
@@ -1432,7 +1434,7 @@ export default function Portal({
               onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Topo', 'perfis-ia')}
             >
               <img
-                src="/doc/perfis-ia-topo.webp"
+                src={img("/doc/perfis-ia-topo.webp")}
                 alt={t.perfis.topoAlt}
                 className="perfis-ia-topo"
                 loading="lazy"
@@ -1445,7 +1447,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Operacional', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-operacional.webp" alt={t.perfis.operacionalAlt} loading="lazy" />
+                <img src={img("/doc/perfis-ia-operacional.webp")} alt={t.perfis.operacionalAlt} loading="lazy" />
               </a>
               <a
                 href="https://inematds.github.io/agentes-office/"
@@ -1453,7 +1455,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Empreendedor', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-empreendedor.webp" alt={t.perfis.empreendedorAlt} loading="lazy" />
+                <img src={img("/doc/perfis-ia-empreendedor.webp")} alt={t.perfis.empreendedorAlt} loading="lazy" />
               </a>
               <a
                 href="https://inematds.github.io/agentes-office/"
@@ -1461,7 +1463,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Liberal', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-liberal.webp" alt={t.perfis.liberalAlt} loading="lazy" />
+                <img src={img("/doc/perfis-ia-liberal.webp")} alt={t.perfis.liberalAlt} loading="lazy" />
               </a>
               <a
                 href="https://inematds.github.io/agentes-office/"
@@ -1469,7 +1471,7 @@ export default function Portal({
                 rel="noopener noreferrer"
                 onClick={() => trackClick('https://inematds.github.io/agentes-office/', 'Perfis IA — Gestor', 'perfis-ia')}
               >
-                <img src="/doc/perfis-ia-gestor.webp" alt={t.perfis.gestorAlt} loading="lazy" />
+                <img src={img("/doc/perfis-ia-gestor.webp")} alt={t.perfis.gestorAlt} loading="lazy" />
               </a>
             </div>
           </section>
@@ -1571,7 +1573,7 @@ export default function Portal({
             className="inemapro-banner inemapro-banner--wide"
             onClick={() => trackClick('https://inema.pro', 'INEMA.PRO — Completo', 'banner-inemapro')}
           >
-            <img src="/doc/inema-pro-banner-completo.webp" alt={t.proBanner.alt} loading="lazy" />
+            <img src={img("/doc/inema-pro-banner-completo.webp")} alt={t.proBanner.alt} loading="lazy" />
           </a>
         </div>
       </section>
@@ -1660,7 +1662,7 @@ export default function Portal({
       {/* Banner */}
       <section className="hero-banner">
         <div className="container">
-          <img src="/doc/inemac2.jpg" alt={t.banners.clubAlt} className="hero-banner-image" />
+          <img src={img("/doc/inemac2.jpg")} alt={t.banners.clubAlt} className="hero-banner-image" />
         </div>
       </section>
 
@@ -1872,9 +1874,9 @@ export default function Portal({
               { href: 'https://inematds.github.io/manual-oculto-ia/', label: 'Manual Oculto', desc: 'O Loop Operacional e a Destilação do Cérebro do Fable' },
               { href: 'https://inematds.github.io/mundo-apos-claude/',  label: 'O Mundo Após o Claude', desc: 'De usuário a maestro: construa qualquer coisa e monte seu Jarvis' },
               { href: 'https://inematds.github.io/healthos/',           label: 'HealthOS',         desc: 'Coach de saúde pessoal com IA no Telegram' },
+              { href: 'https://inematds.github.io/curso-openpcbotv3/', label: 'openpcbot v3',     desc: 'Seu Jarvis local: fila, Ollama, memória e custo' },
             ]},
             { title: '🗄️ Dados & IA', steps: [
-              { href: 'https://inematds.github.io/curso-openpcbotv3/', label: 'openpcbot v3',     desc: 'Seu Jarvis local: fila, Ollama, memória e custo' },
               { href: 'https://inematds.github.io/engdadosai', label: 'Eng. Dados com IA', desc: 'A Base dos Sistemas de IA e Agentes' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
@@ -2028,7 +2030,7 @@ export default function Portal({
       <section className="hero-banner">
         <div className="container">
           <img
-            src="/doc/inemaclubee.jpg"
+            src={img("/doc/inemaclubee.jpg")}
             alt={t.banners.teamAlt}
             className="hero-banner-image"
           />
@@ -2042,6 +2044,20 @@ export default function Portal({
             <h3>{t.telegram.title}</h3>
             <p>{t.telegram.subtitle}</p>
           </div>
+          {locale !== 'pt' ? (
+            <div className="locale-cta">
+              <p>{t.telegram.comingSoon}</p>
+              <a
+                className="guide-link-btn"
+                href="https://inema.vip"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick('https://inema.vip', 'Telegram (EN/ES)', 'telegram')}
+              >
+                {t.telegram.ctaLabel}
+              </a>
+            </div>
+          ) : (
           <div className="telegram-grid">
             {[
               { icon: '💬', name: 'INEMA.VIP - Recepção' },
@@ -2078,6 +2094,7 @@ export default function Portal({
               </div>
             ))}
           </div>
+          )}
         </div>
       </section>
 
@@ -2094,7 +2111,7 @@ export default function Portal({
             <div className="featured-content">
               <div className="featured-logo">
                 <img
-                  src="/doc/conviteinemap.png"
+                  src={img("/doc/conviteinemap.png")}
                   alt={t.vip.alt}
                 />
               </div>
@@ -2115,6 +2132,30 @@ export default function Portal({
             <h3>{t.social.title}</h3>
             <p>{t.social.subtitle}</p>
           </div>
+          {locale !== 'pt' ? (
+            <div className="locale-cta">
+              <p>{t.social.comingSoon}</p>
+              <div className="locale-cta-links">
+                {[
+                  { label: 'TikTok', url: 'https://www.tiktok.com/@inema.tds', cls: 'tiktok' },
+                  { label: 'Instagram', url: 'https://www.instagram.com/inema.tds', cls: 'instagram' },
+                  { label: 'YouTube', url: 'https://www.youtube.com/@inematdsx', cls: 'youtube' },
+                  { label: 'Facebook', url: 'https://www.facebook.com/inematds', cls: 'facebook' },
+                ].map((p) => (
+                  <a
+                    key={p.label}
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`social-btn ${p.cls}`}
+                    onClick={() => trackClick(p.url, p.label, 'social')}
+                  >
+                    <span>{p.label}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ) : (
           <div className="social-platforms">
             {/* TikTok */}
             <div className="social-platform">
@@ -2203,6 +2244,7 @@ export default function Portal({
               </div>
             </div>
           </div>
+          )}
         </div>
       </section>
 

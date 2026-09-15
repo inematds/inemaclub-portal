@@ -2215,3 +2215,17 @@ html {
   border: 1px dashed oklch(0.45 0.02 260 / .5);
   border-radius: 12px;
 }
+
+/* i18n — Telegram/redes sociais em EN/ES enquanto não há grupos/perfis por idioma */
+.locale-cta {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-secondary, #94a3b8);
+  font-size: .95rem;
+  padding: 1rem;
+  border: 1px dashed oklch(0.45 0.02 260 / .5);
+  border-radius: 12px;
+}
+.locale-cta p { margin: 0 0 .8rem; }
+.locale-cta-links { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; }
