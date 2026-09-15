@@ -30,6 +30,23 @@ export const HREFLANG_ALTERNATES = {
   'x-default': '/',
 }
 
+/**
+ * Canonical + hreflang ficam SÓ nas homes de cada idioma.
+ * No root layout eles vazariam para toda página PT sem `alternates` próprio
+ * (ex.: /stats/ apontaria o alternate EN para a home EN).
+ */
+export function buildHomeMetadata(locale: Locale): Metadata {
+  return {
+    alternates: {
+      canonical: localeHome(locale),
+      languages: HREFLANG_ALTERNATES,
+      // `alternates` da page substitui o do layout por inteiro — sem repetir
+      // `types` aqui, as homes perderiam o <link rel="alternate"> do RSS.
+      types: { 'application/rss+xml': '/feed.xml' },
+    },
+  }
+}
+
 export function buildRootMetadata(locale: Locale): Metadata {
   const t = TITLES[locale]
   return {
@@ -37,8 +54,6 @@ export function buildRootMetadata(locale: Locale): Metadata {
     title: { default: t.title, template: `%s | ${SITE_NAME}` },
     description: locale === 'pt' ? SITE_DESCRIPTION : t.description,
     alternates: {
-      canonical: localeHome(locale),
-      languages: HREFLANG_ALTERNATES,
       types: { 'application/rss+xml': '/feed.xml' },
     },
     openGraph: {
