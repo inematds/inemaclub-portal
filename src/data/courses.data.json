@@ -2613,6 +2613,20 @@
       "url": "https://inematds.github.io/mundo-apos-claude/"
     },
     {
+      "id": 274,
+      "title": "openpcbot v3 — Seu Jarvis local: instalar, usar e configurar",
+      "description": "Curso completo do assistente pessoal multicanal (Telegram, CLI, HTTP) com fila durável em SQLite, gestor do Ollama, custo por chamada e cérebro com memória. Do clone ao serviço, comandos do dia a dia, conectores e controle da conversa. 4 trilhas, 8 módulos, 48 tópicos, ~6h.",
+      "icon": "🤖",
+      "tags": [
+        "Jarvis",
+        "Agentes",
+        "Ollama",
+        "Telegram",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/curso-openpcbotv3/"
+    },
+    {
       "id": 119,
       "title": "OpenHuman Mastery",
       "description": "Assistente IA para comunidades. Arquitetura local, multi-canal, memória, skills, open-source. 6 trilhas, 18 módulos, ~14.5h. Rust, React, Tauri v2.",
@@ -3878,6 +3892,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-14",
+      "title": "openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-openpcbotv3/"
+    },
     {
       "date": "2026-09-15",
       "title": "Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)",

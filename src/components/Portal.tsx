@@ -1874,6 +1874,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/healthos/',           label: 'HealthOS',         desc: 'Coach de saúde pessoal com IA no Telegram' },
             ]},
             { title: '🗄️ Dados & IA', steps: [
+              { href: 'https://inematds.github.io/curso-openpcbotv3/', label: 'openpcbot v3',     desc: 'Seu Jarvis local: fila, Ollama, memória e custo' },
               { href: 'https://inematds.github.io/engdadosai', label: 'Eng. Dados com IA', desc: 'A Base dos Sistemas de IA e Agentes' },
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (

@@ -1825,6 +1825,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mundo-apos-claude/',
   },
   {
+    id: 274,
+    title: 'openpcbot v3 — Seu Jarvis local: instalar, usar e configurar',
+    description:
+      'Curso completo do assistente pessoal multicanal (Telegram, CLI, HTTP) com fila durável em SQLite, gestor do Ollama, custo por chamada e cérebro com memória. Do clone ao serviço, comandos do dia a dia, conectores e controle da conversa. 4 trilhas, 8 módulos, 48 tópicos, ~6h.',
+    icon: '🤖',
+    tags: ['Jarvis', 'Agentes', 'Ollama', 'Telegram', 'IA'],
+    url: 'https://inematds.github.io/curso-openpcbotv3/',
+  },
+  {
     id: 119,
     title: 'OpenHuman Mastery',
     description:
@@ -2636,6 +2645,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-14', title: 'openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)', type: 'novo', url: 'https://inematds.github.io/curso-openpcbotv3/' },
   { date: '2026-09-15', title: 'Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)', type: 'novo', url: 'https://inematds.github.io/curso-claude-codex/' },
   { date: '2026-09-14', title: 'Terminal e Harness — Aula 6 (pastas, .claude, AGENTS.md, wiki, OKF) + vídeo 2:06 com cena das pastas, versões 16:9 e 9:16', type: 'atualizado', url: 'https://inematds.github.io/agentes-harness/' },
   { date: '2026-09-14', title: 'Terminal e Harness — Por que o terminal vence o chat (6 aulas + vídeo, para executivos e profissionais liberais)', type: 'novo', url: 'https://inematds.github.io/agentes-harness/' },
