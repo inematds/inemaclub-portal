@@ -436,6 +436,16 @@ export default function Portal({
     return date.toLocaleDateString(INTL_LOCALE[locale], { day: '2-digit', month: '2-digit' })
   }
 
+  // Título de trilha = "<emoji> <nome PT>"; o nome vem do dicionário quando houver tradução.
+  function trailTitle(title: string) {
+    const space = title.indexOf(' ')
+    if (space < 0) return title
+    const emoji = title.slice(0, space)
+    const name = title.slice(space + 1)
+    const names = t.trails.names as Record<string, string>
+    return `${emoji} ${names[name] ?? name}`
+  }
+
   return (
     <>
       {/* Header */}
@@ -823,7 +833,7 @@ export default function Portal({
               <div className="path-number">1</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FEP</h4>
-              <p>Fundamentos de Engenharia de Prompts</p>
+              <p>{t.beginners.cards.fep}</p>
             </a>
             <a
               href="https://inematds.github.io/ATIA/"
@@ -835,7 +845,7 @@ export default function Portal({
               <div className="path-number">2</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>ATIA</h4>
-              <p>AI Tools in Action</p>
+              <p>{t.beginners.cards.atia}</p>
             </a>
             <a
               href="https://inematds.github.io/FDB/"
@@ -847,7 +857,7 @@ export default function Portal({
               <div className="path-number">3</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FDB</h4>
-              <p>Fundamentos de Banco de Dados</p>
+              <p>{t.beginners.cards.fdb}</p>
             </a>
             <a
               href="https://inematds.github.io/VISION/"
@@ -859,7 +869,7 @@ export default function Portal({
               <div className="path-number">4</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Vision</h4>
-              <p>Processamento de Imagens com IA</p>
+              <p>{t.beginners.cards.vision}</p>
             </a>
             <a
               href="https://inematds.github.io/ccodebasico/"
@@ -871,7 +881,7 @@ export default function Portal({
               <div className="path-number">5</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Claude Code Básico</h4>
-              <p>Do Zero: Instalação, Comandos, Skills, MCP e Cowork</p>
+              <p>{t.beginners.cards.claudeCodeBasico}</p>
             </a>
             <a
               href="https://inematds.github.io/codexbasico/"
@@ -883,7 +893,7 @@ export default function Portal({
               <div className="path-number">6</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Codex Básico</h4>
-              <p>Curso Completo do Codex CLI em 6 Trilhas</p>
+              <p>{t.beginners.cards.codexBasico}</p>
             </a>
             <a
               href="https://inematds.github.io/do-zero-ao-deploy/"
@@ -895,7 +905,7 @@ export default function Portal({
               <div className="path-number">7</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Do Zero ao Deploy</h4>
-              <p>Da primeira linha no terminal ao seu assistente IA</p>
+              <p>{t.beginners.cards.zeroDeploy}</p>
             </a>
             <a
               href="https://inematds.github.io/intelecto-curso/"
@@ -907,7 +917,7 @@ export default function Portal({
               <div className="path-number">8</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>INTELECTO Curso</h4>
-              <p>Do Zero ao Expert em IA</p>
+              <p>{t.beginners.cards.intelecto}</p>
             </a>
             <a
               href="https://inematds.github.io/cccompletopn/"
@@ -919,7 +929,7 @@ export default function Portal({
               <div className="path-number">9</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Claude Code para Pessoas Normais</h4>
-              <p>Do zero ao AI Native — segundo cérebro, sub-agentes e automações</p>
+              <p>{t.beginners.cards.ccPessoasNormais}</p>
             </a>
             <a
               href="https://inematds.github.io/os-agentes/guia/"
@@ -931,7 +941,7 @@ export default function Portal({
               <div className="path-number">10</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>OS Agentes</h4>
-              <p>Construa seu OS agêntico, uma camada por vez</p>
+              <p>{t.beginners.cards.osAgentes}</p>
             </a>
             <a
               href="https://inematds.github.io/lives2/"
@@ -943,7 +953,7 @@ export default function Portal({
               <div className="path-number">11</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Lives 2026</h4>
-              <p>7 vídeos estratégicos sobre vender serviços de IA</p>
+              <p>{t.beginners.cards.lives2026}</p>
             </a>
             <a
               href="https://inematds.github.io/evai2026/curso-e-live/curso/"
@@ -955,7 +965,7 @@ export default function Portal({
               <div className="path-number">12</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>Como Montar um Negócio</h4>
-              <p>8 aulas sem programar — do primeiro cliente ao contrato</p>
+              <p>{t.beginners.cards.montarNegocio}</p>
             </a>
           </div>
           <div className="learning-path-footer">
@@ -1026,8 +1036,8 @@ export default function Portal({
             >
               <div className="path-number">0</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
-              <h4>IA do Zero — o curso</h4>
-              <p>4 aulas de 16 a 20 min: pedir bem, usar o chat, conferir, montar o seu kit</p>
+              <h4>{t.iaZero.cards.cursoTitle}</h4>
+              <p>{t.iaZero.cards.cursoDesc}</p>
             </a>
             <a
               href="https://inematds.github.io/ia-do-zero/guia/"
@@ -1038,8 +1048,8 @@ export default function Portal({
             >
               <div className="path-number">📋</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
-              <h4>IA do Zero — o kit</h4>
-              <p>20 pedidos prontos por situação, com o que você deve ver e o erro comum</p>
+              <h4>{t.iaZero.cards.kitTitle}</h4>
+              <p>{t.iaZero.cards.kitDesc}</p>
             </a>
             <a
               href="https://inematds.github.io/FEP2026/"
@@ -1051,7 +1061,7 @@ export default function Portal({
               <div className="path-number">1</div>
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FEP 2026</h4>
-              <p>A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas)</p>
+              <p>{t.iaZero.cards.fepDesc}</p>
             </a>
           </div>
         </div>
@@ -1358,7 +1368,7 @@ export default function Portal({
               onClick={() => setUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>{t.updates.coursesTitle}</h3>
+              <h3>{t.updates.coursesTitle}{locale !== 'pt' && <small className="lang-note"> · {t.updates.ptNote}</small>}</h3>
               <span className="updates-toggle">{updatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
             <div className={`updates-list${updatesExpanded ? ' expanded' : ''}`}>
@@ -1389,7 +1399,7 @@ export default function Portal({
               onClick={() => setProjectUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>{t.updates.projectsTitle}</h3>
+              <h3>{t.updates.projectsTitle}{locale !== 'pt' && <small className="lang-note"> · {t.updates.ptNote}</small>}</h3>
               <span className="updates-toggle">{projectUpdatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
             <div className={`updates-list${projectUpdatesExpanded ? ' expanded' : ''}`}>
@@ -1868,7 +1878,7 @@ export default function Portal({
             ]},
           ] as Array<{ title: string; steps: Array<{ href: string; label: string; desc: string }> }>).map((trail) => (
             <div key={trail.title} className="trilha-group">
-              <h4 className="trilha-group-title">{trail.title}</h4>
+              <h4 className="trilha-group-title">{trailTitle(trail.title)}</h4>
               {SHOW_DETALHES && (
               <div className="learning-path-cards">
                 {trail.steps.map((p, i) => (

@@ -54,12 +54,34 @@
     "footer": "After completing this path, explore other courses by interest below",
     "guideButton": "📖 See the guide on why each course matters",
     "ptPill": "PT",
-    "ptPillTitle": "Course in Portuguese"
+    "ptPillTitle": "Course in Portuguese",
+    "cards": {
+      "fep": "Prompt Engineering Fundamentals",
+      "atia": "AI Tools in Action",
+      "fdb": "Database Fundamentals",
+      "vision": "Image Processing with AI",
+      "claudeCodeBasico": "From Zero: Installation, Commands, Skills, MCP and Cowork",
+      "codexBasico": "Complete Codex CLI Course in 6 Paths",
+      "zeroDeploy": "From the first line in the terminal to your AI assistant",
+      "intelecto": "From Zero to AI Expert",
+      "ccPessoasNormais": "From zero to AI Native — second brain, sub-agents and automations",
+      "osAgentes": "Build your agentic OS, one layer at a time",
+      "lives2026": "7 strategic videos on selling AI services",
+      "montarNegocio": "8 lessons with no coding — from first client to contract"
+    }
   },
   "iaZero": {
     "title": "🌱 Never used AI? Start with IA do Zero",
     "subtitle": "Before step 1 of the path: four short lessons, a kit of twenty ready-made prompts and, right after, FEP rewritten for 2026",
-    "body": "Nothing technical, nothing to install. You learn the three parts of a request, the four chat buttons, what to check before passing it on, and leave with your own kit of five prompts filled in and tested. When you finish, FEP 2026 shows what changed in how we ask now that AGI has arrived, and the path above makes sense."
+    "body": "Nothing technical, nothing to install. You learn the three parts of a request, the four chat buttons, what to check before passing it on, and leave with your own kit of five prompts filled in and tested. When you finish, FEP 2026 shows what changed in how we ask now that AGI has arrived, and the path above makes sense.",
+    "cards": {
+      "cursoTitle": "IA do Zero — the course",
+      "cursoDesc": "4 lessons of 16 to 20 min: ask well, use the chat, check, build your kit",
+      "kitTitle": "IA do Zero — the kit",
+      "kitDesc": "20 ready-made prompts by situation, with what you should see and the common mistake",
+      "fepTitle": "FEP 2026",
+      "fepDesc": "AGI arrived and the prompt almost died: FEP rewritten technique by technique (7 lessons)"
+    }
   },
   "novidades": {
     "title": "Latest News",
@@ -73,7 +95,8 @@
     "coursesTitle": "Latest Course Updates",
     "projectsTitle": "Latest Project Updates",
     "typeNovo": "new",
-    "typeAtualizado": "updated"
+    "typeAtualizado": "updated",
+    "ptNote": "Content in Portuguese."
   },
   "perfis": {
     "topoAlt": "Discover how to use AI to grow in your profession",
@@ -88,7 +111,32 @@
   "trails": {
     "title": "INEMA.PRO Learning Paths",
     "subtitle": "Choose your path and move forward with focus — the full content of each path is on INEMA.PRO",
-    "ctaButton": "🧭 Access the full learning paths on INEMA.PRO"
+    "ctaButton": "🧭 Access the full learning paths on INEMA.PRO",
+    "names": {
+      "Trilha Profissional com IA": "Professional Path with AI",
+      "Trilha Vibe Code": "Vibe Code Path",
+      "Trilha Skills": "Skills Path",
+      "Arquitetura de IA": "AI Architecture",
+      "Automação": "Automation",
+      "Engenharia de Prompts": "Prompt Engineering",
+      "Design & Visual": "Design & Visual",
+      "Robótica & Humanoides": "Robotics & Humanoids",
+      "Consultoria IA & Negócios": "AI Consulting & Business",
+      "Dados & IA": "Data & AI",
+      "Desenvolvedor IA": "AI Developer",
+      "Transformação Digital": "Digital Transformation",
+      "Arquiteto de Agentes": "Agent Architect",
+      "Vídeos, Filmes e Cinema": "Videos, Films and Cinema",
+      "Frameworks & Assistentes": "Frameworks & Assistants",
+      "Claude Code": "Claude Code",
+      "Agentic OS": "Agentic OS",
+      "Formação Vendas com IA": "Sales Training with AI",
+      "Formação WebMCP": "WebMCP Training",
+      "Codex": "Codex",
+      "Claude Cowork": "Claude Cowork",
+      "Neurociência & Futuro": "Neuroscience & Future",
+      "Agentes Jarvis": "Jarvis Agents"
+    }
   },
   "projects": {
     "title": "Projects",

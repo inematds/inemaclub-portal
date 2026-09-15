@@ -54,12 +54,34 @@
     "footer": "Após completar esta trilha, explore outros cursos conforme seu interesse abaixo",
     "guideButton": "📖 Veja o guia com a importância de cada curso",
     "ptPill": "PT",
-    "ptPillTitle": "Curso em português"
+    "ptPillTitle": "Curso em português",
+    "cards": {
+      "fep": "Fundamentos de Engenharia de Prompts",
+      "atia": "AI Tools in Action",
+      "fdb": "Fundamentos de Banco de Dados",
+      "vision": "Processamento de Imagens com IA",
+      "claudeCodeBasico": "Do Zero: Instalação, Comandos, Skills, MCP e Cowork",
+      "codexBasico": "Curso Completo do Codex CLI em 6 Trilhas",
+      "zeroDeploy": "Da primeira linha no terminal ao seu assistente IA",
+      "intelecto": "Do Zero ao Expert em IA",
+      "ccPessoasNormais": "Do zero ao AI Native — segundo cérebro, sub-agentes e automações",
+      "osAgentes": "Construa seu OS agêntico, uma camada por vez",
+      "lives2026": "7 vídeos estratégicos sobre vender serviços de IA",
+      "montarNegocio": "8 aulas sem programar — do primeiro cliente ao contrato"
+    }
   },
   "iaZero": {
     "title": "🌱 Nunca usou IA? Comece pelo IA do Zero",
     "subtitle": "Antes do passo 1 da trilha: quatro aulas curtas, um kit de vinte pedidos prontos e, na sequência, o FEP reescrito para 2026",
-    "body": "Sem nada técnico e sem instalar nada. Você aprende as três partes de um pedido, os quatro botões do chat, o que conferir antes de repassar, e sai com o seu próprio kit de cinco pedidos preenchido e testado. Quando terminar, o FEP 2026 mostra o que mudou na forma de pedir agora que a AGI chegou, e a trilha acima faz sentido."
+    "body": "Sem nada técnico e sem instalar nada. Você aprende as três partes de um pedido, os quatro botões do chat, o que conferir antes de repassar, e sai com o seu próprio kit de cinco pedidos preenchido e testado. Quando terminar, o FEP 2026 mostra o que mudou na forma de pedir agora que a AGI chegou, e a trilha acima faz sentido.",
+    "cards": {
+      "cursoTitle": "IA do Zero — o curso",
+      "cursoDesc": "4 aulas de 16 a 20 min: pedir bem, usar o chat, conferir, montar o seu kit",
+      "kitTitle": "IA do Zero — o kit",
+      "kitDesc": "20 pedidos prontos por situação, com o que você deve ver e o erro comum",
+      "fepTitle": "FEP 2026",
+      "fepDesc": "A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas)"
+    }
   },
   "novidades": {
     "title": "Últimas Novidades",
@@ -73,7 +95,8 @@
     "coursesTitle": "Últimas Atualizações de Cursos",
     "projectsTitle": "Últimas Atualizações de Projetos",
     "typeNovo": "novo",
-    "typeAtualizado": "atualizado"
+    "typeAtualizado": "atualizado",
+    "ptNote": "Conteúdo em português."
   },
   "perfis": {
     "topoAlt": "Descubra como usar IA para evoluir na sua profissão",
@@ -88,7 +111,32 @@
   "trails": {
     "title": "Trilhas de Aprendizado do INEMA.PRO",
     "subtitle": "Escolha seu caminho e avance com foco — o conteúdo completo de cada trilha está no INEMA.PRO",
-    "ctaButton": "🧭 Acesse as trilhas completas no INEMA.PRO"
+    "ctaButton": "🧭 Acesse as trilhas completas no INEMA.PRO",
+    "names": {
+      "Trilha Profissional com IA": "Trilha Profissional com IA",
+      "Trilha Vibe Code": "Trilha Vibe Code",
+      "Trilha Skills": "Trilha Skills",
+      "Arquitetura de IA": "Arquitetura de IA",
+      "Automação": "Automação",
+      "Engenharia de Prompts": "Engenharia de Prompts",
+      "Design & Visual": "Design & Visual",
+      "Robótica & Humanoides": "Robótica & Humanoides",
+      "Consultoria IA & Negócios": "Consultoria IA & Negócios",
+      "Dados & IA": "Dados & IA",
+      "Desenvolvedor IA": "Desenvolvedor IA",
+      "Transformação Digital": "Transformação Digital",
+      "Arquiteto de Agentes": "Arquiteto de Agentes",
+      "Vídeos, Filmes e Cinema": "Vídeos, Filmes e Cinema",
+      "Frameworks & Assistentes": "Frameworks & Assistentes",
+      "Claude Code": "Claude Code",
+      "Agentic OS": "Agentic OS",
+      "Formação Vendas com IA": "Formação Vendas com IA",
+      "Formação WebMCP": "Formação WebMCP",
+      "Codex": "Codex",
+      "Claude Cowork": "Claude Cowork",
+      "Neurociência & Futuro": "Neurociência & Futuro",
+      "Agentes Jarvis": "Agentes Jarvis"
+    }
   },
   "projects": {
     "title": "Projetos",
