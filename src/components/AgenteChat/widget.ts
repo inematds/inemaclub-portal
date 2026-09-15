@@ -45,13 +45,18 @@ function detectLocale(): WidgetLocale {
   return 'pt';
 }
 
-const WIDGET_TEXT: Record<WidgetLocale, { placeholder: string; serverError: string; contactSaved: string; navigating: string; offline: string }> = {
+const WIDGET_TEXT: Record<WidgetLocale, { placeholder: string; serverError: string; contactSaved: string; navigating: string; offline: string; ariaAgent: string; launcher: string; close: string; send: string; typing: string }> = {
   pt: {
     placeholder: 'Pergunte alguma coisa...',
     serverError: 'Deu ruim aqui do nosso lado — tenta de novo em instantes.',
     contactSaved: 'Contato registrado — alguém do INEMA vai falar com você.',
     navigating: 'Te levando pra lá...',
     offline: 'Sem conexão com o agente agora — tenta de novo em instantes.',
+    ariaAgent: 'Agente guia do INEMA',
+    launcher: 'Me guie pelo site',
+    close: 'Fechar o agente',
+    send: 'Enviar',
+    typing: 'o agente está escrevendo',
   },
   en: {
     placeholder: 'Ask me anything...',
@@ -59,6 +64,11 @@ const WIDGET_TEXT: Record<WidgetLocale, { placeholder: string; serverError: stri
     contactSaved: 'Contact saved — someone from INEMA will reach out to you.',
     navigating: 'Taking you there...',
     offline: 'No connection to the assistant right now — please try again in a moment.',
+    ariaAgent: 'INEMA site guide',
+    launcher: 'Guide me through the site',
+    close: 'Close the assistant',
+    send: 'Send',
+    typing: 'the assistant is typing',
   },
   es: {
     placeholder: 'Pregunta lo que quieras...',
@@ -66,6 +76,11 @@ const WIDGET_TEXT: Record<WidgetLocale, { placeholder: string; serverError: stri
     contactSaved: 'Contacto registrado — alguien de INEMA hablará contigo.',
     navigating: 'Te llevo allí...',
     offline: 'Sin conexión con el asistente ahora — inténtalo de nuevo en un momento.',
+    ariaAgent: 'Agente guía de INEMA',
+    launcher: 'Guíame por el sitio',
+    close: 'Cerrar el asistente',
+    send: 'Enviar',
+    typing: 'el asistente está escribiendo',
   },
 };
 
@@ -128,22 +143,22 @@ export function mountAgenteChat() {
   const wrap = document.createElement('div');
   wrap.className = 'wrap';
   wrap.innerHTML = `
-    <div class="panel" id="panel" role="dialog" aria-label="Agente guia do INEMA">
+    <div class="panel" id="panel" role="dialog">
       <div class="header">
-        <span>Me guie pelo site</span>
-        <button class="close" id="close" aria-label="Fechar o agente">
+        <span id="launcherLabel"></span>
+        <button class="close" id="close">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
       </div>
       <div class="messages" id="messages"></div>
       <div class="inputRow">
-        <input class="input" id="input" placeholder="${t.placeholder}" maxlength="2000" />
-        <button class="send" id="send">Enviar</button>
+        <input class="input" id="input" maxlength="2000" />
+        <button class="send" id="send"></button>
       </div>
     </div>
     <button class="tab" id="tab" aria-expanded="false" aria-controls="panel">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H11l-4.5 3v-3H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-      <span class="tabLabel">Me guie pelo site</span>
+      <span class="tabLabel" id="tabLabel"></span>
     </button>
   `;
   root.appendChild(wrap);
@@ -154,6 +169,13 @@ export function mountAgenteChat() {
   const messagesEl = root.getElementById('messages')!;
   const input = root.getElementById('input') as HTMLInputElement;
   const sendBtn = root.getElementById('send') as HTMLButtonElement;
+
+  panel.setAttribute('aria-label', t.ariaAgent);
+  root.getElementById('launcherLabel')!.textContent = t.launcher;
+  closeBtn.setAttribute('aria-label', t.close);
+  input.placeholder = t.placeholder;
+  sendBtn.textContent = t.send;
+  root.getElementById('tabLabel')!.textContent = t.launcher;
 
   const state = loadState();
 
@@ -188,7 +210,10 @@ export function mountAgenteChat() {
   function makeTyping(): HTMLDivElement {
     const typing = document.createElement('div');
     typing.className = 'typing';
-    typing.innerHTML = '<span>o agente está escrevendo</span><span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>';
+    const typingLabel = document.createElement('span');
+    typingLabel.textContent = t.typing;
+    typing.appendChild(typingLabel);
+    typing.insertAdjacentHTML('beforeend', '<span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>');
     messagesEl.appendChild(typing);
     messagesEl.scrollTop = messagesEl.scrollHeight;
     return typing;
