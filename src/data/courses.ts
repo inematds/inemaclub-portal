@@ -709,6 +709,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/cerebro-inema/',
   },
   {
+    id: 273,
+    title: 'Claude → Codex — Migre ou fique agnóstico',
+    description:
+      'Não migre o cérebro; separe o cérebro do modelo. 3 trilhas e 18 módulos: fundamentos do workspace portátil (AGENTS.md, context/, tasks/, handoffs/), mão na massa com o kit agente-claude-codex (doctor, audit, CLAUDE.md → AGENTS.md, polyskill, readback, handoff/prime) e 6 projetos sobre um sistema real: MCP e hooks, memória curada, dsh-sandbox, workspace de cliente.',
+    icon: '🧠',
+    tags: ['Claude Code', 'Codex', 'Agnóstico', 'Skills', 'Handoff', 'IA'],
+    url: 'https://inematds.github.io/curso-claude-codex/',
+  },
+  {
     id: 131,
     title: 'Claude Code — Do Zero ao Projeto',
     description:
@@ -2627,6 +2636,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-15', title: 'Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)', type: 'novo', url: 'https://inematds.github.io/curso-claude-codex/' },
   { date: '2026-09-14', title: 'Terminal e Harness — Aula 6 (pastas, .claude, AGENTS.md, wiki, OKF) + vídeo 2:06 com cena das pastas, versões 16:9 e 9:16', type: 'atualizado', url: 'https://inematds.github.io/agentes-harness/' },
   { date: '2026-09-14', title: 'Terminal e Harness — Por que o terminal vence o chat (6 aulas + vídeo, para executivos e profissionais liberais)', type: 'novo', url: 'https://inematds.github.io/agentes-harness/' },
   { date: '2026-09-10', title: 'Gestão de IA — Plano do curso: 10 módulos propostos, ementa e templates; aulas em desenvolvimento', type: 'novo', url: 'https://inematds.github.io/curso-gestao-ia/' },
