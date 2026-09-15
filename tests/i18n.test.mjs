@@ -39,3 +39,15 @@ test('pt.json tem as chaves usadas pelo Portal', () => {
     assert.ok(pt.includes(required), `falta ${required}`)
   }
 })
+
+test('translated-courses.ts: ids únicos por locale e url github.io ou inema', () => {
+  const src = readFileSync(path.join(ROOT, 'src', 'data', 'translated-courses.ts'), 'utf8')
+  const entries = [...src.matchAll(/\{\s*id:\s*(\d+),\s*kind:\s*'(curso|projeto)',\s*locale:\s*'(en|es)'[^}]*url:\s*'([^']+)'/g)]
+  const seen = new Set()
+  for (const [, id, , locale, url] of entries) {
+    const key = `${locale}:${id}`
+    assert.ok(!seen.has(key), `duplicado ${key}`)
+    seen.add(key)
+    assert.match(url, /^https:\/\/(inematds\.github\.io|[a-z.]*inema\.(pro|club))\//, `url fora do padrão: ${url}`)
+  }
+})

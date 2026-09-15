@@ -7,6 +7,7 @@ import { novidadesData } from '@/data/novidades'
 import { coursePath } from '@/lib/site'
 import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, type Locale } from '@/i18n/locales'
 import { getDictionary } from '@/i18n/dictionary'
+import { translatedFor } from '@/data/translated-courses'
 
 interface VisitStats {
   total: number
@@ -302,6 +303,7 @@ export default function Portal({
   const [novidadeAberta, setNovidadeAberta] = useState<string | null>(null)
   const [repos, setRepos] = useState<Repo[]>([])
   const t = getDictionary(locale)
+  const translated = translatedFor(locale)
 
   // Registra a visita ao montar
   useEffect(() => {
@@ -972,6 +974,37 @@ export default function Portal({
           </div>
         </div>
       </section>
+
+      {locale !== 'pt' && (
+        <section id="translated" className="learning-path-section translated-section">
+          <div className="container">
+            <div className="learning-path-header">
+              <h3>{t.translated.title}</h3>
+              <p>{t.translated.subtitle}</p>
+            </div>
+            {translated.length === 0 ? (
+              <p className="translated-empty">{t.translated.empty}</p>
+            ) : (
+              <div className="learning-path-cards">
+                {translated.map((item) => (
+                  <a
+                    key={`${item.kind}-${item.id}`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="path-card"
+                    onClick={() => trackClick(item.url, item.title, `translated-${locale}`)}
+                  >
+                    <div className="path-number">{item.icon}</div>
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* IA do Zero — porta de entrada para quem nunca usou IA (antes do passo 1 da trilha) */}
       <section id="ia-do-zero" className="learning-path-section">
