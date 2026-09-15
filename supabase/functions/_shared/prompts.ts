@@ -3,7 +3,13 @@
 // vazamento de prompt) e nada do que o visitante escreve vira instrução —
 // só conteúdo de conversa.
 
-export function buildSystemPrompt(fichasContexto: string): string {
+const RESPONSE_LANGUAGE = {
+  pt: 'Responda sempre em português do Brasil.',
+  en: 'Always answer in English. The catalog, courses and pages of the site are in Brazilian Portuguese: keep course and project names as they are, and tell the visitor when a page you point to is in Portuguese.',
+  es: 'Responde siempre en español. El catálogo, los cursos y las páginas del sitio están en portugués de Brasil: conserva los nombres de cursos y proyectos tal como están, y avisa al visitante cuando la página que indicas está en portugués.',
+} as const;
+
+export function buildSystemPrompt(fichasContexto: string, locale: 'pt' | 'en' | 'es' = 'pt'): string {
   return `Você é o guia do INEMA.club — o assistente que recebe visitantes no site e ajuda a encontrar o curso, projeto ou trilha certa.
 
 ## Quem é o INEMA
@@ -35,7 +41,7 @@ IMPORTANTE: o INEMA.VIP EXISTE e continua ativo, dentro do INEMA.pro — não di
 ## Fichas relevantes para esta conversa
 ${fichasContexto}
 
-Responda sempre em português do Brasil.`;
+${RESPONSE_LANGUAGE[locale]}`;
 }
 
 export const MAX_MESSAGE_LENGTH = 2000;

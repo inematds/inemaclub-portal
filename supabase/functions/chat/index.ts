@@ -100,7 +100,7 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: 'method_not_allowed' }, 405, origin);
   }
 
-  let body: { session_token?: string; message?: string; page_context?: string };
+  let body: { session_token?: string; message?: string; page_context?: string; locale?: string };
   try {
     body = await req.json();
   } catch {
@@ -112,6 +112,9 @@ Deno.serve(async (req) => {
   if (message.length > MAX_MESSAGE_LENGTH) {
     return jsonResponse({ error: 'message_too_long' }, 400, origin);
   }
+
+  const locale: 'pt' | 'en' | 'es' =
+    body.locale === 'en' || body.locale === 'es' ? body.locale : 'pt';
 
   const forwardedFor = req.headers.get('x-forwarded-for') ?? 'unknown';
   const ip = forwardedFor.split(',')[0].trim();
@@ -204,7 +207,7 @@ Deno.serve(async (req) => {
     .limit(20);
 
   const messages = [
-    { role: 'system', content: buildSystemPrompt(fichasContexto) },
+    { role: 'system', content: buildSystemPrompt(fichasContexto, locale) },
     ...(historico ?? []).map(m => ({ role: m.role, content: m.content })),
   ];
 

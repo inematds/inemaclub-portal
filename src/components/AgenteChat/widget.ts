@@ -36,6 +36,39 @@ function saveState(state: StoredState) {
   try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch { /* silencioso */ }
 }
 
+type WidgetLocale = 'pt' | 'en' | 'es';
+
+function detectLocale(): WidgetLocale {
+  const lang = (document.documentElement.lang || 'pt').toLowerCase();
+  if (lang.startsWith('en')) return 'en';
+  if (lang.startsWith('es')) return 'es';
+  return 'pt';
+}
+
+const WIDGET_TEXT: Record<WidgetLocale, { placeholder: string; serverError: string; contactSaved: string; navigating: string; offline: string }> = {
+  pt: {
+    placeholder: 'Pergunte alguma coisa...',
+    serverError: 'Deu ruim aqui do nosso lado — tenta de novo em instantes.',
+    contactSaved: 'Contato registrado — alguém do INEMA vai falar com você.',
+    navigating: 'Te levando pra lá...',
+    offline: 'Sem conexão com o agente agora — tenta de novo em instantes.',
+  },
+  en: {
+    placeholder: 'Ask me anything...',
+    serverError: 'Something went wrong on our side — please try again in a moment.',
+    contactSaved: 'Contact saved — someone from INEMA will reach out to you.',
+    navigating: 'Taking you there...',
+    offline: 'No connection to the assistant right now — please try again in a moment.',
+  },
+  es: {
+    placeholder: 'Pregunta lo que quieras...',
+    serverError: 'Algo falló de nuestro lado — inténtalo de nuevo en un momento.',
+    contactSaved: 'Contacto registrado — alguien de INEMA hablará contigo.',
+    navigating: 'Te llevo allí...',
+    offline: 'Sin conexión con el asistente ahora — inténtalo de nuevo en un momento.',
+  },
+};
+
 const STYLE = `
 :host { all: initial; }
 .wrap { position: fixed; right: 20px; bottom: 20px; z-index: 2147483000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
@@ -73,6 +106,16 @@ const STYLE = `
 export function mountAgenteChat() {
   if (!ANON_KEY || document.getElementById('inema-agente-host')) return;
 
+  const locale = detectLocale();
+  const t = WIDGET_TEXT[locale];
+
+  function localizePath(path: string): string {
+    // PORTAL_ANCHORS da Edge Function são absolutas na raiz ('/#trilhas').
+    // Em /en/ e /es/ a home é outra rota: prefixa pra não jogar o visitante pro PT.
+    if (locale !== 'pt' && (path === '/' || path.startsWith('/#'))) return `/${locale}${path}`;
+    return path;
+  }
+
   const host = document.createElement('div');
   host.id = 'inema-agente-host';
   document.body.appendChild(host);
@@ -94,7 +137,7 @@ export function mountAgenteChat() {
       </div>
       <div class="messages" id="messages"></div>
       <div class="inputRow">
-        <input class="input" id="input" placeholder="Pergunte alguma coisa..." maxlength="2000" />
+        <input class="input" id="input" placeholder="${t.placeholder}" maxlength="2000" />
         <button class="send" id="send">Enviar</button>
       </div>
     </div>
@@ -202,13 +245,14 @@ export function mountAgenteChat() {
           session_token: state.sessionToken,
           message: text,
           page_context: window.location.pathname,
+          locale,
         }),
       });
 
       typing.remove();
 
       if (!res.ok) {
-        addSystemNote('Deu ruim aqui do nosso lado — tenta de novo em instantes.');
+        addSystemNote(t.serverError);
         return;
       }
 
@@ -220,17 +264,18 @@ export function mountAgenteChat() {
       await revealInParts(data.reply);
 
       if (data.lead_captured) {
-        addSystemNote('Contato registrado — alguém do INEMA vai falar com você.');
+        addSystemNote(t.contactSaved);
       }
 
       if (data.navigate?.rota) {
-        addSystemNote(data.navigate.motivo || 'Te levando pra lá...');
+        addSystemNote(data.navigate.motivo || t.navigating);
         saveState(state);
-        setTimeout(() => { window.location.href = data.navigate!.rota; }, 900);
+        const destino = localizePath(data.navigate!.rota);
+        setTimeout(() => { window.location.href = destino; }, 900);
       }
     } catch {
       typing.remove();
-      addSystemNote('Sem conexão com o agente agora — tenta de novo em instantes.');
+      addSystemNote(t.offline);
     } finally {
       sendBtn.disabled = false;
     }
