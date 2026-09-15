@@ -33,6 +33,19 @@ A home hoje: header → evento → Trilha para Iniciantes (completa) → 3 quadr
 
 Snapshot estático da home anterior: `public/index2.html` → `https://inema.club/index2.html`.
 
+## Idiomas (i18n) — desde 2026-09-14
+
+Portal único, um idioma por rota: `/` (PT), `/en/`, `/es/`. Sem redirect por `Accept-Language`.
+
+- `src/i18n/locales.ts` — `Locale`, `HTML_LANG`, `OG_LOCALE`, `localeHome()`.
+- `src/i18n/messages/{pt,en,es}.json` — textos de interface da home. **Mesmas chaves nos três**; `npm test` (`tests/i18n.test.mjs`) e o `tsc` acusam divergência. Nomes de cursos, projetos, grupos e handles NÃO se traduzem.
+- `src/app/(pt)/`, `src/app/(en)/en/`, `src/app/(es)/es/` — três root layouts (é o único jeito de trocar `<html lang>`); todos usam `src/components/RootShell.tsx` e `buildRootMetadata()` (`src/lib/root-metadata.ts`); o hreflang e o canonical ficam em `buildHomeMetadata()` no `page.tsx` de cada home, não no layout (senão vazam pra `/stats/`). As rotas PT (`cursos`, `conhecimento`, `stats`) moram em `(pt)/`; URLs não mudaram.
+- `src/components/Portal.tsx` recebe `locale` e usa `t = getDictionary(locale)`. Blocos `SHOW_DETALHES` seguem em PT.
+- Modelo híbrido: catálogo continua em PT (selo "PT" nos cards em EN/ES) e a seção "Disponível em <idioma>" lista o que já foi traduzido — **`src/data/translated-courses.ts`**. Para publicar um curso traduzido: adicionar uma linha lá com o `id` do curso em `platformsData`, `locale`, título/descrição no idioma e a URL da versão traduzida. Não mexer no `courses.ts` por causa disso.
+- Chat: o widget manda `locale` e a Edge Function responde nesse idioma (`_shared/prompts.ts`). Mudou o prompt? `npx supabase functions deploy chat`.
+- Widget do chat: textos do launcher, placeholder, botão e avisos em `WIDGET_TEXT` dentro de `src/components/AgenteChat/widget.ts` (pt/en/es), lidos de `document.documentElement.lang`.
+- Fora do escopo por enquanto: `/cursos/`, `/conhecimento/`, `feed.xml`, `llms.txt` e as novidades ficam só em PT.
+
 ## Últimas Novidades (feed do INEMA.VIP) — automático
 
 Seção da home logo **antes** de "Últimas Atualizações de Cursos". Vem do tópico
