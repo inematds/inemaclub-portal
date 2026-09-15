@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
 import { novidadesData } from '@/data/novidades'
 import { coursePath } from '@/lib/site'
-import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, type Locale } from '@/i18n/locales'
+import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, HTML_LANG, type Locale } from '@/i18n/locales'
 import { getDictionary } from '@/i18n/dictionary'
 import { translatedFor } from '@/data/translated-courses'
 
@@ -480,7 +480,7 @@ export default function Portal({
             </div>
             <nav className="lang-switcher" aria-label={t.langSwitcher.label}>
               {LOCALES.map((l) => (
-                <a key={l} href={localeHome(l)} className={l === locale ? 'active' : ''} hrefLang={l} lang={l}>
+                <a key={l} href={localeHome(l)} className={l === locale ? 'active' : ''} hrefLang={HTML_LANG[l]} lang={l}>
                   {LOCALE_LABEL[l]}
                 </a>
               ))}
