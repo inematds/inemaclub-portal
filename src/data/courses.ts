@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+   { date: '2026-09-15', title: 'iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)', type: 'novo', url: 'https://inematds.github.io/iacultivada/' },
   { date: '2026-09-15', title: 'newia-oct2026 — 12 Novas IAs de outubro/2026: rumores × versões atuais verificadas (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), com preços, contexto, gráficos e fontes', type: 'novo', url: 'https://inematds.github.io/newia-oct2026/guia/' },
   { date: '2026-09-14', title: 'voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar', type: 'atualizado', url: 'https://inematds.github.io/voucontigo/guia/' },
   { date: '2026-09-14', title: 'voucontigo — Plataforma de acompanhamento e apoio à rotina: landing, painel de atendimentos, bot Telegram e lembretes (Next.js + Supabase)', type: 'novo', url: 'https://inematds.github.io/voucontigo/guia/' },
