@@ -5341,6 +5341,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-16",
+      "title": "iacultivada — Soluções prontas: kits para baixar (pessoal, Jarvis, empresa), skills /cultivar e /revisao-semanal, gerador de ficha do agente, diagnóstico de cultivo e pacotes de agentes por área",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/iacultivada/"
+    },
+    {
       "date": "2026-09-15",
       "title": "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)",
       "type": "novo",
@@ -6300,7 +6306,7 @@
     {
       "icon": "🌱",
       "name": "iacultivada",
-      "desc": "IA Cultivada — não se programa, se cultiva: por que os modelos são cultivados e como aplicar os oito elementos (função, contexto, ferramentas, regras, exemplos, memória, avaliação, feedback) na vida pessoal, no seu Jarvis e nos negócios, com planos de 30 e 90 dias e kit de arquivos.",
+      "desc": "IA Cultivada — não se programa, se cultiva: os oito elementos (função, contexto, ferramentas, regras, exemplos, memória, avaliação, feedback) aplicados à vida pessoal, ao Jarvis e aos negócios, com soluções prontas: kits para baixar, skills /cultivar e /revisao-semanal, gerador de ficha do agente, diagnóstico de cultivo e pacotes de agentes por área (qualificador de leads com fluxo n8n).",
       "url": "https://inematds.github.io/iacultivada/",
       "badge": "Guia"
     },
