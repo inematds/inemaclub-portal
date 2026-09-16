@@ -45,7 +45,9 @@
     "destaqueAlt": "INEMACCBOT course with Promoavatar",
     "eventoAlt": "INEMA event",
     "musicavideoButton": "Discover MUSICAVIDEO →",
-    "destaqueButton": "Watch the course →"
+    "destaqueButton": "Watch the course →",
+    "iaCultivadaAlt": "Cultivated AI — not programmed, grown. Same leadership, a new way to build agents: role, context, tools, rules, examples, memory, evaluation, feedback.",
+    "claudeCodexAlt": "Claude → Codex: migrate or stay model-agnostic. Separate the brain from the model — portable context, skills and handoffs. INEMA 2026 event."
   },
   "beginners": {
     "title": "Beginner Path",
@@ -81,6 +83,25 @@
       "kitDesc": "20 ready-made prompts by situation, with what you should see and the common mistake",
       "fepTitle": "FEP 2026",
       "fepDesc": "AGI arrived and the prompt almost died: FEP rewritten technique by technique (7 lessons)"
+    }
+  },
+  "iaCultivada": {
+    "title": "🌱 Cultivated AI: everything you can do with this subject",
+    "subtitle": "AI is not programmed, it is grown. The eight elements (role, context, tools, rules, examples, memory, evaluation, feedback) applied to personal life, your Jarvis and business",
+    "body": "The page explains the method with the 2025–2026 research behind it. The ready-made solutions put it to work today: downloadable kits, an agent role-card generator, a two-minute diagnostic, skills for Claude Code and Codex, and agent packs by area. All static, no sign-up.",
+    "cards": {
+      "paginaTitle": "The method page",
+      "paginaDesc": "Concept, the two levels of cultivation, the eight elements, the cycle and the three applications with 30- and 90-day plans",
+      "kitsTitle": "Downloadable kits",
+      "kitsDesc": "Personal, Jarvis and company: the five files already structured, with a fictional example filled in",
+      "geradorTitle": "Agent role-card generator",
+      "geradorDesc": "Fill six fields and download the role card, context, examples, scorecard and failure log",
+      "diagTitle": "Cultivation diagnostic",
+      "diagDesc": "Eight questions: your score, the garden stage, where to start and the right kit",
+      "skillsTitle": "Skills /cultivar and /revisao-semanal",
+      "skillsDesc": "For Claude Code and Codex: the agent writes the files and runs the feedback ritual every Friday",
+      "pacotesTitle": "Agent packs by area",
+      "pacotesDesc": "Complete lead qualifier with system prompt and n8n flow, plus support, finance and marketing"
     }
   },
   "novidades": {

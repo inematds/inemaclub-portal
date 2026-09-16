@@ -45,7 +45,9 @@
     "destaqueAlt": "Curso INEMACCBOT con Promoavatar",
     "eventoAlt": "Evento INEMA",
     "musicavideoButton": "Conoce MUSICAVIDEO →",
-    "destaqueButton": "Mira el curso →"
+    "destaqueButton": "Mira el curso →",
+    "iaCultivadaAlt": "IA Cultivada — no se programa, se cultiva. El mismo liderazgo, una nueva forma de crear agentes: función, contexto, herramientas, reglas, ejemplos, memoria, evaluación, feedback.",
+    "claudeCodexAlt": "Claude → Codex: migra o quédate agnóstico. Separa el cerebro del modelo — contexto, skills y handoffs portátiles. Evento INEMA 2026."
   },
   "beginners": {
     "title": "Ruta para Principiantes",
@@ -81,6 +83,25 @@
       "kitDesc": "20 pedidos listos por situación, con lo que debes ver y el error común",
       "fepTitle": "FEP 2026",
       "fepDesc": "La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases)"
+    }
+  },
+  "iaCultivada": {
+    "title": "🌱 IA Cultivada: todo lo que puedes hacer con este tema",
+    "subtitle": "La IA no se programa, se cultiva. Los ocho elementos (función, contexto, herramientas, reglas, ejemplos, memoria, evaluación, feedback) aplicados a la vida personal, a tu Jarvis y a los negocios",
+    "body": "La página explica el método con la investigación de 2025–2026 detrás. Las soluciones listas lo ponen a funcionar hoy: kits para descargar, un generador de ficha del agente, un diagnóstico de dos minutos, skills para Claude Code y Codex, y paquetes de agentes por área. Todo estático, sin registro.",
+    "cards": {
+      "paginaTitle": "La página del método",
+      "paginaDesc": "Concepto, los dos niveles del cultivo, los ocho elementos, el ciclo y las tres aplicaciones con planes de 30 y 90 días",
+      "kitsTitle": "Kits para descargar",
+      "kitsDesc": "Personal, Jarvis y empresa: los cinco archivos ya estructurados, con un ejemplo ficticio relleno",
+      "geradorTitle": "Generador de ficha del agente",
+      "geradorDesc": "Rellena seis campos y descarga ficha, contexto, ejemplos, scorecard y diario de fallos",
+      "diagTitle": "Diagnóstico de cultivo",
+      "diagDesc": "Ocho preguntas: tu nota, la etapa del jardín, por dónde empezar y el kit adecuado",
+      "skillsTitle": "Skills /cultivar y /revisao-semanal",
+      "skillsDesc": "Para Claude Code y Codex: el agente escribe los archivos y ejecuta el ritual de feedback cada viernes",
+      "pacotesTitle": "Paquetes de agentes por área",
+      "pacotesDesc": "Calificador de leads completo, con prompt de sistema y flujo n8n, más atención, finanzas y marketing"
     }
   },
   "novidades": {

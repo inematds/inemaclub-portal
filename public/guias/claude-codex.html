@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude → Codex — Tudo que dá pra fazer com um workspace agnóstico | INEMA Club</title>
+<meta name="description" content="Mapa completo do tema Claude → Codex no INEMA: kit de migração, curso em 3 trilhas, diagnóstico e plano em fases, skills canônicas, terceiro executor em container e evento. Tudo que você pode fazer com contexto portátil entre modelos.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e27; --bg2:#0f1419; --bg3:#111a33;
+  --cyan:#00d9ff; --purple:#a855f7; --amber:#f5a623; --white:#f0f4ff; --gray:#8a93ac;
+  --border:rgba(0,217,255,0.16);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg); color:var(--white); font-family:'Inter',sans-serif; line-height:1.7;}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif; line-height:1.15;}
+code,.mono{font-family:'Space Mono',monospace;}
+a{color:var(--cyan);}
+.container{max-width:960px; margin:0 auto; padding:0 24px;}
+.nav{position:sticky; top:0; z-index:50; background:rgba(10,14,39,0.85); backdrop-filter:blur(10px); border-bottom:1px solid var(--border);}
+.nav-inner{max-width:960px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px;}
+.nav-brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:1.05rem; text-decoration:none; color:var(--white);}
+.nav-brand span{color:var(--cyan);}
+.nav-back{font-size:.85rem; color:var(--gray); text-decoration:none; border:1px solid var(--border); padding:8px 14px; border-radius:8px; transition:.2s;}
+.nav-back:hover{color:var(--cyan); border-color:var(--cyan);}
+.hero{padding:64px 0 36px; text-align:center; position:relative;}
+.hero-glow{position:absolute; top:-80px; left:50%; transform:translateX(-50%); width:600px; height:300px; background:radial-gradient(ellipse, rgba(245,166,35,0.14) 0%, transparent 70%); pointer-events:none;}
+.eyebrow{display:inline-block; font-family:'Space Mono',monospace; font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--amber); border:1px solid rgba(245,166,35,.35); padding:6px 14px; border-radius:100px; margin-bottom:22px;}
+.hero h1{font-size:clamp(2rem,5vw,3rem); font-weight:800; margin-bottom:18px; background:linear-gradient(135deg,#f0f4ff 30%,var(--amber) 70%,var(--cyan)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;}
+.hero p{color:var(--gray); font-size:1.08rem; max-width:680px; margin:0 auto;}
+.banner{padding:8px 0 40px;}
+.banner a{display:block; border-radius:16px; overflow:hidden; border:1px solid rgba(245,166,35,.45); box-shadow:0 20px 60px rgba(0,0,0,.55);}
+.banner img{display:block; width:100%; height:auto;}
+.banner .cap{font-size:.85rem; color:var(--gray); text-align:center; margin-top:10px;}
+.intro{padding:8px 0 32px;}
+.intro p{color:#c3cbe0; font-size:1.02rem; margin-bottom:16px;}
+.intro strong{color:var(--white);}
+.sec{padding:16px 0 40px;}
+.sec h2{font-size:1.5rem; margin-bottom:6px;}
+.sec .lead{color:var(--gray); margin-bottom:22px;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px;}
+.card{background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:20px 22px; display:flex; flex-direction:column; gap:8px; transition:.2s;}
+.card:hover{border-color:var(--amber); transform:translateY(-2px);}
+.card .ico{font-size:1.6rem;}
+.card h3{font-size:1.05rem; color:var(--white);}
+.card .tag{font-size:.72rem; font-family:'Space Mono',monospace; color:var(--purple); letter-spacing:.08em; text-transform:uppercase;}
+.card p{color:#c3cbe0; font-size:.93rem; flex:1;}
+.card a.go{display:inline-flex; align-items:center; gap:6px; font-size:.85rem; font-weight:600; color:var(--cyan); text-decoration:none; border-bottom:1px solid transparent; align-self:flex-start;}
+.card a.go:hover{border-bottom-color:var(--cyan);}
+.steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-top:8px;}
+.stepbox{background:var(--bg3); border:1px solid var(--border); border-radius:12px; padding:14px; text-align:center;}
+.stepbox b{display:block; color:var(--amber); font-family:'Space Mono',monospace; font-size:.75rem; margin-bottom:4px;}
+.stepbox span{font-size:.9rem; color:#c3cbe0;}
+table{width:100%; border-collapse:collapse; font-size:.92rem; margin-top:8px;}
+th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top;}
+th{color:var(--gray); font-weight:600; font-family:'Space Mono',monospace; font-size:.75rem; text-transform:uppercase; letter-spacing:.06em;}
+td code{color:var(--cyan); font-size:.85rem;}
+.ok{color:#34d399;} .warn{color:var(--amber);} .todo{color:var(--gray);}
+.cta{padding:40px 0 80px; text-align:center;}
+.cta-box{background:linear-gradient(135deg, rgba(245,166,35,0.10), rgba(0,217,255,0.08)); border:1px solid var(--border); border-radius:18px; padding:44px 32px;}
+.cta-box h2{font-size:1.5rem; margin-bottom:12px;}
+.cta-box p{color:var(--gray); margin-bottom:24px; max-width:560px; margin-left:auto; margin-right:auto;}
+.btn-primary{display:inline-block; background:var(--amber); color:#1a1206; font-weight:700; padding:14px 30px; border-radius:10px; text-decoration:none; font-size:.95rem; transition:.2s; margin:4px;}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(245,166,35,0.3);}
+.btn-ghost{display:inline-block; border:1px solid var(--border); color:var(--white); padding:13px 26px; border-radius:10px; text-decoration:none; font-size:.95rem; margin:4px;}
+.btn-ghost:hover{border-color:var(--cyan);}
+footer{padding:28px 0; text-align:center; color:var(--gray); font-size:.85rem; border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/#evento-claude-codex">INEMA<span>.CLUB</span></a>
+    <a class="nav-back" href="/#evento-claude-codex">← Voltar ao Portal</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <span class="eyebrow">Claude → Codex · 2026</span>
+    <h1>Tudo que dá pra fazer com um workspace agnóstico</h1>
+    <p>Não migre o seu "cérebro" de um modelo pro outro. Separe o cérebro do modelo. Esta página é o mapa de tudo que o INEMA já construiu sobre o tema: kit, curso, diagnóstico, skills, executores e o evento.</p>
+  </div>
+</header>
+
+<section class="banner">
+  <div class="container">
+    <a href="https://eventos.inema.pro/" target="_blank" rel="noopener noreferrer">
+      <img src="/doc/claude-codex-agnostico.png" alt="Claude → Codex: migre ou fique agnóstico. Separe o cérebro do modelo. Evento INEMA 2026." loading="lazy">
+    </a>
+    <p class="cap">Evento ao vivo em <a href="https://eventos.inema.pro/" target="_blank" rel="noopener noreferrer">eventos.inema.pro</a>: migrar do Claude Code pro Codex, ou ficar independente de modelo.</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    <p>A ideia central é simples: só <strong>CLAUDE.md e AGENTS.md</strong> são presos ao provedor. Todo o resto do que você acumulou (contexto, regras, decisões, tarefas, skills, handoffs, memória) é Markdown portátil. Se esse material fica numa <strong>camada portátil</strong> dentro de cada projeto, Claude Code, Codex, Gemini ou um modelo local em container viram só <strong>executores</strong>, e trocar de modelo é trocar uma borda, não o centro.</p>
+    <p>Abaixo, o que existe hoje para colocar isso em prática, em ordem de uso: entender, diagnosticar, migrar, provar e manter.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <h2>1. Entender</h2>
+    <p class="lead">Da filosofia ao procedimento executável.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🎓</div><div class="tag">Curso · 3 trilhas · 18 módulos</div><h3>Claude → Codex: migre ou fique agnóstico</h3><p>Fundamentos (vocabulário, três níveis, anatomia do workspace, donos da informação, audit antes de implement), mão na massa com o kit, e seis projetos sobre um sistema real. Formato v2 com progresso, notas e handoff do aluno.</p><a class="go" href="https://inematds.github.io/curso-claude-codex/" target="_blank" rel="noopener noreferrer">Fazer o curso →</a></div>
+      <div class="card"><div class="ico">📖</div><div class="tag">Guia</div><h3>Guia do kit agente-claude-codex</h3><p>Landing e passo a passo: diagnosticar, auditar, adaptar instruções, instalar o núcleo portátil, portar skills e provar em sessão nova.</p><a class="go" href="https://inematds.github.io/agente-claude-codex/guia/" target="_blank" rel="noopener noreferrer">Abrir o guia →</a></div>
+      <div class="card"><div class="ico">📝</div><div class="tag">Prompts</div><h3>Mega-prompts A e B</h3><p>Prompt A migra um setup Claude existente; Prompt B constrói um workspace portátil (pessoal, cliente ou misto). Os dois começam em modo audit: analisar, planejar, simular, só depois implementar.</p><a class="go" href="https://github.com/inematds/agente-claude-codex/tree/main/prompts" target="_blank" rel="noopener noreferrer">Ver os prompts →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <h2>2. Diagnosticar e migrar</h2>
+    <p class="lead">O kit é o "nível 2" da newsletter: um comando por etapa, tudo reversível, nada copiado em massa.</p>
+    <div class="steps">
+      <div class="stepbox"><b>0</b><span>doctor.sh<br>ambiente pronto?</span></div>
+      <div class="stepbox"><b>1</b><span>audit.sh<br>inventário e matriz</span></div>
+      <div class="stepbox"><b>2</b><span>adapt-instructions<br>CLAUDE.md → AGENTS.md</span></div>
+      <div class="stepbox"><b>3</b><span>init-core<br>context/ tasks/ handoffs/</span></div>
+      <div class="stepbox"><b>4</b><span>sync-skills<br>1 fonte, 4 destinos</span></div>
+      <div class="stepbox"><b>5</b><span>readback-test<br>prova em sessão nova</span></div>
+    </div>
+    <table>
+      <tr><th>Script</th><th>O que faz</th><th>Estado (2026-09-16)</th></tr>
+      <tr><td><code>doctor.sh</code></td><td>Confere git, python, node, Claude, Codex, sandbox, MCP, polyskill: ok / aviso / falta.</td><td class="ok">passou</td></tr>
+      <tr><td><code>audit.sh</code></td><td>Inventário somente leitura dos quatro executores; classifica cada skill como reutilizável, adaptador, nativo ou não resolvido.</td><td class="ok">passou (89 skills só no Claude: 71 / 15 / 2 / 1)</td></tr>
+      <tr><td><code>adapt-instructions.sh</code></td><td>Separa o portátil (vira AGENTS.md) do resíduo do runtime (fica no CLAUDE.md com <code>@AGENTS.md</code>).</td><td class="ok">passou; gerou o AGENTS.md global do Codex</td></tr>
+      <tr><td><code>init-core.sh</code></td><td>Copia o núcleo portátil sem sobrescrever nada.</td><td class="ok">passou</td></tr>
+      <tr><td><code>sync-skills.sh</code></td><td>import / build / install / drift / mirror para Claude, Codex, dsh-sandbox e openpcbotv3.</td><td class="ok">passou, drift zero</td></tr>
+      <tr><td><code>readback-test.sh</code></td><td>Sessão nova responde: objetivo, regra e fonte, última decisão, próxima ação, conflitos.</td><td class="ok">passou no Claude e no Codex</td></tr>
+      <tr><td><code>migrar-projeto.sh</code></td><td>Encadeia tudo num projeto e grava o relatório (audit por padrão, <code>--aplicar</code> para valer).</td><td class="warn">audit rodado; nenhum projeto aplicado</td></tr>
+      <tr><td><code>faxina.sh</code></td><td>Classifica cada seção de um CLAUDE.md longo: fica, vira context/, ou é resíduo.</td><td class="ok">passou</td></tr>
+      <tr><td><code>drift-report.sh</code></td><td>Relatório semanal: skills canônicas, espelhadas e AGENTS.md global.</td><td class="ok">passou</td></tr>
+      <tr><td><code>promover-memoria.sh</code></td><td>Memória nativa vira proposta de fatos com fonte e data; só o aprovado entra no overview.</td><td class="ok">testado com 50 memórias</td></tr>
+    </table>
+    <p style="margin-top:14px"><a class="go" href="https://github.com/inematds/agente-claude-codex" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">Repositório do kit →</a></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <h2>3. O ciclo diário: handoff e prime</h2>
+    <p class="lead">Duas skills canônicas, instaladas nos quatro executores a partir de uma única fonte.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">📤</div><div class="tag">Skill · session-handoff</div><h3>Fechar a sessão</h3><p>Decisões, pendências, próximos passos, arquivos tocados e checks rodados viram <code>handoffs/latest.md</code>. É o resumo estruturado que viaja pra qualquer provedor.</p></div>
+      <div class="card"><div class="ico">📥</div><div class="tag">Skill · prime</div><h3>Abrir a sessão</h3><p>Lê AGENTS.md, context/, tasks/current.md e handoffs/latest.md antes de agir e devolve um briefing com fontes. Claude escreve, Codex retoma, e vice-versa.</p></div>
+      <div class="card"><div class="ico">🔁</div><div class="tag">Fluxo</div><h3>Sessão → handoff → Markdown → prime → sessão</h3><p>As sessões JSONL de cada runtime viram histórico, não fonte. O que sobrevive à troca de modelo é o Markdown do projeto.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <h2>4. Quatro executores sobre o mesmo cérebro</h2>
+    <p class="lead">O diagnóstico de uma máquina real (2026-09-14) mostrou que não são dois consumidores de skills, são quatro.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🟠</div><div class="tag">Executor</div><h3>Claude Code</h3><p>Runtime principal: 117 skills, memória em 869 arquivos, 2.400 sessões em 14 dias. Fonte de onde tudo é portado.</p></div>
+      <div class="card"><div class="ico">🔵</div><div class="tag">Executor</div><h3>Codex CLI</h3><p>Antes: sem AGENTS.md global, sem MCP, 27 skills. Agora: AGENTS.md global gerado, magnific e metricool registrados, skills canônicas instaladas.</p></div>
+      <div class="card"><div class="ico">🐳</div><div class="tag">Executor</div><h3>dsh-sandbox (modelo local em container)</h3><p>DeepSeek em Docker com modos local e remoto. Skills espelhadas da fonte com vigilância de drift; segurança: montagem e provedor amarrados.</p></div>
+      <div class="card"><div class="ico">🤖</div><div class="tag">Executor</div><h3>openpcbotv3</h3><p>Bot com gateway de tiers (local, barato, premium), vault curado (propõe → você aprova) e 16 skills próprias. É a referência do plano para memória com aprovação.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <h2>5. Plano em fases (e onde está)</h2>
+    <table>
+      <tr><th>Fase</th><th>O quê</th><th>Estado</th></tr>
+      <tr><td>0</td><td>Base global do Codex: AGENTS.md + MCP</td><td class="ok">feita</td></tr>
+      <tr><td>1</td><td>Piloto de skill: session-handoff + prime, drift zero</td><td class="ok">feita</td></tr>
+      <tr><td>2</td><td>Os 13 projetos trusted sem AGENTS.md</td><td class="warn">ferramenta pronta, nenhum aplicado</td></tr>
+      <tr><td>3</td><td>Auditoria dos 39 projetos com CLAUDE.md e AGENTS.md</td><td class="todo">não iniciada</td></tr>
+      <tr><td>4</td><td>72 skills reutilizáveis em lote</td><td class="warn">2 canônicas + 3 espelhadas</td></tr>
+      <tr><td>5</td><td>Memória curada (vault propõe, humano aprova)</td><td class="warn">ferramenta pronta, testada</td></tr>
+      <tr><td>6</td><td>dsh como executor de segunda linha</td><td class="warn">skills instaladas; readback pendente</td></tr>
+    </table>
+    <p style="margin-top:12px;color:var(--gray);font-size:.9rem">Diagnóstico completo e plano: <code>DIAGNOSTICO-CLAUDE-CODEX-2026-09-14.md</code> no hub de monitoramento; evidências em <code>relatorios/</code> do kit.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <h2>6. O que vem depois</h2>
+    <div class="grid">
+      <div class="card"><div class="ico">🏢</div><div class="tag">Cliente</div><h3>Workspace por cliente</h3><p>Diagrama de Venn: o comum centralizado, o exclusivo em repo privado com snapshot de contexto e canários sintéticos. Projeto 5 do curso.</p></div>
+      <div class="card"><div class="ico">📅</div><div class="tag">Rotina</div><h3>Drift semanal</h3><p>Uma linha de cron roda o drift-report toda segunda. Sem isso, as cópias divergem em duas semanas.</p></div>
+      <div class="card"><div class="ico">🎤</div><div class="tag">Evento</div><h3>Ao vivo</h3><p>A versão falada, com o sistema real na tela: auditar, adaptar, provar, handoff.</p><a class="go" href="https://eventos.inema.pro/" target="_blank" rel="noopener noreferrer">eventos.inema.pro →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Por onde começar</h2>
+      <p>Faça o curso pelos fundamentos, ou clone o kit e rode o diagnóstico na sua máquina. Os dois caminhos chegam no mesmo lugar: um cérebro portátil que qualquer modelo executa.</p>
+      <a class="btn-primary" href="https://inematds.github.io/curso-claude-codex/" target="_blank" rel="noopener noreferrer">Fazer o curso</a>
+      <a class="btn-ghost" href="https://github.com/inematds/agente-claude-codex" target="_blank" rel="noopener noreferrer">Clonar o kit</a>
+      <a class="btn-ghost" href="https://eventos.inema.pro/" target="_blank" rel="noopener noreferrer">Evento</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">INEMA Club — inema.club · <a href="https://inema.pro" target="_blank" rel="noopener noreferrer">INEMA.PRO</a></div>
+</footer>
+
+</body>
+</html>

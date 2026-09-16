@@ -632,6 +632,77 @@ export default function Portal({
         </div>
       </section>
 
+      {/* Evento — IA Cultivada (destaque) */}
+      <section id="evento-ia-cultivada" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/', 'IA Cultivada', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={img("/doc/ia-cultivada.png")}
+              alt={t.events.iaCultivadaAlt}
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
+
+      {/* Evento — Claude → Codex: migre ou fique agnóstico (banner + área do tema) */}
+      <section id="evento-claude-codex" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href="https://eventos.inema.pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/', 'Claude → Codex agnóstico', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.72 0.16 75)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 60)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 60 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={img("/doc/claude-codex-agnostico.png")}
+              alt={t.events.claudeCodexAlt}
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginTop: '14px' }}>
+            {[
+              { href: 'https://inematds.github.io/curso-claude-codex/', label: '🎓 Curso', desc: '3 trilhas, 18 módulos: fundamentos, mão na massa e projetos' },
+              { href: 'https://inematds.github.io/agente-claude-codex/guia/', label: '🧰 Kit', desc: 'doctor, audit, AGENTS.md, núcleo portátil, skills, readback' },
+              { href: '/guias/claude-codex.html', label: '🗺️ Tudo sobre o tema', desc: 'Mapa do que dá pra fazer: skills, executores, plano em fases' },
+              { href: 'https://eventos.inema.pro/', label: '🎤 Evento', desc: 'Ao vivo: migrar ou ficar agnóstico' },
+            ].map((c) => (
+              <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
+                 onClick={() => trackClick(c.href, c.label, 'claude-codex')}
+                 style={{ display: 'block', padding: '14px 16px', borderRadius: '12px', border: '1px solid oklch(0.72 0.16 75 / .35)', background: 'oklch(0.16 0.02 60 / .6)', textDecoration: 'none', color: 'inherit' }}>
+                <strong style={{ display: 'block', marginBottom: '4px' }}>{c.label}</strong>
+                <span style={{ fontSize: '.88rem', opacity: .8 }}>{c.desc}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Evento — AGI chegou */}
       <section id="evento-agi-chegou" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
@@ -1070,6 +1141,93 @@ export default function Portal({
               {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
               <h4>FEP 2026</h4>
               <p>{t.iaZero.cards.fepDesc}</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* IA Cultivada — tudo que dá para fazer com o assunto (página + soluções prontas) */}
+      <section id="ia-cultivada" className="learning-path-section">
+        <div className="container">
+          <div className="learning-path-header">
+            <h3>{t.iaCultivada.title}</h3>
+            <p>{t.iaCultivada.subtitle}</p>
+            <p style={{ maxWidth: '760px', margin: '.6rem auto 0', fontSize: '.95rem', color: 'var(--text-secondary, #94a3b8)' }}>
+              {t.iaCultivada.body}
+            </p>
+          </div>
+          <div className="learning-path-cards">
+            <a
+              href="https://inematds.github.io/iacultivada/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-1"
+              onClick={() => trackClick('https://inematds.github.io/iacultivada/', 'IA Cultivada (página)', 'ia-cultivada')}
+            >
+              <div className="path-number">🌱</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.paginaTitle}</h4>
+              <p>{t.iaCultivada.cards.paginaDesc}</p>
+            </a>
+            <a
+              href="https://inematds.github.io/iacultivada/kits/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-2"
+              onClick={() => trackClick('https://inematds.github.io/iacultivada/kits/', 'IA Cultivada (kits)', 'ia-cultivada')}
+            >
+              <div className="path-number">📦</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.kitsTitle}</h4>
+              <p>{t.iaCultivada.cards.kitsDesc}</p>
+            </a>
+            <a
+              href="https://inematds.github.io/iacultivada/gerador/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-3"
+              onClick={() => trackClick('https://inematds.github.io/iacultivada/gerador/', 'IA Cultivada (gerador)', 'ia-cultivada')}
+            >
+              <div className="path-number">⚙️</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.geradorTitle}</h4>
+              <p>{t.iaCultivada.cards.geradorDesc}</p>
+            </a>
+            <a
+              href="https://inematds.github.io/iacultivada/diagnostico/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-4"
+              onClick={() => trackClick('https://inematds.github.io/iacultivada/diagnostico/', 'IA Cultivada (diagnóstico)', 'ia-cultivada')}
+            >
+              <div className="path-number">🩺</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.diagTitle}</h4>
+              <p>{t.iaCultivada.cards.diagDesc}</p>
+            </a>
+            <a
+              href="https://github.com/inematds/iacultivada/tree/main/skills"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-1"
+              onClick={() => trackClick('https://github.com/inematds/iacultivada/tree/main/skills', 'IA Cultivada (skills)', 'ia-cultivada')}
+            >
+              <div className="path-number">🧩</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.skillsTitle}</h4>
+              <p>{t.iaCultivada.cards.skillsDesc}</p>
+            </a>
+            <a
+              href="https://github.com/inematds/iacultivada/tree/main/pacotes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-2"
+              onClick={() => trackClick('https://github.com/inematds/iacultivada/tree/main/pacotes', 'IA Cultivada (pacotes)', 'ia-cultivada')}
+            >
+              <div className="path-number">🧰</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.pacotesTitle}</h4>
+              <p>{t.iaCultivada.cards.pacotesDesc}</p>
             </a>
           </div>
         </div>
