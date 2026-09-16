@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gen:data": "node tools/gen-courses-data.mjs",
+    "gen:data": "node tools/gen-courses-data.mjs && node scripts/traduz-feeds.mjs",
     "test": "node --test tests/*.mjs"
   },
   "dependencies": {

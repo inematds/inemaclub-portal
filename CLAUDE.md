@@ -46,7 +46,8 @@ Portal único, um idioma por rota: `/` (PT), `/en/`, `/es/`. Sem redirect por `A
 - Widget do chat: textos do launcher, placeholder, botão e avisos em `WIDGET_TEXT` dentro de `src/components/AgenteChat/widget.ts` (pt/en/es), lidos de `document.documentElement.lang`.
 - **Banners por idioma:** `public/doc/<en|es>/<mesmo nome>` com o mesmo tamanho e formato do PT; a lista do que tem versão está em `src/i18n/images.ts` (`LOCALIZED_IMAGES`) e o `Portal.tsx` passa todo `src` por `localizedSrc()`. Banner novo em PT → gerar EN/ES com o **Codex** (`codex exec -i <png> "..."`, feature `image_generation`; Magnific NÃO é autorizada pra isso), ajustar ao tamanho original e adicionar o nome no set. Sem versão, cai no PT.
 - **Telegram e redes sociais em EN/ES:** enquanto não existem grupos/perfis por idioma, as seções mostram só um aviso + link (`inema.vip` e os perfis principais). Quando o usuário passar os grupos EN/ES, trocar o bloco `locale !== 'pt'` dessas seções por listas por idioma (dicionário).
-- Fora do escopo por enquanto: `/cursos/`, `/conhecimento/`, `feed.xml`, `llms.txt` e os feeds (novidades/atualizações) ficam só em PT, marcados "conteúdo em português".
+- **Feeds (Novidades, Atualizações de Cursos/Projetos) em EN/ES:** `scripts/traduz-feeds.mjs` traduz via Groq (`openai/gpt-oss-120b`, key em `~/projetos/openpcbotv2/.env`) os 20 itens visíveis de cada quadro + todas as novidades, incremental, cache em **`src/data/feeds-i18n.json`** (commitado; o `Portal.tsx` lê com `tr()`, fallback PT). Roda dentro do `npm run gen:data` e do `gera-novidades.sh` (01:45). Rate limit da Groq é 8k tokens/min: o script espera e tenta de novo; o que não conseguir fica em PT até a próxima rodada.
+- Fora do escopo por enquanto: `/cursos/`, `/conhecimento/`, `feed.xml` e `llms.txt` ficam só em PT.
 
 ## Últimas Novidades (feed do INEMA.VIP) — automático
 

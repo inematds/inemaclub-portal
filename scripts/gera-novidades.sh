@@ -24,15 +24,17 @@ echo ""
 echo "═══════ NOVIDADES INEMA.VIP — $(date '+%Y-%m-%d %H:%M:%S') ═══════"
 
 /usr/bin/node scripts/gera-novidades.mjs
+# Traduz os títulos/resumos novos pra EN/ES (cache em src/data/feeds-i18n.json); sem key/rede, mantém PT.
+/usr/bin/node scripts/traduz-feeds.mjs || true
 
-if git diff --quiet -- src/data/novidades.ts; then
+if git diff --quiet -- src/data/novidades.ts src/data/feeds-i18n.json; then
   echo "novidades.ts sem mudança — sem commit"
   exit 0
 fi
 
 # Autor deste repo é sempre NeiMaldaner (ver CLAUDE.md); explícito porque o job
 # roda headless e não pode depender do git config local estar correto.
-git add src/data/novidades.ts
+git add src/data/novidades.ts src/data/feeds-i18n.json
 git -c user.name=NeiMaldaner -c user.email=nei.maldaner2014@gmail.com \
     commit -q -m "chore: últimas novidades do INEMA.VIP ($(date '+%Y-%m-%d'))"
 git push -q origin main

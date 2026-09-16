@@ -1,0 +1,374 @@
+{
+  "openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)": {
+    "en": "openpcbot v3 — Your local Jarvis: install, use and configure (4 tracks, 8 modules, 48 topics)",
+    "es": "openpcbot v3 — Tu Jarvis local: instalar, usar y configurar (4 rutas, 8 módulos, 48 temas)"
+  },
+  "Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)": {
+    "en": "Claude → Codex — Migrate or stay agnostic: complete course v2 with 3 tracks and 18 modules about model‑independent workspace (kit agente-claude-codex, polyskill, readback, handoff/prime)",
+    "es": "Claude → Codex — Migra o mantente agnóstico: curso completo v2 con 3 rutas y 18 módulos sobre espacio de trabajo independiente del modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)"
+  },
+  "Terminal e Harness — Aula 6 (pastas, .claude, AGENTS.md, wiki, OKF) + vídeo 2:06 com cena das pastas, versões 16:9 e 9:16": {
+    "en": "Terminal and Harness — Lesson 6 (folders, .claude, AGENTS.md, wiki, OKF) + video 2:06 with folder scene, 16:9 and 9:16 versions",
+    "es": "Terminal e Harness — Clase 6 (carpetas, .claude, AGENTS.md, wiki, OKF) + video 2:06 con escena de las carpetas, versiones 16:9 y 9:16"
+  },
+  "Terminal e Harness — Por que o terminal vence o chat (6 aulas + vídeo, para executivos e profissionais liberais)": {
+    "en": "Terminal and Harness — Why the terminal beats chat (6 lessons + video, for executives and freelancers)",
+    "es": "Terminal e Harness — Por qué el terminal supera al chat (6 clases + video, para ejecutivos y profesionales liberales)"
+  },
+  "Gestão de IA — Plano do curso: 10 módulos propostos, ementa e templates; aulas em desenvolvimento": {
+    "en": "AI Management — Course plan: 10 proposed modules, syllabus and templates; lessons in development",
+    "es": "Gestión de IA — Plan del curso: 10 módulos propuestos, programa y plantillas; clases en desarrollo"
+  },
+  "LOOP-R — Sua Empresa que Aprende Sozinha (5 trilhas, 21 aulas)": {
+    "en": "LOOP-R — Your Self‑Learning Company (5 tracks, 21 lessons)",
+    "es": "LOOP-R — Tu Empresa que Aprende Sola (5 rutas, 21 clases)"
+  },
+  "Agentes na Clínica — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas)": {
+    "en": "Agents in the Clinic — Health Notebook of the AI Work Architect (3 lessons)",
+    "es": "Agentes en la Clínica — Cuaderno de Salud del Arquitecto de Trabajo con IA (3 clases)"
+  },
+  "Agentes no Contábil e no Financeiro — Caderno do Arquiteto de Trabalho com IA (3 aulas)": {
+    "en": "Agents in Accounting and Finance — Notebook of the AI Work Architect (3 lessons)",
+    "es": "Agentes en Contabilidad y Finanzas — Cuaderno del Arquitecto de Trabajo con IA (3 clases)"
+  },
+  "Agentes no Escritório de Advocacia — Caderno do Arquiteto de Trabalho com IA (3 aulas)": {
+    "en": "Agents in Law Firm — Notebook of the AI Work Architect (3 lessons)",
+    "es": "Agentes en el Despacho de Abogados — Cuaderno del Arquitecto de Trabajo con IA (3 clases)"
+  },
+  "FEP 2026 — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings)": {
+    "en": "FEP 2026 — AGI has arrived and the prompt almost died: the FEP rewritten technique by technique (7 lessons, de‑para and kit of 12 briefings)",
+    "es": "FEP 2026 — La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases, de-para y kit de 12 briefings)"
+  },
+  "IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)": {
+    "en": "AI from Scratch — The first requests from those who never used AI, with the why of each (4 lessons)",
+    "es": "IA desde Cero — Las primeras peticiones de quien nunca usó IA, con el porqué de cada una (4 clases)"
+  },
+  "Copilot + Agentes para Empresas — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5)": {
+    "en": "Copilot + Agents for Companies — From AI work to corporate process automation (9 lessons, format v5)",
+    "es": "Copilot + Agentes para Empresas — Del trabajo con IA a la automatización de los procesos corporativos (9 clases, formato v5)"
+  },
+  "GPT-6 Astra: operação técnica — Delegar, verificar, iterar e escalar com Codex (8 módulos)": {
+    "en": "GPT-6 Astra: technical operation — Delegate, verify, iterate and scale with Codex (8 modules)",
+    "es": "GPT-6 Astra: operación técnica — Delegar, verificar, iterar y escalar con Codex (8 módulos)"
+  },
+  "GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)": {
+    "en": "GPT-6 Astra in practice — Delegate the entire task to the new assistant, no coding required (8 lessons)",
+    "es": "GPT-6 Astra en la práctica — Delegue la tarea completa al nuevo asistente, sin programar (8 clases)"
+  },
+  "FEP → AGI — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026": {
+    "en": "FEP → AGI — From prompt to intent: the evolution of FEP in 9 lessons, from the 5 eras to the turn of Sep/2026",
+    "es": "FEP → AGI — Del prompt a la intención: la evolución del FEP en 9 clases, de las 5 eras al viraje de set/2026"
+  },
+  "Super-Agentes — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas)": {
+    "en": "Super-Agents — From AI that responds to AI that works: delegate real responsibilities to AI agents (8 lessons)",
+    "es": "Super-Agentes — De la IA que responde a la IA que trabaja: delegue responsabilidades reales a agentes de IA (8 clases)"
+  },
+  "Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)": {
+    "en": "The Super-Agents Have Arrived — What changes in your work when AI stops waiting for orders (6 lessons)",
+    "es": "Los Super-Agentes Llegaron — Qué cambia en tu trabajo cuando la IA deja de esperar órdenes (6 clases)"
+  },
+  "Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)": {
+    "en": "AI Work Architect — Redesign processes for humans to direct and agents to execute (8 lessons)",
+    "es": "Arquitecto de Trabajo con IA — Rediseña procesos para que los humanos dirijan y los agentes ejecuten (8 clases)"
+  },
+  "Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)": {
+    "en": "Intent Architecture — Day 4: The Turn, models that operate on intent (Fable 5.1 · GPT-6 Astra)",
+    "es": "Arquitectura de Intención — Día 4: La Vuelta, modelos que operan en la intención (Fable 5.1 · GPT-6 Astra)"
+  },
+  "Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)": {
+    "en": "Computer Use with GPT-6 Astra — Five flows for AI to operate your computer (2 tracks, 7 modules)",
+    "es": "Computer Use con GPT-6 Astra — Cinco flujos para que la IA opere tu computadora (2 rutas, 7 módulos)"
+  },
+  "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)": {
+    "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
+    "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
+  },
+  "newia-oct2026 — 12 Novas IAs de outubro/2026: rumores × versões atuais verificadas (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), com preços, contexto, gráficos e fontes": {
+    "en": "newia-oct2026 — 12 New AIs of October/2026: rumors × verified current versions (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), with prices, context, charts and sources",
+    "es": "newia-oct2026 — 12 Nuevas IAs de octubre/2026: rumores × versiones actuales verificadas (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), con precios, contexto, gráficos y fuentes"
+  },
+  "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar": {
+    "en": "voucontigo — v2.0.0: WhatsApp bot (Evolution API) to schedule, cancel and receive free slots, automatic reminders and reports, PIX Asaas and family portal",
+    "es": "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar y recibir horarios libres, recordatorios e informes automáticos, PIX Asaas y portal del familiar"
+  },
+  "voucontigo — Plataforma de acompanhamento e apoio à rotina: landing, painel de atendimentos, bot Telegram e lembretes (Next.js + Supabase)": {
+    "en": "voucontigo — Routine tracking and support platform: landing, service dashboard, Telegram bot and reminders (Next.js + Supabase)",
+    "es": "voucontigo — Plataforma de seguimiento y apoyo a la rutina: landing, panel de atendimientos, bot Telegram y recordatorios (Next.js + Supabase)"
+  },
+  "agentes-fronteiros — Migração de agentes especializados pra agente generalista + skills com contrato, loop de validação e wiki OKF, com inventário e interface kanban": {
+    "en": "agentes-fronteiros — Migration from specialized agents to a generalist agent + contract‑based skills, validation loop and OKF wiki, with inventory and kanban interface",
+    "es": "agentes-fronteiros — Migración de agentes especializados a agente generalista + habilidades con contrato, bucle de validación y wiki OKF, con inventario e interfaz kanban"
+  },
+  "claude-session-kit — Statusline com cota real por modelo + skills de checkpoint, auditoria de memória e handoff pro Claude Code": {
+    "en": "claude-session-kit — Statusline with real quota per model + checkpoint skills, memory audit and handoff to Claude Code",
+    "es": "claude-session-kit — Statusline con cuota real por modelo + habilidades de checkpoint, auditoría de memoria y handoff a Claude Code"
+  },
+  "fotos3d — Fotos comuns de um cômodo viram sala em 360°: reconstrução por IA com checagem de costura, interface web e viewer": {
+    "en": "fotos3d — Ordinary room photos become 360° rooms: AI reconstruction with seam check, web interface and viewer",
+    "es": "fotos3d — Fotos comunes de una habitación se convierten en sala en 360°: reconstrucción por IA con verificación de costura, interfaz web y viewer"
+  },
+  "astra3dany — Mundo 3D de aprendizagem: três estações animadas que ensinam três hábitos pra usar IA, com World Tour e exploração livre": {
+    "en": "astra3dany — 3D learning world: three animated stations teaching three habits for using AI, with World Tour and free exploration",
+    "es": "astra3dany — Mundo 3D de aprendizaje: tres estaciones animadas que enseñan tres hábitos para usar IA, con World Tour y exploración libre"
+  },
+  "videoprodutos — Pasta ou link de loja vira imagens por preset e vídeo promocional automático, com fila web, tudo local": {
+    "en": "videoprodutos — Folder or store link turns into images via preset and automatic promotional video, with web queue, all local",
+    "es": "videoprodutos — Carpeta o enlace de tienda se convierte en imágenes por preset y video promocional automático, con fila web, todo local"
+  },
+  "videomotival — Canal motivacional automatizado: tema → história → voz → ilustrações → MP4, tudo local e a custo zero": {
+    "en": "videomotival — Automated motivational channel: theme → story → voice → illustrations → MP4, all local and at zero cost",
+    "es": "videomotival — Canal motivacional automatizado: tema → historia → voz → ilustraciones → MP4, todo local y sin costo"
+  },
+  "Falei na Live q iria construir um curso e um Diagnostico sobre o WebMCP": {
+    "en": "I said on the Live that I would build a course and a Diagnosis about WebMCP",
+    "es": "Hablé en la Live que iba a crear un curso y un Diagnóstico sobre el WebMCP"
+  },
+  "WebMCP - Zero to Expert": {
+    "en": "WebMCP - Zero to Expert",
+    "es": "WebMCP - Zero to Expert"
+  },
+  "Tópico dedicado ao planejamento e produção da formação WebMCP — Zero to Expert, cobrindo conceitos, estrutura do curso, prompt de agente para otimização de sites e projeto final prático.": {
+    "en": "Topic dedicated to the planning and production of the WebMCP — Zero to Expert training, covering concepts, course structure, agent prompt for site optimization, and practical final project.",
+    "es": "Tema dedicado a la planificación y producción de la formación WebMCP — Zero to Expert, cubriendo conceptos, estructura del curso, prompt de agente para optimización de sitios y proyecto final práctico."
+  },
+  "SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival": {
+    "en": "SlopMonster — AI text linter: rating from 0 to 5, CI gate and cleanup with rival model",
+    "es": "SlopMonster — Linter de texto de IA: nota de 0 a 5, puerta de CI y limpieza con modelo rival"
+  },
+  "Agente Claude → Codex — Migrar do Claude Code pro Codex ou ficar agnóstico: auditoria, adaptadores, núcleo portátil e readback": {
+    "en": "Claude Agent → Codex — Migrate from Claude Code to Codex or stay agnostic: audit, adapters, portable core and readback",
+    "es": "Agente Claude → Codex — Migrar de Claude Code a Codex o quedar agnóstico: auditoría, adaptadores, núcleo portátil y readback"
+  },
+  "HyperFrames Student Kit — Edição de vídeo com IA no Codex e no Claude Code: cortes por transcrição, motion graphics e reels, em português": {
+    "en": "HyperFrames Student Kit — AI video editing in Codex and Claude Code: cuts by transcription, motion graphics and reels, in Portuguese",
+    "es": "HyperFrames Student Kit — Edición de video con IA en Codex y Claude Code: cortes por transcripción, motion graphics y reels, en portugués"
+  },
+  "Jarvis v7 — Assistente pessoal local com OAuth, conhecimento persistente e estúdio Kie": {
+    "en": "Jarvis v7 — Local personal assistant with OAuth, persistent knowledge and Kie studio",
+    "es": "Jarvis v7 — Asistente personal local con OAuth, conocimiento persistente y estudio Kie"
+  },
+  "MS-v7 Social Autopilot — Voz de marca + 3 comandos no Claude Code: posts na sua voz, visual e agendamento com provedores configuráveis, aprovados por você": {
+    "en": "MS-v7 Social Autopilot — Brand voice + 3 commands in Claude Code: posts in your voice, visual and scheduling with configurable providers, approved by you",
+    "es": "MS-v7 Social Autopilot — Voz de marca + 3 comandos en Claude Code: posts en tu voz, visual y programación con proveedores configurables, aprobados por ti"
+  },
+  "UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)": {
+    "en": "UGC Seedance 2.5 — Product becomes 30‑s one‑take UGC ad: skill + brief generator (9 formats, Magnific/Higgsfield/fal.ai)",
+    "es": "UGC Seedance 2.5 — Producto se convierte en anuncio UGC one-take de 30 s: skill + generador de brief (9 formatos, Magnific/Higgsfield/fal.ai)"
+  },
+  "Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup": {
+    "en": "Astra3D V2 — Full demos, My Projects, duplication, saved versions and backup",
+    "es": "Astra3D V2 — Demostraciones completas, Mis proyectos, duplicación, versiones guardadas y backup"
+  },
+  "Astra Effort — Guia em português, dez prompts e sete execuções para comparar níveis de esforço com evidências": {
+    "en": "Astra Effort — Guide in Portuguese, ten prompts and seven runs to compare effort levels with evidence",
+    "es": "Astra Effort — Guía en portugués, diez prompts y siete ejecuciones para comparar niveles de esfuerzo con evidencias"
+  },
+  "Como Migrar de Claude para Codex ou outros": {
+    "en": "How to Migrate from Claude to Codex or Others",
+    "es": "Cómo migrar de Claude a Codex u otros"
+  },
+  "Discussão sobre como criar uma estrutura de trabalho com agentes de IA independente de modelo, com foco em migração do Claude Code para o Codex e outros provedores. Apresenta arquitetura concreta, fluxo de handoff e princípios de organização de contexto.": {
+    "en": "Discussion on how to create a model-agnostic AI agents work framework, focusing on migration from Claude Code to Codex and other providers. Presents concrete architecture, handoff flow, and context organization principles.",
+    "es": "Discusión sobre cómo crear una estructura de trabajo con agentes de IA independiente de modelo, con foco en la migración de Claude Code a Codex y otros proveedores. Presenta arquitectura concreta, flujo de handoff y principios de organización de contexto."
+  },
+  "Aqui um sistema e um curso sobre gestao de Agentes de IA,  de gestao de pessoas para Gestao de Agentes": {
+    "en": "Here a system and a course on AI Agents management, from people management to Agents Management",
+    "es": "Aquí un sistema y un curso sobre gestión de Agentes de IA, de gestión de personas para Gestión de Agentes"
+  },
+  "LOOP-R - Desenvovimento por Agentes": {
+    "en": "LOOP-R - Development by Agents",
+    "es": "LOOP-R - Desarrollo por Agentes"
+  },
+  "Apresentação do LOOP-R, framework metodológico INEMA para sistemas e empresas autoaperfeiçoáveis via ciclos de melhoria contínua baseados em evidências e agentes.": {
+    "en": "Presentation of LOOP-R, INEMA methodological framework for self-improving systems and companies via evidence-based continuous improvement cycles and agents.",
+    "es": "Presentación del LOOP-R, framework metodológico INEMA para sistemas y empresas auto‑mejorables vía ciclos de mejora continua basados en evidencia y agentes."
+  },
+  "Cerebros com o Astra": {
+    "en": "Brains with Astra",
+    "es": "Cerebros con Astra"
+  },
+  "Publicação completa do ecossistema ASTRA 2º Cérebro — três repositórios satélite finalizados com testes passando, guias online e catalogados no Portal e no PRO.": {
+    "en": "Full release of the ASTRA ecosystem 2nd Brain — three satellite repositories completed with passing tests, online guides, and cataloged on the Portal and PRO.",
+    "es": "Publicación completa del ecosistema ASTRA 2º Cérebro — tres repositorios satélite finalizados con pruebas pasando, guías online y catalogados en el Portal y en el PRO."
+  },
+  "Anúncios Top com IA": {
+    "en": "Top Announcements with AI",
+    "es": "Anuncios Top con IA"
+  },
+  "Apresentação do projeto Anúncios Top com IA, um sistema de produção disciplinada de anúncios em vídeo para Meta usando IA, estruturado em quatro skills com responsabilidades separadas e registro de experimentos.": {
+    "en": "Presentation of the Anúncios Top with AI project, a disciplined video ad production system for Meta using AI, structured into four skills with separate responsibilities and experiment logging.",
+    "es": "Presentación del proyecto Anuncios Top con IA, un sistema de producción disciplinada de anuncios en vídeo para Meta usando IA, estructurado en cuatro skills con responsabilidades separadas y registro de experimentos."
+  },
+  "Guia de Gestão de Agentes de IA": {
+    "en": "AI Agents Management Guide",
+    "es": "Guía de Gestión de Agentes de IA"
+  },
+  "Compilação de um guia/método de Gestão de Agentes de IA aplicado a empresas, tratando agentes como força de trabalho digital gerenciável com KPIs, níveis de autonomia e melhoria contínua.": {
+    "en": "Compilation of a guide/method for AI Agents Management applied to companies, treating agents as a manageable digital workforce with KPIs, autonomy levels, and continuous improvement.",
+    "es": "Compilación de una guía/método de Gestión de Agentes de IA aplicado a empresas, tratando a los agentes como fuerza de trabajo digital gestionable con KPIs, niveles de autonomía y mejora continua."
+  },
+  "Evoluindo com o Codex": {
+    "en": "Evolving with Codex",
+    "es": "Evolucionando con Codex"
+  },
+  "Apresentação do Codex Cheat Sheet — guia para transformar o OpenAI Codex CLI de \"chat de programação\" em agente autônomo de desenvolvimento. Acompanhado de explicação conceitual sobre a diferença entre chat, agente simples, workflow agentic e sistema multiagente.": {
+    "en": "Presentation of the Codex Cheat Sheet — guide to turn the OpenAI Codex CLI from a \"programming chat\" into an autonomous development agent. Accompanied by conceptual explanation of the difference between chat, simple agent, workflow agentic and multi‑agent system.",
+    "es": "Presentación del Codex Cheat Sheet — guía para transformar el OpenAI Codex CLI de \"chat de programación\" en agente autónomo de desarrollo. Acompañado de explicación conceptual sobre la diferencia entre chat, agente simple, workflow agentic y sistema multiagente."
+  },
+  "A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO": {
+    "en": "AGI has arrived and the prompt almost died · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO",
+    "es": "La AGI llegó y el prompt casi murió · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO"
+  },
+  "Alibaba's Qwen releases open-source model for autonomous driving · TechNode": {
+    "en": "Alibaba's Qwen releases open-source model for autonomous driving · TechNode",
+    "es": "Alibaba's Qwen lanza modelo de código abierto para conducción autónoma · TechNode"
+  },
+  "**A AGI chegou e o prompt quase morreu · FEP 2026 · ****INEMA.CLUB**** PRO**": {
+    "en": "**AGI has arrived and the prompt almost died · FEP 2026 · ****INEMA.CLUB**** PRO**",
+    "es": "**La AGI llegó y el prompt casi murió · FEP 2026 · ****INEMA.CLUB**** PRO**"
+  },
+  "Comparativo prático entre GPT-6 Astra e Claude Fable 5.1 em 15 tarefas reais do dia a dia, com análise de qualidade, custo e tempo. Resultado geral: Astra 10 × 5 Fable.": {
+    "en": "Practical comparison between GPT-6 Astra and Claude Fable 5.1 in 15 real everyday tasks, with quality, cost and time analysis. Overall result: Astra 10 × 5 Fable.",
+    "es": "Comparativo práctico entre GPT-6 Astra y Claude Fable 5.1 en 15 tareas reales del día a día, con análisis de calidad, costo y tiempo. Resultado general: Astra 10 × 5 Fable."
+  },
+  "Vazou System Prompt Fable 5.1": {
+    "en": "Leaked System Prompt Fable 5.1",
+    "es": "Se filtró System Prompt Fable 5.1"
+  },
+  "Vazamento e análise do system prompt do Claude Fable 5.1, mostrando que o avanço da IA não está só no modelo, mas no ecossistema construído ao redor dele.": {
+    "en": "Leak and analysis of the system prompt of Claude Fable 5.1, showing that AI progress is not only in the model, but in the ecosystem built around it.",
+    "es": "Filtración y análisis del system prompt de Claude Fable 5.1, mostrando que el avance de la IA no está solo en el modelo, sino en el ecosistema construido a su alrededor."
+  },
+  "Prompts Exemplo Astra": {
+    "en": "Astra Example Prompts",
+    "es": "Prompts Ejemplo Astra"
+  },
+  "Coleção de prompts práticos para o Google Astra, cobrindo casos de uso de automação de tarefas, produção de vídeo, auditoria financeira/jurídica e QA de sites.": {
+    "en": "Collection of practical prompts for Google Astra, covering use cases of task automation, video production, financial/legal auditing and site QA.",
+    "es": "Colección de prompts prácticos para Google Astra, cubriendo casos de uso de automatización de tareas, producción de vídeo, auditoría financiera/jurídica y QA de sitios."
+  },
+  "5 Ações com GPT-6 Astra": {
+    "en": "5 Actions with GPT-6 Astra",
+    "es": "5 Acciones con GPT-6 Astra"
+  },
+  "Resumo de um material sobre como usar corretamente o GPT-6 Astra, evitando desperdício de capacidade e extraindo valor real com problemas complexos e fluxos agênticos estruturados.": {
+    "en": "Summary of material on how to correctly use GPT-6 Astra, avoiding capacity waste and extracting real value with complex problems and structured agentic flows.",
+    "es": "Resumen de un material sobre cómo usar correctamente GPT-6 Astra, evitando el desperdicio de capacidad y extrayendo valor real con problemas complejos y flujos ágentes estructurados."
+  },
+  "GPT6 -Asta - Visão": {
+    "en": "GPT6 -Asta - Vision",
+    "es": "GPT6 -Asta - Visión"
+  },
+  "Resumo e análise de uso prático do GPT-6 Astra, com foco em Computer Use, níveis de esforço e mudança de paradigma na forma de interagir com modelos avançados.": {
+    "en": "Summary and practical usage analysis of GPT-6 Astra, focusing on Computer Use, effort levels and paradigm shift in how to interact with advanced models.",
+    "es": "Resumen y análisis de uso práctico de GPT-6 Astra, con foco en Computer Use, niveles de esfuerzo y cambio de paradigma en la forma de interactuar con modelos avanzados."
+  },
+  "Crie Nicho de Sucesso no yt": {
+    "en": "Create a Successful Niche on yt",
+    "es": "Crea Nicho de Éxito en yt"
+  },
+  "Tópico com conteúdo mínimo sobre criação de nicho no YouTube, composto majoritariamente por mídias e mensagens sem texto.": {
+    "en": "Topic with minimal content about creating a niche on YouTube, composed mainly of media and text‑less messages.",
+    "es": "Tema con contenido mínimo sobre creación de nicho en YouTube, compuesto mayormente por medios y mensajes sin texto."
+  },
+  "estou desenvolvendo as certificacoes, deve estar 100% em 2027, mas quem quer testar pode ir se preparando": {
+    "en": "I'm developing the certifications, should be 100% ready by 2027, but anyone who wants to test can start preparing.",
+    "es": "estoy desarrollando las certificaciones, debe estar 100% en 2027, pero quien quiera probar puede ir preparándose"
+  },
+  "A quantidade de empresas apresentando Robots humanos. E uma chamada ubtech fez um tao realista q no lançamento vendeu 13 mil por 140 mil dolares.": {
+    "en": "The number of companies presenting human Robots. And a called ubtech made one so realistic that at launch it sold 13 mil for 140 mil dollars.",
+    "es": "La cantidad de empresas que presentan robots humanos. Y una llamada ubtech hizo un tan realista que en el lanzamiento vendió 13 mil por 140 mil dólares."
+  },
+  "ConfyUI MCP e CLI": {
+    "en": "ConfyUI MCP and CLI",
+    "es": "ConfyUI MCP y CLI"
+  },
+  "Discussão sobre instalação e configuração do ComfyUI via CLI e MCP, com registro do processo que funcionou localmente.": {
+    "en": "Discussion about installation and configuration of ComfyUI via CLI and MCP, with a log of the process that worked locally.",
+    "es": "Discusión sobre la instalación y configuración de ComfyUI vía CLI y MCP, con registro del proceso que funcionó localmente."
+  },
+  "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR": {
+    "en": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR",
+    "es": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR"
+  },
+  "Gestoria — Laboratório de gestão de processos e agentes de IA, com simulação, revisão humana, avaliações e LOOP-R": {
+    "es": "Gestoria — Laboratorio de gestión de procesos y agentes de IA, con simulación, revisión humana, evaluaciones y LOOP-R",
+    "en": "Gestoria — Process management and AI agents laboratory, with simulation, human review, assessments and LOOP-R"
+  },
+  "loop-r — Framework para Sistemas e Empresas Autoaperfeiçoáveis: 9 agentes, loop com evidência, experimento, promoção e rollback": {
+    "es": "loop-r — Framework para Sistemas y Empresas Autoaperceptibles: 9 agentes, loop con evidencia, experimento, promoción y rollback",
+    "en": "loop-r — Framework for Self-Improving Systems and Companies: 9 agents, loop with evidence, experiment, promotion and rollback"
+  },
+  "O ponto central pode ser explicado assim: **o prompt não morreu; ele deixou de ser o “produto final” e virou apenas uma camada de orientação.** Com modelos mais autônomos, o valor migra de “escrever o prompt perfeito” para **definir intenção, contexto, regras, ferramentas, memória, skills e critérios de sucesso**. **Antes:** Prompt → resposta. **Agora:** Objetivo → contexto → agente → skills → ferramentas → execução → validação → resultado. Ou, numa frase forte: > **A era do prompt perfeito está acabando. A nova habilidade é ensinar a IA a trabalhar.** E isso encaixa muito bem em **FEP 2026** como evolução de *Engenharia de Prompt* para algo maior: **Engenharia de Intenção + Contexto + Execução**.": {
+    "es": "El punto central puede explicarse así: **el prompt no murió; dejó de ser el “producto final” y se convirtió solo en una capa de orientación.** Con modelos más autónomos, el valor migra de “escribir el prompt perfecto” a **definir intención, contexto, reglas, herramientas, memoria, habilidades y criterios de éxito**. **Antes:** Prompt → respuesta. **Ahora:** Objetivo → contexto → agente → habilidades → herramientas → ejecución → validación → resultado. En una frase fuerte: > **La era del prompt perfecto está terminando. La nueva habilidad es enseñar a la IA a trabajar.** Y eso encaja muy bien en **FEP 2026** como evolución de *Ingeniería de Prompt* a algo mayor: **Ingeniería de Intención + Contexto + Ejecución**.",
+    "en": "The central point can be explained like this: **the prompt hasn't died; it stopped being the “final product” and became just a guidance layer.** With more autonomous models, the value shifts from “writing the perfect prompt” to **defining intention, context, rules, tools, memory, skills, and success criteria**. **Before:** Prompt → response. **Now:** Goal → context → agent → skills → tools → execution → validation → result. Or, in a strong sentence: > **The era of the perfect prompt is ending. The new skill is teaching the AI to work.** And this fits very well in **FEP 2026** as an evolution of *Engenharia de Prompt* to something bigger: **Engenharia de Intenção + Contexto + Execução**."
+  },
+  "olha os Projetos  q produzi, alguns Atualizei tambem": {
+    "es": "mira los Proyectos que produje, algunos también actualicé",
+    "en": "look at the Projects I produced, I also updated some"
+  },
+  "Meta just beat OpenAI and Google at real-time transcription - The New Stack": {
+    "es": "Meta acaba de superar a OpenAI y Google en transcripción en tiempo real - The New Stack",
+    "en": "Meta just beat OpenAI and Google at real-time transcription - The New Stack"
+  },
+  "**👀 Fable 5.1 chegou** Fable 5.1 acaba de ser lançado. Aqui está tudo o que você precisa saber: O QUE HÁ DE NOVO 1) 🧠 Trabalho de longa duração mais confiável: Fable 5.1 mantém a consistência mesmo em tarefas complexas, onde um erro inicial poderia arruinar o resultado final. 2) 💻 Codificação mais robusta: Melhor em grandes refatorações, revisões de código, depuração de causas raiz e funcionalidades que abrangem toda a base de código. 3) 📊 Entregas finalizadas de melhor qualidade: Pode levar a pesquisa até um relatório refinado, uma planilha interativa ou uma apresentação com fontes verificáveis. 4) 🔍 Melhoria na pesquisa e no uso de computadores: Melhor em buscas com várias etapas, leitura de PDFs densos e recuperação quando as ações do navegador ou da área de trabalho falham. 5) 💰 Fluxos de trabalho de agentes mais econômicos: Os preços padrão permanecem US$ 10 para entrada e US$ 50 para saída por milhão de tokens, mas as leituras de cache são 75% mais baratas. Aqui estão cinco coisas boas para saber 👇 a) A pesquisa mais que dobrou, os fluxos de trabalho empresariais aumentaram 84% e a codificação agentiva melhorou 33%. b) Contexto de 1 milhão de tokens, saída máxima de 128 mil e conhecimento atualizado até junho de 2026. c) A Anthropic recomenda o Opus 5, mais barato, para o trabalho diário e o Fable 5.1 para tarefas realmente difíceis. d) A versão Max inclui uso limitado do Fable, enquanto os usuários da versão Pro ainda precisam de créditos pagos conforme o uso. e) Isso adiciona esforço ajustável e atualizações de progresso, mas chamadas forçadas de ferramentas e históricos de conversas editados podem quebrar agentes existentes.": {
+    "es": "**👀 Fable 5.1 llegó** Fable 5.1 acaba de ser lanzado. Aquí está todo lo que necesitas saber: QUÉ HAY DE NUEVO 1) 🧠 Trabajo de larga duración más confiable: Fable 5.1 mantiene la consistencia incluso en tareas complejas, donde un error inicial podría arruinar el resultado final. 2) 💻 Codificación más robusta: Mejor en grandes refactorizaciones, revisiones de código, depuración de causas raíz y funcionalidades que abarcan toda la base de código. 3) 📊 Entregas finalizadas de mejor calidad: Puede llevar la investigación hasta un informe refinado, una hoja de cálculo interactiva o una presentación con fuentes verificables. 4) 🔍 Mejora en la investigación y el uso de computadoras: Mejor en búsquedas con varias etapas, lectura de PDFs densos y recuperación cuando las acciones del navegador o del escritorio fallan. 5) 💰 Flujos de trabajo de agentes más económicos: Los precios estándar permanecen US$ 10 para entrada y US$ 50 para salida por millón de tokens, pero las lecturas de caché son 75% más baratas. Aquí están cinco cosas buenas para saber 👇 a) La investigación más que se duplicó, los flujos de trabajo empresariales aumentaron 84% y la codificación agente mejoró 33%. b) Contexto de 1 millón de tokens, salida máxima de 128 mil y conocimiento actualizado hasta junio de 2026. c) Anthropic recomienda el Opus 5, más barato, para el trabajo diario y el Fable 5.1 para tareas realmente difíciles. d) La versión Max incluye uso limitado del Fable, mientras que los usuarios de la versión Pro aún necesitan créditos pagados según el uso. e) Esto agrega esfuerzo ajustable y actualizaciones de progreso, pero llamadas forzadas de herramientas y historiales de conversaciones editados pueden romper agentes existentes.",
+    "en": "**👀 Fable 5.1 is here** Fable 5.1 has just been released. Here’s everything you need to know: WHAT’S NEW 1) 🧠 More reliable long‑running work: Fable 5.1 maintains consistency even in complex tasks where an initial error could ruin the final outcome. 2) 💻 More robust coding: Better at large refactorings, code reviews, root‑cause debugging, and features that span the entire codebase. 3) 📊 Higher‑quality finished deliveries: Can take research all the way to a polished report, an interactive spreadsheet, or a presentation with verifiable sources. 4) 🔍 Improved research and computer usage: Better at multi‑step searches, reading dense PDFs, and recovery when browser or desktop actions fail. 5) 💰 More cost‑effective agent workflows: Standard pricing remains US$ 10 for input and US$ 50 for output per million tokens, but cache reads are 75% cheaper. Here are five good things to know 👇 a) Research more than doubled, business workflows increased 84%, and agentic coding improved 33%. b) 1 million‑token context, max output of 128 k, and knowledge up to date through June 2026. c) Anthropic recommends Opus 5, cheaper, for daily work and Fable 5.1 for truly hard tasks. d) The Max tier includes limited Fable usage, while Pro users still need pay‑as‑you‑go credits. e) It adds adjustable effort and progress updates, but forced tool calls and edited conversation histories can break existing agents."
+  },
+  "IA Cultivada — não se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G": {
+    "en": "Cultivated AI — not programmed, cultivated https://share.google/8FKgpBHd9AewWZn9G",
+    "es": "IA Cultivada — no se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G"
+  },
+  "Vale a Pena estudar.": {
+    "en": "It's worth studying.",
+    "es": "Vale la pena estudiar."
+  },
+  "Isso esta ficando em uma velocidade incrivel": {
+    "en": "This is getting at an incredible speed",
+    "es": "Esto está quedando a una velocidad increíble"
+  },
+  "Vídeos Virais de Pintura em Pedra": {
+    "en": "Viral Stone Painting Videos",
+    "es": "Vídeos Virales de Pintura en Piedra"
+  },
+  "Tópico documenta um framework de prompts para criar vídeos virais de pintura em pedra usando IA, com etapa de geração de imagem final seguida de vídeo timelapse image-to-video.": {
+    "en": "Topic documents a prompt framework for creating viral stone painting videos using IA, with a final image generation step followed by a timelapse image-to-video video.",
+    "es": "Tópico documenta un framework de prompts para crear vídeos virales de pintura en piedra usando IA, con etapa de generación de imagen final seguida de vídeo timelapse image-to-video."
+  },
+  "### Últimas Atualizações de Projetos — 07/09 1. **cerebro-integra** — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências. 2. **cerebro-mcp** — Servidor MCP que expõe o segundo cérebro como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots. 3. **cerebro-duplo** — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade. 4. **IA do Zero** — Os primeiros 20 pedidos de quem nunca usou IA, por situação, com dicas práticas. 5. **agi-newprof** — Vídeo do YouTube vira análise, vídeo completo narrado e 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregues no Telegram. 6. **copilot-agentes-kit** — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5. 7. **astra-2cerebro** — Seu segundo cérebro com IA para Claude Code e Codex, em arquivos que você controla. 8. **Kit do Arquiteto de Agentes** — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado. 9. **openpcbot v3** — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR. 10. **Anúncios Top com IA** — 4 skills pro Claude Code: espionar, dirigir, auditar e montar anúncios em vídeo com IA. 11. **yt-pub-livesx2** — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML.": {
+    "en": "Latest Project Updates — 07/09  \n1. **cerebro-integra** — Connects the second brain to Telegram, site via local API, importers, n8n and voice, without dependencies.  \n2. **cerebro-mcp** — MCP server that exposes the second brain as tools for Claude Code, Codex, Claude Desktop, n8n and bots.  \n3. **cerebro-duplo** — One brain, two agents: the same second brain in Claude Code and Codex, with task router and parity.  \n4. **IA do Zero** — The first 20 requests from those who have never used AI, by situation, with practical tips.  \n5. **agi-newprof** — YouTube video becomes analysis, full narrated video and 3 reels (inemaimg + Agnes + inemavox + HyperFrames), delivered on Telegram.  \n6. **copilot-agentes-kit** — Practical kit of Copilot + Agents for Companies: templates for work + verifier and headless test for courses v5.  \n7. **astra-2cerebro** — Your second brain with AI for Claude Code and Codex, in files you control.  \n8. **Kit do Arquiteto de Agentes** — Seven templates that become your agent's specification on a page, with simulated rehearsal.  \n9. **openpcbot v3** — Personal assistant with durable queue, Ollama manager, cost per call and PT-BR memory.  \n10. **Anúncios Top com IA** — 4 skills for Claude Code: spy, direct, audit and create video ads with AI.  \n11. **yt-pub-livesx2** — YouTube publisher for N channels: 1 daemon, 1 database, job queue and channels in YAML.",
+    "es": "### Últimas Actualizaciones de Proyectos — 07/09  \n1. **cerebro-integra** — Conecta el segundo cerebro a Telegram, sitio vía API local, importadores, n8n y voz, sin dependencias.  \n2. **cerebro-mcp** — Servidor MCP que expone el segundo cerebro como herramientas para Claude Code, Codex, Claude Desktop, n8n y bots.  \n3. **cerebro-duplo** — Un cerebro, dos agentes: el mismo segundo cerebro en Claude Code y en Codex, con enrutador de tareas y paridad.  \n4. **IA do Zero** — Los primeros 20 pedidos de quien nunca usó IA, por situación, con consejos prácticos.  \n5. **agi-newprof** — Video de YouTube se vuelve análisis, video completo narrado y 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregados en Telegram.  \n6. **copilot-agentes-kit** — Kit práctico de Copilot + Agentes para Empresas: modelos para el trabajo + verificador y prueba headless para cursos v5.  \n7. **astra-2cerebro** — Tu segundo cerebro con IA para Claude Code y Codex, en archivos que tú controlas.  \n8. **Kit do Arquiteto de Agentes** — Siete modelos que se convierten en la especificación de tu agente en una página, con ensayo simulado.  \n9. **openpcbot v3** — Asistente personal con cola durable, gestor de Ollama, costo por llamada y memoria PT-BR.  \n10. **Anúncios Top com IA** — 4 skills para Claude Code: espiar, dirigir, auditar y montar anuncios en video con IA.  \n11. **yt-pub-livesx2** — Publicador YouTube para N canales: 1 daemon, 1 base de datos, cola de jobs y canales en YAML."
+  },
+  "A IA não é mais Projetada é Cultivada": {
+    "es": "La IA ya no es diseñada, es cultivada",
+    "en": "AI is no longer Designed, it is Cultivated"
+  },
+  "Parece que vamos ter boas novidades … Previsto para 2 semanas, mas acho que alguns demora mais, segue: 1️⃣ GPT Bel: Nova linha de nomenclatura da OpenAI, focada em alinhamento de segurança, mais rápido e mais potente que o Astra, velocidade de teste interno alegada em 6 vezes 2️⃣ GPT-6 Sol: Alta disponibilidade para uso diário, pode se tornar o novo \"cavalo de trabalho padrão\", capacidades de Agent de longo alcance e código elevadas mais um nível 3️⃣ Claude Fable 5.2: Iteração flagship da Anthropic, codificação + trabalho com conhecimento + tarefas longas continuam esmagando a concorrência, capacidades voltadas para pesquisa ainda mais fortes 4️⃣ Claude Opus 5.1: Atualização do rei da relação custo-benefício, metade do preço se aproximando do desempenho nível Fable, escolha principal para implementação empresarial 5️⃣ Grok 4.7: Novo flagship da xAI, impulsionado por dados de engenharia da SpaceX, multimodal em tempo real + raciocínio mais selvagem, relação custo-benefício continua dando um tapa na cara 6️⃣ DeepSeek V4.1 Pro: Topo do acampamento open-source, 1M de contexto + Agent superpotente, o açougueiro de preços ataca novamente 7️⃣ GLM-5.5 (Z.AI): Nova geração da Zhipu, duplo foco em chinês + código, pesos open-source impactando o teto dos fechados 8️⃣ KIMI K3.1: Evolução do rei do contexto longo da Moonshot AI, MoE de nível 2.8T reforçado novamente, visual + documentos superlongos mais estáveis 9️⃣ Qwen 4.0: Nova geração do Tongyi da Alibaba, salto multimodal + código abrangente, ecossistema com cobertura mais ampla 🔟 Gemini 4.0: Atualização legítima do flagship do Google, 1M de contexto + custo-benefício extremo, velocidade nível Flash com QI nível Pro 1️⃣1️⃣ Muse Spark 1.4: Nova obra do laboratório de superinteligência da Meta, fluxos de trabalho de Agent mais econômicos em tokens, eficiência em tarefas de longo alcance cortada mais uma vez 1️⃣2️⃣ Xiaomi MIMO-V3-Pro / Flash: Fabricante de smartphones invade a vanguarda, versões dupla de ponta + nuvem, velocidade de implementação possivelmente a mais rápida **Previsão de uma onda de 12 novos modelos de IA nas próximas duas semanas**, com alguns podendo demorar mais. As principais promessas são: * **OpenAI:** GPT Bel com mais velocidade e potência; GPT-6 Sol para uso diário, agentes e programação. * **Anthropic:** Fable 5.2 para tarefas complexas e pesquisa; Opus 5.1 buscando desempenho próximo com menor preço. * **Grok e Gemini:** avanços em raciocínio, multimodalidade e velocidade. * **DeepSeek, GLM, Kimi e Qwen:** competição em preço, código, contexto longo e modelos abertos. * **Meta e Xiaomi:** foco em agentes eficientes e execução rápida. **A ideia central: IAs mais capazes, rápidas e baratas, com foco crescente em agentes que executam trabalhos longos.**": {
+    "en": "It looks like we’ll have good news … Expected in 2 weeks, but I think some will take longer, here it is:\n\n1️⃣ GPT Bel: New naming line from OpenAI, focused on safety alignment, faster and more powerful than Astra, internal test speed claimed to be 6 times\n\n2️⃣ GPT-6 Sol: High availability for daily use, could become the new “standard workhorse”, long‑range Agent and code capabilities elevated another level\n\n3️⃣ Claude Fable 5.2: Flagship iteration from Anthropic, coding + knowledge work + long tasks continue to crush the competition, research‑oriented capabilities even stronger\n\n4️⃣ Claude Opus 5.1: Update of the cost‑performance king, half the price approaching Fable‑level performance, primary choice for enterprise deployment\n\n5️⃣ Grok 4.7: New flagship from xAI, powered by SpaceX engineering data, real‑time multimodal + wilder reasoning, cost‑performance still slapping the competition\n\n6️⃣ DeepSeek V4.1 Pro: Top of the open‑source camp, 1M context + super‑powerful Agent, the price butcher strikes again\n\n7️⃣ GLM-5.5 (Z.AI): New generation from Zhipu, dual focus on Chinese + code, open‑source weights impacting the ceiling of closed models\n\n8️⃣ KIMI K3.1: Evolution of the long‑context king from Moonshot AI, level‑2.8T MoE reinforced again, visual + super‑long documents more stable\n\n9️⃣ Qwen 4.0: New generation of Alibaba’s Tongyi, multimodal leap + comprehensive code, ecosystem with broader coverage\n\n🔟 Gemini 4.0: Legitimate update of Google’s flagship, 1M context + extreme cost‑performance, Flash‑level speed with Pro‑level IQ\n\n1️⃣1️⃣ Muse Spark 1.4: New work from Meta’s superintelligence lab, Agent workflows more token‑efficient, long‑range task efficiency cut once again\n\n1️⃣2️⃣ Xiaomi MIMO-V3-Pro / Flash: Smartphone maker invades the forefront, dual edge + cloud versions, implementation speed possibly the fastest\n\n**Forecast of a wave of 12 new AI models in the next two weeks**, with some possibly taking longer. The main promises are:\n\n* **OpenAI:** GPT Bel with more speed and power; GPT-6 Sol for daily use, agents and programming.\n* **Anthropic:** Fable 5.2 for complex tasks and research; Opus 5.1 seeking near‑performance with lower price.\n* **Grok and Gemini:** advances in reasoning, multimodality and speed.\n* **DeepSeek, GLM, Kimi and Qwen:** competition on price, code, long context and open models.\n* **Meta and Xiaomi:** focus on efficient agents and fast execution.\n\n**Central idea: More capable, faster and cheaper AIs, with a growing focus on agents that perform long‑duration work.**",
+    "es": "Parece que vamos a tener buenas novedades … Previsto para 2 semanas, pero creo que algunos tardarán más, sigue:\n\n1️⃣ GPT Bel: Nueva línea de nomenclatura de OpenAI, enfocada en alineación de seguridad, más rápido y más potente que el Astra, velocidad de prueba interna alegada en 6 veces  \n2️⃣ GPT-6 Sol: Alta disponibilidad para uso diario, puede convertirse en el nuevo \"caballo de trabajo estándar\", capacidades de Agent de largo alcance y código elevadas un nivel más  \n3️⃣ Claude Fable 5.2: Iteración flagship de Anthropic, codificación + trabajo con conocimiento + tareas largas siguen aplastando a la competencia, capacidades orientadas a la investigación aún más fuertes  \n4️⃣ Claude Opus 5.1: Actualización del rey de la relación costo-beneficio, mitad del precio acercándose al rendimiento nivel Fable, elección principal para implementación empresarial  \n5️⃣ Grok 4.7: Nuevo flagship de xAI, impulsado por datos de ingeniería de SpaceX, multimodal en tiempo real + razonamiento más salvaje, relación costo-beneficio sigue dando una bofetada  \n6️⃣ DeepSeek V4.1 Pro: Cima del campamento open-source, 1M de contexto + Agent superpotente, el carnicero de precios ataca de nuevo  \n7️⃣ GLM-5.5 (Z.AI): Nueva generación de Zhipu, doble foco en chino + código, pesos open-source impactando el techo de los cerrados  \n8️⃣ KIMI K3.1: Evolución del rey del contexto largo de Moonshot AI, MoE de nivel 2.8T reforzado de nuevo, visual + documentos superlargos más estables  \n9️⃣ Qwen 4.0: Nueva generación del Tongyi de Alibaba, salto multimodal + código amplio, ecosistema con cobertura más amplia  \n🔟 Gemini 4.0: Actualización legítima del flagship de Google, 1M de contexto + costo-beneficio extremo, velocidad nivel Flash con IQ nivel Pro  \n1️⃣1️⃣ Muse Spark 1.4: Nueva obra del laboratorio de superinteligencia de Meta, flujos de trabajo de Agent más económicos en tokens, eficiencia en tareas de largo alcance recortada una vez más  \n1️⃣2️⃣ Xiaomi MIMO-V3-Pro / Flash: Fabricante de smartphones invade la vanguardia, versiones dobles de punta + nube, velocidad de implementación posiblemente la más rápida  \n\n**Previsión de una ola de 12 nuevos modelos de IA en las próximas dos semanas**, con algunos pudiendo tardar más. Las principales promesas son:  \n* **OpenAI:** GPT Bel con más velocidad y potencia; GPT-6 Sol para uso diario, agentes y programación.  \n* **Anthropic:** Fable 5.2 para tareas complejas e investigación; Opus 5.1 buscando rendimiento próximo con menor precio.  \n* **Grok y Gemini:** avances en razonamiento, multimodalidad y velocidad.  \n* **DeepSeek, GLM, Kimi y Qwen:** competencia en precio, código, contexto largo y modelos abiertos.  \n* **Meta y Xiaomi:** foco en agentes eficientes y ejecución rápida.  \n\n**La idea central: IAs más capaces, rápidas y baratas, con foco creciente en agentes que ejecutan trabajos largos.**"
+  },
+  "E os Cursos": {
+    "en": "And the Courses",
+    "es": "Y los Cursos"
+  },
+  "## Últimas Atualizações de Cursos 07/09 — **NOVO** — **Agentes na Clínica** — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **Agentes no Contábil e no Financeiro** — Caderno do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **Agentes no Escritório de Advocacia** — Caderno do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **FEP 2026** — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings) 07/09 — **NOVO** — **IA do Zero** — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas) 07/09 — **NOVO** — **Copilot + Agentes para Empresas** — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5) 07/09 — **NOVO** — **GPT-6 Astra: operação técnica** — Delegar, verificar, iterar e escalar com Codex (8 módulos) 07/09 — **NOVO** — **GPT-6 Astra na prática** — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas) 07/09 — **NOVO** — **FEP → AGI** — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026 07/09 — **NOVO** — **Super-Agentes** — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas) 07/09 — **NOVO** — **Os Super-Agentes Chegaram** — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas) 06/09 — **NOVO** — **Arquiteto de Trabalho com IA** — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas) Estao no inema.club ou no inema.pro": {
+    "en": "## Latest Course Updates 07/09 — **NOVO** — **Agentes na Clínica** — Caderno de Saúde do Arquiteto de Trabalho com IA (3 classes)  \n07/09 — **NOVO** — **Agentes no Contábil e no Financeiro** — Caderno do Arquiteto de Trabalho com IA (3 classes)  \n07/09 — **NOVO** — **Agentes no Escritório de Advocacia** — Caderno do Arquiteto de Trabalho com IA (3 classes)  \n07/09 — **NOVO** — **FEP 2026** — AGI has arrived and the prompt almost died: the FEP rewritten technique by technique (7 classes, de-para and kit of 12 briefings)  \n07/09 — **NOVO** — **IA do Zero** — The first requests from those who have never used AI, with the why of each (4 classes)  \n07/09 — **NOVO** — **Copilot + Agentes para Empresas** — From working with AI to automating corporate processes (9 classes, format v5)  \n07/09 — **NOVO** — **GPT-6 Astra: operação técnica** — Delegate, verify, iterate and scale with Codex (8 modules)  \n07/09 — **NOVO** — **GPT-6 Astra na prática** — Delegate the entire task to the new assistant, without coding (8 classes)  \n07/09 — **NOVO** — **FEP → AGI** — From prompt to intention: the evolution of FEP in 9 classes, from the 5 eras to the turn of Sep/2026  \n07/09 — **NOVO** — **Super-Agentes** — From AI that answers to AI that works: delegate real responsibilities to AI agents (8 classes)  \n07/09 — **NOVO** — **Os Super-Agentes Chegaram** — What changes in your work when AI stops waiting for orders (6 classes)  \n06/09 — **NOVO** — **Arquiteto de Trabalho com IA** — Redesign processes for humans to direct and agents to execute (8 classes)  \nThey are on inema.club or on inema.pro",
+    "es": "## Últimas Actualizaciones de Cursos 07/09 — **NUEVO** — **Agentes na Clínica** — Caderno de Saúde do Arquiteto de Trabalho com IA (3 clases)  \n07/09 — **NUEVO** — **Agentes no Contábil e no Financeiro** — Caderno do Arquiteto de Trabalho com IA (3 clases)  \n07/09 — **NUEVO** — **Agentes no Escritório de Advocacia** — Caderno do Arquiteto de Trabalho com IA (3 clases)  \n07/09 — **NUEVO** — **FEP 2026** — La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases, de-para y kit de 12 briefings)  \n07/09 — **NUEVO** — **IA do Zero** — Los primeros pedidos de quien nunca usó IA, con el porqué de cada uno (4 clases)  \n07/09 — **NUEVO** — **Copilot + Agentes para Empresas** — Del trabajo con IA a la automatización de los procesos corporativos (9 clases, formato v5)  \n07/09 — **NUEVO** — **GPT-6 Astra: operação técnica** — Delegar, verificar, iterar y escalar con Codex (8 módulos)  \n07/09 — **NUEVO** — **GPT-6 Astra na prática** — Delegue la tarea completa al nuevo asistente, sin programar (8 clases)  \n07/09 — **NUEVO** — **FEP → AGI** — Del prompt a la intención: la evolución del FEP en 9 clases, de las 5 eras al cambio de set/2026  \n07/09 — **NUEVO** — **Super-Agentes** — De la IA que responde a la IA que trabaja: delega responsabilidades reales a agentes de IA (8 clases)  \n07/09 — **NUEVO** — **Os Super-Agentes Chegaram** — Qué cambia en tu trabajo cuando la IA deja de esperar órdenes (6 clases)  \n06/09 — **NUEVO** — **Arquiteto de Trabalho com IA** — Rediseña procesos para que humanos dirijan y agentes ejecuten (8 clases)  \nEstán en inema.club o en inema.pro"
+  },
+  "Olha q eu Falava... Chegando o Momento": {
+    "en": "Look what I was saying... The moment is coming",
+    "es": "Mira lo que decía... Llegando el momento"
+  },
+  "GPT-6 Astra vs Fable 5.1 em 15 tarefas reais": {
+    "en": "GPT-6 Astra vs Fable 5.1 in 15 real tasks",
+    "es": "GPT-6 Astra vs Fable 5.1 en 15 tareas reales"
+  },
+  "### Resumo — Claude Fable 5.1 e Mythos 5.1": {
+    "en": "### Summary — Claude Fable 5.1 and Mythos 5.1",
+    "es": "### Resumen — Claude Fable 5.1 y Mythos 5.1"
+  },
+  "Apresenta o **Claude Fable 5.1** como uma evolução importante do Fable 5, principalmente para **programação, agentes e trabalho intelectual complexo**. * **Desempenho:** segundo os benchmarks apresentados, o Fable 5.1 supera significativamente o Fable 5. Um destaque é que, em alguns testes, o **5.1 com baixo esforço supera o Fable 5 usando esforço máximo**. * **Preço por token:** permanece em **US$10/milhão de tokens de entrada e US$50/milhão de saída**, segundo o vídeo. * **Custo efetivo menor:** a alegação é de cerca de **25% de economia em workflows típicos** e potencialmente **até ~50% em tarefas altamente agentic**, principalmente devido à maior eficiência e redução do preço de cache reads. * **Agentes e coding:** os maiores avanços parecem estar em **agentic coding, uso de terminal, raciocínio multidisciplinar e execução autônoma de tarefas**. * **Design/front-end:**  se percebe melhora também na geração visual. Em um teste simples, pediu um **urso 3D andando de bicicleta**; o 5.1 produziu sombras, física e aparência consideradas melhores. * **Teste de custo:** no exemplo mostrado, o Fable 5.1 teria custado aproximadamente **US$4,53**, contra **US$5,41** no Fable 5. Ou seja, cerca de **16% menos** nesse teste específico. * **Mythos 5.1:** seria essencialmente o Fable 5.1 com **salvaguardas mais permissivas**, destinado a usuários verificados em **cibersegurança e ciências da vida**. Não seria de acesso geral. * **Empresas e privacidade:** é mencionado um novo sistema voltado a clientes empresariais, permitindo políticas mais rígidas de **retenção de dados/privacidade**. * **Disponibilidade:** segundo o vídeo, os modelos estariam disponíveis no Claude, API e plataformas de nuvem como AWS, Google Cloud e Azure. ### O ponto mais importante A grande notícia **não seria simplesmente \"um modelo mais inteligente\"**. Seria a combinação: **mais capacidade + menos esforço computacional + menos tokens + menor custo real.** Isso é especialmente importante para **agentes**, porque um agente pode realizar dezenas ou centenas de chamadas ao modelo. Uma redução de 25–50% no custo efetivo, combinada com maior capacidade de resolver tarefas na primeira tentativa, pode alterar bastante a viabilidade econômica de sistemas agentic. **Mas há uma ressalva importante:** O lançamento havia acabado de acontecer e que os testes ainda eram preliminares. Os benchmarks apresentados pelo fabricante e o teste do urso **não são suficientes para concluir que o 5.1 é sempre muito superior ou 25–50% mais barato** em aplicações reais. ● Descobri que usando --setting-sources \"\" e --strict-mcp-config a chamada headless cai de 150 mil tokens para ~760 tokens. Vou repassar essa informação ao agente que está construindo o provedor via claude -p. · summarized": {
+    "en": "It presents **Claude Fable 5.1** as an important evolution of Fable 5, especially for **programming, agents, and complex intellectual work**.  \n* **Performance:** according to the benchmarks presented, Fable 5.1 significantly outperforms Fable 5. A highlight is that, in some tests, **5.1 with low effort outperforms Fable 5 using maximum effort**.  \n* **Price per token:** remains at **US$10/million input tokens and US$50/million output tokens**, according to the video.  \n* **Lower effective cost:** the claim is about **25% savings on typical workflows** and potentially **up to ~50% on highly agentic tasks**, mainly due to higher efficiency and reduced cache read pricing.  \n* **Agents and coding:** the biggest advances appear to be in **agentic coding, terminal use, multidisciplinary reasoning, and autonomous task execution**.  \n* **Design/front-end:** an improvement is also noticeable in visual generation. In a simple test, a **3D bear riding a bicycle** was requested; 5.1 produced shadows, physics, and appearance considered better.  \n* **Cost test:** in the shown example, Fable 5.1 would have cost approximately **US$4.53**, versus **US$5.41** for Fable 5. That is about **16% less** in this specific test.  \n* **Mythos 5.1:** would essentially be Fable 5.1 with **more permissive safeguards**, aimed at verified users in **cybersecurity and life sciences**. It would not be generally accessible.  \n* **Enterprise and privacy:** a new system for enterprise customers is mentioned, allowing stricter **data retention/privacy** policies.  \n* **Availability:** according to the video, the models would be available on Claude, API, and cloud platforms such as AWS, Google Cloud, and Azure.  \n\n### The most important point  \nThe big news **would not simply be “a smarter model.”** It would be the combination: **more capacity + less computational effort + fewer tokens + lower real cost.** This is especially important for **agents**, because an agent can make dozens or hundreds of model calls. A 25–50% reduction in effective cost, combined with greater ability to solve tasks on the first try, can significantly change the economic viability of agentic systems.  \n\n**But there is an important caveat:** the launch had just happened and the tests were still preliminary. The benchmarks presented by the manufacturer and the bear test **are not sufficient to conclude that 5.1 is always vastly superior or 25–50% cheaper** in real‑world applications.  \n\n● I discovered that using --setting-sources \"\" and --strict-mcp-config the headless call drops from 150 k tokens to ~760 tokens. I will pass this information to the agent building the provider via claude -p.  \n\n· summarized",
+    "es": "Presenta el **Claude Fable 5.1** como una evolución importante del Fable 5, principalmente para **programación, agentes y trabajo intelectual complejo**. \n* **Rendimiento:** según los benchmarks presentados, el Fable 5.1 supera significativamente al Fable 5. Un destaque es que, en algunas pruebas, el **5.1 con bajo esfuerzo supera al Fable 5 usando esfuerzo máximo**. \n* **Precio por token:** permanece en **US$10/milhão de tokens de entrada e US$50/milhão de saída**, según el video. \n* **Costo efectivo menor:** la alegación es de alrededor de **25% de ahorro en flujos de trabajo típicos** y potencialmente **hasta ~50% en tareas altamente agentic**, principalmente debido a la mayor eficiencia y reducción"
+  }
+}

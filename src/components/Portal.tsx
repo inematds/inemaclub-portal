@@ -9,6 +9,7 @@ import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, HTML_LANG, type Locale 
 import { getDictionary } from '@/i18n/dictionary'
 import { translatedFor } from '@/data/translated-courses'
 import { localizedSrc } from '@/i18n/images'
+import feedsI18n from '@/data/feeds-i18n.json'
 
 interface VisitStats {
   total: number
@@ -307,6 +308,9 @@ export default function Portal({
   const [repos, setRepos] = useState<Repo[]>([])
   const t = getDictionary(locale)
   const img = (src: string) => localizedSrc(src, locale)
+  // Feeds (novidades/atualizações) são dados em PT; scripts/traduz-feeds.mjs mantém o cache por idioma.
+  const tr = (text: string) =>
+    locale === 'pt' ? text : ((feedsI18n as Record<string, Partial<Record<Locale, string>>>)[text]?.[locale] ?? text)
   const translated = translatedFor(locale)
 
   // Registra a visita ao montar
@@ -1324,7 +1328,7 @@ export default function Portal({
                 onClick={() => setNovidadesExpanded((v) => !v)}
                 style={{ cursor: 'pointer' }}
               >
-                <h3>{t.novidades.title}{locale !== 'pt' && <small className="lang-note"> · {t.novidades.ptNote}</small>}</h3>
+                <h3>{t.novidades.title}</h3>
                 <span className="updates-toggle">{novidadesExpanded ? t.novidades.less : t.novidades.more}</span>
               </div>
               <div className={`updates-list${novidadesExpanded ? ' expanded' : ''}`}>
@@ -1340,12 +1344,12 @@ export default function Portal({
                       >
                         <span className="update-date">{formatDate(n.date)}</span>
                         <span className="update-type novidade-grupo">{n.grupo}</span>
-                        <span className="update-title">{n.titulo}</span>
+                        <span className="update-title">{tr(n.titulo)}</span>
                         <span className="update-arrow">{aberta ? '−' : '+'}</span>
                       </button>
                       {aberta && (
                         <div className="novidade-corpo">
-                          {n.resumo && <p>{n.resumo}</p>}
+                          {n.resumo && <p>{tr(n.resumo)}</p>}
                           {n.url && (
                             <a
                               href={n.url}
@@ -1372,7 +1376,7 @@ export default function Portal({
               onClick={() => setUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>{t.updates.coursesTitle}{locale !== 'pt' && <small className="lang-note"> · {t.updates.ptNote}</small>}</h3>
+              <h3>{t.updates.coursesTitle}</h3>
               <span className="updates-toggle">{updatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
             <div className={`updates-list${updatesExpanded ? ' expanded' : ''}`}>
@@ -1389,7 +1393,7 @@ export default function Portal({
                   <span className={`update-type ${update.type}`}>
                     {update.type === 'novo' ? t.updates.typeNovo : t.updates.typeAtualizado}
                   </span>
-                  <span className="update-title">{update.title}</span>
+                  <span className="update-title">{tr(update.title)}</span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}
@@ -1403,7 +1407,7 @@ export default function Portal({
               onClick={() => setProjectUpdatesExpanded((v) => !v)}
               style={{ cursor: 'pointer' }}
             >
-              <h3>{t.updates.projectsTitle}{locale !== 'pt' && <small className="lang-note"> · {t.updates.ptNote}</small>}</h3>
+              <h3>{t.updates.projectsTitle}</h3>
               <span className="updates-toggle">{projectUpdatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
             <div className={`updates-list${projectUpdatesExpanded ? ' expanded' : ''}`}>
@@ -1420,7 +1424,7 @@ export default function Portal({
                   <span className={`update-type ${update.type}`}>
                     {update.type === 'novo' ? t.updates.typeNovo : t.updates.typeAtualizado}
                   </span>
-                  <span className="update-title">{update.title}</span>
+                  <span className="update-title">{tr(update.title)}</span>
                   <span className="update-arrow">→</span>
                 </a>
               ))}
