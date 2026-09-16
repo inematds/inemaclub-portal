@@ -11,6 +11,7 @@ export const LOCALIZED_IMAGES = new Set([
   'content2video.png',
   'conviteinemap.png',
   'gestao-agentes-2027.png',
+  'ia-cultivada.png',
   'inemaagenteshubv.jpg',
   'inemac2.jpg',
   'inemaclubee.jpg',
