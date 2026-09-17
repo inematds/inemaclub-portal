@@ -625,10 +625,10 @@ export default function Portal({
       <section id="evento-gestao-agentes-2027" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://eventos.inema.pro/gestao-ia/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'Gestão de Agentes 2027', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/gestao-ia/', 'Gestão de Agentes 2027', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -653,10 +653,10 @@ export default function Portal({
       <section id="evento-ia-cultivada" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://inematds.github.io/iacultivada/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'IA Cultivada', 'evento')}
+            onClick={() => trackClick('https://inematds.github.io/iacultivada/', 'IA Cultivada', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -681,10 +681,10 @@ export default function Portal({
       <section id="evento-claude-codex" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="/guias/claude-codex.html"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'Claude → Codex agnóstico', 'evento')}
+            onClick={() => trackClick('/guias/claude-codex.html', 'Claude → Codex agnóstico', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -724,10 +724,10 @@ export default function Portal({
       <section id="evento-agi-chegou" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://eventos.inema.pro/agi-ready/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'AGI chegou', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/agi-ready/', 'AGI chegou', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -752,10 +752,10 @@ export default function Portal({
       <section id="evento-content2video" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://eventos.inema.pro/content2video.html"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'Content2Video', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/content2video.html', 'Content2Video', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -780,10 +780,10 @@ export default function Portal({
       <section id="evento-webmcp" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://eventos.inema.pro/webmcp/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'WebMCP', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/webmcp/', 'WebMCP', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -860,10 +860,10 @@ export default function Portal({
       <section id="evento-destaque" style={{ padding: '2.5rem 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://eventos.inema.pro/inemaccbot.html"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'Evento', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/inemaccbot.html', 'Evento', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -1468,10 +1468,10 @@ export default function Portal({
       <section style={{ padding: '0 0 2rem' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/"
+            href="https://eventos.inema.pro/agentes-hub-v.html"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://eventos.inema.pro/', 'Banner evento', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/agentes-hub-v.html', 'Banner evento', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
