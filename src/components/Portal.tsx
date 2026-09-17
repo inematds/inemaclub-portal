@@ -9,6 +9,7 @@ import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, HTML_LANG, type Locale 
 import { getDictionary } from '@/i18n/dictionary'
 import { translatedFor } from '@/data/translated-courses'
 import { localizedSrc } from '@/i18n/images'
+import { localizedEventUrl } from '@/i18n/eventos'
 import feedsI18n from '@/data/feeds-i18n.json'
 
 interface VisitStats {
@@ -293,12 +294,6 @@ const LANG_ICON: Record<string, string> = {
  */
 const SHOW_DETALHES = false
 
-/** Áreas do eventos.inema.pro publicadas também em /en/ e /es/. */
-const EVENTOS_AREAS_I18N = new Set([
-  'https://eventos.inema.pro/ia-cultivada/',
-  'https://eventos.inema.pro/claude-codex/',
-])
-
 export default function Portal({
   visitStats,
   locale = 'pt',
@@ -314,8 +309,8 @@ export default function Portal({
   const [repos, setRepos] = useState<Repo[]>([])
   const t = getDictionary(locale)
   const img = (src: string) => localizedSrc(src, locale)
-  // Áreas do eventos.inema.pro que têm versão en/ e es/ — o banner leva ao idioma da página.
-  const evLink = (url: string) => (locale !== 'pt' && EVENTOS_AREAS_I18N.has(url) ? `${url}${locale}/` : url)
+  // Menu, banners e feeds mantêm o idioma ao abrir qualquer área do Eventos.
+  const evLink = (url: string) => localizedEventUrl(url, locale)
   // Feeds (novidades/atualizações) são dados em PT; scripts/traduz-feeds.mjs mantém o cache por idioma.
   const tr = (text: string) =>
     locale === 'pt' ? text : ((feedsI18n as Record<string, Partial<Record<Locale, string>>>)[text]?.[locale] ?? text)
@@ -364,6 +359,7 @@ export default function Portal({
 
   // Rastreia cliques em links externos
   function trackClick(url: string, label: string, section: string) {
+    url = evLink(url)
     const sid = localStorage.getItem('animabook_sid') ?? 'unknown'
     fetch('/api/click', {
       method: 'POST',
@@ -540,7 +536,7 @@ export default function Portal({
             <a href="#trilha-iniciantes" className="section-nav-link">{t.nav.beginners}</a>
             <a href="/cursos/" className="section-nav-link">{t.nav.courses}</a>
             <a
-              href="https://eventos.inema.pro"
+              href={evLink("https://eventos.inema.pro")}
               target="_blank"
               rel="noopener noreferrer"
               className="section-nav-link"
@@ -633,7 +629,7 @@ export default function Portal({
       <section id="evento-gestao-agentes-2027" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/gestao-ia/"
+            href={evLink("https://eventos.inema.pro/gestao-ia/")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/gestao-ia/', 'Gestão de Agentes 2027', 'evento')}
@@ -717,7 +713,7 @@ export default function Portal({
               { href: '/guias/claude-codex.html', label: '🗺️ Tudo sobre o tema', desc: 'Mapa do que dá pra fazer: skills, executores, plano em fases' },
               { href: 'https://eventos.inema.pro/claude-codex/', label: '🎤 Evento', desc: 'Área no eventos: migrar ou ficar agnóstico' },
             ].map((c) => (
-              <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
+              <a key={c.label} href={evLink(c.href)} target="_blank" rel="noopener noreferrer"
                  onClick={() => trackClick(c.href, c.label, 'claude-codex')}
                  style={{ display: 'block', padding: '14px 16px', borderRadius: '12px', border: '1px solid oklch(0.72 0.16 75 / .35)', background: 'oklch(0.16 0.02 60 / .6)', textDecoration: 'none', color: 'inherit' }}>
                 <strong style={{ display: 'block', marginBottom: '4px' }}>{c.label}</strong>
@@ -732,7 +728,7 @@ export default function Portal({
       <section id="evento-agi-chegou" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/agi-ready/"
+            href={evLink("https://eventos.inema.pro/agi-ready/")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/agi-ready/', 'AGI chegou', 'evento')}
@@ -760,7 +756,7 @@ export default function Portal({
       <section id="evento-content2video" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/content2video.html"
+            href={evLink("https://eventos.inema.pro/content2video.html")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/content2video.html', 'Content2Video', 'evento')}
@@ -788,7 +784,7 @@ export default function Portal({
       <section id="evento-webmcp" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/webmcp/"
+            href={evLink("https://eventos.inema.pro/webmcp/")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/webmcp/', 'WebMCP', 'evento')}
@@ -816,7 +812,7 @@ export default function Portal({
       <section id="evento-musicavideo" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/musicavideo.html"
+            href={evLink("https://eventos.inema.pro/musicavideo.html")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/musicavideo.html', 'INEMA MUSICAVIDEO', 'evento')}
@@ -868,7 +864,7 @@ export default function Portal({
       <section id="evento-destaque" style={{ padding: '2.5rem 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/inemaccbot.html"
+            href={evLink("https://eventos.inema.pro/inemaccbot.html")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/inemaccbot.html', 'Evento', 'evento')}
@@ -1103,7 +1099,7 @@ export default function Portal({
                 {translated.map((item) => (
                   <a
                     key={`${item.kind}-${item.id}`}
-                    href={item.url}
+                    href={evLink(item.url)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="path-card"
@@ -1283,7 +1279,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/formacaoia/', label: 'Formação IA',           desc: 'Pedir bem já não basta: monte a estrutura em volta da IA', n: 10 },
               { href: 'https://inematds.github.io/wat7d/',      label: 'Seu Funcionário Digital', desc: '7 dias para montar um assistente de IA que trabalha sozinho', n: 11 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
                 <div className="path-number">{p.n}</div>
@@ -1316,7 +1312,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/mapacliente/', label: 'Mapa do Cliente', desc: 'Formação DICA — Consultor de IA para Pequenos Negócios', n: 7 },
               { href: 'https://inematds.github.io/profissional2027x', label: 'Profissional 2027', desc: 'Implementadores de IA para PMEs — Método DPIA', n: 8 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
                 <div className="path-number">{p.n}</div>
@@ -1345,7 +1341,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/fae-ai/',       label: 'Automação Estratégica', desc: 'Automação Estratégica com IA',           n: 3 },
               { href: 'https://inematds.github.io/aiestrategia/', label: 'Estratégia de IA',      desc: 'Fábrica de Estratégia — Vire Consultor', n: 4 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
                 <div className="path-number">{p.n}</div>
@@ -1375,7 +1371,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/agentic/',          label: 'Agentic',          desc: 'Engenharia de Agentic',        n: 4 },
               { href: 'https://inematds.github.io/ws2ia/',            label: 'Eng. de Software com IA', desc: 'AI First sem perder o controle: spec, harness, loop e gates', n: 5 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
                 <div className="path-number">{p.n}</div>
@@ -1405,7 +1401,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/inemavox/',         label: 'Inemavox',       desc: 'Suíte de Voz e Vídeo com IA',     n: 4 },
               { href: 'https://inematds.github.io/recursos-video/',   label: 'Recursos de Vídeo', desc: 'Catálogo-guia dos 44 projetos de vídeo e imagem do ecossistema', n: 5 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
                 <div className="path-number">{p.n}</div>
@@ -1434,7 +1430,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/segunda-opiniao/landing.html',                label: 'Segunda Opinião',       desc: 'IA para Gestores e Líderes',                        n: 3 },
               { href: 'https://inematds.github.io/evai2026/curso-e-live/curso/',                label: 'Negócio de Serviços de IA', desc: '8 aulas sem programar — do primeiro cliente ao contrato', n: 4 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-profissional')}>
                 <div className="path-number">{p.n}</div>
@@ -1476,7 +1472,7 @@ export default function Portal({
       <section style={{ padding: '0 0 2rem' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/agentes-hub-v.html"
+            href={evLink("https://eventos.inema.pro/agentes-hub-v.html")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/agentes-hub-v.html', 'Banner evento', 'evento')}
@@ -1535,7 +1531,7 @@ export default function Portal({
                           {n.resumo && <p>{tr(n.resumo)}</p>}
                           {n.url && (
                             <a
-                              href={n.url}
+                              href={evLink(n.url)}
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={() => trackClick(n.url, n.titulo, 'novidades')}
@@ -1567,7 +1563,7 @@ export default function Portal({
                 <a
                   key={i}
                   className="update-item"
-                  href={update.url}
+                  href={evLink(update.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackClick(update.url, update.title, 'atualizacoes')}
@@ -1598,7 +1594,7 @@ export default function Portal({
                 <a
                   key={i}
                   className="update-item"
-                  href={update.url}
+                  href={evLink(update.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackClick(update.url, update.title, 'atualizacoes-projetos')}
@@ -1710,7 +1706,7 @@ export default function Portal({
                     )}
                     {item.url ? (
                       <a
-                        href={item.url}
+                        href={evLink(item.url)}
                         className="card-link"
                         target={item.type === 'Curso' ? undefined : '_blank'}
                         rel={item.type === 'Curso' ? undefined : 'noopener noreferrer'}
@@ -1791,7 +1787,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/vibe-coding-completo/', label: 'Domínio Completo', desc: 'Fundamentos, Técnica, Prompts, Skills, Agentes e Produção', n: 12 },
               { href: 'https://inematds.github.io/vibe-coding/', label: 'Vibe Coding na Prática', desc: 'Do Primeiro Workflow ao App no Ar', n: 13 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-vibe')}>
                 <div className="path-number">{p.n}</div>
@@ -1832,7 +1828,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/videos-edit/',            label: 'videos-edit',             desc: 'Forja Reel — editor de reels com IA',  n: 13 },
               { href: 'https://inematds.github.io/curso-ablacao/',          label: 'Auditoria de Ablação',    desc: 'Enxugue CLAUDE.md, skills e hooks',    n: 14 },
             ].map((p) => (
-              <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+              <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                  className={`path-card path-card-${p.n}`}
                  onClick={() => trackClick(p.href, p.label, 'trilha-skills')}>
                 <div className="path-number">{p.n}</div>
@@ -2074,7 +2070,7 @@ export default function Portal({
               {SHOW_DETALHES && (
               <div className="learning-path-cards">
                 {trail.steps.map((p, i) => (
-                  <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
+                  <a key={p.label} href={evLink(p.href)} target="_blank" rel="noopener noreferrer"
                      className={`path-card path-card-${(i % 4) + 1}`}
                      onClick={() => trackClick(p.href, p.label, 'trilhas')}>
                     <div className="path-number">{i + 1}</div>
@@ -2134,7 +2130,7 @@ export default function Portal({
               project.url ? (
                 <a
                   key={project.name}
-                  href={project.url}
+                  href={evLink(project.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="community-project-card community-project-card-linked"
