@@ -279,10 +279,6 @@
     "en": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR",
     "es": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR"
   },
-  "Gestoria — Laboratório de gestão de processos e agentes de IA, com simulação, revisão humana, avaliações e LOOP-R": {
-    "es": "Gestoria — Laboratorio de gestión de procesos y agentes de IA, con simulación, revisión humana, evaluaciones y LOOP-R",
-    "en": "Gestoria — Process management and AI agents laboratory, with simulation, human review, assessments and LOOP-R"
-  },
   "O ponto central pode ser explicado assim: **o prompt não morreu; ele deixou de ser o “produto final” e virou apenas uma camada de orientação.** Com modelos mais autônomos, o valor migra de “escrever o prompt perfeito” para **definir intenção, contexto, regras, ferramentas, memória, skills e critérios de sucesso**. **Antes:** Prompt → resposta. **Agora:** Objetivo → contexto → agente → skills → ferramentas → execução → validação → resultado. Ou, numa frase forte: > **A era do prompt perfeito está acabando. A nova habilidade é ensinar a IA a trabalhar.** E isso encaixa muito bem em **FEP 2026** como evolução de *Engenharia de Prompt* para algo maior: **Engenharia de Intenção + Contexto + Execução**.": {
     "es": "El punto central puede explicarse así: **el prompt no murió; dejó de ser el “producto final” y se convirtió solo en una capa de orientación.** Con modelos más autónomos, el valor migra de “escribir el prompt perfecto” a **definir intención, contexto, reglas, herramientas, memoria, habilidades y criterios de éxito**. **Antes:** Prompt → respuesta. **Ahora:** Objetivo → contexto → agente → habilidades → herramientas → ejecución → validación → resultado. En una frase fuerte: > **La era del prompt perfecto está terminando. La nueva habilidad es enseñar a la IA a trabajar.** Y eso encaja muy bien en **FEP 2026** como evolución de *Ingeniería de Prompt* a algo mayor: **Ingeniería de Intención + Contexto + Ejecución**.",
     "en": "The central point can be explained like this: **the prompt hasn't died; it stopped being the “final product” and became just a guidance layer.** With more autonomous models, the value shifts from “writing the perfect prompt” to **defining intention, context, rules, tools, memory, skills, and success criteria**. **Before:** Prompt → response. **Now:** Goal → context → agent → skills → tools → execution → validation → result. Or, in a strong sentence: > **The era of the perfect prompt is ending. The new skill is teaching the AI to work.** And this fits very well in **FEP 2026** as an evolution of *Engenharia de Prompt* to something bigger: **Engenharia de Intenção + Contexto + Execução**."
@@ -370,5 +366,9 @@
   "otimizando os Agentes": {
     "en": "optimizing the Agents",
     "es": "optimizando los Agentes"
+  },
+  "Visagismo B — consultoria de estilo com IA para barbearias": {
+    "en": "Visagismo B — style consulting with AI for barbershops",
+    "es": "Visagismo B — consultoría de estilo con IA para barberías"
   }
 }

@@ -5341,6 +5341,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-17",
+      "title": "Visagismo B — consultoria de estilo com IA para barbearias",
+      "type": "novo",
+      "url": "https://inematds.github.io/visagismo-b/guia/"
+    },
+    {
       "date": "2026-09-16",
       "title": "iacultivada — Soluções prontas: kits para baixar (pessoal, Jarvis, empresa), skills /cultivar e /revisao-semanal, gerador de ficha do agente, diagnóstico de cultivo e pacotes de agentes por área",
       "type": "atualizado",
@@ -6254,6 +6260,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "✂️",
+      "name": "visagismo-b",
+      "desc": "Consultoria de estilo em português para barbearias: análise facial, revisão profissional, relatório e instalação em VPS.",
+      "url": "https://inematds.github.io/visagismo-b/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧭",
       "name": "claude-session-kit",
