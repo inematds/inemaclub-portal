@@ -653,10 +653,10 @@ export default function Portal({
       <section id="evento-ia-cultivada" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://inematds.github.io/iacultivada/"
+            href="https://eventos.inema.pro/ia-cultivada/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('https://inematds.github.io/iacultivada/', 'IA Cultivada', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/ia-cultivada/', 'IA Cultivada', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -681,10 +681,10 @@ export default function Portal({
       <section id="evento-claude-codex" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="/guias/claude-codex.html"
+            href="https://eventos.inema.pro/claude-codex/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClick('/guias/claude-codex.html', 'Claude → Codex agnóstico', 'evento')}
+            onClick={() => trackClick('https://eventos.inema.pro/claude-codex/', 'Claude → Codex agnóstico', 'evento')}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -707,7 +707,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/curso-claude-codex/', label: '🎓 Curso', desc: '3 trilhas, 18 módulos: fundamentos, mão na massa e projetos' },
               { href: 'https://inematds.github.io/agente-claude-codex/guia/', label: '🧰 Kit', desc: 'doctor, audit, AGENTS.md, núcleo portátil, skills, readback' },
               { href: '/guias/claude-codex.html', label: '🗺️ Tudo sobre o tema', desc: 'Mapa do que dá pra fazer: skills, executores, plano em fases' },
-              { href: 'https://eventos.inema.pro/', label: '🎤 Evento', desc: 'Ao vivo: migrar ou ficar agnóstico' },
+              { href: 'https://eventos.inema.pro/claude-codex/', label: '🎤 Evento', desc: 'Área no eventos: migrar ou ficar agnóstico' },
             ].map((c) => (
               <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
                  onClick={() => trackClick(c.href, c.label, 'claude-codex')}
