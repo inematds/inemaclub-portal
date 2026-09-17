@@ -293,6 +293,12 @@ const LANG_ICON: Record<string, string> = {
  */
 const SHOW_DETALHES = false
 
+/** Áreas do eventos.inema.pro publicadas também em /en/ e /es/. */
+const EVENTOS_AREAS_I18N = new Set([
+  'https://eventos.inema.pro/ia-cultivada/',
+  'https://eventos.inema.pro/claude-codex/',
+])
+
 export default function Portal({
   visitStats,
   locale = 'pt',
@@ -308,6 +314,8 @@ export default function Portal({
   const [repos, setRepos] = useState<Repo[]>([])
   const t = getDictionary(locale)
   const img = (src: string) => localizedSrc(src, locale)
+  // Áreas do eventos.inema.pro que têm versão en/ e es/ — o banner leva ao idioma da página.
+  const evLink = (url: string) => (locale !== 'pt' && EVENTOS_AREAS_I18N.has(url) ? `${url}${locale}/` : url)
   // Feeds (novidades/atualizações) são dados em PT; scripts/traduz-feeds.mjs mantém o cache por idioma.
   const tr = (text: string) =>
     locale === 'pt' ? text : ((feedsI18n as Record<string, Partial<Record<Locale, string>>>)[text]?.[locale] ?? text)
@@ -653,7 +661,7 @@ export default function Portal({
       <section id="evento-ia-cultivada" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/ia-cultivada/"
+            href={evLink("https://eventos.inema.pro/ia-cultivada/")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/ia-cultivada/', 'IA Cultivada', 'evento')}
@@ -681,7 +689,7 @@ export default function Portal({
       <section id="evento-claude-codex" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
           <a
-            href="https://eventos.inema.pro/claude-codex/"
+            href={evLink("https://eventos.inema.pro/claude-codex/")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('https://eventos.inema.pro/claude-codex/', 'Claude → Codex agnóstico', 'evento')}
