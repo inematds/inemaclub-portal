@@ -13,6 +13,38 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-16/Fonte: CNN Brasil",
+    "date": "2026-09-16",
+    "titulo": "Fonte: CNN Brasil",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://share.google/6p9XEgTCvg8f6WLc1"
+  },
+  {
+    "id": "vip/2026-09-16/12 Novas IAs — Outubro 2026 · rumores × versões atuais verif",
+    "date": "2026-09-16",
+    "titulo": "12 Novas IAs — Outubro 2026 · rumores × versões atuais verificadas https://inematds.github.io/newia-oct2026/guia/",
+    "resumo": "já divulguei aqui antes mas agora fui lá e construir um projeto com todas essas informações de como você pode se beneficiar",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/newia-oct2026/guia/"
+  },
+  {
+    "id": "vip/2026-09-16/Claude Session Kit — statusline com cota real + skills de se",
+    "date": "2026-09-16",
+    "titulo": "Claude Session Kit — statusline com cota real + skills de sessão https://share.google/uhnOjJUIlossUjZzR",
+    "resumo": "otimizando o uso das IAs",
+    "grupo": "INEMA.VIP",
+    "url": "https://share.google/uhnOjJUIlossUjZzR"
+  },
+  {
+    "id": "vip/2026-09-16/agentes-fronteiros — migração de agentes para generalista + ",
+    "date": "2026-09-16",
+    "titulo": "agentes-fronteiros — migração de agentes para generalista + skills https://inematds.github.io/agentes-fronteiros/guia/",
+    "resumo": "otimizando os Agentes",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/agentes-fronteiros/guia/"
+  },
+  {
     "id": "vip/2026-09-16/IA Cultivada — não se programa, se cultiva https://share.goo",
     "date": "2026-09-16",
     "titulo": "IA Cultivada — não se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G",
@@ -219,37 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "",
     "grupo": "INEMA.VIP",
     "url": "https://share.google/oEChghGeOUgGigeAR"
-  },
-  {
-    "id": "vip/2026-09-01/### Resumo — Claude Fable 5.1 e Mythos 5.1",
-    "date": "2026-09-01",
-    "titulo": "### Resumo — Claude Fable 5.1 e Mythos 5.1",
-    "resumo": "Apresenta o **Claude Fable 5.1** como uma evolução importante do Fable 5, principalmente para **programação, agentes e trabalho intelectual complexo**. * **Desempenho:** segundo os benchmarks apresentados, o Fable 5.1 supera significativamente o Fable 5. Um destaque é que, em alguns testes, o **5.1 com baixo esforço supera o Fable 5 usando esforço máximo**. * **Preço por token:** permanece em **US$10/milhão de tokens de entrada e US$50/milhão de saída**, segundo o vídeo. * **Custo efetivo menor:** a alegação é de cerca de **25% de economia em workflows típicos** e potencialmente **até ~50% em tarefas altamente agentic**, principalmente devido à maior eficiência e redução do preço de cache reads. * **Agentes e coding:** os maiores avanços parecem estar em **agentic coding, uso de terminal, raciocínio multidisciplinar e execução autônoma de tarefas**. * **Design/front-end:**  se percebe melhora também na geração visual. Em um teste simples, pediu um **urso 3D andando de bicicleta**; o 5.1 produziu sombras, física e aparência consideradas melhores. * **Teste de custo:** no exemplo mostrado, o Fable 5.1 teria custado aproximadamente **US$4,53**, contra **US$5,41** no Fable 5. Ou seja, cerca de **16% menos** nesse teste específico. * **Mythos 5.1:** seria essencialmente o Fable 5.1 com **salvaguardas mais permissivas**, destinado a usuários verificados em **cibersegurança e ciências da vida**. Não seria de acesso geral. * **Empresas e privacidade:** é mencionado um novo sistema voltado a clientes empresariais, permitindo políticas mais rígidas de **retenção de dados/privacidade**. * **Disponibilidade:** segundo o vídeo, os modelos estariam disponíveis no Claude, API e plataformas de nuvem como AWS, Google Cloud e Azure. ### O ponto mais importante A grande notícia **não seria simplesmente \"um modelo mais inteligente\"**. Seria a combinação: **mais capacidade + menos esforço computacional + menos tokens + menor custo real.** Isso é especialmente importante para **agentes**, porque um agente pode realizar dezenas ou centenas de chamadas ao modelo. Uma redução de 25–50% no custo efetivo, combinada com maior capacidade de resolver tarefas na primeira tentativa, pode alterar bastante a viabilidade econômica de sistemas agentic. **Mas há uma ressalva importante:** O lançamento havia acabado de acontecer e que os testes ainda eram preliminares. Os benchmarks apresentados pelo fabricante e o teste do urso **não são suficientes para concluir que o 5.1 é sempre muito superior ou 25–50% mais barato** em aplicações reais. ● Descobri que usando --setting-sources \"\" e --strict-mcp-config a chamada headless cai de 150 mil tokens para ~760 tokens. Vou repassar essa informação ao agente que está construindo o provedor via claude -p. · summarized",
-    "grupo": "INEMA.VIP",
-    "url": ""
-  },
-  {
-    "id": "vip/2026-09-01/Meta just beat OpenAI and Google at real-time transcription ",
-    "date": "2026-09-01",
-    "titulo": "Meta just beat OpenAI and Google at real-time transcription - The New Stack",
-    "resumo": "**👀 Fable 5.1 chegou** Fable 5.1 acaba de ser lançado. Aqui está tudo o que você precisa saber: O QUE HÁ DE NOVO 1) 🧠 Trabalho de longa duração mais confiável: Fable 5.1 mantém a consistência mesmo em tarefas complexas, onde um erro inicial poderia arruinar o resultado final. 2) 💻 Codificação mais robusta: Melhor em grandes refatorações, revisões de código, depuração de causas raiz e funcionalidades que abrangem toda a base de código. 3) 📊 Entregas finalizadas de melhor qualidade: Pode levar a pesquisa até um relatório refinado, uma planilha interativa ou uma apresentação com fontes verificáveis. 4) 🔍 Melhoria na pesquisa e no uso de computadores: Melhor em buscas com várias etapas, leitura de PDFs densos e recuperação quando as ações do navegador ou da área de trabalho falham. 5) 💰 Fluxos de trabalho de agentes mais econômicos: Os preços padrão permanecem US$ 10 para entrada e US$ 50 para saída por milhão de tokens, mas as leituras de cache são 75% mais baratas. Aqui estão cinco coisas boas para saber 👇 a) A pesquisa mais que dobrou, os fluxos de trabalho empresariais aumentaram 84% e a codificação agentiva melhorou 33%. b) Contexto de 1 milhão de tokens, saída máxima de 128 mil e conhecimento atualizado até junho de 2026. c) A Anthropic recomenda o Opus 5, mais barato, para o trabalho diário e o Fable 5.1 para tarefas realmente difíceis. d) A versão Max inclui uso limitado do Fable, enquanto os usuários da versão Pro ainda precisam de créditos pagos conforme o uso. e) Isso adiciona esforço ajustável e atualizações de progresso, mas chamadas forçadas de ferramentas e históricos de conversas editados podem quebrar agentes existentes.",
-    "grupo": "INEMA.VIP",
-    "url": "https://thenewstack.io/meta-muse-voice-transcribe/"
-  },
-  {
-    "id": "vip/2026-08-30/Falei na Live q iria construir um curso e um Diagnostico sob",
-    "date": "2026-08-30",
-    "titulo": "Falei na Live q iria construir um curso e um Diagnostico sobre o WebMCP",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://webmcp.inema.pro/"
-  },
-  {
-    "id": "2389955773/7217",
-    "date": "2026-08-30",
-    "titulo": "WebMCP - Zero to Expert",
-    "resumo": "Tópico dedicado ao planejamento e produção da formação WebMCP — Zero to Expert, cobrindo conceitos, estrutura do curso, prompt de agente para otimização de sites e projeto final prático.",
-    "grupo": "INEMA.DEV",
-    "url": "https://www.inema.pro/cerebro/inema-dev/7217"
   }
 ];
