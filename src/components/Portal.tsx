@@ -520,9 +520,26 @@ export default function Portal({
             >
               {t.nav.search}
             </a>
+            <a
+              href="https://news.inema.pro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="section-nav-link"
+              onClick={() => trackClick('https://news.inema.pro', 'News', 'section-nav')}
+            >
+              {t.nav.news}
+            </a>
             <a href="#trilha-iniciantes" className="section-nav-link">{t.nav.beginners}</a>
             <a href="/cursos/" className="section-nav-link">{t.nav.courses}</a>
-            <a href="#trilhas" className="section-nav-link">{t.nav.trails}</a>
+            <a
+              href="https://eventos.inema.pro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="section-nav-link"
+              onClick={() => trackClick('https://eventos.inema.pro', 'Eventos', 'section-nav')}
+            >
+              {t.nav.events}
+            </a>
             <a href="#comunidade" className="section-nav-link">{t.nav.projects}</a>
             <a href="#telegram" className="section-nav-link">{t.nav.telegram}</a>
             <a href="#social" className="section-nav-link">{t.nav.social}</a>

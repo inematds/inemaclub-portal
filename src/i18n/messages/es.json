@@ -13,9 +13,10 @@
   },
   "nav": {
     "search": "🔍 Búsquedas",
+    "news": "📰 News",
     "beginners": "📘 Principiantes",
     "courses": "🎓 Cursos",
-    "trails": "🗺️ Rutas",
+    "events": "📅 Eventos",
     "projects": "🚀 Proyectos",
     "telegram": "💬 Telegram",
     "social": "📱 Social",

@@ -35,7 +35,7 @@ test('nenhum valor vazio ou não-string', () => {
 
 test('pt.json tem as chaves usadas pelo Portal', () => {
   const pt = flatten(load('pt')).map(([k]) => k)
-  for (const required of ['header.tagline', 'nav.trails', 'beginners.title', 'translated.empty', 'footer.copyright']) {
+  for (const required of ['header.tagline', 'nav.events', 'beginners.title', 'translated.empty', 'footer.copyright']) {
     assert.ok(pt.includes(required), `falta ${required}`)
   }
 })
