@@ -8,9 +8,11 @@ import type { Locale } from './locales'
 export const LOCALIZED_IMAGES = new Set([
   'agi-chegou.png',
   'capa-musicavideo-v2.jpg',
+  'claude-codex-agnostico.png',
   'content2video.png',
   'conviteinemap.png',
   'gestao-agentes-2027.png',
+  'ia-cultivada.png',
   'ia-cultivada.png',
   'inemaagenteshubv.jpg',
   'inemac2.jpg',
