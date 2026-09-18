@@ -267,18 +267,6 @@
     "en": "The number of companies presenting human Robots. And a called ubtech made one so realistic that at launch it sold 13 mil for 140 mil dollars.",
     "es": "La cantidad de empresas que presentan robots humanos. Y una llamada ubtech hizo un tan realista que en el lanzamiento vendió 13 mil por 140 mil dólares."
   },
-  "ConfyUI MCP e CLI": {
-    "en": "ConfyUI MCP and CLI",
-    "es": "ConfyUI MCP y CLI"
-  },
-  "Discussão sobre instalação e configuração do ComfyUI via CLI e MCP, com registro do processo que funcionou localmente.": {
-    "en": "Discussion about installation and configuration of ComfyUI via CLI and MCP, with a log of the process that worked locally.",
-    "es": "Discusión sobre la instalación y configuración de ComfyUI vía CLI y MCP, con registro del proceso que funcionó localmente."
-  },
-  "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR": {
-    "en": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR",
-    "es": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR"
-  },
   "O ponto central pode ser explicado assim: **o prompt não morreu; ele deixou de ser o “produto final” e virou apenas uma camada de orientação.** Com modelos mais autônomos, o valor migra de “escrever o prompt perfeito” para **definir intenção, contexto, regras, ferramentas, memória, skills e critérios de sucesso**. **Antes:** Prompt → resposta. **Agora:** Objetivo → contexto → agente → skills → ferramentas → execução → validação → resultado. Ou, numa frase forte: > **A era do prompt perfeito está acabando. A nova habilidade é ensinar a IA a trabalhar.** E isso encaixa muito bem em **FEP 2026** como evolução de *Engenharia de Prompt* para algo maior: **Engenharia de Intenção + Contexto + Execução**.": {
     "es": "El punto central puede explicarse así: **el prompt no murió; dejó de ser el “producto final” y se convirtió solo en una capa de orientación.** Con modelos más autónomos, el valor migra de “escribir el prompt perfecto” a **definir intención, contexto, reglas, herramientas, memoria, habilidades y criterios de éxito**. **Antes:** Prompt → respuesta. **Ahora:** Objetivo → contexto → agente → habilidades → herramientas → ejecución → validación → resultado. En una frase fuerte: > **La era del prompt perfecto está terminando. La nueva habilidad es enseñar a la IA a trabajar.** Y eso encaja muy bien en **FEP 2026** como evolución de *Ingeniería de Prompt* a algo mayor: **Ingeniería de Intención + Contexto + Ejecución**.",
     "en": "The central point can be explained like this: **the prompt hasn't died; it stopped being the “final product” and became just a guidance layer.** With more autonomous models, the value shifts from “writing the perfect prompt” to **defining intention, context, rules, tools, memory, skills, and success criteria**. **Before:** Prompt → response. **Now:** Goal → context → agent → skills → tools → execution → validation → result. Or, in a strong sentence: > **The era of the perfect prompt is ending. The new skill is teaching the AI to work.** And this fits very well in **FEP 2026** as an evolution of *Engenharia de Prompt* to something bigger: **Engenharia de Intenção + Contexto + Execução**."
@@ -370,5 +358,21 @@
   "Visagismo B — consultoria de estilo com IA para barbearias": {
     "en": "Visagismo B — style consulting with AI for barbershops",
     "es": "Visagismo B — consultoría de estilo con IA para barberías"
+  },
+  "Skill Astra Higgsfield": {
+    "en": "Astra Higgsfield Skill",
+    "es": "Skill Astra Higgsfield"
+  },
+  "Apresentação da skill \"Astra Higgsfield\" para o Claude Codex, integrando a API da Higgsfield como alternativa à assinatura direta do serviço.": {
+    "en": "Presentation of the \"Astra Higgsfield\" skill for Claude Codex, integrating the Higgsfield API as an alternative to direct service subscription.",
+    "es": "Presentación de la skill \"Astra Higgsfield\" para Claude Codex, integrando la API de Higgsfield como alternativa a la suscripción directa del servicio."
+  },
+  "`IA para quem decide · 6 aulas curtas`": {
+    "en": "`AI for those who decide · 6 short lessons`",
+    "es": "`IA para quien decide · 6 clases cortas`"
+  },
+  "**O chat responde. O __terminal__ executa**. Para executivos e profissionais liberais que já usam IA no navegador e ainda copiam e colam tudo. Entenda as quatro camadas de um sistema de IA, por que o terminal com agente é a que faz o trabalho, e como o harness faz ele trabalhar do seu jeito.": {
+    "en": "**The chat replies. The __terminal__ executes**. For executives and freelancers who already use AI in the browser and still copy and paste everything. Understand the four layers of an AI system, why the agent terminal is the one that does the work, and how the harness makes it work your way.",
+    "es": "**El chat responde. El __terminal__ ejecuta**. Para ejecutivos y profesionales liberales que ya usan IA en el navegador y aún copian y pegan todo. Entiende las cuatro capas de un sistema de IA, por qué el terminal con agente es el que hace el trabajo, y cómo el harness lo hace trabajar a tu manera."
   }
 }

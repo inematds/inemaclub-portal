@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "3053650449/1317",
+    "date": "2026-09-18",
+    "titulo": "Skill Astra Higgsfield",
+    "resumo": "Apresentação da skill \"Astra Higgsfield\" para o Claude Codex, integrando a API da Higgsfield como alternativa à assinatura direta do serviço.",
+    "grupo": "INEMA.CODEX",
+    "url": "https://www.inema.pro/cerebro/inema-codex/1317"
+  },
+  {
     "id": "vip/2026-09-16/Fonte: CNN Brasil",
     "date": "2026-09-16",
     "titulo": "Fonte: CNN Brasil",
@@ -51,6 +59,14 @@ export const novidadesData: Novidade[] = [
     "resumo": "Vale a Pena estudar.",
     "grupo": "INEMA.VIP",
     "url": "https://share.google/8FKgpBHd9AewWZn9G"
+  },
+  {
+    "id": "vip/2026-09-15/`IA para quem decide · 6 aulas curtas`",
+    "date": "2026-09-15",
+    "titulo": "`IA para quem decide · 6 aulas curtas`",
+    "resumo": "**O chat responde. O __terminal__ executa**. Para executivos e profissionais liberais que já usam IA no navegador e ainda copiam e colam tudo. Entenda as quatro camadas de um sistema de IA, por que o terminal com agente é a que faz o trabalho, e como o harness faz ele trabalhar do seu jeito.",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/agentes-harness/guia"
   },
   {
     "id": "vip/2026-09-15/Isso esta ficando em uma velocidade incrivel",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "",
     "grupo": "INEMA.VIP",
     "url": "https://www.ubtrobot.com/en/?srsltid=AfmBOopoilJ-hlGuP32x7feZ61QqpiQ9wi3G6xwc5GEAiyeXmOSkh4N2"
-  },
-  {
-    "id": "2433384436/6464",
-    "date": "2026-09-02",
-    "titulo": "ConfyUI MCP e CLI",
-    "resumo": "Discussão sobre instalação e configuração do ComfyUI via CLI e MCP, com registro do processo que funcionou localmente.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6464"
-  },
-  {
-    "id": "vip/2026-09-02/MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrin",
-    "date": "2026-09-02",
-    "titulo": "MoneyPrinterTurbo/README-en.md at main · harry0703/MoneyPrinterTurbo · GitHub https://share.google/oEChghGeOUgGigeAR",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://share.google/oEChghGeOUgGigeAR"
   }
 ];
