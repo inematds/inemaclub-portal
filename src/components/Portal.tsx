@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🧭', name: 'jev', desc: 'Jev Decision Lab: dez casos didáticos de decisões estruturadas, editor de requisições, calculadora e cliente Python local com validação e avaliação de regras.', url: 'https://inematds.github.io/jev/guia/', badge: 'Guia' },
   { icon: '✂️', name: 'visagismo-b', desc: 'Consultoria de estilo em português para barbearias: análise facial, revisão profissional, relatório e instalação em VPS.', url: 'https://inematds.github.io/visagismo-b/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'claude-session-kit', desc: 'Kit pra sessões enxutas no Claude Code: statusline com cota real (5 h, semanal geral e semanal por modelo), três skills de sessão (checkpoint, auditoria de memória e handoff) e o plano que liga tudo.', url: 'https://inematds.github.io/claude-session-kit/guia/', badge: 'Guia' },
   { icon: '👹', name: 'SlopMonster', desc: 'Linter de texto escrito por IA: dá nota de 0 a 5, aponta vocabulário, construções, travessões, listas de três e prova inventada, e limpa o rascunho com um modelo de outra família (Claude ↔ GPT). Python puro, portão de CI pronto, skill pro Claude Code e Codex.', url: 'https://inematds.github.io/SlopMonster/guia/', badge: 'Guia' },
@@ -1968,6 +1969,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/openhuman/',           label: 'OpenHuman',   desc: 'Assistente IA para Comunidades (Rust/Tauri)' },
             ]},
             { title: '🖥️ Claude Code', steps: [
+              { href: 'https://inematds.github.io/pilulasdeouro/', label: 'Pílulas de Ouro', desc: 'IA em projetos práticos: prompts, skills, revisão e entrega' },
               { href: 'https://inematds.github.io/fable51-system/',    label: 'Fable 5.1 na prática', desc: 'O que mudou, como usar, como gastar menos' },
               { href: 'https://inematds.github.io/ccodebasico/',          label: 'CC Básico',        desc: 'Do Zero: Instalação, Comandos, Skills, MCP e Cowork' },
               { href: 'https://inematds.github.io/jccode23/',             label: 'Do Zero ao Projeto', desc: 'Claude Code dos Fundamentos ao Deploy' },

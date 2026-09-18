@@ -75,10 +75,6 @@
     "en": "Intent Architecture — Day 4: The Turn, models that operate on intent (Fable 5.1 · GPT-6 Astra)",
     "es": "Arquitectura de Intención — Día 4: La Vuelta, modelos que operan en la intención (Fable 5.1 · GPT-6 Astra)"
   },
-  "Computer Use com o GPT-6 Astra — Cinco fluxos para a IA operar o seu computador (2 trilhas, 7 módulos)": {
-    "en": "Computer Use with GPT-6 Astra — Five flows for AI to operate your computer (2 tracks, 7 modules)",
-    "es": "Computer Use con GPT-6 Astra — Cinco flujos para que la IA opere tu computadora (2 rutas, 7 módulos)"
-  },
   "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)": {
     "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
     "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
@@ -146,10 +142,6 @@
   "Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup": {
     "en": "Astra3D V2 — Full demos, My Projects, duplication, saved versions and backup",
     "es": "Astra3D V2 — Demostraciones completas, Mis proyectos, duplicación, versiones guardadas y backup"
-  },
-  "Astra Effort — Guia em português, dez prompts e sete execuções para comparar níveis de esforço com evidências": {
-    "en": "Astra Effort — Guide in Portuguese, ten prompts and seven runs to compare effort levels with evidence",
-    "es": "Astra Effort — Guía en portugués, diez prompts y siete ejecuciones para comparar niveles de esfuerzo con evidencias"
   },
   "Como Migrar de Claude para Codex ou outros": {
     "en": "How to Migrate from Claude to Codex or Others",
@@ -374,5 +366,13 @@
   "**O chat responde. O __terminal__ executa**. Para executivos e profissionais liberais que já usam IA no navegador e ainda copiam e colam tudo. Entenda as quatro camadas de um sistema de IA, por que o terminal com agente é a que faz o trabalho, e como o harness faz ele trabalhar do seu jeito.": {
     "en": "**The chat replies. The __terminal__ executes**. For executives and freelancers who already use AI in the browser and still copy and paste everything. Understand the four layers of an AI system, why the agent terminal is the one that does the work, and how the harness makes it work your way.",
     "es": "**El chat responde. El __terminal__ ejecuta**. Para ejecutivos y profesionales liberales que ya usan IA en el navegador y aún copian y pegan todo. Entiende las cuatro capas de un sistema de IA, por qué el terminal con agente es el que hace el trabajo, y cómo el harness lo hace trabajar a tu manera."
+  },
+  "Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos": {
+    "en": "Golden Pills — AI in practical projects: 4 tracks, 12 modules and 72 topics",
+    "es": "Pílulas de Ouro — IA en proyectos prácticos: 4 rutas, 12 módulos y 72 temas"
+  },
+  "Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local": {
+    "en": "Jev Decision Lab — Ten practical examples, decision lab and local Python client",
+    "es": "Jev Decision Lab — Diez ejemplos prácticos, laboratorio de decisiones y cliente Python local"
   }
 }

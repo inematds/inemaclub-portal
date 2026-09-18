@@ -2727,6 +2727,19 @@
       "url": "https://inematds.github.io/pha2030-aula"
     },
     {
+      "id": 275,
+      "title": "Pílulas de Ouro — IA em projetos práticos",
+      "description": "Transforme pedidos em entregas verificáveis com IA. 4 trilhas, 12 módulos e 72 tópicos sobre prompts, skills, pesquisa, documentos, interfaces e projetos, com exercícios, progresso e anotações.",
+      "icon": "💡",
+      "tags": [
+        "IA",
+        "Claude Code",
+        "Produtividade",
+        "Projetos"
+      ],
+      "url": "https://inematds.github.io/pilulasdeouro/"
+    },
+    {
       "id": 146,
       "title": "Pirâmide da IA — Engenharia de Conhecimento da IA",
       "description": "Suba a Pirâmide da Inteligência Aplicada camada por camada: Prompt, Intenção, Contexto, Aproveitamento, Arquitetura e Evolução. 6 trilhas, 13 módulos, diagnóstico de nível e 6 artefatos prontos — feito pra quem está entrando tarde na IA.",
@@ -3892,6 +3905,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-18",
+      "title": "Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos",
+      "type": "novo",
+      "url": "https://inematds.github.io/pilulasdeouro/"
+    },
     {
       "date": "2026-09-14",
       "title": "openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)",
@@ -5341,6 +5360,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-18",
+      "title": "Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local",
+      "type": "novo",
+      "url": "https://inematds.github.io/jev/guia/"
+    },
+    {
       "date": "2026-09-17",
       "title": "Visagismo B — consultoria de estilo com IA para barbearias",
       "type": "novo",
@@ -6260,6 +6285,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🧭",
+      "name": "jev",
+      "desc": "Jev Decision Lab: dez casos didáticos de decisões estruturadas, editor de requisições, calculadora e cliente Python local com validação e avaliação de regras.",
+      "url": "https://inematds.github.io/jev/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "✂️",
       "name": "visagismo-b",

@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-18', title: 'Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local', type: 'novo', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-17', title: 'Visagismo B — consultoria de estilo com IA para barbearias', type: 'novo', url: 'https://inematds.github.io/visagismo-b/guia/' },
    { date: '2026-09-16', title: 'iacultivada — Soluções prontas: kits para baixar (pessoal, Jarvis, empresa), skills /cultivar e /revisao-semanal, gerador de ficha do agente, diagnóstico de cultivo e pacotes de agentes por área', type: 'atualizado', url: 'https://inematds.github.io/iacultivada/' },
    { date: '2026-09-15', title: 'iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)', type: 'novo', url: 'https://inematds.github.io/iacultivada/' },
@@ -1901,6 +1902,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/pha2030-aula',
   },
   {
+    id: 275,
+    title: 'Pílulas de Ouro — IA em projetos práticos',
+    description:
+      'Transforme pedidos em entregas verificáveis com IA. 4 trilhas, 12 módulos e 72 tópicos sobre prompts, skills, pesquisa, documentos, interfaces e projetos, com exercícios, progresso e anotações.',
+    icon: '💡',
+    tags: ['IA', 'Claude Code', 'Produtividade', 'Projetos'],
+    url: 'https://inematds.github.io/pilulasdeouro/',
+  },
+  {
     id: 146,
     title: 'Pirâmide da IA — Engenharia de Conhecimento da IA',
     description:
@@ -2649,6 +2659,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-18', title: 'Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos', type: 'novo', url: 'https://inematds.github.io/pilulasdeouro/' },
   { date: '2026-09-14', title: 'openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)', type: 'novo', url: 'https://inematds.github.io/curso-openpcbotv3/' },
   { date: '2026-09-15', title: 'Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)', type: 'novo', url: 'https://inematds.github.io/curso-claude-codex/' },
   { date: '2026-09-14', title: 'Terminal e Harness — Aula 6 (pastas, .claude, AGENTS.md, wiki, OKF) + vídeo 2:06 com cena das pastas, versões 16:9 e 9:16', type: 'atualizado', url: 'https://inematds.github.io/agentes-harness/' },
