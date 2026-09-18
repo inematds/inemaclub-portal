@@ -354,6 +354,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/',
   },
   {
+    id: 276,
+    title: 'Jev na prática — Decisões estruturadas com IA',
+    description: 'Curso em Markdown com 3 trilhas, 12 módulos, 36 aulas e oito laboratórios: os dez usos práticos do Jev, perguntas delimitadas, confiança, custos e avaliação. Conteúdo autoral com exercícios e gabaritos.',
+    icon: '📘',
+    tags: ['IA', 'Automação', 'Decisões', 'Jev'],
+    url: 'https://github.com/inematds/jev-curso',
+  },
+  {
     id: 174,
     title: 'O Caminho Certo da IA',
     description:
@@ -2659,6 +2667,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-18', title: 'Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios', type: 'novo', url: 'https://github.com/inematds/jev-curso' },
   { date: '2026-09-18', title: 'Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos', type: 'novo', url: 'https://inematds.github.io/pilulasdeouro/' },
   { date: '2026-09-14', title: 'openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)', type: 'novo', url: 'https://inematds.github.io/curso-openpcbotv3/' },
   { date: '2026-09-15', title: 'Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)', type: 'novo', url: 'https://inematds.github.io/curso-claude-codex/' },

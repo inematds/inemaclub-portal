@@ -71,10 +71,6 @@
     "en": "AI Work Architect — Redesign processes for humans to direct and agents to execute (8 lessons)",
     "es": "Arquitecto de Trabajo con IA — Rediseña procesos para que los humanos dirijan y los agentes ejecuten (8 clases)"
   },
-  "Arquitetura de Intenção — Dia 4: A Virada, modelos que operam na intenção (Fable 5.1 · GPT-6 Astra)": {
-    "en": "Intent Architecture — Day 4: The Turn, models that operate on intent (Fable 5.1 · GPT-6 Astra)",
-    "es": "Arquitectura de Intención — Día 4: La Vuelta, modelos que operan en la intención (Fable 5.1 · GPT-6 Astra)"
-  },
   "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)": {
     "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
     "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
@@ -374,5 +370,9 @@
   "Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local": {
     "en": "Jev Decision Lab — Ten practical examples, decision lab and local Python client",
     "es": "Jev Decision Lab — Diez ejemplos prácticos, laboratorio de decisiones y cliente Python local"
+  },
+  "Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios": {
+    "en": "Jev in practice — 36 lessons in Markdown, ten uses and eight labs",
+    "es": "Jev en la práctica — 36 clases en Markdown, diez usos y ocho laboratorios"
   }
 }
