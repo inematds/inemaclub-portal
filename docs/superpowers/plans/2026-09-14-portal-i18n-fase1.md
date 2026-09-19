@@ -1455,7 +1455,7 @@ git push
 
 ## Self-Review
 
-**Cobertura:** rotas por idioma (Task 2), `<html lang>` e hreflang (Task 2), dicionário e seletor (Tasks 1 e 3), selo PT (Task 3), seção de traduzidos (Task 4), chat (Task 5), versão e docs (Task 6). Ficam explicitamente fora: `/cursos/` e `/conhecimento/` em EN/ES, novidades traduzidas, `sitemap.ts` (não existe hoje; `robots.ts` aponta para um `/sitemap.xml` que não é gerado — não corrigir nesta fase), busca `textSearch` em português na Edge Function.
+**Cobertura:** rotas por idioma (Task 2), `<html lang>` e hreflang (Task 2), dicionário e seletor (Tasks 1 e 3), selo PT (Task 3), seção de traduzidos (Task 4), chat (Task 5), versão e docs (Task 6). Ficam explicitamente fora: `/cursos/` e `/conhecimento/` em EN/ES, novidades traduzidas, sitemap (correção de registro em 2026-09-19: havia `public/sitemap.xml`; a atualização de descoberta substituiu-o por `src/app/sitemap.ts`, com as homes PT/EN/ES), busca `textSearch` em português na Edge Function.
 
 **Tipos consistentes:** `Locale` vem só de `src/i18n/locales.ts`; `getDictionary` (Task 1) é o que o `Portal` usa (Task 3); `Portal({ visitStats, locale })` definido na Task 2 e consumido pelo `HomePage`; `translatedFor(locale)` (Task 4); `buildSystemPrompt(fichas, locale)` (Task 5) com o mesmo union `'pt' | 'en' | 'es'`.
 

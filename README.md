@@ -157,3 +157,7 @@ Sugestões e melhorias são bem-vindas!
 ---
 
 **Portal INEMA** - Desenvolvido com ❤️ para educação
+
+## Descoberta entre sistemas
+
+Ver [docs/DESCOBERTA-ECOSSISTEMA.md](docs/DESCOBERTA-ECOSSISTEMA.md).

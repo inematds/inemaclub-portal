@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "id": "inema.portal",
+  "name": "INEMA.club",
+  "url": "https://www.inema.club/",
+  "languages": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "access": "public",
+  "description": "Cursos, projetos, trilhas e conhecimento público sobre inteligência artificial do INEMA.",
+  "discovery": {
+    "llms": "https://www.inema.club/llms.txt",
+    "robots": "https://www.inema.club/robots.txt",
+    "sitemaps": [
+      "https://www.inema.club/sitemap.xml",
+      "https://www.inema.club/courses-sitemap.xml"
+    ],
+    "catalogs": [
+      "https://www.inema.club/api/courses/",
+      "https://www.inema.club/api/projects/",
+      "https://www.inema.club/api/trails/",
+      "https://www.inema.club/api/knowledge/",
+      "https://www.inema.club/api/updates/"
+    ]
+  },
+  "related_systems": [
+    {
+      "id": "inema.news",
+      "url": "https://news.inema.pro/",
+      "languages": [
+        "pt-BR",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "id": "inema.eventos",
+      "url": "https://eventos.inema.pro/",
+      "languages": [
+        "pt-BR",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "id": "inema.webmcp-readiness",
+      "url": "https://webmcp.inema.pro/",
+      "languages": [
+        "pt-BR"
+      ]
+    },
+    {
+      "id": "inema.cerebro-vip",
+      "url": "https://cvip.inema.pro/",
+      "access": "subscription"
+    }
+  ],
+  "webmcp": {
+    "status": "declared_in_source",
+    "page": "https://www.inema.club/",
+    "requires": "Browser support and successful page registration",
+    "tools": [
+      "buscar_cursos",
+      "listar_trilhas",
+      "detalhar_curso",
+      "comparar_cursos",
+      "recomendar_proximo_curso",
+      "buscar_conhecimento",
+      "listar_projetos",
+      "consultar_atualizacoes"
+    ],
+    "runtime_verified": false
+  },
+  "localized_urls": {
+    "pt-BR": "https://www.inema.club/",
+    "en": "https://www.inema.club/en/",
+    "es": "https://www.inema.club/es/"
+  },
+  "manifest_note": "Manifesto de descoberta próprio do INEMA; não é um registro de ferramentas WebMCP.",
+  "repository": "https://github.com/NeiMaldaner/portal"
+}

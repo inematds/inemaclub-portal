@@ -189,3 +189,7 @@ Guia de projeto = página landing+guia (padrão INEMA, skill `projetos-landing-g
 - `~/projetos/guias-build/_template.html` — cópia do template da skill.
 
 Sem fonte acessível não se inventa guia: `Restaurante Brutal` (sem repo) e `book-genesis` (PhilipStark, 404) ficaram **sem** guia, com o card apontando para o destino original.
+
+## Descoberta entre sistemas — 2026-09-19
+
+Ver [docs/DESCOBERTA-ECOSSISTEMA.md](docs/DESCOBERTA-ECOSSISTEMA.md) para sitemaps, llms.txt, manifesto, idiomas, manutenção e verificações.

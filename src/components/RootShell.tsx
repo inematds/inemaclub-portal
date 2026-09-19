@@ -9,6 +9,8 @@ export default function RootShell({ lang, children }: { lang: string; children: 
   return (
     <html lang={lang}>
       <head>
+        <link rel="describedby" href="/llms.txt" type="text/plain" />
+        <link rel="alternate" href="/inema.json" type="application/json" title="INEMA discovery" />
         {originTrialToken && originTrialMode === 'third-party' ? (
           <Script src="/api/webmcp-origin-trial/" strategy="beforeInteractive" />
         ) : originTrialToken ? (
