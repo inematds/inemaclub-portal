@@ -273,7 +273,7 @@
     {
       "id": 276,
       "title": "Jev na prática — Decisões estruturadas com IA",
-      "description": "Curso em Markdown com 3 trilhas, 12 módulos, 36 aulas e oito laboratórios: os dez usos práticos do Jev, perguntas delimitadas, confiança, custos e avaliação. Conteúdo autoral com exercícios e gabaritos.",
+      "description": "Curso em Markdown com 3 trilhas, 12 módulos, 36 aulas e 12 laboratórios: vinte casos, skills, evidências, código, experimentos, custos e validação de alegações. Conteúdo autoral com exercícios e gabaritos.",
       "icon": "📘",
       "tags": [
         "IA",
@@ -3919,6 +3919,12 @@
   ],
   "updatesData": [
     {
+      "date": "2026-09-19",
+      "title": "Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios",
+      "type": "atualizado",
+      "url": "https://github.com/inematds/jev-curso"
+    },
+    {
       "date": "2026-09-18",
       "title": "Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios",
       "type": "novo",
@@ -5379,6 +5385,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-19",
+      "title": "Jev Decision Lab — 20 casos, experimentos e comparação com uso simples",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/jev/guia/"
+    },
+    {
       "date": "2026-09-18",
       "title": "Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local",
       "type": "novo",
@@ -6307,7 +6319,7 @@
     {
       "icon": "🧭",
       "name": "jev",
-      "desc": "Jev Decision Lab: dez casos didáticos de decisões estruturadas, editor de requisições, calculadora e cliente Python local com validação e avaliação de regras.",
+      "desc": "Jev Decision Lab: vinte casos didáticos, perguntas combinadas, importação e exportação, custo completo e experimentos reproduzíveis com comparação de resultados.",
       "url": "https://inematds.github.io/jev/guia/",
       "badge": "Guia"
     },

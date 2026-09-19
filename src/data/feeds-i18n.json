@@ -67,10 +67,6 @@
     "en": "The Super-Agents Have Arrived — What changes in your work when AI stops waiting for orders (6 lessons)",
     "es": "Los Super-Agentes Llegaron — Qué cambia en tu trabajo cuando la IA deja de esperar órdenes (6 clases)"
   },
-  "Arquiteto de Trabalho com IA — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas)": {
-    "en": "AI Work Architect — Redesign processes for humans to direct and agents to execute (8 lessons)",
-    "es": "Arquitecto de Trabajo con IA — Rediseña procesos para que los humanos dirijan y los agentes ejecuten (8 clases)"
-  },
   "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)": {
     "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
     "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
@@ -134,10 +130,6 @@
   "UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)": {
     "en": "UGC Seedance 2.5 — Product becomes 30‑s one‑take UGC ad: skill + brief generator (9 formats, Magnific/Higgsfield/fal.ai)",
     "es": "UGC Seedance 2.5 — Producto se convierte en anuncio UGC one-take de 30 s: skill + generador de brief (9 formatos, Magnific/Higgsfield/fal.ai)"
-  },
-  "Astra3D V2 — Demonstrações completas, Meus projetos, duplicação, versões salvas e backup": {
-    "en": "Astra3D V2 — Full demos, My Projects, duplication, saved versions and backup",
-    "es": "Astra3D V2 — Demostraciones completas, Mis proyectos, duplicación, versiones guardadas y backup"
   },
   "Como Migrar de Claude para Codex ou outros": {
     "en": "How to Migrate from Claude to Codex or Others",
@@ -374,5 +366,13 @@
   "Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios": {
     "en": "Jev in practice — 36 lessons in Markdown, ten uses and eight labs",
     "es": "Jev en la práctica — 36 clases en Markdown, diez usos y ocho laboratorios"
+  },
+  "Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios": {
+    "en": "Jev in practice — 36 enriched lessons, 20 cases and 12 labs",
+    "es": "Jev en la práctica — 36 clases enriquecidas, 20 casos y 12 laboratorios"
+  },
+  "Jev Decision Lab — 20 casos, experimentos e comparação com uso simples": {
+    "en": "Jev Decision Lab — 20 cases, experiments and comparison with simple use",
+    "es": "Jev Decision Lab — 20 casos, experimentos y comparación con uso simple"
   }
 }
