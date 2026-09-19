@@ -127,10 +127,6 @@
     "en": "MS-v7 Social Autopilot — Brand voice + 3 commands in Claude Code: posts in your voice, visual and scheduling with configurable providers, approved by you",
     "es": "MS-v7 Social Autopilot — Voz de marca + 3 comandos en Claude Code: posts en tu voz, visual y programación con proveedores configurables, aprobados por ti"
   },
-  "UGC Seedance 2.5 — Produto vira anúncio UGC one-take de 30 s: skill + gerador de brief (9 formatos, Magnific/Higgsfield/fal.ai)": {
-    "en": "UGC Seedance 2.5 — Product becomes 30‑s one‑take UGC ad: skill + brief generator (9 formats, Magnific/Higgsfield/fal.ai)",
-    "es": "UGC Seedance 2.5 — Producto se convierte en anuncio UGC one-take de 30 s: skill + generador de brief (9 formatos, Magnific/Higgsfield/fal.ai)"
-  },
   "Como Migrar de Claude para Codex ou outros": {
     "en": "How to Migrate from Claude to Codex or Others",
     "es": "Cómo migrar de Claude a Codex u otros"
@@ -374,5 +370,9 @@
   "Jev Decision Lab — 20 casos, experimentos e comparação com uso simples": {
     "en": "Jev Decision Lab — 20 cases, experiments and comparison with simple use",
     "es": "Jev Decision Lab — 20 casos, experimentos y comparación con uso simple"
+  },
+  "google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA": {
+    "en": "google-rsi — Dream-RSI: educational guide, original figures and plan to learn to research better with AI",
+    "es": "google-rsi — Dream-RSI: guía educativa, figuras originales y plan para aprender a investigar mejor con IA"
   }
 }

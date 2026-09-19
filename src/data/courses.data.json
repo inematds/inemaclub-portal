@@ -5386,6 +5386,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-19",
+      "title": "google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA",
+      "type": "novo",
+      "url": "https://inematds.github.io/google-rsi/guia/"
+    },
+    {
+      "date": "2026-09-19",
       "title": "Jev Decision Lab — 20 casos, experimentos e comparação com uso simples",
       "type": "atualizado",
       "url": "https://inematds.github.io/jev/guia/"
@@ -6316,6 +6322,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🔬",
+      "name": "google-rsi",
+      "desc": "Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.",
+      "url": "https://inematds.github.io/google-rsi/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧭",
       "name": "jev",

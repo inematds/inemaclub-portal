@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🔬', name: 'google-rsi', desc: 'Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.', url: 'https://inematds.github.io/google-rsi/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'jev', desc: 'Jev Decision Lab: vinte casos didáticos, perguntas combinadas, importação e exportação, custo completo e experimentos reproduzíveis com comparação de resultados.', url: 'https://inematds.github.io/jev/guia/', badge: 'Guia' },
   { icon: '✂️', name: 'visagismo-b', desc: 'Consultoria de estilo em português para barbearias: análise facial, revisão profissional, relatório e instalação em VPS.', url: 'https://inematds.github.io/visagismo-b/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'claude-session-kit', desc: 'Kit pra sessões enxutas no Claude Code: statusline com cota real (5 h, semanal geral e semanal por modelo), três skills de sessão (checkpoint, auditoria de memória e handoff) e o plano que liga tudo.', url: 'https://inematds.github.io/claude-session-kit/guia/', badge: 'Guia' },
