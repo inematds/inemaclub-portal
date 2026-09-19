@@ -627,6 +627,34 @@ export default function Portal({
         </div>
       </section>
 
+      {/* Evento — JEV — decisões de IA na prática (destaque) */}
+      <section id="evento-jev" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href={evLink("https://eventos.inema.pro/jev/")}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/jev/', 'JEV — decisões de IA na prática', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.48 0.19 28)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 28)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={img("/doc/jev.png")}
+              alt={t.events.jevAlt}
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
+
       {/* Evento — Gestão de Agentes 2027 (destaque) */}
       <section id="evento-gestao-agentes-2027" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
