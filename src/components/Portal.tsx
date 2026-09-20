@@ -2034,6 +2034,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/manual-oculto-ia/', label: 'Manual Oculto', desc: 'System Prompts como os Labs Fazem — do Fundamento ao Cérebro do Fable' },
             ]},
             { title: '⚙️ Agentic OS', steps: [
+              { href: 'https://inematds.github.io/oswork/', label: 'OSWork', desc: 'Do chat ao ambiente de agentes — curso v2 com práticas' },
               { href: 'https://inematds.github.io/agenticbasico/', label: 'Agentic Básico', desc: 'Fundamentos de Agentes IA — 5 Pilares + Arena' },
               { href: 'https://inematds.github.io/agenticos/',           label: 'Agentic OS',     desc: 'Sistema Operacional do Trabalho com IA' },
               { href: 'https://inematds.github.io/newagenticos/',        label: 'New Agentic OS', desc: 'Do Executivo ao Jarvis Multi-Cliente' },

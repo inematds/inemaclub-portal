@@ -63,10 +63,6 @@
     "en": "Super-Agents — From AI that responds to AI that works: delegate real responsibilities to AI agents (8 lessons)",
     "es": "Super-Agentes — De la IA que responde a la IA que trabaja: delegue responsabilidades reales a agentes de IA (8 clases)"
   },
-  "Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)": {
-    "en": "The Super-Agents Have Arrived — What changes in your work when AI stops waiting for orders (6 lessons)",
-    "es": "Los Super-Agentes Llegaron — Qué cambia en tu trabajo cuando la IA deja de esperar órdenes (6 clases)"
-  },
   "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)": {
     "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
     "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
@@ -382,5 +378,9 @@
   "Explicação detalhada do conceito Dream-RSI (Recursive Self-Improvement) e sua conexão com o projeto LOOP-R da INEMA. O tópico apresenta um guia educativo criado pela INEMA sobre o paper \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\".": {
     "en": "Detailed explanation of the Dream-RSI (Recursive Self-Improvement) concept and its connection to INEMA's LOOP-R project. The topic presents an educational guide created by INEMA on the paper \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\".",
     "es": "Explicación detallada del concepto Dream-RSI (Recursive Self-Improvement) y su conexión con el proyecto LOOP-R de INEMA. El tema presenta una guía educativa creada por INEMA sobre el artículo \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\"."
+  },
+  "OSWork — IA como sistema de trabalho: curso v2 completo": {
+    "en": "OSWork — AI as a work system: complete v2 course",
+    "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
   }
 }

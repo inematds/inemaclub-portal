@@ -2712,6 +2712,19 @@
       "url": "https://inematds.github.io/os-agentes/guia/"
     },
     {
+      "id": 277,
+      "title": "OSWork — IA como sistema de trabalho",
+      "description": "Do chat ao ambiente de agentes: 4 trilhas, 8 módulos e 48 tópicos sobre Codex, arquivos, AGENTS.md, Skills, Git, Telegram e VPS. Curso v2 com progresso, notas e laboratórios práticos.",
+      "icon": "⚙️",
+      "tags": [
+        "IA",
+        "Codex",
+        "Agentes",
+        "Produtividade"
+      ],
+      "url": "https://inematds.github.io/oswork/"
+    },
+    {
       "id": 149,
       "title": "Padrões de System Prompts — Anatomia, Catálogo e Evolução",
       "description": "Engenharia de system prompts revelada pelos prompts reais de Claude, GPT, Gemini, Cursor e outros. Anatomia das 6 seções universais, catálogo de 12 padrões nomeados + 5 antipadrões, e a evolução por diffs (Opus 4.8 → Fable 5) com citações originais.",
@@ -3918,6 +3931,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-20",
+      "title": "OSWork — IA como sistema de trabalho: curso v2 completo",
+      "type": "novo",
+      "url": "https://inematds.github.io/oswork/"
+    },
     {
       "date": "2026-09-19",
       "title": "Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios",

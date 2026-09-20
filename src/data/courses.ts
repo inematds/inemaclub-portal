@@ -1895,6 +1895,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/os-agentes/guia/',
   },
   {
+    id: 277,
+    title: 'OSWork — IA como sistema de trabalho',
+    description: 'Do chat ao ambiente de agentes: 4 trilhas, 8 módulos e 48 tópicos sobre Codex, arquivos, AGENTS.md, Skills, Git, Telegram e VPS. Curso v2 com progresso, notas e laboratórios práticos.',
+    icon: '⚙️',
+    tags: ['IA', 'Codex', 'Agentes', 'Produtividade'],
+    url: 'https://inematds.github.io/oswork/',
+  },
+  {
     id: 149,
     title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução',
     description:
@@ -2670,6 +2678,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-20', title: 'OSWork — IA como sistema de trabalho: curso v2 completo', type: 'novo', url: 'https://inematds.github.io/oswork/' },
   { date: '2026-09-19', title: 'Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios', type: 'atualizado', url: 'https://github.com/inematds/jev-curso' },
   { date: '2026-09-18', title: 'Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios', type: 'novo', url: 'https://github.com/inematds/jev-curso' },
   { date: '2026-09-18', title: 'Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos', type: 'novo', url: 'https://inematds.github.io/pilulasdeouro/' },
