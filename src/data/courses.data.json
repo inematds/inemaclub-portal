@@ -5417,6 +5417,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-20",
+      "title": "Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens",
+      "type": "novo",
+      "url": "https://inematds.github.io/astrabasico/guia/"
+    },
+    {
+      "date": "2026-09-20",
       "title": "Jev Decision Lab — Composição de pontuações, casos de fronteira e roteiro de piloto",
       "type": "atualizado",
       "url": "https://inematds.github.io/jev/guia/"
@@ -6371,6 +6377,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "◈",
+      "name": "astrabasico",
+      "desc": "Astra Básico: controle de tokens com guia e roteiros em português, espanhol e inglês, prompts autorais, skill e calculadora local. Inclui prévia visual sem narração.",
+      "url": "https://inematds.github.io/astrabasico/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "⚖️",
       "name": "jurisflow",
