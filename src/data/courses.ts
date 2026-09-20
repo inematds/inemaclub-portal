@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-19', title: 'JurisFlow — Gestão de escritório de advocacia com assistente jurídico de IA', type: 'novo', url: 'https://inematds.github.io/jurisflow/guia/' },
   { date: '2026-09-19', title: 'google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA', type: 'novo', url: 'https://inematds.github.io/google-rsi/guia/' },
   { date: '2026-09-19', title: 'Jev Decision Lab — 20 casos, experimentos e comparação com uso simples', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-18', title: 'Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local', type: 'novo', url: 'https://inematds.github.io/jev/guia/' },

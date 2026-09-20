@@ -123,10 +123,6 @@
     "en": "Jarvis v7 — Local personal assistant with OAuth, persistent knowledge and Kie studio",
     "es": "Jarvis v7 — Asistente personal local con OAuth, conocimiento persistente y estudio Kie"
   },
-  "MS-v7 Social Autopilot — Voz de marca + 3 comandos no Claude Code: posts na sua voz, visual e agendamento com provedores configuráveis, aprovados por você": {
-    "en": "MS-v7 Social Autopilot — Brand voice + 3 commands in Claude Code: posts in your voice, visual and scheduling with configurable providers, approved by you",
-    "es": "MS-v7 Social Autopilot — Voz de marca + 3 comandos en Claude Code: posts en tu voz, visual y programación con proveedores configurables, aprobados por ti"
-  },
   "Como Migrar de Claude para Codex ou outros": {
     "en": "How to Migrate from Claude to Codex or Others",
     "es": "Cómo migrar de Claude a Codex u otros"
@@ -374,5 +370,9 @@
   "google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA": {
     "en": "google-rsi — Dream-RSI: educational guide, original figures and plan to learn to research better with AI",
     "es": "google-rsi — Dream-RSI: guía educativa, figuras originales y plan para aprender a investigar mejor con IA"
+  },
+  "JurisFlow — Gestão de escritório de advocacia com assistente jurídico de IA": {
+    "en": "JurisFlow — Law firm management with AI legal assistant",
+    "es": "JurisFlow — Gestión de despacho de abogados con asistente jurídico de IA"
   }
 }

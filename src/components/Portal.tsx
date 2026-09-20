@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '⚖️', name: 'jurisflow', desc: 'JurisFlow: sistema de gestão para escritório de advocacia — clientes, processos com número CNJ e fases, andamentos, atendimentos, agenda e prazos fatais, tarefas, financeiro e documentos, com assistente jurídico de IA (minuta de petição, jurisprudência, cálculo de prazo, notificação e contrato de honorários) e modo de demonstração com um clique.', url: 'https://inematds.github.io/jurisflow/guia/', badge: 'Guia' },
   { icon: '🔬', name: 'google-rsi', desc: 'Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.', url: 'https://inematds.github.io/google-rsi/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'jev', desc: 'Jev Decision Lab: vinte casos didáticos, perguntas combinadas, importação e exportação, custo completo e experimentos reproduzíveis com comparação de resultados.', url: 'https://inematds.github.io/jev/guia/', badge: 'Guia' },
   { icon: '✂️', name: 'visagismo-b', desc: 'Consultoria de estilo em português para barbearias: análise facial, revisão profissional, relatório e instalação em VPS.', url: 'https://inematds.github.io/visagismo-b/guia/', badge: 'Guia' },
