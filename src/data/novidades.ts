@@ -13,6 +13,22 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2463916523/4623",
+    "date": "2026-09-19",
+    "titulo": "JEV",
+    "resumo": "Tópico dedicado ao projeto/ferramenta JEV, com compartilhamento de links de referência — vídeos do YouTube, documentação e portal de eventos.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4623"
+  },
+  {
+    "id": "3627610270/1963",
+    "date": "2026-09-19",
+    "titulo": "Dream-RSI - Recursive Self-Improvement",
+    "resumo": "Explicação detalhada do conceito Dream-RSI (Recursive Self-Improvement) e sua conexão com o projeto LOOP-R da INEMA. O tópico apresenta um guia educativo criado pela INEMA sobre o paper \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\".",
+    "grupo": "INEMA.GOOGLE",
+    "url": "https://www.inema.pro/cerebro/inema-google/1963"
+  },
+  {
     "id": "3053650449/1317",
     "date": "2026-09-18",
     "titulo": "Skill Astra Higgsfield",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Tópico com conteúdo mínimo sobre criação de nicho no YouTube, composto majoritariamente por mídias e mensagens sem texto.",
     "grupo": "INEMA.PROMPTS",
     "url": "https://www.inema.pro/cerebro/inema-prompts/6048"
-  },
-  {
-    "id": "vip/2026-09-03/estou desenvolvendo as certificacoes, deve estar 100% em 202",
-    "date": "2026-09-03",
-    "titulo": "estou desenvolvendo as certificacoes, deve estar 100% em 2027, mas quem quer testar pode ir se preparando",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://cert.inema.pro/"
-  },
-  {
-    "id": "vip/2026-09-02/A quantidade de empresas apresentando Robots humanos. E uma ",
-    "date": "2026-09-02",
-    "titulo": "A quantidade de empresas apresentando Robots humanos. E uma chamada ubtech fez um tao realista q no lançamento vendeu 13 mil por 140 mil dolares.",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://www.ubtrobot.com/en/?srsltid=AfmBOopoilJ-hlGuP32x7feZ61QqpiQ9wi3G6xwc5GEAiyeXmOSkh4N2"
   }
 ];
