@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🏔️', name: 'sanmartindelosandes', desc: 'Guia de conteúdo sobre San Martín de los Andes (Neuquén, Patagônia argentina): história e povo mapuche, Lago Lácar, Parque Nacional Lanín, Cerro Chapelco, Ruta de los Siete Lagos, quando ir e como chegar.', url: 'https://inematds.github.io/sanmartindelosandes/', badge: 'Guia' },
   { icon: '◈', name: 'astrabasico', desc: 'Astra Básico: controle de tokens com guia e roteiros em português, espanhol e inglês, prompts autorais, skill e calculadora local. Inclui prévia visual sem narração.', url: 'https://inematds.github.io/astrabasico/guia/', badge: 'Guia' },
   { icon: '⚖️', name: 'jurisflow', desc: 'JurisFlow: sistema de gestão para escritório de advocacia — clientes, processos com número CNJ e fases, andamentos, atendimentos, agenda e prazos fatais, tarefas, financeiro e documentos, com assistente jurídico de IA (minuta de petição, jurisprudência, cálculo de prazo, notificação e contrato de honorários) e modo de demonstração com um clique.', url: 'https://inematds.github.io/jurisflow/guia/', badge: 'Guia' },
   { icon: '🔬', name: 'google-rsi', desc: 'Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.', url: 'https://inematds.github.io/google-rsi/guia/', badge: 'Guia' },
