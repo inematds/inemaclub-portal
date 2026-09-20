@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-20', title: 'Jev Decision Lab — Composição de pontuações, casos de fronteira e roteiro de piloto', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-19', title: 'Jev Decision Lab — 17 pacotes, lotes com retomada e avaliação Choice/Noul/Score', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-19', title: 'JurisFlow — Gestão de escritório de advocacia com assistente jurídico de IA', type: 'novo', url: 'https://inematds.github.io/jurisflow/guia/' },
   { date: '2026-09-19', title: 'google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA', type: 'novo', url: 'https://inematds.github.io/google-rsi/guia/' },
@@ -360,10 +361,10 @@ export const platformsData: Course[] = [
   {
     id: 276,
     title: 'Jev na prática — Decisões estruturadas com IA',
-    description: 'Curso em Markdown com 3 trilhas, 12 módulos, 36 aulas e 12 laboratórios. Atualizado para 17 pacotes, OpenRouter, skills, lotes com retomada e avaliação por pergunta, com exercícios e gabaritos.',
+    description: 'Curso HTML v2 com 3 trilhas, 12 módulos, 36 aulas e 12 laboratórios. Progresso, anotações, dúvidas, roteiro de piloto e práticas com 17 pacotes, OpenRouter e avaliação.',
     icon: '📘',
     tags: ['IA', 'Automação', 'Decisões', 'Jev'],
-    url: 'https://github.com/inematds/jev-curso',
+    url: 'https://inematds.github.io/jev-curso/',
   },
   {
     id: 174,
@@ -2671,9 +2672,10 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
-  { date: '2026-09-19', title: 'Jev na prática — 36 aulas atualizadas, 17 pacotes e roteiro de lotes e avaliação', type: 'atualizado', url: 'https://github.com/inematds/jev-curso' },
-  { date: '2026-09-19', title: 'Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios', type: 'atualizado', url: 'https://github.com/inematds/jev-curso' },
-  { date: '2026-09-18', title: 'Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios', type: 'novo', url: 'https://github.com/inematds/jev-curso' },
+  { date: '2026-09-20', title: 'Jev na prática — Curso HTML v2 com 36 aulas, progresso, anotações e roteiro de piloto', type: 'atualizado', url: 'https://inematds.github.io/jev-curso/' },
+  { date: '2026-09-19', title: 'Jev na prática — 36 aulas atualizadas, 17 pacotes e roteiro de lotes e avaliação', type: 'atualizado', url: 'https://inematds.github.io/jev-curso/' },
+  { date: '2026-09-19', title: 'Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios', type: 'atualizado', url: 'https://inematds.github.io/jev-curso/' },
+  { date: '2026-09-18', title: 'Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios', type: 'novo', url: 'https://inematds.github.io/jev-curso/' },
   { date: '2026-09-18', title: 'Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos', type: 'novo', url: 'https://inematds.github.io/pilulasdeouro/' },
   { date: '2026-09-14', title: 'openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)', type: 'novo', url: 'https://inematds.github.io/curso-openpcbotv3/' },
   { date: '2026-09-15', title: 'Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)', type: 'novo', url: 'https://inematds.github.io/curso-claude-codex/' },
