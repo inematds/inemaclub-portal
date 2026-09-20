@@ -273,7 +273,7 @@
     {
       "id": 276,
       "title": "Jev na prática — Decisões estruturadas com IA",
-      "description": "Curso em Markdown com 3 trilhas, 12 módulos, 36 aulas e 12 laboratórios: vinte casos, skills, evidências, código, experimentos, custos e validação de alegações. Conteúdo autoral com exercícios e gabaritos.",
+      "description": "Curso em Markdown com 3 trilhas, 12 módulos, 36 aulas e 12 laboratórios. Atualizado para 17 pacotes, OpenRouter, skills, lotes com retomada e avaliação por pergunta, com exercícios e gabaritos.",
       "icon": "📘",
       "tags": [
         "IA",
@@ -3920,6 +3920,12 @@
   "updatesData": [
     {
       "date": "2026-09-19",
+      "title": "Jev na prática — 36 aulas atualizadas, 17 pacotes e roteiro de lotes e avaliação",
+      "type": "atualizado",
+      "url": "https://github.com/inematds/jev-curso"
+    },
+    {
+      "date": "2026-09-19",
       "title": "Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios",
       "type": "atualizado",
       "url": "https://github.com/inematds/jev-curso"
@@ -5386,6 +5392,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-19",
+      "title": "Jev Decision Lab — 17 pacotes, lotes com retomada e avaliação Choice/Noul/Score",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/jev/guia/"
+    },
+    {
+      "date": "2026-09-19",
       "title": "JurisFlow — Gestão de escritório de advocacia com assistente jurídico de IA",
       "type": "novo",
       "url": "https://inematds.github.io/jurisflow/guia/"
@@ -6345,7 +6357,7 @@
     {
       "icon": "🧭",
       "name": "jev",
-      "desc": "Jev Decision Lab: vinte casos didáticos, perguntas combinadas, importação e exportação, custo completo e experimentos reproduzíveis com comparação de resultados.",
+      "desc": "Jev Decision Lab: 20 casos didáticos, 17 pacotes reutilizáveis, lotes com retomada, avaliação por pergunta e skill para Codex e Claude Code.",
       "url": "https://inematds.github.io/jev/guia/",
       "badge": "Guia"
     },

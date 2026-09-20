@@ -2,6 +2,8 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-19 | resolução por regex de conflito consumiu o restante de courses.ts | restaurar a versão remota do índice e reaplicar somente as três alterações Jev antes de gerar e validar | prompt |
+| 2026-09-19 | push Jev encontrou atualização JurisFlow concorrente e conflitos nos feeds | rebase preservando ambos os itens e regeneração do JSON antes de republicar | infra |
 | 2026-09-19 | plano dizia que sitemap não existia; índice estático não mantinha alternates | gerar sitemap pelas fontes existentes, preservar fichas AIV e corrigir o registro | prompt |
 | 2026-09-17 | documentação e teste do Eventos foram escritos no cwd do portal | mover os dois arquivos ao Eventos e restaurar CLAUDE.md do portal, antes limpo, a partir do HEAD; explicitar workdir em cada escrita | prompt |
 | 2026-09-16 | traduz-feeds: Groq devolveu 404 (`llama-3.3-70b-versatile` não existe mais), depois 429 (8k TPM) e 400 (JSON inválido em lote) | listar modelos antes de fixar um; backoff no 429; fallback item a item em texto puro | infra |
