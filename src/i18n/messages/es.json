@@ -49,7 +49,8 @@
     "destaqueButton": "Mira el curso →",
     "iaCultivadaAlt": "IA Cultivada — no se programa, se cultiva. El mismo liderazgo, una nueva forma de crear agentes: función, contexto, herramientas, reglas, ejemplos, memoria, evaluación, feedback.",
     "claudeCodexAlt": "Claude → Codex: migra o quédate agnóstico. Separa el cerebro del modelo — contexto, skills y handoffs portátiles. Evento INEMA 2026.",
-    "jevAlt": "JEV — decisiones de IA en la práctica. Explora el proyecto, aprende en el curso: 20 casos prácticos, 36 lecciones y 10 paquetes."
+    "jevAlt": "JEV — decisiones de IA en la práctica. Explora el proyecto, aprende en el curso: 20 casos prácticos, 36 lecciones y 10 paquetes.",
+    "osworkAlt": "OSWork — IA como sistema de trabajo. Curso completo con ocho módulos."
   },
   "beginners": {
     "title": "Ruta para Principiantes",

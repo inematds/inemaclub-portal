@@ -630,6 +630,34 @@ export default function Portal({
         </div>
       </section>
 
+      {/* Evento — OSWork — IA como sistema de trabalho (destaque) */}
+      <section id="evento-oswork" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href={evLink("https://eventos.inema.pro/oswork/")}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/oswork/', 'OSWork — IA como sistema de trabalho', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.65 0.14 75)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 75)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={img("/doc/oswork.png")}
+              alt={t.events.osworkAlt}
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
+
       {/* Evento — JEV — decisões de IA na prática (destaque) */}
       <section id="evento-jev" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">

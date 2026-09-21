@@ -6,6 +6,7 @@ import type { Locale } from './locales'
  * (image generation) a partir do PT. Fora desta lista, a home usa o PT.
  */
 export const LOCALIZED_IMAGES = new Set([
+  'oswork.png',
   'jev.png',
   'agi-chegou.png',
   'capa-musicavideo-v2.jpg',
