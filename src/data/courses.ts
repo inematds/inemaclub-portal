@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-21', title: 'HOLO Mãos — controle a tela com as mãos, em português', type: 'novo', url: 'https://inematds.github.io/holo-maos/guia/' },
   { date: '2026-09-21', title: 'Laya INEMA — Triagem local em português com interface, API, CLI e avaliação real', type: 'novo', url: 'https://inematds.github.io/laya/guia/' },
   { date: '2026-09-20', title: 'Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens', type: 'novo', url: 'https://inematds.github.io/astrabasico/guia/' },
   { date: '2026-09-20', title: 'Jev Decision Lab — Composição de pontuações, casos de fronteira e roteiro de piloto', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },

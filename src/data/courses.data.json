@@ -5436,6 +5436,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-21",
+      "title": "HOLO Mãos — controle a tela com as mãos, em português",
+      "type": "novo",
+      "url": "https://inematds.github.io/holo-maos/guia/"
+    },
+    {
+      "date": "2026-09-21",
       "title": "Laya INEMA — Triagem local em português com interface, API, CLI e avaliação real",
       "type": "novo",
       "url": "https://inematds.github.io/laya/guia/"
@@ -6402,6 +6408,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🖐️",
+      "name": "holo-maos",
+      "desc": "HOLO Mãos: controle a tela com as mãos pela webcam — belisca, arrasta, arremessa e organiza notas, sem encostar no mouse. Adaptação em português (interface, avisos e voz do assistente) do HOLO de Zubair Trabzada, com notas de exemplo do INEMA. Roda 100% na máquina: sem nuvem, sem chave de API e sem conta.",
+      "url": "https://inematds.github.io/holo-maos/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "◈",
       "name": "astrabasico",

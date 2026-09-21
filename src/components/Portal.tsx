@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🖐️', name: 'holo-maos', desc: 'HOLO Mãos: controle a tela com as mãos pela webcam — belisca, arrasta, arremessa e organiza notas, sem encostar no mouse. Adaptação em português (interface, avisos e voz do assistente) do HOLO de Zubair Trabzada, com notas de exemplo do INEMA. Roda 100% na máquina: sem nuvem, sem chave de API e sem conta.', url: 'https://inematds.github.io/holo-maos/guia/', badge: 'Guia' },
   { icon: '◈', name: 'astrabasico', desc: 'Astra Básico: controle de tokens com guia e roteiros em português, espanhol e inglês, prompts autorais, skill e calculadora local. Inclui prévia visual sem narração.', url: 'https://inematds.github.io/astrabasico/guia/', badge: 'Guia' },
   { icon: '⚖️', name: 'jurisflow', desc: 'JurisFlow: sistema de gestão para escritório de advocacia — clientes, processos com número CNJ e fases, andamentos, atendimentos, agenda e prazos fatais, tarefas, financeiro e documentos, com assistente jurídico de IA (minuta de petição, jurisprudência, cálculo de prazo, notificação e contrato de honorários) e modo de demonstração com um clique.', url: 'https://inematds.github.io/jurisflow/guia/', badge: 'Guia' },
   { icon: '🔬', name: 'google-rsi', desc: 'Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.', url: 'https://inematds.github.io/google-rsi/guia/', badge: 'Guia' },
