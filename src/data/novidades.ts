@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2433384436/6626",
+    "date": "2026-09-20",
+    "titulo": "'",
+    "resumo": "Publicação de um guia estruturado chamado \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que ensina a evolução do uso de IA de chatbot simples até um ambiente de agentes com memória, Skills, Git, Telegram e VPS. O material é organizado em 29 lições numeradas.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6626"
+  },
+  {
     "id": "2463916523/4623",
     "date": "2026-09-19",
     "titulo": "JEV",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Resumo e análise de uso prático do GPT-6 Astra, com foco em Computer Use, níveis de esforço e mudança de paradigma na forma de interagir com modelos avançados.",
     "grupo": "INEMA.LLMS",
     "url": "https://www.inema.pro/cerebro/inema-llms/4534"
-  },
-  {
-    "id": "2494987106/6048",
-    "date": "2026-09-04",
-    "titulo": "Crie Nicho de Sucesso no yt",
-    "resumo": "Tópico com conteúdo mínimo sobre criação de nicho no YouTube, composto majoritariamente por mídias e mensagens sem texto.",
-    "grupo": "INEMA.PROMPTS",
-    "url": "https://www.inema.pro/cerebro/inema-prompts/6048"
   }
 ];

@@ -275,10 +275,6 @@
     "en": "FEP 2026 — AGI has arrived and the prompt almost died: the FEP rewritten technique by technique (7 lessons, de‑para and kit of 12 briefings)",
     "es": "FEP 2026 — La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases, de-para y kit de 12 briefings)"
   },
-  "Crie Nicho de Sucesso no yt": {
-    "en": "Create a Successful Niche on yt",
-    "es": "Crea Nicho de Éxito en yt"
-  },
   "claude-session-kit — Statusline com cota real por modelo + skills de checkpoint, auditoria de memória e handoff pro Claude Code": {
     "en": "claude-session-kit — Statusline with real quota per model + checkpoint skills, memory audit and handoff to Claude Code",
     "es": "claude-session-kit — Statusline con cuota real por modelo + habilidades de checkpoint, auditoría de memoria y handoff a Claude Code"
@@ -310,10 +306,6 @@
   "Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios": {
     "en": "Jev in practice — 36 enriched lessons, 20 cases and 12 labs",
     "es": "Jev en la práctica — 36 clases enriquecidas, 20 casos y 12 laboratorios"
-  },
-  "Tópico com conteúdo mínimo sobre criação de nicho no YouTube, composto majoritariamente por mídias e mensagens sem texto.": {
-    "en": "Topic with minimal content about creating a niche on YouTube, composed mainly of media and text‑less messages.",
-    "es": "Tema con contenido mínimo sobre creación de nicho en YouTube, compuesto mayormente por medios y mensajes sin texto."
   },
   "Jev Decision Lab — 17 pacotes, lotes com retomada e avaliação Choice/Noul/Score": {
     "en": "Jev Decision Lab — 17 packages, batches with restart and Choice/Noul/Score assessment",
@@ -378,5 +370,17 @@
   "Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens": {
     "en": "Astra Básico — trilingual guide, prompts, skill and token calculator",
     "es": "Astra Básico — guía trilingüe, prompts, skill y calculadora de tokens"
+  },
+  "SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival": {
+    "en": "SlopMonster — AI text linter: rating from 0 to 5, CI gate and cleanup with rival model",
+    "es": "SlopMonster — Linter de texto de IA: puntuación de 0 a 5, puerta de CI y limpieza con modelo rival"
+  },
+  "'": {
+    "en": "'",
+    "es": "'"
+  },
+  "Publicação de um guia estruturado chamado \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que ensina a evolução do uso de IA de chatbot simples até um ambiente de agentes com memória, Skills, Git, Telegram e VPS. O material é organizado em 29 lições numeradas.": {
+    "en": "Release of a structured guide called \"AI as System — From Chat to your own agent environment\", which teaches the evolution of using AI from simple chatbot to an agent environment with memory, Skills, Git, Telegram and VPS. The material is organized into 29 numbered lessons.",
+    "es": "Publicación de una guía estructurada llamada \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que enseña la evolución del uso de IA desde un chatbot simple hasta un entorno de agentes con memoria, Skills, Git, Telegram y VPS. El material está organizado en 29 lecciones numeradas."
   }
 }
