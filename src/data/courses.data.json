@@ -2255,6 +2255,19 @@
       "url": "https://inematds.github.io/local-kit/"
     },
     {
+      "id": 278,
+      "title": "Laya & Jev — Decisões estruturadas na prática",
+      "description": "Curso v2 com 4 trilhas, 8 módulos e 48 tópicos: motores de decisão, Laya local em português, triagem, integração com agentes e avaliação crítica. Inclui exercícios, progresso, notas e projeto executável separado.",
+      "icon": "🧭",
+      "tags": [
+        "Laya",
+        "Jev",
+        "Agentes",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/laya-curso/"
+    },
+    {
       "id": 214,
       "title": "Lives 2026 — 7 vídeos estratégicos de serviços de IA",
       "description": "Sete lives curtas e narradas sobre o lado estratégico de vender serviços de IA: negociação real, precificação por valor, o que empresas compram, build to sell, sinal vs ruído, a guerra das ferramentas e a venda que o cliente não pediu. Cada uma em 16:9 e 9:16 (Shorts/Reels).",
@@ -3932,6 +3945,12 @@
   ],
   "updatesData": [
     {
+      "date": "2026-09-21",
+      "title": "Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português",
+      "type": "novo",
+      "url": "https://inematds.github.io/laya-curso/"
+    },
+    {
       "date": "2026-09-20",
       "title": "OSWork — IA como sistema de trabalho: curso v2 completo",
       "type": "novo",
@@ -5416,6 +5435,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-21",
+      "title": "Laya INEMA — Triagem local em português com interface, API, CLI e avaliação real",
+      "type": "novo",
+      "url": "https://inematds.github.io/laya/guia/"
+    },
+    {
       "date": "2026-09-20",
       "title": "Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens",
       "type": "novo",
@@ -6396,6 +6421,20 @@
       "name": "google-rsi",
       "desc": "Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.",
       "url": "https://inematds.github.io/google-rsi/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🏔️",
+      "name": "sanmartindelosandes",
+      "desc": "Guia de conteúdo sobre San Martín de los Andes (Neuquén, Patagônia argentina): história e povo mapuche, Lago Lácar, Parque Nacional Lanín, Cerro Chapelco, Ruta de los Siete Lagos, quando ir e como chegar.",
+      "url": "https://inematds.github.io/sanmartindelosandes/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "◈",
+      "name": "laya",
+      "desc": "Laya INEMA: triagem local em português, interface, API, CLI e avaliação com pesos reais. Recomendações com revisão humana e curso v2 separado.",
+      "url": "https://inematds.github.io/laya/guia/",
       "badge": "Guia"
     },
     {

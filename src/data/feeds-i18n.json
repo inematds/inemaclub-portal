@@ -31,10 +31,6 @@
     "en": "openpcbot v3 — Your local Jarvis: install, use and configure (4 tracks, 8 modules, 48 topics)",
     "es": "openpcbot v3 — Tu Jarvis local: instalar, usar y configurar (4 rutas, 8 módulos, 48 temas)"
   },
-  "GPT-6 Astra na prática — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas)": {
-    "en": "GPT-6 Astra in practice — Delegate the entire task to the new assistant, no coding required (8 lessons)",
-    "es": "GPT-6 Astra en la práctica — Delegue la tarea completa al nuevo asistente, sin programar (8 clases)"
-  },
   "Resumo de um material sobre como usar corretamente o GPT-6 Astra, evitando desperdício de capacidade e extraindo valor real com problemas complexos e fluxos agênticos estruturados.": {
     "en": "Summary of material on how to correctly use GPT-6 Astra, avoiding capacity waste and extracting real value with complex problems and structured agentic flows.",
     "es": "Resumen de un material sobre cómo usar correctamente GPT-6 Astra, evitando el desperdicio de capacidad y extrayendo valor real con problemas complejos y flujos ágentes estructurados."
@@ -371,10 +367,6 @@
     "en": "Astra Básico — trilingual guide, prompts, skill and token calculator",
     "es": "Astra Básico — guía trilingüe, prompts, skill y calculadora de tokens"
   },
-  "SlopMonster — Linter de texto de IA: nota de 0 a 5, portão de CI e limpeza com modelo rival": {
-    "en": "SlopMonster — AI text linter: rating from 0 to 5, CI gate and cleanup with rival model",
-    "es": "SlopMonster — Linter de texto de IA: puntuación de 0 a 5, puerta de CI y limpieza con modelo rival"
-  },
   "'": {
     "en": "'",
     "es": "'"
@@ -382,5 +374,13 @@
   "Publicação de um guia estruturado chamado \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que ensina a evolução do uso de IA de chatbot simples até um ambiente de agentes com memória, Skills, Git, Telegram e VPS. O material é organizado em 29 lições numeradas.": {
     "en": "Release of a structured guide called \"AI as System — From Chat to your own agent environment\", which teaches the evolution of using AI from simple chatbot to an agent environment with memory, Skills, Git, Telegram and VPS. The material is organized into 29 numbered lessons.",
     "es": "Publicación de una guía estructurada llamada \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que enseña la evolución del uso de IA desde un chatbot simple hasta un entorno de agentes con memoria, Skills, Git, Telegram y VPS. El material está organizado en 29 lecciones numeradas."
+  },
+  "Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português": {
+    "en": "Laya & Jev — Course v2: structured decisions and practical screening in Portuguese",
+    "es": "Laya & Jev — Curso v2: decisiones estructuradas y cribado práctico en portugués"
+  },
+  "Laya INEMA — Triagem local em português com interface, API, CLI e avaliação real": {
+    "en": "Laya INEMA — Local screening in Portuguese with interface, API, CLI and real evaluation",
+    "es": "Laya INEMA — Cribado local en portugués con interfaz, API, CLI y evaluación real"
   }
 }

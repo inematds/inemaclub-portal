@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-21', title: 'Laya INEMA — Triagem local em português com interface, API, CLI e avaliação real', type: 'novo', url: 'https://inematds.github.io/laya/guia/' },
   { date: '2026-09-20', title: 'Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens', type: 'novo', url: 'https://inematds.github.io/astrabasico/guia/' },
   { date: '2026-09-20', title: 'Jev Decision Lab — Composição de pontuações, casos de fronteira e roteiro de piloto', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-19', title: 'Jev Decision Lab — 17 pacotes, lotes com retomada e avaliação Choice/Noul/Score', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
@@ -1610,6 +1611,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/local-kit/',
   },
   {
+    id: 278,
+    title: 'Laya & Jev — Decisões estruturadas na prática',
+    description: 'Curso v2 com 4 trilhas, 8 módulos e 48 tópicos: motores de decisão, Laya local em português, triagem, integração com agentes e avaliação crítica. Inclui exercícios, progresso, notas e projeto executável separado.',
+    icon: '🧭',
+    tags: ['Laya', 'Jev', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/laya-curso/',
+  },
+  {
     id: 214,
     title: 'Lives 2026 — 7 vídeos estratégicos de serviços de IA',
     description:
@@ -2681,6 +2690,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-21', title: 'Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português', type: 'novo', url: 'https://inematds.github.io/laya-curso/' },
   { date: '2026-09-20', title: 'OSWork — IA como sistema de trabalho: curso v2 completo', type: 'novo', url: 'https://inematds.github.io/oswork/' },
   { date: '2026-09-20', title: 'Jev na prática — Curso HTML v2 com 36 aulas, progresso, anotações e roteiro de piloto', type: 'atualizado', url: 'https://inematds.github.io/jev-curso/' },
   { date: '2026-09-19', title: 'Jev na prática — 36 aulas atualizadas, 17 pacotes e roteiro de lotes e avaliação', type: 'atualizado', url: 'https://inematds.github.io/jev-curso/' },

@@ -28,6 +28,8 @@ const communityProjects: Array<{
   { icon: '◈', name: 'astrabasico', desc: 'Astra Básico: controle de tokens com guia e roteiros em português, espanhol e inglês, prompts autorais, skill e calculadora local. Inclui prévia visual sem narração.', url: 'https://inematds.github.io/astrabasico/guia/', badge: 'Guia' },
   { icon: '⚖️', name: 'jurisflow', desc: 'JurisFlow: sistema de gestão para escritório de advocacia — clientes, processos com número CNJ e fases, andamentos, atendimentos, agenda e prazos fatais, tarefas, financeiro e documentos, com assistente jurídico de IA (minuta de petição, jurisprudência, cálculo de prazo, notificação e contrato de honorários) e modo de demonstração com um clique.', url: 'https://inematds.github.io/jurisflow/guia/', badge: 'Guia' },
   { icon: '🔬', name: 'google-rsi', desc: 'Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.', url: 'https://inematds.github.io/google-rsi/guia/', badge: 'Guia' },
+  { icon: '🏔️', name: 'sanmartindelosandes', desc: "Guia de conteúdo sobre San Martín de los Andes (Neuquén, Patagônia argentina): história e povo mapuche, Lago Lácar, Parque Nacional Lanín, Cerro Chapelco, Ruta de los Siete Lagos, quando ir e como chegar.", url: 'https://inematds.github.io/sanmartindelosandes/', badge: 'Guia' },
+  { icon: '◈', name: 'laya', desc: 'Laya INEMA: triagem local em português, interface, API, CLI e avaliação com pesos reais. Recomendações com revisão humana e curso v2 separado.', url: 'https://inematds.github.io/laya/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'jev', desc: 'Jev Decision Lab: 20 casos, 17 pacotes, lotes, avaliação, composição de pontuações e skill para Codex e Claude Code.', url: 'https://inematds.github.io/jev/guia/', badge: 'Guia' },
   { icon: '✂️', name: 'visagismo-b', desc: 'Consultoria de estilo em português para barbearias: análise facial, revisão profissional, relatório e instalação em VPS.', url: 'https://inematds.github.io/visagismo-b/guia/', badge: 'Guia' },
   { icon: '🧭', name: 'claude-session-kit', desc: 'Kit pra sessões enxutas no Claude Code: statusline com cota real (5 h, semanal geral e semanal por modelo), três skills de sessão (checkpoint, auditoria de memória e handoff) e o plano que liga tudo.', url: 'https://inematds.github.io/claude-session-kit/guia/', badge: 'Guia' },
@@ -2110,6 +2112,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/prof2031CAIP', label: 'CAIP', desc: 'Certified AI Professional' },
             ]},
             { title: '🤖 Agentes Jarvis', steps: [
+              { href: 'https://inematds.github.io/laya-curso/', label: 'Laya & Jev', desc: 'Decisões estruturadas, triagem local e avaliação em português' },
               { href: 'https://inematds.github.io/hermes21c/',         label: 'Hermes 21C',      desc: 'Os 21 conceitos do Hermes explicados' },
               { href: 'https://inematds.github.io/agentehermes',       label: 'Agente Hermes',   desc: 'Assistente IA Self-Hosted com Docker' },
               { href: 'https://inematds.github.io/docker-openclaw/',   label: 'Docker OpenClaw', desc: 'Assistente IA Autônomo e Multi-Canal' },
