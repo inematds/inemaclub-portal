@@ -5417,12 +5417,6 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-20",
-      "title": "San Martín de los Andes — Guia da Patagônia argentina: Lácar, Lanín, Chapelco e os Sete Lagos",
-      "type": "novo",
-      "url": "https://inematds.github.io/sanmartindelosandes/"
-    },
-    {
-      "date": "2026-09-20",
       "title": "Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens",
       "type": "novo",
       "url": "https://inematds.github.io/astrabasico/guia/"
@@ -6383,13 +6377,6 @@
     }
   ],
   "communityProjects": [
-    {
-      "icon": "🏔️",
-      "name": "sanmartindelosandes",
-      "desc": "Guia de conteúdo sobre San Martín de los Andes (Neuquén, Patagônia argentina): história e povo mapuche, Lago Lácar, Parque Nacional Lanín, Cerro Chapelco, Ruta de los Siete Lagos, quando ir e como chegar.",
-      "url": "https://inematds.github.io/sanmartindelosandes/",
-      "badge": "Guia"
-    },
     {
       "icon": "◈",
       "name": "astrabasico",

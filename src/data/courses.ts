@@ -16,7 +16,6 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
-  { date: '2026-09-20', title: 'San Martín de los Andes — Guia da Patagônia argentina: Lácar, Lanín, Chapelco e os Sete Lagos', type: 'novo', url: 'https://inematds.github.io/sanmartindelosandes/' },
   { date: '2026-09-20', title: 'Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens', type: 'novo', url: 'https://inematds.github.io/astrabasico/guia/' },
   { date: '2026-09-20', title: 'Jev Decision Lab — Composição de pontuações, casos de fronteira e roteiro de piloto', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-19', title: 'Jev Decision Lab — 17 pacotes, lotes com retomada e avaliação Choice/Noul/Score', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },

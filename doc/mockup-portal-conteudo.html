@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>news.inema.pro — mockup (pt/es/en)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0b0d; --panel:#111317; --ink:#e8e6e3; --mut:#a3abb5; --line:#23272e;
+  --amber:#f5c04a; --amber-ink:#1a1200; --sky:#38bdf8;
+  --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --display:"Bricolage Grotesque","Atkinson Hyperlegible",sans-serif;
+  --measure:68ch;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.6}
+body{margin:0}
+a{color:inherit;text-decoration-color:var(--amber);text-underline-offset:4px}
+a:hover{color:var(--amber)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;font-weight:700;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:var(--measure)}
+.mut{color:var(--mut)}
+[data-lang]{display:none}
+html[data-l="pt"] [data-lang="pt"],html[data-l="es"] [data-lang="es"],html[data-l="en"] [data-lang="en"]{display:revert}
+
+/* topo */
+.top{position:sticky;top:0;background:rgba(10,11,13,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+.top .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.02em;text-decoration:none}
+.brand b{color:var(--amber)}
+.nav{display:flex;gap:22px;margin-left:auto;font-size:17px}
+.nav a{text-decoration:none;color:var(--mut)}
+.nav a:hover{color:var(--ink)}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.langs button{background:none;border:0;color:var(--mut);font:inherit;font-size:15px;font-weight:700;padding:5px 12px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink)}
+
+/* hero: a primeira página de hoje */
+.hoje{border-bottom:1px solid var(--line);padding:56px 0 48px}
+.hoje .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.9fr);gap:56px}
+.dateline{display:flex;align-items:baseline;gap:18px;color:var(--mut);font-size:17px;margin-bottom:22px}
+.dateline .d{font-family:var(--display);font-size:clamp(44px,7vw,84px);font-weight:800;color:var(--ink);line-height:1;letter-spacing:-.03em}
+.hoje h1{font-size:clamp(34px,5vw,60px);font-weight:800;max-width:16ch;margin-bottom:26px}
+.hoje h1 em{font-style:normal;color:var(--amber)}
+.manchetes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.manchetes li{border-bottom:1px solid var(--line);padding:16px 0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline}
+.manchetes .t{font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--sky)}
+.manchetes a{font-family:var(--display);font-size:22px;font-weight:700;text-decoration:none;line-height:1.25}
+.manchetes small{display:block;color:var(--mut);font-size:16px;margin-top:4px}
+.ler{display:inline-flex;gap:10px;align-items:center;margin-top:22px;padding:14px 22px;background:var(--amber);color:var(--amber-ink);font-weight:700;text-decoration:none;border-radius:8px;font-size:18px}
+.ler:hover{color:var(--amber-ink);filter:brightness(1.06)}
+.proximo{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;align-self:start}
+.proximo .k{color:var(--sky);font-weight:700;font-size:16px;margin-bottom:10px}
+.proximo h2{font-size:28px;margin-bottom:10px}
+.proximo .quando{font-family:ui-monospace,Menlo,monospace;color:var(--amber);font-size:16px;margin-bottom:14px}
+.proximo p{font-size:17px}
+.proximo .inscrever{display:inline-block;margin-top:6px;padding:11px 18px;border:2px solid var(--amber);border-radius:8px;text-decoration:none;font-weight:700;font-size:17px}
+.pill{display:inline-block;font-size:14px;color:var(--mut);border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin-left:8px;vertical-align:middle}
+
+/* secoes */
+section.bloco{padding:56px 0;border-bottom:1px solid var(--line)}
+.cab{display:flex;align-items:baseline;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.cab h2{font-size:clamp(30px,4vw,44px)}
+.cab p{margin:0;color:var(--mut);font-size:18px}
+.cab a.tudo{margin-left:auto;font-size:17px}
+
+/* eventos: linha do tempo por data */
+.agenda{list-style:none;margin:0;padding:0}
+.agenda li{display:grid;grid-template-columns:130px 1fr auto;gap:24px;padding:22px 0;border-top:1px solid var(--line);align-items:start}
+.agenda .dia{font-family:var(--display);font-size:34px;font-weight:800;line-height:1;color:var(--amber)}
+.agenda .dia small{display:block;font-family:var(--body);font-size:15px;color:var(--mut);font-weight:400;margin-top:6px}
+.agenda h3{font-size:24px;margin-bottom:6px}
+.agenda p{font-size:17px;margin:0}
+.agenda .tipo{font-size:15px;color:var(--sky);white-space:nowrap;padding-top:8px}
+.agenda li.passado .dia{color:var(--mut)}
+.agenda li.passado .tipo{color:var(--mut)}
+
+/* aprender */
+.trilhas{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.trilha{border-top:4px solid var(--amber);padding-top:18px}
+.trilha:nth-child(2){border-color:var(--sky)}
+.trilha:nth-child(3){border-color:var(--ink)}
+.trilha h3{font-size:26px;margin-bottom:8px}
+.trilha p{font-size:17px}
+.trilha ol{padding-left:22px;margin:0 0 12px;font-size:17px}
+.trilha li{margin:4px 0}
+.quiz{margin-top:40px;background:linear-gradient(135deg,#15181d,#0e1014);border:1px solid var(--line);border-radius:14px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.quiz h3{font-size:30px;margin-bottom:8px}
+.quiz p{margin:0;font-size:18px}
+
+/* comunidade */
+.com{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
+.com .canais a{display:block;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:18px}
+.com .canais a span{color:var(--mut);font-size:16px;margin-left:8px}
+.oferta{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+.oferta h3{font-size:26px;margin-bottom:8px}
+.oferta .preco{font-family:var(--display);font-size:40px;font-weight:800;color:var(--amber)}
+.oferta .preco s{color:var(--mut);font-size:20px;font-weight:400;margin-left:10px}
+footer{padding:40px 0;color:var(--mut);font-size:16px}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  html{font-size:18px}
+  .top .wrap{gap:14px}
+  .nav{display:none}
+  .hoje .wrap,.com,.quiz{grid-template-columns:1fr}
+  .trilhas{grid-template-columns:1fr}
+  .agenda li{grid-template-columns:96px 1fr}
+  .agenda .tipo{grid-column:2}
+  .manchetes li{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  main{animation:in .35s ease-out}
+  @keyframes in{from{opacity:0}to{opacity:1}}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#">news<b>.inema.pro</b></a>
+  <nav class="nav">
+    <a href="#hoje"><span data-lang="pt">Hoje</span><span data-lang="es">Hoy</span><span data-lang="en">Today</span></a>
+    <a href="#eventos"><span data-lang="pt">Eventos</span><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
+    <a href="#aprender"><span data-lang="pt">Aprender</span><span data-lang="es">Aprender</span><span data-lang="en">Learn</span></a>
+    <a href="#comunidade"><span data-lang="pt">Comunidade</span><span data-lang="es">Comunidad</span><span data-lang="en">Community</span></a>
+  </nav>
+  <div class="langs" role="group" aria-label="Idioma">
+    <button data-set="pt" aria-pressed="true">PT</button>
+    <button data-set="es" aria-pressed="false">ES</button>
+    <button data-set="en" aria-pressed="false">EN</button>
+  </div>
+</div></header>
+
+<main>
+<section class="hoje" id="hoje"><div class="wrap">
+  <div>
+    <div class="dateline">
+      <span class="d">15</span>
+      <span><span data-lang="pt">setembro de 2026 · IA em 3 minutos</span><span data-lang="es">septiembre de 2026 · IA en 3 minutos</span><span data-lang="en">September 2026 · AI in 3 minutes</span></span>
+    </div>
+    <h1>
+      <span data-lang="pt">O que mudou em IA <em>hoje</em>, explicado pra quem não é da área.</span>
+      <span data-lang="es">Lo que cambió en IA <em>hoy</em>, explicado para quien no es del área.</span>
+      <span data-lang="en">What changed in AI <em>today</em>, explained for people outside the field.</span>
+    </h1>
+    <ol class="manchetes">
+      <li><span class="t">08:40</span><div>
+        <a href="#"><span data-lang="pt">2026 ensinou a criar agentes. 2027 é o ano de aprender a gerenciá-los.</span><span data-lang="es">2026 enseñó a crear agentes. 2027 es el año de aprender a gestionarlos.</span><span data-lang="en">2026 taught us to build agents. 2027 is the year we learn to manage them.</span></a>
+        <small><span data-lang="pt">Por que o gerente de 2027 precisa de 8 competências novas, e quais são.</span><span data-lang="es">Por qué el gerente de 2027 necesita 8 competencias nuevas, y cuáles son.</span><span data-lang="en">Why the 2027 manager needs 8 new skills, and which ones.</span></small>
+      </div></li>
+      <li><span class="t">07:55</span><div>
+        <a href="#"><span data-lang="pt">Seu site já fala com pessoas. Agora precisa conversar com agentes.</span><span data-lang="es">Tu sitio ya habla con personas. Ahora tiene que conversar con agentes.</span><span data-lang="en">Your site already talks to people. Now it has to talk to agents.</span></a>
+        <small><span data-lang="pt">WebMCP em linguagem simples, com um diagnóstico gratuito.</span><span data-lang="es">WebMCP en lenguaje simple, con un diagnóstico gratuito.</span><span data-lang="en">WebMCP in plain language, with a free check-up.</span></small>
+      </div></li>
+      <li><span class="t">07:10</span><div>
+        <a href="#"><span data-lang="pt">Um link entra, um vídeo sai: o que o Content2Video faz e o que não faz.</span><span data-lang="es">Entra un link, sale un video: qué hace Content2Video y qué no.</span><span data-lang="en">A link goes in, a video comes out: what Content2Video does and doesn't do.</span></a>
+        <small><span data-lang="pt">Com o portão de aprovação humano explicado passo a passo.</span><span data-lang="es">Con la puerta de aprobación humana explicada paso a paso.</span><span data-lang="en">With the human approval gate explained step by step.</span></small>
+      </div></li>
+    </ol>
+    <a class="ler" href="#"><span data-lang="pt">Ler a edição de hoje</span><span data-lang="es">Leer la edición de hoy</span><span data-lang="en">Read today's edition</span> ↗</a>
+    <span class="pill"><span data-lang="pt">também por e-mail e WhatsApp</span><span data-lang="es">también por e-mail y WhatsApp</span><span data-lang="en">also by email and WhatsApp</span></span>
+  </div>
+
+  <aside class="proximo">
+    <div class="k"><span data-lang="pt">Próximo evento</span><span data-lang="es">Próximo evento</span><span data-lang="en">Next event</span></div>
+    <h2><span data-lang="pt">Gestão de IA e Agentes: visão 2027</span><span data-lang="es">Gestión de IA y Agentes: visión 2027</span><span data-lang="en">Managing AI and Agents: the 2027 view</span></h2>
+    <div class="quando">24 set · 20:00 (BRT) · online</div>
+    <p><span data-lang="pt">Duas horas ao vivo sobre o que muda quando a equipe passa a ter pessoas e agentes. Gravação fica no portal.</span><span data-lang="es">Dos horas en vivo sobre lo que cambia cuando el equipo pasa a tener personas y agentes. La grabación queda en el portal.</span><span data-lang="en">Two live hours on what changes when a team is made of people and agents. The recording stays on the portal.</span></p>
+    <a class="inscrever" href="#"><span data-lang="pt">Reservar lugar gratuito</span><span data-lang="es">Reservar lugar gratuito</span><span data-lang="en">Reserve a free seat</span></a>
+  </aside>
+</div></section>
+
+<section class="bloco" id="eventos"><div class="wrap">
+  <div class="cab">
+    <h2><span data-lang="pt">Eventos</span><span data-lang="es">Eventos</span><span data-lang="en">Events</span></h2>
+    <p><span data-lang="pt">Ao vivo, gravado ou presencial. Cada evento vira uma página que fica.</span><span data-lang="es">En vivo, grabado o presencial. Cada evento se vuelve una página que permanece.</span><span data-lang="en">Live, recorded or in person. Every event becomes a page that stays.</span></p>
+    <a class="tudo" href="https://eventos.inema.pro"><span data-lang="pt">Agenda completa em eventos.inema.pro</span><span data-lang="es">Agenda completa en eventos.inema.pro</span><span data-lang="en">Full calendar at eventos.inema.pro</span></a>
+  </div>
+  <ol class="agenda">
+    <li><div class="dia">24<small>set</small></div><div>
+      <h3><span data-lang="pt">Gestão de IA e Agentes: visão 2027</span><span data-lang="es">Gestión de IA y Agentes: visión 2027</span><span data-lang="en">Managing AI and Agents: the 2027 view</span></h3>
+      <p><span data-lang="pt">Tese pessoas × agentes, 8 competências e o processo LOOP-R.</span><span data-lang="es">Tesis personas × agentes, 8 competencias y el proceso LOOP-R.</span><span data-lang="en">People × agents thesis, 8 skills and the LOOP-R process.</span></p>
+    </div><span class="tipo"><span data-lang="pt">ao vivo · gratuito</span><span data-lang="es">en vivo · gratis</span><span data-lang="en">live · free</span></span></li>
+    <li><div class="dia">08<small>out</small></div><div>
+      <h3><span data-lang="pt">Imersão Vibe Code do Zero</span><span data-lang="es">Inmersión Vibe Code desde Cero</span><span data-lang="en">Vibe Code from Zero immersion</span></h3>
+      <p><span data-lang="pt">Fundamentos e resolução de problemas, do primeiro prompt ao projeto publicado.</span><span data-lang="es">Fundamentos y resolución de problemas, del primer prompt al proyecto publicado.</span><span data-lang="en">Fundamentals and problem solving, from the first prompt to a published project.</span></p>
+    </div><span class="tipo"><span data-lang="pt">imersão · membros</span><span data-lang="es">inmersión · miembros</span><span data-lang="en">immersion · members</span></span></li>
+    <li class="passado"><div class="dia">02<small>set</small></div><div>
+      <h3><span data-lang="pt">INEMACCBOT na prática: uma campanha com Promoavatar</span><span data-lang="es">INEMACCBOT en la práctica: una campaña con Promoavatar</span><span data-lang="en">INEMACCBOT in practice: a campaign with Promoavatar</span></h3>
+      <p><span data-lang="pt">Gravação, material e projeto final disponíveis.</span><span data-lang="es">Grabación, material y proyecto final disponibles.</span><span data-lang="en">Recording, materials and final project available.</span></p>
+    </div><span class="tipo"><span data-lang="pt">gravado</span><span data-lang="es">grabado</span><span data-lang="en">recorded</span></span></li>
+  </ol>
+</div></section>
+
+<section class="bloco" id="aprender"><div class="wrap">
+  <div class="cab">
+    <h2><span data-lang="pt">Aprender</span><span data-lang="es">Aprender</span><span data-lang="en">Learn</span></h2>
+    <p><span data-lang="pt">Três trilhas gratuitas. Comece pela sua e ganhe um certificado no fim.</span><span data-lang="es">Tres rutas gratuitas. Empieza por la tuya y gana un certificado al final.</span><span data-lang="en">Three free tracks. Start with yours and earn a certificate at the end.</span></p>
+  </div>
+  <div class="trilhas">
+    <div class="trilha">
+      <h3><span data-lang="pt">Nunca usei IA</span><span data-lang="es">Nunca usé IA</span><span data-lang="en">Never used AI</span></h3>
+      <p><span data-lang="pt">Pra quem quer usar no dia a dia sem virar técnico.</span><span data-lang="es">Para quien quiere usarla a diario sin volverse técnico.</span><span data-lang="en">For daily use without becoming a technician.</span></p>
+      <ol><li>IA do Zero</li><li><span data-lang="pt">3 hábitos com IA</span><span data-lang="es">3 hábitos con IA</span><span data-lang="en">3 AI habits</span></li><li>FEP 2026</li></ol>
+    </div>
+    <div class="trilha">
+      <h3><span data-lang="pt">Quero criar com IA</span><span data-lang="es">Quiero crear con IA</span><span data-lang="en">I want to build with AI</span></h3>
+      <p><span data-lang="pt">Vídeos, sites e agentes simples, sem saber programar.</span><span data-lang="es">Videos, sitios y agentes simples, sin saber programar.</span><span data-lang="en">Videos, sites and simple agents, no coding required.</span></p>
+      <ol><li>Vibe Code do Zero</li><li>Content2Video</li><li>Agentes do Zero</li></ol>
+    </div>
+    <div class="trilha">
+      <h3><span data-lang="pt">Vou gerenciar agentes</span><span data-lang="es">Voy a gestionar agentes</span><span data-lang="en">I will manage agents</span></h3>
+      <p><span data-lang="pt">Pra quem lidera equipe e precisa da visão 2027.</span><span data-lang="es">Para quien lidera equipo y necesita la visión 2027.</span><span data-lang="en">For team leads who need the 2027 view.</span></p>
+      <ol><li>AGI-ready</li><li>Gestoria</li><li>WebMCP</li></ol>
+    </div>
+  </div>
+  <div class="quiz">
+    <div>
+      <h3><span data-lang="pt">Em que nível de IA você está?</span><span data-lang="es">¿En qué nivel de IA estás?</span><span data-lang="en">What's your AI level?</span></h3>
+      <p><span data-lang="pt">Sete perguntas, dois minutos. O resultado indica a trilha e dá um card pra compartilhar.</span><span data-lang="es">Siete preguntas, dos minutos. El resultado indica la ruta y da una tarjeta para compartir.</span><span data-lang="en">Seven questions, two minutes. The result picks your track and gives you a card to share.</span></p>
+    </div>
+    <a class="ler" href="#"><span data-lang="pt">Fazer o teste</span><span data-lang="es">Hacer el test</span><span data-lang="en">Take the test</span></a>
+  </div>
+</div></section>
+
+<section class="bloco" id="comunidade"><div class="wrap">
+  <div class="cab">
+    <h2><span data-lang="pt">Comunidade</span><span data-lang="es">Comunidad</span><span data-lang="en">Community</span></h2>
+  </div>
+  <div class="com">
+    <div class="canais">
+      <p><span data-lang="pt">Receba a edição de cada dia onde você já está.</span><span data-lang="es">Recibe la edición de cada día donde ya estás.</span><span data-lang="en">Get each day's edition where you already are.</span></p>
+      <a href="#">WhatsApp <span data-lang="pt"><span>canal gratuito</span></span><span data-lang="es"><span>canal gratuito</span></span><span data-lang="en"><span>free channel</span></span></a>
+      <a href="#">E-mail <span data-lang="pt"><span>indique 3 amigos e desbloqueie um mini-curso</span></span><span data-lang="es"><span>invita a 3 amigos y desbloquea un mini-curso</span></span><span data-lang="en"><span>refer 3 friends and unlock a mini-course</span></span></a>
+      <a href="#">Telegram <span data-lang="pt"><span>grupo INEMA.VIP</span></span><span data-lang="es"><span>grupo INEMA.VIP</span></span><span data-lang="en"><span>INEMA.VIP group</span></span></a>
+      <a href="#">YouTube <span data-lang="pt"><span>um canal por público</span></span><span data-lang="es"><span>un canal por público</span></span><span data-lang="en"><span>one channel per audience</span></span></a>
+    </div>
+    <div class="oferta">
+      <h3><span data-lang="pt">INEMA.VIP</span></h3>
+      <p><span data-lang="pt">Imersões, material completo dos eventos e o grupo com o Nei.</span><span data-lang="es">Inmersiones, material completo de los eventos y el grupo con Nei.</span><span data-lang="en">Immersions, full event materials and the group with Nei.</span></p>
+      <div class="preco">R$ 42<span class="mut" style="font-size:18px;font-weight:400">/<span data-lang="pt">mês</span><span data-lang="es">mes</span><span data-lang="en">month</span></span><s>R$ 67</s></div>
+      <a class="inscrever" href="#" style="display:inline-block;margin-top:14px;padding:11px 18px;border:2px solid var(--amber);border-radius:8px;text-decoration:none;font-weight:700"><span data-lang="pt">Entrar na comunidade</span><span data-lang="es">Entrar a la comunidad</span><span data-lang="en">Join the community</span></a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>news.inema.pro</span><a href="#">inema.club</a><a href="#">inema.pro</a><a href="#">eventos.inema.pro</a>
+  <span data-lang="pt">Mockup de layout · 2026-09-15 · nada aqui está publicado</span><span data-lang="es">Mockup de layout · 2026-09-15 · nada de esto está publicado</span><span data-lang="en">Layout mockup · 2026-09-15 · nothing here is published</span>
+</div></footer>
+
+<script>
+const H=document.documentElement,L={pt:'pt-BR',es:'es',en:'en'};
+function setL(l){H.dataset.l=l;H.lang=L[l];document.querySelectorAll('.langs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.set===l));try{localStorage.setItem('inema-l',l)}catch(e){}}
+document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',()=>setL(b.dataset.set)));
+let init=new URLSearchParams(location.search).get('l');if(!['pt','es','en'].includes(init)){init='pt';try{init=localStorage.getItem('inema-l')||'pt'}catch(e){}}setL(init);
+</script>
+</body>
+</html>
