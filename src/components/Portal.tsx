@@ -477,7 +477,7 @@ export default function Portal({
             className="community-badge"
             onClick={() => trackClick('https://inema.vip', 'Participe da Comunidade', 'header')}
           >
-            <img src={img("/doc/conviteinemap.png")} alt="INEMA.VIP" />
+            <img src={img("/doc/conviteinemap.webp")} alt="INEMA.VIP" />
             <span>{t.header.communityBadge}</span>
           </a>
           <a
@@ -651,8 +651,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/oswork.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/oswork.webp")}
               alt={t.events.osworkAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
             />
@@ -679,8 +679,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/jev.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/jev.webp")}
               alt={t.events.jevAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -707,8 +707,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/gestao-agentes-2027.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/gestao-agentes-2027.webp")}
               alt={t.events.gestao2027Alt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -735,8 +735,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/ia-cultivada.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/ia-cultivada.webp")}
               alt={t.events.iaCultivadaAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -763,8 +763,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/claude-codex-agnostico.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/claude-codex-agnostico.webp")}
               alt={t.events.claudeCodexAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -806,8 +806,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/agi-chegou.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/agi-chegou.webp")}
               alt={t.events.agiAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -834,8 +834,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/content2video.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/content2video.webp")}
               alt={t.events.content2videoAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -862,8 +862,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/webmcp2.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/webmcp2.webp")}
               alt={t.events.webmcpAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -890,8 +890,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/capa-musicavideo-v2.jpg")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/capa-musicavideo-v2.webp")}
               alt={t.events.musicavideoAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -942,8 +942,8 @@ export default function Portal({
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img("/doc/vczero.png")}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/vczero.webp")}
               alt={t.events.destaqueAlt}
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
             />
@@ -1550,7 +1550,7 @@ export default function Portal({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={img("/doc/inemaagenteshubv.jpg")}
+              src={img("/doc/inemaagenteshubv.webp")}
               alt={t.events.eventoAlt}
               loading="lazy"
               style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1280 / 720', objectFit: 'cover' }}
@@ -1910,7 +1910,7 @@ export default function Portal({
       {/* Banner */}
       <section className="hero-banner">
         <div className="container">
-          <img src={img("/doc/inemac2.jpg")} alt={t.banners.clubAlt} className="hero-banner-image" />
+          <img loading="lazy" decoding="async" src={img("/doc/inemac2.jpg")} alt={t.banners.clubAlt} className="hero-banner-image" />
         </div>
       </section>
 
@@ -2280,7 +2280,7 @@ export default function Portal({
       {/* Hero Banners */}
       <section className="hero-banner">
         <div className="container">
-          <img
+          <img loading="lazy" decoding="async"
             src={img("/doc/inemaclubee.jpg")}
             alt={t.banners.teamAlt}
             className="hero-banner-image"
@@ -2361,8 +2361,8 @@ export default function Portal({
           >
             <div className="featured-content">
               <div className="featured-logo">
-                <img
-                  src={img("/doc/conviteinemap.png")}
+                <img loading="lazy" decoding="async"
+                  src={img("/doc/conviteinemap.webp")}
                   alt={t.vip.alt}
                 />
               </div>

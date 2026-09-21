@@ -193,3 +193,7 @@ Sem fonte acessível não se inventa guia: `Restaurante Brutal` (sem repo) e `bo
 ## Descoberta entre sistemas — 2026-09-19
 
 Ver [docs/DESCOBERTA-ECOSSISTEMA.md](docs/DESCOBERTA-ECOSSISTEMA.md) para sitemaps, llms.txt, manifesto, idiomas, manutenção e verificações.
+
+## Peso dos banners
+
+A home usa derivados WebP dos PNG/JPG grandes, nos três idiomas. Ao atualizar uma arte original, executar `node scripts/optimize-banners.cjs` antes de publicar para renovar os WebP. Manter as entradas correspondentes em `src/i18n/images.ts`. Relatório: `docs/PESO-BANNERS.md`. Não aplicar lazy loading ao hero principal.

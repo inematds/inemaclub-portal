@@ -2,6 +2,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-21 | Home referenciava cerca de 20 MiB em imagens, com banners PNG carregados antecipadamente | Servir derivados WebP PT/EN/ES e carregar banners abaixo do topo sob demanda | infra |
 | 2026-09-21 | Regeneração removia sanmartindelosandes já presente no catálogo derivado | Repor entrada ausente na fonte communityProjects antes de gerar | infra |
 | 2026-09-20 | Push do OSWork encontrou branch remota avançada e conflitos de catálogo | Mesclar novidades das duas sessões e regenerar derivados | infra |
 | 2026-09-19 | resolução por regex de conflito consumiu o restante de courses.ts | restaurar a versão remota do índice e reaplicar somente as três alterações Jev antes de gerar e validar | prompt |

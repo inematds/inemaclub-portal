@@ -6,17 +6,17 @@ import type { Locale } from './locales'
  * (image generation) a partir do PT. Fora desta lista, a home usa o PT.
  */
 export const LOCALIZED_IMAGES = new Set([
-  'oswork.png',
-  'jev.png',
-  'agi-chegou.png',
-  'capa-musicavideo-v2.jpg',
-  'claude-codex-agnostico.png',
-  'content2video.png',
-  'conviteinemap.png',
-  'gestao-agentes-2027.png',
-  'ia-cultivada.png',
-  'ia-cultivada.png',
-  'inemaagenteshubv.jpg',
+  'oswork.webp',
+  'jev.webp',
+  'agi-chegou.webp',
+  'capa-musicavideo-v2.webp',
+  'claude-codex-agnostico.webp',
+  'content2video.webp',
+  'conviteinemap.webp',
+  'gestao-agentes-2027.webp',
+  'ia-cultivada.webp',
+  'ia-cultivada.webp',
+  'inemaagenteshubv.webp',
   'inemac2.jpg',
   'inemaclubee.jpg',
   'inema-hero-aprenda-pratique-evolua.webp',
@@ -28,8 +28,8 @@ export const LOCALIZED_IMAGES = new Set([
   'perfis-ia-liberal.webp',
   'perfis-ia-operacional.webp',
   'perfis-ia-topo.webp',
-  'vczero.png',
-  'webmcp2.png',
+  'vczero.webp',
+  'webmcp2.webp',
 ])
 
 /** `/doc/x.png` → `/doc/en/x.png` quando existe versão no idioma; senão devolve o original. */
