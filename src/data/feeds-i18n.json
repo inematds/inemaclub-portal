@@ -255,10 +255,6 @@
     "en": "look at the Projects I produced, I also updated some",
     "es": "mira los Proyectos que produje, algunos también actualicé"
   },
-  "GPT-6 Astra: operação técnica — Delegar, verificar, iterar e escalar com Codex (8 módulos)": {
-    "en": "GPT-6 Astra: technical operation — Delegate, verify, iterate and scale with Codex (8 modules)",
-    "es": "GPT-6 Astra: operación técnica — Delegar, verificar, iterar y escalar con Codex (8 módulos)"
-  },
   "videoprodutos — Pasta ou link de loja vira imagens por preset e vídeo promocional automático, com fila web, tudo local": {
     "en": "videoprodutos — Folder or store link turns into images via preset and automatic promotional video, with web queue, all local",
     "es": "videoprodutos — Carpeta o enlace de tienda se convierte en imágenes por preset y video promocional automático, con fila web, todo local"
@@ -382,5 +378,9 @@
   "HOLO Mãos — controle a tela com as mãos, em português": {
     "en": "HOLO Mãos — control the screen with your hands, in Portuguese",
     "es": "HOLO Mãos — controla la pantalla con las manos, en portugués"
+  },
+  "OSWork v5 — Organize seu ambiente de IA": {
+    "en": "OSWork v5 — Organize your AI environment",
+    "es": "OSWork v5 — Organiza tu entorno de IA"
   }
 }

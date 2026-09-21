@@ -2738,6 +2738,19 @@
       "url": "https://inematds.github.io/oswork/"
     },
     {
+      "id": 279,
+      "title": "OSWork v5 — Organize seu ambiente de IA",
+      "description": "A edição do OSWork para quem não programa: 7 aulas de 20 a 25 minutos que montam pastas por frente de trabalho, uma ficha de orientação, um molde de pedido reutilizável e uma rotina de conferência. Exemplos de gestão e de sala de aula, sem terminal e sem código.",
+      "icon": "🗂️",
+      "tags": [
+        "IA",
+        "Produtividade",
+        "Iniciante",
+        "Agentes"
+      ],
+      "url": "https://inematds.github.io/oswork-v5/"
+    },
+    {
       "id": 149,
       "title": "Padrões de System Prompts — Anatomia, Catálogo e Evolução",
       "description": "Engenharia de system prompts revelada pelos prompts reais de Claude, GPT, Gemini, Cursor e outros. Anatomia das 6 seções universais, catálogo de 12 padrões nomeados + 5 antipadrões, e a evolução por diffs (Opus 4.8 → Fable 5) com citações originais.",
@@ -3944,6 +3957,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-21",
+      "title": "OSWork v5 — Organize seu ambiente de IA",
+      "type": "novo",
+      "url": "https://inematds.github.io/oswork-v5/"
+    },
     {
       "date": "2026-09-21",
       "title": "Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português",
