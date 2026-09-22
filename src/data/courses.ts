@@ -1924,6 +1924,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/oswork-v5/',
   },
   {
+    id: 280,
+    title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos',
+    description: 'A versão direta do OSWork: os mesmos sete assuntos da edição completa, com o desenho explicando e o texto só amarrando. Sete aulas de 10 a 13 minutos, 65 diagramas, sem programação e sem tela de comandos.',
+    icon: '📐',
+    tags: ['IA', 'Produtividade', 'Iniciante', 'Visual'],
+    url: 'https://inematds.github.io/oswork-quick/',
+  },
+  {
     id: 149,
     title: 'Padrões de System Prompts — Anatomia, Catálogo e Evolução',
     description:
@@ -2699,6 +2707,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-21', title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos', type: 'novo', url: 'https://inematds.github.io/oswork-quick/' },
   { date: '2026-09-21', title: 'OSWork v5 — Organize seu ambiente de IA', type: 'novo', url: 'https://inematds.github.io/oswork-v5/' },
   { date: '2026-09-21', title: 'Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português', type: 'novo', url: 'https://inematds.github.io/laya-curso/' },
   { date: '2026-09-20', title: 'OSWork — IA como sistema de trabalho: curso v2 completo', type: 'novo', url: 'https://inematds.github.io/oswork/' },
