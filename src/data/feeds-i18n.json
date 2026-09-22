@@ -255,10 +255,6 @@
     "en": "look at the Projects I produced, I also updated some",
     "es": "mira los Proyectos que produje, algunos también actualicé"
   },
-  "videoprodutos — Pasta ou link de loja vira imagens por preset e vídeo promocional automático, com fila web, tudo local": {
-    "en": "videoprodutos — Folder or store link turns into images via preset and automatic promotional video, with web queue, all local",
-    "es": "videoprodutos — Carpeta o enlace de tienda se convierte en imágenes por preset y video promocional automático, con fila web, todo local"
-  },
   "FEP 2026 — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings)": {
     "en": "FEP 2026 — AGI has arrived and the prompt almost died: the FEP rewritten technique by technique (7 lessons, de‑para and kit of 12 briefings)",
     "es": "FEP 2026 — La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases, de-para y kit de 12 briefings)"
@@ -398,5 +394,9 @@
   "Análise comparativa aprofundada dos modelos de decisão Jev e Laya como motores \"System 1\" em arquiteturas de IA multi-camada. O tópico explora benchmarks, limitações, fine-tuning e como essa separação muda a gestão de agentes.": {
     "en": "In-depth comparative analysis of the Jev and Laya decision models as \"System 1\" engines in multi-layer AI architectures. The topic explores benchmarks, limitations, fine-tuning and how this separation changes agent management.",
     "es": "Análisis comparativo profundo de los modelos de decisión Jev y Laya como motores \"System 1\" en arquitecturas de IA multicapa. El tema explora benchmarks, limitaciones, fine‑tuning y cómo esta separación cambia la gestión de agentes."
+  },
+  "jev-gw — gateway de decisão para o Jev": {
+    "en": "jev-gw — decision gateway for Jev",
+    "es": "jev-gw — gateway de decisión para el Jev"
   }
 }
