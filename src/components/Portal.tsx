@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🧠', name: 'opus55', desc: 'Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Fontes oficiais e inventário local.', url: 'https://inematds.github.io/opus55/', badge: 'Guia' },
   { icon: '◐', name: 'gpt6-sol-luna', desc: 'GPT-6 Sol & Luna: pesquisa do lançamento, gráficos comparativos, calculadora de custos com cache e plano de integração nos sistemas INEMA. Fontes oficiais e exemplos de API.', url: 'https://inematds.github.io/gpt6-sol-luna/guia/', badge: 'Guia' },
   { icon: '🚪', name: 'jev-gw', desc: 'Gateway de decisão para o Jev: porta única para toda consulta de um sistema, com teto de gasto diário, cache, registro de custo e latência por chamada e falha conservadora — Jev fora do ar ou teto estourado devolvem revisão humana em vez de quebrar quem chamou. Biblioteca Python, serviço HTTP e CLI, só biblioteca padrão.', url: 'https://inematds.github.io/jev-gw/guia/', badge: 'Guia' },
   { icon: '🖐️', name: 'holo-maos', desc: 'HOLO Mãos: controle a tela com as mãos pela webcam — belisca, arrasta, arremessa e organiza notas, sem encostar no mouse. Adaptação em português (interface, avisos e voz do assistente) do HOLO de Zubair Trabzada, com notas de exemplo do INEMA. Roda 100% na máquina: sem nuvem, sem chave de API e sem conta.', url: 'https://inematds.github.io/holo-maos/guia/', badge: 'Guia' },

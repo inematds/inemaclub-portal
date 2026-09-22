@@ -239,10 +239,6 @@
     "en": "FEP 2026 — AGI has arrived and the prompt almost died: the FEP rewritten technique by technique (7 lessons, de‑para and kit of 12 briefings)",
     "es": "FEP 2026 — La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases, de-para y kit de 12 briefings)"
   },
-  "claude-session-kit — Statusline com cota real por modelo + skills de checkpoint, auditoria de memória e handoff pro Claude Code": {
-    "en": "claude-session-kit — Statusline with real quota per model + checkpoint skills, memory audit and handoff to Claude Code",
-    "es": "claude-session-kit — Statusline con cuota real por modelo + habilidades de checkpoint, auditoría de memoria y handoff a Claude Code"
-  },
   "OSWork — IA como sistema de trabalho: curso v2 completo": {
     "en": "OSWork — AI as a work system: complete v2 course",
     "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
@@ -382,5 +378,9 @@
   "GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA": {
     "en": "GPT-6 Sol & Luna — launch, comparisons and integration INEMA",
     "es": "GPT-6 Sol & Luna — lanzamiento, comparativas e integración INEMA"
+  },
+  "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização": {
+    "en": "Claude Opus 5.5 — research, charts and upgrade plan",
+    "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización"
   }
 }

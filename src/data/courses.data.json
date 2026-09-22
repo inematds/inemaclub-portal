@@ -5493,6 +5493,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-22",
+      "title": "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização",
+      "type": "novo",
+      "url": "https://inematds.github.io/opus55/"
+    },
+    {
+      "date": "2026-09-22",
       "title": "GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA",
       "type": "novo",
       "url": "https://inematds.github.io/gpt6-sol-luna/guia/"
@@ -6483,6 +6489,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🧠",
+      "name": "opus55",
+      "desc": "Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Fontes oficiais e inventário local.",
+      "url": "https://inematds.github.io/opus55/",
+      "badge": "Guia"
+    },
     {
       "icon": "◐",
       "name": "gpt6-sol-luna",
