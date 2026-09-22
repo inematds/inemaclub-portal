@@ -5492,6 +5492,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-22",
+      "title": "Astra Básico — vídeos completos em português, espanhol e inglês, com avatar, ilustrações e legendas",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/astrabasico/guia/"
+    },
+    {
       "date": "2026-09-21",
       "title": "HOLO Mãos — controle a tela com as mãos, em português",
       "type": "novo",
@@ -6475,7 +6481,7 @@
     {
       "icon": "◈",
       "name": "astrabasico",
-      "desc": "Astra Básico: controle de tokens com guia e roteiros em português, espanhol e inglês, prompts autorais, skill e calculadora local. Inclui prévia visual sem narração.",
+      "desc": "Astra Básico: três vídeos completos em português, espanhol e inglês, com avatar e voz do Nei, 22 tópicos ilustrados por idioma e legendas. Inclui guia, roteiros, prompts, skill e calculadora de tokens.",
       "url": "https://inematds.github.io/astrabasico/guia/",
       "badge": "Guia"
     },
