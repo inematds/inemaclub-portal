@@ -5493,6 +5493,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-22",
+      "title": "GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA",
+      "type": "novo",
+      "url": "https://inematds.github.io/gpt6-sol-luna/guia/"
+    },
+    {
+      "date": "2026-09-22",
       "title": "jev-gw — gateway de decisão para o Jev",
       "type": "novo",
       "url": "https://inematds.github.io/jev-gw/guia/"
@@ -6477,6 +6483,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "◐",
+      "name": "gpt6-sol-luna",
+      "desc": "GPT-6 Sol & Luna: pesquisa do lançamento, gráficos comparativos, calculadora de custos com cache e plano de integração nos sistemas INEMA. Fontes oficiais e exemplos de API.",
+      "url": "https://inematds.github.io/gpt6-sol-luna/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🚪",
       "name": "jev-gw",

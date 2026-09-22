@@ -67,10 +67,6 @@
     "en": "Astra Example Prompts",
     "es": "Prompts Ejemplo Astra"
   },
-  "GPT6 -Asta - Visão": {
-    "en": "GPT6 -Asta - Vision",
-    "es": "GPT6 -Asta - Visión"
-  },
   "Vazou System Prompt Fable 5.1": {
     "en": "Leaked System Prompt Fable 5.1",
     "es": "Se filtró System Prompt Fable 5.1"
@@ -111,17 +107,9 @@
     "en": "Terminal and Harness — Lesson 6 (folders, .claude, AGENTS.md, wiki, OKF) + video 2:06 with folder scene, 16:9 and 9:16 versions",
     "es": "Terminal e Harness — Clase 6 (carpetas, .claude, AGENTS.md, wiki, OKF) + video 2:06 con escena de las carpetas, versiones 16:9 y 9:16"
   },
-  "fotos3d — Fotos comuns de um cômodo viram sala em 360°: reconstrução por IA com checagem de costura, interface web e viewer": {
-    "en": "fotos3d — Ordinary room photos become 360° rooms: AI reconstruction with seam check, web interface and viewer",
-    "es": "fotos3d — Fotos comunes de una habitación se convierten en sala en 360°: reconstrucción por IA con verificación de costura, interfaz web y viewer"
-  },
   "5 Ações com GPT-6 Astra": {
     "en": "5 Actions with GPT-6 Astra",
     "es": "5 Acciones con GPT-6 Astra"
-  },
-  "astra3dany — Mundo 3D de aprendizagem: três estações animadas que ensinam três hábitos pra usar IA, com World Tour e exploração livre": {
-    "en": "astra3dany — 3D learning world: three animated stations teaching three habits for using AI, with World Tour and free exploration",
-    "es": "astra3dany — Mundo 3D de aprendizaje: tres estaciones animadas que enseñan tres hábitos para usar IA, con World Tour y exploración libre"
   },
   "newia-oct2026 — 12 Novas IAs de outubro/2026: rumores × versões atuais verificadas (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), com preços, contexto, gráficos e fontes": {
     "en": "newia-oct2026 — 12 New AIs of October/2026: rumors × verified current versions (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), with prices, context, charts and sources",
@@ -195,17 +183,9 @@
     "en": "Compilation of a guide/method for AI Agents Management applied to companies, treating agents as a manageable digital workforce with KPIs, autonomy levels, and continuous improvement.",
     "es": "Compilación de una guía/método de Gestión de Agentes de IA aplicado a empresas, tratando a los agentes como fuerza de trabajo digital gestionable con KPIs, niveles de autonomía y mejora continua."
   },
-  "Resumo e análise de uso prático do GPT-6 Astra, com foco em Computer Use, níveis de esforço e mudança de paradigma na forma de interagir com modelos avançados.": {
-    "en": "Summary and practical usage analysis of GPT-6 Astra, focusing on Computer Use, effort levels and paradigm shift in how to interact with advanced models.",
-    "es": "Resumen y análisis de uso práctico de GPT-6 Astra, con foco en Computer Use, niveles de esfuerzo y cambio de paradigma en la forma de interactuar con modelos avanzados."
-  },
   "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar": {
     "en": "voucontigo — v2.0.0: WhatsApp bot (Evolution API) to schedule, cancel and receive free slots, automatic reminders and reports, PIX Asaas and family portal",
     "es": "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar y recibir horarios libres, recordatorios e informes automáticos, PIX Asaas y portal del familiar"
-  },
-  "IA do Zero — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas)": {
-    "en": "AI from Scratch — The first requests from those who never used AI, with the why of each (4 lessons)",
-    "es": "IA desde Cero — Las primeras peticiones de quien nunca usó IA, con el porqué de cada una (4 clases)"
   },
   "JEV": {
     "en": "JEV",
@@ -398,5 +378,9 @@
   "jev-gw — gateway de decisão para o Jev": {
     "en": "jev-gw — decision gateway for Jev",
     "es": "jev-gw — gateway de decisión para el Jev"
+  },
+  "GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA": {
+    "en": "GPT-6 Sol & Luna — launch, comparisons and integration INEMA",
+    "es": "GPT-6 Sol & Luna — lanzamiento, comparativas e integración INEMA"
   }
 }
