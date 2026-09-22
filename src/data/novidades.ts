@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2463916523/4644",
+    "date": "2026-09-21",
+    "titulo": "Laya x JEV",
+    "resumo": "Análise comparativa aprofundada dos modelos de decisão Jev e Laya como motores \"System 1\" em arquiteturas de IA multi-camada. O tópico explora benchmarks, limitações, fine-tuning e como essa separação muda a gestão de agentes.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4644"
+  },
+  {
     "id": "2433384436/6626",
     "date": "2026-09-20",
     "titulo": "'",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Resumo de um material sobre como usar corretamente o GPT-6 Astra, evitando desperdício de capacidade e extraindo valor real com problemas complexos e fluxos agênticos estruturados.",
     "grupo": "INEMA.CODEX",
     "url": "https://www.inema.pro/cerebro/inema-codex/1230"
-  },
-  {
-    "id": "2463916523/4534",
-    "date": "2026-09-05",
-    "titulo": "GPT6 -Asta - Visão",
-    "resumo": "Resumo e análise de uso prático do GPT-6 Astra, com foco em Computer Use, níveis de esforço e mudança de paradigma na forma de interagir com modelos avançados.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4534"
   }
 ];

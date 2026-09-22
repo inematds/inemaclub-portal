@@ -390,5 +390,13 @@
   "Astra Básico — vídeos completos em português, espanhol e inglês, com avatar, ilustrações e legendas": {
     "en": "Astra Básico — complete videos in Portuguese, Spanish and English, with avatar, illustrations and subtitles",
     "es": "Astra Básico — videos completos en portugués, español e inglés, con avatar, ilustraciones y subtítulos"
+  },
+  "Laya x JEV": {
+    "en": "Laya x JEV",
+    "es": "Laya x JEV"
+  },
+  "Análise comparativa aprofundada dos modelos de decisão Jev e Laya como motores \"System 1\" em arquiteturas de IA multi-camada. O tópico explora benchmarks, limitações, fine-tuning e como essa separação muda a gestão de agentes.": {
+    "en": "In-depth comparative analysis of the Jev and Laya decision models as \"System 1\" engines in multi-layer AI architectures. The topic explores benchmarks, limitations, fine-tuning and how this separation changes agent management.",
+    "es": "Análisis comparativo profundo de los modelos de decisión Jev y Laya como motores \"System 1\" en arquitecturas de IA multicapa. El tema explora benchmarks, limitaciones, fine‑tuning y cómo esta separación cambia la gestión de agentes."
   }
 }
