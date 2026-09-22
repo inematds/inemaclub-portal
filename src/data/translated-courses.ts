@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 281, kind: 'curso', locale: 'en', title: 'Agent Skills — Build verifiable skills in Codex', description: '4 tracks, 8 modules, 48 topics and 53 diagrams on reverse engineering, triggers, autonomy, verification and continuous improvement. Includes progress, notes and a hands-on lab.', url: 'https://inematds.github.io/agent-skills/en/', icon: '🧩' },
+  { id: 281, kind: 'curso', locale: 'es', title: 'Agent Skills — Crea skills verificables en Codex', description: '4 itinerarios, 8 módulos, 48 temas y 53 diagramas sobre ingeniería inversa, activación, autonomía, verificación y mejora continua. Incluye progreso, notas y un laboratorio práctico.', url: 'https://inematds.github.io/agent-skills/es/', icon: '🧩' },
   { id: 277, kind: 'curso', locale: 'en', title: 'OSWork — AI as a work system', description: '4 tracks, 8 modules and 48 topics: Codex, files, instructions, skills, Git, Telegram and VPS. Includes progress, notes and hands-on labs.', url: 'https://inematds.github.io/oswork/en/', icon: '⚙️' },
   { id: 277, kind: 'curso', locale: 'es', title: 'OSWork — IA como sistema de trabajo', description: '4 rutas, 8 módulos y 48 temas: Codex, archivos, instrucciones, skills, Git, Telegram y VPS. Incluye progreso, notas y laboratorios prácticos.', url: 'https://inematds.github.io/oswork/es/', icon: '⚙️' },
   { id: 273, kind: 'curso', locale: 'en', title: 'Claude → Codex — Migrate or stay model-agnostic', description: 'Separate the brain from the model: 3 tracks and 18 modules on portable context, skills, handoffs and a real migration kit.', url: 'https://inematds.github.io/curso-claude-codex/en/', icon: '🧠' },

@@ -2092,6 +2092,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/webmcp-5-expert/',          label: '5 · Expert',             desc: 'Segurança, evals, produção e governança' },
             ]},
             { title: '🧩 Codex', steps: [
+              { href: 'https://inematds.github.io/agent-skills/', label: 'Agent Skills', desc: 'Skills verificáveis: 8 módulos e 53 diagramas em PT, EN e ES' },
               { href: 'https://inematds.github.io/codexbasico/',        label: 'Codex Básico', desc: 'Curso Completo do Codex CLI em 6 Trilhas' },
               { href: 'https://inematds.github.io/iclaudex/',           label: 'iClaudeX',     desc: 'Planejamento com Claude + Codex no Terminal' },
               { href: 'https://inematds.github.io/makeclaudex/',        label: 'MakeClaudeX',  desc: 'Do Prompt ao Plugin de Produção' },

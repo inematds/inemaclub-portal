@@ -191,6 +191,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/10cara-design/',
   },
   {
+    id: 281,
+    title: 'Agent Skills — Crie skills verificáveis no Codex',
+    description: 'Curso em português, inglês e espanhol: 4 trilhas, 8 módulos, 48 tópicos e 53 diagramas sobre engenharia reversa, gatilhos, autonomia, verificação e melhoria de skills. Inclui progresso, notas e laboratório prático.',
+    icon: '🧩',
+    tags: ['Codex', 'Skills', 'Agentes', 'IA'],
+    url: 'https://inematds.github.io/agent-skills/',
+  },
+  {
     id: 204,
     title: 'Agentes: o Novo Office — Formação por Perfil',
     description:
@@ -2707,6 +2715,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-22', title: 'Agent Skills — Crie skills verificáveis no Codex (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/agent-skills/' },
   { date: '2026-09-21', title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos', type: 'novo', url: 'https://inematds.github.io/oswork-quick/' },
   { date: '2026-09-21', title: 'OSWork v5 — Organize seu ambiente de IA', type: 'novo', url: 'https://inematds.github.io/oswork-v5/' },
   { date: '2026-09-21', title: 'Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português', type: 'novo', url: 'https://inematds.github.io/laya-curso/' },
