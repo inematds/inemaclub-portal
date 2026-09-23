@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { courses, learningTrails } from '@/lib/catalog'
 import { seoPages } from '@/data/seo-pages'
+import { iaPages } from '@/content/ia'
 import { OFFICIAL_PROFILES, SITE_URL } from '@/lib/site'
 
 const page = seoPages.find((item) => item.path === '/aprender-inteligencia-artificial/')!
@@ -188,6 +189,18 @@ export default function AprenderIaPage() {
             <li>Confiar na resposta da IA sem conferir — principalmente números, links e código.</li>
           </ul>
         </section>
+
+        {iaPages.length > 0 && (
+          <section aria-labelledby="perguntas-ia">
+            <h2 id="perguntas-ia">Respostas diretas para dúvidas comuns</h2>
+            <ul className="seo-list">
+              {iaPages.map((item) => (
+                <li key={item.slug}><a href={`/ia/${item.slug}/`}>{item.title}</a></li>
+              ))}
+            </ul>
+            <p>Veja todas em <a href="/ia/">Perguntas sobre IA</a>.</p>
+          </section>
+        )}
 
         <section aria-labelledby="comunidade">
           <h2 id="comunidade">Aprender junto: a comunidade do INEMA</h2>

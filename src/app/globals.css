@@ -2252,3 +2252,35 @@ html {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
+ul.course-catalog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.seo-table-wrap {
+    max-width: 100%;
+    margin-bottom: 1.4rem;
+    overflow-x: auto;
+}
+
+.seo-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.seo-table th,
+.seo-table td {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+    vertical-align: top;
+}
+
+.seo-table th {
+    color: var(--text-primary);
+    font-weight: 600;
+}
