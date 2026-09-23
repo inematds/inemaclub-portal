@@ -195,10 +195,6 @@
     "en": "look at the Projects I produced, I also updated some",
     "es": "mira los Proyectos que produje, algunos también actualicé"
   },
-  "FEP 2026 — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings)": {
-    "en": "FEP 2026 — AGI has arrived and the prompt almost died: the FEP rewritten technique by technique (7 lessons, de‑para and kit of 12 briefings)",
-    "es": "FEP 2026 — La AGI llegó y el prompt casi murió: el FEP reescrito técnica por técnica (7 clases, de-para y kit de 12 briefings)"
-  },
   "OSWork — IA como sistema de trabalho: curso v2 completo": {
     "en": "OSWork — AI as a work system: complete v2 course",
     "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
@@ -378,5 +374,9 @@
   "Além de usar o Jev para tornar o LinkedIn mais tolerável, decidi testá-lo em um dos meus aplicativos, . Uma plataforma de orquestração de agentes para criar equipes de agentes e concluir tarefas de trabalho reais. Para que isso funcione, tenho várias ferramentas que  pode usar para realizar todo tipo de tarefa, mas essas ferramentas consomem muitos tokens. O cache está ativado, o que ajuda, mas poderia ser melhor. Então, decidi colocar o Jev entre a mensagem do usuário e  com o objetivo de selecionar apenas as ferramentas que o orquestrador precisa para esse tipo de solicitação. Eu esperava, é claro, uma boa redução no número de tokens, mas o que eu não esperava era uma redução de mais de 90%. Agora preciso analisar com muita atenção meus aplicativos e automações e ver que melhorias posso obter em outras áreas.": {
     "en": "In addition to using Jev to make LinkedIn more tolerable, I decided to test it in one of my apps, . A platform for orchestrating agents to create agent teams and complete real work tasks. For this to work, I have several tools that  can use to perform all kinds of tasks, but these tools consume many tokens. Cache is enabled, which helps, but it could be better. So I decided to place Jev between the user message and  with the goal of selecting only the tools the orchestrator needs for this type of request. I expected, of course, a good reduction in token count, but what I didn’t expect was a reduction of over 90%. Now I need to carefully analyze my apps and automations and see what improvements I can achieve in other areas.",
     "es": "Además de usar Jev para hacer LinkedIn más tolerable, decidí probarlo en una de mis aplicaciones, . Una plataforma de orquestación de agentes para crear equipos de agentes y completar tareas de trabajo reales. Para que funcione, tengo varias herramientas que  puede usar para realizar todo tipo de tarea, pero esas herramientas consumen muchos tokens. La caché está activada, lo que ayuda, pero podría ser mejor. Entonces, decidí colocar Jev entre el mensaje del usuario y  con el objetivo de seleccionar solo las herramientas que el orquestador necesita para este tipo de solicitud. Esperaba, por supuesto, una buena reducción en el número de tokens, pero lo que no esperaba era una reducción de más del 90%. Ahora necesito analizar con mucha atención mis aplicaciones y automatizaciones y ver qué mejoras puedo obtener en otras áreas."
+  },
+  "Gestão de Agentes de IA — os 7 Princípios: curso v2 com 4 trilhas, 8 módulos e 48 tópicos (PT/EN/ES)": {
+    "en": "Management of AI Agents — the 7 Principles: course v2 with 4 tracks, 8 modules and 48 topics (PT/EN/ES)",
+    "es": "Gestión de Agentes de IA — los 7 Principios: curso v2 con 4 rutas, 8 módulos y 48 temas (PT/EN/ES)"
   }
 }

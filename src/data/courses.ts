@@ -1367,6 +1367,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/FTH/',
   },
   {
+    id: 282,
+    title: 'Gestão de Agentes de IA — os 7 Princípios',
+    description:
+      'Curso em português, inglês e espanhol: 4 trilhas, 8 módulos e 48 tópicos para delegar trabalho à IA com intenção clara, contexto, dados confiáveis, critério de sucesso, autonomia com limites (N0–N4), observação e supervisão. Com a Ficha do Agente, galeria de 10 casos e projeto final.',
+    icon: '🧭',
+    tags: ['Agentes', 'Gestão', 'IA', 'Supervisão'],
+    url: 'https://inematds.github.io/curso-7pa/',
+  },
+  {
     id: 271,
     title: 'Gestão de IA — Plano do curso',
     description:
@@ -2723,6 +2732,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-23', title: 'Gestão de Agentes de IA — os 7 Princípios: curso v2 com 4 trilhas, 8 módulos e 48 tópicos (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/curso-7pa/' },
   { date: '2026-09-22', title: 'Agent Skills — Crie skills verificáveis no Codex (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/agent-skills/' },
   { date: '2026-09-21', title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos', type: 'novo', url: 'https://inematds.github.io/oswork-quick/' },
   { date: '2026-09-21', title: 'OSWork v5 — Organize seu ambiente de IA', type: 'novo', url: 'https://inematds.github.io/oswork-v5/' },

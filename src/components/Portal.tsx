@@ -2019,6 +2019,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/arquiteto-agentes-contabil/', label: 'Caderno: Contábil', desc: 'Agentes até a porta da assinatura, chaves trancadas' },
               { href: 'https://inematds.github.io/arquiteto-agentes-advocacia/', label: 'Caderno: Advocacia', desc: 'O agente lê, conta e prepara; o advogado assina' },
               { href: 'https://inematds.github.io/kit-arquiteto-agentes/guia/', label: 'Kit do Arquiteto', desc: 'A ferramenta que monta a especificação do agente' },
+              { href: 'https://inematds.github.io/curso-7pa/', label: 'Gestão de Agentes: 7 Princípios', desc: 'Intenção, limites e supervisão — do N0 ao N4, com projeto final' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
               { href: 'https://inematds.github.io/idallai/', label: 'Formação Cinema com IA', desc: '9 cursos, 58 aulas — do zero ao mini-filme final' },
