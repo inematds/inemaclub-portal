@@ -1,0 +1,2221 @@
+{
+  "https://inematds.github.io/ATIA/": {
+    "structure": [
+      {
+        "title": "1.1 O Tsunami da IA",
+        "detail": ""
+      },
+      {
+        "title": "1.2 Mercado de Trabalho",
+        "detail": ""
+      },
+      {
+        "title": "1.3 Engenharia de Prompt",
+        "detail": ""
+      },
+      {
+        "title": "1.4 Engenharia de Contexto",
+        "detail": ""
+      },
+      {
+        "title": "1.5 Automacao de Processos",
+        "detail": ""
+      },
+      {
+        "title": "2.1 GPTs e Agentes de IA",
+        "detail": ""
+      },
+      {
+        "title": "2.2 Novas Profissoes da IA",
+        "detail": ""
+      },
+      {
+        "title": "2.3 Marketing Digital com IA",
+        "detail": ""
+      },
+      {
+        "title": "2.4 Vendas Automatizadas",
+        "detail": ""
+      },
+      {
+        "title": "2.5 Educacao na Era IA",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Engineering de Prompt",
+      "Automacao de Processos",
+      "GPTs personalizados",
+      "novas profissoes",
+      "marketing e vendas",
+      "Domine prompt engineering"
+    ],
+    "audience": [
+      "Profissionais em transicao",
+      "Empresarios e gestores",
+      "Estudantes",
+      "Desenvolvedores"
+    ],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": "Basico Nivel 1",
+    "enriched": true,
+    "sourceHash": "c1e36787834b70ea",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/FDB/": {
+    "structure": [
+      {
+        "title": "Iniciante",
+        "detail": "Fundamentos, modelagem e SQL essencial. Construa uma base solida para trabalhar com bancos de dados."
+      },
+      {
+        "title": "Tecnico",
+        "detail": "Indices, transacoes, tipos de BD e comparativos. Entenda o funcionamento interno dos bancos de dados."
+      },
+      {
+        "title": "Avancado",
+        "detail": "Arquitetura, performance, IA aplicada e bancos vetoriais. Domine tecnicas avancadas de banco de dados."
+      }
+    ],
+    "learn": [
+      "Fundamentos, modelagem e SQL essencial",
+      "Construa uma base solida para trabalhar com bancos de dados",
+      "Indices, transacoes, tipos de BD e comparativos",
+      "Entenda o funcionamento interno dos bancos de dados",
+      "Arquitetura, performance, IA aplicada e bancos vetoriais",
+      "Domine tecnicas avancadas de banco de dados"
+    ],
+    "audience": [
+      "Iniciante",
+      "Tecnico",
+      "Avancado"
+    ],
+    "build": [
+      "Construa uma base solida para trabalhar com bancos de dados"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "e6c2c7441f87d801",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/FEA-IA/": {
+    "structure": [
+      {
+        "title": "Nível Fundamentos",
+        "detail": "20-25 horas | Iniciante"
+      },
+      {
+        "title": "Módulo 1: Fundamentos de IA Generativa",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 2: Engenharia de Prompts Avançada",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 3: LangChain para Agentes",
+        "detail": ""
+      },
+      {
+        "title": "Nível Aplicação 22-27 horas | Intermediário",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 4: Agno - Simplicidade e Poder",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 5: CrewAI - Sistemas Multi-Agente",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 6: Model Context Protocol (MCP)",
+        "detail": ""
+      },
+      {
+        "title": "Nível Estratégico 15-20 horas | Avançado",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 7: Deploy e Produção",
+        "detail": ""
+      },
+      {
+        "title": "Módulo 8: Ferramentas e Ecossistema",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "criar sistemas de agentes inteligentes que resolvem problemas reais",
+      "Base sólida em IA Generativa, Prompts Avançados e LangChain",
+      "Frameworks modernos e sistemas multi-agente. Agno, CrewAI e MCP para aplicações reais.",
+      "Deploy em produção, DevOps, monitoramento e todo o ecossistema de ferramentas profissionais."
+    ],
+    "audience": [
+      "Perfeito para quem está começando."
+    ],
+    "build": [
+      "sistemas de agentes inteligentes que resolvem problemas reais"
+    ],
+    "prerequisites": [
+      "Não precisa de experiência prévia."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "1fa5923a1e0a5d67",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/FEC/": {
+    "structure": [
+      {
+        "title": "Fundamentos de Contexto",
+        "detail": "Janela, atenção, \"lost in the middle\", tokens, custo, limites por modelo."
+      },
+      {
+        "title": "Engenharia da Mensagem",
+        "detail": "System prompt, few-shot, XML/JSON, ancoragem, versionamento, eval primer."
+      },
+      {
+        "title": "RAG e Recuperação",
+        "detail": "Chunking, embeddings, BM25/híbrido, reranking, contextual retrieval, citações."
+      },
+      {
+        "title": "Tools, Agentes e Multi-Agente",
+        "detail": "Function calling, ReAct, planner/executor, MCP, padrões multi-agente."
+      },
+      {
+        "title": "Memória e Compressão",
+        "detail": "Memória curto/longo prazo, summarização hierárquica, prompt caching, distillation."
+      },
+      {
+        "title": "Avaliação e Produção",
+        "detail": "Golden sets, LLM-as-judge, tracing, prompt injection, custo, A/B em produção."
+      }
+    ],
+    "learn": [
+      "a projetar, montar, comprimir, persistir e avaliar a janela de contexto que um modelo recebe.",
+      "a disciplina de projetar, montar, comprimir, persistir e avaliar a janela de contexto que um modelo recebe."
+    ],
+    "audience": [
+      "Engenharia de Contexto para quem leva LLM a produção."
+    ],
+    "build": [
+      "projetos cumulativos"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "a9450cb5f19bb260",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/FEP/": {
+    "structure": [
+      {
+        "title": "Fundamentos de LLMs e técnicas básicas de prompting.",
+        "detail": "Fundamentos de LLMs; Anatomia de Prompts; Zero-Shot e Few-Shot; Chain of Thought"
+      },
+      {
+        "title": "Técnicas Avançadas",
+        "detail": ""
+      },
+      {
+        "title": "Engenharia de Contexto",
+        "detail": ""
+      },
+      {
+        "title": "RAG e Embeddings",
+        "detail": ""
+      },
+      {
+        "title": "Multimodal Prompting",
+        "detail": ""
+      },
+      {
+        "title": "Long Context (100K-1M+)",
+        "detail": ""
+      },
+      {
+        "title": "Engenharia de Skills",
+        "detail": ""
+      },
+      {
+        "title": "Orquestração & RAG",
+        "detail": ""
+      },
+      {
+        "title": "Arquitetura de Sistemas",
+        "detail": ""
+      },
+      {
+        "title": "Governança de Skills",
+        "detail": ""
+      },
+      {
+        "title": "Risco e Avaliação",
+        "detail": ""
+      },
+      {
+        "title": "Liderança Técnica",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Fundamentos de LLMs",
+      "Anatomia de Prompts",
+      "Zero-Shot e Few-Shot",
+      "Chain of Thought",
+      "Técnicas avançadas, RAG e multimodal prompting.",
+      "Arquitetura de sistemas"
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "0c29ad5c0396dca8",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/VISION/": {
+    "structure": [
+      {
+        "title": "VISION — Audiovisual com IA | Curso Completo Maio 2026",
+        "detail": ""
+      },
+      {
+        "title": "TRILHA 1 · INICIANTE",
+        "detail": "25-30h"
+      },
+      {
+        "title": "Fundamentos",
+        "detail": ""
+      },
+      {
+        "title": "Mód 1: Introdução à IA Criativa",
+        "detail": ""
+      },
+      {
+        "title": "Mód 2: Criação de Imagens",
+        "detail": ""
+      },
+      {
+        "title": "Mód 3: Primeiros Vídeos",
+        "detail": ""
+      },
+      {
+        "title": "Mód 4: Edição e Pós-Produção",
+        "detail": ""
+      },
+      {
+        "title": "Mód 5: Projeto Final",
+        "detail": ""
+      },
+      {
+        "title": "Desenvolvimento",
+        "detail": ""
+      },
+      {
+        "title": "Mód 6: Vídeo Avançado",
+        "detail": ""
+      },
+      {
+        "title": "Mód 7: Workflows Open-Source",
+        "detail": ""
+      },
+      {
+        "title": "Mód 8: Áudio e Música",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Do zero ao profissional autônomo",
+      "Criação de Imagens Midjourney V8.1, FLUX.2 Pro, Stable Diffusion 3.5 e Leonardo AI para imagens profissionais.",
+      "Produção de Vídeos Kling 3.0 (4K nativo), Runway Gen-4.5, Hailuo, Seedance 2.0, Google Veo 3.1, Pika 2.5 e Luma Ray3.",
+      "Áudio e Música ElevenLabs ElevenMusic (lançado abril/2026), Suno v5.5, Udio v4 — voz, música e SFX."
+    ],
+    "audience": [],
+    "build": [
+      "Construir suas próprias ferramentas com Cursor, Claude Code, Lovable e Bolt.new.",
+      "Construa seu negócio com IA."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "2e3ec9972c28aa86",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agentejax/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": ""
+      },
+      {
+        "title": "Vida do Agente",
+        "detail": ""
+      },
+      {
+        "title": "Produção",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Bot do Telegram | O canal por onde você fala com o agente. Cria via @BotFather, pega o token e conecta.",
+      "Chave de modelo (LLM) | A credencial pra falar com Claude, GPT, DeepSeek ou Ollama local. Pode trocar a quente.",
+      "Bootstrap do projeto | Node 20+, TypeScript, package.json, estrutura de pastas e o primeiro \"olá mundo\".",
+      "Memória de curto prazo | Buffer SQLite das últimas N mensagens + fatos centrais sobre você (nome, fuso, metas).",
+      "Memória semântica (vetorial) | Indexa todo histórico em vetores (Pinecone ou local) e recupera por similaridade, não por recência."
+    ],
+    "audience": [
+      "Você vai depender desse agente em tarefas críticas",
+      "Vai depender desse agente em tarefas críticas",
+      "Quer trocar de modelo (Claude / GPT / DeepSeek / Ollama) sem dor",
+      "Quer adicionar ferramentas próprias (CRM, banco, ERP)"
+    ],
+    "build": [
+      "Constitua seu agente de IA pessoal de ponta a ponta",
+      "Construir seu agente de IA pessoal em TypeScript",
+      "Um agente de IA pessoal em TypeScript, rodando no Telegram"
+    ],
+    "prerequisites": [
+      "Node 20+"
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "fea3dae54626bb3f",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agentes-office/": {
+    "structure": [
+      {
+        "title": "Entrando no mundo dos agentes",
+        "detail": "O que é um agente (sem jargão), e o que no SEU trabalho pode virar um."
+      },
+      {
+        "title": "Prompt como comando de trabalho",
+        "detail": "Prompt não é frase bonita — é ordem de serviço com 8 blocos."
+      },
+      {
+        "title": "Seu primeiro agente simples",
+        "detail": "Do prompt ao funcionário digital permanente, testado com caso real."
+      },
+      {
+        "title": "Segundo cérebro em Markdown",
+        "detail": "Sua experiência organizada em arquivos de texto simples — o combustível dos agentes."
+      },
+      {
+        "title": "Terminal e ambiente de trabalho",
+        "detail": "A tela preta sem medo: 6 comandos bastam — e antes do primeiro, você aprende o que fazer quando der erro."
+      },
+      {
+        "title": "Claude Code e agentes de desenvolvimento",
+        "detail": "A IA constrói sob a sua direção: você tem a planta, dá a ordem, confere a parede."
+      },
+      {
+        "title": "APIs, MCP e ferramentas",
+        "detail": "API, webhook e MCP em linguagem de gente — e o custo de cada coisa ANTES de usar."
+      },
+      {
+        "title": "Sistema Operacional de IA",
+        "detail": "A montagem final: tudo que você construiu nos módulos anteriores ganha uma sede — com regras, memória e um ritual de 20 min por semana."
+      }
+    ],
+    "learn": [
+      "você monta seu ambiente de trabalho com agentes",
+      "a montar funcionários digitais que executam tarefas suas, do seu jeito, todos os dias",
+      "a montar agentes com missão fixa: e-mail, proposta, parecer, reunião",
+      "base de conhecimento com OS SEUS modelos, casos e processos",
+      "Resultado no seu padrão, pronto para revisar e assinar",
+      "horas de volta, toda semana, medíveis"
+    ],
+    "audience": [
+      "Você passa o dia executando processos, e-mails e planilhas?",
+      "Você é dono do negócio e faz de tudo um pouco?",
+      "Você vive da sua expertise — consultório, escritório, consultoria?",
+      "Você responde por uma equipe e por resultados?"
+    ],
+    "build": [
+      "seu primeiro agente simples",
+      "Segundo cérebro em Markdown",
+      "um ambiente de trabalho com agentes",
+      "uma sede — com regras, memória e um ritual de 20 min por semana",
+      "agentes, processos e sistemas funcionando na prática"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "bcd8b2aa2f5d2ddc",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agenticbasico/": {
+    "structure": [
+      {
+        "title": "Anatomia",
+        "detail": ""
+      },
+      {
+        "title": "Construção",
+        "detail": ""
+      },
+      {
+        "title": "Operação",
+        "detail": ""
+      },
+      {
+        "title": "Arena: 2-4 agentes em paralelo",
+        "detail": ""
+      },
+      {
+        "title": "Modo orquestração (pipeline encadeado)",
+        "detail": ""
+      },
+      {
+        "title": "Hub-and-spoke dos 5 componentes",
+        "detail": ""
+      },
+      {
+        "title": "Demo do bot com botão \"▶ próxima fala\"",
+        "detail": ""
+      },
+      {
+        "title": "Painel \"🧠 por trás da cortina\"",
+        "detail": ""
+      },
+      {
+        "title": "Receita de 6 passos em timeline",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Cadastre quantos agentes quiser, selecione 2 a 4 e dispare a mesma pergunta pra todos ao mesmo tempo",
+      "Compare respostas, tempo e custo lado a lado",
+      "Ou ative o modo orquestração pra encadear em pipeline"
+    ],
+    "audience": [],
+    "build": [
+      "Construa os seus em paralelo"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "0ee15b53bddc7fcf",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/aiestrategia/": {
+    "structure": [
+      {
+        "title": "INEMA.CLUB T1 Fundamentos",
+        "detail": "1 · Pesquisa Perplexity"
+      },
+      {
+        "title": "INEMA.CLUB T1 Fundamentos",
+        "detail": "2 · Síntese Gemini"
+      },
+      {
+        "title": "INEMA.CLUB T1 Fundamentos",
+        "detail": "3 · Geração PPTX · DOCX · PNG"
+      },
+      {
+        "title": "Nível 1 · Aprendiz",
+        "detail": "Fundamentos & Setup"
+      },
+      {
+        "title": "Nível 2 · Sintetizador",
+        "detail": "Síntese de Conhecimento"
+      },
+      {
+        "title": "Nível 3 · Construtor",
+        "detail": "Skills & Agentes"
+      },
+      {
+        "title": "Nível 4 · Engenheiro",
+        "detail": "A Fábrica"
+      },
+      {
+        "title": "Nível 5 · Consultor",
+        "detail": "Da Fábrica ao Cliente"
+      }
+    ],
+    "learn": [],
+    "audience": [
+      "Para quem quer entrar na área de IA e de consultoria e sair com algo que dá para mostrar e vender. Não exige ser dev — você orquestra tudo pelo Claude Code.",
+      "quer um caminho rápido, mas completo.",
+      "quer um entregável e uma oferta de verdade.",
+      "quer aplicar na própria empresa."
+    ],
+    "build": [
+      "Você vai montar — com o Claude Code — uma máquina que pesquisa qualquer empresa e cospe um pacote de consultoria com 19 entregáveis",
+      "Uma Fábrica de Estratégia de IA funcionando",
+      "Um pacote de consultoria completo de uma empresa real",
+      "Deck + SOW para apresentar e cobrar",
+      "Uma oferta de consultor posicionada por nicho"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "63fdb068f37d748a",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/caio/": {
+    "structure": [
+      {
+        "title": "Profissional de IA 2030 | INEMA.CLUB T1 Realidade T2 Caminhos T3 Skills T4 Marketing T5 Playbooks T6 12 semanas",
+        "detail": "CURSO COMPLETO · ESTILO AGENTICO"
+      },
+      {
+        "title": "A Nova Realidade",
+        "detail": "Fundação. Decifra o estudo IBM. Cenário Brasil. Mitos. Mapeia sua posição no gap."
+      },
+      {
+        "title": "Os Dois Caminhos",
+        "detail": "Path A (consultor) vs Path B (AI-native interno). Autoavaliação. Erros fatais."
+      },
+      {
+        "title": "As 6 Skills Core",
+        "detail": "Fluência conceitual, prompt aplicado a negócio, automação, governança, storytelling, change."
+      },
+      {
+        "title": "Posicionamento e Marketing Pessoal",
+        "detail": "Thesis pública, build in public corporativo, pitch interno e externo, reputação composta."
+      },
+      {
+        "title": "Playbooks por Função",
+        "detail": "Marketing, Finanças, RH, Operações, Vendas, Jurídico — AI-native do seu jeito."
+      },
+      {
+        "title": "Plano de 12 Semanas",
+        "detail": "Descoberta, primeiro projeto, ampliação, pedido (promoção ou proposta). Métricas que importam."
+      }
+    ],
+    "learn": [],
+    "audience": [
+      "Você é analista, coordenador, gerente, especialista — quer ser a pessoa de IA da sua área."
+    ],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "32df3960a1dea105",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/cccompletopn/": {
+    "structure": [
+      {
+        "title": "Fundamentos e mentalidade",
+        "detail": "Entenda o que é o Claude Code de verdade e a virada de mentalidade que muda como você trabalha com IA no dia a dia."
+      },
+      {
+        "title": "Primeiros passos com Claude Code",
+        "detail": "Instale, abra e dê os primeiros comandos — sem travar, mesmo sem nunca ter usado nada parecido com um terminal."
+      },
+      {
+        "title": "Estruturação de projetos",
+        "detail": "Organize arquivos e pastas do jeito que o Claude Code entende, pra trabalhar com ele em qualquer projeto real seu."
+      },
+      {
+        "title": "Construindo um sistema operacional de IA",
+        "detail": "Monte as regras e rotinas que transformam o Claude Code num assistente que já sabe como você trabalha."
+      },
+      {
+        "title": "Memória e segundo cérebro",
+        "detail": "Ensine o Claude Code a lembrar do seu contexto entre conversas, em vez de recomeçar do zero toda vez."
+      },
+      {
+        "title": "Subagentes",
+        "detail": "Divida tarefas grandes entre vários ajudantes especializados de IA que trabalham em paralelo por você."
+      },
+      {
+        "title": "Construção e publicação de projetos",
+        "detail": "Saia de uma ideia solta e chegue a um projeto pronto, publicado e funcionando, do começo ao fim."
+      },
+      {
+        "title": "Segundo cérebro avançado",
+        "detail": "Aprofunde seu sistema de memória e contexto pra decisões mais consistentes com menos esforço repetido."
+      },
+      {
+        "title": "Sistemas multiagentes e automações",
+        "detail": "Coloque vários agentes de IA trabalhando juntos em automações que rodam sozinhas, sem você precisar estar lá."
+      },
+      {
+        "title": "Otimização e encerramento",
+        "detail": "Ajuste e revise o que você construiu, com um plano claro pra continuar sozinho depois do curso."
+      }
+    ],
+    "learn": [
+      "o que o Claude Code faz de diferente de um chat comum",
+      "dar contexto real para uma IA",
+      "reconhecer se uma tarefa pede IA ou só um passo a passo fixo",
+      "explicar com suas próprias palavras o que o Claude Code faz"
+    ],
+    "audience": [
+      "pra quem nunca abriu um terminal",
+      "pra quem só quer resolver o trabalho de terça-feira"
+    ],
+    "build": [
+      "um projeto pronto, publicado e funcionando, do começo ao fim"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "db865858b32bba0d",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/ccodebasico/": {
+    "structure": [
+      {
+        "title": "Básico & Instalação",
+        "detail": "Do zero ao primeiro projeto: instalar no Windows/macOS/Linux, login, comandos essenciais, modo plano, permissões e o CLAUDE.md."
+      },
+      {
+        "title": "Construindo do Zero",
+        "detail": "A série dia-a-dia do canal: do primeiro app ao planejador de workflows, dashboards e projetos reais (Leilão, PETS, Build Anything)."
+      },
+      {
+        "title": "Contexto & Comandos",
+        "detail": "Domine o contexto: /loop, /fork, modo plano, gestão de tokens, os 6 pilares, 32 hacks e as 15 dicas do criador do Claude Code."
+      },
+      {
+        "title": "Skills, Plugins & Memória",
+        "detail": "Estenda o Claude Code: criar e usar Skills, plugins, o Vision plugin, memória permanente (Memory 2.0) e o guia definitivo do CLAUDE.md."
+      },
+      {
+        "title": "MCP & Integrações",
+        "detail": "Conecte o mundo: MCP servers (NotebookLM, Supabase, Firecrawl, Playwright), modelos free (CCR, Ollama), Routines e monitores de uso."
+      },
+      {
+        "title": "Agentes & Cowork",
+        "detail": "Multiagentes e automação: times de agentes, orquestração, Claude Cowork, segundo cérebro (Obsidian + RAG) e projetos aplicados."
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "91355bc0c8bf50e7",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/codexbasico/": {
+    "structure": [
+      {
+        "title": "Codex Básico",
+        "detail": "Do zero ao avançado com o agente de codificação da OpenAI. Instalação, skills, subagentes e projetos reais."
+      },
+      {
+        "title": "Terminal e Interface",
+        "detail": "Instalação completa, uso do terminal, configuração de ambiente e interface gráfica do Codex App para Windows."
+      },
+      {
+        "title": "Agent Builder",
+        "detail": "Crie agentes de IA sem código com o OpenAI Agent Builder. MCP, Guardrails, Vector Store e Widgets visuais."
+      },
+      {
+        "title": "BMAD Method",
+        "detail": "Instale e use o BMAD Method com o Codex. Agentes especializados @pm, @architect e fluxo de desenvolvimento estruturado."
+      },
+      {
+        "title": "Equipe de Agentes",
+        "detail": "Monte uma equipe de marketing com 5 agentes de IA usando o Codex. Campaign Manager, Research, Copy, Strategy e Data."
+      },
+      {
+        "title": "WhatsApp + Codex",
+        "detail": "Crie um chatbot de WhatsApp com IA usando o AgentKit. Conecta GPT-4o, escaneia QR Code e responde mensagens automaticamente."
+      }
+    ],
+    "learn": [
+      "Do zero ao avançado com o agente de codificação da OpenAI. Instalação, skills, subagentes e projetos reais."
+    ],
+    "audience": [],
+    "build": [
+      "Crie agentes de IA sem código com o OpenAI Agent Builder. MCP, Guardrails, Vector Store e Widgets visuais.",
+      "Instale e use o BMAD Method com o Codex. Agentes especializados @pm, @architect e fluxo de desenvolvimento estruturado.",
+      "Monte uma equipe de marketing com 5 agentes de IA usando o Codex. Campaign Manager, Research, Copy, Strategy e Data.",
+      "Crie um chatbot de WhatsApp com IA usando o AgentKit. Conecta GPT-4o, escaneia QR Code e responde mensagens automaticamente."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "f4b61b216e9c1cec",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/consultoria2k/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "O trabalho por trás do rótulo: a janela de mercado, a restrição real, a pirâmide de soluções e quando NÃO usar IA."
+      },
+      {
+        "title": "Mapear",
+        "detail": "Descobrir a restrição real: entrevistas, mapeamento de processos, catálogo de oportunidades e a matriz valor × viabilidade."
+      },
+      {
+        "title": "Auditar",
+        "detail": "Prontidão, dados e risco: readiness assessment, modelos de maturidade, auditoria de dados e governança (NIST AI RMF, ISO 42001)."
+      },
+      {
+        "title": "Planos de execução",
+        "detail": "Da oportunidade ao business case: ROI, roadmap por ondas, escolher o nível da pirâmide e desenhar pilotos com métricas de sucesso."
+      },
+      {
+        "title": "Entrega & Negócio",
+        "detail": "O negócio da consultoria: escopo e proposta, precificação, kit de entregáveis e como conduzir a adoção e escalar a prática."
+      }
+    ],
+    "learn": [
+      "a mapear oportunidades, auditar a prontidão e montar planos de execução",
+      "quando subir a pirâmide de soluções e quando a melhor resposta não tem IA nenhuma",
+      "o trabalho por trás do rótulo: a janela de mercado, a restrição real e a pirâmide de soluções",
+      "descobrir a restrição real: entrevistas, mapeamento de processos e catálogo de oportunidades",
+      "prontidão, dados e risco: readiness assessment, modelos de maturidade e governança"
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "8d2186d8c1c2e206",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/criaagentes/guia/": {
+    "structure": [
+      {
+        "title": "Identidade · CLAUDE.md",
+        "detail": "26 linhas. Quem ele é, quem ele atende, e quatro recusas testáveis. nunca dizer que tem vaga"
+      },
+      {
+        "title": "Substrato · substrate/",
+        "detail": "O documento oficial da clínica fica como fonte; o compendium.md é o destilado que o atendente lê"
+      },
+      {
+        "title": "Regras · rules/",
+        "detail": "Uma regra é uma placa escrita \"não entre\". Hook tranca/porta; alerta do Telegram dispara sozinho"
+      },
+      {
+        "title": "Skills · skills/",
+        "detail": "Uma só, de propósito. Classificar a mensagem em três caixas: responde sozinho, depende da agenda, ou é de gente"
+      },
+      {
+        "title": "Ferramentas · tools.md",
+        "detail": "Google Agenda somente leitura, e alerta num grupo de Telegram"
+      },
+      {
+        "title": "Agente · agents/",
+        "detail": "A skill é a ferramenta, o agente é o cozinheiro. Portão de revisão de cinco perguntas antes de responder"
+      },
+      {
+        "title": "Claude Code",
+        "detail": "Onde as camadas são construídas e onde o agente roda"
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "9e8f8c0e833c7098",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/cultura-inovacao/": {
+    "structure": [
+      {
+        "title": "Fundamentos da Cultura de Inovação",
+        "detail": "O alicerce. O que e cultura de inovacao, seus pilares, modelos de referencia, mindset de crescimento, o papel da lideranca, as barreiras comuns e como medir."
+      },
+      {
+        "title": "Tecnicas e Ferramentas",
+        "detail": "O arsenal pratico. Design Thinking, Lean Startup, Sprint, SCAMPER, JTBD, OKRs, criatividade sistematica, prototipagem, feedback loops e os rituais que mantem a inovacao viva."
+      },
+      {
+        "title": "Avancado — Construindo Solucoes",
+        "detail": "A escala. Programa corporativo, intraempreendedorismo, inovacao aberta, ambidestria organizacional, IA como acelerador, casos reais, ROI, governanca e o futuro."
+      }
+    ],
+    "learn": [
+      "diagnosticar a cultura",
+      "aplicar os metodos certos",
+      "montar um programa que entrega",
+      "usar IA como acelerador",
+      "medir e provar valor",
+      "escalar o que funciona"
+    ],
+    "audience": [
+      "Lideres e gestores que querem criar um ambiente onde ideias prosperam.",
+      "Intraempreendedores que querem inovar de dentro da organizacao.",
+      "Times de inovacao que buscam metodo e linguagem comum.",
+      "Consultores e empreendedores que querem um framework completo e aplicavel."
+    ],
+    "build": [
+      "um sistema que gera inovacao continuamente",
+      "um programa corporativo",
+      "solucoes que escalam",
+      "uma cultura que inova de verdade"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "08bddc9601f7638c",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/curso-claude-codex/": {
+    "structure": [
+      {
+        "title": "TRILHA 1",
+        "detail": "Fundamentos"
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Por que separar o cérebro do modelo"
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Os três níveis de migração"
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Anatomia de um workspace portátil"
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Donos da informação"
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Audit antes de implement"
+      },
+      {
+        "title": "TRILHA 2",
+        "detail": "Mão na massa"
+      },
+      {
+        "title": "Mão na massa",
+        "detail": "Diagnóstico do ambiente"
+      },
+      {
+        "title": "Mão na massa",
+        "detail": "Instalar o núcleo portátil"
+      },
+      {
+        "title": "Mão na massa",
+        "detail": "Skills canônicas com polyskill"
+      },
+      {
+        "title": "Mão na massa",
+        "detail": "Readback: provar em sessão nova"
+      },
+      {
+        "title": "Mão na massa",
+        "detail": "Handoff e prime: o ciclo diário"
+      }
+    ],
+    "learn": [
+      "Separar o cérebro do modelo em Markdown portátil",
+      "Handoff e prime: o ciclo diário",
+      "Readback: provar em sessão nova",
+      "Audit antes de implement",
+      "Skills canônicas com polyskill",
+      "Instalar o núcleo portátil"
+    ],
+    "audience": [],
+    "build": [
+      "um núcleo portátil (AGENTS.md, context/, tasks/, handoffs/, skills canônicas)",
+      "adaptadores pequenos pra cada ferramenta",
+      "um teste de continuidade que prova, em sessão nova",
+      "um sistema de workspace independente de modelo"
+    ],
+    "prerequisites": [
+      "Já usar o Claude Code ou o Codex CLI em pelo menos um projeto (a Trilha 1 define cada termo do zero, mas a Trilha 2 roda comandos de verdade).",
+      "Um terminal com git, bash e python3. Node só para o polyskill (módulo 2.4).",
+      "Disposição para fazer faxina nas suas pastas antes de migrar. É a parte que ninguém pula."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "cbb2db064ed69ac7",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/do-zero-ao-deploy/": {
+    "structure": [
+      {
+        "title": "TRILHA 1 4 modulos Terminal & Git",
+        "detail": "Aprenda a usar o terminal, controlar versoes com Git e publicar no GitHub."
+      },
+      {
+        "title": "Terminal Git",
+        "detail": ""
+      },
+      {
+        "title": "GitHub Pages",
+        "detail": ""
+      },
+      {
+        "title": "TRILHA 2 4 modulos Deploy Moderno",
+        "detail": "Publique projetos com um clique na Vercel, crie bancos de dados no Supabase e conecte tudo com APIs."
+      },
+      {
+        "title": "Vercel Supabase APIs",
+        "detail": ""
+      },
+      {
+        "title": "TRILHA 3 4 modulos Servidor Proprio",
+        "detail": "Contrate e configure seu VPS. Acesso SSH, firewall, SSL e gestao de tokens."
+      },
+      {
+        "title": "VPS SSH Firewall",
+        "detail": ""
+      },
+      {
+        "title": "TRILHA 4 4 modulos Docker & Automacao",
+        "detail": "Empacote aplicacoes em containers, orquestre servicos com Compose, e automatize tudo com systemd e cron."
+      },
+      {
+        "title": "Docker Compose Cron",
+        "detail": ""
+      },
+      {
+        "title": "TRILHA 5 2 modulos Assistentes IA",
+        "detail": "Construa seu assistente pessoal no Telegram com IA."
+      },
+      {
+        "title": "Telegram Bot Claude/GPT",
+        "detail": ""
+      },
+      {
+        "title": "Agentes",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Terminal & Git",
+      "Deploy Moderno",
+      "Servidor Proprio",
+      "Docker & Automacao",
+      "Assistentes IA",
+      "Construa seu assistente pessoal no Telegram com IA"
+    ],
+    "audience": [
+      "Nunca abriu um terminal na vida",
+      "Quer colocar um site no ar mas nao sabe por onde comecar",
+      "Ouv i u falar de Git, Docker, VPS mas nunca mexeu",
+      "Quer construir um assistente IA pessoal"
+    ],
+    "build": [
+      "Seu site no ar",
+      "App com banco de dados",
+      "Servidor seguro",
+      "Stack com Docker",
+      "Assistente IA"
+    ],
+    "prerequisites": [
+      "As 5 trilhas"
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "6ad47282bda7bf4c",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/evai2026/curso-e-live/curso/": {
+    "structure": [
+      {
+        "title": "Seus primeiros 30 dias",
+        "detail": "Saia com 3 oportunidades reais mapeadas e um plano de 30 dias para o primeiro trabalho pago."
+      },
+      {
+        "title": "O motor por dentro: as 3 camadas",
+        "detail": "Desenhe as 3 camadas de qualquer automação profissional — e identifique a que falta em qualquer proposta."
+      },
+      {
+        "title": "Seu motor de conteúdo",
+        "detail": "Um pedido de conteúdo testado que transforma 1 texto seu em publicações para 2 redes diferentes."
+      },
+      {
+        "title": "O atendente que fala: IA por voz",
+        "detail": "Os 5 jeitos como um atendente de voz falha — e o que exigir antes de colocar um na frente de cliente."
+      },
+      {
+        "title": "Confiar ou conferir? Teste antes do cliente",
+        "detail": "Um gabarito de 5 perguntas do seu trabalho para dizer, com número, se a IA está pronta."
+      },
+      {
+        "title": "Um assistente com a memória do seu negócio",
+        "detail": "O manual que faz qualquer assistente de IA responder do seu jeito desde a primeira pergunta."
+      },
+      {
+        "title": "Agentes que trabalham enquanto você dorme",
+        "detail": "Quanta liberdade dar a um agente de IA — e onde fica o botão de parar de cada tarefa."
+      },
+      {
+        "title": "Vendendo para empresas grandes",
+        "detail": "O mapa de 6 perguntas que transforma conversa com empresa grande em contrato assinado."
+      }
+    ],
+    "learn": [
+      "Saia com 3 oportunidades reais mapeadas e um plano de 30 dias para o primeiro trabalho pago.",
+      "Desenhe as 3 camadas de qualquer automação profissional — e identifique a que falta em qualquer proposta.",
+      "Um pedido de conteúdo testado que transforma 1 texto seu em publicações para 2 redes diferentes.",
+      "Os 5 jeitos como um atendente de voz falha — e o que exigir antes de colocar um na frente de cliente.",
+      "Um gabarito de 5 perguntas do seu trabalho para dizer, com número, se a IA está pronta.",
+      "O manual que faz qualquer assistente de IA responder do seu jeito desde a primeira pergunta."
+    ],
+    "audience": [
+      "Você é contador(a), advogado(a), corretor(a) de imóveis, assistente administrativa — ou outra profissão liberal ou de escritório — e quer uma renda nova com IA.",
+      "Você usa bem o computador no dia a dia, mas nunca programou — e não pretende programar.",
+      "Você tem de 30 minutos a 1 hora por sessão e prefere aprender fazendo.",
+      "Você quer um curso de vídeo-aulas tradicional — aqui o formato é leitura guiada com prática."
+    ],
+    "build": [
+      "motor de conteúdo",
+      "assistente com a memória do seu negócio",
+      "um gabarito de testes antes de qualquer entrega",
+      "um plano de 30 dias para transformar uma delas em contrato",
+      "mapa de 6 perguntas que transforma conversa com empresa grande em contrato assinado"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "e7a54c7f74d10507",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/fae-ai/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Mentalidade de automação estratégica: por que automatizar, onde a IA cria valor e o mapa das 5 etapas."
+      },
+      {
+        "title": "Auditoria & Mapeamento",
+        "detail": "Caçar a tarefa de 10 horas, medir tempo e custo, diagramar o processo as-is → to-be."
+      },
+      {
+        "title": "Desenho de Soluções",
+        "detail": "Do processo ao blueprint: arquitetura, escolha de ferramentas e modelos, lógica e prompts."
+      },
+      {
+        "title": "Construção",
+        "detail": "Setup do ambiente, primeira automação ponta a ponta, integrações e confiabilidade."
+      },
+      {
+        "title": "Comercialização",
+        "detail": "Empacotar a automação como serviço, precificar com base no ROI do cliente, entregar e escalar."
+      },
+      {
+        "title": "Prática",
+        "detail": "Exercícios prontos, biblioteca de prompts e skills reutilizáveis para aplicar em cada etapa."
+      }
+    ],
+    "learn": [
+      "Identificar tarefas repetitivas com alto retorno de automação dentro de qualquer negócio.",
+      "Auditar e diagramar processos, calculando o ganho de tempo e o ROI.",
+      "Desenhar a arquitetura da solução e escolher as ferramentas certas.",
+      "Construir automações confiáveis com IA, do trigger à ação.",
+      "Empacotar e vender a automação como um serviço de alto valor.",
+      "Aplicar tudo com exercícios, prompts e skills prontas para usar hoje."
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "611bb8254325ab5c",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/intelecto-curso/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Filosofia \"sem frameworks inchados\", arquitetura dos 5 componentes e setup completo do ambiente."
+      },
+      {
+        "title": "Identidade e Canais",
+        "detail": "SOUL.md, perfis intercambiáveis, Telegram, WhatsApp, Discord e memória SQLite FTS5."
+      },
+      {
+        "title": "Segurança Zero-Trust",
+        "detail": "Prompt injection, Fernet + PBKDF2, WASM Sandbox, gates de aprovação e audit trail completo."
+      },
+      {
+        "title": "Memória e Integrações",
+        "detail": "OpenRouter (100+ modelos), Ollama local, Google Workspace, GitHub e automação com webhooks."
+      },
+      {
+        "title": "Arquiteturas Avançadas",
+        "detail": "Os 6 padrões Claw, multi-agentes TinyClaw, Agent Zero e loop de aprendizado contínuo."
+      },
+      {
+        "title": "Projeto Final: Seu Jarvis",
+        "detail": "Planejamento, geração do ingredients.md, deploy Docker, monitoramento e roadmap Phase 2."
+      }
+    ],
+    "learn": [
+      "como o INTELECTO é construído em um fluxo real de 5 passos",
+      "selecionar ingredientes e features do seu Jarvis",
+      "gerar documento e passar ao Claude Code",
+      "responder perguntas com o assistente funcionando no Telegram",
+      "arquiteturas e setup completos do ambiente"
+    ],
+    "audience": [
+      "Do iniciante ao expert em segurança de IA."
+    ],
+    "build": [
+      "Do zero ao assistente pessoal completo",
+      "com segurança Zero-Trust, memória persistente e múltiplos canais",
+      "seu Jarvis"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "5fa9cbdaccab675b",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/lives2/": {
+    "structure": [
+      {
+        "title": "Lives 2026 — Negócio de Serviços de IA",
+        "detail": "7 lives · bloco estratégico"
+      },
+      {
+        "title": "Live 01 · Negociação",
+        "detail": "Anatomia de três negociações reais"
+      },
+      {
+        "title": "Live 02 · Precificação",
+        "detail": "Abandone a cobrança por hora"
+      },
+      {
+        "title": "Live 03 · Estratégia",
+        "detail": "O que empresas realmente compram em IA"
+      },
+      {
+        "title": "Live 04 · Valor de saída",
+        "detail": "Build to Sell: quanto vale a sua agência?"
+      },
+      {
+        "title": "Live 05 · Sinal vs ruído",
+        "detail": "O que realmente importa em IA agora"
+      },
+      {
+        "title": "Live 06 · Ferramentas",
+        "detail": "A guerra das ferramentas: n8n vs Claude Code vs Make"
+      },
+      {
+        "title": "Live 07 · Venda",
+        "detail": "O cliente não pediu IA — e é por isso que você vende mais"
+      }
+    ],
+    "learn": [
+      "As decisões que separam quem fatura de quem desiste",
+      "Anatomia de três negociações reais",
+      "Abandone a cobrança por hora",
+      "O que empresas realmente compram em IA",
+      "Build to Sell: quanto vale a sua agência?",
+      "O que realmente importa em IA agora"
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "8b6bcc38fd4251b6",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/local-ai-masterclass/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Por que entrar em IA local agora, o que é de verdade, o mito do \"burro e lento\" e a anatomia de um LLM."
+      },
+      {
+        "title": "Hardware & Lab",
+        "detail": "Categorias de hardware, o que cabe na sua máquina, SO/drivers e rede privada com Tailscale."
+      },
+      {
+        "title": "Instalação & Técnicas",
+        "detail": "Ollama, interface tipo ChatGPT, GGUF/quantização, parâmetros, API local e RAG. O hands-on de verdade."
+      },
+      {
+        "title": "Avançado & Agentes 24/7",
+        "detail": "Orquestração, agentes sempre-on e três soluções passo a passo: scanner de segurança, vigia da web e seu buddy local."
+      }
+    ],
+    "learn": [
+      "Por que entrar em IA local agora",
+      "o que é de verdade",
+      "a anatomia de um LLM",
+      "categorias de hardware, o que cabe na sua máquina",
+      "Ollama, interface tipo ChatGPT, GGUF/quantização, parâmetros, API local e RAG",
+      "Orquestração, agentes sempre-on"
+    ],
+    "audience": [],
+    "build": [
+      "um laboratório de IA local com agentes rodando 24/7",
+      "agentes rodando o dia inteiro",
+      "seu buddy local com nome, cara e voz"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "84a8200ac747f93d",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/mapacliente/": {
+    "structure": [
+      {
+        "title": "Mercado & Mentalidade",
+        "detail": "Por que PME precisa de IA agora, a nova profissão de Consultor de Soluções e a virada mental: problema do cliente > coleção de ferramentas."
+      },
+      {
+        "title": "Venda Consultiva de IA",
+        "detail": "Prospecção em PME, abordagem, explicar IA sem assustar, vender o diagnóstico, vencer as 6 objeções clássicas e apresentar ROI simples."
+      },
+      {
+        "title": "Diagnóstico DICA — D",
+        "detail": "Roteiro de entrevista com o dono, mapa das 5 áreas (atendimento, vendas, marketing, gestão, financeiro), extração de conhecimento implícito."
+      },
+      {
+        "title": "Implementação DICA — I",
+        "detail": "Playbooks operacionais, aprovação humana por níveis, os 5 pacotes prontos (atendimento, propostas, conteúdo, follow-up, operação) com WhatsApp + Sheets + n8n."
+      },
+      {
+        "title": "Capacitação & Sustentação — C+A",
+        "detail": "Treinar o cliente, escolher o responsável interno, rotina de uso, indicadores simples, expansão e venda recorrente."
+      },
+      {
+        "title": "Escala do Profissional",
+        "detail": "Padronizar entrega, precificação, portfólio, comunidade, certificação e projeto final com cliente real ou simulado."
+      },
+      {
+        "title": "O Método DICA",
+        "detail": "Uma jornada completa pelo Método DICA — D iagnosticar, I mplementar, C apacitar e A companhar — para transformar IA em serviço vendável."
+      }
+    ],
+    "learn": [
+      "transformar IA em serviço vendável para pequenas empresas",
+      "Do posicionamento mental à venda consultiva",
+      "do diagnóstico operacional ao desenho de assistentes",
+      "da capacitação do cliente à escala do seu negócio",
+      "a vender o diagnóstico e apresentar ROI simples",
+      "a implementar assistentes personalizados"
+    ],
+    "audience": [],
+    "build": [
+      "um diagnóstico operacional",
+      "desenho de assistentes",
+      "capacitação do cliente",
+      "escala do seu negócio"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "3cafebd5deca3e04",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/mentesbrilhantes1/": {
+    "structure": [
+      {
+        "title": "Mentalidade do Vencedor",
+        "detail": ""
+      },
+      {
+        "title": "A Ideia (1%)",
+        "detail": ""
+      },
+      {
+        "title": "O Produto (20%)",
+        "detail": ""
+      },
+      {
+        "title": "Marketing Estratégico",
+        "detail": ""
+      },
+      {
+        "title": "Vendas e Retenção",
+        "detail": ""
+      },
+      {
+        "title": "Perseverança e Escala",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Quebrar mitos antes de tentar",
+      "Ideia boa = dor real + alguém que paga",
+      "Construa pouco. Lance rápido. Vibe coding e a regra dos 30 dias",
+      "Como transformar clique em receita previsível. O ativo real",
+      "Como vender o jogo"
+    ],
+    "audience": [
+      "É pra você se",
+      "Você é jovem ou está começando e tem fome de vencer",
+      "Quer entender o jogo real, não a versão LinkedIn",
+      "Está disposto a fazer trabalho braçal de verdade"
+    ],
+    "build": [
+      "Um ativo real",
+      "Receita previsível",
+      "Persistência"
+    ],
+    "prerequisites": [
+      "Aceita que vender é mais importante que construir",
+      "Está disposto a fazer trabalho braçal de verdade",
+      "Quebrar mitos antes de tentar"
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "5b79ff1ca1fd5d4a",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/neurociencia-comportamento/": {
+    "structure": [
+      {
+        "title": "TRILHA 1 O Cérebro que Decide",
+        "detail": "Sistema 1 e 2 de Kahneman, heurísticas, vieses cognitivos e dissonância. Como seu cérebro toma (e erra) decisões. 4 módulos"
+      },
+      {
+        "title": "TRILHA 2 Influência Social Conformidade",
+        "detail": "Conformidade (Asch), obediência (Milgram), persuasão (Cialdini) e dark patterns. Por que seguimos o grupo. 3 módulos"
+      },
+      {
+        "title": "TRILHA 3 Neurociência do Comportamento",
+        "detail": "Neuroplasticidade, dopamina, sistema de recompensa, amígdala e aversão à perda. O hardware por trás das decisões. 3 módulos"
+      },
+      {
+        "title": "TRILHA 4 Economia Comportamental",
+        "detail": "Thaler, Ariely, nudge theory, contabilidade mental e o paradoxo da escolha. O fim do Homo Economicus. 3 módulos"
+      },
+      {
+        "title": "TRILHA 5 Filosofia da Mente",
+        "detail": "Livre-arbítrio (Libet), o problema difícil da consciência (Chalmers), semiótica e imaginação (Bruzzo). 3 módulos"
+      },
+      {
+        "title": "TRILHA 6 IA, Vieses e Ética",
+        "detail": "Vieses algorítmicos, bolhas epistêmicas, polarização digital e o espaço humano na era da automação. 3 módulos"
+      }
+    ],
+    "learn": [
+      "Como o Sistema 1 (rápido) e o Sistema 2 (lento) governam suas decisões",
+      "Por que você segue o grupo mesmo quando sabe que está errado",
+      "Como a dopamina e a amígdala sequestram seu comportamento",
+      "Como a arquitetura de escolhas manipula decisões financeiras",
+      "Se o livre-arbítrio existe ou se o cérebro decide antes de você",
+      "Como a IA herda e amplifica os vieses humanos"
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "85908f6c6008e986",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/os-agentes/guia/": {
+    "structure": [
+      {
+        "title": "Uma camada por vez",
+        "detail": "Treina Identidade, Substrato, Regras, Skills, Ferramentas e Agentes na ordem que realmente funciona — nunca todas de uma vez."
+      },
+      {
+        "title": "As seis camadas, de baixo pra cima",
+        "detail": "A Identidade é a fundação, o Substrato (os bastidores) é a maior camada, e os Agentes ficam no topo."
+      },
+      {
+        "title": "Instale a skill",
+        "detail": "cp -r skills/os-agentes ~/.claude/skills/"
+      },
+      {
+        "title": "Avance camada por camada",
+        "detail": "/os-agentes next"
+      },
+      {
+        "title": "Pule direto pra uma camada específica",
+        "detail": "/os-agentes layer identity|substrate|rules|skills|tools|agents"
+      },
+      {
+        "title": "Veja onde você parou",
+        "detail": "/os-agentes status"
+      },
+      {
+        "title": "Audite o OS inteiro",
+        "detail": "/os-agentes audit"
+      },
+      {
+        "title": "Peça ajuda a qualquer momento",
+        "detail": "/os-agentes help"
+      }
+    ],
+    "learn": [
+      "a construção do seu próprio OS agêntico",
+      "Identidade, Substrato, Regras, Skills, Ferramentas e Agentes na ordem que realmente funciona",
+      "a refinação com você nas primeiras perguntas",
+      "um sistema de arquivos que entende o seu objetivo e trabalha por você",
+      "a fazer auditoria com pontuação das seis camadas e três próximos movimentos"
+    ],
+    "audience": [
+      "Você não precisa saber programar; a skill faz o trabalho técnico, você só toma as decisões."
+    ],
+    "build": [
+      "os arquivos e pastas de verdade pra você",
+      "a Identidade",
+      "o Substrato (os bastidores)",
+      "as Regras",
+      "Skills, Ferramentas e Agentes"
+    ],
+    "prerequisites": [
+      "Claude Code instalado",
+      "Uma pasta vazia (ou já existente) que você queira transformar num OS",
+      "Um objetivo em mente"
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "93a3c9cb3a85960f",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/pha2030-aula": {
+    "structure": [
+      {
+        "title": "Fundamentos do PHA 2030",
+        "detail": ""
+      },
+      {
+        "title": "Diagnóstico e Condução da Sala",
+        "detail": ""
+      },
+      {
+        "title": "Jornada de Transformação e Oferta",
+        "detail": ""
+      },
+      {
+        "title": "Resultado esperado",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "[\"contexto de mercado\",\"tese central\",\"linguagem do PHA 2030\",\"posicionamento da proposta\",\"disccovery\",\"desenho de workshops\",\"maturidade de adocao\",\"modelo de continuidade do PHA 2030\"]"
+    ],
+    "audience": [
+      "[\"pessoas, equipes e empresas\"]"
+    ],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "d283674389b0319e",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/pro-liberal-ia/": {
+    "structure": [
+      {
+        "title": "O que a IA pode fazer por voce",
+        "detail": ""
+      },
+      {
+        "title": "Escolhendo sua ferramenta",
+        "detail": ""
+      },
+      {
+        "title": "Criando seu assistente",
+        "detail": ""
+      },
+      {
+        "title": "Fluxo de trabalho diario",
+        "detail": ""
+      },
+      {
+        "title": "Prompts de atendimento",
+        "detail": ""
+      },
+      {
+        "title": "Prompts de producao",
+        "detail": ""
+      },
+      {
+        "title": "Prompts de estrategia",
+        "detail": ""
+      },
+      {
+        "title": "Proposta comercial",
+        "detail": ""
+      },
+      {
+        "title": "Resposta para cliente",
+        "detail": ""
+      },
+      {
+        "title": "Conteudo para autoridade",
+        "detail": ""
+      },
+      {
+        "title": "Checklist de atendimento",
+        "detail": ""
+      },
+      {
+        "title": "Rotina semanal",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Aprenda a usar IA para atender melhor, produzir mais e transformar sua experiencia em autoridade."
+    ],
+    "audience": [
+      "Este curso e para voce se",
+      "E advogado, medico, contador, arquiteto, engenheiro ou outro profissional liberal",
+      "Tem experiencia na area mas quer usar IA sem virar tecnico",
+      "Quer atender melhor, produzir mais e construir autoridade"
+    ],
+    "build": [
+      "construir autoridade",
+      "atender melhor",
+      "produzir mais"
+    ],
+    "prerequisites": [
+      "Voce nao precisa virar programador.",
+      "Voce nao precisa virar programador. O objetivo e fazer a IA trabalhar para voce, respeitando o que voce ja sabe."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "a2dbb8a5daaaeef1",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/prof2030/": {
+    "structure": [
+      {
+        "title": "Comunicar com a máquina",
+        "detail": ""
+      },
+      {
+        "title": "Empreender pela automação",
+        "detail": ""
+      },
+      {
+        "title": "Liderar com humanidade",
+        "detail": ""
+      },
+      {
+        "title": "Despertar",
+        "detail": "Fundamento → Prática → Aplicação → Síntese → Projeto."
+      },
+      {
+        "title": "Fundamento",
+        "detail": "Prática → Aplicação → Síntese → Projeto."
+      },
+      {
+        "title": "Prática",
+        "detail": "Aplicação → Síntese → Projeto."
+      },
+      {
+        "title": "Aplicação",
+        "detail": "Síntese → Projeto."
+      },
+      {
+        "title": "Síntese",
+        "detail": "Projeto."
+      },
+      {
+        "title": "Projeto",
+        "detail": "agente, automação ou manifesto pessoal."
+      }
+    ],
+    "learn": [
+      "AI literacy, prompt e context engineering",
+      "dialogar com agentes",
+      "Alavancagem com IA, n8n",
+      "casos de solopreneurs, precificar e vender automações",
+      "caráter, empatia, antecipação",
+      "formação de times e legado humano"
+    ],
+    "audience": [
+      "Você sai com algo concreto: agente, automação ou manifesto pessoal."
+    ],
+    "build": [
+      "um agente",
+      "uma automação",
+      "um manifesto pessoal",
+      "caráter, empatia e antecipação"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "0dcf15fb905be729",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/prof2031CAIP": {
+    "structure": [
+      {
+        "title": "Fundamentos de IA Aplicada",
+        "detail": "O panorama, o vocabulário, o mapa pessoal de obsolescência. Aqui você sai do pânico e entra no jogo."
+      },
+      {
+        "title": "Comando e Engenharia de Contexto",
+        "detail": "A habilidade base. Briefing, contexto, julgamento. A diferença entre pedir e comandar IA com critério."
+      },
+      {
+        "title": "Agentes e Automação",
+        "detail": "Sai do chat. Constrói fluxos que executam: pesquisa, redação, planilhas, e-mail, dashboard, integrações."
+      },
+      {
+        "title": "Aplicação Profissional",
+        "detail": "Trilha bifurcada por perfil: jovem, CLT, inovador ou empreendedor. Mesma base, casos diferentes."
+      },
+      {
+        "title": "Projeto Certificador",
+        "detail": "Você sai com sistema rodando, caso real entregue e narrativa pública. Não é certificado, é prova."
+      },
+      {
+        "title": "Especializações (Imersões)",
+        "detail": "Builder, Enterprise, Operations. Imersões presenciais que elevam você a CAIP Specialist — e depois a Master."
+      },
+      {
+        "title": "Modo comando, não execução",
+        "detail": ""
+      },
+      {
+        "title": "Contexto antes de prompt",
+        "detail": "A maior parte do resultado vem do contexto que você alimenta. Memória organizacional, documentação, exemplos. Sem isso, a IA chuta."
+      },
+      {
+        "title": "Julgamento é a nova competência",
+        "detail": "A IA produz opções. Você decide o que presta. Curadoria, gosto, critério técnico — o human premium mora aqui."
+      },
+      {
+        "title": "Fluxo, não tarefa",
+        "detail": "Uma tarefa repetitiva vira fluxo automatizado. Você projeta sistemas, não responde e-mails. Multiplica seu tempo por 10."
+      },
+      {
+        "title": "Entrega real, não certificado",
+        "detail": "O CAIP exige um projeto real entregue. Aumento, MVP, automação que devolve horas — algo verificável no mundo."
+      }
+    ],
+    "learn": [
+      "comandar IA com critério",
+      "briefing, contexto e julgamento",
+      "construir fluxos que executam: pesquisa, redação, planilhas, e-mail, dashboard, integrações",
+      "memória organizacional, documentação e exemplos para alimentar o contexto"
+    ],
+    "audience": [
+      "Para quem se recusa a virar obsoleto",
+      "para quem trabalha no computador — independente da área"
+    ],
+    "build": [
+      "fluxos que executam: pesquisa, redação, planilhas, e-mail, dashboard, integrações",
+      "sistema rodando, caso real entregue e narrativa pública",
+      "um sistema pessoal rodando no trabalho"
+    ],
+    "prerequisites": [
+      "não exige uma linha de código"
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "bfdcd250182e7e53",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/profissional2027x": {
+    "structure": [
+      {
+        "title": "Fundamentos + os 4 passos do método DPIA + a Aplicação no mercado real.",
+        "detail": ""
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Manifesto, tese de mercado, perfil do profissional, oportunidade."
+      },
+      {
+        "title": "Diagnosticar",
+        "detail": "Entrevista, dor real, baseline numérico, relatório que se vende."
+      },
+      {
+        "title": "Processar",
+        "detail": "Mapeamento as-is/to-be, recorte do piloto, stack canônica."
+      },
+      {
+        "title": "Instruir",
+        "detail": "System prompt, base de conhecimento, treinamento da equipe."
+      },
+      {
+        "title": "Automatizar",
+        "detail": "n8n, WhatsApp Business API, ERPs brasileiros, HITL, observabilidade."
+      },
+      {
+        "title": "Aplicação",
+        "detail": "Venda do diagnóstico, contrato anti-lock-in, manutenção mensal."
+      },
+      {
+        "title": "Método DPIA",
+        "detail": "Quatro passos sequenciais + Acompanhamento como loop externo de manutenção."
+      },
+      {
+        "title": "7 princípios não-negociáveis",
+        "detail": ""
+      },
+      {
+        "title": "Ferramenta é commodity. Processo é o ativo.",
+        "detail": "A ferramenta muda toda semana. O processo configurado sobrevive à troca de modelo."
+      },
+      {
+        "title": "Diagnóstico antes de implementação.",
+        "detail": "Sem baseline assinado pelo cliente, não existe projeto. É só venda de ferramenta."
+      },
+      {
+        "title": "Mercado tripartite.",
+        "detail": "Diagnóstico pago + projeto fixo + manutenção recorrente. Os três sustentam o profissional."
+      }
+    ],
+    "learn": [
+      "diagnostica pequenas empresas",
+      "vende soluções simples",
+      "implementa assistentes personalizados",
+      "treina clientes para vender mais, atender melhor e trabalhar com menos burocracia",
+      "diagnostica pequenas empresas, vende soluções simples, implementa assistentes personalizados e treina clientes"
+    ],
+    "audience": [
+      "Implementadores de Soluções de IA para pequenas e médias empresas brasileiras",
+      "PMEs brasileiras"
+    ],
+    "build": [
+      "implementadores de IA para PMEs brasileiras",
+      "soluções simples",
+      "assistentes personalizados"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "a71aead9d41e0c96",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/profissionalai/": {
+    "structure": [
+      {
+        "title": "Trilha 1 · Fundamentos",
+        "detail": "Dados de mercado, a evolução da IA e das profissões, e a habilidade de virar a pessoa de IA."
+      },
+      {
+        "title": "Trilha 2 · Carreiras",
+        "detail": "Diagnóstico, aceleração de produção, gosto & critério e blindagem com múltiplas rendas."
+      },
+      {
+        "title": "Trilha 3 · Avançado",
+        "detail": "A pirâmide prompt → vibe code → contexto → agentic → arquitetura, a intenção e o seu Jarvis."
+      },
+      {
+        "title": "1 · Seja a Pessoa de IA",
+        "detail": "Vire a referência do seu círculo — sem trocar de carreira."
+      },
+      {
+        "title": "2 · Gosto & Critério",
+        "detail": "Decidir o que merece o seu nome — não confiar no 1º output."
+      },
+      {
+        "title": "3 · Engenharia de Contexto",
+        "detail": "Prompt é como você pede; contexto é o que a IA sabe."
+      },
+      {
+        "title": "4 · Velocidade de Iteração",
+        "detail": "Quem itera mais rápido, sem perder qualidade, vence."
+      },
+      {
+        "title": "5 · Construa seu Jarvis",
+        "detail": "Agente × workflow: sistemas que rodam sozinhos a seu favor."
+      },
+      {
+        "title": "6 · Blindagem & Múltiplas Rendas",
+        "detail": "Sua apólice: várias fontes de renda de uma só paixão."
+      },
+      {
+        "title": "Despertar",
+        "detail": "Integrar a IA na profissão que você já tem."
+      },
+      {
+        "title": "Implementar",
+        "detail": "Virar quem produz e implementa com IA."
+      },
+      {
+        "title": "Liderar & Monetizar",
+        "detail": "Consultor, CAIO e certificação."
+      }
+    ],
+    "learn": [
+      "Vire a referência do seu círculo — sem trocar de carreira.",
+      "Decidir o que merece o seu nome — não confiar no 1º output.",
+      "Prompt é como você pede; contexto é o que a IA sabe.",
+      "Quem itera mais rápido, sem perder qualidade, vence.",
+      "Agente × workflow: sistemas que rodam sozinhos a seu favor.",
+      "Sua apólice: várias fontes de renda de uma só paixão."
+    ],
+    "audience": [],
+    "build": [
+      "Agente × workflow: sistemas que rodam sozinhos a seu favor.",
+      "Sua apólice: várias fontes de renda de uma só paixão."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "b91cb66804523cc4",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/skill-video-explicativo/": {
+    "structure": [
+      {
+        "title": "As 4 trilhas",
+        "detail": ""
+      },
+      {
+        "title": "Do conceito de Skill até a sua biblioteca de vídeos rodando no Reels.",
+        "detail": ""
+      },
+      {
+        "title": "Skills no Claude Code",
+        "detail": "O que é uma Skill, o arquivo SKILL.md, name + description, divulgação progressiva e onde elas vivem. O conteúdo do vídeo, por escrito."
+      },
+      {
+        "title": "Pipeline: HTML → MP4",
+        "detail": "Como criar um vídeo no HyperFrames: setup, roteiro, narração TTS local, composição de cenas, GSAP, lint, inspect e render nos dois formatos."
+      },
+      {
+        "title": "Por dentro do skill",
+        "detail": "Como o skill video-explicativo foi construído e o que ele faz: estrutura de arquivos, house style, o gerador build-index.mjs e as armadilhas resolvidas."
+      },
+      {
+        "title": "Aplicações & Prompts",
+        "detail": "Onde usar a ferramenta: YouTube, Shorts/Reels, onboarding de produto, aulas, lançamentos. Com biblioteca de prompts prontos pra colar no Claude Code."
+      },
+      {
+        "title": "Como funciona, em 1 minuto",
+        "detail": ""
+      },
+      {
+        "title": "Você dá um assunto",
+        "detail": "O Claude escreve o roteiro em 6–9 cenas, gera a narração em PT-BR com TTS local (Kokoro) e mede as durações reais."
+      },
+      {
+        "title": "Vira HTML animado",
+        "detail": "Um gerador monta cada cena em HTML + GSAP, com áudio e animação batidos pelo mesmo array de tempos. Dark premium, accent âmbar."
+      },
+      {
+        "title": "Renderiza em MP4",
+        "detail": "HyperFrames roda Chrome headless + FFmpeg e exporta o vídeo em 16:9 (YouTube) e 9:16 (Shorts/Reels). Sem nuvem, sem API."
+      }
+    ],
+    "learn": [
+      "O que é uma Skill, o arquivo SKILL.md, name + description, divulgação progressiva e onde elas vivem. O conteúdo do vídeo, por escrito.",
+      "Como criar um vídeo no HyperFrames: setup, roteiro, narração TTS local, composição de cenas, GSAP, lint, inspect e render nos dois formatos.",
+      "Como o skill video-explicativo foi construído e o que ele faz: estrutura de arquivos, house style, o gerador build-index.mjs e as armadilhas resolvidas.",
+      "Onde usar a ferramenta: YouTube, Shorts/Reels, onboarding de produto, aulas, lançamentos. Com biblioteca de prompts prontos pra colar no Claude Code.",
+      "O Claude escreve o roteiro em 6–9 cenas, gera a narração em PT-BR com TTS local (Kokoro) e mede as durações reais.",
+      "HyperFrames roda Chrome headless + FFmpeg e exporta o vídeo em 16:9 (YouTube) e 9:16 (Shorts/Reels)."
+    ],
+    "audience": [],
+    "build": [
+      "Do conceito de Skill até a sua biblioteca de vídeos rodando no Reels.",
+      "Transforme HTML em vídeo com o Claude Code.",
+      "Vídeos explicativos narrados, animados e renderizados localmente — sem chave de API.",
+      "Um vídeo no HyperFrames: setup, roteiro, narração TTS local, composição de cenas, GSAP, lint, inspect e render nos dois formatos.",
+      "A biblioteca de prompts prontos pra colar no Claude Code."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "68b532ffd6deb80f",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/skills": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "O que sao Skills e como funcionam. Estrutura do SKILL.md, diretorios, instrucoes eficazes e especificacao oficial."
+      },
+      {
+        "title": "Claude Code",
+        "detail": "Domine o Claude Code CLI. Comandos essenciais, skills personalizadas, hooks, MCP servers, IDE integrations e workflows avancados."
+      },
+      {
+        "title": "AntiGravity & Gemini",
+        "detail": "Domine o AntiGravity e o Gemini CLI para skills de IA. Configuracao, criacao e distribuicao de skills no ecossistema Google."
+      },
+      {
+        "title": "Ecossistema",
+        "detail": "Superpowers framework, marketplaces de skills, listas awesome e o futuro das skills para IA."
+      },
+      {
+        "title": "Skills Universal",
+        "detail": "O padrao universal de Agent Skills. GitHub Copilot, Cursor, Manus AI, Cline, OpenAI Codex e portabilidade cross-platform."
+      },
+      {
+        "title": "Exemplos & Aplicacoes",
+        "detail": "Repositorios reais, colecoes awesome, Superpowers framework, multi-agent patterns, marketplaces e ferramentas."
+      }
+    ],
+    "learn": [
+      "Domine a criacao de Skills para agentes de IA."
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "90c0c0ba1abd3c56",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/skills-craft/": {
+    "structure": [
+      {
+        "title": "Panorama do Ecossistema",
+        "detail": "O que é uma agent skill, por que o formato venceu, e o mapa real do skills.sh: 39k skills, a lei de potência e os 16 grupos."
+      },
+      {
+        "title": "Qualidade & As Melhores",
+        "detail": "Como ler sinais de qualidade (installs, fonte, descrição) e uma vitrine das melhores skills por grupo, com exemplos reais."
+      },
+      {
+        "title": "Anatomia de uma Skill",
+        "detail": "SKILL.md por dentro: frontmatter, corpo, progressive disclosure em 3 níveis, e a description que faz a skill disparar na hora certa."
+      },
+      {
+        "title": "Como Criar (o loop)",
+        "detail": "Do intent ao primeiro draft, e o loop de testar → avaliar → iterar com evals e otimização de description."
+      },
+      {
+        "title": "O Que Pensar",
+        "detail": "Modelos mentais, anti-padrões, como publicar, versionar e medir — do GitHub ao portal."
+      },
+      {
+        "title": "As 5 mais instaladas do catálogo",
+        "detail": "A Trilha 2 destrincha por que estas (e as melhores de cada grupo) chegaram lá."
+      }
+    ],
+    "learn": [
+      "entender",
+      "reconhecer",
+      "dissecar",
+      "criar",
+      "pensar",
+      "aprender a criar a sua — com o que realmente importa"
+    ],
+    "audience": [],
+    "build": [
+      "a sua primeira skill"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "049a6aa93cda04d1",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/storm-research/": {
+    "structure": [
+      {
+        "title": "Como o STORM trabalha",
+        "detail": "Um tópico dispara cinco lentes em paralelo; elas convergem num relatório; verificadores conferem cada fonte."
+      },
+      {
+        "title": "As cinco lentes",
+        "detail": "cético, economista, historiador, acadêmico e profissional, com prioridades próprias."
+      },
+      {
+        "title": "Instalar e rodar",
+        "detail": "A anatomia da skill, como instalar no Claude Code (e no Codex), pipeline de 4 fases."
+      },
+      {
+        "title": "Dominar e estender",
+        "detail": "Ler o relatório HTML, confiar no sistema de verificação, customizar lentes (a 6ª lente)."
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Por que STORM vence o prompt único."
+      },
+      {
+        "title": "Prática",
+        "detail": "Instalar, configurar e rodar a skill."
+      },
+      {
+        "title": "Avançado",
+        "detail": "Ler, confiar e estender o relatório."
+      },
+      {
+        "title": "Baixe a skill e o template",
+        "detail": "Os dois arquivos que compõem a skill storm-research."
+      },
+      {
+        "title": "SKILL.md",
+        "detail": "O prompt-mestre do pipeline STORM em 4 fases."
+      },
+      {
+        "title": "report-template.html",
+        "detail": "O molde HTML do briefing — clonado, nunca recriado."
+      }
+    ],
+    "learn": [
+      "como o STORM trabalha",
+      "cinco lentes em paralelo e relatório final",
+      "o ponto cego do prompt único e os três pilares",
+      "instalar e rodar a skill no Claude Code (e no Codex)",
+      "ler, confiar e estender o relatório HTML"
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "360879f5ebde7937",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/vb-imersao/": {
+    "structure": [
+      {
+        "title": "Mentalidade e Metodo",
+        "detail": "Como pensar e estruturar projetos com IA. Da ideia ao MVP usando Vibe Coding."
+      },
+      {
+        "title": "Arquitetura da Plataforma",
+        "detail": "Estrutura base do projeto. Pastas, APIs, contexto global e fluxo de execucao."
+      },
+      {
+        "title": "Construcao do SaaS",
+        "detail": "Produto funcional. Auth, dashboard, system prompts, upload multimodal e historico."
+      },
+      {
+        "title": "Agentes, MCP e Skills",
+        "detail": "Inteligencia no sistema. Multiagentes, orquestracao, MCP e memoria."
+      },
+      {
+        "title": "Assistentes e Multibots",
+        "detail": "Plataforma de assistentes. Arquitetura multibot, bots especialistas e canais."
+      },
+      {
+        "title": "Seguranca, Billing e Operacao",
+        "detail": "Producao e monetizacao. Seguranca, pagamentos, landing page e deploy."
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [
+      "Construa um SaaS funcional com agentes de IA, deploy e monetizacao usando Vibe Coding. Da mentalidade ao produto publicado."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "239cceb058b38fb2",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/vibecode": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Para todos os perfis. O ponto de partida que cobre o conceito, as ferramentas e o primeiro projeto."
+      },
+      {
+        "title": "Para Leigos",
+        "detail": "Para empreendedores, PMs e não-técnicos. Do primeiro app à monetização sem saber programar."
+      },
+      {
+        "title": "Para Executivos",
+        "detail": "Para líderes e gestores. ROI, estratégia de adoção, governança e criação de dashboards, fluxos e assistentes."
+      },
+      {
+        "title": "Para Técnicos",
+        "detail": "Para desenvolvedores e engenheiros. Prompt avançado, segurança, agentes autônomos e multi-agent workflows."
+      }
+    ],
+    "learn": [
+      "Desenvolver software descrevendo o que você quer em linguagem natural para uma IA, que gera o código automaticamente.",
+      "Em português mesmo, com exemplos de requisitos como “Quero um dashboard com os dados dessa planilha, com filtros por mês.”",
+      "Testar o resultado, não cada linha de código.",
+      "Pedir ajustes em linguagem natural até o resultado estar exatamente como você quer."
+    ],
+    "audience": [
+      "Para todos os perfis.",
+      "Para empreendedores, PMs e não-técnicos.",
+      "Para líderes e gestores.",
+      "Para desenvolvedores e engenheiros."
+    ],
+    "build": [
+      "construir software usando linguagem natural.",
+      "O primeiro projeto.",
+      "Do primeiro app à monetização sem saber programar.",
+      "criação de dashboards, fluxos e assistentes."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "7a6087052cd4e18e",
+    "enrichedAt": "2026-09-23",
+    "model": "openai/gpt-5.4-nano"
+  }
+}

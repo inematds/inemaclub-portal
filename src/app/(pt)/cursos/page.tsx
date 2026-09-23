@@ -42,7 +42,9 @@ export default function CoursesPage() {
         <h1>Cursos para aprender e aplicar IA na prática</h1>
         <p>Explore o catálogo público do INEMA. Cada ficha reúne o que já está documentado e leva à aplicação original do curso.</p>
       </header>
-      <CourseCatalog courses={courses} />
+      <CourseCatalog
+        courses={courses.map(({ canonicalPath, title, description, tags }) => ({ canonicalPath, title, description, tags }))}
+      />
     </main>
   )
 }

@@ -1,13 +1,14 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { CatalogCourse } from '@/lib/catalog'
+/** Só o que a lista usa: o catálogo completo ia inteiro (e duplicado) no HTML de /cursos/. */
+export type CatalogListItem = { canonicalPath: string; title: string; description: string; tags: string[] }
 
 function normalize(value: string) {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
 }
 
-export default function CourseCatalog({ courses }: { courses: CatalogCourse[] }) {
+export default function CourseCatalog({ courses }: { courses: CatalogListItem[] }) {
   const [query, setQuery] = useState('')
   useEffect(() => {
     const initialQuery = new URLSearchParams(window.location.search).get('q')
@@ -38,7 +39,7 @@ export default function CourseCatalog({ courses }: { courses: CatalogCourse[] })
       {visibleCourses.length ? (
         <div className="course-catalog-list">
           {visibleCourses.map((course) => (
-            <article className="course-catalog-item" key={course.id}>
+            <article className="course-catalog-item" key={course.canonicalPath}>
               <div>
                 <h2><a href={course.canonicalPath}>{course.title}</a></h2>
                 <p>{course.description}</p>

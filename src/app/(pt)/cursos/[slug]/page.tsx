@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { courses } from '@/lib/catalog'
 import { SITE_URL } from '@/lib/site'
+import { getSyllabus } from '@/lib/syllabus'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -46,20 +47,7 @@ export default async function CoursePage({ params }: Props) {
   const related = courses
     .filter((candidate) => candidate.id !== course.id && candidate.tags.some((tag) => course.tags.includes(tag)))
     .slice(0, 4)
-  const faq = [
-    {
-      question: `O que é o curso ${course.title}?`,
-      answer: course.description,
-    },
-    {
-      question: 'Quais temas este curso aborda?',
-      answer: `Os temas catalogados são: ${course.tags.join(', ')}. Consulte a aplicação do curso para o programa detalhado.`,
-    },
-    {
-      question: 'Como acessar o curso?',
-      answer: 'Use o botão “Abrir o curso” nesta página. Ele leva à aplicação oficial onde o conteúdo e as condições atuais de acesso são apresentados.',
-    },
-  ]
+  const syllabus = getSyllabus(course.applicationUrl)
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -70,7 +58,11 @@ export default async function CoursePage({ params }: Props) {
       url: course.canonicalUrl,
       provider: { '@type': 'EducationalOrganization', '@id': `${SITE_URL}/#organization`, name: 'INEMA.club' },
       author: { '@type': 'Person', name: 'Nei Maldaner' },
-      teaches: course.tags,
+      teaches: syllabus?.learn.length ? syllabus.learn : course.tags,
+      ...(syllabus?.structure.length ? { syllabusSections: syllabus.structure.map((item) => ({ '@type': 'Syllabus', name: item.title, ...(item.detail ? { description: item.detail } : {}) })) } : {}),
+      ...(syllabus?.audience.length ? { audience: { '@type': 'EducationalAudience', audienceType: syllabus.audience.join('; ') } } : {}),
+      ...(syllabus?.prerequisites.length ? { coursePrerequisites: syllabus.prerequisites } : {}),
+      ...(syllabus?.workload ? { timeRequired: syllabus.workload } : {}),
       inLanguage: 'pt-BR',
       dateModified: course.lastUpdated ?? undefined,
       hasCourseInstance: {
@@ -87,15 +79,6 @@ export default async function CoursePage({ params }: Props) {
         { '@type': 'ListItem', position: 2, name: 'Cursos', item: `${SITE_URL}/cursos/` },
         { '@type': 'ListItem', position: 3, name: course.title, item: course.canonicalUrl },
       ],
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faq.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: { '@type': 'Answer', text: item.answer },
-      })),
     },
   ]
 
@@ -123,30 +106,58 @@ export default async function CoursePage({ params }: Props) {
           <h2 id="course-summary">Resumo do curso</h2>
           <dl className="course-facts">
             <div><dt>Formato</dt><dd>Online</dd></div>
-            <div><dt>Nível catalogado</dt><dd>{course.level ?? 'Não informado na fonte'}</dd></div>
+            {(syllabus?.level || course.level) && <div><dt>Nível</dt><dd>{syllabus?.level ?? course.level}</dd></div>}
+            {syllabus?.workload && <div><dt>Carga</dt><dd>{syllabus.workload}</dd></div>}
             <div><dt>Autor</dt><dd>Nei Maldaner</dd></div>
-            <div><dt>Atualização</dt><dd>{course.lastUpdated ?? 'Não informada na fonte'}</dd></div>
+            {course.lastUpdated && <div><dt>Atualização</dt><dd>{course.lastUpdated}</dd></div>}
           </dl>
         </section>
 
+        {syllabus && syllabus.structure.length > 0 && (
+          <section aria-labelledby="course-structure">
+            <h2 id="course-structure">Estrutura do curso</h2>
+            <ol className="seo-list">
+              {syllabus.structure.map((item) => (
+                <li key={item.title}>
+                  <strong>{item.title}</strong>{item.detail ? ` — ${item.detail}` : ''}
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        {syllabus && syllabus.learn.length > 0 && (
+          <section aria-labelledby="course-learn">
+            <h2 id="course-learn">O que você aprende</h2>
+            <ul className="seo-list">{syllabus.learn.map((item) => <li key={item}>{item}</li>)}</ul>
+          </section>
+        )}
+
+        {syllabus && syllabus.build.length > 0 && (
+          <section aria-labelledby="course-build">
+            <h2 id="course-build">O que você constrói</h2>
+            <ul className="seo-list">{syllabus.build.map((item) => <li key={item}>{item}</li>)}</ul>
+          </section>
+        )}
+
+        {syllabus && (syllabus.audience.length > 0 || syllabus.prerequisites.length > 0) && (
+          <section aria-labelledby="course-audience">
+            <h2 id="course-audience">Para quem é</h2>
+            {syllabus.audience.length > 0 && <ul className="seo-list">{syllabus.audience.map((item) => <li key={item}>{item}</li>)}</ul>}
+            {syllabus.prerequisites.length > 0 && (
+              <>
+                <h3>Pré-requisitos</h3>
+                <ul className="seo-list">{syllabus.prerequisites.map((item) => <li key={item}>{item}</li>)}</ul>
+              </>
+            )}
+          </section>
+        )}
+
         <section aria-labelledby="course-outcomes">
-          <h2 id="course-outcomes">O que você encontra</h2>
+          <h2 id="course-outcomes">Temas</h2>
           <ul className="course-topics">
             {course.tags.map((tag) => <li key={tag}>{tag}</li>)}
           </ul>
-          <p>A carga horária, os pré-requisitos, os módulos e as condições de acesso devem ser confirmados na aplicação oficial do curso.</p>
-        </section>
-
-        <section aria-labelledby="course-faq">
-          <h2 id="course-faq">Perguntas frequentes</h2>
-          <div className="course-faq-list">
-            {faq.map((item) => (
-              <details key={item.question}>
-                <summary>{item.question}</summary>
-                <p>{item.answer}</p>
-              </details>
-            ))}
-          </div>
         </section>
 
         {related.length > 0 && (
@@ -158,8 +169,16 @@ export default async function CoursePage({ params }: Props) {
           </section>
         )}
 
+        <section aria-labelledby="continue">
+          <h2 id="continue">Continue aprendendo</h2>
+          <p>
+            Não sabe por onde começar? Veja o guia <a href="/aprender-inteligencia-artificial/">como aprender IA do zero ao avançado</a>,
+            com a ordem recomendada dos cursos, ou as <a href="/ia/">respostas diretas sobre IA</a>.
+          </p>
+        </section>
+
         <footer className="course-source-note">
-          <p>Fonte canônica: INEMA.club · Aplicação do curso: <a href={course.applicationUrl}>{course.applicationUrl}</a></p>
+          <p>{syllabus ? `Ementa extraída da página oficial do curso em ${syllabus.enrichedAt.split('-').reverse().join('/')}. ` : ''}Aplicação do curso: <a href={course.applicationUrl}>{course.applicationUrl}</a></p>
         </footer>
       </article>
     </main>
