@@ -2229,3 +2229,26 @@ html {
 }
 .locale-cta p { margin: 0 0 .8rem; }
 .locale-cta-links { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; }
+
+/* Páginas de guia SEO (/aprender-inteligencia-artificial/ …): listas em prosa, não chips */
+.seo-list {
+    display: grid;
+    gap: 0.7rem;
+    max-width: 70ch;
+    margin-bottom: 1.4rem;
+    padding-left: 1.4rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.seo-list a {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.hero-guide-link {
+    color: var(--accent-cyan);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

@@ -6,7 +6,7 @@
     "communityBadge": "Join the Community",
     "proBadge": "Subscribe to INEMA.PRO",
     "logo": "INEMA.CLUB Portal INEMA",
-    "tagline": "One place for all your courses and platforms",
+    "tagline": "Learn Artificial Intelligence in practice: courses, agents, automation and community",
     "chipVisits": "visits",
     "chipUnique": "unique visitors",
     "chipLogged": "logged in"
@@ -14,6 +14,7 @@
   "nav": {
     "search": "🔍 Search",
     "news": "📰 News",
+    "learnAi": "🧭 Learn AI (PT)",
     "beginners": "📘 Beginners",
     "courses": "🎓 Courses",
     "events": "📅 Events",
@@ -25,9 +26,10 @@
   "hero": {
     "imageAlt": "INEMA.CLUB — Learn. Practice. Evolve. The ecosystem for mastering AI in practice.",
     "caption": "Learn. Practice. Evolve. — a solid AI knowledge base to apply at work, in projects and in your career.",
-    "title": "Build a solid foundation of AI knowledge.",
+    "title": "Learn Artificial Intelligence in practice, from zero to advanced.",
     "body": "INEMA Club is a hands-on learning ecosystem for people who want to master artificial intelligence and apply it at work, in projects and in their careers. The core idea is simple: learn, practice and evolve with AI continuously.",
-    "body2": "Here you will find practical, to-the-point courses, real projects to get your hands dirty, paths organized for every level, an active community and a curated set of the best tools. All of it aimed at building a solid knowledge base — one that makes you more productive, more strategic and better prepared for the future of work."
+    "body2": "Here you will find practical, to-the-point courses, real projects to get your hands dirty, paths organized for every level, an active community and a curated set of the best tools. All of it aimed at building a solid knowledge base — one that makes you more productive, more strategic and better prepared for the future of work.",
+    "guideCta": "New here? Start with the guide (in Portuguese): how to learn AI from scratch →"
   },
   "search": {
     "title": "What do you want to learn today?",

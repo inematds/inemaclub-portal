@@ -6,7 +6,7 @@
     "communityBadge": "Participe da Comunidade",
     "proBadge": "Assine o INEMA.PRO",
     "logo": "INEMA.CLUB Portal INEMA",
-    "tagline": "Acesso centralizado aos seus cursos e plataformas",
+    "tagline": "Aprenda Inteligência Artificial na prática: cursos, agentes, automação e comunidade",
     "chipVisits": "acessos",
     "chipUnique": "visitantes únicos",
     "chipLogged": "logados"
@@ -14,6 +14,7 @@
   "nav": {
     "search": "🔍 Buscas",
     "news": "📰 News",
+    "learnAi": "🧭 Aprender IA",
     "beginners": "📘 Iniciantes",
     "courses": "🎓 Cursos",
     "events": "📅 Eventos",
@@ -25,9 +26,10 @@
   "hero": {
     "imageAlt": "INEMA.CLUB — Aprenda. Pratique. Evolua. O ecossistema para dominar IA na prática.",
     "caption": "Aprenda. Pratique. Evolua. — uma base sólida de conhecimento em IA, para aplicar no trabalho, nos projetos e na carreira.",
-    "title": "Construa uma base sólida de conhecimento em IA.",
+    "title": "Aprenda Inteligência Artificial na prática, do zero ao avançado.",
     "body": "O INEMA Club é um ecossistema de aprendizado prático para quem quer dominar inteligência artificial e aplicar IA no trabalho, nos projetos e na carreira. A ideia central é simples: aprender, praticar e evoluir com IA de forma contínua.",
-    "body2": "Aqui você encontra cursos práticos diretos ao ponto, projetos reais para colocar a mão na massa, trilhas organizadas para cada nível, uma comunidade ativa e a curadoria das melhores ferramentas. Tudo voltado a construir uma base sólida de conhecimento — que te torna mais produtivo, mais estratégico e mais preparado para o futuro do trabalho."
+    "body2": "Aqui você encontra cursos práticos diretos ao ponto, projetos reais para colocar a mão na massa, trilhas organizadas para cada nível, uma comunidade ativa e a curadoria das melhores ferramentas. Tudo voltado a construir uma base sólida de conhecimento — que te torna mais produtivo, mais estratégico e mais preparado para o futuro do trabalho.",
+    "guideCta": "Novo por aqui? Comece pelo guia: como aprender IA do zero →"
   },
   "search": {
     "title": "O que você quer aprender hoje?",

@@ -4,19 +4,19 @@ import { OG_LOCALE, localeHome, type Locale } from '@/i18n/locales'
 
 const TITLES: Record<Locale, { title: string; og: string; alt: string; description: string }> = {
   pt: {
-    title: 'INEMA.club — Cursos, projetos e formação prática em IA',
+    title: 'Aprender Inteligência Artificial na prática | INEMA.club',
     og: 'INEMA.club — Aprenda, pratique e evolua com IA',
     alt: 'INEMA.club — Aprenda, pratique e evolua com inteligência artificial',
     description: 'Formação prática em inteligência artificial, agentes e automação.',
   },
   en: {
-    title: 'INEMA.club — Courses, projects and hands-on AI training',
+    title: 'Learn Artificial Intelligence in practice | INEMA.club',
     og: 'INEMA.club — Learn, practice and evolve with AI',
     alt: 'INEMA.club — Learn, practice and evolve with artificial intelligence',
     description: 'Hands-on training in artificial intelligence, agents and automation.',
   },
   es: {
-    title: 'INEMA.club — Cursos, proyectos y formación práctica en IA',
+    title: 'Aprende Inteligencia Artificial en la práctica | INEMA.club',
     og: 'INEMA.club — Aprende, practica y evoluciona con IA',
     alt: 'INEMA.club — Aprende, practica y evoluciona con inteligencia artificial',
     description: 'Formación práctica en inteligencia artificial, agentes y automatización.',

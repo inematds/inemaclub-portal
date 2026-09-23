@@ -6,6 +6,7 @@
 // 2026-08-01: saíram #cursos, #github e as trilhas Profissional/Vibe/Skills —
 // a home passou a mostrar só títulos de trilha e uma chamada de projetos.
 const PORTAL_ANCHORS = [
+  '/aprender-inteligencia-artificial/',
   '/#trilha-iniciantes',
   '/#trilhas',
   '/#projetos',

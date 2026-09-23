@@ -6,7 +6,7 @@
     "communityBadge": "Únete a la Comunidad",
     "proBadge": "Suscríbete a INEMA.PRO",
     "logo": "INEMA.CLUB Portal INEMA",
-    "tagline": "Acceso centralizado a tus cursos y plataformas",
+    "tagline": "Aprende Inteligencia Artificial en la práctica: cursos, agentes, automatización y comunidad",
     "chipVisits": "accesos",
     "chipUnique": "visitantes únicos",
     "chipLogged": "conectados"
@@ -14,6 +14,7 @@
   "nav": {
     "search": "🔍 Búsquedas",
     "news": "📰 News",
+    "learnAi": "🧭 Aprender IA (PT)",
     "beginners": "📘 Principiantes",
     "courses": "🎓 Cursos",
     "events": "📅 Eventos",
@@ -25,9 +26,10 @@
   "hero": {
     "imageAlt": "INEMA.CLUB — Aprende. Practica. Evoluciona. El ecosistema para dominar la IA en la práctica.",
     "caption": "Aprende. Practica. Evoluciona. — una base sólida de conocimiento en IA para aplicar en el trabajo, en los proyectos y en la carrera.",
-    "title": "Construye una base sólida de conocimiento en IA.",
+    "title": "Aprende Inteligencia Artificial en la práctica, de cero a avanzado.",
     "body": "INEMA Club es un ecosistema de aprendizaje práctico para quienes quieren dominar la inteligencia artificial y aplicarla en el trabajo, en los proyectos y en la carrera. La idea central es simple: aprender, practicar y evolucionar con IA de forma continua.",
-    "body2": "Aquí encuentras cursos prácticos y directos al grano, proyectos reales para poner manos a la obra, rutas organizadas para cada nivel, una comunidad activa y la curaduría de las mejores herramientas. Todo orientado a construir una base sólida de conocimiento — que te vuelve más productivo, más estratégico y mejor preparado para el futuro del trabajo."
+    "body2": "Aquí encuentras cursos prácticos y directos al grano, proyectos reales para poner manos a la obra, rutas organizadas para cada nivel, una comunidad activa y la curaduría de las mejores herramientas. Todo orientado a construir una base sólida de conocimiento — que te vuelve más productivo, más estratégico y mejor preparado para el futuro del trabajo.",
+    "guideCta": "¿Nuevo aquí? Empieza por la guía (en portugués): cómo aprender IA desde cero →"
   },
   "search": {
     "title": "¿Qué quieres aprender hoy?",

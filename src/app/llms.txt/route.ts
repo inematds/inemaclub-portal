@@ -1,5 +1,6 @@
 import { courses } from '@/lib/catalog'
 import { webMcpKnowledge } from '@/data/webmcp-knowledge'
+import { seoPages } from '@/data/seo-pages'
 
 export function GET() {
   const webMcpCourses = courses.filter((course) => course.tags.includes('WebMCP'))
@@ -16,6 +17,10 @@ export function GET() {
 - [Cursos](https://www.inema.club/cursos/)
 - [Projetos](https://www.inema.club/conhecimento/projetos-publicos-do-inema/)
 - [Base de conhecimento](https://www.inema.club/conhecimento/)
+
+## Guias para aprender IA
+
+${seoPages.map((page) => `- [${page.title}](https://www.inema.club${page.path}): ${page.description}`).join('\n')}
 
 ## Formação WebMCP
 
