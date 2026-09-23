@@ -25,7 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
-  { icon: '🧑‍✈️', name: '7pa', desc: 'Os 7 Princípios da Gestão de Agentes de IA na prática: a Ficha do Agente faz 7 perguntas simples e entrega a instrução pronta, o nível de autonomia calculado (N0–N4), 3 testes e o checklist de supervisão. Com guia explicando todo o conteúdo. Em português, inglês e espanhol.', url: 'https://inematds.github.io/7pa/guia/', badge: 'Guia' },
+  { icon: '🧑‍✈️', name: '7pa', desc: 'Os 7 Princípios da Gestão de Agentes de IA na prática: a Ficha do Agente faz 7 perguntas simples e entrega a instrução pronta, o nível de autonomia calculado (N0–N4), 3 testes e o checklist de supervisão. Com guia explicando todo o conteúdo, galeria de 10 fichas prontas por área e a skill /ficha-agente para Claude Code (cria e audita agentes). Em português, inglês e espanhol.', url: 'https://inematds.github.io/7pa/guia/', badge: 'Guia' },
   { icon: '🔓', name: '7pa-segredo', desc: 'O segredo dos 7 princípios da gestão de agentes de IA: 5 revelações sobre o que esses textos realmente são. É gestão de gente com outro nome, e é o que quem programa com agentes de código já faz todo dia. Em português, inglês e espanhol.', url: 'https://inematds.github.io/7pa-segredo/', badge: 'Guia' },
   { icon: '🧭', name: 'modelos', desc: 'Qual modelo de IA usar em cada tarefa: pilha atual (Claude Opus 5.5, GPT-6 Astra, Sol e Luna), regras de escolha, prompts de planejar→executar e segunda opinião, bateria de teste e rascunho de skill. Em português e inglês.', url: 'https://inematds.github.io/modelos/guia/', badge: 'Guia' },
   { icon: '🧠', name: 'claude-opus55', desc: 'Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Em português, inglês e espanhol.', url: 'https://inematds.github.io/claude-opus55/guia/', badge: 'Guia' },
@@ -547,6 +547,7 @@ export default function Portal({
             >
               {t.nav.news}
             </a>
+            <a href="/aprender-inteligencia-artificial/" className="section-nav-link">{t.nav.learnAi}</a>
             <a href="#trilha-iniciantes" className="section-nav-link">{t.nav.beginners}</a>
             <a href="/cursos/" className="section-nav-link">{t.nav.courses}</a>
             <a
@@ -593,6 +594,7 @@ export default function Portal({
               <h2>{t.hero.title}</h2>
               <p>{t.hero.body}</p>
               <p>{t.hero.body2}</p>
+              <p><a href="/aprender-inteligencia-artificial/" className="hero-guide-link">{t.hero.guideCta}</a></p>
             </div>
           </div>
         </div>
