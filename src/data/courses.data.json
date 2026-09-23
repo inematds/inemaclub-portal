@@ -5493,6 +5493,18 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-23",
+      "title": "7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)",
+      "type": "novo",
+      "url": "https://inematds.github.io/7pa/guia/"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "O Segredo dos 7 Princípios — o que esses textos realmente são (PT/EN/ES)",
+      "type": "novo",
+      "url": "https://inematds.github.io/7pa-segredo/"
+    },
+    {
+      "date": "2026-09-23",
       "title": "modelos — qual modelo de IA usar em cada tarefa (PT/EN)",
       "type": "novo",
       "url": "https://inematds.github.io/modelos/guia/"
@@ -6495,6 +6507,20 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🧑‍✈️",
+      "name": "7pa",
+      "desc": "Os 7 Princípios da Gestão de Agentes de IA na prática: a Ficha do Agente faz 7 perguntas simples e entrega a instrução pronta, o nível de autonomia calculado (N0–N4), 3 testes e o checklist de supervisão. Com guia explicando todo o conteúdo. Em português, inglês e espanhol.",
+      "url": "https://inematds.github.io/7pa/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🔓",
+      "name": "7pa-segredo",
+      "desc": "O segredo dos 7 princípios da gestão de agentes de IA: 5 revelações sobre o que esses textos realmente são. É gestão de gente com outro nome, e é o que quem programa com agentes de código já faz todo dia. Em português, inglês e espanhol.",
+      "url": "https://inematds.github.io/7pa-segredo/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧭",
       "name": "modelos",

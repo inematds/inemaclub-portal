@@ -25,6 +25,8 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🧑‍✈️', name: '7pa', desc: 'Os 7 Princípios da Gestão de Agentes de IA na prática: a Ficha do Agente faz 7 perguntas simples e entrega a instrução pronta, o nível de autonomia calculado (N0–N4), 3 testes e o checklist de supervisão. Com guia explicando todo o conteúdo. Em português, inglês e espanhol.', url: 'https://inematds.github.io/7pa/guia/', badge: 'Guia' },
+  { icon: '🔓', name: '7pa-segredo', desc: 'O segredo dos 7 princípios da gestão de agentes de IA: 5 revelações sobre o que esses textos realmente são. É gestão de gente com outro nome, e é o que quem programa com agentes de código já faz todo dia. Em português, inglês e espanhol.', url: 'https://inematds.github.io/7pa-segredo/', badge: 'Guia' },
   { icon: '🧭', name: 'modelos', desc: 'Qual modelo de IA usar em cada tarefa: pilha atual (Claude Opus 5.5, GPT-6 Astra, Sol e Luna), regras de escolha, prompts de planejar→executar e segunda opinião, bateria de teste e rascunho de skill. Em português e inglês.', url: 'https://inematds.github.io/modelos/guia/', badge: 'Guia' },
   { icon: '🧠', name: 'claude-opus55', desc: 'Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Em português, inglês e espanhol.', url: 'https://inematds.github.io/claude-opus55/guia/', badge: 'Guia' },
   { icon: '◐', name: 'gpt6-sol-luna', desc: 'GPT-6 Sol & Luna: pesquisa do lançamento, gráficos comparativos, calculadora de custos com cache e plano de integração nos sistemas INEMA. Fontes oficiais e exemplos de API.', url: 'https://inematds.github.io/gpt6-sol-luna/guia/', badge: 'Guia' },

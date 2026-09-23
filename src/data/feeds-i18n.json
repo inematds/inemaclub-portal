@@ -163,10 +163,6 @@
     "en": "Compilation of a guide/method for AI Agents Management applied to companies, treating agents as a manageable digital workforce with KPIs, autonomy levels, and continuous improvement.",
     "es": "Compilación de una guía/método de Gestión de Agentes de IA aplicado a empresas, tratando a los agentes como fuerza de trabajo digital gestionable con KPIs, niveles de autonomía y mejora continua."
   },
-  "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar e receber horários livres, lembretes e relatório automáticos, PIX Asaas e portal do familiar": {
-    "en": "voucontigo — v2.0.0: WhatsApp bot (Evolution API) to schedule, cancel and receive free slots, automatic reminders and reports, PIX Asaas and family portal",
-    "es": "voucontigo — v2.0.0: bot WhatsApp (Evolution API) para agendar, cancelar y recibir horarios libres, recordatorios e informes automáticos, PIX Asaas y portal del familiar"
-  },
   "JEV": {
     "en": "JEV",
     "es": "JEV"
@@ -202,10 +198,6 @@
   "Agentes no Escritório de Advocacia — Caderno do Arquiteto de Trabalho com IA (3 aulas)": {
     "en": "Agents in Law Firm — Notebook of the AI Work Architect (3 lessons)",
     "es": "Agentes en el Despacho de Abogados — Cuaderno del Arquitecto de Trabajo con IA (3 clases)"
-  },
-  "voucontigo — Plataforma de acompanhamento e apoio à rotina: landing, painel de atendimentos, bot Telegram e lembretes (Next.js + Supabase)": {
-    "en": "voucontigo — Routine tracking and support platform: landing, service dashboard, Telegram bot and reminders (Next.js + Supabase)",
-    "es": "voucontigo — Plataforma de seguimiento y apoyo a la rutina: landing, panel de atendimientos, bot Telegram y recordatorios (Next.js + Supabase)"
   },
   "Discussão sobre como criar uma estrutura de trabalho com agentes de IA independente de modelo, com foco em migração do Claude Code para o Codex e outros provedores. Apresenta arquitetura concreta, fluxo de handoff e princípios de organização de contexto.": {
     "en": "Discussion on how to create a model-agnostic AI agents work framework, focusing on migration from Claude Code to Codex and other providers. Presents concrete architecture, handoff flow, and context organization principles.",
@@ -378,5 +370,13 @@
   "modelos — qual modelo de IA usar em cada tarefa (PT/EN)": {
     "en": "models — which AI model to use for each task (PT/EN)",
     "es": "modelos — qué modelo de IA usar en cada tarea (PT/EN)"
+  },
+  "7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)": {
+    "en": "7PA — Agent Sheet: the 7 principles of AI agent management in practice (PT/EN/ES)",
+    "es": "7PA — Ficha del Agente: los 7 principios de la gestión de agentes de IA en la práctica (PT/EN/ES)"
+  },
+  "O Segredo dos 7 Princípios — o que esses textos realmente são (PT/EN/ES)": {
+    "en": "The Secret of the 7 Principles — what these texts really are (PT/EN/ES)",
+    "es": "El Secreto de los 7 Principios — lo que esos textos realmente son (PT/EN/ES)"
   }
 }
