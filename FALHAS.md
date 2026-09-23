@@ -2,6 +2,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-23 | Últimas Novidades: bloco do Nei descartado porque membro mandou `/status` no meio (virou "conversa"); título saía com `**`/`===ALERTA===` | gera-novidades.mjs ignora comando `/` de membro e limpa `**`/`=` das linhas | prompt |
 | 2026-09-23 | Sessão paralela commitou (`f278475`) edição ainda em andamento do Portal.tsx de outra sessão; origin ficou minutos com chaves i18n inexistentes | Commitar só arquivos próprios (`git add <arquivos>`, nunca `-A`/`.`) e checar `git status` antes | infra |
 | 2026-09-21 | Home referenciava cerca de 20 MiB em imagens, com banners PNG carregados antecipadamente | Servir derivados WebP PT/EN/ES e carregar banners abaixo do topo sob demanda | infra |
 | 2026-09-21 | Regeneração removia sanmartindelosandes já presente no catálogo derivado | Repor entrada ausente na fonte communityProjects antes de gerar | infra |

@@ -82,7 +82,7 @@ const TME_RE = /t\.me\/c\/(\d+)\/(\d+)/;
 function linhasProsa(txt) {
   return (txt || '')
     .split('\n')
-    .map((l) => l.trim())
+    .map((l) => l.trim().replace(/^=+\s*|\s*=+$/g, '').replace(/\*\*/g, '')) // "===ALERTA ===" / "**x**" -> texto limpo
     .filter((l) => l && !SEP.test(l) && !/^https?:\/\//.test(l));
 }
 
@@ -119,7 +119,11 @@ function blocosFechados(msgs) {
 
 function montaItem(bloco, grupos) {
   // Só entra o que o NEI escreveu: mensagem de membro sai fora do item.
-  const temMembro = bloco.some((m) => (m.text || '').trim() && !doNei(m));
+  // Comando de bot de membro ("/status", "/registrar@...") não é conversa.
+  const temMembro = bloco.some((m) => {
+    const t = (m.text || '').trim();
+    return t && !t.startsWith('/') && !doNei(m);
+  });
   const textos = bloco.filter(doNei).map((m) => m.text || '');
   const juntos = textos.join('\n');
 
