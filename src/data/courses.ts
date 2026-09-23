@@ -19,7 +19,7 @@ export const projectUpdatesData: Update[] = [
   { date: '2026-09-23', title: '7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)', type: 'atualizado', url: 'https://inematds.github.io/7pa/galeria/' },
   { date: '2026-09-23', title: '7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/7pa/guia/' },
   { date: '2026-09-23', title: 'O Segredo dos 7 Princípios — o que esses textos realmente são (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/7pa-segredo/' },
-  { date: '2026-09-23', title: 'modelos — qual modelo de IA usar em cada tarefa (PT/EN)', type: 'novo', url: 'https://inematds.github.io/modelos/guia/' },
+  { date: '2026-09-23', title: 'modelos — qual modelo de IA usar em cada tarefa (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/modelos/guia/' },
   { date: '2026-09-23', title: 'Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/claude-opus55/guia/' },
   { date: '2026-09-22', title: 'GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA', type: 'novo', url: 'https://inematds.github.io/gpt6-sol-luna/guia/' },
   { date: '2026-09-22', title: 'jev-gw — gateway de decisão para o Jev', type: 'novo', url: 'https://inematds.github.io/jev-gw/guia/' },

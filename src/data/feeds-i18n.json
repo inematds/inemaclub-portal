@@ -343,10 +343,6 @@
     "en": "Claude Opus 5.5 — research, charts and update plan (PT/EN/ES)",
     "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización (PT/EN/ES)"
   },
-  "modelos — qual modelo de IA usar em cada tarefa (PT/EN)": {
-    "en": "models — which AI model to use for each task (PT/EN)",
-    "es": "modelos — qué modelo de IA usar en cada tarea (PT/EN)"
-  },
   "7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)": {
     "en": "7PA — Agent Sheet: the 7 principles of AI agent management in practice (PT/EN/ES)",
     "es": "7PA — Ficha del Agente: los 7 principios de la gestión de agentes de IA en la práctica (PT/EN/ES)"
@@ -378,5 +374,9 @@
   "Gestão de Agentes de IA — os 7 Princípios: curso v2 com 4 trilhas, 8 módulos e 48 tópicos (PT/EN/ES)": {
     "en": "Management of AI Agents — the 7 Principles: course v2 with 4 tracks, 8 modules and 48 topics (PT/EN/ES)",
     "es": "Gestión de Agentes de IA — los 7 Principios: curso v2 con 4 rutas, 8 módulos y 48 temas (PT/EN/ES)"
+  },
+  "modelos — qual modelo de IA usar em cada tarefa (PT/EN/ES)": {
+    "en": "models — which AI model to use for each task (PT/EN/ES)",
+    "es": "modelos — qué modelo de IA usar en cada tarea (PT/EN/ES)"
   }
 }
