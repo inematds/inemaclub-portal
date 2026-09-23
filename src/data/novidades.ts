@@ -13,6 +13,22 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-23/no Club",
+    "date": "2026-09-23",
+    "titulo": "no Club",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/gpt6-sol-luna/guia/"
+  },
+  {
+    "id": "vip/2026-09-22/Chegou o Opous 5.5",
+    "date": "2026-09-22",
+    "titulo": "Chegou o Opous 5.5",
+    "resumo": "quem tem o ;claude ele esta disponivel",
+    "grupo": "INEMA.VIP",
+    "url": ""
+  },
+  {
     "id": "2463916523/4644",
     "date": "2026-09-21",
     "titulo": "Laya x JEV",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Vazamento e análise do system prompt do Claude Fable 5.1, mostrando que o avanço da IA não está só no modelo, mas no ecossistema construído ao redor dele.",
     "grupo": "INEMA.LLMS",
     "url": "https://www.inema.pro/cerebro/inema-llms/4548"
-  },
-  {
-    "id": "2494987106/6061",
-    "date": "2026-09-06",
-    "titulo": "Prompts Exemplo Astra",
-    "resumo": "Coleção de prompts práticos para o Google Astra, cobrindo casos de uso de automação de tarefas, produção de vídeo, auditoria financeira/jurídica e QA de sites.",
-    "grupo": "INEMA.PROMPTS",
-    "url": "https://www.inema.pro/cerebro/inema-prompts/6061"
-  },
-  {
-    "id": "3053650449/1230",
-    "date": "2026-09-06",
-    "titulo": "5 Ações com GPT-6 Astra",
-    "resumo": "Resumo de um material sobre como usar corretamente o GPT-6 Astra, evitando desperdício de capacidade e extraindo valor real com problemas complexos e fluxos agênticos estruturados.",
-    "grupo": "INEMA.CODEX",
-    "url": "https://www.inema.pro/cerebro/inema-codex/1230"
   }
 ];

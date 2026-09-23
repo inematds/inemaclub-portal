@@ -31,10 +31,6 @@
     "en": "openpcbot v3 — Your local Jarvis: install, use and configure (4 tracks, 8 modules, 48 topics)",
     "es": "openpcbot v3 — Tu Jarvis local: instalar, usar y configurar (4 rutas, 8 módulos, 48 temas)"
   },
-  "Resumo de um material sobre como usar corretamente o GPT-6 Astra, evitando desperdício de capacidade e extraindo valor real com problemas complexos e fluxos agênticos estruturados.": {
-    "en": "Summary of material on how to correctly use GPT-6 Astra, avoiding capacity waste and extracting real value with complex problems and structured agentic flows.",
-    "es": "Resumen de un material sobre cómo usar correctamente GPT-6 Astra, evitando el desperdicio de capacidad y extrayendo valor real con problemas complejos y flujos ágentes estructurados."
-  },
   "`IA para quem decide · 6 aulas curtas`": {
     "en": "`AI for those who decide · 6 short lessons`",
     "es": "`IA para quien decide · 6 clases cortas`"
@@ -62,10 +58,6 @@
   "iacultivada — IA Cultivada: não se programa, se cultiva. Como aplicar na vida pessoal, no seu Jarvis e nos negócios (oito elementos, ciclo de feedback, planos de 30/90 dias e kit)": {
     "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
     "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
-  },
-  "Prompts Exemplo Astra": {
-    "en": "Astra Example Prompts",
-    "es": "Prompts Ejemplo Astra"
   },
   "Vazou System Prompt Fable 5.1": {
     "en": "Leaked System Prompt Fable 5.1",
@@ -106,10 +98,6 @@
   "Terminal e Harness — Aula 6 (pastas, .claude, AGENTS.md, wiki, OKF) + vídeo 2:06 com cena das pastas, versões 16:9 e 9:16": {
     "en": "Terminal and Harness — Lesson 6 (folders, .claude, AGENTS.md, wiki, OKF) + video 2:06 with folder scene, 16:9 and 9:16 versions",
     "es": "Terminal e Harness — Clase 6 (carpetas, .claude, AGENTS.md, wiki, OKF) + video 2:06 con escena de las carpetas, versiones 16:9 y 9:16"
-  },
-  "5 Ações com GPT-6 Astra": {
-    "en": "5 Actions with GPT-6 Astra",
-    "es": "5 Acciones con GPT-6 Astra"
   },
   "newia-oct2026 — 12 Novas IAs de outubro/2026: rumores × versões atuais verificadas (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), com preços, contexto, gráficos e fontes": {
     "en": "newia-oct2026 — 12 New AIs of October/2026: rumors × verified current versions (GPT-6, Claude Fable 5.2, Gemini 4, DeepSeek V4.1, Qwen 4, Grok 4.7…), with prices, context, charts and sources",
@@ -154,10 +142,6 @@
   "Anúncios Top com IA": {
     "en": "Top Announcements with AI",
     "es": "Anuncios Top con IA"
-  },
-  "Coleção de prompts práticos para o Google Astra, cobrindo casos de uso de automação de tarefas, produção de vídeo, auditoria financeira/jurídica e QA de sites.": {
-    "en": "Collection of practical prompts for Google Astra, covering use cases of task automation, video production, financial/legal auditing and site QA.",
-    "es": "Colección de prompts prácticos para Google Astra, cubriendo casos de uso de automatización de tareas, producción de vídeo, auditoría financiera/jurídica y QA de sitios."
   },
   "A IA não é mais Projetada é Cultivada": {
     "en": "AI is no longer Designed, it is Cultivated",
@@ -382,5 +366,17 @@
   "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização": {
     "en": "Claude Opus 5.5 — research, charts and upgrade plan",
     "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización"
+  },
+  "no Club": {
+    "en": "in Club",
+    "es": "en Club"
+  },
+  "Chegou o Opous 5.5": {
+    "en": "Opous 5.5 has arrived",
+    "es": "Llegó el Opous 5.5"
+  },
+  "quem tem o ;claude ele esta disponivel": {
+    "en": "who has ;claude he is available",
+    "es": "quien tiene el ;claude está disponible"
   }
 }
