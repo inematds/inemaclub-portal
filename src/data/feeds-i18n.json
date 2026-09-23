@@ -67,10 +67,6 @@
     "en": "Topic dedicated to the JEV project/tool, with sharing of reference links — YouTube videos, documentation and events portal.",
     "es": "Tema dedicado al proyecto/herramienta JEV, con compartición de enlaces de referencia — videos de YouTube, documentación y portal de eventos."
   },
-  "Visagismo B — consultoria de estilo com IA para barbearias": {
-    "en": "Visagismo B — style consulting with AI for barbershops",
-    "es": "Visagismo B — consultoría de estilo con IA para barberías"
-  },
   "LOOP-R - Desenvovimento por Agentes": {
     "en": "LOOP-R - Development by Agents",
     "es": "LOOP-R - Desarrollo por Agentes"
@@ -378,5 +374,9 @@
   "Jarvis Modelo + JEV — crie seu próprio assistente com decisões antes do cérebro": {
     "en": "Jarvis Modelo + JEV — create your own assistant with decisions before the brain",
     "es": "Jarvis Modelo + JEV — crea tu propio asistente con decisiones antes del cerebro"
+  },
+  "Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas": {
+    "en": "Explicavideos — reusable process for videos with Nei, illustrations and subtitles",
+    "es": "Explicavideos — proceso reutilizable para videos con Nei, ilustraciones y subtítulos"
   }
 }

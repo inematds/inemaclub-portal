@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-23', title: 'Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas', type: 'novo', url: 'https://inematds.github.io/explicavideos/guia/' },
   { date: '2026-09-23', title: 'Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat', type: 'atualizado', url: 'https://inematds.github.io/jarvisv7/guia/' },
   { date: '2026-09-23', title: 'Jarvis Modelo + JEV — crie seu próprio assistente com decisões antes do cérebro', type: 'novo', url: 'https://inematds.github.io/jarvismodelo/guia/' },
   { date: '2026-09-23', title: '7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)', type: 'atualizado', url: 'https://inematds.github.io/7pa/galeria/' },

@@ -1,3 +1,4 @@
+| 2026-09-23 | Inserção de novidade atingiu colchete do tipo Update[] | Ancorar no inicializador do array e conferir tsc | prompt |
 # FALHAS — portal
 
 | data | o que quebrou | menor correção | prompt \| infra |
