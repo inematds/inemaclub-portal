@@ -16,6 +16,8 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-23', title: 'Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat', type: 'atualizado', url: 'https://inematds.github.io/jarvisv7/guia/' },
+  { date: '2026-09-23', title: 'Jarvis Modelo + JEV — crie seu próprio assistente com decisões antes do cérebro', type: 'novo', url: 'https://inematds.github.io/jarvismodelo/guia/' },
   { date: '2026-09-23', title: '7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)', type: 'atualizado', url: 'https://inematds.github.io/7pa/galeria/' },
   { date: '2026-09-23', title: '7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/7pa/guia/' },
   { date: '2026-09-23', title: 'O Segredo dos 7 Princípios — o que esses textos realmente são (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/7pa-segredo/' },

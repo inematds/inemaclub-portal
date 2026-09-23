@@ -5512,6 +5512,18 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-23",
+      "title": "Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/jarvisv7/guia/"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Jarvis Modelo + JEV — crie seu próprio assistente com decisões antes do cérebro",
+      "type": "novo",
+      "url": "https://inematds.github.io/jarvismodelo/guia/"
+    },
+    {
+      "date": "2026-09-23",
       "title": "7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)",
       "type": "atualizado",
       "url": "https://inematds.github.io/7pa/galeria/"
@@ -6652,9 +6664,16 @@
       "badge": "Guia"
     },
     {
+      "icon": "🧠",
+      "name": "jarvismodelo",
+      "desc": "JEV Reflex como base do seu próximo Jarvis: cinco decisões antes da resposta, ferramentas por rota, aprovação de ações e proteção contra repetição por requestId. Template TypeScript/Node 24 para adaptar a estudo, trabalho ou atendimento.",
+      "url": "https://inematds.github.io/jarvismodelo/guia/",
+      "badge": "Guia"
+    },
+    {
       "icon": "🤖",
       "name": "jarvisv7",
-      "desc": "Jarvis v7: assistente pessoal local com Codex e Claude OAuth, OpenRouter API, notas e memórias persistentes, estúdio Kie, seleção de modelos e módulos, backup e atualização manual.",
+      "desc": "Agora com JEV Reflex real: cinco decisões antes do cérebro responder, painel com probabilidades e latência e fallback local. Assistente com notas, memórias, Codex/Claude OAuth, OpenRouter e estúdio Kie.",
       "url": "https://inematds.github.io/jarvisv7/guia/",
       "badge": "Guia"
     },
