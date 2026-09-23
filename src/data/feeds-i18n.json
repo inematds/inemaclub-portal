@@ -59,10 +59,6 @@
     "en": "iacultivada — Cultivated AI: you don’t program it, you cultivate it. How to apply in personal life, in your Jarvis and in business (eight elements, feedback loop, 30/90‑day plans and kit)",
     "es": "iacultivada — IA Cultivada: no se programa, se cultiva. Cómo aplicar en la vida personal, en tu Jarvis y en los negocios (ocho elementos, ciclo de retroalimentación, planes de 30/90 días y kit)"
   },
-  "Vazou System Prompt Fable 5.1": {
-    "en": "Leaked System Prompt Fable 5.1",
-    "es": "Se filtró System Prompt Fable 5.1"
-  },
   "A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO": {
     "en": "AGI has arrived and the prompt almost died · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO",
     "es": "La AGI llegó y el prompt casi murió · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO"
@@ -70,10 +66,6 @@
   "Vídeos Virais de Pintura em Pedra": {
     "en": "Viral Stone Painting Videos",
     "es": "Vídeos Virales de Pintura en Piedra"
-  },
-  "GPT-6 Astra vs Fable 5.1 em 15 tarefas reais": {
-    "en": "GPT-6 Astra vs Fable 5.1 in 15 real tasks",
-    "es": "GPT-6 Astra vs Fable 5.1 en 15 tareas reales"
   },
   "Tópico dedicado ao projeto/ferramenta JEV, com compartilhamento de links de referência — vídeos do YouTube, documentação e portal de eventos.": {
     "en": "Topic dedicated to the JEV project/tool, with sharing of reference links — YouTube videos, documentation and events portal.",
@@ -215,10 +207,6 @@
     "en": "Agents in the Clinic — Health Notebook of the AI Work Architect (3 lessons)",
     "es": "Agentes en la Clínica — Cuaderno de Salud del Arquitecto de Trabajo con IA (3 clases)"
   },
-  "Comparativo prático entre GPT-6 Astra e Claude Fable 5.1 em 15 tarefas reais do dia a dia, com análise de qualidade, custo e tempo. Resultado geral: Astra 10 × 5 Fable.": {
-    "en": "Practical comparison between GPT-6 Astra and Claude Fable 5.1 in 15 real everyday tasks, with quality, cost and time analysis. Overall result: Astra 10 × 5 Fable.",
-    "es": "Comparativo práctico entre GPT-6 Astra y Claude Fable 5.1 en 15 tareas reales del día a día, con análisis de calidad, costo y tiempo. Resultado general: Astra 10 × 5 Fable."
-  },
   "google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA": {
     "en": "google-rsi — Dream-RSI: educational guide, original figures and plan to learn to research better with AI",
     "es": "google-rsi — Dream-RSI: guía educativa, figuras originales y plan para aprender a investigar mejor con IA"
@@ -270,10 +258,6 @@
   "O ponto central pode ser explicado assim: **o prompt não morreu; ele deixou de ser o “produto final” e virou apenas uma camada de orientação.** Com modelos mais autônomos, o valor migra de “escrever o prompt perfeito” para **definir intenção, contexto, regras, ferramentas, memória, skills e critérios de sucesso**. **Antes:** Prompt → resposta. **Agora:** Objetivo → contexto → agente → skills → ferramentas → execução → validação → resultado. Ou, numa frase forte: > **A era do prompt perfeito está acabando. A nova habilidade é ensinar a IA a trabalhar.** E isso encaixa muito bem em **FEP 2026** como evolução de *Engenharia de Prompt* para algo maior: **Engenharia de Intenção + Contexto + Execução**.": {
     "en": "The central point can be explained like this: **the prompt hasn't died; it stopped being the “final product” and became just a guidance layer.** With more autonomous models, the value shifts from “writing the perfect prompt” to **defining intention, context, rules, tools, memory, skills, and success criteria**. **Before:** Prompt → response. **Now:** Goal → context → agent → skills → tools → execution → validation → result. Or, in a strong sentence: > **The era of the perfect prompt is ending. The new skill is teaching the AI to work.** And this fits very well in **FEP 2026** as an evolution of *Engenharia de Prompt* to something bigger: **Engenharia de Intenção + Contexto + Execução**.",
     "es": "El punto central puede explicarse así: **el prompt no murió; dejó de ser el “producto final” y se convirtió solo en una capa de orientación.** Con modelos más autónomos, el valor migra de “escribir el prompt perfecto” a **definir intención, contexto, reglas, herramientas, memoria, habilidades y criterios de éxito**. **Antes:** Prompt → respuesta. **Ahora:** Objetivo → contexto → agente → habilidades → herramientas → ejecución → validación → resultado. En una frase fuerte: > **La era del prompt perfecto está terminando. La nueva habilidad es enseñar a la IA a trabajar.** Y eso encaja muy bien en **FEP 2026** como evolución de *Ingeniería de Prompt* a algo mayor: **Ingeniería de Intención + Contexto + Ejecución**."
-  },
-  "Vazamento e análise do system prompt do Claude Fable 5.1, mostrando que o avanço da IA não está só no modelo, mas no ecossistema construído ao redor dele.": {
-    "en": "Leak and analysis of the system prompt of Claude Fable 5.1, showing that AI progress is not only in the model, but in the ecosystem built around it.",
-    "es": "Filtración y análisis del system prompt de Claude Fable 5.1, mostrando que el avance de la IA no está solo en el modelo, sino en el ecosistema construido a su alrededor."
   },
   "Aqui um sistema e um curso sobre gestao de Agentes de IA,  de gestao de pessoas para Gestao de Agentes": {
     "en": "Here a system and a course on AI Agents management, from people management to Agents Management",
@@ -378,5 +362,21 @@
   "7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)": {
     "en": "7PA — Gallery with 10 ready agent sheets (N0 to N4) + skill /ficha-agente for Claude Code (PT/EN/ES)",
     "es": "7PA — Galería con 10 fichas de agente listas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)"
+  },
+  "ALERTA": {
+    "en": "ALERT",
+    "es": "ALERTA"
+  },
+  "Aviso: não use o repositório do GitHub 'short-video-generator-AI É apresentado como uma ferramenta gratuita que transforma vídeos longos em vídeos curtos. Mas possui código oculto que roda no Windows. Se você apenas baixou o arquivo ou está usando um Mac, exclua a pasta. Se você usa o Windows, primeiro use seu celular para alterar a senha do seu e-mail e depois as outras senhas. Em seguida, reinicie o computador. O código pode mudar a qualquer momento, então eu simplesmente ficaria longe dele 💪 Antes de executar qualquer repositório do GitHub, abra-o no Claude/Codex e verifique: \"Leia todos os arquivos, não execute nada. Verifique se é seguro usar e sinalize qualquer arquivo que baixe código ou pareça corrompido.\"": {
+    "en": "Notice: do not use the GitHub repository 'short-video-generator-AI It is presented as a free tool that turns long videos into short videos. But it has hidden code that runs on Windows. If you only downloaded the file or are using a Mac, delete the folder. If you use Windows, first use your phone to change your email password and then the other passwords. Then restart the computer. The code can change at any time, so I would simply stay away from it 💪 Before running any GitHub repository, open it in Claude/Codex and check: \"Read all files, do not execute anything. Verify it is safe to use and flag any file that downloads code or appears corrupted.\"",
+    "es": "Aviso: no use el repositorio de GitHub 'short-video-generator-AI' Es presentado como una herramienta gratuita que transforma videos largos en videos cortos. Pero tiene código oculto que se ejecuta en Windows. Si solo descargó el archivo o está usando un Mac, elimine la carpeta. Si usa Windows, primero use su celular para cambiar la contraseña de su correo electrónico y luego las demás contraseñas. Después, reinicie el ordenador. El código puede cambiar en cualquier momento, así que simplemente me mantendría alejado de él 💪 Antes de ejecutar cualquier repositorio de GitHub, ábralo en Claude/Codex y verifique: \"Lea todos los archivos, no ejecute nada. Verifique si es seguro usar y señale cualquier archivo que descargue código o parezca corrupto.\""
+  },
+  "Ganhos de eficiência Jev": {
+    "en": "Jev Efficiency Gains",
+    "es": "Ganancias de eficiencia Jev"
+  },
+  "Além de usar o Jev para tornar o LinkedIn mais tolerável, decidi testá-lo em um dos meus aplicativos, . Uma plataforma de orquestração de agentes para criar equipes de agentes e concluir tarefas de trabalho reais. Para que isso funcione, tenho várias ferramentas que  pode usar para realizar todo tipo de tarefa, mas essas ferramentas consomem muitos tokens. O cache está ativado, o que ajuda, mas poderia ser melhor. Então, decidi colocar o Jev entre a mensagem do usuário e  com o objetivo de selecionar apenas as ferramentas que o orquestrador precisa para esse tipo de solicitação. Eu esperava, é claro, uma boa redução no número de tokens, mas o que eu não esperava era uma redução de mais de 90%. Agora preciso analisar com muita atenção meus aplicativos e automações e ver que melhorias posso obter em outras áreas.": {
+    "en": "In addition to using Jev to make LinkedIn more tolerable, I decided to test it in one of my apps, . A platform for orchestrating agents to create agent teams and complete real work tasks. For this to work, I have several tools that  can use to perform all kinds of tasks, but these tools consume many tokens. Cache is enabled, which helps, but it could be better. So I decided to place Jev between the user message and  with the goal of selecting only the tools the orchestrator needs for this type of request. I expected, of course, a good reduction in token count, but what I didn’t expect was a reduction of over 90%. Now I need to carefully analyze my apps and automations and see what improvements I can achieve in other areas.",
+    "es": "Además de usar Jev para hacer LinkedIn más tolerable, decidí probarlo en una de mis aplicaciones, . Una plataforma de orquestación de agentes para crear equipos de agentes y completar tareas de trabajo reales. Para que funcione, tengo varias herramientas que  puede usar para realizar todo tipo de tarea, pero esas herramientas consumen muchos tokens. La caché está activada, lo que ayuda, pero podría ser mejor. Entonces, decidí colocar Jev entre el mensaje del usuario y  con el objetivo de seleccionar solo las herramientas que el orquestador necesita para este tipo de solicitud. Esperaba, por supuesto, una buena reducción en el número de tokens, pero lo que no esperaba era una reducción de más del 90%. Ahora necesito analizar con mucha atención mis aplicaciones y automatizaciones y ver qué mejoras puedo obtener en otras áreas."
   }
 }

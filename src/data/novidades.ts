@@ -13,12 +13,28 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-23/ALERTA",
+    "date": "2026-09-23",
+    "titulo": "ALERTA",
+    "resumo": "Aviso: não use o repositório do GitHub 'short-video-generator-AI É apresentado como uma ferramenta gratuita que transforma vídeos longos em vídeos curtos. Mas possui código oculto que roda no Windows. Se você apenas baixou o arquivo ou está usando um Mac, exclua a pasta. Se você usa o Windows, primeiro use seu celular para alterar a senha do seu e-mail e depois as outras senhas. Em seguida, reinicie o computador. O código pode mudar a qualquer momento, então eu simplesmente ficaria longe dele 💪 Antes de executar qualquer repositório do GitHub, abra-o no Claude/Codex e verifique: \"Leia todos os arquivos, não execute nada. Verifique se é seguro usar e sinalize qualquer arquivo que baixe código ou pareça corrompido.\"",
+    "grupo": "INEMA.VIP",
+    "url": ""
+  },
+  {
     "id": "vip/2026-09-23/no Club",
     "date": "2026-09-23",
     "titulo": "no Club",
     "resumo": "",
     "grupo": "INEMA.VIP",
     "url": "https://inematds.github.io/gpt6-sol-luna/guia/"
+  },
+  {
+    "id": "vip/2026-09-22/Ganhos de eficiência Jev",
+    "date": "2026-09-22",
+    "titulo": "Ganhos de eficiência Jev",
+    "resumo": "Além de usar o Jev para tornar o LinkedIn mais tolerável, decidi testá-lo em um dos meus aplicativos, . Uma plataforma de orquestração de agentes para criar equipes de agentes e concluir tarefas de trabalho reais. Para que isso funcione, tenho várias ferramentas que  pode usar para realizar todo tipo de tarefa, mas essas ferramentas consomem muitos tokens. O cache está ativado, o que ajuda, mas poderia ser melhor. Então, decidi colocar o Jev entre a mensagem do usuário e  com o objetivo de selecionar apenas as ferramentas que o orquestrador precisa para esse tipo de solicitação. Eu esperava, é claro, uma boa redução no número de tokens, mas o que eu não esperava era uma redução de mais de 90%. Agora preciso analisar com muita atenção meus aplicativos e automações e ver que melhorias posso obter em outras áreas.",
+    "grupo": "INEMA.VIP",
+    "url": ""
   },
   {
     "id": "vip/2026-09-22/Chegou o Opous 5.5",
@@ -235,21 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "",
     "grupo": "INEMA.VIP",
     "url": "https://www.instagram.com/reel/Dc6W8oygjFK/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ=="
-  },
-  {
-    "id": "2463916523/4584",
-    "date": "2026-09-07",
-    "titulo": "GPT-6 Astra vs Fable 5.1 em 15 tarefas reais",
-    "resumo": "Comparativo prático entre GPT-6 Astra e Claude Fable 5.1 em 15 tarefas reais do dia a dia, com análise de qualidade, custo e tempo. Resultado geral: Astra 10 × 5 Fable.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4584"
-  },
-  {
-    "id": "2463916523/4548",
-    "date": "2026-09-06",
-    "titulo": "Vazou System Prompt Fable 5.1",
-    "resumo": "Vazamento e análise do system prompt do Claude Fable 5.1, mostrando que o avanço da IA não está só no modelo, mas no ecossistema construído ao redor dele.",
-    "grupo": "INEMA.LLMS",
-    "url": "https://www.inema.pro/cerebro/inema-llms/4548"
   }
 ];
