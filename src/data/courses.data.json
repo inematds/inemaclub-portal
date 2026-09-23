@@ -5493,6 +5493,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-23",
+      "title": "modelos — qual modelo de IA usar em cada tarefa (PT/EN)",
+      "type": "novo",
+      "url": "https://inematds.github.io/modelos/guia/"
+    },
+    {
+      "date": "2026-09-23",
       "title": "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)",
       "type": "novo",
       "url": "https://inematds.github.io/claude-opus55/guia/"
@@ -6489,6 +6495,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🧭",
+      "name": "modelos",
+      "desc": "Qual modelo de IA usar em cada tarefa: pilha atual (Claude Opus 5.5, GPT-6 Astra, Sol e Luna), regras de escolha, prompts de planejar→executar e segunda opinião, bateria de teste e rascunho de skill. Em português e inglês.",
+      "url": "https://inematds.github.io/modelos/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧠",
       "name": "claude-opus55",

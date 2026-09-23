@@ -25,6 +25,7 @@ const communityProjects: Array<{
   url?: string
   badge?: string
 }> = [
+  { icon: '🧭', name: 'modelos', desc: 'Qual modelo de IA usar em cada tarefa: pilha atual (Claude Opus 5.5, GPT-6 Astra, Sol e Luna), regras de escolha, prompts de planejar→executar e segunda opinião, bateria de teste e rascunho de skill. Em português e inglês.', url: 'https://inematds.github.io/modelos/guia/', badge: 'Guia' },
   { icon: '🧠', name: 'claude-opus55', desc: 'Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Em português, inglês e espanhol.', url: 'https://inematds.github.io/claude-opus55/guia/', badge: 'Guia' },
   { icon: '◐', name: 'gpt6-sol-luna', desc: 'GPT-6 Sol & Luna: pesquisa do lançamento, gráficos comparativos, calculadora de custos com cache e plano de integração nos sistemas INEMA. Fontes oficiais e exemplos de API.', url: 'https://inematds.github.io/gpt6-sol-luna/guia/', badge: 'Guia' },
   { icon: '🚪', name: 'jev-gw', desc: 'Gateway de decisão para o Jev: porta única para toda consulta de um sistema, com teto de gasto diário, cache, registro de custo e latência por chamada e falha conservadora — Jev fora do ar ou teto estourado devolvem revisão humana em vez de quebrar quem chamou. Biblioteca Python, serviço HTTP e CLI, só biblioteca padrão.', url: 'https://inematds.github.io/jev-gw/guia/', badge: 'Guia' },

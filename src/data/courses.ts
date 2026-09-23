@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-23', title: 'modelos — qual modelo de IA usar em cada tarefa (PT/EN)', type: 'novo', url: 'https://inematds.github.io/modelos/guia/' },
   { date: '2026-09-23', title: 'Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/claude-opus55/guia/' },
   { date: '2026-09-22', title: 'GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA', type: 'novo', url: 'https://inematds.github.io/gpt6-sol-luna/guia/' },
   { date: '2026-09-22', title: 'jev-gw — gateway de decisão para o Jev', type: 'novo', url: 'https://inematds.github.io/jev-gw/guia/' },

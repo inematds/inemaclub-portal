@@ -147,10 +147,6 @@
     "en": "AI is no longer Designed, it is Cultivated",
     "es": "La IA ya no es diseñada, es cultivada"
   },
-  "agentes-fronteiros — Migração de agentes especializados pra agente generalista + skills com contrato, loop de validação e wiki OKF, com inventário e interface kanban": {
-    "en": "agentes-fronteiros — Migration from specialized agents to a generalist agent + contract‑based skills, validation loop and OKF wiki, with inventory and kanban interface",
-    "es": "agentes-fronteiros — Migración de agentes especializados a agente generalista + habilidades con contrato, bucle de validación y wiki OKF, con inventario e interfaz kanban"
-  },
   "Publicação completa do ecossistema ASTRA 2º Cérebro — três repositórios satélite finalizados com testes passando, guias online e catalogados no Portal e no PRO.": {
     "en": "Full release of the ASTRA ecosystem 2nd Brain — three satellite repositories completed with passing tests, online guides, and cataloged on the Portal and PRO.",
     "es": "Publicación completa del ecosistema ASTRA 2º Cérebro — tres repositorios satélite finalizados con pruebas pasando, guías online y catalogados en el Portal y en el PRO."
@@ -378,5 +374,9 @@
   "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)": {
     "en": "Claude Opus 5.5 — research, charts and update plan (PT/EN/ES)",
     "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización (PT/EN/ES)"
+  },
+  "modelos — qual modelo de IA usar em cada tarefa (PT/EN)": {
+    "en": "models — which AI model to use for each task (PT/EN)",
+    "es": "modelos — qué modelo de IA usar en cada tarea (PT/EN)"
   }
 }
