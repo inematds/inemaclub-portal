@@ -363,10 +363,6 @@
     "en": "GPT-6 Sol & Luna — launch, comparisons and integration INEMA",
     "es": "GPT-6 Sol & Luna — lanzamiento, comparativas e integración INEMA"
   },
-  "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização": {
-    "en": "Claude Opus 5.5 — research, charts and upgrade plan",
-    "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización"
-  },
   "no Club": {
     "en": "in Club",
     "es": "en Club"
@@ -378,5 +374,9 @@
   "quem tem o ;claude ele esta disponivel": {
     "en": "who has ;claude he is available",
     "es": "quien tiene el ;claude está disponible"
+  },
+  "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)": {
+    "en": "Claude Opus 5.5 — research, charts and update plan (PT/EN/ES)",
+    "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización (PT/EN/ES)"
   }
 }

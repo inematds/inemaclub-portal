@@ -5492,10 +5492,10 @@
   ],
   "projectUpdatesData": [
     {
-      "date": "2026-09-22",
-      "title": "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização",
+      "date": "2026-09-23",
+      "title": "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)",
       "type": "novo",
-      "url": "https://inematds.github.io/opus55/"
+      "url": "https://inematds.github.io/claude-opus55/guia/"
     },
     {
       "date": "2026-09-22",
@@ -6491,9 +6491,9 @@
   "communityProjects": [
     {
       "icon": "🧠",
-      "name": "opus55",
-      "desc": "Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Fontes oficiais e inventário local.",
-      "url": "https://inematds.github.io/opus55/",
+      "name": "claude-opus55",
+      "desc": "Claude Opus 5.5: pesquisa do lançamento com gráficos de preço, benchmarks e effort × custo, as mudanças de API e o plano de atualização dos sistemas INEMA. Em português, inglês e espanhol.",
+      "url": "https://inematds.github.io/claude-opus55/guia/",
       "badge": "Guia"
     },
     {
