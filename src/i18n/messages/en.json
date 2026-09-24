@@ -13,7 +13,7 @@
   },
   "nav": {
     "home": "🏠 Home",
-    "search": "🔍 Search",
+    "search": "🔍 Search (PT)",
     "news": "📰 News",
     "learnAi": "🧭 Learn AI (PT)",
     "beginners": "📘 Beginners",
@@ -22,7 +22,7 @@
     "projects": "🚀 Projects",
     "telegram": "💬 Telegram",
     "social": "📱 Social",
-    "pro": "⭐ INEMA.PRO"
+    "pro": "⭐ INEMA.PRO (PT)"
   },
   "hero": {
     "newsBadge": "LIVE",
@@ -199,6 +199,24 @@
     "title": "INEMA Social Media",
     "subtitle": "Follow us on the main platforms",
     "comingSoon": "English profiles coming soon. Meanwhile, follow INEMA's main profiles."
+  },
+  "coursesPage": {
+    "metaTitle": "Artificial intelligence, agents and automation courses",
+    "metaDescription": "INEMA's public course catalog: courses already available in English first, then the full catalog in Portuguese.",
+    "ogTitle": "INEMA Courses",
+    "ogDescription": "Hands-on training in artificial intelligence, agents, automation and AI-assisted development.",
+    "breadcrumbLabel": "Breadcrumb",
+    "breadcrumb": "Courses",
+    "title": "Courses to learn and apply AI in practice",
+    "intro": "Explore INEMA's public catalog. Courses already translated into English come first; the rest of the catalog is in Portuguese (PT).",
+    "translatedTitle": "Available in English",
+    "catalogTitle": "Full catalog (in Portuguese)",
+    "searchLabel": "Search the catalog",
+    "searchPlaceholder": "E.g.: WebMCP, agents, automation",
+    "countOne": "course found",
+    "countMany": "courses found",
+    "empty": "No course matches your search. Try a broader topic.",
+    "tagsLabel": "Course topics"
   },
   "footer": {
     "copyright": "© 2025 Portal INEMA. All rights reserved."

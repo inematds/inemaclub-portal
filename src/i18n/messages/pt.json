@@ -200,6 +200,24 @@
     "subtitle": "Siga-nos nas principais plataformas",
     "comingSoon": "Perfis neste idioma em breve. Enquanto isso, siga os perfis principais do INEMA."
   },
+  "coursesPage": {
+    "metaTitle": "Cursos de inteligência artificial, agentes e automação",
+    "metaDescription": "Catálogo público de cursos do INEMA, com páginas canônicas, temas e acesso à aplicação de cada formação.",
+    "ogTitle": "Cursos do INEMA",
+    "ogDescription": "Formação prática em inteligência artificial, agentes, automação e desenvolvimento com IA.",
+    "breadcrumbLabel": "Navegação estrutural",
+    "breadcrumb": "Cursos",
+    "title": "Cursos para aprender e aplicar IA na prática",
+    "intro": "Explore o catálogo público do INEMA. Cada ficha reúne o que já está documentado e leva à aplicação original do curso.",
+    "translatedTitle": "Disponível em português",
+    "catalogTitle": "Catálogo completo",
+    "searchLabel": "Buscar no catálogo",
+    "searchPlaceholder": "Ex.: WebMCP, agentes, automação",
+    "countOne": "curso encontrado",
+    "countMany": "cursos encontrados",
+    "empty": "Nenhum curso corresponde à busca. Tente um tema mais amplo.",
+    "tagsLabel": "Temas do curso"
+  },
   "footer": {
     "copyright": "© 2025 Portal INEMA. Todos os direitos reservados."
   }

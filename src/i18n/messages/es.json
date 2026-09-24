@@ -13,7 +13,7 @@
   },
   "nav": {
     "home": "🏠 Home",
-    "search": "🔍 Búsquedas",
+    "search": "🔍 Búsquedas (PT)",
     "news": "📰 News",
     "learnAi": "🧭 Aprender IA (PT)",
     "beginners": "📘 Principiantes",
@@ -22,7 +22,7 @@
     "projects": "🚀 Proyectos",
     "telegram": "💬 Telegram",
     "social": "📱 Social",
-    "pro": "⭐ INEMA.PRO"
+    "pro": "⭐ INEMA.PRO (PT)"
   },
   "hero": {
     "newsBadge": "EN VIVO",
@@ -199,6 +199,24 @@
     "title": "Redes Sociales INEMA",
     "subtitle": "Síguenos en las principales plataformas",
     "comingSoon": "Perfiles en español muy pronto. Mientras tanto, sigue los perfiles principales de INEMA."
+  },
+  "coursesPage": {
+    "metaTitle": "Cursos de inteligencia artificial, agentes y automatización",
+    "metaDescription": "Catálogo público de cursos de INEMA: primero los cursos ya disponibles en español y después el catálogo completo en portugués.",
+    "ogTitle": "Cursos de INEMA",
+    "ogDescription": "Formación práctica en inteligencia artificial, agentes, automatización y desarrollo con IA.",
+    "breadcrumbLabel": "Navegación estructural",
+    "breadcrumb": "Cursos",
+    "title": "Cursos para aprender y aplicar IA en la práctica",
+    "intro": "Explora el catálogo público de INEMA. Los cursos ya traducidos al español aparecen primero; el resto del catálogo está en portugués (PT).",
+    "translatedTitle": "Disponible en español",
+    "catalogTitle": "Catálogo completo (en portugués)",
+    "searchLabel": "Buscar en el catálogo",
+    "searchPlaceholder": "Ej.: WebMCP, agentes, automatización",
+    "countOne": "curso encontrado",
+    "countMany": "cursos encontrados",
+    "empty": "Ningún curso coincide con la búsqueda. Prueba un tema más amplio.",
+    "tagsLabel": "Temas del curso"
   },
   "footer": {
     "copyright": "© 2025 Portal INEMA. Todos los derechos reservados."

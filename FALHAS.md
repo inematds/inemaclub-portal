@@ -3,6 +3,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-24 | Menu Cursos (e News) nas homes EN/ES apontava pra `/cursos/` e `news.inema.pro` em PT | `coursesPath()`/`newsUrl()` por locale + rotas `/en/cursos/` e `/es/cursos/` | prompt |
 | 2026-09-24 | `extrai-syllabus.mjs` re-extraiu e sobrescreveu 34 fichas já revisadas: o bloco de link de volta mudou o hash de toda página | Tirar o bloco `inema-backlink:v1` antes do hash (`1b71f12`); fichas antigas restauradas do git | prompt |
 | 2026-09-23 | Últimas Novidades: bloco do Nei descartado porque membro mandou `/status` no meio (virou "conversa"); título saía com `**`/`===ALERTA===` | gera-novidades.mjs ignora comando `/` de membro e limpa `**`/`=` das linhas | prompt |
 | 2026-09-23 | Sessão paralela commitou (`f278475`) edição ainda em andamento do Portal.tsx de outra sessão; origin ficou minutos com chaves i18n inexistentes | Commitar só arquivos próprios (`git add <arquivos>`, nunca `-A`/`.`) e checar `git status` antes | infra |

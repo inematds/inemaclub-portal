@@ -12,6 +12,16 @@ export function localeHome(locale: Locale): string {
   return locale === DEFAULT_LOCALE ? '/' : `/${locale}/`
 }
 
+/** Catálogo de cursos em cada idioma: /cursos/, /en/cursos/, /es/cursos/. */
+export function coursesPath(locale: Locale): string {
+  return `${localeHome(locale)}cursos/`
+}
+
+/** news.inema.pro tem /en/ e /es/; PT fica na raiz. */
+export function newsUrl(locale: Locale): string {
+  return locale === DEFAULT_LOCALE ? 'https://news.inema.pro' : `https://news.inema.pro/${locale}/`
+}
+
 export function isLocale(value: string): value is Locale {
   return (LOCALES as readonly string[]).includes(value)
 }

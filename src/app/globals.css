@@ -2033,6 +2033,17 @@ html {
     border-top: 1px solid var(--border-color);
 }
 
+/* /en/cursos/ e /es/cursos/: títulos dos blocos "traduzidos" e "catálogo em PT" */
+.course-section-title {
+    margin: 0 0 1.25rem;
+    color: var(--text-primary);
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+}
+
+.course-translated {
+    margin-bottom: 3.5rem;
+}
+
 .course-catalog-item {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(180px, 0.32fr);

@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import { platformsData, updatesData, projectUpdatesData, type Course } from '@/data/courses'
 import { novidadesData } from '@/data/novidades'
 import { coursePath } from '@/lib/site'
-import { LOCALES, LOCALE_LABEL, localeHome, INTL_LOCALE, HTML_LANG, type Locale } from '@/i18n/locales'
+import { LOCALES, LOCALE_LABEL, localeHome, coursesPath, newsUrl, INTL_LOCALE, HTML_LANG, type Locale } from '@/i18n/locales'
 import { getDictionary } from '@/i18n/dictionary'
 import { translatedFor } from '@/data/translated-courses'
 import { localizedSrc } from '@/i18n/images'
@@ -542,7 +542,7 @@ export default function Portal({
               {t.nav.search}
             </a>
             <a
-              href="https://news.inema.pro"
+              href={newsUrl(locale)}
               target="_blank"
               rel="noopener noreferrer"
               className="section-nav-link"
@@ -552,7 +552,7 @@ export default function Portal({
             </a>
             <a href="/aprender-inteligencia-artificial/" className="section-nav-link">{t.nav.learnAi}</a>
             <a href="#trilha-iniciantes" className="section-nav-link">{t.nav.beginners}</a>
-            <a href="/cursos/" className="section-nav-link">{t.nav.courses}</a>
+            <a href={coursesPath(locale)} className="section-nav-link">{t.nav.courses}</a>
             <a
               href={evLink("https://eventos.inema.pro")}
               target="_blank"
@@ -584,7 +584,7 @@ export default function Portal({
           <div className="recruitment-content">
             <div className="recruitment-image-wrapper">
               <a
-                href="https://news.inema.pro"
+                href={newsUrl(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="news-banner"
@@ -630,7 +630,7 @@ export default function Portal({
               </p>
             </div>
             <form
-              action="/cursos/"
+              action={coursesPath(locale)}
               method="get"
               {...({
                 toolname: 'buscar_cursos',
