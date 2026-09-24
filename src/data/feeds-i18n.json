@@ -363,10 +363,6 @@
     "en": "Management of AI Agents — the 7 Principles: course v2 with 4 tracks, 8 modules and 48 topics (PT/EN/ES)",
     "es": "Gestión de Agentes de IA — los 7 Principios: curso v2 con 4 rutas, 8 módulos y 48 temas (PT/EN/ES)"
   },
-  "modelos — qual modelo de IA usar em cada tarefa (PT/EN/ES)": {
-    "en": "models — which AI model to use for each task (PT/EN/ES)",
-    "es": "modelos — qué modelo de IA usar en cada tarea (PT/EN/ES)"
-  },
   "Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat": {
     "en": "Jarvis v7 + JEV Reflex — five decisions before the answer, now integrated into chat",
     "es": "Jarvis v7 + JEV Reflex — cinco decisiones antes de la respuesta, ahora integrado al chat"
@@ -378,5 +374,9 @@
   "Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas": {
     "en": "Explicavideos — reusable process for videos with Nei, illustrations and subtitles",
     "es": "Explicavideos — proceso reutilizable para videos con Nei, ilustraciones y subtítulos"
+  },
+  "Qual Modelo de IA Usar — o modelo certo para cada tarefa (PT/EN/ES)": {
+    "en": "Which AI Model to Use — the right model for each task (PT/EN/ES)",
+    "es": "Qué Modelo de IA Usar — el modelo correcto para cada tarea (PT/EN/ES)"
   }
 }
