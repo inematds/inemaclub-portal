@@ -469,6 +469,103 @@ html {
     gap: 1.5rem;
 }
 
+/* Banner NEWS.inema.pro acima da imagem do hero */
+.news-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.75rem 1.1rem;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(110deg, #1e1b4b 0%, #0c4a6e 55%, #1e1b4b 100%);
+    background-size: 200% 100%;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
+    animation: news-banner-shine 6s linear infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.75);
+}
+
+.news-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: #dc2626;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.news-banner-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    animation: news-banner-pulse 1.2s ease-in-out infinite;
+}
+
+.news-banner-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+.news-banner-title {
+    font-size: 1.35rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    color: #fbbf24;
+}
+
+.news-banner-title span {
+    color: #7dd3fc;
+    font-weight: 700;
+}
+
+.news-banner-text {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.news-banner-arrow {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fbbf24;
+    transition: transform 0.2s ease;
+}
+
+.news-banner:hover .news-banner-arrow {
+    transform: translateX(4px);
+}
+
+@keyframes news-banner-shine {
+    to { background-position: -200% 0; }
+}
+
+@keyframes news-banner-pulse {
+    50% { opacity: 0.25; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .news-banner, .news-banner-dot { animation: none; }
+}
+
+@media (max-width: 480px) {
+    .news-banner { gap: 0.6rem; padding: 0.65rem 0.8rem; }
+    .news-banner-title { font-size: 1.05rem; white-space: nowrap; }
+    .news-banner-text { font-size: 0.78rem; }
+}
+
 .recruitment-image {
     border-radius: 16px;
     overflow: hidden;

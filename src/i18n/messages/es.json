@@ -12,6 +12,7 @@
     "chipLogged": "conectados"
   },
   "nav": {
+    "home": "🏠 Home",
     "search": "🔍 Búsquedas",
     "news": "📰 News",
     "learnAi": "🧭 Aprender IA (PT)",
@@ -24,6 +25,8 @@
     "pro": "⭐ INEMA.PRO"
   },
   "hero": {
+    "newsBadge": "EN VIVO",
+    "newsText": "Las noticias de IA del día, curadas",
     "imageAlt": "INEMA.CLUB — Aprende. Practica. Evoluciona. El ecosistema para dominar la IA en la práctica.",
     "caption": "Aprende. Practica. Evoluciona. — una base sólida de conocimiento en IA para aplicar en el trabajo, en los proyectos y en la carrera.",
     "title": "Aprende Inteligencia Artificial en la práctica, de cero a avanzado.",

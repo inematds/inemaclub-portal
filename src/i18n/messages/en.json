@@ -12,6 +12,7 @@
     "chipLogged": "logged in"
   },
   "nav": {
+    "home": "🏠 Home",
     "search": "🔍 Search",
     "news": "📰 News",
     "learnAi": "🧭 Learn AI (PT)",
@@ -24,6 +25,8 @@
     "pro": "⭐ INEMA.PRO"
   },
   "hero": {
+    "newsBadge": "LIVE",
+    "newsText": "Today's AI news, curated",
     "imageAlt": "INEMA.CLUB — Learn. Practice. Evolve. The ecosystem for mastering AI in practice.",
     "caption": "Learn. Practice. Evolve. — a solid AI knowledge base to apply at work, in projects and in your career.",
     "title": "Learn Artificial Intelligence in practice, from zero to advanced.",

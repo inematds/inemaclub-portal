@@ -531,6 +531,7 @@ export default function Portal({
       <nav className="section-nav">
         <div className="container">
           <div className="section-nav-links">
+            <a href={localeHome(locale)} className="section-nav-link">{t.nav.home}</a>
             <a
               href="https://buscas.inema.club"
               target="_blank"
@@ -582,6 +583,20 @@ export default function Portal({
         <div className="container">
           <div className="recruitment-content">
             <div className="recruitment-image-wrapper">
+              <a
+                href="https://news.inema.pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="news-banner"
+                onClick={() => trackClick('https://news.inema.pro', 'News', 'banner-news-hero')}
+              >
+                <span className="news-banner-badge"><span className="news-banner-dot" aria-hidden="true" />{t.hero.newsBadge}</span>
+                <span className="news-banner-body">
+                  <span className="news-banner-title">📰 NEWS<span>.inema.pro</span></span>
+                  <span className="news-banner-text">{t.hero.newsText}</span>
+                </span>
+                <span className="news-banner-arrow" aria-hidden="true">→</span>
+              </a>
               <div className="recruitment-image">
                 <img
                   src={img("/doc/inema-hero-aprenda-pratique-evolua.webp")}
