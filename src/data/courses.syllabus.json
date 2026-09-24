@@ -2217,5 +2217,834 @@
     "sourceHash": "7a6087052cd4e18e",
     "enrichedAt": "2026-09-23",
     "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/FEP-AGI/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "09de1fdca5c9b5ca",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/FEP2026/": {
+    "structure": [
+      {
+        "title": "FEP 2026 · INEMA.CLUB PRO",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "9113bad6aa88e2f2",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agent-skills/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Transforme um bom resultado em um processo ensinável."
+      },
+      {
+        "title": "Construção",
+        "detail": "Dê à skill um trabalho claro e a liberdade certa."
+      },
+      {
+        "title": "Verificação",
+        "detail": "Troque a confiança no discurso por evidências."
+      },
+      {
+        "title": "Evolução",
+        "detail": "Reduza custo, incorpore feedback e entregue sua skill."
+      }
+    ],
+    "learn": [
+      "Transforme um bom resultado em um processo ensinável.",
+      "Entenda o que uma skill ensina / Comece pelo resultado aprovado",
+      "Construa uma skill com um trabalho claro / Calibre a liberdade do agente",
+      "Verifique com evidências / Faça uma revisão visual de verdade",
+      "Compare qualidade, custo e esforço / Evolua e entregue sua primeira skill",
+      "aprender com o uso entrada → procedimento → saída → evidência"
+    ],
+    "audience": [],
+    "build": [
+      "Uma skill com um trabalho claro",
+      "Evidências",
+      "Um relatório que prova de onde vieram os números.",
+      "Um projeto que transforma um CSV de vendas em relatório semanal, com cálculo exato, validação de entrada e evidências.",
+      "Um segundo caso acompanha o processo visual de transformar vídeo em artigo."
+    ],
+    "prerequisites": [
+      "saber abrir pastas",
+      "editar texto",
+      "conversar com um agente",
+      "Conceitos de YAML, Markdown, testes e avaliação são explicados ao longo do percurso."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "7a4163ab57d64b79",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agentes-harness/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "a2759ce67ed4404e",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agi-pratica/": {
+    "structure": [
+      {
+        "title": "Super-Agentes · INEMA.CLUB PRO",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "7efae380e1125829",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/agi-ready/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "bc1dfd181ff252e5",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/arquiteto-agentes-advocacia/": {
+    "structure": [
+      {
+        "title": "Caderno de Advocacia",
+        "detail": ""
+      },
+      {
+        "title": "Arquiteto de Agentes",
+        "detail": ""
+      },
+      {
+        "title": "INEMA.CLUB PRO",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "05921baa23af5b8b",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/arquiteto-agentes-contabil/": {
+    "structure": [
+      {
+        "title": "Caderno Contábil e Financeiro · Arquiteto de Agentes",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "c8803aea87d39c5e",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/arquiteto-agentes-saude/": {
+    "structure": [
+      {
+        "title": "Caderno de Saúde",
+        "detail": ""
+      },
+      {
+        "title": "Arquiteto de Agentes",
+        "detail": ""
+      },
+      {
+        "title": "INEMA.CLUB PRO",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "12a902c4fe7e7515",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/astra-5-prompts/": {
+    "structure": [
+      {
+        "title": "Astra: 5 Pedidos de Verdade",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "30988521b5fc2e49",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/astra-computer-use/": {
+    "structure": [
+      {
+        "title": "Fundamentos e contrato",
+        "detail": "O que é computer use, por que o Astra mudou o jogo, onde ele entra (navegador, desktop, celular) e o contrato de prompt em quatro partes que faz qualquer fluxo dar prova de conclusão."
+      },
+      {
+        "title": "Escrever o contrato de quatro partes",
+        "detail": "App exato, resultado, escopo e prova de conclusão. O molde que todos os cinco prompts seguem."
+      },
+      {
+        "title": "Transformar uma busca repetida em ferramenta",
+        "detail": "Mapear um site sem API uma vez com computer use e sair com uma linha de comando que roda com modelo mais barato."
+      },
+      {
+        "title": "Testar seu MCP ou skill como usuário novo",
+        "detail": "O agente instala, abre o app, conversa, inspeciona as chamadas de ferramenta e devolve a jornada com evidência."
+      },
+      {
+        "title": "Colocar um agente para testar outro",
+        "detail": "Reproduzir a falha do seu app pela interface real, ligar ao código e retestar no mesmo teste."
+      },
+      {
+        "title": "Levar a edição de vídeo até a entrega",
+        "detail": "Esperar o render, subir no editor, aplicar a limpeza conservadora, conferir o arquivo exportado."
+      },
+      {
+        "title": "Operar o celular pelo computador",
+        "detail": "Aplicar uma configuração no app móvel pela janela de espelhamento e provar que persistiu."
+      },
+      {
+        "title": "Os cinco fluxos",
+        "detail": "Busca que vira ferramenta, teste de MCP dentro do app, um agente testando outro, edição de vídeo até a entrega e o celular operado pelo computador. Cada um com prompt pronto e prova de conclusão."
+      }
+    ],
+    "learn": [
+      "Escrever o contrato de quatro partes",
+      "Transformar uma busca repetida em ferramenta",
+      "Testar seu MCP ou skill como usuário novo",
+      "Colocar um agente para testar outro",
+      "Levar a edição de vídeo até a entrega",
+      "Operar o celular pelo computador"
+    ],
+    "audience": [
+      "que quer usar o navegador interno e o controle de desktop com critério, não por tentativa.",
+      "e precisa simular o primeiro uso de outra pessoa antes de lançar.",
+      "que renderiza, edita e entrega vídeo toda semana e quer o trecho manual reduzido.",
+      "e quer um agente externo auditando o computer use do próprio app."
+    ],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "be463eedf695ddec",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/copilot-agentic/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "492151c17bd13471",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/curso-7pa/": {
+    "structure": [
+      {
+        "title": "Da virada ao agente em produção",
+        "detail": ""
+      },
+      {
+        "title": "01 Intenção o que e por quê",
+        "detail": ""
+      },
+      {
+        "title": "02 Contexto o mínimo que decide bem",
+        "detail": ""
+      },
+      {
+        "title": "03 Dados confiáveis a fonte da verdade",
+        "detail": ""
+      },
+      {
+        "title": "04 Critério de sucesso o que é pronto",
+        "detail": ""
+      },
+      {
+        "title": "05 Autonomia com limites de N0 a N4",
+        "detail": ""
+      },
+      {
+        "title": "06 Observação relatório e falhas",
+        "detail": ""
+      },
+      {
+        "title": "07 Supervisão humana o ciclo que evolui intenção → contexto → dados → critério → autonomia → observação → supervisão ↺",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "responder as 7 perguntas e calcular o nível de autonomia",
+      "rodar os 3 testes antes de confiar e ajustar uma regra por vez",
+      "supervisionar a primeira semana com registro de falhas"
+    ],
+    "audience": [
+      "Dos 7 princípios à ficha do seu primeiro agente"
+    ],
+    "build": [
+      "A ficha do seu primeiro agente, testada e supervisionada",
+      "um agente em produção"
+    ],
+    "prerequisites": [
+      "nenhum conhecimento técnico",
+      "Basta já ter usado o ChatGPT, o Claude ou o Gemini alguma vez."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "409f299bc663cda4",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/curso-gestao-ia/": {
+    "structure": [
+      {
+        "title": "1 Mapear o trabalho",
+        "detail": "Canvas do processo atual e futuro, com recorte do piloto."
+      },
+      {
+        "title": "2 Criar cargos digitais",
+        "detail": "Ficha de cargo, responsável e matriz de responsabilidades."
+      },
+      {
+        "title": "3 Contratar modelos e agentes",
+        "detail": "Parecer de seleção com versão, limitações e alternativa."
+      },
+      {
+        "title": "4 Treinar com contexto e Skills",
+        "detail": "Pacote de contexto versionado, duas Skills e política de memória."
+      },
+      {
+        "title": "5 Dar ferramentas e integrações",
+        "detail": "Contrato de duas ferramentas e plano de integração."
+      },
+      {
+        "title": "6 Definir autonomia e permissões",
+        "detail": "Política de autonomia e checklist de promoção."
+      },
+      {
+        "title": "7 Criar equipes multiagentes",
+        "detail": "Desenho da equipe e contratos entre cargos."
+      },
+      {
+        "title": "8 Supervisionar e tratar exceções",
+        "detail": "Matriz de exceções e roteiro de atendimento a incidente."
+      },
+      {
+        "title": "9 Evals, KPIs, custos e ROI",
+        "detail": "Relatório de avaliação e parecer econômico, com planilha de cálculo."
+      },
+      {
+        "title": "10 LOOP-R e melhoria contínua",
+        "detail": "Dossiê LOOP-R e plano de 30 dias da operação."
+      }
+    ],
+    "learn": [
+      "Escolher e mapear um processo com baseline e meta mensurável.",
+      "Escrever cargos digitais e justificar o uso de um ou vários agentes.",
+      "Comparar modelos em uma avaliação própria, incluindo custo e restrições.",
+      "Organizar conhecimento, Skills, memória e ferramentas com limites claros.",
+      "Desenhar autonomia progressiva e decisões humanas por ação e risco.",
+      "Operar uma fila de exceções e reconstruir o histórico de um caso."
+    ],
+    "audience": [
+      "gestores de áreas",
+      "donos de pequenas e médias empresas",
+      "líderes de operações",
+      "profissionais que implantarão IA nas empresas"
+    ],
+    "build": [
+      "uma operação híbrida revisável",
+      "cargos digitais",
+      "política de memória",
+      "matriz de autonomia",
+      "dossiê LOOP-R"
+    ],
+    "prerequisites": [
+      "acesso autorizado a um processo e a seu responsável",
+      "conhecimento básico da operação",
+      "dados anonimizados ou sintéticos para os exercícios",
+      "disponibilidade para medir o estado atual"
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "5277bd4fbbe89de4",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/curso-openpcbotv3/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Você sai entendendo as seis camadas do bot (canais, fila, orquestrador, cérebro, Ollama, custo) e o caminho exato que uma mensagem percorre do Telegram ao resultado."
+      },
+      {
+        "title": "Instalar e operar",
+        "detail": "Você sai com o v3 no ar como serviço systemd, bot próprio no Telegram, doctor verde e sabendo ler logs, dashboard e alertas quando algo quebra."
+      },
+      {
+        "title": "Usar no dia a dia",
+        "detail": "Você sai dominando os comandos, a fila, as tarefas e o cron, e sabendo como o cérebro guarda memória, propõe fatos pro vault e ingere e-mails, agendas e grupos."
+      },
+      {
+        "title": "Configurar e estender",
+        "detail": "Você sai sabendo parar, priorizar e dar personalidade ao bot, medir o custo fixo do prompt, criar agentes e skills, ajustar orçamento e Ollama, e o que vem nas fases 8 e 10."
+      }
+    ],
+    "learn": [
+      "o que ele é",
+      "como colocar no ar",
+      "como usar todo dia",
+      "como deixá-lo com a sua cara"
+    ],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "9dc9a9b78d0873cd",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/gpt6-astra-tecnico/": {
+    "structure": [
+      {
+        "title": "Setup e operação",
+        "detail": ""
+      },
+      {
+        "title": "GPT-6 Astra: operação técnica",
+        "detail": "Delegar, verificar, iterar e escalar com Codex, computer use, skills e MCP"
+      },
+      {
+        "title": "Escrever contratos de tarefa verificáveis",
+        "detail": "Resultado, onde e prova de conclusão"
+      },
+      {
+        "title": "Ativar o Astra nas três superfícies",
+        "detail": "App do ChatGPT, app do Codex e Codex CLI"
+      },
+      {
+        "title": "Usar computer use sem publicar besteira",
+        "detail": "Extensão vinculada, rascunho obrigatório e prova visual"
+      },
+      {
+        "title": "Iterar num projeto real com rollback",
+        "detail": "Trocar modelo, refatorar UI e reverter com comando"
+      },
+      {
+        "title": "Escrever skills de ferramenta e de gosto",
+        "detail": "Remotion em um prompt e guia visual com regras numéricas"
+      },
+      {
+        "title": "Conectar MCP e rodar tarefas longas",
+        "detail": "Blender por MCP com marcos e evidência por etapa"
+      },
+      {
+        "title": "Controlar cota e orquestrar modelos",
+        "detail": "Ler taxa de consumo e mandar volume para modelo barato"
+      },
+      {
+        "title": "Dar memória comum aos seus agentes",
+        "detail": "Base em markdown que todo agente lê antes de decidir"
+      },
+      {
+        "title": "Construir e escalar",
+        "detail": "Skills (Remotion e biblioteca de gosto), MCP, cota, orquestração e memória compartilhada"
+      }
+    ],
+    "learn": [
+      "Resultado, onde e prova de conclusão.",
+      "O molde que todos os prompts do curso seguem.",
+      "Ativar o Astra nas três superfícies.",
+      "Usar computer use sem publicar besteira.",
+      "Iterar num projeto real com rollback."
+    ],
+    "audience": [
+      "Quem já roda um agente no terminal e quer parar de improvisar."
+    ],
+    "build": [
+      "Skills (Remotion e biblioteca de gosto).",
+      "MCP para trabalhos longos (Blender).",
+      "memória compartilhada entre agentes."
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "e225279b48e93555",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/gpt6-astra/": {
+    "structure": [
+      {
+        "title": "GPT-6 Astra na prática · INEMA.CLUB PRO",
+        "detail": ""
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "029e7227e9e6129a",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/ia-do-zero-curso/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "bc1dfd181ff252e5",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/jev-curso/": {
+    "structure": [
+      {
+        "title": "Abrir meu roteiro de decisão",
+        "detail": "Materiais e laboratórios"
+      },
+      {
+        "title": "Entender",
+        "detail": "Entenda as perguntas, os erros e o custo completo."
+      },
+      {
+        "title": "Aplicar",
+        "detail": "Aplique os critérios em atendimento, documentos e agentes."
+      },
+      {
+        "title": "Construir e avaliar",
+        "detail": "Integre, compare alternativas e desenhe um piloto supervisionado."
+      },
+      {
+        "title": "O que você terá ao final",
+        "detail": "Uma decisão especificada, casos de fronteira, uma referência humana separada do ajuste e uma política de observação."
+      }
+    ],
+    "learn": [
+      "Aprenda a escolher onde usar Jev",
+      "desenhar critérios claros",
+      "testar o resultado antes de automatizar",
+      "Leve uma decisão do seu trabalho do primeiro exemplo ao projeto final",
+      "Comece sem código nas trilhas 1 e 2",
+      "A trilha 3 usa JSON, terminal e Python"
+    ],
+    "audience": [
+      "Comece sem código nas trilhas 1 e 2",
+      "A trilha 3 usa JSON, terminal e Python",
+      "Não há prova bloqueando a próxima aula."
+    ],
+    "build": [
+      "Integre, compare alternativas",
+      "desenhe um piloto supervisionado",
+      "integrar sem misturar responsabilidades",
+      "reutilizar os 17 pacotes do projeto"
+    ],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "6d1ad48e3f461cbc",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/laya-curso/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": ""
+      },
+      {
+        "title": "Motor local",
+        "detail": ""
+      },
+      {
+        "title": "Aplicação prática",
+        "detail": ""
+      },
+      {
+        "title": "Qualidade e evolução",
+        "detail": ""
+      },
+      {
+        "title": "Instalação e primeira inferência",
+        "detail": ""
+      },
+      {
+        "title": "Mesa de triagem em português",
+        "detail": ""
+      },
+      {
+        "title": "Integração com agentes e processos",
+        "detail": ""
+      },
+      {
+        "title": "Especialização e projeto final",
+        "detail": ""
+      }
+    ],
+    "learn": [
+      "Entenda os motores de decisão",
+      "rode o Laya em português",
+      "construa uma triagem que você consegue avaliar",
+      "Entenda o que a decisão resolve antes de instalar qualquer modelo",
+      "Saia do esquema no papel para uma inferência real em português",
+      "Transforme previsões em uma mesa de triagem verificável"
+    ],
+    "audience": [
+      "Você consegue avaliar",
+      "Você consegue exportar/importar JSON"
+    ],
+    "build": [
+      "Uma mesa local de atendimento com interface, API, execução pelo terminal e avaliação em tickets rotulados",
+      "A mesa local de atendimento",
+      "Uma mesa de triagem verificável"
+    ],
+    "prerequisites": [
+      "noções básicas de JSON",
+      "noções básicas de JSON. As aulas conceituais começam do zero."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "3e3e003ce6ca31c8",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/oswork-quick/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "1626fbbb1ae94c8a",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/oswork-v5/": {
+    "structure": [],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "4fabe45b54be4b32",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/oswork/": {
+    "structure": [
+      {
+        "title": "OSWORK MODELO",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK INTERFACE",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK ARQUIVOS",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK INSTRUÇÕES",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK FERRAMENTAS",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK MEMÓRIA",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK AUTOMAÇÕES",
+        "detail": ""
+      },
+      {
+        "title": "OSWORK REVISÃO",
+        "detail": ""
+      },
+      {
+        "title": "Fundamentos",
+        "detail": "Entenda o sistema antes de escolher a ferramenta."
+      },
+      {
+        "title": "Ambiente",
+        "detail": "Transforme pastas em um lugar confiável de trabalho."
+      },
+      {
+        "title": "Continuidade",
+        "detail": "Guarde decisões e recupere versões."
+      },
+      {
+        "title": "Operação",
+        "detail": "Leve uma rotina do computador ao serviço supervisionado."
+      }
+    ],
+    "learn": [
+      "Entenda o sistema antes de escolher a ferramenta.",
+      "Transforme pastas em um lugar confiável de trabalho.",
+      "Guarde decisões e recupere versões.",
+      "Leve uma rotina do computador ao serviço supervisionado."
+    ],
+    "audience": [
+      "Sem pré-requisito de programação."
+    ],
+    "build": [
+      "Você termina com uma estrutura de pastas, instruções próprias, uma Skill, histórico Git e um bot de consulta restrito.",
+      "Você termina com um projeto que continua depois da conversa.",
+      "A última trilha ensina a planejar e operar esse serviço numa VPS."
+    ],
+    "prerequisites": [
+      "Sem pré-requisito de programação."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "7854d60996cb4b83",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/pffia/": {
+    "structure": [
+      {
+        "title": "Arquiteto de Trabalho com IA",
+        "detail": "INEMA.CLUB PRO"
+      }
+    ],
+    "learn": [],
+    "audience": [],
+    "build": [],
+    "prerequisites": [],
+    "workload": null,
+    "level": null,
+    "enriched": false,
+    "sourceHash": "a3f811d5a5ef366c",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
+  },
+  "https://inematds.github.io/pilulasdeouro/": {
+    "structure": [
+      {
+        "title": "Fundamentos",
+        "detail": "Comece pequeno. Termine de verdade. Delimite o trabalho, escolha extensões com critério e aprenda a revisar o que a IA produz."
+      },
+      {
+        "title": "Conhecimento",
+        "detail": "Informação que você consegue conferir. Transforme documentos em conhecimento organizado, com evidências e mapas legíveis."
+      },
+      {
+        "title": "Produção",
+        "detail": "Dê forma às suas decisões. Crie interfaces e imagens úteis e compare modelos sem perder controle da configuração."
+      },
+      {
+        "title": "Entrega",
+        "detail": "O projeto precisa funcionar fora da conversa. Audite a informação, construa uma central de pedidos e prepare uma entrega que pode ser continuada."
+      }
+    ],
+    "learn": [
+      "Aprender a transformar um pedido em uma entrega que funciona.",
+      "Uma técnica por vez, com exemplos, prática e um jeito claro de conferir o resultado."
+    ],
+    "audience": [
+      "Você precisa apenas de um navegador e familiaridade básica com arquivos.",
+      "As práticas de código podem ser feitas com um assistente de programação."
+    ],
+    "build": [
+      "uma central de pedidos",
+      "um kit de entrega que outra pessoa consegue usar",
+      "uma central de pedidos e prepare uma entrega que pode ser continuada",
+      "conhecimento organizado, com evidências e mapas legíveis"
+    ],
+    "prerequisites": [
+      "Você precisa apenas de um navegador e familiaridade básica com arquivos.",
+      "As práticas de código podem ser feitas com um assistente de programação."
+    ],
+    "workload": null,
+    "level": null,
+    "enriched": true,
+    "sourceHash": "44039343b2c2bc90",
+    "enrichedAt": "2026-09-24",
+    "model": "openai/gpt-5.4-nano"
   }
 }
