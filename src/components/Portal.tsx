@@ -2041,6 +2041,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/FDF',       label: 'FDF',       desc: 'Designers do Futuro' },
               { href: 'https://inematds.github.io/dash/',     label: 'Dashboard', desc: 'Dashboard Mastery' },
               { href: 'https://inematds.github.io/VisionPro', label: 'VisionPro', desc: 'Construção Audiovisual com IA' },
+              { href: 'https://inematds.github.io/motion-rise/', label: 'Motion RISE v6', desc: 'Animações que saem de um pedido — edição visual para iniciantes' },
             ]},
             { title: '🤖 Robótica & Humanoides', steps: [
               { href: 'https://inematds.github.io/robot/', label: 'Robot', desc: 'Robótica e Automação' },

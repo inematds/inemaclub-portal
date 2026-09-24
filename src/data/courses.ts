@@ -1810,6 +1810,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mkivideos/',
   },
   {
+    id: 287,
+    title: 'Motion RISE v6 — Animações que saem de um pedido',
+    description: 'Dez aulas curtas para iniciantes sobre como pedir animações prontas à IA com o método RISE e o Claude Opus 5.5: slides que se movem, reel com legenda palavra por palavra, logotipo animado com som, a mesma peça em 16:9, 9:16 e 1:1 e produção em lote. Com biblioteca de pedidos prontos e conferência em cinco quadros.',
+    icon: '🎞️',
+    tags: ['IA', 'Design', 'Vídeo', 'Iniciante'],
+    url: 'https://inematds.github.io/motion-rise/',
+  },
+  {
     id: 86,
     title: 'Multiagentes - Equipes de Agentes na Prática',
     description:
@@ -2768,6 +2776,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-24', title: 'Motion RISE v6 — Animações que saem de um pedido', type: 'novo', url: 'https://inematds.github.io/motion-rise/' },
   { date: '2026-09-24', title: 'OSWork v6 — Pare de refazer o que a IA te devolve', type: 'novo', url: 'https://inematds.github.io/oswork-v6/' },
   { date: '2026-09-24', title: "Prompting de Imagem — Pense como Diretor de Fotografia", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/prompting-imagem/" },
   { date: '2026-09-24', title: "Nano Banana Pro — Campanha de Marca Completa", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/nano-banana-pro/" },

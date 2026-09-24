@@ -2555,6 +2555,19 @@
       "url": "https://inematds.github.io/mkivideos/"
     },
     {
+      "id": 287,
+      "title": "Motion RISE v6 — Animações que saem de um pedido",
+      "description": "Dez aulas curtas para iniciantes sobre como pedir animações prontas à IA com o método RISE e o Claude Opus 5.5: slides que se movem, reel com legenda palavra por palavra, logotipo animado com som, a mesma peça em 16:9, 9:16 e 1:1 e produção em lote. Com biblioteca de pedidos prontos e conferência em cinco quadros.",
+      "icon": "🎞️",
+      "tags": [
+        "IA",
+        "Design",
+        "Vídeo",
+        "Iniciante"
+      ],
+      "url": "https://inematds.github.io/motion-rise/"
+    },
+    {
       "id": 86,
       "title": "Multiagentes - Equipes de Agentes na Prática",
       "description": "Projete, orquestre e opere squads de agentes IA que entregam software de produção. 5 trilhas, 20 módulos, 120 tópicos em ~16h + 4h de projeto final. Cobre Claude Code, OpenAI Codex, Gemini CLI, coordenação multi-agente, diagnóstico, custos e multi-runtime.",
@@ -4045,6 +4058,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-24",
+      "title": "Motion RISE v6 — Animações que saem de um pedido",
+      "type": "novo",
+      "url": "https://inematds.github.io/motion-rise/"
+    },
     {
       "date": "2026-09-24",
       "title": "OSWork v6 — Pare de refazer o que a IA te devolve",
