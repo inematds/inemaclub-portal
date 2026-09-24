@@ -389,6 +389,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/jev-curso/',
   },
   {
+    id: 284,
+    title: "Nano Banana Pro — Campanha de Marca Completa",
+    description: "Planeje e revise uma campanha visual com identidade consistente. Seis módulos com exemplos esquemáticos, práticas de edição e projeto de marca fictícia.",
+    icon: "🍌",
+    tags: ["Imagem com IA", "Nano Banana", "Campanhas"],
+    url: "https://inematds.github.io/imagens-ia-cursos/cursos/nano-banana-pro/",
+  },
+  {
     id: 174,
     title: 'O Caminho Certo da IA',
     description:
@@ -1882,6 +1890,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/mundo-apos-claude/',
   },
   {
+    id: 285,
+    title: "Olhar Treinado — Gosto Visual e Estéticas",
+    description: "Desenvolva critérios para analisar imagens e escolher referências. Quatro módulos com galeria de sete estéticas, comparações visuais e exercícios de curadoria.",
+    icon: "👁️",
+    tags: ["Imagem com IA", "Estéticas", "Curadoria"],
+    url: "https://inematds.github.io/imagens-ia-cursos/cursos/olhar-treinado/",
+  },
+  {
     id: 274,
     title: 'openpcbot v3 — Seu Jarvis local: instalar, usar e configurar',
     description:
@@ -2111,6 +2127,14 @@ export const platformsData: Course[] = [
     icon: '🐉',
     tags: ['Prompting', 'Claude', 'Fable 5', 'Anthropic', 'IA'],
     url: 'https://inematds.github.io/fable5back/',
+  },
+  {
+    id: 283,
+    title: "Prompting de Imagem — Pense como Diretor de Fotografia",
+    description: "Aprenda enquadramento, luz e composição para escrever prompts com intenção. Sete módulos com diagramas, laboratório visual e 100 exercícios autorais.",
+    icon: "📷",
+    tags: ["Imagem com IA", "Prompts", "Direção visual"],
+    url: "https://inematds.github.io/imagens-ia-cursos/cursos/prompting-imagem/",
   },
   {
     id: 28,
@@ -2735,6 +2759,10 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-24', title: "Prompting de Imagem — Pense como Diretor de Fotografia", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/prompting-imagem/" },
+  { date: '2026-09-24', title: "Nano Banana Pro — Campanha de Marca Completa", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/nano-banana-pro/" },
+  { date: '2026-09-24', title: "Olhar Treinado — Gosto Visual e Estéticas", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/olhar-treinado/" },
+
   { date: '2026-09-23', title: 'Gestão de Agentes de IA — os 7 Princípios: curso v2 com 4 trilhas, 8 módulos e 48 tópicos (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/curso-7pa/' },
   { date: '2026-09-22', title: 'Agent Skills — Crie skills verificáveis no Codex (PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/agent-skills/' },
   { date: '2026-09-21', title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos', type: 'novo', url: 'https://inematds.github.io/oswork-quick/' },

@@ -107,10 +107,6 @@
     "en": "Presentation of LOOP-R, INEMA methodological framework for self-improving systems and companies via evidence-based continuous improvement cycles and agents.",
     "es": "Presentación del LOOP-R, framework metodológico INEMA para sistemas y empresas auto‑mejorables vía ciclos de mejora continua basados en evidencia y agentes."
   },
-  "Agentes no Contábil e no Financeiro — Caderno do Arquiteto de Trabalho com IA (3 aulas)": {
-    "en": "Agents in Accounting and Finance — Notebook of the AI Work Architect (3 lessons)",
-    "es": "Agentes en Contabilidad y Finanzas — Cuaderno del Arquitecto de Trabajo con IA (3 clases)"
-  },
   "Anúncios Top com IA": {
     "en": "Top Announcements with AI",
     "es": "Anuncios Top con IA"
@@ -155,10 +151,6 @@
     "en": "**The chat replies. The __terminal__ executes**. For executives and freelancers who already use AI in the browser and still copy and paste everything. Understand the four layers of an AI system, why the agent terminal is the one that does the work, and how the harness makes it work your way.",
     "es": "**El chat responde. El __terminal__ ejecuta**. Para ejecutivos y profesionales liberales que ya usan IA en el navegador y aún copian y pegan todo. Entiende las cuatro capas de un sistema de IA, por qué el terminal con agente es el que hace el trabajo, y cómo el harness lo hace trabajar a tu manera."
   },
-  "Agentes no Escritório de Advocacia — Caderno do Arquiteto de Trabalho com IA (3 aulas)": {
-    "en": "Agents in Law Firm — Notebook of the AI Work Architect (3 lessons)",
-    "es": "Agentes en el Despacho de Abogados — Cuaderno del Arquitecto de Trabajo con IA (3 clases)"
-  },
   "Discussão sobre como criar uma estrutura de trabalho com agentes de IA independente de modelo, com foco em migração do Claude Code para o Codex e outros provedores. Apresenta arquitetura concreta, fluxo de handoff e princípios de organização de contexto.": {
     "en": "Discussion on how to create a model-agnostic AI agents work framework, focusing on migration from Claude Code to Codex and other providers. Presents concrete architecture, handoff flow, and context organization principles.",
     "es": "Discusión sobre cómo crear una estructura de trabajo con agentes de IA independiente de modelo, con foco en la migración de Claude Code a Codex y otros proveedores. Presenta arquitectura concreta, flujo de handoff y principios de organización de contexto."
@@ -166,10 +158,6 @@
   "OSWork — IA como sistema de trabalho: curso v2 completo": {
     "en": "OSWork — AI as a work system: complete v2 course",
     "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
-  },
-  "Agentes na Clínica — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas)": {
-    "en": "Agents in the Clinic — Health Notebook of the AI Work Architect (3 lessons)",
-    "es": "Agentes en la Clínica — Cuaderno de Salud del Arquitecto de Trabajo con IA (3 clases)"
   },
   "google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA": {
     "en": "google-rsi — Dream-RSI: educational guide, original figures and plan to learn to research better with AI",
@@ -382,5 +370,17 @@
   "video muito bom sobre o Opus5.5": {
     "en": "very good video about Opus5.5",
     "es": "video muy bueno sobre el Opus5.5"
+  },
+  "Prompting de Imagem — Pense como Diretor de Fotografia": {
+    "en": "Image Prompting — Think Like a Director of Photography",
+    "es": "Prompting de Imagen — Piensa como Director de Fotografía"
+  },
+  "Nano Banana Pro — Campanha de Marca Completa": {
+    "en": "Nano Banana Pro — Full Brand Campaign",
+    "es": "Nano Banana Pro — Campaña de Marca Completa"
+  },
+  "Olhar Treinado — Gosto Visual e Estéticas": {
+    "en": "Trained Eye — Visual Taste and Aesthetics",
+    "es": "Mirada Entrenada — Gusto Visual y Estéticas"
   }
 }
