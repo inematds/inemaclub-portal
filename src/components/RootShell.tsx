@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import AgenteChat from '@/components/AgenteChat/AgenteChat'
+import CommunityGoal from '@/components/CommunityGoal'
 import InemaWebMCP from '@/components/InemaWebMCP'
 import { entityGraph } from '@/lib/entities'
 import '@/app/globals.css'
@@ -36,6 +37,7 @@ export default function RootShell({ lang, children }: { lang: string; children: 
         {children}
         <InemaWebMCP />
         <AgenteChat />
+        <CommunityGoal />
       </body>
     </html>
   )
