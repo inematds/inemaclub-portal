@@ -123,7 +123,10 @@ for (const url of urls) {
   try {
     const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 INEMA-syllabus' }, redirect: 'follow' })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    const source = buildSource(await res.text())
+    // O bloco de link de volta (inema-backlink:v1, posto pelo inemaseo) não é conteúdo do curso:
+    // sai antes do hash, senão toda ficha "muda" e é re-extraída (o LLM varia a cada rodada).
+    const html = (await res.text()).replace(/<!-- inema-backlink:v1[\s\S]*?<!-- \/inema-backlink:v1 -->/g, '')
+    const source = buildSource(html)
     const hash = crypto.createHash('sha256').update(source).digest('hex').slice(0, 16)
     if (!FORCE && db[url]?.sourceHash === hash) { report.push([url, 'sem mudança']); continue }
     const { json, cost } = await llm(source)
