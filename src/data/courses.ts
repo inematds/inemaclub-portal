@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-24', title: 'Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção', type: 'novo', url: 'https://inematds.github.io/expedicaosul/' },
   { date: '2026-09-23', title: 'Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas', type: 'novo', url: 'https://inematds.github.io/explicavideos/guia/' },
   { date: '2026-09-23', title: 'Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat', type: 'atualizado', url: 'https://inematds.github.io/jarvisv7/guia/' },
   { date: '2026-09-23', title: 'Jarvis Modelo + JEV — crie seu próprio assistente com decisões antes do cérebro', type: 'novo', url: 'https://inematds.github.io/jarvismodelo/guia/' },

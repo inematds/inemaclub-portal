@@ -19,10 +19,6 @@
     "en": "Evolving with Codex",
     "es": "Evolucionando con Codex"
   },
-  "Jev Decision Lab — Dez exemplos práticos, laboratório de decisões e cliente Python local": {
-    "en": "Jev Decision Lab — Ten practical examples, decision lab and local Python client",
-    "es": "Jev Decision Lab — Diez ejemplos prácticos, laboratorio de decisiones y cliente Python local"
-  },
   "Alibaba's Qwen releases open-source model for autonomous driving · TechNode": {
     "en": "Alibaba's Qwen releases open-source model for autonomous driving · TechNode",
     "es": "Alibaba's Qwen lanza modelo de código abierto para conducción autónoma · TechNode"
@@ -382,5 +378,9 @@
   "OSWork v6 — Pare de refazer o que a IA te devolve": {
     "en": "OSWork v6 — Stop redoing what the AI gives you back",
     "es": "OSWork v6 — Deja de rehacer lo que la IA te devuelve"
+  },
+  "Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção": {
+    "en": "Expedição Sul — route animations (Hua Hum, round trip) with HyperFrames engine and real production cost",
+    "es": "Expedição Sul — animaciones de trayecto (Hua Hum, ida y vuelta) con motor HyperFrames y costo real de producción"
   }
 }
