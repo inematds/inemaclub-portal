@@ -13,6 +13,46 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2494987106/6099",
+    "date": "2026-09-23",
+    "titulo": "Prompt de Orientação de TEXTO",
+    "resumo": "Tópico dedicado a um prompt de orientação de estilo para reescrita e organização de textos com IA. Define um sistema de rótulos para controlar o grau e direção da reescrita.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6099"
+  },
+  {
+    "id": "2463916523/4676",
+    "date": "2026-09-23",
+    "titulo": "Chegou o Opus 5.5",
+    "resumo": "Publicação de material relacionado ao modelo Claude Opus 5.5, com link para guia hospedado no GitHub Pages.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4676"
+  },
+  {
+    "id": "2463916523/4696",
+    "date": "2026-09-23",
+    "titulo": "Qual Modelos Usar Setembro/2026",
+    "resumo": "Análise prática dos principais modelos de IA disponíveis em setembro/2026, com recomendação de pilha e estratégia de uso combinado entre Astra, Sol e Luna.",
+    "grupo": "INEMA.LLMS",
+    "url": "https://www.inema.pro/cerebro/inema-llms/4696"
+  },
+  {
+    "id": "2433384436/6689",
+    "date": "2026-09-23",
+    "titulo": "7 Princípios da Gestão de Agentes",
+    "resumo": "Análise de material externo (provavelmente vídeo/evento sobre agentes de IA) comparando com a metodologia INEMA de gestão de agentes, confirmando alinhamento entre o que já era ensinado e o que grandes empresas de tech estão adotando como linguagem oficial.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6689"
+  },
+  {
+    "id": "vip/2026-09-23/video muito bom sobre o Opus5.5",
+    "date": "2026-09-23",
+    "titulo": "video muito bom sobre o Opus5.5",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://www.youtube.com/watch?v=rFCaGc7owT8"
+  },
+  {
     "id": "vip/2026-09-23/ALERTA",
     "date": "2026-09-23",
     "titulo": "ALERTA",
@@ -211,45 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Alibaba's Qwen releases open-source model for autonomous driving · TechNode",
     "grupo": "INEMA.VIP",
     "url": "https://share.google/07MtLury057NmGKWO"
-  },
-  {
-    "id": "vip/2026-09-09/**A AGI chegou e o prompt quase morreu · FEP 2026 · ****INEM",
-    "date": "2026-09-09",
-    "titulo": "**A AGI chegou e o prompt quase morreu · FEP 2026 · ****INEMA.CLUB**** PRO**",
-    "resumo": "O ponto central pode ser explicado assim: **o prompt não morreu; ele deixou de ser o “produto final” e virou apenas uma camada de orientação.** Com modelos mais autônomos, o valor migra de “escrever o prompt perfeito” para **definir intenção, contexto, regras, ferramentas, memória, skills e critérios de sucesso**. **Antes:** Prompt → resposta. **Agora:** Objetivo → contexto → agente → skills → ferramentas → execução → validação → resultado. Ou, numa frase forte: > **A era do prompt perfeito está acabando. A nova habilidade é ensinar a IA a trabalhar.** E isso encaixa muito bem em **FEP 2026** como evolução de *Engenharia de Prompt* para algo maior: **Engenharia de Intenção + Contexto + Execução**.",
-    "grupo": "INEMA.VIP",
-    "url": "https://share.google/07MtLury057NmGKWO"
-  },
-  {
-    "id": "vip/2026-09-08/olha os Projetos  q produzi, alguns Atualizei tambem",
-    "date": "2026-09-08",
-    "titulo": "olha os Projetos  q produzi, alguns Atualizei tambem",
-    "resumo": "### Últimas Atualizações de Projetos — 07/09 1. **cerebro-integra** — Liga o segundo cérebro a Telegram, site via API local, importadores, n8n e voz, sem dependências. 2. **cerebro-mcp** — Servidor MCP que expõe o segundo cérebro como ferramentas para Claude Code, Codex, Claude Desktop, n8n e bots. 3. **cerebro-duplo** — Um cérebro, dois agentes: o mesmo segundo cérebro no Claude Code e no Codex, com roteador de tarefa e paridade. 4. **IA do Zero** — Os primeiros 20 pedidos de quem nunca usou IA, por situação, com dicas práticas. 5. **agi-newprof** — Vídeo do YouTube vira análise, vídeo completo narrado e 3 reels (inemaimg + Agnes + inemavox + HyperFrames), entregues no Telegram. 6. **copilot-agentes-kit** — Kit prático de Copilot + Agentes para Empresas: modelos para o trabalho + verificador e teste headless para cursos v5. 7. **astra-2cerebro** — Seu segundo cérebro com IA para Claude Code e Codex, em arquivos que você controla. 8. **Kit do Arquiteto de Agentes** — Sete modelos que viram a especificação do seu agente numa página, com ensaio simulado. 9. **openpcbot v3** — Assistente pessoal com fila durável, gestor do Ollama, custo por chamada e memória PT-BR. 10. **Anúncios Top com IA** — 4 skills pro Claude Code: espionar, dirigir, auditar e montar anúncios em vídeo com IA. 11. **yt-pub-livesx2** — Publicador YouTube para N canais: 1 daemon, 1 banco, fila de jobs e canais em YAML.",
-    "grupo": "INEMA.VIP",
-    "url": ""
-  },
-  {
-    "id": "vip/2026-09-08/E os Cursos",
-    "date": "2026-09-08",
-    "titulo": "E os Cursos",
-    "resumo": "## Últimas Atualizações de Cursos 07/09 — **NOVO** — **Agentes na Clínica** — Caderno de Saúde do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **Agentes no Contábil e no Financeiro** — Caderno do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **Agentes no Escritório de Advocacia** — Caderno do Arquiteto de Trabalho com IA (3 aulas) 07/09 — **NOVO** — **FEP 2026** — A AGI chegou e o prompt quase morreu: o FEP reescrito técnica por técnica (7 aulas, de-para e kit de 12 briefings) 07/09 — **NOVO** — **IA do Zero** — Os primeiros pedidos de quem nunca usou IA, com o porquê de cada um (4 aulas) 07/09 — **NOVO** — **Copilot + Agentes para Empresas** — Do trabalho com IA à automação dos processos corporativos (9 aulas, formato v5) 07/09 — **NOVO** — **GPT-6 Astra: operação técnica** — Delegar, verificar, iterar e escalar com Codex (8 módulos) 07/09 — **NOVO** — **GPT-6 Astra na prática** — Delegue a tarefa inteira ao novo assistente, sem programar (8 aulas) 07/09 — **NOVO** — **FEP → AGI** — Do prompt à intenção: a evolução do FEP em 9 aulas, das 5 eras à virada de set/2026 07/09 — **NOVO** — **Super-Agentes** — Da IA que responde à IA que trabalha: delegue responsabilidades reais a agentes de IA (8 aulas) 07/09 — **NOVO** — **Os Super-Agentes Chegaram** — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas) 06/09 — **NOVO** — **Arquiteto de Trabalho com IA** — Redesenhe processos para humanos dirigirem e agentes executarem (8 aulas) Estao no inema.club ou no inema.pro",
-    "grupo": "INEMA.VIP",
-    "url": ""
-  },
-  {
-    "id": "vip/2026-09-08/Olha q eu Falava... Chegando o Momento",
-    "date": "2026-09-08",
-    "titulo": "Olha q eu Falava... Chegando o Momento",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://www.tiktok.com/@inemafuturos/video/7162198751837228293"
-  },
-  {
-    "id": "vip/2026-09-07/A IA não é mais Projetada é Cultivada",
-    "date": "2026-09-07",
-    "titulo": "A IA não é mais Projetada é Cultivada",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://www.instagram.com/reel/Dc6W8oygjFK/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ=="
   }
 ];
