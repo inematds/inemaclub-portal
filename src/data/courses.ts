@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-24', title: 'StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL', type: 'atualizado', url: 'https://inematds.github.io/stickshift/guia/' },
   { date: '2026-09-24', title: 'Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção', type: 'novo', url: 'https://inematds.github.io/expedicaosul/' },
   { date: '2026-09-23', title: 'Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas', type: 'novo', url: 'https://inematds.github.io/explicavideos/guia/' },
   { date: '2026-09-23', title: 'Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat', type: 'atualizado', url: 'https://inematds.github.io/jarvisv7/guia/' },
@@ -2318,9 +2319,9 @@ export const platformsData: Course[] = [
     id: 220,
     title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex',
     description:
-      'App de menu-bar e CLI para macOS que troca o modelo e o effort do Claude Code ou Codex CLI na pane de terminal focada, digitando os mesmos comandos que você digitaria à mão. Fail-closed: só age depois de provar pane idle, processo local certo e binário assinado — senão recusa com um motivo.',
+      'Troca o modelo e o effort do Claude Code ou do Codex digitando os mesmos comandos que você digitaria à mão. No macOS é um app de menu-bar; na v2, para Linux e WSL, é um painel web com o mesmo câmbio e um chat que manda prompts para o agente do terminal escolhido (tmux). Fail-closed: só age depois de provar que o agente está ocioso — senão recusa com um motivo.',
     icon: '⚙️',
-    tags: ['Claude Code', 'Codex', 'CLI', 'macOS', 'Produtividade', 'Automação'],
+    tags: ['Claude Code', 'Codex', 'CLI', 'macOS', 'Linux', 'Produtividade', 'Automação'],
     url: 'https://inematds.github.io/stickshift/guia/',
   },
   {

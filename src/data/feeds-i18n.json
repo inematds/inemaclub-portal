@@ -63,10 +63,6 @@
     "en": "LOOP-R - Development by Agents",
     "es": "LOOP-R - Desarrollo por Agentes"
   },
-  "Jev Decision Lab — 20 casos, experimentos e comparação com uso simples": {
-    "en": "Jev Decision Lab — 20 cases, experiments and comparison with simple use",
-    "es": "Jev Decision Lab — 20 casos, experimentos y comparación con uso simple"
-  },
   "IA Cultivada — não se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G": {
     "en": "Cultivated AI — not programmed, cultivated https://share.google/8FKgpBHd9AewWZn9G",
     "es": "IA Cultivada — no se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G"
@@ -382,5 +378,9 @@
   "Motion RISE v6 — Animações que saem de um pedido": {
     "en": "Motion RISE v6 — Animations that come from a request",
     "es": "Motion RISE v6 — Animaciones que salen de un pedido"
+  },
+  "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL": {
+    "en": "StickShift v2 — Web Panel + Chat for Claude Code and Codex on Linux/WSL",
+    "es": "StickShift v2 — Panel Web + Chat para Claude Code y Codex en Linux/WSL"
   }
 }

@@ -3342,13 +3342,14 @@
     {
       "id": 220,
       "title": "StickShift — Câmbio de Menu-Bar pro Claude Code e Codex",
-      "description": "App de menu-bar e CLI para macOS que troca o modelo e o effort do Claude Code ou Codex CLI na pane de terminal focada, digitando os mesmos comandos que você digitaria à mão. Fail-closed: só age depois de provar pane idle, processo local certo e binário assinado — senão recusa com um motivo.",
+      "description": "Troca o modelo e o effort do Claude Code ou do Codex digitando os mesmos comandos que você digitaria à mão. No macOS é um app de menu-bar; na v2, para Linux e WSL, é um painel web com o mesmo câmbio e um chat que manda prompts para o agente do terminal escolhido (tmux). Fail-closed: só age depois de provar que o agente está ocioso — senão recusa com um motivo.",
       "icon": "⚙️",
       "tags": [
         "Claude Code",
         "Codex",
         "CLI",
         "macOS",
+        "Linux",
         "Produtividade",
         "Automação"
       ],
@@ -5604,6 +5605,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-24",
+      "title": "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/stickshift/guia/"
+    },
+    {
+      "date": "2026-09-24",
       "title": "Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção",
       "type": "novo",
       "url": "https://inematds.github.io/expedicaosul/"
@@ -7113,7 +7120,7 @@
     {
       "icon": "⚙️",
       "name": "stickshift",
-      "desc": "App de menu-bar e CLI para macOS que troca o modelo e o effort do Claude Code ou Codex CLI na pane de terminal focada, digitando os mesmos comandos…",
+      "desc": "Câmbio de modelo e esforço para Claude Code e Codex: app de menu-bar no macOS e, na v2, painel web + chat para Linux/WSL via tmux. Fail-closed: só digita depois de provar que o agente está ocioso.",
       "url": "https://inematds.github.io/stickshift/guia/",
       "badge": "Guia"
     },
