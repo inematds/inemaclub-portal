@@ -1,6 +1,7 @@
 import Script from 'next/script'
 import AgenteChat from '@/components/AgenteChat/AgenteChat'
 import InemaWebMCP from '@/components/InemaWebMCP'
+import { entityGraph } from '@/lib/entities'
 import '@/app/globals.css'
 
 export default function RootShell({ lang, children }: { lang: string; children: React.ReactNode }) {
@@ -28,6 +29,10 @@ export default function RootShell({ lang, children }: { lang: string; children: 
         `}</Script>
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(entityGraph).replace(/</g, '\\u003c') }}
+        />
         {children}
         <InemaWebMCP />
         <AgenteChat />

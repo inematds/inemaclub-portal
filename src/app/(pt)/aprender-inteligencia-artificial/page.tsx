@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { courses, learningTrails } from '@/lib/catalog'
 import { seoPages } from '@/data/seo-pages'
 import { iaPages } from '@/content/ia'
-import { OFFICIAL_PROFILES, SITE_URL } from '@/lib/site'
+import { SITE_URL } from '@/lib/site'
+import { authorRef, publisherRef } from '@/lib/entities'
 
 const page = seoPages.find((item) => item.path === '/aprender-inteligencia-artificial/')!
 const PAGE_URL = `${SITE_URL}${page.path}`
@@ -78,14 +79,8 @@ export default function AprenderIaPage() {
       inLanguage: 'pt-BR',
       dateModified: page.updated,
       datePublished: page.updated,
-      author: {
-        '@type': 'Person',
-        '@id': `${SITE_URL}/#nei`,
-        name: 'Nei Maldaner',
-        url: `${SITE_URL}/conhecimento/quem-e-nei-maldaner/`,
-        sameAs: OFFICIAL_PROFILES,
-      },
-      publisher: { '@id': `${SITE_URL}/#organization` },
+      author: authorRef,
+      publisher: publisherRef,
       about: { '@type': 'Thing', name: 'Inteligência artificial' },
     },
     {

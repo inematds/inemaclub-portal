@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { WEBMCP_CHROME_DOCS, WEBMCP_SPEC_URL, webMcpKnowledge } from '@/data/webmcp-knowledge'
 import { SITE_URL } from '@/lib/site'
+import { authorRef, publisherRef } from '@/lib/entities'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -42,9 +43,9 @@ export default async function KnowledgePage({ params }: Props) {
       datePublished: '2026-08-30',
       dateModified: '2026-08-30',
       inLanguage: 'pt-BR',
-      author: { '@type': 'Person', name: 'Nei Maldaner' },
-      reviewedBy: { '@type': 'Organization', name: 'INEMA' },
-      publisher: { '@id': `${SITE_URL}/#organization` },
+      author: authorRef,
+      reviewedBy: publisherRef,
+      publisher: publisherRef,
       citation: [WEBMCP_SPEC_URL, WEBMCP_CHROME_DOCS],
     },
     {

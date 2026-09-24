@@ -1,5 +1,6 @@
 import { courses } from '@/lib/catalog'
-import { OFFICIAL_PROFILES, SITE_URL } from '@/lib/site'
+import { SITE_URL } from '@/lib/site'
+import { authorRef, publisherRef } from '@/lib/entities'
 import type { IaPage } from '@/content/ia'
 import InlineText, { plainText } from './InlineText'
 
@@ -29,14 +30,8 @@ export function buildIaJsonLd(page: IaPage) {
       datePublished: page.published,
       dateModified: page.updated,
       keywords: page.keyword,
-      author: {
-        '@type': 'Person',
-        '@id': `${SITE_URL}/#nei`,
-        name: 'Nei Maldaner',
-        url: `${SITE_URL}/conhecimento/quem-e-nei-maldaner/`,
-        sameAs: OFFICIAL_PROFILES,
-      },
-      publisher: { '@id': `${SITE_URL}/#organization` },
+      author: authorRef,
+      publisher: publisherRef,
       isPartOf: { '@id': `${SITE_URL}${page.pillar.path}#article` },
     },
     {

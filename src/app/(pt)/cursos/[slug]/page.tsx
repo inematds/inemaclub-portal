@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { courses } from '@/lib/catalog'
 import { SITE_URL } from '@/lib/site'
+import { ORG_ID, authorRef } from '@/lib/entities'
 import { getSyllabus } from '@/lib/syllabus'
 
 type Props = { params: Promise<{ slug: string }> }
@@ -56,8 +57,8 @@ export default async function CoursePage({ params }: Props) {
       name: course.title,
       description: course.description,
       url: course.canonicalUrl,
-      provider: { '@type': 'EducationalOrganization', '@id': `${SITE_URL}/#organization`, name: 'INEMA.club' },
-      author: { '@type': 'Person', name: 'Nei Maldaner' },
+      provider: { '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'INEMA.club' },
+      author: authorRef,
       teaches: syllabus?.learn.length ? syllabus.learn : course.tags,
       ...(syllabus?.structure.length ? { syllabusSections: syllabus.structure.map((item) => ({ '@type': 'Syllabus', name: item.title, ...(item.detail ? { description: item.detail } : {}) })) } : {}),
       ...(syllabus?.audience.length ? { audience: { '@type': 'EducationalAudience', audienceType: syllabus.audience.join('; ') } } : {}),

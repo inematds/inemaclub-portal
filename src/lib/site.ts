@@ -5,15 +5,6 @@ export const SITE_NAME = 'INEMA.club'
 export const SITE_DESCRIPTION =
   'Plataforma brasileira de formação prática em inteligência artificial, agentes e automação, com cursos, projetos, trilhas e comunidade.'
 
-export const OFFICIAL_PROFILES = [
-  'https://github.com/inematds',
-  'https://github.com/NeiMaldaner',
-  'https://www.youtube.com/@inematdsx',
-  'https://www.instagram.com/inema.tds',
-  'https://www.tiktok.com/@inema.tds',
-  'https://www.facebook.com/inematds',
-]
-
 export function slugify(value: string) {
   return value
     .normalize('NFD')
