@@ -191,10 +191,6 @@
     "en": "Astra Higgsfield Skill",
     "es": "Skill Astra Higgsfield"
   },
-  "LOOP-R — Sua Empresa que Aprende Sozinha (5 trilhas, 21 aulas)": {
-    "en": "LOOP-R — Your Self‑Learning Company (5 tracks, 21 lessons)",
-    "es": "LOOP-R — Tu Empresa que Aprende Sola (5 rutas, 21 clases)"
-  },
   "Jev na prática — 36 aulas atualizadas, 17 pacotes e roteiro de lotes e avaliação": {
     "en": "Jev in practice — 36 updated lessons, 17 packages and batch script and assessment",
     "es": "Jev en la práctica — 36 clases actualizadas, 17 paquetes y guion de lotes y evaluación"
@@ -382,5 +378,9 @@
   "Olhar Treinado — Gosto Visual e Estéticas": {
     "en": "Trained Eye — Visual Taste and Aesthetics",
     "es": "Mirada Entrenada — Gusto Visual y Estéticas"
+  },
+  "OSWork v6 — Pare de refazer o que a IA te devolve": {
+    "en": "OSWork v6 — Stop redoing what the AI gives you back",
+    "es": "OSWork v6 — Deja de rehacer lo que la IA te devuelve"
   }
 }

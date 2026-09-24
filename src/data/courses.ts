@@ -1968,6 +1968,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/oswork-v5/',
   },
   {
+    id: 286,
+    title: 'OSWork v6 — Pare de refazer o que a IA te devolve',
+    description: 'A edição do OSWork para iniciantes: 7 aulas de uns 15 minutos, com telas de chat simuladas, antes e depois reais e passo a passo visual. Você monta pastas por assunto, uma ficha com as suas regras, um molde de pedido e uma rotina de conferência, sem instalar nada.',
+    icon: '🧭',
+    tags: ['IA', 'Produtividade', 'Iniciante', 'Visual'],
+    url: 'https://inematds.github.io/oswork-v6/',
+  },
+  {
     id: 280,
     title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos',
     description: 'A versão direta do OSWork: os mesmos sete assuntos da edição completa, com o desenho explicando e o texto só amarrando. Sete aulas de 10 a 13 minutos, 65 diagramas, sem programação e sem tela de comandos.',
@@ -2759,6 +2767,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-24', title: 'OSWork v6 — Pare de refazer o que a IA te devolve', type: 'novo', url: 'https://inematds.github.io/oswork-v6/' },
   { date: '2026-09-24', title: "Prompting de Imagem — Pense como Diretor de Fotografia", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/prompting-imagem/" },
   { date: '2026-09-24', title: "Nano Banana Pro — Campanha de Marca Completa", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/nano-banana-pro/" },
   { date: '2026-09-24', title: "Olhar Treinado — Gosto Visual e Estéticas", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/olhar-treinado/" },
