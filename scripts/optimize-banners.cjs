@@ -2,7 +2,7 @@
 // sharp is supplied by Next.js. Originals remain available for future edits.
 const fs = require('node:fs');
 const sharp = require('sharp');
-const sources = ['conviteinemap.png', 'oswork.png', 'jev.png', 'gestao-agentes-2027.png', 'ia-cultivada.png', 'claude-codex-agnostico.png', 'agi-chegou.png', 'content2video.png', 'webmcp2.png', 'capa-musicavideo-v2.jpg', 'vczero.png', 'inemaagenteshubv.jpg'];
+const sources = ['conviteinemap.png', 'claude-opus55.png', 'oswork.png', 'jev.png', 'gestao-agentes-2027.png', 'ia-cultivada.png', 'claude-codex-agnostico.png', 'agi-chegou.png', 'content2video.png', 'webmcp2.png', 'capa-musicavideo-v2.jpg', 'vczero.png', 'inemaagenteshubv.jpg'];
 (async () => {
   const rows = [];
   for (const lang of ['pt', 'en', 'es']) {

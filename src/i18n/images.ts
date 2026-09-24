@@ -8,6 +8,7 @@ import type { Locale } from './locales'
 export const LOCALIZED_IMAGES = new Set([
   'oswork.webp',
   'jev.webp',
+  'claude-opus55.webp',
   'agi-chegou.webp',
   'capa-musicavideo-v2.webp',
   'claude-codex-agnostico.webp',

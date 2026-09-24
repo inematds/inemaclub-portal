@@ -658,6 +658,34 @@ export default function Portal({
         </div>
       </section>
 
+      {/* Guia — Claude Opus 5.5 (destaque) */}
+      <section id="guia-claude-opus55" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href="https://inematds.github.io/claude-opus55/guia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://inematds.github.io/claude-opus55/guia/', 'Guia Claude Opus 5.5', 'guia')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.65 0.14 75)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.018 75)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 28 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img loading="lazy" decoding="async"
+              src={img("/doc/claude-opus55.webp")}
+              alt={t.events.opus55Alt}
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+        </div>
+      </section>
+
       {/* Evento — OSWork — IA como sistema de trabalho (destaque) */}
       <section id="evento-oswork" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">
