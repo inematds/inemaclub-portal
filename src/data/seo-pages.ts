@@ -19,7 +19,21 @@ export const seoPages: SeoPage[] = [
     title: 'Como aprender Inteligência Artificial do zero ao avançado',
     description:
       'Guia prático do INEMA para aprender IA na ordem certa: prompts, ferramentas, agentes de código, automação e projetos reais, com cursos, trilhas e comunidade.',
-    updated: '2026-09-23',
+    updated: '2026-09-24',
+  },
+  {
+    path: '/agentes-de-inteligencia-artificial/',
+    title: 'Agentes de inteligência artificial: onde aprender em português',
+    description:
+      'Onde aprender agentes de IA em português: trilhas do iniciante ao avançado com cursos práticos do INEMA, ferramentas ensinadas e quem ensina.',
+    updated: '2026-09-24',
+  },
+  {
+    path: '/comunidade-inteligencia-artificial/',
+    title: 'Comunidade de inteligência artificial em português',
+    description:
+      'Como funciona a comunidade de IA do INEMA: curadoria diária de novidades, cursos, projetos com código e eventos em português. Veja como entrar.',
+    updated: '2026-09-24',
   },
   {
     path: '/ia/',

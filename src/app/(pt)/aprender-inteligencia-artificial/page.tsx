@@ -51,7 +51,7 @@ const FAQ = [
   {
     question: 'Os cursos do INEMA são gratuitos?',
     answer:
-      'Os cursos listados no catálogo público do INEMA.club podem ser abertos a partir de cada ficha; as condições de acesso aparecem na aplicação de cada curso. A formação contínua, com trilhas completas e a comunidade INEMA.VIP, faz parte do INEMA.PRO.',
+      'Sim. Os cursos do INEMA.club são abertos e gratuitos: cada ficha leva direto à aplicação do curso. A formação contínua, com trilhas completas, provas, certificados e a comunidade INEMA.VIP, faz parte do INEMA.PRO.',
   },
   {
     question: 'Qual a diferença entre usar IA e construir com IA?',
@@ -182,6 +182,14 @@ export default function AprenderIaPage() {
             <li>Pular os fundamentos de prompt e ir direto para agentes complexos.</li>
             <li>Pedir tudo em uma única mensagem, sem contexto nem exemplo do resultado esperado.</li>
             <li>Confiar na resposta da IA sem conferir — principalmente números, links e código.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="outros-guias">
+          <h2 id="outros-guias">Os outros guias do INEMA</h2>
+          <ul className="seo-list">
+            <li><a href="/agentes-de-inteligencia-artificial/">Agentes de IA: onde aprender em português</a>, com as trilhas de cursos de agentes do iniciante ao avançado.</li>
+            <li><a href="/comunidade-inteligencia-artificial/">Comunidade de inteligência artificial em português</a>: o que é aberto no INEMA.club e o que faz parte do INEMA.PRO.</li>
           </ul>
         </section>
 

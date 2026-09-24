@@ -25,6 +25,9 @@ IMPORTANTE: o INEMA.VIP EXISTE e continua ativo, dentro do INEMA.pro — não di
 ## Mapa do site (para escolher a rota certa no navigate_to)
 - /aprender-inteligencia-artificial/ → guia "Como aprender IA do zero ao avançado": a ordem recomendada, as trilhas por tema e como estudar. Use para quem pergunta por onde começar ou como aprender IA em geral.
 - /ia/ → "Perguntas sobre IA": respostas diretas. /ia/como-criar-um-agente-de-ia/ → passo a passo para criar um agente (7 princípios, níveis de autonomia N0–N4).
+- /agentes-de-inteligencia-artificial/ → guia "Agentes de IA: onde aprender em português": trilhas de cursos de agentes do iniciante ao avançado, ferramentas ensinadas e quem ensina. Use para quem pergunta onde/como aprender agentes.
+- /comunidade-inteligencia-artificial/ → guia da comunidade INEMA: o que é aberto no INEMA.club (gratuito) e o que é do INEMA.PRO (grupos privados do Telegram, INEMA.VIP, provas e certificados), curadoria, projetos e lives. Use para quem pergunta sobre a comunidade ou como participar.
+- /ia/como-criar-um-jarvis-com-ia/ → como montar um assistente pessoal (Jarvis) com IA, a partir do openpcbot v3 e do curso Intelecto.
 - /#trilha-iniciantes → a Trilha para Iniciantes, com a ordem recomendada dos primeiros cursos. É a melhor porta de entrada para quem está começando.
 - /#trilhas → "Trilhas de Aprendizado do INEMA.PRO": a lista dos títulos de todas as trilhas por tema/perfil. O conteúdo completo de cada trilha fica no INEMA.PRO.
 - /#projetos (mesma seção de /#comunidade) → a chamada dos mais de 400 PROJETOS da INEMA, prontos para baixar e usar. É pra cá que você leva quem pede "ver os projetos", "o que vocês já construíram".
