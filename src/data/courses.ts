@@ -399,6 +399,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/jev-curso/',
   },
   {
+    id: 291,
+    title: "Kling AI v6.2 — do Básico ao Multi-Shot",
+    description: "Teste câmera, movimento, referências e sequências de planos no Kling em 15 aulas com práticas e revisão.",
+    icon: "🎬",
+    tags: ["Vídeo", "IA", "Kling", "Intermediário"],
+    url: "https://inematds.github.io/curso-kling-ai/",
+  },
+  {
     id: 284,
     title: "Nano Banana Pro v6.2 — Campanha de Marca Completa",
     description: "Crie uma campanha fictícia com produto, personagem, referências e revisão de identidade. Seis módulos e 18 aulas curtas com práticas, ilustrações Codex e progresso local.",
@@ -2809,6 +2817,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Kling AI v6.2 — do Básico ao Multi-Shot", type: 'novo', url: "https://inematds.github.io/curso-kling-ai/" },
   { date: '2026-09-25', title: "Seu Primeiro Vídeo com IA em 24 Horas v6.2", type: 'novo', url: "https://inematds.github.io/curso-primeiro-video-ia/" },
   { date: '2026-09-25', title: "Olhar Treinado v6.2 — Gosto Visual e Estéticas", type: 'atualizado', url: "https://inematds.github.io/curso-olhar-treinado/" },
   { date: '2026-09-25', title: "Nano Banana Pro v6.2 — Campanha de Marca Completa", type: 'atualizado', url: "https://inematds.github.io/curso-nano-banana-pro/" },

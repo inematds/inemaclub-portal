@@ -131,10 +131,6 @@
     "en": "Astra Higgsfield Skill",
     "es": "Skill Astra Higgsfield"
   },
-  "Jev na prática — 36 aulas atualizadas, 17 pacotes e roteiro de lotes e avaliação": {
-    "en": "Jev in practice — 36 updated lessons, 17 packages and batch script and assessment",
-    "es": "Jev en la práctica — 36 clases actualizadas, 17 paquetes y guion de lotes y evaluación"
-  },
   "Tópico documenta um framework de prompts para criar vídeos virais de pintura em pedra usando IA, com etapa de geração de imagem final seguida de vídeo timelapse image-to-video.": {
     "en": "Topic documents a prompt framework for creating viral stone painting videos using IA, with a final image generation step followed by a timelapse image-to-video video.",
     "es": "Tópico documenta un framework de prompts para crear vídeos virales de pintura en piedra usando IA, con etapa de generación de imagen final seguida de vídeo timelapse image-to-video."
@@ -382,5 +378,9 @@
   "Seu Primeiro Vídeo com IA em 24 Horas v6.2": {
     "en": "Your First Video with AI in 24 Hours v6.2",
     "es": "Tu Primer Video con IA en 24 Horas v6.2"
+  },
+  "Kling AI v6.2 — do Básico ao Multi-Shot": {
+    "en": "Kling AI v6.2 — from Basic to Multi-Shot",
+    "es": "Kling AI v6.2 — del Básico al Multi-Shot"
   }
 }
