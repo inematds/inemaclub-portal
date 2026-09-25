@@ -2115,6 +2115,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/curso-7pa/', label: 'Gestão de Agentes: 7 Princípios', desc: 'Intenção, limites e supervisão — do N0 ao N4, com projeto final' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
+              { href: "https://inematds.github.io/curso-audio-video-ia/", label: "Áudio que Vende: Voz, Música e Sound Design v6.2", desc: "Monte voz, música, três efeitos e ambiente em 12 aulas, com kit de áudio, créditos e comparação com e sem efeitos." },
               { href: "https://inematds.github.io/curso-estilos-cinema-ia/", label: "Estilos e Cinema: Seedance + Higgsfield v6.2", desc: "Compare duas linguagens visuais, organize referências e produza uma sequência curta com decisões de câmera verificáveis." },
               { href: "https://inematds.github.io/curso-avatares-ia/", label: "Avatares, Lip Sync e Motion Control v6.2", desc: "Prepare rosto, voz e movimento em 12 aulas: HeyGen, fala no Kling, referências próprias e personagem consistente." },
               { href: "https://inematds.github.io/curso-kling-ai/", label: "Kling AI v6.2 — do Básico ao Multi-Shot", desc: "Teste câmera, movimento, referências e sequências de planos no Kling em 15 aulas com práticas e revisão." },

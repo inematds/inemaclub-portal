@@ -328,6 +328,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/astra-5-prompts/',
   },
   {
+    id: 294,
+    title: "Áudio que Vende: Voz, Música e Sound Design v6.2",
+    description: "Monte voz, música, três efeitos e ambiente em 12 aulas, com kit de áudio, créditos e comparação com e sem efeitos.",
+    icon: "🎧",
+    tags: ["Áudio", "Vídeo", "IA", "CapCut", "Iniciante"],
+    url: "https://inematds.github.io/curso-audio-video-ia/",
+  },
+  {
     id: 234,
     title: 'Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade',
     description:
@@ -2833,6 +2841,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Áudio que Vende: Voz, Música e Sound Design v6.2", type: 'novo', url: "https://inematds.github.io/curso-audio-video-ia/" },
   { date: '2026-09-25', title: "Estilos e Cinema: Seedance + Higgsfield v6.2", type: 'novo', url: "https://inematds.github.io/curso-estilos-cinema-ia/" },
   { date: '2026-09-25', title: "Avatares, Lip Sync e Motion Control v6.2", type: 'novo', url: "https://inematds.github.io/curso-avatares-ia/" },
   { date: '2026-09-25', title: "Kling AI v6.2 — do Básico ao Multi-Shot", type: 'novo', url: "https://inematds.github.io/curso-kling-ai/" },

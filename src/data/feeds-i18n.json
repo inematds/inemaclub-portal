@@ -143,10 +143,6 @@
     "en": "Release of a structured guide called \"AI as System — From Chat to your own agent environment\", which teaches the evolution of using AI from simple chatbot to an agent environment with memory, Skills, Git, Telegram and VPS. The material is organized into 29 numbered lessons.",
     "es": "Publicación de una guía estructurada llamada \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que enseña la evolución del uso de IA desde un chatbot simple hasta un entorno de agentes con memoria, Skills, Git, Telegram y VPS. El material está organizado en 29 lecciones numeradas."
   },
-  "Laya & Jev — Curso v2: decisões estruturadas e triagem prática em português": {
-    "en": "Laya & Jev — Course v2: structured decisions and practical screening in Portuguese",
-    "es": "Laya & Jev — Curso v2: decisiones estructuradas y cribado práctico en portugués"
-  },
   "OSWork v5 — Organize seu ambiente de IA": {
     "en": "OSWork v5 — Organize your AI environment",
     "es": "OSWork v5 — Organiza tu entorno de IA"
@@ -382,5 +378,9 @@
   "Estilos e Cinema: Seedance + Higgsfield v6.2": {
     "en": "Styles and Cinema: Seedance + Higgsfield v6.2",
     "es": "Estilos y Cine: Seedance + Higgsfield v6.2"
+  },
+  "Áudio que Vende: Voz, Música e Sound Design v6.2": {
+    "en": "Audio that Sells: Voice, Music and Sound Design v6.2",
+    "es": "Audio que Vende: Voz, Música y Sound Design v6.2"
   }
 }

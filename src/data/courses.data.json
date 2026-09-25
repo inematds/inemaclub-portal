@@ -191,6 +191,20 @@
       "url": "https://inematds.github.io/astra-5-prompts/"
     },
     {
+      "id": 294,
+      "title": "Áudio que Vende: Voz, Música e Sound Design v6.2",
+      "description": "Monte voz, música, três efeitos e ambiente em 12 aulas, com kit de áudio, créditos e comparação com e sem efeitos.",
+      "icon": "🎧",
+      "tags": [
+        "Áudio",
+        "Vídeo",
+        "IA",
+        "CapCut",
+        "Iniciante"
+      ],
+      "url": "https://inematds.github.io/curso-audio-video-ia/"
+    },
+    {
       "id": 234,
       "title": "Auditoria de Ablação — Enxugue seu Claude Code sem perder qualidade",
       "description": "A Anthropic apagou mais de 80% do prompt de sistema do Claude Code quando o Opus 5 saiu. Aprenda a fazer o mesmo com seu CLAUDE.md, suas skills e seus hooks: classifique cada instrução, corte com segurança e prove por teste A/B/C que a versão mínima não piorou. 4 trilhas, 8 módulos, 48 tópicos.",
@@ -4140,6 +4154,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-25",
+      "title": "Áudio que Vende: Voz, Música e Sound Design v6.2",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-audio-video-ia/"
+    },
     {
       "date": "2026-09-25",
       "title": "Estilos e Cinema: Seedance + Higgsfield v6.2",
