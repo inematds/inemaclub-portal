@@ -163,10 +163,6 @@
     "en": "who has ;claude he is available",
     "es": "quien tiene el ;claude está disponible"
   },
-  "Claude Opus 5.5 — pesquisa, gráficos e plano de atualização (PT/EN/ES)": {
-    "en": "Claude Opus 5.5 — research, charts and update plan (PT/EN/ES)",
-    "es": "Claude Opus 5.5 — investigación, gráficos y plan de actualización (PT/EN/ES)"
-  },
   "7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)": {
     "en": "7PA — Agent Sheet: the 7 principles of AI agent management in practice (PT/EN/ES)",
     "es": "7PA — Ficha del Agente: los 7 principios de la gestión de agentes de IA en la práctica (PT/EN/ES)"
@@ -382,5 +378,9 @@
   "Expedição Sul — Hua Hum: nosso plano × nossa aventura (estrada interrompida, fronteira fechada, fotos reais da viagem, 9:16 e 16:9)": {
     "en": "South Expedition — Hua Hum: our plan × our adventure (road interrupted, border closed, real travel photos, 9:16 and 16:9)",
     "es": "Expedición Sur — Hua Hum: nuestro plan × nuestra aventura (carretera interrumpida, frontera cerrada, fotos reales del viaje, 9:16 y 16:9)"
+  },
+  "San Martín — estudo de redesign de site municipal: diagnóstico, pesquisa de sites de governo 2026 e proposta de home": {
+    "en": "San Martín — study of municipal website redesign: diagnosis, 2026 government website research and home proposal",
+    "es": "San Martín — estudio de rediseño de sitio municipal: diagnóstico, investigación de sitios de gobierno 2026 y propuesta de home"
   }
 }

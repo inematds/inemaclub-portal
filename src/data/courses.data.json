@@ -5909,6 +5909,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-25",
+      "title": "San Martín — estudo de redesign de site municipal: diagnóstico, pesquisa de sites de governo 2026 e proposta de home",
+      "type": "novo",
+      "url": "https://inematds.github.io/sanmartin/"
+    },
+    {
+      "date": "2026-09-25",
       "title": "Expedição Sul — Hua Hum: nosso plano × nossa aventura (estrada interrompida, fronteira fechada, fotos reais da viagem, 9:16 e 16:9)",
       "type": "atualizado",
       "url": "https://inematds.github.io/expedicaosul/guia/"
@@ -7129,6 +7135,13 @@
       "name": "google-rsi",
       "desc": "Dream-RSI: guia educativo sobre replay de experimentos, estratégias de pesquisa e autoaperfeiçoamento recursivo, com figuras originais, resultados contextualizados e plano de aprendizagem.",
       "url": "https://inematds.github.io/google-rsi/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🏛️",
+      "name": "sanmartin",
+      "desc": "Estudo de redesign do site da Municipalidad de San Martín (AR): diagnóstico do site atual, o que os melhores sites de governo fazem em 2026 (busca primeiro, navegação por tarefa, WCAG 2.2 AA) e uma proposta conceitual de home.",
+      "url": "https://inematds.github.io/sanmartin/",
       "badge": "Guia"
     },
     {
