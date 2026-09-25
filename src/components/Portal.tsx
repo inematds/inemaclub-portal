@@ -2167,6 +2167,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/oswork/', label: 'OSWork', desc: 'Do chat ao ambiente de agentes — curso v2 com práticas' },
               { href: 'https://inematds.github.io/oswork-v5/', label: 'OSWork v5', desc: 'Organize seu ambiente de IA — edição sem código, para quem não programa' },
               { href: 'https://inematds.github.io/oswork-v6/', label: 'OSWork v6', desc: 'Pare de refazer o que a IA te devolve — edição visual para iniciantes' },
+              { href: 'https://inematds.github.io/oswork-v62/', label: 'OSWork v6.2', desc: 'Sua IA precisa de um sistema — o v2 completo no formato visual do v6' },
               { href: 'https://inematds.github.io/oswork-quick/', label: 'OSWork Quick', desc: 'A versão direta e visual — os mesmos assuntos em 77 minutos' },
               { href: 'https://inematds.github.io/agenticbasico/', label: 'Agentic Básico', desc: 'Fundamentos de Agentes IA — 5 Pilares + Arena' },
               { href: 'https://inematds.github.io/agenticos/',           label: 'Agentic OS',     desc: 'Sistema Operacional do Trabalho com IA' },

@@ -1988,6 +1988,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/oswork-v6/',
   },
   {
+    id: 288,
+    title: 'OSWork v6.2 — Sua IA precisa de um sistema',
+    description: 'O conteúdo completo do OSWork v2 no formato visual do v6: uma aula de uns 15 minutos por tópico, com o texto integral do v2 como material complementar e glossário dos termos técnicos. Módulo 1 (modelos, régua de qualidade, acesso e autonomia) disponível; os outros 7 módulos chegam em sequência.',
+    icon: '🧰',
+    tags: ['IA', 'Codex', 'Agentes', 'Visual'],
+    url: 'https://inematds.github.io/oswork-v62/',
+  },
+  {
     id: 280,
     title: 'OSWork Quick — Organize seu ambiente de IA em 77 minutos',
     description: 'A versão direta do OSWork: os mesmos sete assuntos da edição completa, com o desenho explicando e o texto só amarrando. Sete aulas de 10 a 13 minutos, 65 diagramas, sem programação e sem tela de comandos.',
@@ -2779,6 +2787,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: 'OSWork v6.2 — Sua IA precisa de um sistema', type: 'novo', url: 'https://inematds.github.io/oswork-v62/' },
   { date: '2026-09-24', title: 'Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas', type: 'atualizado', url: 'https://inematds.github.io/webmcp-2-builder/' },
   { date: '2026-09-24', title: 'Motion RISE v6 — Animações que saem de um pedido', type: 'novo', url: 'https://inematds.github.io/motion-rise/' },
   { date: '2026-09-24', title: 'OSWork v6 — Pare de refazer o que a IA te devolve', type: 'novo', url: 'https://inematds.github.io/oswork-v6/' },
