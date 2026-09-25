@@ -5909,6 +5909,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-25",
+      "title": "Congelou — curta com efeito time freeze feito com a assinatura Kling AI: vídeo, prompts, scripts e como repetir",
+      "type": "novo",
+      "url": "https://inematds.github.io/congelou/guia/"
+    },
+    {
+      "date": "2026-09-25",
       "title": "RSI Copiloto — sistema com IA, memória, rotinas e melhoria supervisionada para pessoas e negócios",
       "type": "novo",
       "url": "https://inematds.github.io/rsi-copiloto/guia/"
@@ -7007,6 +7013,13 @@
     }
   ],
   "communityProjects": [
+    {
+      "icon": "🥶",
+      "name": "congelou",
+      "desc": "Curta de 38s com efeito time freeze feito 100% pela assinatura Kling AI (CLI oficial kling): keyframe com rosto real, 4 clipes Kling 3.0 com áudio nativo encadeados pelo último quadro e montagem ffmpeg. Guia com o vídeo, prompts, scripts e como repetir com outro assunto. Em português, inglês e espanhol.",
+      "url": "https://inematds.github.io/congelou/guia/",
+      "badge": "Guia"
+    },
     {
       "icon": "🧭",
       "name": "RSI Copiloto — assistente que evolui com revisão",
