@@ -2164,11 +2164,11 @@ export const platformsData: Course[] = [
   },
   {
     id: 283,
-    title: "Prompting de Imagem — Pense como Diretor de Fotografia",
-    description: "Aprenda enquadramento, luz e composição para escrever prompts com intenção. Sete módulos com diagramas, laboratório visual e 100 exercícios autorais.",
+    title: "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia",
+    description: "Aprenda enquadramento, luz e composição em 21 aulas curtas, com práticas, revisão espaçada e ilustrações do Codex. Sete módulos para dirigir e revisar imagens de produto.",
     icon: "📷",
     tags: ["Imagem com IA", "Prompts", "Direção visual"],
-    url: "https://inematds.github.io/imagens-ia-cursos/cursos/prompting-imagem/",
+    url: "https://inematds.github.io/curso-prompting-imagem/",
   },
   {
     id: 28,
@@ -2801,6 +2801,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia", type: 'atualizado', url: "https://inematds.github.io/curso-prompting-imagem/" },
   { date: '2026-09-25', title: 'RSI v6.2 — Entenda e aplique ciclos de melhoria em IA', type: 'novo', url: 'https://inematds.github.io/curso-rsi/' },
   { date: '2026-09-25', title: 'OSWork v6.2 — Sua IA precisa de um sistema', type: 'novo', url: 'https://inematds.github.io/oswork-v62/' },
   { date: '2026-09-24', title: 'Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas', type: 'atualizado', url: 'https://inematds.github.io/webmcp-2-builder/' },

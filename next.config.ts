@@ -31,6 +31,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: '/cursos/283-prompting-de-imagem-pense-como-diretor-de-fotografia/',
+        destination: '/cursos/283-prompting-de-imagem-v6-2-pense-como-diretor-de-fotografia/',
+        permanent: true,
+      },
       // Pós-pagamento Asaas: o successUrl do checkout precisa estar no domínio
       // cadastrado na conta Asaas (inema.club) — daqui manda pro app do pay.
       {

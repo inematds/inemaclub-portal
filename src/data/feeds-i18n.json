@@ -19,10 +19,6 @@
     "en": "Evolving with Codex",
     "es": "Evolucionando con Codex"
   },
-  "openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)": {
-    "en": "openpcbot v3 — Your local Jarvis: install, use and configure (4 tracks, 8 modules, 48 topics)",
-    "es": "openpcbot v3 — Tu Jarvis local: instalar, usar y configurar (4 rutas, 8 módulos, 48 temas)"
-  },
   "`IA para quem decide · 6 aulas curtas`": {
     "en": "`AI for those who decide · 6 short lessons`",
     "es": "`IA para quien decide · 6 clases cortas`"
@@ -382,5 +378,9 @@
   "RSI Copiloto — sistema com IA, memória, rotinas e melhoria supervisionada para pessoas e negócios": {
     "en": "RSI Copiloto — system with AI, memory, routines and supervised improvement for people and businesses",
     "es": "RSI Copiloto — sistema con IA, memoria, rutinas y mejora supervisada para personas y negocios"
+  },
+  "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia": {
+    "en": "Image Prompting v6.2 — Think like a Director of Photography",
+    "es": "Prompting de Imagem v6.2 — Piensa como Director de Fotografía"
   }
 }
