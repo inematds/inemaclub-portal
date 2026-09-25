@@ -2,7 +2,7 @@ import type { Locale } from './locales'
 
 /** Rotas publicadas em PT/EN/ES no repo inemaeventos. */
 const PAGES = [
-  '/', '/oswork/', '/jev/', '/ia-cultivada/', '/claude-codex/', '/gestao-ia/', '/agi-ready/', '/webmcp/',
+  '/', '/rsi/', '/oswork/', '/jev/', '/ia-cultivada/', '/claude-codex/', '/gestao-ia/', '/agi-ready/', '/webmcp/',
   '/content2video.html', '/musicavideo.html', '/inemaccbot.html', '/agentes-hub-v.html',
   '/vibe-code-do-zero.html', '/arquitetura-de-intencao.html',
   '/meridiano-foto/', '/meridiano-video/', '/meridiano-voo/',
