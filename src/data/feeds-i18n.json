@@ -179,10 +179,6 @@
     "en": "Laya & Jev — Course v2: structured decisions and practical screening in Portuguese",
     "es": "Laya & Jev — Curso v2: decisiones estructuradas y cribado práctico en portugués"
   },
-  "HOLO Mãos — controle a tela com as mãos, em português": {
-    "en": "HOLO Mãos — control the screen with your hands, in Portuguese",
-    "es": "HOLO Mãos — controla la pantalla con las manos, en portugués"
-  },
   "OSWork v5 — Organize seu ambiente de IA": {
     "en": "OSWork v5 — Organize your AI environment",
     "es": "OSWork v5 — Organiza tu entorno de IA"
@@ -382,5 +378,9 @@
   "jev-open — especialista classificador local: triagem de advocacia e clínica, treino e serviço em CPU": {
     "en": "jev-open — local specialist classifier: law and clinic triage, training and service on CPU",
     "es": "jev-open — especialista clasificador local: triaje de abogacía y clínica, entrenamiento y servicio en CPU"
+  },
+  "RSI — a IA que melhora a IA: pesquisa verificada, LOOP-R e como empresas, governo e pessoas se beneficiam": {
+    "en": "RSI — the AI that improves AI: verified research, LOOP-R and how companies, government and people benefit",
+    "es": "RSI — la IA que mejora la IA: investigación verificada, LOOP-R y cómo empresas, gobierno y personas se benefician"
   }
 }

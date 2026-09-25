@@ -5630,6 +5630,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-25",
+      "title": "RSI — a IA que melhora a IA: pesquisa verificada, LOOP-R e como empresas, governo e pessoas se beneficiam",
+      "type": "novo",
+      "url": "https://inematds.github.io/rsi/guia/"
+    },
+    {
+      "date": "2026-09-25",
       "title": "jev-open — especialista classificador local: triagem de advocacia e clínica, treino e serviço em CPU",
       "type": "novo",
       "url": "https://inematds.github.io/jev-open/guia/"
@@ -6728,6 +6734,13 @@
       "name": "7pa-segredo",
       "desc": "O segredo dos 7 princípios da gestão de agentes de IA: 5 revelações sobre o que esses textos realmente são. É gestão de gente com outro nome, e é o que quem programa com agentes de código já faz todo dia. Em português, inglês e espanhol.",
       "url": "https://inematds.github.io/7pa-segredo/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🌀",
+      "name": "RSI — a IA que melhora a IA",
+      "desc": "Autoaperfeiçoamento recursivo (RSI) com pesquisa verificada: o que aconteceu em setembro de 2026 (DeepSeek DSec, Anthropic Opus 5.5, padrões da OpenAI) e o que os vídeos exageraram; como big techs, empresas e governo (incluindo o Brasil) vão usar; o LOOP-R, os 4 níveis e Human on the Loop; trilhas práticas para pessoas de negócio e de tecnologia; riscos (reward hacking, avaliação) e fontes.",
+      "url": "https://inematds.github.io/rsi/guia/",
       "badge": "Guia"
     },
     {
