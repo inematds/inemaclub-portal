@@ -232,6 +232,20 @@
       "url": "https://inematds.github.io/curso-avatares-ia/"
     },
     {
+      "id": 293,
+      "title": "Estilos e Cinema: Seedance + Higgsfield v6.2",
+      "description": "Compare duas linguagens visuais, organize referências e produza uma sequência curta com decisões de câmera verificáveis.",
+      "icon": "🎬",
+      "tags": [
+        "Vídeo",
+        "IA",
+        "Seedance",
+        "Higgsfield",
+        "Intermediário"
+      ],
+      "url": "https://inematds.github.io/curso-estilos-cinema-ia/"
+    },
+    {
       "id": 251,
       "title": "Formação Vendas com IA 1 — 43 Oportunidades de Ganhar Dinheiro com IA",
       "description": "43 oportunidades reais de ganhar dinheiro com IA: o que é, pra quem vender, como cobrar e o primeiro passo de cada uma. 4 trilhas, 8 módulos.",
@@ -4126,6 +4140,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-25",
+      "title": "Estilos e Cinema: Seedance + Higgsfield v6.2",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-estilos-cinema-ia/"
+    },
     {
       "date": "2026-09-25",
       "title": "Avatares, Lip Sync e Motion Control v6.2",

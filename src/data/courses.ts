@@ -354,6 +354,14 @@ export const platformsData: Course[] = [
     url: "https://inematds.github.io/curso-avatares-ia/",
   },
   {
+    id: 293,
+    title: "Estilos e Cinema: Seedance + Higgsfield v6.2",
+    description: "Compare duas linguagens visuais, organize referências e produza uma sequência curta com decisões de câmera verificáveis.",
+    icon: "🎬",
+    tags: ["Vídeo", "IA", "Seedance", "Higgsfield", "Intermediário"],
+    url: "https://inematds.github.io/curso-estilos-cinema-ia/",
+  },
+  {
     id: 251,
     title: 'Formação Vendas com IA 1 — 43 Oportunidades de Ganhar Dinheiro com IA',
     description:
@@ -2825,6 +2833,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Estilos e Cinema: Seedance + Higgsfield v6.2", type: 'novo', url: "https://inematds.github.io/curso-estilos-cinema-ia/" },
   { date: '2026-09-25', title: "Avatares, Lip Sync e Motion Control v6.2", type: 'novo', url: "https://inematds.github.io/curso-avatares-ia/" },
   { date: '2026-09-25', title: "Kling AI v6.2 — do Básico ao Multi-Shot", type: 'novo', url: "https://inematds.github.io/curso-kling-ai/" },
   { date: '2026-09-25', title: "Seu Primeiro Vídeo com IA em 24 Horas v6.2", type: 'novo', url: "https://inematds.github.io/curso-primeiro-video-ia/" },

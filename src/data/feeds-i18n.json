@@ -107,10 +107,6 @@
     "en": "Discussion on how to create a model-agnostic AI agents work framework, focusing on migration from Claude Code to Codex and other providers. Presents concrete architecture, handoff flow, and context organization principles.",
     "es": "Discusión sobre cómo crear una estructura de trabajo con agentes de IA independiente de modelo, con foco en la migración de Claude Code a Codex y otros proveedores. Presenta arquitectura concreta, flujo de handoff y principios de organización de contexto."
   },
-  "OSWork — IA como sistema de trabalho: curso v2 completo": {
-    "en": "OSWork — AI as a work system: complete v2 course",
-    "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
-  },
   "Isso esta ficando em uma velocidade incrivel": {
     "en": "This is getting at an incredible speed",
     "es": "Esto está quedando a una velocidad increíble"
@@ -382,5 +378,9 @@
   "Avatares, Lip Sync e Motion Control v6.2": {
     "en": "Avatars, Lip Sync and Motion Control v6.2",
     "es": "Avatares, Lip Sync y Motion Control v6.2"
+  },
+  "Estilos e Cinema: Seedance + Higgsfield v6.2": {
+    "en": "Styles and Cinema: Seedance + Higgsfield v6.2",
+    "es": "Estilos y Cine: Seedance + Higgsfield v6.2"
   }
 }
