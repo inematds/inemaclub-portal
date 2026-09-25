@@ -2068,7 +2068,7 @@ export const platformsData: Course[] = [
   {
     id: 288,
     title: 'OSWork v6.2 — Sua IA precisa de um sistema',
-    description: 'O conteúdo completo do OSWork v2 no formato visual do v6: uma aula de uns 15 minutos por tópico, com o texto integral do v2 como material complementar e glossário dos termos técnicos. Curso completo: 8 módulos e 48 aulas, de modelos e encomendas de trabalho a terminal, Codex, Markdown, AGENTS.md, Skills, Git, bot no Telegram e VPS. Em português, inglês e espanhol.',
+    description: 'O conteúdo completo do OSWork v2 no formato visual do v6: uma aula de uns 15 minutos por tópico, com o texto integral do v2 como material complementar e glossário dos termos técnicos. Curso completo: 8 módulos e 48 aulas, de modelos e encomendas de trabalho a terminal, Codex, Markdown, AGENTS.md, Skills, Git, bot no Telegram e VPS. Com vídeo-aulas do Nei, uma por módulo. Em português, inglês e espanhol.',
     icon: '🧰',
     tags: ['IA', 'Codex', 'Agentes', 'Visual'],
     url: 'https://inematds.github.io/oswork-v62/',
@@ -2897,6 +2897,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: 'OSWork v6.2 — vídeo-aulas com o Nei, uma por módulo', type: 'atualizado', url: 'https://inematds.github.io/oswork-v62/videos/' },
   { date: '2026-09-25', title: "Influenciador IA em 21 Dias", type: 'novo', url: "https://inematds.github.io/curso-influenciador-ia/" },
   { date: '2026-09-25', title: "Monetização: Portfólio, Ofertas, Preços e Clientes", type: 'novo', url: "https://inematds.github.io/curso-monetizacao-criadores/" },
   { date: '2026-09-25', title: "Redes Sociais para Criadores IA v6.2 — o Sistema Viral", type: 'novo', url: "https://inematds.github.io/curso-redes-sociais-ia/" },

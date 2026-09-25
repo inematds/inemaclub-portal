@@ -255,10 +255,6 @@
     "en": "very good video about Opus5.5",
     "es": "video muy bueno sobre el Opus5.5"
   },
-  "OSWork v6 — Pare de refazer o que a IA te devolve": {
-    "en": "OSWork v6 — Stop redoing what the AI gives you back",
-    "es": "OSWork v6 — Deja de rehacer lo que la IA te devuelve"
-  },
   "Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção": {
     "en": "Expedição Sul — route animations (Hua Hum, round trip) with HyperFrames engine and real production cost",
     "es": "Expedição Sul — animaciones de trayecto (Hua Hum, ida y vuelta) con motor HyperFrames y costo real de producción"
@@ -382,5 +378,9 @@
   "Influenciador IA em 21 Dias": {
     "en": "AI Influencer in 21 Days",
     "es": "Influencer IA en 21 Días"
+  },
+  "OSWork v6.2 — vídeo-aulas com o Nei, uma por módulo": {
+    "en": "OSWork v6.2 — video lessons with Nei, one per module",
+    "es": "OSWork v6.2 — video-clases con Nei, una por módulo"
   }
 }
