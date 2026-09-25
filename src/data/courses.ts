@@ -2595,6 +2595,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/video-explicativo/guia/',
   },
   {
+    id: 296,
+    title: "Visual DNA: Direção de Arte e Branding com IA v6.2",
+    description: "15 aulas para definir a mensagem da marca, organizar referências, criar regras visuais com IA e conferir três aplicações.",
+    icon: "🎨",
+    tags: ["Direção de Arte", "Branding", "IA", "Design", "Iniciante"],
+    url: "https://inematds.github.io/curso-visual-dna/",
+  },
+  {
     id: 231,
     title: 'Workshop Avançado de Engenharia de Software com IA',
     description:
@@ -2849,6 +2857,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Visual DNA: Direção de Arte e Branding com IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-visual-dna/" },
   { date: '2026-09-25', title: "CapCut para Criadores de Vídeo IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-capcut-ia/" },
   { date: '2026-09-25', title: "Áudio que Vende: Voz, Música e Sound Design v6.2", type: 'novo', url: "https://inematds.github.io/curso-audio-video-ia/" },
   { date: '2026-09-25', title: "Estilos e Cinema: Seedance + Higgsfield v6.2", type: 'novo', url: "https://inematds.github.io/curso-estilos-cinema-ia/" },

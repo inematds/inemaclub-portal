@@ -2046,6 +2046,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/astra-5-prompts/', label: 'Astra: 5 Pedidos', desc: '5 pedidos de resultado para o GPT-6 Astra' },
             ]},
             { title: '🎨 Design & Visual', steps: [
+              { href: "https://inematds.github.io/curso-visual-dna/", label: "Visual DNA: Direção de Arte e Branding com IA v6.2", desc: "15 aulas para definir a mensagem da marca, organizar referências, criar regras visuais com IA e conferir três aplicações." },
               { href: "https://inematds.github.io/curso-prompting-imagem/", label: "Prompting de Imagem v6.2", desc: "Pense como Diretor de Fotografia" },
               { href: "https://inematds.github.io/curso-nano-banana-pro/", label: "Nano Banana Pro v6.2", desc: "Campanha de Marca Completa" },
               { href: "https://inematds.github.io/curso-olhar-treinado/", label: "Olhar Treinado v6.2", desc: "Gosto Visual e Estéticas" },

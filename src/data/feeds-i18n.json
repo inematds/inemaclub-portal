@@ -143,10 +143,6 @@
     "en": "Release of a structured guide called \"AI as System — From Chat to your own agent environment\", which teaches the evolution of using AI from simple chatbot to an agent environment with memory, Skills, Git, Telegram and VPS. The material is organized into 29 numbered lessons.",
     "es": "Publicación de una guía estructurada llamada \"IA como Sistema — Do Chat ao seu próprio ambiente de agentes\", que enseña la evolución del uso de IA desde un chatbot simple hasta un entorno de agentes con memoria, Skills, Git, Telegram y VPS. El material está organizado en 29 lecciones numeradas."
   },
-  "OSWork Quick — Organize seu ambiente de IA em 77 minutos": {
-    "en": "OSWork Quick — Organize your AI environment in 77 minutes",
-    "es": "OSWork Quick — Organiza tu entorno de IA en 77 minutos"
-  },
   "Agent Skills — Crie skills verificáveis no Codex (PT/EN/ES)": {
     "en": "Agent Skills — Build verifiable skills in Codex (PT/EN/ES)",
     "es": "Agent Skills — Crea skills verificables en Codex (PT/EN/ES)"
@@ -382,5 +378,9 @@
   "CapCut para Criadores de Vídeo IA v6.2": {
     "en": "CapCut for Video Creators AI v6.2",
     "es": "CapCut para Creadores de Video IA v6.2"
+  },
+  "Visual DNA: Direção de Arte e Branding com IA v6.2": {
+    "en": "Visual DNA: Art Direction and Branding with AI v6.2",
+    "es": "Visual DNA: Dirección de Arte y Branding con IA v6.2"
   }
 }
