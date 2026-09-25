@@ -362,6 +362,14 @@ export const platformsData: Course[] = [
     url: "https://inematds.github.io/curso-avatares-ia/",
   },
   {
+    id: 295,
+    title: "CapCut para Criadores de Vídeo IA v6.2",
+    description: "Monte um vídeo vertical com cortes, movimento, som e legendas. 18 aulas práticas com quatro clipes de exercício e conferência do arquivo final.",
+    icon: "✂️",
+    tags: ["CapCut", "Edição", "Vídeo", "IA", "Iniciante"],
+    url: "https://inematds.github.io/curso-capcut-ia/",
+  },
+  {
     id: 293,
     title: "Estilos e Cinema: Seedance + Higgsfield v6.2",
     description: "Compare duas linguagens visuais, organize referências e produza uma sequência curta com decisões de câmera verificáveis.",
@@ -2841,6 +2849,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "CapCut para Criadores de Vídeo IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-capcut-ia/" },
   { date: '2026-09-25', title: "Áudio que Vende: Voz, Música e Sound Design v6.2", type: 'novo', url: "https://inematds.github.io/curso-audio-video-ia/" },
   { date: '2026-09-25', title: "Estilos e Cinema: Seedance + Higgsfield v6.2", type: 'novo', url: "https://inematds.github.io/curso-estilos-cinema-ia/" },
   { date: '2026-09-25', title: "Avatares, Lip Sync e Motion Control v6.2", type: 'novo', url: "https://inematds.github.io/curso-avatares-ia/" },
