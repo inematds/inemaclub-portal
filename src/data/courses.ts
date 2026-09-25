@@ -400,11 +400,11 @@ export const platformsData: Course[] = [
   },
   {
     id: 284,
-    title: "Nano Banana Pro — Campanha de Marca Completa",
-    description: "Planeje e revise uma campanha visual com identidade consistente. Seis módulos com exemplos esquemáticos, práticas de edição e projeto de marca fictícia.",
+    title: "Nano Banana Pro v6.2 — Campanha de Marca Completa",
+    description: "Crie uma campanha fictícia com produto, personagem, referências e revisão de identidade. Seis módulos e 18 aulas curtas com práticas, ilustrações Codex e progresso local.",
     icon: "🍌",
     tags: ["Imagem com IA", "Nano Banana", "Campanhas"],
-    url: "https://inematds.github.io/imagens-ia-cursos/cursos/nano-banana-pro/",
+    url: "https://inematds.github.io/curso-nano-banana-pro/",
   },
   {
     id: 174,
@@ -2801,6 +2801,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Nano Banana Pro v6.2 — Campanha de Marca Completa", type: 'atualizado', url: "https://inematds.github.io/curso-nano-banana-pro/" },
   { date: '2026-09-25', title: "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia", type: 'atualizado', url: "https://inematds.github.io/curso-prompting-imagem/" },
   { date: '2026-09-25', title: 'RSI v6.2 — Entenda e aplique ciclos de melhoria em IA', type: 'novo', url: 'https://inematds.github.io/curso-rsi/' },
   { date: '2026-09-25', title: 'OSWork v6.2 — Sua IA precisa de um sistema', type: 'novo', url: 'https://inematds.github.io/oswork-v62/' },

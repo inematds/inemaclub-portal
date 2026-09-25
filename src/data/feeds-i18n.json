@@ -115,10 +115,6 @@
     "en": "OSWork — AI as a work system: complete v2 course",
     "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
   },
-  "Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos": {
-    "en": "Golden Pills — AI in practical projects: 4 tracks, 12 modules and 72 topics",
-    "es": "Pílulas de Ouro — IA en proyectos prácticos: 4 rutas, 12 módulos y 72 temas"
-  },
   "Jev na prática — 36 aulas enriquecidas, 20 casos e 12 laboratórios": {
     "en": "Jev in practice — 36 enriched lessons, 20 cases and 12 labs",
     "es": "Jev en la práctica — 36 clases enriquecidas, 20 casos y 12 laboratorios"
@@ -382,5 +378,9 @@
   "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia": {
     "en": "Image Prompting v6.2 — Think like a Director of Photography",
     "es": "Prompting de Imagem v6.2 — Piensa como Director de Fotografía"
+  },
+  "Nano Banana Pro v6.2 — Campanha de Marca Completa": {
+    "en": "Nano Banana Pro v6.2 — Full Brand Campaign",
+    "es": "Nano Banana Pro v6.2 — Campaña de Marca Completa"
   }
 }
