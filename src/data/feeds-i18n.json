@@ -187,10 +187,6 @@
     "en": "Agent Skills — Build verifiable skills in Codex (PT/EN/ES)",
     "es": "Agent Skills — Crea skills verificables en Codex (PT/EN/ES)"
   },
-  "Astra Básico — vídeos completos em português, espanhol e inglês, com avatar, ilustrações e legendas": {
-    "en": "Astra Básico — complete videos in Portuguese, Spanish and English, with avatar, illustrations and subtitles",
-    "es": "Astra Básico — videos completos en portugués, español e inglés, con avatar, ilustraciones y subtítulos"
-  },
   "Laya x JEV": {
     "en": "Laya x JEV",
     "es": "Laya x JEV"
@@ -382,5 +378,9 @@
   "RSI v6.2 — Entenda e aplique ciclos de melhoria em IA": {
     "en": "RSI v6.2 — Understand and apply improvement cycles in AI",
     "es": "RSI v6.2 — Entiende y aplica ciclos de mejora en IA"
+  },
+  "RSI Copiloto — sistema com IA, memória, rotinas e melhoria supervisionada para pessoas e negócios": {
+    "en": "RSI Copiloto — system with AI, memory, routines and supervised improvement for people and businesses",
+    "es": "RSI Copiloto — sistema con IA, memoria, rutinas y mejora supervisada para personas y negocios"
   }
 }
