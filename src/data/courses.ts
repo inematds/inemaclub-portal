@@ -370,6 +370,14 @@ export const platformsData: Course[] = [
     url: "https://inematds.github.io/curso-capcut-ia/",
   },
   {
+    id: 297,
+    title: "Design Essencial no Figma para Criadores",
+    description: "Monte uma capa e três páginas com quadros, imagens, texto, estilos e componentes. Revise e exporte uma série organizada em 18 aulas no formato v6.2.",
+    icon: "🎨",
+    tags: ["Design", "Figma", "IA", "Iniciante"],
+    url: "https://inematds.github.io/curso-figma-criadores/",
+  },
+  {
     id: 293,
     title: "Estilos e Cinema: Seedance + Higgsfield v6.2",
     description: "Compare duas linguagens visuais, organize referências e produza uma sequência curta com decisões de câmera verificáveis.",
@@ -2857,6 +2865,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Design Essencial no Figma para Criadores", type: 'novo', url: "https://inematds.github.io/curso-figma-criadores/" },
   { date: '2026-09-25', title: "Visual DNA: Direção de Arte e Branding com IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-visual-dna/" },
   { date: '2026-09-25', title: "CapCut para Criadores de Vídeo IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-capcut-ia/" },
   { date: '2026-09-25', title: "Áudio que Vende: Voz, Música e Sound Design v6.2", type: 'novo', url: "https://inematds.github.io/curso-audio-video-ia/" },
