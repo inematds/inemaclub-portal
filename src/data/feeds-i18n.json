@@ -111,10 +111,6 @@
     "en": "JurisFlow — Law firm management with AI legal assistant",
     "es": "JurisFlow — Gestión de despacho de abogados con asistente jurídico de IA"
   },
-  "Terminal e Harness — Por que o terminal vence o chat (6 aulas + vídeo, para executivos e profissionais liberais)": {
-    "en": "Terminal and Harness — Why the terminal beats chat (6 lessons + video, for executives and freelancers)",
-    "es": "Terminal e Harness — Por qué el terminal supera al chat (6 clases + video, para ejecutivos y profesionales liberales)"
-  },
   "Compilação de um guia/método de Gestão de Agentes de IA aplicado a empresas, tratando agentes como força de trabalho digital gerenciável com KPIs, níveis de autonomia e melhoria contínua.": {
     "en": "Compilation of a guide/method for AI Agents Management applied to companies, treating agents as a manageable digital workforce with KPIs, autonomy levels, and continuous improvement.",
     "es": "Compilación de una guía/método de Gestión de Agentes de IA aplicado a empresas, tratando a los agentes como fuerza de trabajo digital gestionable con KPIs, niveles de autonomía y mejora continua."
@@ -146,10 +142,6 @@
   "OSWork — IA como sistema de trabalho: curso v2 completo": {
     "en": "OSWork — AI as a work system: complete v2 course",
     "es": "OSWork — IA como sistema de trabajo: curso v2 completo"
-  },
-  "google-rsi — Dream-RSI: guia educativo, figuras originais e plano para aprender a pesquisar melhor com IA": {
-    "en": "google-rsi — Dream-RSI: educational guide, original figures and plan to learn to research better with AI",
-    "es": "google-rsi — Dream-RSI: guía educativa, figuras originales y plan para aprender a investigar mejor con IA"
   },
   "Pílulas de Ouro — IA em projetos práticos: 4 trilhas, 12 módulos e 72 tópicos": {
     "en": "Golden Pills — AI in practical projects: 4 tracks, 12 modules and 72 topics",
@@ -382,5 +374,13 @@
   "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL": {
     "en": "StickShift v2 — Web Panel + Chat for Claude Code and Codex on Linux/WSL",
     "es": "StickShift v2 — Panel Web + Chat para Claude Code y Codex en Linux/WSL"
+  },
+  "Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas": {
+    "en": "WebMCP 2 Training — Lab of chained actions and updated annotations",
+    "es": "Formación WebMCP 2 — Laboratorio de acciones encadenadas y annotations actualizadas"
+  },
+  "WebMCP Readiness — Annotations atualizadas na descoberta estática": {
+    "en": "WebMCP Readiness — Updated annotations in static discovery",
+    "es": "WebMCP Readiness — Annotations actualizadas en el descubrimiento estático"
   }
 }

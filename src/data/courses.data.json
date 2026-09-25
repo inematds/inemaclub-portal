@@ -1777,7 +1777,7 @@
     {
       "id": 247,
       "title": "Formação WebMCP 2 — Builder",
-      "description": "Primeira fase prática da Formação WebMCP. Aprenda a transformar sites em superfícies operáveis por agentes usando formulários declarativos, tools JavaScript, JSON Schema, cancelamento, fallback e um validador avançado de catálogos.",
+      "description": "Formação prática com ferramentas declarativas e imperativas, schemas, cancelamento e fallback. Inclui laboratório de ações encadeadas para buscar, filtrar e montar uma lista de estudos, além de validador com as quatro annotations do draft.",
       "icon": "🧰",
       "tags": [
         "WebMCP",
@@ -4061,6 +4061,12 @@
   "updatesData": [
     {
       "date": "2026-09-24",
+      "title": "Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/webmcp-2-builder/"
+    },
+    {
+      "date": "2026-09-24",
       "title": "Motion RISE v6 — Animações que saem de um pedido",
       "type": "novo",
       "url": "https://inematds.github.io/motion-rise/"
@@ -5603,6 +5609,12 @@
     }
   ],
   "projectUpdatesData": [
+    {
+      "date": "2026-09-24",
+      "title": "WebMCP Readiness — Annotations atualizadas na descoberta estática",
+      "type": "atualizado",
+      "url": "https://webmcp.inema.pro/"
+    },
     {
       "date": "2026-09-24",
       "title": "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL",
@@ -7344,7 +7356,7 @@
     {
       "icon": "🔎",
       "name": "webmcp-readiness",
-      "desc": "Teste o seu SITE — diagnóstico rápido de WebMCP, SEO, GEO e AEO com evidências e sugestões priorizadas.",
+      "desc": "Diagnóstico passivo de WebMCP, SEO, GEO e AEO com evidências, sugestões priorizadas e descoberta estática das quatro annotations do draft.",
       "url": "https://webmcp.inema.pro/",
       "badge": "App"
     },

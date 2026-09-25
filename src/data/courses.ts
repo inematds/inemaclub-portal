@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-24', title: 'WebMCP Readiness — Annotations atualizadas na descoberta estática', type: 'atualizado', url: 'https://webmcp.inema.pro/' },
   { date: '2026-09-24', title: 'StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL', type: 'atualizado', url: 'https://inematds.github.io/stickshift/guia/' },
   { date: '2026-09-24', title: 'Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção', type: 'novo', url: 'https://inematds.github.io/expedicaosul/' },
   { date: '2026-09-23', title: 'Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas', type: 'novo', url: 'https://inematds.github.io/explicavideos/guia/' },
@@ -1320,7 +1321,7 @@ export const platformsData: Course[] = [
     id: 247,
     title: 'Formação WebMCP 2 — Builder',
     description:
-      'Primeira fase prática da Formação WebMCP. Aprenda a transformar sites em superfícies operáveis por agentes usando formulários declarativos, tools JavaScript, JSON Schema, cancelamento, fallback e um validador avançado de catálogos.',
+      'Formação prática com ferramentas declarativas e imperativas, schemas, cancelamento e fallback. Inclui laboratório de ações encadeadas para buscar, filtrar e montar uma lista de estudos, além de validador com as quatro annotations do draft.',
     icon: '🧰',
     tags: ['WebMCP', 'JavaScript', 'JSON Schema', 'Agentes de IA'],
     url: 'https://inematds.github.io/webmcp-2-builder/',
@@ -2777,6 +2778,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-24', title: 'Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas', type: 'atualizado', url: 'https://inematds.github.io/webmcp-2-builder/' },
   { date: '2026-09-24', title: 'Motion RISE v6 — Animações que saem de um pedido', type: 'novo', url: 'https://inematds.github.io/motion-rise/' },
   { date: '2026-09-24', title: 'OSWork v6 — Pare de refazer o que a IA te devolve', type: 'novo', url: 'https://inematds.github.io/oswork-v6/' },
   { date: '2026-09-24', title: "Prompting de Imagem — Pense como Diretor de Fotografia", type: 'novo', url: "https://inematds.github.io/imagens-ia-cursos/cursos/prompting-imagem/" },
