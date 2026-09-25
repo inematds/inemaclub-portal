@@ -12,6 +12,7 @@ const PORTAL_ANCHORS = [
   '/ia/como-criar-um-jarvis-com-ia/',
   '/agentes-de-inteligencia-artificial/',
   '/comunidade-inteligencia-artificial/',
+  '/#novidades',
   '/#trilha-iniciantes',
   '/#trilhas',
   '/#projetos',
@@ -39,6 +40,24 @@ export function buildTools(conhecimentoSlugs: string[]) {
             motivo: { type: 'string', description: 'Explicação curta (1 frase) de por que está levando o visitante para essa página, pra narrar durante o tour.' },
           },
           required: ['rota', 'motivo'],
+        },
+      },
+    },
+    {
+      type: 'function',
+      function: {
+        name: 'registrar_pedido',
+        description: 'Registra na fila de construção do INEMA algo que o visitante quer e que NÃO existe no catálogo (nenhuma ficha resolve). O time usa essa fila para construir o que foi pedido. Chame assim que ficar claro o que a pessoa quer e que não temos — o contato é opcional: ofereça avisar quando ficar pronto e, se a pessoa deixar e-mail ou Telegram, chame de novo com o contato. Não use para perguntas fora do tema IA/automação nem para testes.',
+        parameters: {
+          type: 'object',
+          properties: {
+            pedido: { type: 'string', description: 'O que a pessoa quer que exista, em 1–2 frases objetivas (ex.: "sistema que publica vídeos de avatar no TikTok automaticamente para uma loja de cosméticos").' },
+            contexto: { type: 'string', description: 'Quem é a pessoa e o nível dela (profissão, negócio, se programa ou não), se ela disse.' },
+            nome: { type: 'string' },
+            email: { type: 'string' },
+            telegram: { type: 'string', description: '@usuario do Telegram, se a pessoa deixar.' },
+          },
+          required: ['pedido'],
         },
       },
     },

@@ -98,7 +98,8 @@ const STYLE = `
 .messages { flex: 1; overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
 .msg { max-width: 85%; padding: 8px 12px; border-radius: 10px; font-size: 13.5px; line-height: 1.4; white-space: pre-wrap; }
 .msg.user { align-self: flex-end; background: #e0a12c; color: #14110c; }
-.msg.assistant { align-self: flex-start; background: #241f18; color: #e8e6df; }
+.msg.assistant { align-self: flex-start; background: #241f18; color: #e8e6df; overflow-wrap: anywhere; }
+.msg.assistant a { color: #f0b545; text-decoration: underline; }
 .msg.system { align-self: center; background: transparent; color: #9a9284; font-size: 12px; font-style: italic; }
 .inputRow { display: flex; border-top: 1px solid #2a2620; }
 .input { flex: 1; background: #1c1812; color: #e8e6df; border: none; padding: 12px; font-size: 13.5px; outline: none; }
@@ -179,12 +180,37 @@ export function mountAgenteChat() {
 
   const state = loadState();
 
+  // Texto do modelo → nós DOM (nunca innerHTML): [rótulo](url), URLs soltas
+  // viram <a> (só http/https) e **negrito** vira <strong>.
+  function renderRich(el: HTMLElement, text: string) {
+    const re = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)|(https?:\/\/[^\s)<>"']+[^\s)<>"'.,;:!?])|\*\*([^*]+)\*\*/g;
+    let last = 0;
+    for (const m of text.matchAll(re)) {
+      if (m.index! > last) el.appendChild(document.createTextNode(text.slice(last, m.index)));
+      if (m[4]) {
+        const b = document.createElement('strong');
+        b.textContent = m[4];
+        el.appendChild(b);
+      } else {
+        const a = document.createElement('a');
+        a.href = m[2] ?? m[3];
+        a.textContent = m[1] ?? m[3];
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        el.appendChild(a);
+      }
+      last = m.index! + m[0].length;
+    }
+    if (last < text.length) el.appendChild(document.createTextNode(text.slice(last)));
+  }
+
   function renderMessages() {
     messagesEl.innerHTML = '';
     for (const m of state.messages) {
       const div = document.createElement('div');
       div.className = `msg ${m.role}`;
-      div.textContent = m.content;
+      if (m.role === 'assistant') renderRich(div, m.content);
+      else div.textContent = m.content;
       messagesEl.appendChild(div);
     }
     messagesEl.scrollTop = messagesEl.scrollHeight;

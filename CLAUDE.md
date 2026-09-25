@@ -85,17 +85,30 @@ anúncio é um bloco fechado por uma linha de `=====`.
 O link certo é sempre a rota `/cerebro` do `inema.pro` — mesmo motivo do fix
 `c561bd7` no inemapro-mono.
 
-Mexeu no id `#novidades`? Ele **não** está em `PORTAL_ANCHORS` — se quiser que o
-agente de chat navegue até lá, adicione e rode `npx supabase functions deploy chat`.
+Mexeu no id `#novidades`? Ele está em `PORTAL_ANCHORS` (desde 2026-09-25) — se
+renomear, atualize lá e rode `npx supabase functions deploy chat`.
 
 ## Agente de chat (guia do site)
 
 `src/components/AgenteChat/` monta o widget; a inteligência está na Edge Function do Supabase, em `supabase/functions/`. Dois arquivos importam:
 
-- `_shared/tools.ts` → `PORTAL_ANCHORS`, enum fechado de rotas do `navigate_to`. Hoje: `#trilha-iniciantes`, `#trilhas`, `#projetos`, `#comunidade`, `#telegram`, `#social`. **Mexeu em seção da home? Atualize aqui**, senão o agente leva o visitante pra âncora morta.
+- `_shared/tools.ts` → `PORTAL_ANCHORS`, enum fechado de rotas do `navigate_to`. Hoje: `#novidades`, `#trilha-iniciantes`, `#trilhas`, `#projetos`, `#comunidade`, `#telegram`, `#social` (+ as páginas-guia). Tools: `navigate_to`, `registrar_pedido`, `capture_lead`. **Mexeu em seção da home? Atualize aqui**, senão o agente leva o visitante pra âncora morta.
 - `_shared/prompts.ts` → system prompt, com o mapa do site e a arquitetura de ofertas.
 
-O catálogo que o agente cita vive na tabela `catalogo_fichas` (Supabase), espelhando as páginas do repo `NeiMaldaner/conhecimento` (servidas em `/conhecimento/*` via rewrite no `src/proxy.ts`). Mudou a ficha? Atualize a página **e** a linha da tabela.
+O catálogo que o agente cita vive na tabela `catalogo_fichas` (Supabase `inema-agente`, ref `tmhtudrhvidjdnessnrd`). Dois tipos de linha:
+
+- **Fichas curadas** (slug sem prefixo, ~54): espelham as páginas do repo `NeiMaldaner/conhecimento` (servidas em `/conhecimento/*` via rewrite no `src/proxy.ts`), vindas de `~/projetos/aiv/catalogo` (sync manual `aiv/scripts/sync-catalogo-supabase.mjs`). Mudou a ficha? Atualize a página **e** a linha da tabela. Só essas entram no enum `/conhecimento/<slug>/` do `navigate_to`.
+- **Fichas geradas** (prefixos `pro-`, `wiki-`, `cerebro-`, `novidade-`, ~3,2 mil): `scripts/sync-agente-catalogo.mjs` (cron **02:30**, log em `logs/sync-agente-catalogo.log`) monta a partir de `inemapro-mono/apps/pro/data/{catalog,wiki,cerebro}.json` + `src/data/novidades.ts`. Upsert por slug; o que some da fonte é apagado. Criado em 2026-09-25: antes o agente só via as 54 curadas (sync único em 10/07) e respondia "não tenho registro" pra Hermes, Agnes, NVIDIA, avatar…
+
+Busca: rpc `buscar_fichas(consulta, n)` (termos em OR, `ts_rank_cd`, peso maior pra curso/projeto/ferramenta/curadas). A função monta a consulta das 2 últimas mensagens do visitante; no máximo 3 tópicos do Cérebro por resposta. Mensagem que cita post/Instagram/TikTok/vídeo/"IA nova" recebe também as 8 novidades mais recentes no contexto.
+
+**Fila de construção** (tabela `pedidos_construcao`): quando nada resolve, o agente chama `registrar_pedido` (contato opcional; a 2ª chamada com e-mail/@ atualiza a mesma linha). Vai pro digest diário do bot v3 (`inemapro-mono/scripts/radar-pedidos.mjs`, 08:30).
+
+**Suporte**: o prompt manda sempre passar Telegram **@apoioinema** e e-mail **inemavip@gmail.com** em assunto de acesso/pagamento/contato.
+
+**Modelo**: Agnes (grátis, limite de taxa → 429) com fallback OpenRouter (secret `OPENROUTER_API_KEY` do Supabase). Falhas ficam em `messages` com `role='tool'` e `content` começando por `erro_llm:` — o radar conta. Em 2026-09-25 a key do OpenRouter estava com **limite total estourado (403)**: com o Agnes em 429, o chat devolvia `model_unavailable`.
+
+Widget: respostas do assistente renderizam `[rótulo](url)`, URLs soltas e `**negrito**` como nós DOM (`renderRich` em `widget.ts`, sem `innerHTML`).
 
 **Edge Function não sai no deploy do Vercel** — depois de editar `supabase/functions/`, rode `npx supabase functions deploy chat`.
 

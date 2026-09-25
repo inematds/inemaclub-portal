@@ -19,6 +19,34 @@ const AGNES_MODEL = Deno.env.get('AGNES_MODEL') ?? 'agnes-2.0-flash';
 
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
+// Espelha PREFIXOS em portal/scripts/sync-agente-catalogo.mjs.
+const PREFIXOS_GERADOS = ['pro-', 'wiki-', 'cerebro-', 'novidade-'];
+const RE_VIU_POST = /instagram|insta\b|tik ?tok|reels?\b|youtube|v[ií]deo d[oe]|no v[ií]deo|post(ou|agem)?\b|publica[çc][aã]o|publicou|anunci|lan[çc]ou|falou|mostrou|nova ia|ia nova|novidade|recente/i;
+// Palavras que não ajudam a achar nada (a config 'portuguese' já tira artigos
+// e preposições; estas são as de pedido/conversa).
+const PALAVRAS_VAZIAS = new Set([
+  'quero', 'queria', 'gostaria', 'preciso', 'precisava', 'como', 'onde', 'aonde', 'qual', 'quais',
+  'tem', 'tenho', 'temos', 'vocês', 'voces', 'você', 'voce', 'sobre', 'algum', 'alguma', 'isso',
+  'esse', 'essa', 'aqui', 'site', 'inema', 'favor', 'obrigado', 'obrigada', 'sim', 'não', 'nao',
+  'pode', 'posso', 'fazer', 'saber', 'encontro', 'encontrar', 'achar', 'acho', 'mostra', 'mostre',
+  'manda', 'mande', 'link', 'ver', 'olá', 'ola', 'oi', 'bom', 'boa', 'dia', 'tarde', 'noite',
+]);
+
+type Ficha = { slug: string; tipo: string; titulo: string; resumo: string; url: string; atualizado_em?: string };
+
+// 'onde encontro conteúdos do Hermes' → 'conteúdos:* | hermes:*'. Só letras e
+// dígitos entram, então o texto do visitante não injeta operador no tsquery.
+function montarConsulta(texto: string): string {
+  const termos = [...new Set((texto.toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) ?? []))]
+    .filter(t => !PALAVRAS_VAZIAS.has(t))
+    .slice(0, 10);
+  return termos.map(t => (t.length >= 4 ? `${t}:*` : t)).join(' | ');
+}
+
+function formatarFicha(f: Ficha): string {
+  return `- [${f.tipo}] ${f.titulo}: ${f.resumo} (${f.url})`;
+}
+
 async function hashIp(ip: string): Promise<string> {
   const data = new TextEncoder().encode(ip);
   const digest = await crypto.subtle.digest('SHA-256', data);
@@ -79,15 +107,29 @@ async function callAgnes(messages: unknown[], tools: unknown[]) {
 // Chama o Agnes primeiro (custo US$ 0); em qualquer falha dura (rede/HTTP),
 // cai pro OpenRouter. Sem chave do Agnes, vai direto pro OpenRouter.
 // Atenção: o fallback só cobre INDISPONIBILIDADE do Agnes, não resposta fraca.
-async function callLLM(messages: unknown[], tools: unknown[]) {
+// `erros` coleta as falhas de modelo do turno, que o turno grava em
+// `messages` (role 'tool', 'erro_llm: ...') — é o que o radar semanal conta.
+async function callLLM(messages: unknown[], tools: unknown[], erros: string[]) {
   if (AGNES_API_KEY) {
-    try {
-      return await callAgnes(messages, tools);
-    } catch (err) {
-      console.error('Agnes failed, falling back to OpenRouter', err);
+    for (let tentativa = 0; tentativa < 2; tentativa++) {
+      try {
+        return await callAgnes(messages, tools);
+      } catch (err) {
+        const msg = String((err as Error).message ?? err).slice(0, 300);
+        erros.push(msg);
+        console.error('Agnes failed', msg);
+        // 429 = limite de taxa do Agnes: espera um pouco e tenta de novo.
+        if (!msg.startsWith('Agnes 429') || tentativa > 0) break;
+        await new Promise(r => setTimeout(r, 2500));
+      }
     }
   }
-  return callOpenRouter(messages, tools);
+  try {
+    return await callOpenRouter(messages, tools);
+  } catch (err) {
+    erros.push(String((err as Error).message ?? err).slice(0, 300));
+    throw err;
+  }
 }
 
 Deno.serve(async (req) => {
@@ -162,7 +204,7 @@ Deno.serve(async (req) => {
   if (conversation.turn_count >= MAX_TURNS_PER_CONVERSATION) {
     return jsonResponse({
       session_token: conversation.session_token,
-      reply: 'Essa conversa já foi longa demais por aqui — se quiser continuar, fala com a gente pelo Telegram ou pelos canais do INEMA.club.',
+      reply: 'Essa conversa já foi longa demais por aqui — se quiser continuar, fala com o apoio do INEMA: Telegram @apoioinema (https://t.me/apoioinema) ou e-mail inemavip@gmail.com.',
       navigate: null,
     }, 200, origin);
   }
@@ -182,19 +224,59 @@ Deno.serve(async (req) => {
     });
   }
 
-  // Busca fichas relevantes no catálogo (F2) por relevância textual.
-  const { data: fichasRelevantes } = await supabase
-    .from('catalogo_fichas')
-    .select('slug, titulo, resumo, url')
-    .textSearch('search_vector', message, { type: 'plain', config: 'portuguese' })
-    .limit(5);
+  // Busca no catálogo inteiro (fichas curadas + cursos/projetos/ferramentas/
+  // Cérebro/novidades sincronizados toda noite), termos em OR, ranqueada.
+  // Usa as 2 últimas mensagens do visitante: "Sim" / "me mostra" sozinhos
+  // não carregam o assunto.
+  const { data: ultimasDoVisitante } = await supabase
+    .from('messages')
+    .select('content')
+    .eq('conversation_id', conversation.id)
+    .eq('role', 'user')
+    .order('created_at', { ascending: false })
+    .limit(2);
+  const textoBusca = (ultimasDoVisitante ?? []).map(m => m.content).join(' ');
+  const consulta = montarConsulta(textoBusca);
 
-  const fichasContexto = (fichasRelevantes ?? [])
-    .map(f => `- ${f.titulo}: ${f.resumo} (${f.url})`)
-    .join('\n') || '(nenhuma ficha do catálogo bateu com essa pergunta — responda com honestidade que não está registrado)';
+  let candidatas: Ficha[] = [];
+  if (consulta) {
+    const { data, error } = await supabase.rpc('buscar_fichas', { consulta, n: 14 });
+    if (error) console.error('buscar_fichas', error);
+    candidatas = data ?? [];
+  }
+  // No máximo 3 tópicos do Cérebro: eles são muitos e abafariam curso/projeto.
+  let nCerebro = 0;
+  const escolhidas = candidatas.filter(f => {
+    if (f.tipo !== 'cerebro') return true;
+    return ++nCerebro <= 3;
+  }).slice(0, 7);
 
-  const { data: todosSlugs } = await supabase.from('catalogo_fichas').select('slug');
-  const tools = buildTools((todosSlugs ?? []).map(r => r.slug));
+  // "Vi no Instagram / no vídeo do Nei / a IA nova que ele postou": manda as
+  // novidades mais recentes junto, pra achar o item mesmo sem o nome.
+  let novidadesContexto = '';
+  if (RE_VIU_POST.test(textoBusca)) {
+    const { data: recentes } = await supabase
+      .from('catalogo_fichas')
+      .select('slug, tipo, titulo, resumo, url, atualizado_em')
+      .eq('tipo', 'novidade')
+      .order('atualizado_em', { ascending: false })
+      .limit(8);
+    novidadesContexto = (recentes ?? []).map(formatarFicha).join('\n');
+  }
+
+  const fichasContexto = [
+    escolhidas.map(formatarFicha).join('\n'),
+    novidadesContexto && `Novidades recentes publicadas pelo Nei (o visitante pode estar falando de uma delas):\n${novidadesContexto}`,
+  ].filter(Boolean).join('\n\n') || '(nenhuma ficha do catálogo bateu com essa pergunta — diga que ainda não temos isso e ofereça registrar o pedido com registrar_pedido)';
+
+  // Só fichas curadas têm página /conhecimento/<slug>/ — as geradas
+  // (prefixos pro-, wiki-, cerebro-, novidade-) apontam pra fora.
+  // Filtra no banco: o PostgREST corta em 1000 linhas e as geradas são ~3 mil.
+  let consultaSlugs = supabase.from('catalogo_fichas').select('slug');
+  for (const p of PREFIXOS_GERADOS) consultaSlugs = consultaSlugs.not('slug', 'like', `${p}%`);
+  const { data: todosSlugs } = await consultaSlugs;
+  const slugsConhecimento = (todosSlugs ?? []).map(r => r.slug);
+  const tools = buildTools(slugsConhecimento);
 
   // Histórico recente (só texto — tool calls não são replayados entre
   // turnos, cada turno decide de novo se precisa de ferramenta).
@@ -211,11 +293,15 @@ Deno.serve(async (req) => {
     ...(historico ?? []).map(m => ({ role: m.role, content: m.content })),
   ];
 
+  const errosLLM: string[] = [];
   let completion;
   try {
-    completion = await callLLM(messages, tools);
+    completion = await callLLM(messages, tools, errosLLM);
   } catch (err) {
-    console.error('OpenRouter error', err);
+    console.error('LLM error', err);
+    await supabase.from('messages').insert({
+      conversation_id: conversation.id, role: 'tool', content: `erro_llm: ${errosLLM.join(' || ')}`.slice(0, 1000),
+    });
     return jsonResponse({ error: 'model_unavailable' }, 502, origin);
   }
 
@@ -231,6 +317,33 @@ Deno.serve(async (req) => {
 
     if (call.function.name === 'navigate_to' && args.rota) {
       navigate = { rota: args.rota, motivo: args.motivo ?? '' };
+    }
+    if (call.function.name === 'registrar_pedido' && args.pedido) {
+      // Mesmo pedido, segunda chamada só pra somar o contato: atualiza a
+      // linha que a conversa já tem em vez de duplicar.
+      const campos = {
+        pedido: args.pedido.slice(0, 1000),
+        contexto: args.contexto?.slice(0, 1000) || null,
+        contato_nome: args.nome?.slice(0, 120) || null,
+        contato_email: args.email?.slice(0, 200) || null,
+        contato_telegram: args.telegram?.slice(0, 120) || null,
+      };
+      const { data: anterior } = await supabase
+        .from('pedidos_construcao')
+        .select('id, contexto, contato_nome, contato_email, contato_telegram')
+        .eq('conversation_id', conversation.id)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      const temContatoNovo = campos.contato_email || campos.contato_telegram;
+      const { error } = anterior && temContatoNovo && !anterior.contato_email && !anterior.contato_telegram
+        ? await supabase.from('pedidos_construcao').update({
+            ...campos,
+            contexto: campos.contexto ?? anterior.contexto,
+            contato_nome: campos.contato_nome ?? anterior.contato_nome,
+          }).eq('id', anterior.id)
+        : await supabase.from('pedidos_construcao').insert({ conversation_id: conversation.id, ...campos });
+      if (error) console.error('registrar_pedido', error);
     }
     if (call.function.name === 'capture_lead' && args.nome && args.email) {
       await supabase.from('leads').insert({
@@ -254,11 +367,24 @@ Deno.serve(async (req) => {
           ...toolCalls.map((c: { id: string }) => ({ role: 'tool', tool_call_id: c.id, content: 'ok' })),
         ],
         tools,
+        errosLLM,
       );
-      replyText = followUp.choices?.[0]?.message?.content?.trim() ?? 'Beleza, vamos lá!';
-    } catch {
-      replyText = 'Beleza, vamos lá!';
+      replyText = followUp.choices?.[0]?.message?.content?.trim() ?? '';
+    } catch { /* cai na narração montada abaixo */ }
+    if (!replyText) {
+      // Sem segunda resposta do modelo: narra com o que as próprias tools dizem.
+      const pediu = toolCalls.some((c: { function: { name: string } }) => c.function.name === 'registrar_pedido');
+      replyText = [
+        navigate?.motivo,
+        pediu && 'Registrei seu pedido na fila de construção do INEMA. Se quiser ser avisado quando ficar pronto, me diga seu e-mail ou @ do Telegram.',
+      ].filter(Boolean).join(' ') || 'Beleza, vamos lá!';
     }
+  }
+
+  if (errosLLM.length) {
+    await supabase.from('messages').insert({
+      conversation_id: conversation.id, role: 'tool', content: `erro_llm: ${errosLLM.join(' || ')}`.slice(0, 1000),
+    });
   }
 
   await supabase.from('messages').insert({
