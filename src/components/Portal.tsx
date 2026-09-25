@@ -2117,6 +2117,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/curso-7pa/', label: 'Gestão de Agentes: 7 Princípios', desc: 'Intenção, limites e supervisão — do N0 ao N4, com projeto final' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
+              { href: "https://inematds.github.io/curso-laboratorio-anuncios-ia/", label: "Laboratório de Anúncios com IA: 6 Cases Desmontados", desc: "Produza seis estudos com marcas fictícias: narrativa, música, produto, esporte, primeira pessoa e demonstração. 24 aulas v6.2 com roteiros e revisão." },
               { href: "https://inematds.github.io/curso-capcut-ia/", label: "CapCut para Criadores de Vídeo IA v6.2", desc: "Monte um vídeo vertical com cortes, movimento, som e legendas. 18 aulas práticas com quatro clipes de exercício e conferência do arquivo final." },
               { href: "https://inematds.github.io/curso-audio-video-ia/", label: "Áudio que Vende: Voz, Música e Sound Design v6.2", desc: "Monte voz, música, três efeitos e ambiente em 12 aulas, com kit de áudio, créditos e comparação com e sem efeitos." },
               { href: "https://inematds.github.io/curso-estilos-cinema-ia/", label: "Estilos e Cinema: Seedance + Higgsfield v6.2", desc: "Compare duas linguagens visuais, organize referências e produza uma sequência curta com decisões de câmera verificáveis." },

@@ -203,10 +203,6 @@
     "en": "In addition to using Jev to make LinkedIn more tolerable, I decided to test it in one of my apps, . A platform for orchestrating agents to create agent teams and complete real work tasks. For this to work, I have several tools that  can use to perform all kinds of tasks, but these tools consume many tokens. Cache is enabled, which helps, but it could be better. So I decided to place Jev between the user message and  with the goal of selecting only the tools the orchestrator needs for this type of request. I expected, of course, a good reduction in token count, but what I didn’t expect was a reduction of over 90%. Now I need to carefully analyze my apps and automations and see what improvements I can achieve in other areas.",
     "es": "Además de usar Jev para hacer LinkedIn más tolerable, decidí probarlo en una de mis aplicaciones, . Una plataforma de orquestación de agentes para crear equipos de agentes y completar tareas de trabajo reales. Para que funcione, tengo varias herramientas que  puede usar para realizar todo tipo de tarea, pero esas herramientas consumen muchos tokens. La caché está activada, lo que ayuda, pero podría ser mejor. Entonces, decidí colocar Jev entre el mensaje del usuario y  con el objetivo de seleccionar solo las herramientas que el orquestador necesita para este tipo de solicitud. Esperaba, por supuesto, una buena reducción en el número de tokens, pero lo que no esperaba era una reducción de más del 90%. Ahora necesito analizar con mucha atención mis aplicaciones y automatizaciones y ver qué mejoras puedo obtener en otras áreas."
   },
-  "Gestão de Agentes de IA — os 7 Princípios: curso v2 com 4 trilhas, 8 módulos e 48 tópicos (PT/EN/ES)": {
-    "en": "Management of AI Agents — the 7 Principles: course v2 with 4 tracks, 8 modules and 48 topics (PT/EN/ES)",
-    "es": "Gestión de Agentes de IA — los 7 Principios: curso v2 con 4 rutas, 8 módulos y 48 temas (PT/EN/ES)"
-  },
   "Jarvis v7 + JEV Reflex — cinco decisões antes da resposta, agora integrado ao chat": {
     "en": "Jarvis v7 + JEV Reflex — five decisions before the answer, now integrated into chat",
     "es": "Jarvis v7 + JEV Reflex — cinco decisiones antes de la respuesta, ahora integrado al chat"
@@ -382,5 +378,9 @@
   "Design Essencial no Figma para Criadores": {
     "en": "Essential Design in Figma for Creators",
     "es": "Diseño Esencial en Figma para Creadores"
+  },
+  "Laboratório de Anúncios com IA: 6 Cases Desmontados": {
+    "en": "Ads Lab with AI: 6 Cases Dissected",
+    "es": "Laboratorio de Anuncios con IA: 6 Casos Desmontados"
   }
 }

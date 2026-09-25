@@ -447,6 +447,14 @@ export const platformsData: Course[] = [
     url: "https://inematds.github.io/curso-kling-ai/",
   },
   {
+    id: 298,
+    title: "Laboratório de Anúncios com IA: 6 Cases Desmontados",
+    description: "Produza seis estudos com marcas fictícias: narrativa, música, produto, esporte, primeira pessoa e demonstração. 24 aulas v6.2 com roteiros e revisão.",
+    icon: "🎬",
+    tags: ["Vídeo", "IA", "Anúncios", "Intermediário"],
+    url: "https://inematds.github.io/curso-laboratorio-anuncios-ia/",
+  },
+  {
     id: 284,
     title: "Nano Banana Pro v6.2 — Campanha de Marca Completa",
     description: "Crie uma campanha fictícia com produto, personagem, referências e revisão de identidade. Seis módulos e 18 aulas curtas com práticas, ilustrações Codex e progresso local.",
@@ -2865,6 +2873,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Laboratório de Anúncios com IA: 6 Cases Desmontados", type: 'novo', url: "https://inematds.github.io/curso-laboratorio-anuncios-ia/" },
   { date: '2026-09-25', title: "Design Essencial no Figma para Criadores", type: 'novo', url: "https://inematds.github.io/curso-figma-criadores/" },
   { date: '2026-09-25', title: "Visual DNA: Direção de Arte e Branding com IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-visual-dna/" },
   { date: '2026-09-25', title: "CapCut para Criadores de Vídeo IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-capcut-ia/" },
