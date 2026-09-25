@@ -2118,6 +2118,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/curso-7pa/', label: 'Gestão de Agentes: 7 Princípios', desc: 'Intenção, limites e supervisão — do N0 ao N4, com projeto final' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
+              { href: "https://inematds.github.io/curso-influenciador-ia/", label: "Influenciador IA em 21 Dias", desc: "Crie uma personagem original e execute 21 publicações editoriais mais uma oferta transparente, com fichas e acompanhamento local. Curso gratuito com 24 aulas no estilo OSWork v6.2, sem promessa de renda." },
               { href: "https://inematds.github.io/curso-redes-sociais-ia/", label: "Redes Sociais para Criadores IA v6.2 — o Sistema Viral", desc: "Planeje três pilares, estude referências e publique um vídeo revisado. 18 aulas, 33 aberturas e calendário de sete dias, sem promessa de viralização." },
               { href: "https://inematds.github.io/curso-laboratorio-anuncios-ia/", label: "Laboratório de Anúncios com IA: 6 Cases Desmontados", desc: "Produza seis estudos com marcas fictícias: narrativa, música, produto, esporte, primeira pessoa e demonstração. 24 aulas v6.2 com roteiros e revisão." },
               { href: "https://inematds.github.io/curso-capcut-ia/", label: "CapCut para Criadores de Vídeo IA v6.2", desc: "Monte um vídeo vertical com cortes, movimento, som e legendas. 18 aulas práticas com quatro clipes de exercício e conferência do arquivo final." },

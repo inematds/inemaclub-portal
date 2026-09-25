@@ -431,6 +431,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/',
   },
   {
+    id: 301,
+    title: "Influenciador IA em 21 Dias",
+    description: "Crie uma personagem original e execute 21 publicações editoriais mais uma oferta transparente, com fichas e acompanhamento local. Curso gratuito com 24 aulas no estilo OSWork v6.2, sem promessa de renda.",
+    icon: "🎭",
+    tags: ["Personagem virtual", "Redes sociais", "IA", "Desafio", "Intermediário"],
+    url: "https://inematds.github.io/curso-influenciador-ia/",
+  },
+  {
     id: 276,
     title: 'Jev na prática — Decisões estruturadas com IA',
     description: 'Curso HTML v2 com 3 trilhas, 12 módulos, 36 aulas e 12 laboratórios. Progresso, anotações, dúvidas, roteiro de piloto e práticas com 17 pacotes, OpenRouter e avaliação.',
@@ -2889,6 +2897,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Influenciador IA em 21 Dias", type: 'novo', url: "https://inematds.github.io/curso-influenciador-ia/" },
   { date: '2026-09-25', title: "Monetização: Portfólio, Ofertas, Preços e Clientes", type: 'novo', url: "https://inematds.github.io/curso-monetizacao-criadores/" },
   { date: '2026-09-25', title: "Redes Sociais para Criadores IA v6.2 — o Sistema Viral", type: 'novo', url: "https://inematds.github.io/curso-redes-sociais-ia/" },
   { date: '2026-09-25', title: "Laboratório de Anúncios com IA: 6 Cases Desmontados", type: 'novo', url: "https://inematds.github.io/curso-laboratorio-anuncios-ia/" },

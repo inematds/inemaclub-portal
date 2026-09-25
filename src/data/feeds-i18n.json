@@ -255,10 +255,6 @@
     "en": "very good video about Opus5.5",
     "es": "video muy bueno sobre el Opus5.5"
   },
-  "Prompting de Imagem — Pense como Diretor de Fotografia": {
-    "en": "Image Prompting — Think Like a Director of Photography",
-    "es": "Prompting de Imagen — Piensa como Director de Fotografía"
-  },
   "OSWork v6 — Pare de refazer o que a IA te devolve": {
     "en": "OSWork v6 — Stop redoing what the AI gives you back",
     "es": "OSWork v6 — Deja de rehacer lo que la IA te devuelve"
@@ -382,5 +378,9 @@
   "Monetização: Portfólio, Ofertas, Preços e Clientes": {
     "en": "Monetization: Portfolio, Offers, Prices and Clients",
     "es": "Monetización: Portafolio, Ofertas, Precios y Clientes"
+  },
+  "Influenciador IA em 21 Dias": {
+    "en": "AI Influencer in 21 Days",
+    "es": "Influencer IA en 21 Días"
   }
 }
