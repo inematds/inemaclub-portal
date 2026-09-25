@@ -5909,6 +5909,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-25",
+      "title": "Expedição Sul — Hua Hum: nosso plano × nossa aventura (estrada interrompida, fronteira fechada, fotos reais da viagem, 9:16 e 16:9)",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/expedicaosul/guia/"
+    },
+    {
+      "date": "2026-09-25",
       "title": "Congelou — curta com efeito time freeze feito com a assinatura Kling AI: vídeo, prompts, scripts e como repetir",
       "type": "novo",
       "url": "https://inematds.github.io/congelou/guia/"
@@ -7093,9 +7099,9 @@
     {
       "icon": "🗺️",
       "name": "expedicaosul",
-      "desc": "Animações de trajeto de viagem: mapa satélite com o carro na rota real e diário de bordo com fotos e fatos, em 9:16 e 16:9 — motor HyperFrames reutilizável e o custo real (tokens, cache, tempo) de cada vídeo feito com Claude Code",
-      "url": "https://inematds.github.io/expedicaosul/",
-      "badge": "GitHub"
+      "desc": "Animações de trajeto de viagem com mapa satélite, o carro na rota real e diário de bordo — inclui \"Hua Hum: nosso plano × nossa aventura\", com mapa geral e detalhado e as fotos reais da viagem, em 9:16 e 16:9 — motor HyperFrames reutilizável e o custo real de cada vídeo feito com Claude Code",
+      "url": "https://inematds.github.io/expedicaosul/guia/",
+      "badge": "Guia"
     },
     {
       "icon": "▶",

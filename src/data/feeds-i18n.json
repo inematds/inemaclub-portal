@@ -151,10 +151,6 @@
     "en": "In-depth comparative analysis of the Jev and Laya decision models as \"System 1\" engines in multi-layer AI architectures. The topic explores benchmarks, limitations, fine-tuning and how this separation changes agent management.",
     "es": "Análisis comparativo profundo de los modelos de decisión Jev y Laya como motores \"System 1\" en arquitecturas de IA multicapa. El tema explora benchmarks, limitaciones, fine‑tuning y cómo esta separación cambia la gestión de agentes."
   },
-  "GPT-6 Sol & Luna — lançamento, comparativos e integração INEMA": {
-    "en": "GPT-6 Sol & Luna — launch, comparisons and integration INEMA",
-    "es": "GPT-6 Sol & Luna — lanzamiento, comparativas e integración INEMA"
-  },
   "no Club": {
     "en": "in Club",
     "es": "en Club"
@@ -382,5 +378,9 @@
   "Congelou — curta com efeito time freeze feito com a assinatura Kling AI: vídeo, prompts, scripts e como repetir": {
     "en": "Froze — enjoy with time freeze effect made with the Kling AI signature: video, prompts, scripts and how to repeat",
     "es": "Congeló — disfruta con efecto time freeze hecho con la firma Kling AI: video, prompts, scripts y cómo repetir"
+  },
+  "Expedição Sul — Hua Hum: nosso plano × nossa aventura (estrada interrompida, fronteira fechada, fotos reais da viagem, 9:16 e 16:9)": {
+    "en": "South Expedition — Hua Hum: our plan × our adventure (road interrupted, border closed, real travel photos, 9:16 and 16:9)",
+    "es": "Expedición Sur — Hua Hum: nuestro plan × nuestra aventura (carretera interrumpida, frontera cerrada, fotos reales del viaje, 9:16 y 16:9)"
   }
 }

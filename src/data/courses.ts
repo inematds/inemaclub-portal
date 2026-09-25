@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-25', title: 'Expedição Sul — Hua Hum: nosso plano × nossa aventura (estrada interrompida, fronteira fechada, fotos reais da viagem, 9:16 e 16:9)', type: 'atualizado', url: 'https://inematds.github.io/expedicaosul/guia/' },
   { date: '2026-09-25', title: 'Congelou — curta com efeito time freeze feito com a assinatura Kling AI: vídeo, prompts, scripts e como repetir', type: 'novo', url: 'https://inematds.github.io/congelou/guia/' },
   { date: '2026-09-25', title: 'RSI Copiloto — sistema com IA, memória, rotinas e melhoria supervisionada para pessoas e negócios', type: 'novo', url: 'https://inematds.github.io/rsi-copiloto/guia/' },
   { date: '2026-09-25', title: 'RSI — a IA que melhora a IA: pesquisa verificada, LOOP-R e como empresas, governo e pessoas se beneficiam', type: 'novo', url: 'https://inematds.github.io/rsi/guia/' },
