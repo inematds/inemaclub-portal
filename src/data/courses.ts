@@ -2263,6 +2263,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/recursos-video/',
   },
   {
+    id: 299,
+    title: "Redes Sociais para Criadores IA v6.2 — o Sistema Viral",
+    description: "Planeje três pilares, estude referências e publique um vídeo revisado. 18 aulas, 33 aberturas e calendário de sete dias, sem promessa de viralização.",
+    icon: "🎬",
+    tags: ["Redes Sociais", "Vídeo", "IA", "Iniciante"],
+    url: "https://inematds.github.io/curso-redes-sociais-ia/",
+  },
+  {
     id: 138,
     title: 'Remotion - Vídeo Programático com React',
     description:
@@ -2873,6 +2881,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Redes Sociais para Criadores IA v6.2 — o Sistema Viral", type: 'novo', url: "https://inematds.github.io/curso-redes-sociais-ia/" },
   { date: '2026-09-25', title: "Laboratório de Anúncios com IA: 6 Cases Desmontados", type: 'novo', url: "https://inematds.github.io/curso-laboratorio-anuncios-ia/" },
   { date: '2026-09-25', title: "Design Essencial no Figma para Criadores", type: 'novo', url: "https://inematds.github.io/curso-figma-criadores/" },
   { date: '2026-09-25', title: "Visual DNA: Direção de Arte e Branding com IA v6.2", type: 'novo', url: "https://inematds.github.io/curso-visual-dna/" },
