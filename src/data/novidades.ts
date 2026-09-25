@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "2494987106/6109",
+    "date": "2026-09-24",
+    "titulo": "Exemplos Prompts Opus5.5",
+    "resumo": "Coleção de 5 prompts neutros (sem citar marcas/modelos) para benchmark de agentes criativos autônomos, rotulados como \"Exemplos Prompts Opus5.5\". Cada prompt é uma tarefa criativa completa, do zero ao entregável final.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6109"
+  },
+  {
     "id": "2494987106/6099",
     "date": "2026-09-23",
     "titulo": "Prompt de Orientação de TEXTO",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Apresentação do Codex Cheat Sheet — guia para transformar o OpenAI Codex CLI de \"chat de programação\" em agente autônomo de desenvolvimento. Acompanhado de explicação conceitual sobre a diferença entre chat, agente simples, workflow agentic e sistema multiagente.",
     "grupo": "INEMA.CODEX",
     "url": "https://www.inema.pro/cerebro/inema-codex/1289"
-  },
-  {
-    "id": "vip/2026-09-09/A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB",
-    "date": "2026-09-09",
-    "titulo": "A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO",
-    "resumo": "Alibaba's Qwen releases open-source model for autonomous driving · TechNode",
-    "grupo": "INEMA.VIP",
-    "url": "https://share.google/07MtLury057NmGKWO"
   }
 ];

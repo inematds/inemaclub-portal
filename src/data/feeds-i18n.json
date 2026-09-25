@@ -19,10 +19,6 @@
     "en": "Evolving with Codex",
     "es": "Evolucionando con Codex"
   },
-  "Alibaba's Qwen releases open-source model for autonomous driving · TechNode": {
-    "en": "Alibaba's Qwen releases open-source model for autonomous driving · TechNode",
-    "es": "Alibaba's Qwen lanza modelo de código abierto para conducción autónoma · TechNode"
-  },
   "openpcbot v3 — Seu Jarvis local: instalar, usar e configurar (4 trilhas, 8 módulos, 48 tópicos)": {
     "en": "openpcbot v3 — Your local Jarvis: install, use and configure (4 tracks, 8 modules, 48 topics)",
     "es": "openpcbot v3 — Tu Jarvis local: instalar, usar y configurar (4 rutas, 8 módulos, 48 temas)"
@@ -46,10 +42,6 @@
   "Apresentação do projeto Anúncios Top com IA, um sistema de produção disciplinada de anúncios em vídeo para Meta usando IA, estruturado em quatro skills com responsabilidades separadas e registro de experimentos.": {
     "en": "Presentation of the Anúncios Top with AI project, a disciplined video ad production system for Meta using AI, structured into four skills with separate responsibilities and experiment logging.",
     "es": "Presentación del proyecto Anuncios Top con IA, un sistema de producción disciplinada de anuncios en vídeo para Meta usando IA, estructurado en cuatro skills con responsabilidades separadas y registro de experimentos."
-  },
-  "A AGI chegou e o prompt quase morreu · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO": {
-    "en": "AGI has arrived and the prompt almost died · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO",
-    "es": "La AGI llegó y el prompt casi murió · FEP 2026 · INEMA.CLUB PRO https://share.google/07MtLury057NmGKWO"
   },
   "Vídeos Virais de Pintura em Pedra": {
     "en": "Viral Stone Painting Videos",
@@ -382,5 +374,13 @@
   "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) e especificação do Jarvis no Telegram": {
     "en": "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) and Jarvis specification on Telegram",
     "es": "Jarvis v7 — paquete de prompts Opus 5.5 (18 prompts) y especificación del Jarvis en Telegram"
+  },
+  "Exemplos Prompts Opus5.5": {
+    "en": "Prompt Examples Opus5.5",
+    "es": "Ejemplos Prompts Opus5.5"
+  },
+  "Coleção de 5 prompts neutros (sem citar marcas/modelos) para benchmark de agentes criativos autônomos, rotulados como \"Exemplos Prompts Opus5.5\". Cada prompt é uma tarefa criativa completa, do zero ao entregável final.": {
+    "en": "Collection of 5 neutral prompts (without mentioning brands/models) for benchmarking autonomous creative agents, labeled as \"Exemplos Prompts Opus5.5\". Each prompt is a complete creative task, from scratch to final deliverable.",
+    "es": "Colección de 5 prompts neutros (sin citar marcas/modelos) para benchmark de agentes creativos autónomos, etiquetados como \"Exemplos Prompts Opus5.5\". Cada prompt es una tarea creativa completa, desde cero hasta el entregable final."
   }
 }
