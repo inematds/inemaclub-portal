@@ -143,10 +143,6 @@
     "en": "Jev in practice — 36 enriched lessons, 20 cases and 12 labs",
     "es": "Jev en la práctica — 36 clases enriquecidas, 20 casos y 12 laboratorios"
   },
-  "Jev Decision Lab — 17 pacotes, lotes com retomada e avaliação Choice/Noul/Score": {
-    "en": "Jev Decision Lab — 17 packages, batches with restart and Choice/Noul/Score assessment",
-    "es": "Jev Decision Lab — 17 paquetes, lotes con reanudación y evaluación Choice/Noul/Score"
-  },
   "Isso esta ficando em uma velocidade incrivel": {
     "en": "This is getting at an incredible speed",
     "es": "Esto está quedando a una velocidad increíble"
@@ -382,5 +378,9 @@
   "OSWork v6.2 — Sua IA precisa de um sistema": {
     "en": "OSWork v6.2 — Your AI needs a system",
     "es": "OSWork v6.2 — Tu IA necesita un sistema"
+  },
+  "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) e especificação do Jarvis no Telegram": {
+    "en": "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) and Jarvis specification on Telegram",
+    "es": "Jarvis v7 — paquete de prompts Opus 5.5 (18 prompts) y especificación del Jarvis en Telegram"
   }
 }

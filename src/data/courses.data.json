@@ -5629,6 +5629,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-25",
+      "title": "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) e especificação do Jarvis no Telegram",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/jarvisv7/guia/"
+    },
+    {
       "date": "2026-09-24",
       "title": "Jev Decision Lab — Pacote de viagens: anúncio avaliado uma vez e cruzado por regra com 12 perfis",
       "type": "atualizado",
@@ -6835,7 +6841,7 @@
     {
       "icon": "🤖",
       "name": "jarvisv7",
-      "desc": "Agora com JEV Reflex real: cinco decisões antes do cérebro responder, painel com probabilidades e latência e fallback local. Assistente com notas, memórias, Codex/Claude OAuth, OpenRouter e estúdio Kie.",
+      "desc": "Assistente pessoal local com JEV Reflex, notas, memórias, Codex/Claude OAuth, OpenRouter e estúdio Kie. Agora com o prompt pack Opus 5.5 (18 prompts, do telefone ao Telegram) e a especificação do Jarvis no Telegram.",
       "url": "https://inematds.github.io/jarvisv7/guia/",
       "badge": "Guia"
     },
