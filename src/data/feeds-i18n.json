@@ -107,10 +107,6 @@
     "en": "12 New AIs — October 2026 · rumors × verified current versions https://inematds.github.io/newia-oct2026/guia/",
     "es": "12 Nuevas IAs — Octubre 2026 · rumores × versiones actuales verificadas https://inematds.github.io/newia-oct2026/guia/"
   },
-  "Claude → Codex — Migre ou fique agnóstico: curso completo v2 com 3 trilhas e 18 módulos sobre workspace independente de modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)": {
-    "en": "Claude → Codex — Migrate or stay agnostic: complete course v2 with 3 tracks and 18 modules about model‑independent workspace (kit agente-claude-codex, polyskill, readback, handoff/prime)",
-    "es": "Claude → Codex — Migra o mantente agnóstico: curso completo v2 con 3 rutas y 18 módulos sobre espacio de trabajo independiente del modelo (kit agente-claude-codex, polyskill, readback, handoff/prime)"
-  },
   "**O chat responde. O __terminal__ executa**. Para executivos e profissionais liberais que já usam IA no navegador e ainda copiam e colam tudo. Entenda as quatro camadas de um sistema de IA, por que o terminal com agente é a que faz o trabalho, e como o harness faz ele trabalhar do seu jeito.": {
     "en": "**The chat replies. The __terminal__ executes**. For executives and freelancers who already use AI in the browser and still copy and paste everything. Understand the four layers of an AI system, why the agent terminal is the one that does the work, and how the harness makes it work your way.",
     "es": "**El chat responde. El __terminal__ ejecuta**. Para ejecutivos y profesionales liberales que ya usan IA en el navegador y aún copian y pegan todo. Entiende las cuatro capas de un sistema de IA, por qué el terminal con agente es el que hace el trabajo, y cómo el harness lo hace trabajar a tu manera."
@@ -382,5 +378,9 @@
   "RSI — a IA que melhora a IA: pesquisa verificada, LOOP-R e como empresas, governo e pessoas se beneficiam": {
     "en": "RSI — the AI that improves AI: verified research, LOOP-R and how companies, government and people benefit",
     "es": "RSI — la IA que mejora la IA: investigación verificada, LOOP-R y cómo empresas, gobierno y personas se benefician"
+  },
+  "RSI v6.2 — Entenda e aplique ciclos de melhoria em IA": {
+    "en": "RSI v6.2 — Understand and apply improvement cycles in AI",
+    "es": "RSI v6.2 — Entiende y aplica ciclos de mejora en IA"
   }
 }

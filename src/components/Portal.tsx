@@ -2105,6 +2105,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/segunda-opiniao/', label: 'Segunda Opinião', desc: 'IA para Gestores e Líderes' },
             ]},
             { title: '🤖 Arquiteto de Agentes', steps: [
+              { href: 'https://inematds.github.io/curso-rsi/', label: 'RSI v6.2', desc: 'Autoaperfeiçoamento de IA: evidências, avaliação e ciclos supervisionados' },
               { href: 'https://inematds.github.io/pffia/', label: 'Arquiteto de Trabalho com IA', desc: 'Redesenhe processos para humanos dirigirem e agentes executarem' },
               { href: 'https://inematds.github.io/arquiteto-agentes-saude/', label: 'Caderno: Saúde', desc: 'Agentes na clínica — administrativo sim, clínico nunca' },
               { href: 'https://inematds.github.io/arquiteto-agentes-contabil/', label: 'Caderno: Contábil', desc: 'Agentes até a porta da assinatura, chaves trancadas' },

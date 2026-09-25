@@ -2223,6 +2223,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/robot/',
   },
   {
+    id: 289,
+    title: "RSI v6.2 — Entenda e aplique ciclos de melhoria em IA",
+    description: "Curso gratuito com 18 aulas em seis módulos: fundamentos de RSI, AlphaEvolve, DGM, avaliação, dados, aplicações no trabalho e projeto final de melhoria supervisionada. Com glossário, práticas, revisão e fontes originais.",
+    icon: "🔬",
+    tags: ["RSI", "Agentes de IA", "Avaliação", "IA"],
+    url: "https://inematds.github.io/curso-rsi/",
+  },
+  {
     id: 80,
     title: 'Ruflo - Orquestração de Agentes Multi-IA',
     description:
@@ -2792,6 +2800,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: 'RSI v6.2 — Entenda e aplique ciclos de melhoria em IA', type: 'novo', url: 'https://inematds.github.io/curso-rsi/' },
   { date: '2026-09-25', title: 'OSWork v6.2 — Sua IA precisa de um sistema', type: 'novo', url: 'https://inematds.github.io/oswork-v62/' },
   { date: '2026-09-24', title: 'Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas', type: 'atualizado', url: 'https://inematds.github.io/webmcp-2-builder/' },
   { date: '2026-09-24', title: 'Motion RISE v6 — Animações que saem de um pedido', type: 'novo', url: 'https://inematds.github.io/motion-rise/' },
