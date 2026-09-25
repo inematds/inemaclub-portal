@@ -2066,6 +2066,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/vla/', label: 'VLA', desc: 'Vision Language Action para Robótica' },
             ]},
             { title: '💼 Consultoria IA & Negócios', steps: [
+              { href: "https://inematds.github.io/curso-monetizacao-criadores/", label: "Monetização: Portfólio, Ofertas, Preços e Clientes", desc: "Organize três peças de portfólio, calcule custos e margem, compare pacotes e prepare uma proposta e abordagens pertinentes. Curso gratuito com 24 aulas no estilo OSWork v6.2, sem promessa de renda." },
               { href: 'https://inematds.github.io/curso-gestao-ia/', label: 'Gestão de IA — plano', desc: 'Plano de formação para gerir processos com humanos e agentes; aulas em desenvolvimento' },
               { href: 'https://inematds.github.io/ATIA/',        label: 'ATIA',        desc: 'Oportunidades Digitais com IA' },
               { href: 'https://inematds.github.io/FGMD/',        label: 'FGMD',        desc: 'Gatilhos Mentais Digitais' },

@@ -259,10 +259,6 @@
     "en": "Image Prompting — Think Like a Director of Photography",
     "es": "Prompting de Imagen — Piensa como Director de Fotografía"
   },
-  "Nano Banana Pro — Campanha de Marca Completa": {
-    "en": "Nano Banana Pro — Full Brand Campaign",
-    "es": "Nano Banana Pro — Campaña de Marca Completa"
-  },
   "OSWork v6 — Pare de refazer o que a IA te devolve": {
     "en": "OSWork v6 — Stop redoing what the AI gives you back",
     "es": "OSWork v6 — Deja de rehacer lo que la IA te devuelve"
@@ -382,5 +378,9 @@
   "Redes Sociais para Criadores IA v6.2 — o Sistema Viral": {
     "en": "Social Networks for AI Creators v6.2 — the Viral System",
     "es": "Redes Sociales para Creadores IA v6.2 — el Sistema Viral"
+  },
+  "Monetização: Portfólio, Ofertas, Preços e Clientes": {
+    "en": "Monetization: Portfolio, Offers, Prices and Clients",
+    "es": "Monetización: Portafolio, Ofertas, Precios y Clientes"
   }
 }

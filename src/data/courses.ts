@@ -455,6 +455,14 @@ export const platformsData: Course[] = [
     url: "https://inematds.github.io/curso-laboratorio-anuncios-ia/",
   },
   {
+    id: 300,
+    title: "Monetização: Portfólio, Ofertas, Preços e Clientes",
+    description: "Organize três peças de portfólio, calcule custos e margem, compare pacotes e prepare uma proposta e abordagens pertinentes. Curso gratuito com 24 aulas no estilo OSWork v6.2, sem promessa de renda.",
+    icon: "💼",
+    tags: ["Portfólio", "Precificação", "Serviços criativos", "IA", "Intermediário"],
+    url: "https://inematds.github.io/curso-monetizacao-criadores/",
+  },
+  {
     id: 284,
     title: "Nano Banana Pro v6.2 — Campanha de Marca Completa",
     description: "Crie uma campanha fictícia com produto, personagem, referências e revisão de identidade. Seis módulos e 18 aulas curtas com práticas, ilustrações Codex e progresso local.",
@@ -2881,6 +2889,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Monetização: Portfólio, Ofertas, Preços e Clientes", type: 'novo', url: "https://inematds.github.io/curso-monetizacao-criadores/" },
   { date: '2026-09-25', title: "Redes Sociais para Criadores IA v6.2 — o Sistema Viral", type: 'novo', url: "https://inematds.github.io/curso-redes-sociais-ia/" },
   { date: '2026-09-25', title: "Laboratório de Anúncios com IA: 6 Cases Desmontados", type: 'novo', url: "https://inematds.github.io/curso-laboratorio-anuncios-ia/" },
   { date: '2026-09-25', title: "Design Essencial no Figma para Criadores", type: 'novo', url: "https://inematds.github.io/curso-figma-criadores/" },
