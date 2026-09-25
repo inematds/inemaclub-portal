@@ -2286,6 +2286,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/wat7d/',
   },
   {
+    id: 290,
+    title: "Seu Primeiro Vídeo com IA em 24 Horas v6.2",
+    description: "Da ideia a um vídeo curto: 12 aulas com roteiro, referências, geração, montagem no CapCut, voz, legendas e revisão. Um desafio de produção, sem promessa de prazo garantido.",
+    icon: "🎬",
+    tags: ["Vídeo", "IA", "Kling", "Flow", "CapCut", "Iniciante"],
+    url: "https://inematds.github.io/curso-primeiro-video-ia/",
+  },
+  {
     id: 30,
     title: 'SHIA - Super Humanos Inteligência Ampliada',
     description:
@@ -2801,6 +2809,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Seu Primeiro Vídeo com IA em 24 Horas v6.2", type: 'novo', url: "https://inematds.github.io/curso-primeiro-video-ia/" },
   { date: '2026-09-25', title: "Olhar Treinado v6.2 — Gosto Visual e Estéticas", type: 'atualizado', url: "https://inematds.github.io/curso-olhar-treinado/" },
   { date: '2026-09-25', title: "Nano Banana Pro v6.2 — Campanha de Marca Completa", type: 'atualizado', url: "https://inematds.github.io/curso-nano-banana-pro/" },
   { date: '2026-09-25', title: "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia", type: 'atualizado', url: "https://inematds.github.io/curso-prompting-imagem/" },
