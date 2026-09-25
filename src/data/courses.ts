@@ -2319,7 +2319,7 @@ export const platformsData: Course[] = [
   },
   {
     id: 220,
-    title: 'StickShift — Câmbio de Menu-Bar pro Claude Code e Codex',
+    title: 'StickShift — Painel de Modelo e Esforço para Claude Code e Codex',
     description:
       'Troca o modelo e o effort do Claude Code ou do Codex digitando os mesmos comandos que você digitaria à mão. No macOS é um app de menu-bar; na v2, para Linux e WSL, é um painel web com o mesmo câmbio e um chat que manda prompts para o agente do terminal escolhido (tmux). Fail-closed: só age depois de provar que o agente está ocioso — senão recusa com um motivo.',
     icon: '⚙️',
