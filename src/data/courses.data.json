@@ -2691,15 +2691,15 @@
     },
     {
       "id": 285,
-      "title": "Olhar Treinado — Gosto Visual e Estéticas",
-      "description": "Desenvolva critérios para analisar imagens e escolher referências. Quatro módulos com galeria de sete estéticas, comparações visuais e exercícios de curadoria.",
+      "title": "Olhar Treinado v6.2 — Gosto Visual e Estéticas",
+      "description": "Treine seu olhar em 12 aulas: observe referências, compare estéticas e produza estudos próprios com critérios de cor, luz e composição.",
       "icon": "👁️",
       "tags": [
         "Imagem com IA",
         "Estéticas",
         "Curadoria"
       ],
-      "url": "https://inematds.github.io/imagens-ia-cursos/cursos/olhar-treinado/"
+      "url": "https://inematds.github.io/curso-olhar-treinado/"
     },
     {
       "id": 274,
@@ -4085,6 +4085,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-25",
+      "title": "Olhar Treinado v6.2 — Gosto Visual e Estéticas",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/curso-olhar-treinado/"
+    },
     {
       "date": "2026-09-25",
       "title": "Nano Banana Pro v6.2 — Campanha de Marca Completa",

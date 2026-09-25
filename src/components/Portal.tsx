@@ -2048,7 +2048,7 @@ export default function Portal({
             { title: '🎨 Design & Visual', steps: [
               { href: "https://inematds.github.io/curso-prompting-imagem/", label: "Prompting de Imagem v6.2", desc: "Pense como Diretor de Fotografia" },
               { href: "https://inematds.github.io/curso-nano-banana-pro/", label: "Nano Banana Pro v6.2", desc: "Campanha de Marca Completa" },
-              { href: "https://inematds.github.io/imagens-ia-cursos/cursos/olhar-treinado/", label: "Olhar Treinado", desc: "Gosto Visual e Estéticas" },
+              { href: "https://inematds.github.io/curso-olhar-treinado/", label: "Olhar Treinado v6.2", desc: "Gosto Visual e Estéticas" },
 
               { href: 'https://inematds.github.io/webp',      label: 'WebP',      desc: 'Designer 2026' },
               { href: 'https://inematds.github.io/FDF',       label: 'FDF',       desc: 'Designers do Futuro' },

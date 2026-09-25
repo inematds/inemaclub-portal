@@ -1909,11 +1909,11 @@ export const platformsData: Course[] = [
   },
   {
     id: 285,
-    title: "Olhar Treinado — Gosto Visual e Estéticas",
-    description: "Desenvolva critérios para analisar imagens e escolher referências. Quatro módulos com galeria de sete estéticas, comparações visuais e exercícios de curadoria.",
+    title: "Olhar Treinado v6.2 — Gosto Visual e Estéticas",
+    description: "Treine seu olhar em 12 aulas: observe referências, compare estéticas e produza estudos próprios com critérios de cor, luz e composição.",
     icon: "👁️",
     tags: ["Imagem com IA", "Estéticas", "Curadoria"],
-    url: "https://inematds.github.io/imagens-ia-cursos/cursos/olhar-treinado/",
+    url: "https://inematds.github.io/curso-olhar-treinado/",
   },
   {
     id: 274,
@@ -2801,6 +2801,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-25', title: "Olhar Treinado v6.2 — Gosto Visual e Estéticas", type: 'atualizado', url: "https://inematds.github.io/curso-olhar-treinado/" },
   { date: '2026-09-25', title: "Nano Banana Pro v6.2 — Campanha de Marca Completa", type: 'atualizado', url: "https://inematds.github.io/curso-nano-banana-pro/" },
   { date: '2026-09-25', title: "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia", type: 'atualizado', url: "https://inematds.github.io/curso-prompting-imagem/" },
   { date: '2026-09-25', title: 'RSI v6.2 — Entenda e aplique ciclos de melhoria em IA', type: 'novo', url: 'https://inematds.github.io/curso-rsi/' },

@@ -31,6 +31,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: '/cursos/285-olhar-treinado-gosto-visual-e-esteticas/', destination: '/cursos/285-olhar-treinado-v6-2-gosto-visual-e-esteticas/', permanent: true },
       { source: '/cursos/284-nano-banana-pro-campanha-de-marca-completa/', destination: '/cursos/284-nano-banana-pro-v6-2-campanha-de-marca-completa/', permanent: true },
       {
         source: '/cursos/283-prompting-de-imagem-pense-como-diretor-de-fotografia/',
