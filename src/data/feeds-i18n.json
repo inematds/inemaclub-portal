@@ -3,10 +3,6 @@
     "en": "Presentation of the Codex Cheat Sheet — guide to turn the OpenAI Codex CLI from a \"programming chat\" into an autonomous development agent. Accompanied by conceptual explanation of the difference between chat, simple agent, workflow agentic and multi‑agent system.",
     "es": "Presentación del Codex Cheat Sheet — guía para transformar el OpenAI Codex CLI de \"chat de programación\" en agente autónomo de desarrollo. Acompañado de explicación conceptual sobre la diferencia entre chat, agente simple, workflow agentic y sistema multiagente."
   },
-  "Jev na prática — Curso HTML v2 com 36 aulas, progresso, anotações e roteiro de piloto": {
-    "en": "Jev in practice — HTML v2 course with 36 lessons, progress tracking, notes and a pilot worksheet",
-    "es": "Jev en la práctica — Curso HTML v2 con 36 lecciones, progreso, notas y plan de piloto"
-  },
   "Dream-RSI - Recursive Self-Improvement": {
     "en": "Dream-RSI - Recursive Self-Improvement",
     "es": "Dream-RSI - Recursive Self-Improvement"
@@ -382,5 +378,9 @@
   "Kling AI v6.2 — do Básico ao Multi-Shot": {
     "en": "Kling AI v6.2 — from Basic to Multi-Shot",
     "es": "Kling AI v6.2 — del Básico al Multi-Shot"
+  },
+  "Avatares, Lip Sync e Motion Control v6.2": {
+    "en": "Avatars, Lip Sync and Motion Control v6.2",
+    "es": "Avatares, Lip Sync y Motion Control v6.2"
   }
 }

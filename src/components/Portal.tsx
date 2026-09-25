@@ -2115,6 +2115,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/curso-7pa/', label: 'Gestão de Agentes: 7 Princípios', desc: 'Intenção, limites e supervisão — do N0 ao N4, com projeto final' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [
+              { href: "https://inematds.github.io/curso-avatares-ia/", label: "Avatares, Lip Sync e Motion Control v6.2", desc: "Prepare rosto, voz e movimento em 12 aulas: HeyGen, fala no Kling, referências próprias e personagem consistente." },
               { href: "https://inematds.github.io/curso-kling-ai/", label: "Kling AI v6.2 — do Básico ao Multi-Shot", desc: "Teste câmera, movimento, referências e sequências de planos no Kling em 15 aulas com práticas e revisão." },
               { href: "https://inematds.github.io/curso-primeiro-video-ia/", label: "Seu Primeiro Vídeo com IA em 24 Horas v6.2", desc: "Da ideia a um vídeo curto: 12 aulas com roteiro, referências, geração, montagem no CapCut, voz, legendas e revisão. Um desafio de produção, sem promessa de prazo garantido." },
               { href: 'https://inematds.github.io/idallai/', label: 'Formação Cinema com IA', desc: '9 cursos, 58 aulas — do zero ao mini-filme final' },
