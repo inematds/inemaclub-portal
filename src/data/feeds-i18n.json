@@ -179,10 +179,6 @@
     "en": "Laya & Jev — Course v2: structured decisions and practical screening in Portuguese",
     "es": "Laya & Jev — Curso v2: decisiones estructuradas y cribado práctico en portugués"
   },
-  "Laya INEMA — Triagem local em português com interface, API, CLI e avaliação real": {
-    "en": "Laya INEMA — Local screening in Portuguese with interface, API, CLI and real evaluation",
-    "es": "Laya INEMA — Cribado local en portugués con interfaz, API, CLI y evaluación real"
-  },
   "HOLO Mãos — controle a tela com as mãos, em português": {
     "en": "HOLO Mãos — control the screen with your hands, in Portuguese",
     "es": "HOLO Mãos — controla la pantalla con las manos, en portugués"
@@ -382,5 +378,9 @@
   "intelecto — voz no Telegram: transcrição, resposta em áudio e comando /voz": {
     "en": "intelecto — voice on Telegram: transcription, audio response and /voz command",
     "es": "intelecto — voz en Telegram: transcripción, respuesta en audio y comando /voz"
+  },
+  "jev-open — especialista classificador local: triagem de advocacia e clínica, treino e serviço em CPU": {
+    "en": "jev-open — local specialist classifier: law and clinic triage, training and service on CPU",
+    "es": "jev-open — especialista clasificador local: triaje de abogacía y clínica, entrenamiento y servicio en CPU"
   }
 }
