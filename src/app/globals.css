@@ -1203,6 +1203,13 @@ html {
     max-height: 800px;
 }
 
+/* Cursos/projetos mostram 30 no desktop; celular mantém o limite acima. */
+@media (min-width: 769px) {
+    .updates-list-30.expanded {
+        max-height: 1800px;
+    }
+}
+
 .update-item {
     display: flex;
     align-items: center;

@@ -322,6 +322,14 @@ export default function Portal({
   const [updatesExpanded, setUpdatesExpanded] = useState(false)
   const [projectUpdatesExpanded, setProjectUpdatesExpanded] = useState(false)
   const [novidadesExpanded, setNovidadesExpanded] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)')
+    const sync = () => setIsMobile(mq.matches)
+    sync()
+    mq.addEventListener('change', sync)
+    return () => mq.removeEventListener('change', sync)
+  }, [])
   const [novidadeAberta, setNovidadeAberta] = useState<string | null>(null)
   const [repos, setRepos] = useState<Repo[]>([])
   const t = getDictionary(locale)
@@ -453,8 +461,10 @@ export default function Portal({
 
   // Lista de atualizações a exibir
   const visibleNovidades = novidadesData.slice(0, novidadesExpanded ? 20 : 5)
-  const visibleUpdates = updatesData.slice(0, updatesExpanded ? 20 : 5)
-  const visibleProjectUpdates = projectUpdatesData.slice(0, projectUpdatesExpanded ? 20 : 5)
+  // Cursos e projetos: 30 no desktop; no celular continua 20.
+  const updatesLimit = isMobile ? 20 : 30
+  const visibleUpdates = updatesData.slice(0, updatesExpanded ? updatesLimit : 5)
+  const visibleProjectUpdates = projectUpdatesData.slice(0, projectUpdatesExpanded ? updatesLimit : 5)
   const sortedProjects = [...communityProjects].sort((a, b) =>
     a.name.localeCompare(b.name, 'pt', { sensitivity: 'base' })
   )
@@ -1704,7 +1714,7 @@ export default function Portal({
               <h3>{t.updates.coursesTitle}</h3>
               <span className="updates-toggle">{updatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
-            <div className={`updates-list${updatesExpanded ? ' expanded' : ''}`}>
+            <div className={`updates-list updates-list-30${updatesExpanded ? ' expanded' : ''}`}>
               {visibleUpdates.map((update, i) => (
                 <a
                   key={i}
@@ -1735,7 +1745,7 @@ export default function Portal({
               <h3>{t.updates.projectsTitle}</h3>
               <span className="updates-toggle">{projectUpdatesExpanded ? t.novidades.less : t.novidades.more}</span>
             </div>
-            <div className={`updates-list${projectUpdatesExpanded ? ' expanded' : ''}`}>
+            <div className={`updates-list updates-list-30${projectUpdatesExpanded ? ' expanded' : ''}`}>
               {visibleProjectUpdates.map((update, i) => (
                 <a
                   key={i}
