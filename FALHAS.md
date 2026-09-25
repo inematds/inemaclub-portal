@@ -3,6 +3,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-25 | Push RSI concorreu com cadastro RSI Copiloto e conflitou no array traduzido | Rebase preservando ambas as entradas e restaurar edição local OSWork | infra |
 | 2026-09-24 | Menu Cursos (e News) nas homes EN/ES apontava pra `/cursos/` e `news.inema.pro` em PT | `coursesPath()`/`newsUrl()` por locale + rotas `/en/cursos/` e `/es/cursos/` | prompt |
 | 2026-09-24 | `extrai-syllabus.mjs` re-extraiu e sobrescreveu 34 fichas já revisadas: o bloco de link de volta mudou o hash de toda página | Tirar o bloco `inema-backlink:v1` antes do hash (`1b71f12`); fichas antigas restauradas do git | prompt |
 | 2026-09-23 | Últimas Novidades: bloco do Nei descartado porque membro mandou `/status` no meio (virou "conversa"); título saía com `**`/`===ALERTA===` | gera-novidades.mjs ignora comando `/` de membro e limpa `**`/`=` das linhas | prompt |
