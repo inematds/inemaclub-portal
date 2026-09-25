@@ -16,6 +16,8 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-25', title: 'openpcbot v3 — voz no Telegram: como mandar e receber áudio (uso no v2 e plano local via inemavox)', type: 'atualizado', url: 'https://github.com/inematds/openpcbotv3/blob/main/docs/VOZ-TELEGRAM.md' },
+  { date: '2026-09-25', title: 'intelecto — voz no Telegram: transcrição, resposta em áudio e comando /voz', type: 'atualizado', url: 'https://github.com/inematds/intelecto/blob/main/doc/voz-telegram.md' },
   { date: '2026-09-25', title: 'Jarvis v7 — prompt pack Opus 5.5 (18 prompts) e especificação do Jarvis no Telegram', type: 'atualizado', url: 'https://inematds.github.io/jarvisv7/guia/' },
   { date: '2026-09-24', title: 'Jev Decision Lab — Pacote de viagens: anúncio avaliado uma vez e cruzado por regra com 12 perfis', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-24', title: 'WebMCP Readiness — Annotations atualizadas na descoberta estática', type: 'atualizado', url: 'https://webmcp.inema.pro/' },

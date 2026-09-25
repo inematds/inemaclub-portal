@@ -35,10 +35,6 @@
     "en": "Claude Session Kit — statusline with real quota + session skills https://share.google/uhnOjJUIlossUjZzR",
     "es": "Claude Session Kit — barra de estado con cuota real + habilidades de sesión https://share.google/uhnOjJUIlossUjZzR"
   },
-  "Jev Decision Lab — Composição de pontuações, casos de fronteira e roteiro de piloto": {
-    "en": "Jev Decision Lab — Composite scoring, boundary cases and a pilot worksheet",
-    "es": "Jev Decision Lab — Puntuación compuesta, casos límite y plan de piloto"
-  },
   "Apresentação do projeto Anúncios Top com IA, um sistema de produção disciplinada de anúncios em vídeo para Meta usando IA, estruturado em quatro skills com responsabilidades separadas e registro de experimentos.": {
     "en": "Presentation of the Anúncios Top with AI project, a disciplined video ad production system for Meta using AI, structured into four skills with separate responsibilities and experiment logging.",
     "es": "Presentación del proyecto Anuncios Top con IA, un sistema de producción disciplinada de anuncios en vídeo para Meta usando IA, estructurado en cuatro skills con responsabilidades separadas y registro de experimentos."
@@ -170,10 +166,6 @@
   "Jev na prática — 36 aulas em Markdown, dez usos e oito laboratórios": {
     "en": "Jev in practice — 36 lessons in Markdown, ten uses and eight labs",
     "es": "Jev en la práctica — 36 clases en Markdown, diez usos y ocho laboratorios"
-  },
-  "Astra Básico — guia trilíngue, prompts, skill e calculadora de tokens": {
-    "en": "Astra Básico — trilingual guide, prompts, skill and token calculator",
-    "es": "Astra Básico — guía trilingüe, prompts, skill y calculadora de tokens"
   },
   "'": {
     "en": "'",
@@ -382,5 +374,13 @@
   "Coleção de 5 prompts neutros (sem citar marcas/modelos) para benchmark de agentes criativos autônomos, rotulados como \"Exemplos Prompts Opus5.5\". Cada prompt é uma tarefa criativa completa, do zero ao entregável final.": {
     "en": "Collection of 5 neutral prompts (without mentioning brands/models) for benchmarking autonomous creative agents, labeled as \"Exemplos Prompts Opus5.5\". Each prompt is a complete creative task, from scratch to final deliverable.",
     "es": "Colección de 5 prompts neutros (sin citar marcas/modelos) para benchmark de agentes creativos autónomos, etiquetados como \"Exemplos Prompts Opus5.5\". Cada prompt es una tarea creativa completa, desde cero hasta el entregable final."
+  },
+  "openpcbot v3 — voz no Telegram: como mandar e receber áudio (uso no v2 e plano local via inemavox)": {
+    "en": "openpcbot v3 — voice on Telegram: how to send and receive audio (use in v2 and local plan via inemavox)",
+    "es": "openpcbot v3 — voz en Telegram: cómo enviar y recibir audio (uso en v2 y plan local vía inemavox)"
+  },
+  "intelecto — voz no Telegram: transcrição, resposta em áudio e comando /voz": {
+    "en": "intelecto — voice on Telegram: transcription, audio response and /voz command",
+    "es": "intelecto — voz en Telegram: transcripción, respuesta en audio y comando /voz"
   }
 }
