@@ -37,7 +37,7 @@ export function buildTools(conhecimentoSlugs: string[]) {
           type: 'object',
           properties: {
             rota: { type: 'string', enum: rotas, description: 'Rota exata do site para navegar.' },
-            motivo: { type: 'string', description: 'Explicação curta (1 frase) de por que está levando o visitante para essa página, pra narrar durante o tour.' },
+            motivo: { type: 'string', description: 'Frase curta falando DIRETAMENTE com o visitante (segunda pessoa), que aparece pra ele no chat. Ex.: "Te levo pras novidades — a IA nova que o Nei postou está lá." Nunca escreva em terceira pessoa ("levar o visitante…").' },
           },
           required: ['rota', 'motivo'],
         },
