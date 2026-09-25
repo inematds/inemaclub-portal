@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-24', title: 'Jev Decision Lab — Pacote de viagens: anúncio avaliado uma vez e cruzado por regra com 12 perfis', type: 'atualizado', url: 'https://inematds.github.io/jev/guia/' },
   { date: '2026-09-24', title: 'WebMCP Readiness — Annotations atualizadas na descoberta estática', type: 'atualizado', url: 'https://webmcp.inema.pro/' },
   { date: '2026-09-24', title: 'StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL', type: 'atualizado', url: 'https://inematds.github.io/stickshift/guia/' },
   { date: '2026-09-24', title: 'Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção', type: 'novo', url: 'https://inematds.github.io/expedicaosul/' },

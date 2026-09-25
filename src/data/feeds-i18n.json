@@ -107,10 +107,6 @@
     "en": "Full release of the ASTRA ecosystem 2nd Brain — three satellite repositories completed with passing tests, online guides, and cataloged on the Portal and PRO.",
     "es": "Publicación completa del ecosistema ASTRA 2º Cérebro — tres repositorios satélite finalizados con pruebas pasando, guías online y catalogados en el Portal y en el PRO."
   },
-  "JurisFlow — Gestão de escritório de advocacia com assistente jurídico de IA": {
-    "en": "JurisFlow — Law firm management with AI legal assistant",
-    "es": "JurisFlow — Gestión de despacho de abogados con asistente jurídico de IA"
-  },
   "Compilação de um guia/método de Gestão de Agentes de IA aplicado a empresas, tratando agentes como força de trabalho digital gerenciável com KPIs, níveis de autonomia e melhoria contínua.": {
     "en": "Compilation of a guide/method for AI Agents Management applied to companies, treating agents as a manageable digital workforce with KPIs, autonomy levels, and continuous improvement.",
     "es": "Compilación de una guía/método de Gestión de Agentes de IA aplicado a empresas, tratando a los agentes como fuerza de trabajo digital gestionable con KPIs, niveles de autonomía y mejora continua."
@@ -382,5 +378,9 @@
   "WebMCP Readiness — Annotations atualizadas na descoberta estática": {
     "en": "WebMCP Readiness — Updated annotations in static discovery",
     "es": "WebMCP Readiness — Annotations actualizadas en el descubrimiento estático"
+  },
+  "Jev Decision Lab — Pacote de viagens: anúncio avaliado uma vez e cruzado por regra com 12 perfis": {
+    "en": "Jev Decision Lab — Travel package: ad evaluated once and cross-referenced by rule with 12 profiles",
+    "es": "Jev Decision Lab — Paquete de viajes: anuncio evaluado una vez y cruzado por regla con 12 perfiles"
   }
 }

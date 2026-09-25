@@ -5611,6 +5611,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-24",
+      "title": "Jev Decision Lab — Pacote de viagens: anúncio avaliado uma vez e cruzado por regra com 12 perfis",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/jev/guia/"
+    },
+    {
+      "date": "2026-09-24",
       "title": "WebMCP Readiness — Annotations atualizadas na descoberta estática",
       "type": "atualizado",
       "url": "https://webmcp.inema.pro/"
@@ -6768,7 +6774,7 @@
     {
       "icon": "🧭",
       "name": "jev",
-      "desc": "Jev Decision Lab: 20 casos, 17 pacotes, lotes, avaliação, composição de pontuações e skill para Codex e Claude Code.",
+      "desc": "Jev Decision Lab: 20 casos, 18 pacotes (incluindo cruzamento de anúncios com perfis), lotes, avaliação, composição de pontuações e skill para Codex e Claude Code.",
       "url": "https://inematds.github.io/jev/guia/",
       "badge": "Guia"
     },
