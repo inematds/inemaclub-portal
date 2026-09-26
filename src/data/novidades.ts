@@ -13,6 +13,38 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-25/RSI Chegou - Quem nao acompanhar vai ser como mexer no chat ",
+    "date": "2026-09-25",
+    "titulo": "RSI Chegou - Quem nao acompanhar vai ser como mexer no chat enquanto outros  usam agentes. Ou seja esqueca Agentes...",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/rsi/guia/"
+  },
+  {
+    "id": "vip/2026-09-25/este conteudo ficou muito bom,",
+    "date": "2026-09-25",
+    "titulo": "este conteudo ficou muito bom,",
+    "resumo": "Olha o sistema usado pelo ExplicaVideos",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/oswork-v62/landing.html"
+  },
+  {
+    "id": "vip/2026-09-25/muito cuidado com isso",
+    "date": "2026-09-25",
+    "titulo": "muito cuidado com isso",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://abliteration.ai/"
+  },
+  {
+    "id": "2494987106/6123",
+    "date": "2026-09-25",
+    "titulo": "Prompt Video Congelado",
+    "resumo": "Tutorial sobre como criar o efeito de \"tempo congelado\" com vídeo de IA, onde objetos e personagens ficam suspensos enquanto a câmera continua se movendo pela cena.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6123"
+  },
+  {
     "id": "2494987106/6109",
     "date": "2026-09-24",
     "titulo": "Exemplos Prompts Opus5.5",
@@ -219,37 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Apresentação do LOOP-R, framework metodológico INEMA para sistemas e empresas autoaperfeiçoáveis via ciclos de melhoria contínua baseados em evidências e agentes.",
     "grupo": "INEMA.DEV",
     "url": "https://www.inema.pro/cerebro/inema-dev/7272"
-  },
-  {
-    "id": "2433384436/6515",
-    "date": "2026-09-10",
-    "titulo": "Cerebros com o Astra",
-    "resumo": "Publicação completa do ecossistema ASTRA 2º Cérebro — três repositórios satélite finalizados com testes passando, guias online e catalogados no Portal e no PRO.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6515"
-  },
-  {
-    "id": "3650752323/3326",
-    "date": "2026-09-10",
-    "titulo": "Anúncios Top com IA",
-    "resumo": "Apresentação do projeto Anúncios Top com IA, um sistema de produção disciplinada de anúncios em vídeo para Meta usando IA, estruturado em quatro skills com responsabilidades separadas e registro de experimentos.",
-    "grupo": "INEMA.VIBE",
-    "url": "https://www.inema.pro/cerebro/inema-vibe/3326"
-  },
-  {
-    "id": "2433384436/6559",
-    "date": "2026-09-10",
-    "titulo": "Guia de Gestão de Agentes de IA",
-    "resumo": "Compilação de um guia/método de Gestão de Agentes de IA aplicado a empresas, tratando agentes como força de trabalho digital gerenciável com KPIs, níveis de autonomia e melhoria contínua.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6559"
-  },
-  {
-    "id": "3053650449/1289",
-    "date": "2026-09-10",
-    "titulo": "Evoluindo com o Codex",
-    "resumo": "Apresentação do Codex Cheat Sheet — guia para transformar o OpenAI Codex CLI de \"chat de programação\" em agente autônomo de desenvolvimento. Acompanhado de explicação conceitual sobre a diferença entre chat, agente simples, workflow agentic e sistema multiagente.",
-    "grupo": "INEMA.CODEX",
-    "url": "https://www.inema.pro/cerebro/inema-codex/1289"
   }
 ];

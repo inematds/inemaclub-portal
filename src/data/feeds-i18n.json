@@ -1,8 +1,4 @@
 {
-  "Apresentação do Codex Cheat Sheet — guia para transformar o OpenAI Codex CLI de \"chat de programação\" em agente autônomo de desenvolvimento. Acompanhado de explicação conceitual sobre a diferença entre chat, agente simples, workflow agentic e sistema multiagente.": {
-    "en": "Presentation of the Codex Cheat Sheet — guide to turn the OpenAI Codex CLI from a \"programming chat\" into an autonomous development agent. Accompanied by conceptual explanation of the difference between chat, simple agent, workflow agentic and multi‑agent system.",
-    "es": "Presentación del Codex Cheat Sheet — guía para transformar el OpenAI Codex CLI de \"chat de programación\" en agente autónomo de desarrollo. Acompañado de explicación conceptual sobre la diferencia entre chat, agente simple, workflow agentic y sistema multiagente."
-  },
   "Dream-RSI - Recursive Self-Improvement": {
     "en": "Dream-RSI - Recursive Self-Improvement",
     "es": "Dream-RSI - Recursive Self-Improvement"
@@ -11,25 +7,13 @@
     "en": "It's worth studying.",
     "es": "Vale la pena estudiar."
   },
-  "Evoluindo com o Codex": {
-    "en": "Evolving with Codex",
-    "es": "Evolucionando con Codex"
-  },
   "`IA para quem decide · 6 aulas curtas`": {
     "en": "`AI for those who decide · 6 short lessons`",
     "es": "`IA para quien decide · 6 clases cortas`"
   },
-  "Guia de Gestão de Agentes de IA": {
-    "en": "AI Agents Management Guide",
-    "es": "Guía de Gestión de Agentes de IA"
-  },
   "Claude Session Kit — statusline com cota real + skills de sessão https://share.google/uhnOjJUIlossUjZzR": {
     "en": "Claude Session Kit — statusline with real quota + session skills https://share.google/uhnOjJUIlossUjZzR",
     "es": "Claude Session Kit — barra de estado con cuota real + habilidades de sesión https://share.google/uhnOjJUIlossUjZzR"
-  },
-  "Apresentação do projeto Anúncios Top com IA, um sistema de produção disciplinada de anúncios em vídeo para Meta usando IA, estruturado em quatro skills com responsabilidades separadas e registro de experimentos.": {
-    "en": "Presentation of the Anúncios Top with AI project, a disciplined video ad production system for Meta using AI, structured into four skills with separate responsibilities and experiment logging.",
-    "es": "Presentación del proyecto Anuncios Top con IA, un sistema de producción disciplinada de anuncios en vídeo para Meta usando IA, estructurado en cuatro skills con responsabilidades separadas y registro de experimentos."
   },
   "Vídeos Virais de Pintura em Pedra": {
     "en": "Viral Stone Painting Videos",
@@ -55,10 +39,6 @@
     "en": "Presentation of the \"Astra Higgsfield\" skill for Claude Codex, integrating the Higgsfield API as an alternative to direct service subscription.",
     "es": "Presentación de la skill \"Astra Higgsfield\" para Claude Codex, integrando la API de Higgsfield como alternativa a la suscripción directa del servicio."
   },
-  "Cerebros com o Astra": {
-    "en": "Brains with Astra",
-    "es": "Cerebros con Astra"
-  },
   "Explicação detalhada do conceito Dream-RSI (Recursive Self-Improvement) e sua conexão com o projeto LOOP-R da INEMA. O tópico apresenta um guia educativo criado pela INEMA sobre o paper \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\".": {
     "en": "Detailed explanation of the Dream-RSI (Recursive Self-Improvement) concept and its connection to INEMA's LOOP-R project. The topic presents an educational guide created by INEMA on the paper \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\".",
     "es": "Explicación detallada del concepto Dream-RSI (Recursive Self-Improvement) y su conexión con el proyecto LOOP-R de INEMA. El tema presenta una guía educativa creada por INEMA sobre el artículo \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\"."
@@ -74,18 +54,6 @@
   "Apresentação do LOOP-R, framework metodológico INEMA para sistemas e empresas autoaperfeiçoáveis via ciclos de melhoria contínua baseados em evidências e agentes.": {
     "en": "Presentation of LOOP-R, INEMA methodological framework for self-improving systems and companies via evidence-based continuous improvement cycles and agents.",
     "es": "Presentación del LOOP-R, framework metodológico INEMA para sistemas y empresas auto‑mejorables vía ciclos de mejora continua basados en evidencia y agentes."
-  },
-  "Anúncios Top com IA": {
-    "en": "Top Announcements with AI",
-    "es": "Anuncios Top con IA"
-  },
-  "Publicação completa do ecossistema ASTRA 2º Cérebro — três repositórios satélite finalizados com testes passando, guias online e catalogados no Portal e no PRO.": {
-    "en": "Full release of the ASTRA ecosystem 2nd Brain — three satellite repositories completed with passing tests, online guides, and cataloged on the Portal and PRO.",
-    "es": "Publicación completa del ecosistema ASTRA 2º Cérebro — tres repositorios satélite finalizados con pruebas pasando, guías online y catalogados en el Portal y en el PRO."
-  },
-  "Compilação de um guia/método de Gestão de Agentes de IA aplicado a empresas, tratando agentes como força de trabalho digital gerenciável com KPIs, níveis de autonomia e melhoria contínua.": {
-    "en": "Compilation of a guide/method for AI Agents Management applied to companies, treating agents as a manageable digital workforce with KPIs, autonomy levels, and continuous improvement.",
-    "es": "Compilación de una guía/método de Gestión de Agentes de IA aplicado a empresas, tratando a los agentes como fuerza de trabajo digital gestionable con KPIs, niveles de autonomía y mejora continua."
   },
   "JEV": {
     "en": "JEV",
@@ -382,5 +350,29 @@
   "San Martín — estudo de redesign de site municipal: diagnóstico, pesquisa de sites de governo 2026 e proposta de home": {
     "en": "San Martín — study of municipal website redesign: diagnosis, 2026 government website research and home proposal",
     "es": "San Martín — estudio de rediseño de sitio municipal: diagnóstico, investigación de sitios de gobierno 2026 y propuesta de home"
+  },
+  "RSI Chegou - Quem nao acompanhar vai ser como mexer no chat enquanto outros  usam agentes. Ou seja esqueca Agentes...": {
+    "en": "RSI Arrived - Anyone who doesn't keep up will be like using chat while others use agents. In other words, forget Agents...",
+    "es": "RSI Llegó - Quien no acompañe será como mover el chat mientras otros usan agentes. Es decir, olvida Agentes..."
+  },
+  "este conteudo ficou muito bom,": {
+    "en": "this content turned out great,",
+    "es": "este contenido quedó muy bueno,"
+  },
+  "Olha o sistema usado pelo ExplicaVideos": {
+    "en": "Check out the system used by ExplicaVideos",
+    "es": "Mira el sistema usado por ExplicaVideos"
+  },
+  "muito cuidado com isso": {
+    "en": "be very careful with this",
+    "es": "mucho cuidado con eso"
+  },
+  "Prompt Video Congelado": {
+    "en": "Frozen Prompt Video",
+    "es": "Prompt Video Congelado"
+  },
+  "Tutorial sobre como criar o efeito de \"tempo congelado\" com vídeo de IA, onde objetos e personagens ficam suspensos enquanto a câmera continua se movendo pela cena.": {
+    "en": "Tutorial on how to create the \"frozen time\" effect with AI video, where objects and characters stay suspended while the camera keeps moving through the scene.",
+    "es": "Tutorial sobre cómo crear el efecto de \"tiempo congelado\" con video de IA, donde objetos y personajes quedan suspendidos mientras la cámara sigue moviéndose por la escena."
   }
 }
