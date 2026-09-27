@@ -676,6 +676,49 @@ export default function Portal({
         </div>
       </section>
 
+      {/* Evento — Codex + Claude: usar os dois juntos (destaque, topo) */}
+      <section id="evento-codex-claude" style={{ padding: '2.5rem 0 0' }}>
+        <div className="container">
+          <a
+            href={evLink("https://eventos.inema.pro/codex-claude/")}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('https://eventos.inema.pro/codex-claude/', 'Codex + Claude juntos', 'evento')}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              border: '1px solid oklch(0.70 0.14 230)',
+              borderRadius: '16px',
+              background: 'oklch(0.14 0.03 250)',
+              boxShadow: '0 20px 60px oklch(0.04 0.02 250 / .55)',
+              textDecoration: 'none',
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img decoding="async"
+              src={img("/doc/codex-claude.webp")}
+              alt={t.events.codexClaudeAlt}
+              style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1672 / 941', objectFit: 'cover' }}
+            />
+          </a>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginTop: '14px' }}>
+            {[
+              { href: 'https://eventos.inema.pro/codex-claude/', label: '🎤 Área', desc: 'Usar os dois juntos, como tudo se integra e todos os projetos' },
+              { href: 'https://inematds.github.io/use-both-claude-codex/guia/', label: '🤝 Use Both', desc: 'Kit MIT: 6 fluxos, prompts, templates e skills handoff/prime' },
+              { href: 'https://inematds.github.io/iclaudex/', label: '⌨️ claudex', desc: 'Claude escreve o plano, Codex critica, em loop até validar' },
+              { href: 'https://eventos.inema.pro/claude-codex/', label: '🧠 Migrar', desc: 'Claude → Codex: migre ou fique agnóstico' },
+            ].map((c) => (
+              <a key={c.label} href={evLink(c.href)} target="_blank" rel="noopener noreferrer"
+                 onClick={() => trackClick(c.href, c.label, 'codex-claude')}
+                 style={{ display: 'block', padding: '14px 16px', borderRadius: '12px', border: '1px solid oklch(0.70 0.14 230 / .35)', background: 'oklch(0.16 0.03 250 / .6)', textDecoration: 'none', color: 'inherit' }}>
+                <strong style={{ display: 'block', marginBottom: '4px' }}>{c.label}</strong>
+                <span style={{ fontSize: '.88rem', opacity: .8 }}>{c.desc}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Evento — RSI chegou 2 anos antes (destaque, topo) */}
       <section id="evento-rsi" style={{ padding: '2.5rem 0 0' }}>
         <div className="container">

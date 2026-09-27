@@ -13,6 +13,7 @@ export const LOCALIZED_IMAGES = new Set([
   'agi-chegou.webp',
   'capa-musicavideo-v2.webp',
   'claude-codex-agnostico.webp',
+  'codex-claude.webp',
   'content2video.webp',
   'conviteinemap.webp',
   'gestao-agentes-2027.webp',
