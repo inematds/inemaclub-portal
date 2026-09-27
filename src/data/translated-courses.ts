@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 291, kind: 'curso', locale: 'en', title: 'Kling AI v6.2 — From Basics to Multi-Shot', description: 'Test camera, references, movement, and shot sequences in Kling using verifiable criteria.', url: 'https://inematds.github.io/curso-kling-ai/en/', icon: '🎬' },
+  { id: 291, kind: 'curso', locale: 'es', title: 'Kling AI v6.2 — De lo básico a Multi-Shot', description: 'Prueba cámara, referencias, movimiento y secuencias de planos en Kling con criterios verificables.', url: 'https://inematds.github.io/curso-kling-ai/es/', icon: '🎬' },
   { id: 290, kind: 'curso', locale: 'en', title: 'Your First AI Video in 24 Hours v6.2', description: 'Plan, generate, edit, and review a short video with AI, voice, and captions.', url: 'https://inematds.github.io/curso-primeiro-video-ia/en/', icon: '🎬' },
   { id: 290, kind: 'curso', locale: 'es', title: 'Tu primer video con IA en 24 horas v6.2', description: 'Planea, genera, edita y revisa un video breve con IA, voz y subtítulos.', url: 'https://inematds.github.io/curso-primeiro-video-ia/es/', icon: '🎬' },
   { id: 285, kind: 'curso', locale: 'en', title: 'Trained Eye v6.2 — Visual Taste and Aesthetics', description: 'Notice references, compare aesthetics, and create your own visual studies with clear criteria.', url: 'https://inematds.github.io/curso-olhar-treinado/en/', icon: '👁️' },
