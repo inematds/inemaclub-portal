@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 298, kind: 'curso', locale: 'en', title: 'AI Ad Lab v6.2', description: 'Six original production cases, from script to review.', url: 'https://inematds.github.io/curso-laboratorio-anuncios-ia/en/', icon: '🎬' },
+  { id: 298, kind: 'curso', locale: 'es', title: 'Laboratorio de Anuncios con IA v6.2', description: 'Seis casos originales de producción, del guion a la revisión.', url: 'https://inematds.github.io/curso-laboratorio-anuncios-ia/es/', icon: '🎬' },
   { id: 297, kind: 'curso', locale: 'en', title: 'Essential Design in Figma for Creators v6.2', description: 'Create and review a cover and three pages in Figma.', url: 'https://inematds.github.io/curso-figma-criadores/en/', icon: '🎨' },
   { id: 297, kind: 'curso', locale: 'es', title: 'Diseño esencial en Figma para Creadores v6.2', description: 'Crea y revisa una portada y tres páginas en Figma.', url: 'https://inematds.github.io/curso-figma-criadores/es/', icon: '🎨' },
   { id: 296, kind: 'curso', locale: 'en', title: 'Visual DNA: Art Direction and Branding with AI v6.2', description: 'Build a visual system with a message, references, and criteria you can check.', url: 'https://inematds.github.io/curso-visual-dna/en/', icon: '🎨' },
