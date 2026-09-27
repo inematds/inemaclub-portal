@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 284, kind: 'curso', locale: 'en', title: 'Nano Banana Pro v6.2 — Complete Brand Campaign', description: 'Plan, produce, and review a fictional campaign with references, product, character, text, and a visual sequence.', url: 'https://inematds.github.io/curso-nano-banana-pro/en/', icon: '🍌' },
+  { id: 284, kind: 'curso', locale: 'es', title: 'Nano Banana Pro v6.2 — Campaña de marca completa', description: 'Planea, produce y revisa una campaña ficticia con referencias, producto, personaje, texto y una secuencia visual.', url: 'https://inematds.github.io/curso-nano-banana-pro/es/', icon: '🍌' },
   { id: 283, kind: 'curso', locale: 'en', title: 'Image Prompting v6.2 — Think Like a Director of Photography', description: 'Choose the light, framing, and composition to create and review three product images.', url: 'https://inematds.github.io/curso-prompting-imagem/en/', icon: '📷' },
   { id: 283, kind: 'curso', locale: 'es', title: 'Prompting de imágenes v6.2 — Piensa como director de fotografía', description: 'Elige la luz, el encuadre y la composición para crear y revisar tres imágenes de producto.', url: 'https://inematds.github.io/curso-prompting-imagem/es/', icon: '📷' },
   { id: 10006, kind: 'projeto', locale: 'en', title: 'Expedição Sul — real road trips become animated maps', description: 'Car trips through the Andes, the pampas and Uruguay turned into route animations with real satellite imagery, the car on the real road and a logbook. Includes "Hua Hum: our plan × our adventure" (road cut off, border closed, trip photos), in 9:16 and 16:9.', url: 'https://inematds.github.io/expedicaosul/guia/en/', icon: '🗺️' },
