@@ -3,6 +3,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-26 | Novas entradas com chaves entre aspas não eram capturadas pelo teste regex do catálogo traduzido | Usar o literal TS padrão com id/kind/locale sem aspas nas chaves; teste rerodado antes do push | prompt |
 | 2026-09-25 | Agente do portal respondia "não tenho registro" pra Hermes, Agnes, NVIDIA etc. (catálogo congelado em 54 fichas desde 10/07 + busca exigindo todas as palavras) | Cron `sync-agente-catalogo.mjs` + rpc `buscar_fichas` em OR ranqueada | infra |
 | 2026-09-25 | Push RSI concorreu com cadastro RSI Copiloto e conflitou no array traduzido | Rebase preservando ambas as entradas e restaurar edição local OSWork | infra |
 | 2026-09-24 | Menu Cursos (e News) nas homes EN/ES apontava pra `/cursos/` e `news.inema.pro` em PT | `coursesPath()`/`newsUrl()` por locale + rotas `/en/cursos/` e `/es/cursos/` | prompt |

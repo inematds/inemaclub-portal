@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 285, kind: 'curso', locale: 'en', title: 'Trained Eye v6.2 — Visual Taste and Aesthetics', description: 'Notice references, compare aesthetics, and create your own visual studies with clear criteria.', url: 'https://inematds.github.io/curso-olhar-treinado/en/', icon: '👁️' },
+  { id: 285, kind: 'curso', locale: 'es', title: 'Ojo entrenado v6.2 — Gusto visual y estéticas', description: 'Observa referencias, compara estéticas y crea estudios visuales propios con criterios claros.', url: 'https://inematds.github.io/curso-olhar-treinado/es/', icon: '👁️' },
   { id: 284, kind: 'curso', locale: 'en', title: 'Nano Banana Pro v6.2 — Complete Brand Campaign', description: 'Plan, produce, and review a fictional campaign with references, product, character, text, and a visual sequence.', url: 'https://inematds.github.io/curso-nano-banana-pro/en/', icon: '🍌' },
   { id: 284, kind: 'curso', locale: 'es', title: 'Nano Banana Pro v6.2 — Campaña de marca completa', description: 'Planea, produce y revisa una campaña ficticia con referencias, producto, personaje, texto y una secuencia visual.', url: 'https://inematds.github.io/curso-nano-banana-pro/es/', icon: '🍌' },
   { id: 283, kind: 'curso', locale: 'en', title: 'Image Prompting v6.2 — Think Like a Director of Photography', description: 'Choose the light, framing, and composition to create and review three product images.', url: 'https://inematds.github.io/curso-prompting-imagem/en/', icon: '📷' },
