@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 294, kind: 'curso', locale: 'en', title: 'Audio That Sells: Voice, Music, and Sound Design v6.2', description: 'Build voice, music, effects, and ambience around a clear message.', url: 'https://inematds.github.io/curso-audio-video-ia/en/', icon: '🎧' },
+  { id: 294, kind: 'curso', locale: 'es', title: 'Audio que vende: voz, música y diseño sonoro v6.2', description: 'Combina voz, música, efectos y ambiente para transmitir un mensaje claro.', url: 'https://inematds.github.io/curso-audio-video-ia/es/', icon: '🎧' },
   { id: 293, kind: 'curso', locale: 'en', title: 'Styles and Cinema: Seedance + Higgsfield v6.2', description: 'Compare styles and camera choices in a short sequence.', url: 'https://inematds.github.io/curso-estilos-cinema-ia/en/', icon: '🎬' },
   { id: 293, kind: 'curso', locale: 'es', title: 'Estilos y Cine: Seedance + Higgsfield v6.2', description: 'Compara estilos y decisiones de cámara en una secuencia breve.', url: 'https://inematds.github.io/curso-estilos-cinema-ia/es/', icon: '🎬' },
   { id: 292, kind: 'curso', locale: 'en', title: 'AI Avatars, Lip Sync, and Motion Control v6.2', description: 'Prepare a face, voice, and movement to make and review talking avatars.', url: 'https://inematds.github.io/curso-avatares-ia/en/', icon: '🎬' },
