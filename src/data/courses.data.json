@@ -5909,6 +5909,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-27",
+      "title": "Use Both — Claude + Codex: um planeja, o outro desafia. 6 fluxos, prompts, templates e skills handoff/prime (kit MIT com guia PT/EN/ES)",
+      "type": "novo",
+      "url": "https://inematds.github.io/use-both-claude-codex/guia/"
+    },
+    {
+      "date": "2026-09-27",
       "title": "MakeShorts — fábrica de shorts com IA no Claude Code: roteiro, voz ou avatar, edição 9:16, QA e agendamento (local ou VPS com APIs)",
       "type": "novo",
       "url": "https://inematds.github.io/makeshorts/guia/"
@@ -7547,6 +7553,13 @@
       "name": "ugc-seedance25",
       "desc": "Skill Claude Code + gerador de brief que transforma um produto nos 3 prompts (foto do produto, retrato do creator, vídeo one-take de 30 s com voz e lip-sync) da receita Seedance 2.5 UGC Ads, adaptada pra Magnific, Higgsfield e fal.ai, com 9 formatos, falas em PT-BR, gate de custo e QA em frames.",
       "url": "https://inematds.github.io/ugc-seedance25/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🤝",
+      "name": "use-both-claude-codex",
+      "desc": "Kit aberto (MIT, Prompt Advisers) pra usar Claude e Codex juntos: 6 fluxos (um planeja e o outro critica, um constrói e o outro revisa o diff, computer use supervisionado, meta com condição de parada, handoff), prompts prontos, templates e as skills handoff/prime com instalador em modo prévia. Guia em PT/EN/ES.",
+      "url": "https://inematds.github.io/use-both-claude-codex/guia/",
       "badge": "Guia"
     },
     {
