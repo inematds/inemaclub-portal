@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 290, kind: 'curso', locale: 'en', title: 'Your First AI Video in 24 Hours v6.2', description: 'Plan, generate, edit, and review a short video with AI, voice, and captions.', url: 'https://inematds.github.io/curso-primeiro-video-ia/en/', icon: '🎬' },
+  { id: 290, kind: 'curso', locale: 'es', title: 'Tu primer video con IA en 24 horas v6.2', description: 'Planea, genera, edita y revisa un video breve con IA, voz y subtítulos.', url: 'https://inematds.github.io/curso-primeiro-video-ia/es/', icon: '🎬' },
   { id: 285, kind: 'curso', locale: 'en', title: 'Trained Eye v6.2 — Visual Taste and Aesthetics', description: 'Notice references, compare aesthetics, and create your own visual studies with clear criteria.', url: 'https://inematds.github.io/curso-olhar-treinado/en/', icon: '👁️' },
   { id: 285, kind: 'curso', locale: 'es', title: 'Ojo entrenado v6.2 — Gusto visual y estéticas', description: 'Observa referencias, compara estéticas y crea estudios visuales propios con criterios claros.', url: 'https://inematds.github.io/curso-olhar-treinado/es/', icon: '👁️' },
   { id: 284, kind: 'curso', locale: 'en', title: 'Nano Banana Pro v6.2 — Complete Brand Campaign', description: 'Plan, produce, and review a fictional campaign with references, product, character, text, and a visual sequence.', url: 'https://inematds.github.io/curso-nano-banana-pro/en/', icon: '🍌' },
