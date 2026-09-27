@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 297, kind: 'curso', locale: 'en', title: 'Essential Design in Figma for Creators v6.2', description: 'Create and review a cover and three pages in Figma.', url: 'https://inematds.github.io/curso-figma-criadores/en/', icon: '🎨' },
+  { id: 297, kind: 'curso', locale: 'es', title: 'Diseño esencial en Figma para Creadores v6.2', description: 'Crea y revisa una portada y tres páginas en Figma.', url: 'https://inematds.github.io/curso-figma-criadores/es/', icon: '🎨' },
   { id: 296, kind: 'curso', locale: 'en', title: 'Visual DNA: Art Direction and Branding with AI v6.2', description: 'Build a visual system with a message, references, and criteria you can check.', url: 'https://inematds.github.io/curso-visual-dna/en/', icon: '🎨' },
   { id: 296, kind: 'curso', locale: 'es', title: 'Visual DNA: Dirección de arte y branding con IA v6.2', description: 'Construye un sistema visual con mensaje, referencias y criterios comprobables.', url: 'https://inematds.github.io/curso-visual-dna/es/', icon: '🎨' },
   { id: 295, kind: 'curso', locale: 'en', title: 'CapCut for AI Video Creators v6.2', description: 'Make a vertical invitation with checked cuts, sound, and captions.', url: 'https://inematds.github.io/curso-capcut-ia/en/', icon: '✂️' },
