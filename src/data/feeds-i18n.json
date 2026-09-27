@@ -151,10 +151,6 @@
     "en": "Explicavideos — reusable process for videos with Nei, illustrations and subtitles",
     "es": "Explicavideos — proceso reutilizable para videos con Nei, ilustraciones y subtítulos"
   },
-  "Qual Modelo de IA Usar — o modelo certo para cada tarefa (PT/EN/ES)": {
-    "en": "Which AI Model to Use — the right model for each task (PT/EN/ES)",
-    "es": "Qué Modelo de IA Usar — el modelo correcto para cada tarea (PT/EN/ES)"
-  },
   "Prompt de Orientação de TEXTO": {
     "en": "Text Guidance Prompt",
     "es": "Prompt de Orientación de TEXTO"
@@ -374,5 +370,9 @@
   "Compartilhamento de dicas sobre a skill `wait-what` do ecossistema `aihero.dev` e comandos para manter skills atualizadas via `npx`.": {
     "en": "Sharing tips about the `wait-what` skill from the `aihero.dev` ecosystem and commands to keep skills updated via `npx`.",
     "es": "Compartir consejos sobre la skill `wait-what` del ecosistema `aihero.dev` y comandos para mantener skills actualizadas vía `npx`."
+  },
+  "MakeShorts — fábrica de shorts com IA no Claude Code: roteiro, voz ou avatar, edição 9:16, QA e agendamento (local ou VPS com APIs)": {
+    "en": "MakeShorts — short factory with AI in Claude Code: script, voice or avatar, 9:16 editing, QA and scheduling (local or VPS with APIs)",
+    "es": "MakeShorts — fábrica de shorts con IA en Claude Code: guion, voz o avatar, edición 9:16, QA y programación (local o VPS con APIs)"
   }
 }
