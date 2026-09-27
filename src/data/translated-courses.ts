@@ -18,6 +18,10 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 301, kind: 'curso', locale: 'en', title: 'AI Influencer in 21 Days v6.2', description: 'Create an original character and carry out a challenge transparently.', url: 'https://inematds.github.io/curso-influenciador-ia/en/', icon: '🎭' },
+  { id: 301, kind: 'curso', locale: 'es', title: 'Influenciador IA en 21 días v6.2', description: 'Crea un personaje original y realiza un desafío con transparencia.', url: 'https://inematds.github.io/curso-influenciador-ia/es/', icon: '🎭' },
+  { id: 300, kind: 'curso', locale: 'en', title: 'Monetization for Creators v6.2', description: 'Organize your portfolio, costs, and a clear proposal.', url: 'https://inematds.github.io/curso-monetizacao-criadores/en/', icon: '💼' },
+  { id: 300, kind: 'curso', locale: 'es', title: 'Monetización para Creadores v6.2', description: 'Organiza el portafolio, los costos y una propuesta clara.', url: 'https://inematds.github.io/curso-monetizacao-criadores/es/', icon: '💼' },
   { id: 299, kind: 'curso', locale: 'en', title: 'Social Media for AI Creators v6.2', description: 'Plan, publish, and observe content clearly.', url: 'https://inematds.github.io/curso-redes-sociais-ia/en/', icon: '🎬' },
   { id: 299, kind: 'curso', locale: 'es', title: 'Redes Sociales para Creadores IA v6.2', description: 'Planea, publica y observa contenido con claridad.', url: 'https://inematds.github.io/curso-redes-sociais-ia/es/', icon: '🎬' },
   { id: 10007, kind: 'projeto', locale: 'en', title: 'MakeShorts — AI shorts factory in Claude Code', description: 'A Claude Code skill that turns a topic, link or clip into a published short: 3-act script, local or API voice or HeyGen avatar, real b-roll, 9:16 editing, automatic QA and scheduling. Runs with a GPU or on a VPS with APIs only.', url: 'https://inematds.github.io/makeshorts/guia/en/', icon: '🎬' },
