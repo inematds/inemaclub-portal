@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 292, kind: 'curso', locale: 'en', title: 'AI Avatars, Lip Sync, and Motion Control v6.2', description: 'Prepare a face, voice, and movement to make and review talking avatars.', url: 'https://inematds.github.io/curso-avatares-ia/en/', icon: '🎬' },
+  { id: 292, kind: 'curso', locale: 'es', title: 'Avatares, Lip Sync y Motion Control v6.2', description: 'Prepara rostro, voz y movimiento para crear y revisar avatares hablados.', url: 'https://inematds.github.io/curso-avatares-ia/es/', icon: '🎬' },
   { id: 291, kind: 'curso', locale: 'en', title: 'Kling AI v6.2 — From Basics to Multi-Shot', description: 'Test camera, references, movement, and shot sequences in Kling using verifiable criteria.', url: 'https://inematds.github.io/curso-kling-ai/en/', icon: '🎬' },
   { id: 291, kind: 'curso', locale: 'es', title: 'Kling AI v6.2 — De lo básico a Multi-Shot', description: 'Prueba cámara, referencias, movimiento y secuencias de planos en Kling con criterios verificables.', url: 'https://inematds.github.io/curso-kling-ai/es/', icon: '🎬' },
   { id: 290, kind: 'curso', locale: 'en', title: 'Your First AI Video in 24 Hours v6.2', description: 'Plan, generate, edit, and review a short video with AI, voice, and captions.', url: 'https://inematds.github.io/curso-primeiro-video-ia/en/', icon: '🎬' },
