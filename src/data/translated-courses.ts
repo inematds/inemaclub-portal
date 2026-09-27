@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 299, kind: 'curso', locale: 'en', title: 'Social Media for AI Creators v6.2', description: 'Plan, publish, and observe content clearly.', url: 'https://inematds.github.io/curso-redes-sociais-ia/en/', icon: '🎬' },
+  { id: 299, kind: 'curso', locale: 'es', title: 'Redes Sociales para Creadores IA v6.2', description: 'Planea, publica y observa contenido con claridad.', url: 'https://inematds.github.io/curso-redes-sociais-ia/es/', icon: '🎬' },
   { id: 10007, kind: 'projeto', locale: 'en', title: 'MakeShorts — AI shorts factory in Claude Code', description: 'A Claude Code skill that turns a topic, link or clip into a published short: 3-act script, local or API voice or HeyGen avatar, real b-roll, 9:16 editing, automatic QA and scheduling. Runs with a GPU or on a VPS with APIs only.', url: 'https://inematds.github.io/makeshorts/guia/en/', icon: '🎬' },
   { id: 10007, kind: 'projeto', locale: 'es', title: 'MakeShorts — Fábrica de shorts con IA en Claude Code', description: 'Una skill de Claude Code que convierte un tema, enlace o clip en un short publicado: guion en 3 actos, voz local o por API o avatar HeyGen, b-roll real, edición 9:16, QA automático y programación. Funciona con GPU o en un VPS solo con APIs.', url: 'https://inematds.github.io/makeshorts/guia/es/', icon: '🎬' },
   { id: 298, kind: 'curso', locale: 'en', title: 'AI Ad Lab v6.2', description: 'Six original production cases, from script to review.', url: 'https://inematds.github.io/curso-laboratorio-anuncios-ia/en/', icon: '🎬' },
