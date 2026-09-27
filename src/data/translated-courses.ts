@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 296, kind: 'curso', locale: 'en', title: 'Visual DNA: Art Direction and Branding with AI v6.2', description: 'Build a visual system with a message, references, and criteria you can check.', url: 'https://inematds.github.io/curso-visual-dna/en/', icon: '🎨' },
+  { id: 296, kind: 'curso', locale: 'es', title: 'Visual DNA: Dirección de arte y branding con IA v6.2', description: 'Construye un sistema visual con mensaje, referencias y criterios comprobables.', url: 'https://inematds.github.io/curso-visual-dna/es/', icon: '🎨' },
   { id: 295, kind: 'curso', locale: 'en', title: 'CapCut for AI Video Creators v6.2', description: 'Make a vertical invitation with checked cuts, sound, and captions.', url: 'https://inematds.github.io/curso-capcut-ia/en/', icon: '✂️' },
   { id: 295, kind: 'curso', locale: 'es', title: 'CapCut para creadores de video con IA v6.2', description: 'Arma una invitación vertical con cortes, sonido y subtítulos revisados.', url: 'https://inematds.github.io/curso-capcut-ia/es/', icon: '✂️' },
   { id: 294, kind: 'curso', locale: 'en', title: 'Audio That Sells: Voice, Music, and Sound Design v6.2', description: 'Build voice, music, effects, and ambience around a clear message.', url: 'https://inematds.github.io/curso-audio-video-ia/en/', icon: '🎧' },
