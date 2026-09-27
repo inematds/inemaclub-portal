@@ -13,6 +13,30 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-26/curso de Video completo OSWork estilo de conteudo v2",
+    "date": "2026-09-26",
+    "titulo": "curso de Video completo OSWork estilo de conteudo v2",
+    "resumo": "",
+    "grupo": "INEMA.VIP",
+    "url": "https://inematds.github.io/oswork/videos/"
+  },
+  {
+    "id": "2433384436/6720",
+    "date": "2026-09-26",
+    "titulo": "RSI do INEMA",
+    "resumo": "Divulgação da área RSI do INEMA — plataforma de estudo e aplicação prática de Recursive Self-Improvement (melhoria recursiva de IA). O tópico apresenta o conceito e o conteúdo disponível no site.",
+    "grupo": "INEMA.AGENTES",
+    "url": "https://www.inema.pro/cerebro/inema-agentes/6720"
+  },
+  {
+    "id": "2494987106/6141",
+    "date": "2026-09-26",
+    "titulo": "skills-wait-what",
+    "resumo": "Compartilhamento de dicas sobre a skill `wait-what` do ecossistema `aihero.dev` e comandos para manter skills atualizadas via `npx`.",
+    "grupo": "INEMA.PROMPTS",
+    "url": "https://www.inema.pro/cerebro/inema-prompts/6141"
+  },
+  {
     "id": "vip/2026-09-25/RSI Chegou - Quem nao acompanhar vai ser como mexer no chat ",
     "date": "2026-09-25",
     "titulo": "RSI Chegou - Quem nao acompanhar vai ser como mexer no chat enquanto outros  usam agentes. Ou seja esqueca Agentes...",
@@ -227,29 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Tópico documenta um framework de prompts para criar vídeos virais de pintura em pedra usando IA, com etapa de geração de imagem final seguida de vídeo timelapse image-to-video.",
     "grupo": "INEMA.PROMPTS",
     "url": "https://www.inema.pro/cerebro/inema-prompts/6075"
-  },
-  {
-    "id": "2433384436/6598",
-    "date": "2026-09-14",
-    "titulo": "Como Migrar de Claude para Codex ou outros",
-    "resumo": "Discussão sobre como criar uma estrutura de trabalho com agentes de IA independente de modelo, com foco em migração do Claude Code para o Codex e outros provedores. Apresenta arquitetura concreta, fluxo de handoff e princípios de organização de contexto.",
-    "grupo": "INEMA.AGENTES",
-    "url": "https://www.inema.pro/cerebro/inema-agentes/6598"
-  },
-  {
-    "id": "vip/2026-09-11/Aqui um sistema e um curso sobre gestao de Agentes de IA,  d",
-    "date": "2026-09-11",
-    "titulo": "Aqui um sistema e um curso sobre gestao de Agentes de IA,  de gestao de pessoas para Gestao de Agentes",
-    "resumo": "",
-    "grupo": "INEMA.VIP",
-    "url": "https://inematds.github.io/gestoria/guia/"
-  },
-  {
-    "id": "2389955773/7272",
-    "date": "2026-09-10",
-    "titulo": "LOOP-R - Desenvovimento por Agentes",
-    "resumo": "Apresentação do LOOP-R, framework metodológico INEMA para sistemas e empresas autoaperfeiçoáveis via ciclos de melhoria contínua baseados em evidências e agentes.",
-    "grupo": "INEMA.DEV",
-    "url": "https://www.inema.pro/cerebro/inema-dev/7272"
   }
 ];

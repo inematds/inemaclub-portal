@@ -23,10 +23,6 @@
     "en": "Topic dedicated to the JEV project/tool, with sharing of reference links — YouTube videos, documentation and events portal.",
     "es": "Tema dedicado al proyecto/herramienta JEV, con compartición de enlaces de referencia — videos de YouTube, documentación y portal de eventos."
   },
-  "LOOP-R - Desenvovimento por Agentes": {
-    "en": "LOOP-R - Development by Agents",
-    "es": "LOOP-R - Desarrollo por Agentes"
-  },
   "IA Cultivada — não se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G": {
     "en": "Cultivated AI — not programmed, cultivated https://share.google/8FKgpBHd9AewWZn9G",
     "es": "IA Cultivada — no se programa, se cultiva https://share.google/8FKgpBHd9AewWZn9G"
@@ -51,10 +47,6 @@
     "en": "agentes-fronteiros — migration of agents to generalist + skills https://inematds.github.io/agentes-fronteiros/guia/",
     "es": "agentes-fronteiros — migración de agentes a generalista + habilidades https://inematds.github.io/agentes-fronteiros/guia/"
   },
-  "Apresentação do LOOP-R, framework metodológico INEMA para sistemas e empresas autoaperfeiçoáveis via ciclos de melhoria contínua baseados em evidências e agentes.": {
-    "en": "Presentation of LOOP-R, INEMA methodological framework for self-improving systems and companies via evidence-based continuous improvement cycles and agents.",
-    "es": "Presentación del LOOP-R, framework metodológico INEMA para sistemas y empresas auto‑mejorables vía ciclos de mejora continua basados en evidencia y agentes."
-  },
   "JEV": {
     "en": "JEV",
     "es": "JEV"
@@ -71,10 +63,6 @@
     "en": "**The chat replies. The __terminal__ executes**. For executives and freelancers who already use AI in the browser and still copy and paste everything. Understand the four layers of an AI system, why the agent terminal is the one that does the work, and how the harness makes it work your way.",
     "es": "**El chat responde. El __terminal__ ejecuta**. Para ejecutivos y profesionales liberales que ya usan IA en el navegador y aún copian y pegan todo. Entiende las cuatro capas de un sistema de IA, por qué el terminal con agente es el que hace el trabajo, y cómo el harness lo hace trabajar a tu manera."
   },
-  "Discussão sobre como criar uma estrutura de trabalho com agentes de IA independente de modelo, com foco em migração do Claude Code para o Codex e outros provedores. Apresenta arquitetura concreta, fluxo de handoff e princípios de organização de contexto.": {
-    "en": "Discussion on how to create a model-agnostic AI agents work framework, focusing on migration from Claude Code to Codex and other providers. Presents concrete architecture, handoff flow, and context organization principles.",
-    "es": "Discusión sobre cómo crear una estructura de trabajo con agentes de IA independiente de modelo, con foco en la migración de Claude Code a Codex y otros proveedores. Presenta arquitectura concreta, flujo de handoff y principios de organización de contexto."
-  },
   "Isso esta ficando em uma velocidade incrivel": {
     "en": "This is getting at an incredible speed",
     "es": "Esto está quedando a una velocidad increíble"
@@ -83,10 +71,6 @@
     "en": "optimizing AI usage",
     "es": "optimizando el uso de las IAs"
   },
-  "Como Migrar de Claude para Codex ou outros": {
-    "en": "How to Migrate from Claude to Codex or Others",
-    "es": "Cómo migrar de Claude a Codex u otros"
-  },
   "Skill Astra Higgsfield": {
     "en": "Astra Higgsfield Skill",
     "es": "Skill Astra Higgsfield"
@@ -94,10 +78,6 @@
   "Tópico documenta um framework de prompts para criar vídeos virais de pintura em pedra usando IA, com etapa de geração de imagem final seguida de vídeo timelapse image-to-video.": {
     "en": "Topic documents a prompt framework for creating viral stone painting videos using IA, with a final image generation step followed by a timelapse image-to-video video.",
     "es": "Tópico documenta un framework de prompts para crear vídeos virales de pintura en piedra usando IA, con etapa de generación de imagen final seguida de vídeo timelapse image-to-video."
-  },
-  "Aqui um sistema e um curso sobre gestao de Agentes de IA,  de gestao de pessoas para Gestao de Agentes": {
-    "en": "Here a system and a course on AI Agents management, from people management to Agents Management",
-    "es": "Aquí un sistema y un curso sobre gestión de Agentes de IA, de gestión de personas para Gestión de Agentes"
   },
   "já divulguei aqui antes mas agora fui lá e construir um projeto com todas essas informações de como você pode se beneficiar": {
     "en": "I already shared this here before, but now I went there and built a project with all this information on how you can benefit",
@@ -374,5 +354,25 @@
   "Tutorial sobre como criar o efeito de \"tempo congelado\" com vídeo de IA, onde objetos e personagens ficam suspensos enquanto a câmera continua se movendo pela cena.": {
     "en": "Tutorial on how to create the \"frozen time\" effect with AI video, where objects and characters stay suspended while the camera keeps moving through the scene.",
     "es": "Tutorial sobre cómo crear el efecto de \"tiempo congelado\" con video de IA, donde objetos y personajes quedan suspendidos mientras la cámara sigue moviéndose por la escena."
+  },
+  "curso de Video completo OSWork estilo de conteudo v2": {
+    "en": "complete OSWork Video course content style v2",
+    "es": "curso de Video completo OSWork estilo de contenido v2"
+  },
+  "RSI do INEMA": {
+    "en": "RSI of INEMA",
+    "es": "RSI de INEMA"
+  },
+  "Divulgação da área RSI do INEMA — plataforma de estudo e aplicação prática de Recursive Self-Improvement (melhoria recursiva de IA). O tópico apresenta o conceito e o conteúdo disponível no site.": {
+    "en": "Announcement of the INEMA RSI area — study platform and practical application of Recursive Self-Improvement (recursive AI improvement). The topic presents the concept and the content available on the site.",
+    "es": "Divulgación del área RSI de INEMA — plataforma de estudio y aplicación práctica de Recursive Self-Improvement (mejora recursiva de IA). El tema presenta el concepto y el contenido disponible en el sitio."
+  },
+  "skills-wait-what": {
+    "en": "skills-wait-what",
+    "es": "skills-wait-what"
+  },
+  "Compartilhamento de dicas sobre a skill `wait-what` do ecossistema `aihero.dev` e comandos para manter skills atualizadas via `npx`.": {
+    "en": "Sharing tips about the `wait-what` skill from the `aihero.dev` ecosystem and commands to keep skills updated via `npx`.",
+    "es": "Compartir consejos sobre la skill `wait-what` del ecosistema `aihero.dev` y comandos para mantener skills actualizadas vía `npx`."
   }
 }
