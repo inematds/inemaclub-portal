@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10059, kind: 'projeto', locale: 'en', title: 'VideoSub — Video content, step by step', description: 'A local system that turns a topic or content into a script, voice, images, animations, captions, and an MP4 video, with validation at each stage.', url: 'https://inematds.github.io/videosub/guia/en/', icon: '🎬' },
+  { id: 10059, kind: 'projeto', locale: 'es', title: 'VideoSub — Contenido en video, paso a paso', description: 'Sistema local que transforma un tema o contenido en guion, voz, imágenes, animaciones, subtítulos y video MP4 con validación por etapa.', url: 'https://inematds.github.io/videosub/guia/es/', icon: '🎬' },
   { id: 245, kind: 'curso', locale: 'en', title: 'Websites & Apps — Build and Resell', description: 'Hands-on course: build websites and apps with AI and turn deliverables into resale products.', url: 'https://inematds.github.io/curso-sites-apps/en/', icon: '🛒' },
   { id: 245, kind: 'curso', locale: 'es', title: 'Sitios y Apps — Construye y Revende', description: 'Curso práctico: crea sitios y apps con IA y convierte la entrega en un producto para revender.', url: 'https://inematds.github.io/curso-sites-apps/es/', icon: '🛒' },
   { id: 304, kind: 'curso', locale: 'en', title: 'Products in the AI Era — Know what is worth building', description: 'Mindset and judgment for creating products when AI builds almost anything: productive pessimism, opportunity questions, clone risk, data value, distribution, positioning, AI-driven feedback and simulated users. 3 tracks, 9 modules, 54 topics, ~6.5h.', url: 'https://inematds.github.io/produtos-era-ia/en/', icon: '🧭' },
