@@ -44,7 +44,7 @@ test('translated-courses.ts: ids únicos por locale e url github.io ou inema', (
   const src = readFileSync(path.join(ROOT, 'src', 'data', 'translated-courses.ts'), 'utf8')
   const code = src.split('\n').filter((l) => !l.trim().startsWith('//')).join('\n')
   const entries = [...code.matchAll(/\{\s*id:\s*(\d+),\s*kind:\s*'(curso|projeto)',\s*locale:\s*'(en|es)'[^}]*url:\s*'([^']+)'/g)]
-  assert.ok(!code.includes("locale: 'en', title: 'FEP"), 'exemplo comentado vazou para o código')
+  assert.ok(!code.includes('One sentence, in the target language.'), 'exemplo comentado vazou para o código')
   const seen = new Set()
   for (const [, id, , locale, url] of entries) {
     const key = `${locale}:${id}`
