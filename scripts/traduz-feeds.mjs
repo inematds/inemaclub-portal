@@ -6,17 +6,35 @@
 // Fonte: src/data/courses.data.json (updatesData/projectUpdatesData — rode `gen:data` antes)
 // e src/data/novidades.ts (gerado). Só traduz o que ainda não está no cache (incremental),
 // e só os itens que a home pode mostrar (20 por quadro + todas as novidades).
-// LLM: Groq (GROQ_API_KEY em ~/projetos/openpcbotv2/.env ou ~/projetos/wifi/.env).
-// Sem key ou sem rede: avisa e sai com 0 — o cache antigo continua valendo, o resto cai no PT.
+// Motor (2026-09-28): Codex pela ASSINATURA (`codex exec -m gpt-6-luna`, sessão do `codex login`) primeiro;
+// Groq (GROQ_API_KEY nos .env conhecidos) só como reserva, quando o Codex falha. FEEDS_MOTOR=groq força a Groq.
+// Falha do motor: avisa e sai com 0 — o cache antigo continua valendo, o resto cai no PT.
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execFileSync } from 'child_process';
+import os from 'os';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = path.join(ROOT, 'src/data/feeds-i18n.json');
 const MAX_POR_QUADRO = 20;
 const MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
 const LANGS = { en: 'English', es: 'Spanish' };
+const MOTOR = process.env.FEEDS_MOTOR || 'codex';
+const CODEX_MODEL = process.env.FEEDS_CODEX_MODEL || 'gpt-6-luna';
+
+// Um pedido pelo Codex da assinatura: só leitura, sem sessão salva, pedido pela entrada padrão.
+function viaCodex(sistema, usuario) {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'feeds-'));
+  const out = path.join(dir, 'out.txt');
+  try {
+    execFileSync('codex', ['exec', '-m', CODEX_MODEL, '--skip-git-repo-check', '--ephemeral', '--sandbox', 'read-only', '-C', dir, '-o', out, '-'],
+      { input: `${sistema}\n\nINPUT:\n${usuario}`, stdio: ['pipe', 'ignore', 'pipe'], timeout: 600000 });
+    return fs.readFileSync(out, 'utf8').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
+}
 
 function loadKey() {
   if (process.env.GROQ_API_KEY) return process.env.GROQ_API_KEY;
@@ -63,6 +81,16 @@ async function traduzLote(key, lang, itens) {
       { role: 'user', content: JSON.stringify(itens) },
     ],
   };
+  if (MOTOR === 'codex') try {
+    const txt = viaCodex(body.messages[0].content, body.messages[1].content);
+    const parsed = JSON.parse(txt.slice(txt.indexOf('{'), txt.lastIndexOf('}') + 1));
+    const t = Array.isArray(parsed) ? parsed : parsed.t;
+    if (!Array.isArray(t) || t.length !== itens.length) throw new Error(`resposta com ${t?.length} itens, esperado ${itens.length}`);
+    return t.map((s) => String(s).trim());
+  } catch (e) {
+    if (!key) throw e;
+    console.warn(`traduz-feeds: Codex falhou (${String(e.message).slice(0, 80)}) — reserva Groq`);
+  }
   let json;
   for (let tentativa = 1; ; tentativa++) {
     const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -99,6 +127,14 @@ async function traduzUm(key, lang, texto) {
       { role: 'user', content: texto },
     ],
   };
+  if (MOTOR === 'codex') try {
+    const out = viaCodex(body.messages[0].content, body.messages[1].content).replace(/^["“]|["”]$/g, '');
+    if (!out) throw new Error('vazio');
+    return out;
+  } catch (e) {
+    if (!key) throw e;
+    console.warn(`traduz-feeds: Codex falhou (${String(e.message).slice(0, 80)}) — reserva Groq`);
+  }
   let json;
   for (let tentativa = 1; ; tentativa++) {
     const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -131,8 +167,8 @@ async function main() {
     console.log(`traduz-feeds: cache completo (${todos.length} textos × ${Object.keys(LANGS).length} idiomas)`);
     return;
   }
-  const key = loadKey();
-  if (!key) {
+  const key = loadKey();   // Groq: motor forçado ou reserva do Codex
+  if (MOTOR === 'groq' && !key) {
     console.warn(`traduz-feeds: GROQ_API_KEY não encontrada — ${total} textos ficam em PT até a próxima rodada`);
     return;
   }

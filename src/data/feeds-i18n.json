@@ -111,10 +111,6 @@
     "en": "who has ;claude he is available",
     "es": "quien tiene el ;claude está disponible"
   },
-  "7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)": {
-    "en": "7PA — Gallery with 10 ready agent sheets (N0 to N4) + skill /ficha-agente for Claude Code (PT/EN/ES)",
-    "es": "7PA — Galería con 10 fichas de agente listas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)"
-  },
   "ALERTA": {
     "en": "ALERT",
     "es": "ALERTA"
@@ -183,17 +179,9 @@
     "en": "Expedição Sul — route animations (Hua Hum, round trip) with HyperFrames engine and real production cost",
     "es": "Expedição Sul — animaciones de trayecto (Hua Hum, ida y vuelta) con motor HyperFrames y costo real de producción"
   },
-  "Motion RISE v6 — Animações que saem de um pedido": {
-    "en": "Motion RISE v6 — Animations that come from a request",
-    "es": "Motion RISE v6 — Animaciones que salen de un pedido"
-  },
   "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL": {
     "en": "StickShift v2 — Web Panel + Chat for Claude Code and Codex on Linux/WSL",
     "es": "StickShift v2 — Panel Web + Chat para Claude Code y Codex en Linux/WSL"
-  },
-  "Formação WebMCP 2 — Laboratório de ações encadeadas e annotations atualizadas": {
-    "en": "WebMCP 2 Training — Lab of chained actions and updated annotations",
-    "es": "Formación WebMCP 2 — Laboratorio de acciones encadenadas y annotations actualizadas"
   },
   "WebMCP Readiness — Annotations atualizadas na descoberta estática": {
     "en": "WebMCP Readiness — Updated annotations in static discovery",
@@ -382,5 +370,9 @@
   "agente-claude-codex 1.1.1 — handoff atualizado: histórico que nunca sobrescreve, verificação só do que rodou, checagem de compartilhamento, memória tocada e prime só leitura": {
     "en": "agente-claude-codex 1.1.1 — handoff updated: history that never overwrites, verification of only what actually ran, sharing check, memory touched and read-only prime",
     "es": "agente-claude-codex 1.1.1 — handoff actualizado: historial que nunca sobrescribe, verificación solo de lo que se ejecutó, control de compartición, memoria tocada y prime solo lectura"
+  },
+  "Dev com IA v6.2 — Um faz, o outro confere": {
+    "en": "Dev with AI v6.2 — One does, the other checks",
+    "es": "Dev con IA v6.2 — Uno hace, el otro revisa"
   }
 }
