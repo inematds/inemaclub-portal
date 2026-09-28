@@ -18,6 +18,10 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 251, kind: 'curso', locale: 'en', title: '43 Opportunities to Make Money with AI', description: 'Forty-three concrete ways to earn revenue with artificial intelligence — each with what it is, who to sell it to, how to charge, and the first step .
+          It’s not a list of loose ideas: it’s a decision map, with the funnel that turns each opportunity into revenue.', url: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/en/', icon: '💰' },
+  { id: 251, kind: 'curso', locale: 'es', title: '43 oportunidades de ganar dinero con IA', description: 'Cuarenta y tres formas concretas de generar ingresos con inteligencia artificial — cada una con qué es, a quién vendérselo, cómo cobrar y el primer paso .
+          No es una lista de ideas sueltas: es un mapa para elegir, con el embudo que transforma cada oportunidad en ingresos.', url: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/es/', icon: '💰' },
   { id: 252, kind: 'curso', locale: 'en', title: 'AI Consulting Playbook', description: 'Interactive course in Brazilian Portuguese about how to diagnose, design, price, and deliver AI consulting for businesses.', url: 'https://inematds.github.io/formacao-vendas-ia-consultoria/en/', icon: '🧭' },
   { id: 252, kind: 'curso', locale: 'es', title: 'Playbook de consultoría en IA', description: 'Curso interactivo en PT-BR sobre cómo diagnosticar, diseñar, fijar precios y brindar consultoría de IA a empresas.', url: 'https://inematds.github.io/formacao-vendas-ia-consultoria/es/', icon: '🧭' },
   { id: 253, kind: 'curso', locale: 'en', title: 'AI Sales Fundamentals', description: 'You know how to build. What’s holding you back isn’t the technical side—it’s getting a stranger to trust yourself quickly enough to pay.
