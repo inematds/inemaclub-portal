@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-28', title: 'Muse × OpenMuse — o agente pessoal da Meta contra a alternativa open source da CopilotKit: comparação com fatos checados (e o que o vídeo errou)', type: 'novo', url: 'https://inematds.github.io/openmuse-vs-muse/guia/' },
   { date: '2026-09-28', title: 'Letramento em IA na China — planos, carga horária por província, regras de uso de IA na escola, leitura crítica e comparação com os EUA', type: 'novo', url: 'https://inematds.github.io/letramento-ia-china/guia/' },
   { date: '2026-09-28', title: 'agente-claude-codex 1.1.1 — handoff atualizado: histórico que nunca sobrescreve, verificação só do que rodou, checagem de compartilhamento, memória tocada e prime só leitura', type: 'atualizado', url: 'https://inematds.github.io/agente-claude-codex/guia/' },
   { date: '2026-09-28', title: 'Letramento em IA nos EUA — o que o governo está fazendo: decretos, verbas, referencial de competências e lições para o Brasil', type: 'novo', url: 'https://inematds.github.io/letramento-ia-eua/guia/' },

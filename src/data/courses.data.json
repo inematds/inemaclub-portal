@@ -5948,6 +5948,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-28",
+      "title": "Muse × OpenMuse — o agente pessoal da Meta contra a alternativa open source da CopilotKit: comparação com fatos checados (e o que o vídeo errou)",
+      "type": "novo",
+      "url": "https://inematds.github.io/openmuse-vs-muse/guia/"
+    },
+    {
+      "date": "2026-09-28",
       "title": "Letramento em IA na China — planos, carga horária por província, regras de uso de IA na escola, leitura crítica e comparação com os EUA",
       "type": "novo",
       "url": "https://inematds.github.io/letramento-ia-china/guia/"
@@ -8140,6 +8146,13 @@
       "name": "mkblogs",
       "desc": "Publicação multi-plataforma open-source com Postiz self-hosted e APIs",
       "url": "https://inematds.github.io/mkblogs-guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🤖",
+      "name": "openmuse-vs-muse",
+      "desc": "Meta Muse × OpenMuse (CopilotKit, MIT): comparação ponto a ponto entre o agente pessoal da Meta e a alternativa open source — onde roda, navegador, memória, integrações, privacidade e custo — com cada afirmação checada em fonte primária e o passo a passo pra rodar o OpenMuse.",
+      "url": "https://inematds.github.io/openmuse-vs-muse/guia/",
       "badge": "Guia"
     },
     {
