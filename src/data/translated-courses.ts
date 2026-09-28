@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 262, kind: 'curso', locale: 'en', title: 'GPT-6 Astra in practice · INEMA.CLUB PRO', description: 'Go to the course →', url: 'https://inematds.github.io/gpt6-astra/en/', icon: '🗂️' },
+  { id: 262, kind: 'curso', locale: 'es', title: 'GPT-6 Astra en la práctica · INEMA.CLUB PRO', description: 'Ir al curso →', url: 'https://inematds.github.io/gpt6-astra/es/', icon: '🗂️' },
   { id: 269, kind: 'curso', locale: 'en', title: 'Home | GPT-6 Astra: technical operations', description: 'GPT-6 Astra: technical operations: Delegate, verify, iterate, and scale with Codex, computer use, skills, and MCP. Technical course in 2 tracks and 8 modules, with task contracts, Codex CLI commands, skills, MCP, and orchestration — each module includes a copyable prompt and instructions for verifying it.', url: 'https://inematds.github.io/gpt6-astra-tecnico/en/', icon: '⚙️' },
   { id: 269, kind: 'curso', locale: 'es', title: 'Inicio | GPT-6 Astra: operación técnica', description: 'GPT-6 Astra: operación técnica: Delegar, verificar, iterar y escalar con Codex, computer use, skills y MCP. Curso técnico en 2 rutas y 8 módulos, con contratos de tareas, comandos de Codex CLI, skills, MCP y orquestación; cada módulo incluye un prompt copiable y cómo verificarlo.', url: 'https://inematds.github.io/gpt6-astra-tecnico/es/', icon: '⚙️' },
   { id: 10028, kind: 'projeto', locale: 'en', title: 'Gestoria — Management of processes, people, and AI agents', description: 'AI Management Lab: processes, digital roles, autonomy, human decisions, evaluations, and continuous improvement. Local MVP with clearly identified simulations.', url: 'https://inematds.github.io/gestoria/guia/en/', icon: '🧭' },
