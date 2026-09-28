@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10018, kind: 'projeto', locale: 'en', title: 'Visagismo B — AI-powered style consulting for barbershops', description: 'Portuguese-language VPS application: facial analysis, barber review, report, and follow-up plan. Installation and operations guide.', url: 'https://inematds.github.io/visagismo-b/guia/en/', icon: '✂️' },
+  { id: 10018, kind: 'projeto', locale: 'es', title: 'Visagismo B — Consultoría de estilo con IA para barberías', description: 'Aplicación en portugués para VPS: análisis facial, revisión del barbero, informe y plan de retorno. Guía de instalación y operación.', url: 'https://inematds.github.io/visagismo-b/guia/es/', icon: '✂️' },
   { id: 10017, kind: 'projeto', locale: 'en', title: 'JurisFlow — AI-powered legal management', description: 'JurisFlow: ERP/CRM for law firms — clients, cases, deadlines, finance, documents, and AI legal assistant. React 19 + tRPC + Express + MySQL.', url: 'https://inematds.github.io/jurisflow/guia/en/', icon: '⚖️' },
   { id: 10017, kind: 'projeto', locale: 'es', title: 'JurisFlow — Gestión jurídica con IA', description: 'JurisFlow: ERP/CRM para bufete de abogados — clientes, procesos, plazos, finanzas, documentos y asistente jurídico con IA. React 19 + tRPC + Express + MySQL.', url: 'https://inematds.github.io/jurisflow/guia/es/', icon: '⚖️' },
   { id: 10016, kind: 'projeto', locale: 'en', title: 'Laya INEMA — Local decisions, human review', description: 'Portuguese-language triage with Laya: local interface, API, CLI, and reproducible evaluation.', url: 'https://inematds.github.io/laya/guia/en/', icon: '◈' },
