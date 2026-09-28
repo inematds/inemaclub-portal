@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10052, kind: 'projeto', locale: 'en', title: 'Astra Básico — Token control, in practice.', description: 'Understand usage. Choose your tools. Check the result.', url: 'https://inematds.github.io/astrabasico/guia/en/', icon: '◈' },
+  { id: 10052, kind: 'projeto', locale: 'es', title: 'Astra Básico — Control de tokens, en la práctica.', description: 'Comprende el consumo. Elige los recursos. Comprueba el resultado.', url: 'https://inematds.github.io/astrabasico/guia/es/', icon: '◈' },
   { id: 10051, kind: 'projeto', locale: 'en', title: 'GPT-6 Sol & Luna — research and integration', description: 'September 22, 2026 launch: benchmark charts, pricing, cost calculator and a plan to integrate GPT-6 Sol and Luna into INEMA systems.', url: 'https://inematds.github.io/gpt6-sol-luna/guia/en/', icon: '◐' },
   { id: 10051, kind: 'projeto', locale: 'es', title: 'GPT-6 Sol & Luna — investigación e integración', description: 'Lanzamiento del 22/09/2026: gráficos de benchmarks, precios, calculadora de costos y plan de integración de GPT-6 Sol y Luna en los sistemas INEMA.', url: 'https://inematds.github.io/gpt6-sol-luna/guia/es/', icon: '◐' },
   { id: 10050, kind: 'projeto', locale: 'en', title: 'RSI — the AI that improves AI', description: 'Recursive self-improvement (RSI) explained with sources: what happened in September 2026, how big tech, companies and governments will use it, and how business and technology people benefit directly with LOOP-R.', url: 'https://inematds.github.io/rsi/guia/en/', icon: '🌀' },
