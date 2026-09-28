@@ -183,10 +183,6 @@
     "en": "Jev Decision Lab — Travel package: ad evaluated once and cross-referenced by rule with 12 profiles",
     "es": "Jev Decision Lab — Paquete de viajes: anuncio evaluado una vez y cruzado por regla con 12 perfiles"
   },
-  "OSWork v6.2 — Sua IA precisa de um sistema": {
-    "en": "OSWork v6.2 — Your AI needs a system",
-    "es": "OSWork v6.2 — Tu IA necesita un sistema"
-  },
   "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) e especificação do Jarvis no Telegram": {
     "en": "Jarvis v7 — prompt pack Opus 5.5 (18 prompts) and Jarvis specification on Telegram",
     "es": "Jarvis v7 — paquete de prompts Opus 5.5 (18 prompts) y especificación del Jarvis en Telegram"
@@ -374,5 +370,9 @@
   "Letramento em IA na China — planos, carga horária por província, regras de uso de IA na escola, leitura crítica e comparação com os EUA": {
     "en": "AI literacy in China — plans, class hours by province, rules for using AI in schools, critical reading, and comparison with the US",
     "es": "Alfabetización en IA en China — planes, carga horaria por provincia, reglas de uso de IA en la escuela, lectura crítica y comparación con EE. UU."
+  },
+  "Produtos na era da IA — Saber o que vale a pena construir": {
+    "en": "Products in the age of AI — Knowing what’s worth building",
+    "es": "Productos en la era de la IA — Saber qué vale la pena construir"
   }
 }

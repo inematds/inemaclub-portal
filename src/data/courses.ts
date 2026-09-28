@@ -2215,6 +2215,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/pp-cli/',
   },
   {
+    id: 304,
+    title: 'Produtos na era da IA — Saber o que vale a pena construir',
+    description:
+      'Mentalidade e critério para criar produtos quando a IA constrói quase tudo: pessimismo produtivo, perguntas de oportunidade, risco de clone, valor dos dados, distribuição, posicionamento, feedback com IA e usuários simulados. 3 trilhas, 9 módulos, 54 tópicos, ~6,5h.',
+    icon: '🧭',
+    tags: ['Produto', 'SaaS', 'Estratégia', 'Distribuição', 'IA'],
+    url: 'https://inematds.github.io/produtos-era-ia/',
+  },
+  {
     id: 89,
     title: 'Prof2030 - O Profissional do Futuro',
     description:
@@ -2922,6 +2931,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-28', title: 'Produtos na era da IA — Saber o que vale a pena construir', type: 'novo', url: 'https://inematds.github.io/produtos-era-ia/' },
   { date: '2026-09-28', title: 'Dev com IA v6.2 — Um faz, o outro confere', type: 'novo', url: 'https://inematds.github.io/dev-ia-validacao/' },
   { date: '2026-09-28', title: 'Agente sob controle v6.2 — Use agentes de IA sem se queimar', type: 'novo', url: 'https://inematds.github.io/curso-agente-sob-controle/' },
   { date: '2026-09-25', title: 'OSWork v6.2 — vídeo-aulas com o Nei, uma por módulo', type: 'atualizado', url: 'https://inematds.github.io/oswork-v62/videos/' },
