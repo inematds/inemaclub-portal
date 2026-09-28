@@ -22,14 +22,17 @@ const MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
 const LANGS = { en: 'English', es: 'Spanish' };
 const MOTOR = process.env.FEEDS_MOTOR || 'codex';
 const CODEX_MODEL = process.env.FEEDS_CODEX_MODEL || 'gpt-6-luna';
+// o cron não tem ~/.npm-global/bin no PATH: acha o codex pelo caminho completo
+const CODEX_BIN = process.env.CODEX_BIN || [path.join(os.homedir(), '.npm-global/bin/codex')].find((p) => fs.existsSync(p)) || 'codex';
 
 // Um pedido pelo Codex da assinatura: só leitura, sem sessão salva, pedido pela entrada padrão.
 function viaCodex(sistema, usuario) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'feeds-'));
   const out = path.join(dir, 'out.txt');
   try {
-    execFileSync('codex', ['exec', '-m', CODEX_MODEL, '--skip-git-repo-check', '--ephemeral', '--sandbox', 'read-only', '-C', dir, '-o', out, '-'],
-      { input: `${sistema}\n\nINPUT:\n${usuario}`, stdio: ['pipe', 'ignore', 'pipe'], timeout: 600000 });
+    execFileSync(CODEX_BIN, ['exec', '-m', CODEX_MODEL, '--skip-git-repo-check', '--ephemeral', '--sandbox', 'read-only', '-C', dir, '-o', out, '-'],
+      { input: `${sistema}\n\nINPUT:\n${usuario}`, stdio: ['pipe', 'ignore', 'pipe'], timeout: 600000,
+        env: { ...process.env, PATH: `${path.dirname(CODEX_BIN)}:${process.env.PATH}` } });
     return fs.readFileSync(out, 'utf8').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
   } finally {
     fs.rmSync(dir, { recursive: true, force: true });
