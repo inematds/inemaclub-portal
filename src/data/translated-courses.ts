@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 186, kind: 'curso', locale: 'en', title: 'AI Alert 2028 — The AI building the next AI', description: 'From a frightening headline to a critical reading of the warning for 2028—in plain English.', url: 'https://inematds.github.io/ia2028alerta/en/', icon: '🚨' },
+  { id: 186, kind: 'curso', locale: 'es', title: 'Alerta de IA 2028 — La IA que construye la próxima IA', description: 'De un titular alarmante a una lectura crítica de la alerta de 2028, en palabras sencillas.', url: 'https://inematds.github.io/ia2028alerta/es/', icon: '🚨' },
   { id: 306, kind: 'curso', locale: 'en', title: 'The Super-Agents Are Here', description: 'How your work changes when AI stops waiting for instructions. A 6-lesson course, no code, for people who decide what to delegate to an AI agent.', url: 'https://inematds.github.io/agi-ready/en/', icon: '🗝️' },
   { id: 306, kind: 'curso', locale: 'es', title: 'Llegaron los Super-Agentes', description: 'Qué cambia en tu trabajo cuando la IA deja de esperar instrucciones. Curso de 6 clases, sin código, para quienes deciden qué delegarle a un agente de IA.', url: 'https://inematds.github.io/agi-ready/es/', icon: '🗝️' },
   { id: 261, kind: 'curso', locale: 'en', title: 'FEP → AGI: from prompt to intention', description: 'This course doesn’t teach you to ask better. It teaches you to decide what to ask for, whom to ask, and how far to trust. Nine lessons, from the prompt era to the shift in September 2026.', url: 'https://inematds.github.io/FEP-AGI/en/', icon: '🪜' },
