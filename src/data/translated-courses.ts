@@ -18,6 +18,12 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 254, kind: 'curso', locale: 'en', title: 'From Zero to Your First AI Client', description: 'You know how to build an agent. What\'s missing is someone paying for it.
+          This course is the complete path from zero to the first payment :
+          choose the niche, diagnose the company, set the price, make the call, lead the meeting, and deliver.', url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/en/', icon: '🚀' },
+  { id: 254, kind: 'curso', locale: 'es', title: 'De cero al primer cliente de IA', description: 'Sabes armar un agente. Lo que falta es alguien que pague por él.
+          Este curso es el recorrido completo de cero hasta el primer pago :
+          elegir el nicho, diagnosticar la empresa, fijar el precio, llamar, dirigir la reunión y entregar.', url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/es/', icon: '🚀' },
   { id: 255, kind: 'curso', locale: 'en', title: 'Masterclass: How to Sell AI Solutions', description: 'The entire sales conversation, from the first "hello" to the signed contract. This isn\'t a persuasion technique:
           it\'s guiding method — ask better questions, listen more, read what wasn’t said, and
           end every meeting with a date scheduled.', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/en/', icon: '🎯' },
