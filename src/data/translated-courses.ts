@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10038, kind: 'projeto', locale: 'en', title: 'Explicavideos — From content to explainer video', description: 'Reusable video production process with Nei: complete script, illustrations, captions, verification, and publishing.', url: 'https://inematds.github.io/explicavideos/guia/en/', icon: '▶' },
+  { id: 10038, kind: 'projeto', locale: 'es', title: 'Explicavideos — Del contenido al video explicativo', description: 'Proceso reutilizable de videos con Nei: guion completo, ilustraciones, subtítulos, verificación y publicación.', url: 'https://inematds.github.io/explicavideos/guia/es/', icon: '▶' },
   { id: 10037, kind: 'projeto', locale: 'en', title: 'Jev Decision Lab — User Guide', description: 'Ten cases in structured decision-making, an educational lab, a Python client, and rule evaluation. Learn how to prepare your Jev integration.', url: 'https://inematds.github.io/jev/guia/en/', icon: '🧭' },
   { id: 10037, kind: 'projeto', locale: 'es', title: 'Jev Decision Lab — guía de uso', description: 'Diez casos de decisiones estructuradas, laboratorio didáctico, cliente de Python y evaluación de reglas. Aprende a preparar tu integración con Jev.', url: 'https://inematds.github.io/jev/guia/es/', icon: '🧭' },
   { id: 10036, kind: 'projeto', locale: 'en', title: 'Jarvis v7 + JEV Reflex — five decisions before the answer', description: 'Install Jarvis v7: persistent notes and memories, Codex and Claude OAuth, OpenRouter API, and Kie Studio. Real JEV Reflex before the brain. Guide for version 0.2.0.', url: 'https://inematds.github.io/jarvisv7/guia/en/', icon: '🤖' },
