@@ -226,6 +226,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/agent-skills/',
   },
   {
+    id: 302,
+    title: 'Agente sob controle v6.2 — Use agentes de IA sem se queimar',
+    description: 'Curso para quem tem um pequeno negócio: escolha o que automatizar pela dor que custa dinheiro, dê ao agente só o acesso que a tarefa pede, feche as portas de segurança (ordens escondidas, senhas, extensões, gasto e dados de clientes) e meça se deu certo. 6 aulas de ~15 minutos em 5 módulos, com a ficha do agente pronta no fim.',
+    icon: '🛡️',
+    tags: ['Agentes', 'Segurança', 'Negócios', 'IA'],
+    url: 'https://inematds.github.io/curso-agente-sob-controle/',
+  },
+  {
     id: 204,
     title: 'Agentes: o Novo Office — Formação por Perfil',
     description:
@@ -2903,6 +2911,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-28', title: 'Agente sob controle v6.2 — Use agentes de IA sem se queimar', type: 'novo', url: 'https://inematds.github.io/curso-agente-sob-controle/' },
   { date: '2026-09-25', title: 'OSWork v6.2 — vídeo-aulas com o Nei, uma por módulo', type: 'atualizado', url: 'https://inematds.github.io/oswork-v62/videos/' },
   { date: '2026-09-25', title: "Influenciador IA em 21 Dias", type: 'novo', url: "https://inematds.github.io/curso-influenciador-ia/" },
   { date: '2026-09-25', title: "Monetização: Portfólio, Ofertas, Preços e Clientes", type: 'novo', url: "https://inematds.github.io/curso-monetizacao-criadores/" },
