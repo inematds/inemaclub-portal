@@ -5948,6 +5948,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-28",
+      "title": "Letramento em IA na China — planos, carga horária por província, regras de uso de IA na escola, leitura crítica e comparação com os EUA",
+      "type": "novo",
+      "url": "https://inematds.github.io/letramento-ia-china/guia/"
+    },
+    {
+      "date": "2026-09-28",
       "title": "agente-claude-codex 1.1.1 — handoff atualizado: histórico que nunca sobrescreve, verificação só do que rodou, checagem de compartilhamento, memória tocada e prime só leitura",
       "type": "atualizado",
       "url": "https://inematds.github.io/agente-claude-codex/guia/"
@@ -7226,6 +7232,13 @@
       "name": "laya",
       "desc": "Laya INEMA: triagem local em português, interface, API, CLI e avaliação com pesos reais. Recomendações com revisão humana e curso v2 separado.",
       "url": "https://inematds.github.io/laya/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🇨🇳",
+      "name": "letramento-ia-china",
+      "desc": "Levantamento de set/2026 do que a China está fazendo em letramento em IA: planos nacionais, guias de 2025, carga horária por província, regras de uso de IA generativa na escola, universidades, professores, idosos, servidores e pequenas empresas, com leitura crítica, comparação com os EUA e lições para o Brasil.",
+      "url": "https://inematds.github.io/letramento-ia-china/guia/",
       "badge": "Guia"
     },
     {
