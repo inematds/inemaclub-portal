@@ -2057,7 +2057,7 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/os-coach/guia/',
   },
   {
-    id: 260,
+    id: 306,
     title: 'Os Super-Agentes Chegaram — O que muda no seu trabalho quando a IA deixa de esperar ordens (6 aulas)',
     description:
       'A partir do vídeo sobre o GPT-6 Astra: da IA que espera ordens ao agente que trabalha por dias. 6 aulas sem código: tarefa vs responsabilidade, delegação num chat de IA, níveis de confiança, competências humanas e a carta de delegação com as seis perguntas.',
