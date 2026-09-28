@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 252, kind: 'curso', locale: 'en', title: 'AI Consulting Playbook', description: 'Interactive course in Brazilian Portuguese about how to diagnose, design, price, and deliver AI consulting for businesses.', url: 'https://inematds.github.io/formacao-vendas-ia-consultoria/en/', icon: '🧭' },
+  { id: 252, kind: 'curso', locale: 'es', title: 'Playbook de consultoría en IA', description: 'Curso interactivo en PT-BR sobre cómo diagnosticar, diseñar, fijar precios y brindar consultoría de IA a empresas.', url: 'https://inematds.github.io/formacao-vendas-ia-consultoria/es/', icon: '🧭' },
   { id: 253, kind: 'curso', locale: 'en', title: 'AI Sales Fundamentals', description: 'You know how to build. What’s holding you back isn’t the technical side—it’s getting a stranger to trust yourself quickly enough to pay.
           This course teaches the human side of the AI business: mindset, confidence, closing, and practice.', url: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/en/', icon: '🤝' },
   { id: 253, kind: 'curso', locale: 'es', title: 'Fundamentos para Vender IA', description: 'Sabes construir. Lo que te frena no es la técnica — es lograr que un desconocido confía en ti lo bastante rápido para pagar.
