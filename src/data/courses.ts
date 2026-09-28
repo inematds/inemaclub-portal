@@ -326,6 +326,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/viralads/',
   },
   {
+    id: 307,
+    title: 'Áreas do INEMA Eventos — O que é cada área',
+    description:
+      'Curso rápido que explica as nove áreas do eventos.inema.pro (Gestão de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV e WebMCP): para quem é cada uma e por onde começar.',
+    icon: '🧭',
+    tags: ['Mapa', 'Agentes', 'Eventos', 'IA'],
+    url: 'https://inematds.github.io/areas-eventos/',
+  },
+  {
     id: 204,
     title: 'Arquiteto de Execução — Paralelo × Sequencial para Agentes',
     description:
@@ -2939,6 +2948,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-28', title: 'Áreas do INEMA Eventos — O que é cada área', type: 'novo', url: 'https://inematds.github.io/areas-eventos/' },
   { date: '2026-09-28', title: 'Agente sob Controle v2 — Use agentes de IA sem se queimar', type: 'novo', url: 'https://inematds.github.io/curso-agente-sob-controle-v2/' },
   { date: '2026-09-28', title: 'Produtos na era da IA — Saber o que vale a pena construir', type: 'novo', url: 'https://inematds.github.io/produtos-era-ia/' },
   { date: '2026-09-28', title: 'Dev com IA v6.2 — Um faz, o outro confere', type: 'novo', url: 'https://inematds.github.io/dev-ia-validacao/' },

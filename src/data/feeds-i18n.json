@@ -215,10 +215,6 @@
     "en": "RSI Copiloto — system with AI, memory, routines and supervised improvement for people and businesses",
     "es": "RSI Copiloto — sistema con IA, memoria, rutinas y mejora supervisada para personas y negocios"
   },
-  "Prompting de Imagem v6.2 — Pense como Diretor de Fotografia": {
-    "en": "Image Prompting v6.2 — Think like a Director of Photography",
-    "es": "Prompting de Imagem v6.2 — Piensa como Director de Fotografía"
-  },
   "Nano Banana Pro v6.2 — Campanha de Marca Completa": {
     "en": "Nano Banana Pro v6.2 — Full Brand Campaign",
     "es": "Nano Banana Pro v6.2 — Campaña de Marca Completa"
@@ -374,5 +370,9 @@
   "Agente sob Controle v2 — Use agentes de IA sem se queimar": {
     "en": "Agent Under Control v2 — Use AI agents without getting burned",
     "es": "Agente bajo control v2 — Usa agentes de IA sin quemarte"
+  },
+  "Áreas do INEMA Eventos — O que é cada área": {
+    "en": "INEMA Events Areas — What Each Area Is",
+    "es": "Áreas de INEMA Eventos — Qué es cada área"
   }
 }
