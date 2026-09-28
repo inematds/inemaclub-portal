@@ -7,7 +7,7 @@
 // e src/data/novidades.ts (gerado). Só traduz o que ainda não está no cache (incremental),
 // e só os itens que a home pode mostrar (20 por quadro + todas as novidades).
 // Motor (2026-09-28): Codex pela ASSINATURA (`codex exec -m gpt-6-luna`, sessão do `codex login`) primeiro;
-// Groq (GROQ_API_KEY nos .env conhecidos) só como reserva, quando o Codex falha. FEEDS_MOTOR=groq força a Groq.
+// Groq (GROQ_API_KEY nos .env conhecidos) = reserva DESLIGADA: só com RESERVA_GROQ=1 (pedido explícito do usuário).
 // Falha do motor: avisa e sai com 0 — o cache antigo continua valendo, o resto cai no PT.
 import fs from 'fs';
 import path from 'path';
@@ -18,7 +18,7 @@ import os from 'os';
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = path.join(ROOT, 'src/data/feeds-i18n.json');
 const MAX_POR_QUADRO = 20;
-const MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
+const MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';   // reserva Groq: modelo que não é GPT (GPT só pela assinatura)
 const LANGS = { en: 'English', es: 'Spanish' };
 const MOTOR = process.env.FEEDS_MOTOR || 'codex';
 const CODEX_MODEL = process.env.FEEDS_CODEX_MODEL || 'gpt-6-luna';
@@ -170,8 +170,8 @@ async function main() {
     console.log(`traduz-feeds: cache completo (${todos.length} textos × ${Object.keys(LANGS).length} idiomas)`);
     return;
   }
-  // Groq: motor forçado ou reserva do Codex. FEEDS_SEM_RESERVA=1 desliga a reserva (só Codex; falhou, fica em PT).
-  const key = MOTOR === 'codex' && process.env.FEEDS_SEM_RESERVA === '1' ? null : loadKey();
+  // Groq: só com RESERVA_GROQ=1 (ou FEEDS_MOTOR=groq), por pedido explícito do usuário. Sem isso, Codex falhou = fica em PT.
+  const key = MOTOR === 'groq' || process.env.RESERVA_GROQ === '1' ? loadKey() : null;
   if (MOTOR === 'groq' && !key) {
     console.warn(`traduz-feeds: GROQ_API_KEY não encontrada — ${total} textos ficam em PT até a próxima rodada`);
     return;
