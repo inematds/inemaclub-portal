@@ -170,7 +170,8 @@ async function main() {
     console.log(`traduz-feeds: cache completo (${todos.length} textos × ${Object.keys(LANGS).length} idiomas)`);
     return;
   }
-  const key = loadKey();   // Groq: motor forçado ou reserva do Codex
+  // Groq: motor forçado ou reserva do Codex. FEEDS_SEM_RESERVA=1 desliga a reserva (só Codex; falhou, fica em PT).
+  const key = MOTOR === 'codex' && process.env.FEEDS_SEM_RESERVA === '1' ? null : loadKey();
   if (MOTOR === 'groq' && !key) {
     console.warn(`traduz-feeds: GROQ_API_KEY não encontrada — ${total} textos ficam em PT até a próxima rodada`);
     return;
