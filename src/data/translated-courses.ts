@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 159, kind: 'curso', locale: 'en', title: 'Intent Architecture | 4-day immersion', description: 'A prompt isn’t enough.', url: 'https://inematds.github.io/arquitetura-de-intencao/en/', icon: '🎯' },
+  { id: 159, kind: 'curso', locale: 'es', title: 'Arquitectura de Intención | Inmersión de 4 días', description: 'El prompt no basta.', url: 'https://inematds.github.io/arquitetura-de-intencao/es/', icon: '🎯' },
   { id: 259, kind: 'curso', locale: 'en', title: 'Architect of AI Work · INEMA.CLUB PRO', description: 'A course for managers and professionals in business functions: redesign a real company process so people direct it and AI agents execute it, with specifications, quality standards, and permissions in writing.', url: 'https://inematds.github.io/pffia/en/', icon: '🏗️' },
   { id: 259, kind: 'curso', locale: 'es', title: 'Arquitecto del Trabajo con IA · INEMA.CLUB PRO', description: 'Curso para gerentes y profesionales de distintas áreas: rediseña un proceso real de tu empresa para que las personas lo dirijan y los agentes de IA lo ejecuten, con especificaciones, calidad y permisos por escrito.', url: 'https://inematds.github.io/pffia/es/', icon: '🏗️' },
   { id: 10048, kind: 'projeto', locale: 'en', title: 'openpcbot v3 — local personal assistant with a queue, Ollama, and memory', description: 'openpcbot v3: Telegram personal assistant with a durable queue, Ollama manager with RAM preflight, per-call cost tracking with a budget, and PT-BR memory. Runs alongside v2 without running out of memory.', url: 'https://inematds.github.io/openpcbotv3/guia/en/', icon: '🤖' },
