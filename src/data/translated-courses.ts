@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 275, kind: 'curso', locale: 'en', title: 'Pílulas de Ouro — AI in practical projects | Pílulas de Ouro', description: 'Practical AI course with four learning tracks, twelve modules, exercises, and verifiable projects.', url: 'https://inematds.github.io/pilulasdeouro/en/', icon: '💡' },
+  { id: 275, kind: 'curso', locale: 'es', title: 'Pílulas de Ouro — IA en proyectos prácticos | Pílulas de Ouro', description: 'Curso práctico de IA con cuatro itinerarios, doce módulos, ejercicios y proyectos verificables.', url: 'https://inematds.github.io/pilulasdeouro/es/', icon: '💡' },
   { id: 270, kind: 'curso', locale: 'en', title: 'LOOP-R: The Business That Learns on Its Own', description: 'Course para donos e gestores 40+: monte um loop de melhoria com IA no seu negócio — evidência, hipótese, experimento, decisão com cartão e botão de voltar. Sem vídeo, sem instalar nada.', url: 'https://inematds.github.io/loop-r/curso/en/', icon: '🔁' },
   { id: 270, kind: 'curso', locale: 'es', title: 'LOOP-R: Tu empresa aprende por sí sola', description: 'Curso para propietarios y gestores de 40 años o más: crea un ciclo de mejora con IA para tu negocio — evidencia, hipótesis, experimentos, decisiones con tarjeta y opción para volver atrás. Sin videos ni instalaciones.', url: 'https://inematds.github.io/loop-r/curso/es/', icon: '🔁' },
   { id: 278, kind: 'curso', locale: 'en', title: 'Fast decisions, responsible application | Laya & Jev', description: 'Practical course on Laya and Jev: structured decisions, local inference, triage in Portuguese, and critical evaluation.', url: 'https://inematds.github.io/laya-curso/en/', icon: '🧭' },
