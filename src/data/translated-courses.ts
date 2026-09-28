@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 278, kind: 'curso', locale: 'en', title: 'Fast decisions, responsible application | Laya & Jev', description: 'Practical course on Laya and Jev: structured decisions, local inference, triage in Portuguese, and critical evaluation.', url: 'https://inematds.github.io/laya-curso/en/', icon: '🧭' },
+  { id: 278, kind: 'curso', locale: 'es', title: 'Decisiones rápidas, aplicación responsable | Laya & Jev', description: 'Curso práctico de Laya y Jev: decisiones estructuradas, inferencia local, triaje en portugués y evaluación crítica.', url: 'https://inematds.github.io/laya-curso/es/', icon: '🧭' },
   { id: 276, kind: 'curso', locale: 'en', title: 'Jev in practice · Jev in practice', description: 'Jev course: 36 lessons, solved examples, and guided practice. Structured decisions with evaluation and explicit limits.', url: 'https://inematds.github.io/jev-curso/en/', icon: '📘' },
   { id: 276, kind: 'curso', locale: 'es', title: 'Jev en la práctica · Jev en la práctica', description: 'Curso Jev: 36 clases, ejemplos resueltos y práctica guiada. Decisiones estructuradas con evaluación y límites explícitos.', url: 'https://inematds.github.io/jev-curso/es/', icon: '📘' },
   { id: 186, kind: 'curso', locale: 'en', title: 'AI Alert 2028 — The AI building the next AI', description: 'From a frightening headline to a critical reading of the warning for 2028—in plain English.', url: 'https://inematds.github.io/ia2028alerta/en/', icon: '🚨' },
