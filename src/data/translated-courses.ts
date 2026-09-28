@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10053, kind: 'projeto', locale: 'en', title: 'Dream-RSI — Learning to discover', description: 'Understand Dream-RSI through original figures, contextualized results, and a learning plan: how agents learn to choose better experiments.', url: 'https://inematds.github.io/google-rsi/guia/en/', icon: '🔬' },
+  { id: 10053, kind: 'projeto', locale: 'es', title: 'Dream-RSI — Aprender a descubrir', description: 'Entiende Dream-RSI mediante figuras originales, resultados contextualizados y un plan educativo: cómo los agentes aprenden a elegir mejores experimentos.', url: 'https://inematds.github.io/google-rsi/guia/es/', icon: '🔬' },
   { id: 10052, kind: 'projeto', locale: 'en', title: 'Astra Básico — Token control, in practice.', description: 'Understand usage. Choose your tools. Check the result.', url: 'https://inematds.github.io/astrabasico/guia/en/', icon: '◈' },
   { id: 10052, kind: 'projeto', locale: 'es', title: 'Astra Básico — Control de tokens, en la práctica.', description: 'Comprende el consumo. Elige los recursos. Comprueba el resultado.', url: 'https://inematds.github.io/astrabasico/guia/es/', icon: '◈' },
   { id: 10051, kind: 'projeto', locale: 'en', title: 'GPT-6 Sol & Luna — research and integration', description: 'September 22, 2026 launch: benchmark charts, pricing, cost calculator and a plan to integrate GPT-6 Sol and Luna into INEMA systems.', url: 'https://inematds.github.io/gpt6-sol-luna/guia/en/', icon: '◐' },
