@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10017, kind: 'projeto', locale: 'en', title: 'JurisFlow — AI-powered legal management', description: 'JurisFlow: ERP/CRM for law firms — clients, cases, deadlines, finance, documents, and AI legal assistant. React 19 + tRPC + Express + MySQL.', url: 'https://inematds.github.io/jurisflow/guia/en/', icon: '⚖️' },
+  { id: 10017, kind: 'projeto', locale: 'es', title: 'JurisFlow — Gestión jurídica con IA', description: 'JurisFlow: ERP/CRM para bufete de abogados — clientes, procesos, plazos, finanzas, documentos y asistente jurídico con IA. React 19 + tRPC + Express + MySQL.', url: 'https://inematds.github.io/jurisflow/guia/es/', icon: '⚖️' },
   { id: 10016, kind: 'projeto', locale: 'en', title: 'Laya INEMA — Local decisions, human review', description: 'Portuguese-language triage with Laya: local interface, API, CLI, and reproducible evaluation.', url: 'https://inematds.github.io/laya/guia/en/', icon: '◈' },
   { id: 10016, kind: 'projeto', locale: 'es', title: 'Laya INEMA — Decisiones locales, revisión humana', description: 'Clasificación en portugués con Laya: interfaz local, API, CLI y evaluación reproducible.', url: 'https://inematds.github.io/laya/guia/es/', icon: '◈' },
   { id: 10015, kind: 'projeto', locale: 'en', title: 'jev-gw — decision gateway for Jev', description: 'One gateway for every Jev query: a daily spending limit, cache, abstention policy, and cost logging. When something fails, it returns a request for human review instead of breaking your system. Python stdlib, no dependencies.', url: 'https://inematds.github.io/jev-gw/guia/en/', icon: '🚪' },
