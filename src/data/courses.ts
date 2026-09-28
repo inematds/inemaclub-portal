@@ -16,6 +16,7 @@ export interface Update {
 
 // Guias de PROJETOS (não cursos). Alimenta a board "Últimas Atualizações de Projetos".
 export const projectUpdatesData: Update[] = [
+  { date: '2026-09-28', title: 'Letramento em IA nos EUA — o que o governo está fazendo: decretos, verbas, referencial de competências e lições para o Brasil', type: 'novo', url: 'https://inematds.github.io/letramento-ia-eua/guia/' },
   { date: '2026-09-27', title: 'Use Both — Claude + Codex: um planeja, o outro desafia. 6 fluxos, prompts, templates e skills handoff/prime (kit MIT com guia PT/EN/ES)', type: 'novo', url: 'https://inematds.github.io/use-both-claude-codex/guia/' },
   { date: '2026-09-27', title: 'MakeShorts — fábrica de shorts com IA no Claude Code: roteiro, voz ou avatar, edição 9:16, QA e agendamento (local ou VPS com APIs)', type: 'novo', url: 'https://inematds.github.io/makeshorts/guia/' },
   { date: '2026-09-25', title: 'San Martín — estudo de redesign de site municipal: diagnóstico, pesquisa de sites de governo 2026 e proposta de home', type: 'novo', url: 'https://inematds.github.io/sanmartin/' },

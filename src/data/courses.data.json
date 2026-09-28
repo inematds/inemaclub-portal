@@ -5908,6 +5908,12 @@
   ],
   "projectUpdatesData": [
     {
+      "date": "2026-09-28",
+      "title": "Letramento em IA nos EUA — o que o governo está fazendo: decretos, verbas, referencial de competências e lições para o Brasil",
+      "type": "novo",
+      "url": "https://inematds.github.io/letramento-ia-eua/guia/"
+    },
+    {
       "date": "2026-09-27",
       "title": "Use Both — Claude + Codex: um planeja, o outro desafia. 6 fluxos, prompts, templates e skills handoff/prime (kit MIT com guia PT/EN/ES)",
       "type": "novo",
@@ -7175,6 +7181,13 @@
       "name": "laya",
       "desc": "Laya INEMA: triagem local em português, interface, API, CLI e avaliação com pesos reais. Recomendações com revisão humana e curso v2 separado.",
       "url": "https://inematds.github.io/laya/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "letramento-ia-eua",
+      "desc": "Levantamento de set/2026 do que os EUA estão fazendo em letramento em IA: decretos, verbas, o referencial oficial de competências (5 áreas, 7 princípios) e programas para escolas, trabalhadores e pequenas empresas, com leitura crítica e lições para o Brasil.",
+      "url": "https://inematds.github.io/letramento-ia-eua/guia/",
       "badge": "Guia"
     },
     {
