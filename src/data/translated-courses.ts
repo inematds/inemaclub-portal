@@ -18,6 +18,10 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 253, kind: 'curso', locale: 'en', title: 'AI Sales Fundamentals', description: 'You know how to build. What’s holding you back isn’t the technical side—it’s getting a stranger to trust yourself quickly enough to pay.
+          This course teaches the human side of the AI business: mindset, confidence, closing, and practice.', url: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/en/', icon: '🤝' },
+  { id: 253, kind: 'curso', locale: 'es', title: 'Fundamentos para Vender IA', description: 'Sabes construir. Lo que te frena no es la técnica — es lograr que un desconocido confía en ti lo bastante rápido para pagar.
+          Este curso enseña la parte humana del negocio de IA: mentalidad, confianza, cierre y práctica.', url: 'https://inematds.github.io/formacao-vendas-ia-fundamentos/es/', icon: '🤝' },
   { id: 254, kind: 'curso', locale: 'en', title: 'From Zero to Your First AI Client', description: 'You know how to build an agent. What\'s missing is someone paying for it.
           This course is the complete path from zero to the first payment :
           choose the niche, diagnose the company, set the price, make the call, lead the meeting, and deliver.', url: 'https://inematds.github.io/formacao-vendas-ia-primeiro-cliente/en/', icon: '🚀' },
