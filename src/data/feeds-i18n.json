@@ -211,10 +211,6 @@
     "en": "RSI — the AI that improves AI: verified research, LOOP-R and how companies, government and people benefit",
     "es": "RSI — la IA que mejora la IA: investigación verificada, LOOP-R y cómo empresas, gobierno y personas se benefician"
   },
-  "RSI v6.2 — Entenda e aplique ciclos de melhoria em IA": {
-    "en": "RSI v6.2 — Understand and apply improvement cycles in AI",
-    "es": "RSI v6.2 — Entiende y aplica ciclos de mejora en IA"
-  },
   "RSI Copiloto — sistema com IA, memória, rotinas e melhoria supervisionada para pessoas e negócios": {
     "en": "RSI Copiloto — system with AI, memory, routines and supervised improvement for people and businesses",
     "es": "RSI Copiloto — sistema con IA, memoria, rutinas y mejora supervisada para personas y negocios"
@@ -374,5 +370,9 @@
   "Produtos na era da IA — Saber o que vale a pena construir": {
     "en": "Products in the age of AI — Knowing what’s worth building",
     "es": "Productos en la era de la IA — Saber qué vale la pena construir"
+  },
+  "Agente sob Controle v2 — Use agentes de IA sem se queimar": {
+    "en": "Agent Under Control v2 — Use AI agents without getting burned",
+    "es": "Agente bajo control v2 — Usa agentes de IA sin quemarte"
   }
 }

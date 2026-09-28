@@ -2195,6 +2195,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/arquiteto-agentes-advocacia/', label: 'Caderno: Advocacia', desc: 'O agente lê, conta e prepara; o advogado assina' },
               { href: 'https://inematds.github.io/kit-arquiteto-agentes/guia/', label: 'Kit do Arquiteto', desc: 'A ferramenta que monta a especificação do agente' },
               { href: 'https://inematds.github.io/curso-7pa/', label: 'Gestão de Agentes: 7 Princípios', desc: 'Intenção, limites e supervisão — do N0 ao N4, com projeto final' },
+              { href: 'https://inematds.github.io/curso-agente-sob-controle-v2/', label: 'Agente sob Controle v2', desc: '5 trilhas: dor, controle, riscos ocultos e resultado, com a planilha em 4 blocos' },
               { href: 'https://inematds.github.io/curso-agente-sob-controle/', label: 'Agente sob controle v6.2', desc: 'Achar a dor, limitar o agente, fechar as portas e medir o resultado' },
             ]},
             { title: '🎬 Vídeos, Filmes e Cinema', steps: [

@@ -28,6 +28,19 @@
       "url": "https://inematds.github.io/agent-skills/"
     },
     {
+      "id": 305,
+      "title": "Agente sob Controle v2 — Use agentes de IA sem se queimar",
+      "description": "Versão em trilhas do Agente sob controle: ache a dor que custa dinheiro, decida o que o agente pode ler, mudar e enviar, feche as portas que quase ninguém vê (ordens escondidas, senhas, extensões, gasto e LGPD) e meça o resultado com dono. 5 trilhas, 11 módulos e 66 tópicos, com diagramas, prompts prontos, progresso e a planilha em 4 blocos.",
+      "icon": "🛡️",
+      "tags": [
+        "Agentes",
+        "Segurança",
+        "Negócios",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/curso-agente-sob-controle-v2/"
+    },
+    {
       "id": 302,
       "title": "Agente sob controle v6.2 — Use agentes de IA sem se queimar",
       "description": "Curso para quem tem um pequeno negócio: escolha o que automatizar pela dor que custa dinheiro, dê ao agente só o acesso que a tarefa pede, feche as portas de segurança (ordens escondidas, senhas, extensões, gasto e dados de clientes) e meça se deu certo. 6 aulas de ~15 minutos em 5 módulos, com a ficha do agente pronta no fim.",
@@ -4290,6 +4303,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-28",
+      "title": "Agente sob Controle v2 — Use agentes de IA sem se queimar",
+      "type": "novo",
+      "url": "https://inematds.github.io/curso-agente-sob-controle-v2/"
+    },
     {
       "date": "2026-09-28",
       "title": "Produtos na era da IA — Saber o que vale a pena construir",
