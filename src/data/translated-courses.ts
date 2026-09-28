@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10036, kind: 'projeto', locale: 'en', title: 'Jarvis v7 + JEV Reflex — five decisions before the answer', description: 'Install Jarvis v7: persistent notes and memories, Codex and Claude OAuth, OpenRouter API, and Kie Studio. Real JEV Reflex before the brain. Guide for version 0.2.0.', url: 'https://inematds.github.io/jarvisv7/guia/en/', icon: '🤖' },
+  { id: 10036, kind: 'projeto', locale: 'es', title: 'Jarvis v7 + JEV Reflex — cinco decisiones antes de la respuesta', description: 'Instala Jarvis v7: notas y memorias persistentes, Codex y Claude OAuth, OpenRouter API y estudio Kie. JEV Reflex real antes del cerebro. Guía de la versión 0.2.0.', url: 'https://inematds.github.io/jarvisv7/guia/es/', icon: '🤖' },
   { id: 251, kind: 'curso', locale: 'en', title: '43 Opportunities to Make Money with AI', description: 'Forty-three concrete ways to earn revenue with artificial intelligence — each with what it is, who to sell it to, how to charge, and the first step .
           It’s not a list of loose ideas: it’s a decision map, with the funnel that turns each opportunity into revenue.', url: 'https://inematds.github.io/formacao-vendas-ia-oportunidades/en/', icon: '💰' },
   { id: 251, kind: 'curso', locale: 'es', title: '43 oportunidades de ganar dinero con IA', description: 'Cuarenta y tres formas concretas de generar ingresos con inteligencia artificial — cada una con qué es, a quién vendérselo, cómo cobrar y el primer paso .
