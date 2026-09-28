@@ -18,6 +18,12 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 255, kind: 'curso', locale: 'en', title: 'Masterclass: How to Sell AI Solutions', description: 'The entire sales conversation, from the first "hello" to the signed contract. This isn\'t a persuasion technique:
+          it\'s guiding method — ask better questions, listen more, read what wasn’t said, and
+          end every meeting with a date scheduled.', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/en/', icon: '🎯' },
+  { id: 255, kind: 'curso', locale: 'es', title: 'Masterclass: Cómo vender soluciones de IA', description: 'Toda la conversación comercial, desde el primer "hola" hasta el contrato firmado. No es una técnica de persuasión:
+          es método de conducción — preguntar mejor, escuchar más, leer lo que no se dijo y
+          terminar cada encuentro con una fecha acordada.', url: 'https://inematds.github.io/formacao-vendas-ia-masterclass/es/', icon: '🎯' },
   { id: 10035, kind: 'projeto', locale: 'en', title: 'Fable 5.1 — System Prompt · analysis, index, and forms', description: 'Reference project on Claude Fable 5.1’s system prompt: what Anthropic publishes, what appears in the runtime dump, what changed from Fable 5, and practical reference cards for testing, writing, and spending less.', url: 'https://inematds.github.io/fable51-system-prompt/guia/en/', icon: '🧾' },
   { id: 10035, kind: 'projeto', locale: 'es', title: 'Fable 5.1 — Prompt del sistema · análisis, índice y fichas', description: 'Proyecto de referencia sobre el prompt del sistema de Claude Fable 5.1: lo que publica Anthropic, lo que aparece en el dump del runtime, qué cambió respecto de Fable 5 y fichas prácticas para probar, escribir y gastar menos.', url: 'https://inematds.github.io/fable51-system-prompt/guia/es/', icon: '🧾' },
   { id: 256, kind: 'curso', locale: 'en', title: 'Home | Fable 5.1 in practice', description: 'Fable 5.1 in practice: What changed, how to use it, how to spend less. A short course in 3 tracks to understand what changed in Claude Fable 5.1, try it on your own account, and spend less.', url: 'https://inematds.github.io/fable51-system/en/', icon: '⚡' },
