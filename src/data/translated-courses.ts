@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 270, kind: 'curso', locale: 'en', title: 'LOOP-R: The Business That Learns on Its Own', description: 'Course para donos e gestores 40+: monte um loop de melhoria com IA no seu negócio — evidência, hipótese, experimento, decisão com cartão e botão de voltar. Sem vídeo, sem instalar nada.', url: 'https://inematds.github.io/loop-r/curso/en/', icon: '🔁' },
+  { id: 270, kind: 'curso', locale: 'es', title: 'LOOP-R: Tu empresa aprende por sí sola', description: 'Curso para propietarios y gestores de 40 años o más: crea un ciclo de mejora con IA para tu negocio — evidencia, hipótesis, experimentos, decisiones con tarjeta y opción para volver atrás. Sin videos ni instalaciones.', url: 'https://inematds.github.io/loop-r/curso/es/', icon: '🔁' },
   { id: 278, kind: 'curso', locale: 'en', title: 'Fast decisions, responsible application | Laya & Jev', description: 'Practical course on Laya and Jev: structured decisions, local inference, triage in Portuguese, and critical evaluation.', url: 'https://inematds.github.io/laya-curso/en/', icon: '🧭' },
   { id: 278, kind: 'curso', locale: 'es', title: 'Decisiones rápidas, aplicación responsable | Laya & Jev', description: 'Curso práctico de Laya y Jev: decisiones estructuradas, inferencia local, triaje en portugués y evaluación crítica.', url: 'https://inematds.github.io/laya-curso/es/', icon: '🧭' },
   { id: 276, kind: 'curso', locale: 'en', title: 'Jev in practice · Jev in practice', description: 'Jev course: 36 lessons, solved examples, and guided practice. Structured decisions with evaluation and explicit limits.', url: 'https://inematds.github.io/jev-curso/en/', icon: '📘' },
