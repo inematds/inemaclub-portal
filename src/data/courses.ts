@@ -1114,6 +1114,14 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/deepclaudex/',
   },
   {
+    id: 303,
+    title: 'Dev com IA v6.2 — Um faz, o outro confere',
+    description: 'Desenvolver com Claude e Codex com revisão cruzada e custo sob controle: briefing com critérios de aceite, plano criticado pelo outro modelo, diff revisado, testes e aceite humano, handoff e prime, e modelo e esforço escolhidos por etapa. 30 aulas de ~15 minutos em 6 módulos, em torno de um piloto seu.',
+    icon: '🔁',
+    tags: ['Claude Code', 'Codex', 'Validação', 'Custos', 'IA'],
+    url: 'https://inematds.github.io/dev-ia-validacao/',
+  },
+  {
     id: 64,
     title: 'DeerFlow 2.0 - Framework de Agentes ByteDance',
     description:
@@ -2911,6 +2919,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-28', title: 'Dev com IA v6.2 — Um faz, o outro confere', type: 'novo', url: 'https://inematds.github.io/dev-ia-validacao/' },
   { date: '2026-09-28', title: 'Agente sob controle v6.2 — Use agentes de IA sem se queimar', type: 'novo', url: 'https://inematds.github.io/curso-agente-sob-controle/' },
   { date: '2026-09-25', title: 'OSWork v6.2 — vídeo-aulas com o Nei, uma por módulo', type: 'atualizado', url: 'https://inematds.github.io/oswork-v62/videos/' },
   { date: '2026-09-25', title: "Influenciador IA em 21 Dias", type: 'novo', url: "https://inematds.github.io/curso-influenciador-ia/" },

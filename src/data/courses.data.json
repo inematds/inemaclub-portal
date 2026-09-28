@@ -1457,6 +1457,20 @@
       "url": "https://inematds.github.io/deepclaudex/"
     },
     {
+      "id": 303,
+      "title": "Dev com IA v6.2 — Um faz, o outro confere",
+      "description": "Desenvolver com Claude e Codex com revisão cruzada e custo sob controle: briefing com critérios de aceite, plano criticado pelo outro modelo, diff revisado, testes e aceite humano, handoff e prime, e modelo e esforço escolhidos por etapa. 30 aulas de ~15 minutos em 6 módulos, em torno de um piloto seu.",
+      "icon": "🔁",
+      "tags": [
+        "Claude Code",
+        "Codex",
+        "Validação",
+        "Custos",
+        "IA"
+      ],
+      "url": "https://inematds.github.io/dev-ia-validacao/"
+    },
+    {
       "id": 64,
       "title": "DeerFlow 2.0 - Framework de Agentes ByteDance",
       "description": "Curso completo do framework open-source de agentes da ByteDance. 4 trilhas, 21 modulos com labs praticos. Cobre fundamentos, arquitetura LangGraph, extensao com skills e MCP, plataforma avancada e comparativo com Claude Code.",
@@ -4262,6 +4276,12 @@
     }
   ],
   "updatesData": [
+    {
+      "date": "2026-09-28",
+      "title": "Dev com IA v6.2 — Um faz, o outro confere",
+      "type": "novo",
+      "url": "https://inematds.github.io/dev-ia-validacao/"
+    },
     {
       "date": "2026-09-28",
       "title": "Agente sob controle v6.2 — Use agentes de IA sem se queimar",

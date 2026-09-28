@@ -2293,6 +2293,7 @@ export default function Portal({
               { href: 'https://inematds.github.io/deepclaudex/',        label: 'DeepClaudeX',  desc: 'Multi-Modelo 70/20/10' },
               { href: 'https://inematds.github.io/ccxcx',              label: 'CCXCX',        desc: 'Claude e Codex Tool-Agnostic' },
               { href: 'https://inematds.github.io/curso-claude-codex/', label: 'Claude → Codex', desc: 'Migre ou fique agnóstico: workspace portátil em 18 módulos' },
+              { href: 'https://inematds.github.io/dev-ia-validacao/',   label: 'Dev com IA v6.2', desc: 'Um faz, o outro confere: revisão cruzada, testes e custo (30 aulas)' },
               { href: 'https://inematds.github.io/ruflo/',              label: 'Ruflo',        desc: 'Orquestração de Agentes Multi-IA' },
               { href: 'https://inematds.github.io/astra-computer-use/', label: 'Computer Use', desc: 'Cinco fluxos de computer use com o GPT-6 Astra' },
               { href: 'https://inematds.github.io/gpt6-astra/',         label: 'Astra na prática', desc: 'Delegue tarefas inteiras ao GPT-6 Astra, sem programar (8 aulas)' },
