@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 247, kind: 'curso', locale: 'en', title: 'Training 2 | WebMCP Builder', description: 'Hands-on WebMCP Builder training with four modules, labs, and an advanced tool and schema validator.', url: 'https://inematds.github.io/webmcp-2-builder/en/', icon: '🧰' },
+  { id: 247, kind: 'curso', locale: 'es', title: 'Formación 2 | WebMCP Builder', description: 'Formación práctica de WebMCP Builder con cuatro módulos, laboratorios y un validador avanzado de tools y schemas.', url: 'https://inematds.github.io/webmcp-2-builder/es/', icon: '🧰' },
   { id: 10012, kind: 'projeto', locale: 'en', title: 'jev-open — local classification specialist', description: 'A small, local model that reads messages and answers fixed questions with yes, no, or can’t tell; the code makes the decision, and uncertain cases go to a person. Examples: law firms and clinics.', url: 'https://inematds.github.io/jev-open/guia/en/', icon: '🧪' },
   { id: 10012, kind: 'projeto', locale: 'es', title: 'jev-open — especialista clasificador local', description: 'Modelo pequeño y local que lee mensajes y responde preguntas fijas con sí, no o no se puede saber; el código decide y la duda se deriva a una persona. Ejemplos: bufete de abogados y clínica.', url: 'https://inematds.github.io/jev-open/guia/es/', icon: '🧪' },
   { id: 10011, kind: 'projeto', locale: 'en', title: 'San Martín redesign study', description: 'A diagnosis of sanmartin.gob.ar, what the best government websites do in 2026, and a homepage proposal in the style of a $10,000 project.', url: 'https://inematds.github.io/sanmartin/en/', icon: '🏛️' },
