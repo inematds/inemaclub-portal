@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10037, kind: 'projeto', locale: 'en', title: 'Jev Decision Lab — User Guide', description: 'Ten cases in structured decision-making, an educational lab, a Python client, and rule evaluation. Learn how to prepare your Jev integration.', url: 'https://inematds.github.io/jev/guia/en/', icon: '🧭' },
+  { id: 10037, kind: 'projeto', locale: 'es', title: 'Jev Decision Lab — guía de uso', description: 'Diez casos de decisiones estructuradas, laboratorio didáctico, cliente de Python y evaluación de reglas. Aprende a preparar tu integración con Jev.', url: 'https://inematds.github.io/jev/guia/es/', icon: '🧭' },
   { id: 10036, kind: 'projeto', locale: 'en', title: 'Jarvis v7 + JEV Reflex — five decisions before the answer', description: 'Install Jarvis v7: persistent notes and memories, Codex and Claude OAuth, OpenRouter API, and Kie Studio. Real JEV Reflex before the brain. Guide for version 0.2.0.', url: 'https://inematds.github.io/jarvisv7/guia/en/', icon: '🤖' },
   { id: 10036, kind: 'projeto', locale: 'es', title: 'Jarvis v7 + JEV Reflex — cinco decisiones antes de la respuesta', description: 'Instala Jarvis v7: notas y memorias persistentes, Codex y Claude OAuth, OpenRouter API y estudio Kie. JEV Reflex real antes del cerebro. Guía de la versión 0.2.0.', url: 'https://inematds.github.io/jarvisv7/guia/es/', icon: '🤖' },
   { id: 251, kind: 'curso', locale: 'en', title: '43 Opportunities to Make Money with AI', description: 'Forty-three concrete ways to earn revenue with artificial intelligence — each with what it is, who to sell it to, how to charge, and the first step .
