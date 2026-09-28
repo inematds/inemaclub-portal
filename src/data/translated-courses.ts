@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 276, kind: 'curso', locale: 'en', title: 'Jev in practice · Jev in practice', description: 'Jev course: 36 lessons, solved examples, and guided practice. Structured decisions with evaluation and explicit limits.', url: 'https://inematds.github.io/jev-curso/en/', icon: '📘' },
+  { id: 276, kind: 'curso', locale: 'es', title: 'Jev en la práctica · Jev en la práctica', description: 'Curso Jev: 36 clases, ejemplos resueltos y práctica guiada. Decisiones estructuradas con evaluación y límites explícitos.', url: 'https://inematds.github.io/jev-curso/es/', icon: '📘' },
   { id: 186, kind: 'curso', locale: 'en', title: 'AI Alert 2028 — The AI building the next AI', description: 'From a frightening headline to a critical reading of the warning for 2028—in plain English.', url: 'https://inematds.github.io/ia2028alerta/en/', icon: '🚨' },
   { id: 186, kind: 'curso', locale: 'es', title: 'Alerta de IA 2028 — La IA que construye la próxima IA', description: 'De un titular alarmante a una lectura crítica de la alerta de 2028, en palabras sencillas.', url: 'https://inematds.github.io/ia2028alerta/es/', icon: '🚨' },
   { id: 306, kind: 'curso', locale: 'en', title: 'The Super-Agents Are Here', description: 'How your work changes when AI stops waiting for instructions. A 6-lesson course, no code, for people who decide what to delegate to an AI agent.', url: 'https://inematds.github.io/agi-ready/en/', icon: '🗝️' },
