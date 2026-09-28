@@ -111,10 +111,6 @@
     "en": "who has ;claude he is available",
     "es": "quien tiene el ;claude está disponible"
   },
-  "7PA — Ficha do Agente: os 7 princípios da gestão de agentes de IA na prática (PT/EN/ES)": {
-    "en": "7PA — Agent Sheet: the 7 principles of AI agent management in practice (PT/EN/ES)",
-    "es": "7PA — Ficha del Agente: los 7 principios de la gestión de agentes de IA en la práctica (PT/EN/ES)"
-  },
   "7PA — Galeria com 10 fichas de agente prontas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)": {
     "en": "7PA — Gallery with 10 ready agent sheets (N0 to N4) + skill /ficha-agente for Claude Code (PT/EN/ES)",
     "es": "7PA — Galería con 10 fichas de agente listas (N0 a N4) + skill /ficha-agente para Claude Code (PT/EN/ES)"
@@ -374,5 +370,9 @@
   "Use Both — Claude + Codex: um planeja, o outro desafia. 6 fluxos, prompts, templates e skills handoff/prime (kit MIT com guia PT/EN/ES)": {
     "en": "Use Both — Claude + Codex: one plans, the other challenges. 6 flows, prompts, templates and skills handoff/prime (MIT kit with PT/EN/ES guide)",
     "es": "Use Both — Claude + Codex: uno planea, el otro desafía. 6 flujos, prompts, plantillas y skills handoff/prime (kit MIT con guía PT/EN/ES)"
+  },
+  "Letramento em IA nos EUA — o que o governo está fazendo: decretos, verbas, referencial de competências e lições para o Brasil": {
+    "en": "AI Literacy in the US — what the government is doing: decrees, funding, competency framework and lessons for Brazil",
+    "es": "Alfabetización en IA en EE. UU. — lo que el gobierno está haciendo: decretos, fondos, marco de competencias y lecciones para Brasil"
   }
 }
