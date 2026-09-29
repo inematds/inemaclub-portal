@@ -147,10 +147,6 @@
     "en": "very good video about Opus5.5",
     "es": "video muy bueno sobre el Opus5.5"
   },
-  "WebMCP Readiness — Annotations atualizadas na descoberta estática": {
-    "en": "WebMCP Readiness — Updated annotations in static discovery",
-    "es": "WebMCP Readiness — Annotations actualizadas en el descubrimiento estático"
-  },
   "Jev Decision Lab — Pacote de viagens: anúncio avaliado uma vez e cruzado por regra com 12 perfis": {
     "en": "Jev Decision Lab — Travel package: ad evaluated once and cross-referenced by rule with 12 profiles",
     "es": "Jev Decision Lab — Paquete de viajes: anuncio evaluado una vez y cruzado por regla con 12 perfiles"
@@ -370,5 +366,9 @@
   "Muse × OpenMuse — o agente pessoal da Meta contra a alternativa open source da CopilotKit: comparação com fatos checados (e o que circula errado nas redes)": {
     "en": "Muse × OpenMuse — Meta’s personal agent versus CopilotKit’s open-source alternative: a fact-checked comparison (and what’s being misreported on social media)",
     "es": "Muse × OpenMuse — el agente personal de Meta frente a la alternativa de código abierto de CopilotKit: comparación con datos verificados (y lo que circula erróneamente en las redes)"
+  },
+  "San Martín — nova proposta v3 no estilo \"mesa de trabalho\" (post-its, fichas, pastas, comprovante) e as três versões da home agora em PT/EN/ES": {
+    "en": "San Martín — new v3 proposal in the “workbench” style (post-its, cards, folders, receipt) and all three home page versions now in PT/EN/ES",
+    "es": "San Martín — nueva propuesta v3 al estilo \"mesa de trabajo\" (notas adhesivas, fichas, carpetas, comprobante) y las tres versiones de la página de inicio ahora en PT/EN/ES"
   }
 }

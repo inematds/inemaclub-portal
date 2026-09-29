@@ -6025,6 +6025,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-29",
+      "title": "San Martín — nova proposta v3 no estilo \"mesa de trabalho\" (post-its, fichas, pastas, comprovante) e as três versões da home agora em PT/EN/ES",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/sanmartin/"
+    },
+    {
+      "date": "2026-09-29",
       "title": "Codex + Claude em vídeo — um planeja, o outro critica: os seis níveis do Use Both, quem faz o quê e todos os cursos e kits abertos, com avatar do Nei (completo 6 min, essencial 3 min e reel 9:16)",
       "type": "novo",
       "url": "https://inematds.github.io/codex-claude-video/videos/"
@@ -7317,7 +7323,7 @@
     {
       "icon": "🏛️",
       "name": "sanmartin",
-      "desc": "Estudo de redesign do site da Municipalidad de San Martín (AR): diagnóstico do site atual, o que os melhores sites de governo fazem em 2026 (busca primeiro, navegação por tarefa, WCAG 2.2 AA) e uma proposta conceitual de home.",
+      "desc": "Estudo de redesign do site da Municipalidad de San Martín (AR): diagnóstico do site atual, o que os melhores sites de governo fazem em 2026 (busca primeiro, navegação por tarefa, WCAG 2.2 AA) e três propostas conceituais de home (v1, v2 e v3 no estilo mesa de trabalho), em PT/EN/ES.",
       "url": "https://inematds.github.io/sanmartin/",
       "badge": "Guia"
     },
