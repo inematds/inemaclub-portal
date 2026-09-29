@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10081, kind: 'projeto', locale: 'en', title: 'promoavatar3 — three videos per audience: reach, authority, promotional', description: 'Repo for the /promoavatar3 flow domain in inemaccbot: each audience gets three scripts with different functions (-alc, -aut, -pro), 36 targets in total, with a human gate before any render.', url: 'https://inematds.github.io/promoavatar3/guia/en/', icon: '🎯' },
+  { id: 10081, kind: 'projeto', locale: 'es', title: 'promoavatar3 — tres videos por público: alcance, autoridad, promocional', description: 'Repo del dominio del flujo /promoavatar3 de inemaccbot: cada público genera tres guiones con funciones distintas (-alc, -aut, -pro), 36 objetivos en total, con una aprobación humana antes de cualquier renderizado.', url: 'https://inematds.github.io/promoavatar3/guia/es/', icon: '🎯' },
   { id: 230, kind: 'curso', locale: 'en', title: 'AI Training—today and what comes next', description: 'AI for your work', url: 'https://inematds.github.io/formacaoia/en/', icon: '🧰' },
   { id: 230, kind: 'curso', locale: 'es', title: 'Formación en IA — hoy y lo que viene después', description: 'IA para tu trabajo', url: 'https://inematds.github.io/formacaoia/es/', icon: '🧰' },
   { id: 231, kind: 'curso', locale: 'en', title: 'Advanced AI Software Engineering Workshop', description: 'AI already reads repositories, edits files, runs tests, and reviews changes. The challenge is no longer getting AI
