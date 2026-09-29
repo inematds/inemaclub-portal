@@ -38,6 +38,7 @@ const GRUPO_VIP = '2405283087';
 const TOPICO_FEED = '306';
 const DIAS_LOOKBACK = Number(process.env.NOVIDADES_DIAS ?? 3); // janela de blocos considerados; o state evita repetir
 const MAX_ITENS = 30; // lista rolante no portal
+const GAP_ANUNCIO_MS = 2 * 3600e3; // Nei escrevendo 2 h+ depois do último membro = anúncio novo
 
 // Autores que representam o Nei no tópico de anúncios (ele posta como admin
 // anônimo -> "Desconhecido", ou pela conta do canal -> "INEMA"). Qualquer autor
@@ -118,6 +119,17 @@ function blocosFechados(msgs) {
 }
 
 function montaItem(bloco, grupos) {
+  // Membro que posta no tópico sem "=====" depois cola a conversa dele no
+  // próximo anúncio do Nei (28/09: pergunta do arca 13:49 + anúncio do
+  // aventura.inema.club 22 h depois = bloco inteiro descartado como conversa).
+  // Se o Nei só volta a escrever horas depois do último membro, o que vem
+  // depois é anúncio novo, não resposta: descarta a conversa e fica com ele.
+  const ultMembro = bloco.findLastIndex((m) => (m.text || '').trim() && !doNei(m));
+  if (ultMembro >= 0 && ultMembro < bloco.length - 1) {
+    const gap = Date.parse(bloco[ultMembro + 1].date) - Date.parse(bloco[ultMembro].date);
+    if (gap > GAP_ANUNCIO_MS) bloco = bloco.slice(ultMembro + 1);
+  }
+
   // Só entra o que o NEI escreveu: mensagem de membro sai fora do item.
   // Comando de bot de membro ("/status", "/registrar@...") não é conversa.
   const temMembro = bloco.some((m) => {
