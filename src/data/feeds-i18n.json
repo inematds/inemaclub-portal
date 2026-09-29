@@ -163,10 +163,6 @@
     "en": "very good video about Opus5.5",
     "es": "video muy bueno sobre el Opus5.5"
   },
-  "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL": {
-    "en": "StickShift v2 — Web Panel + Chat for Claude Code and Codex on Linux/WSL",
-    "es": "StickShift v2 — Panel Web + Chat para Claude Code y Codex en Linux/WSL"
-  },
   "WebMCP Readiness — Annotations atualizadas na descoberta estática": {
     "en": "WebMCP Readiness — Updated annotations in static discovery",
     "es": "WebMCP Readiness — Annotations actualizadas en el descubrimiento estático"
@@ -374,5 +370,9 @@
   "Produtos na era da IA v6 — Saber o que vale a pena construir": {
     "en": "Products in the AI era v6 — Knowing what’s worth building",
     "es": "Productos en la era de la IA v6 — Saber qué vale la pena construir"
+  },
+  "Codex + Claude em vídeo — um planeja, o outro critica: os seis níveis do Use Both, quem faz o quê e todos os cursos e kits abertos, com avatar do Nei (completo 6 min, essencial 3 min e reel 9:16)": {
+    "en": "Codex + Claude in a video — one plans, the other critiques: the six levels of Use Both, who does what, and all the open courses and kits, with Nei’s avatar (full 6 min, essential 3 min, and 9:16 reel)",
+    "es": "Codex + Claude en video — uno planifica, el otro critica: los seis niveles de Use Both, quién hace qué y todos los cursos y kits abiertos, con avatar de Nei (completo 6 min, esencial 3 min y reel 9:16)"
   }
 }
