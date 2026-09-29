@@ -2243,6 +2243,15 @@ export const platformsData: Course[] = [
     url: 'https://inematds.github.io/produtos-era-ia/',
   },
   {
+    id: 308,
+    title: 'Produtos na era da IA v6 — Saber o que vale a pena construir',
+    description:
+      'O curso Produtos na era da IA no formato visual do v6, para iniciantes: 18 aulas de uns 15 minutos em 3 módulos, com telas simuladas, uma prática no chat de IA por aula e o texto completo do v2 como material complementar. Você preenche a ficha da sua ideia aula a aula: perguntas de oportunidade, pré-mortem, aposta mínima, frase de posicionamento, plano de 30 dias e teste com usuários simulados.',
+    icon: '🧭',
+    tags: ['Produto', 'Estratégia', 'Visual', 'IA'],
+    url: 'https://inematds.github.io/produtos-era-ia-v6/',
+  },
+  {
     id: 89,
     title: 'Prof2030 - O Profissional do Futuro',
     description:
@@ -2950,6 +2959,7 @@ export const platformsData: Course[] = [
 ]
 
 export const updatesData: Update[] = [
+  { date: '2026-09-28', title: 'Produtos na era da IA v6 — Saber o que vale a pena construir', type: 'novo', url: 'https://inematds.github.io/produtos-era-ia-v6/' },
   { date: '2026-09-28', title: 'Áreas do INEMA Eventos — O que é cada área', type: 'novo', url: 'https://inematds.github.io/areas-eventos/' },
   { date: '2026-09-28', title: 'Agente sob Controle v2 — Use agentes de IA sem se queimar', type: 'novo', url: 'https://inematds.github.io/curso-agente-sob-controle-v2/' },
   { date: '2026-09-28', title: 'Produtos na era da IA — Saber o que vale a pena construir', type: 'novo', url: 'https://inematds.github.io/produtos-era-ia/' },
