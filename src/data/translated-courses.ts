@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 249, kind: 'curso', locale: 'en', title: 'Training 4 | WebMCP Agent Developer', description: 'Hands-on WebMCP Agent Developer training with four modules, labs, and an advanced tool and schema validator.', url: 'https://inematds.github.io/webmcp-4-agent-developer/en/', icon: '🤖' },
+  { id: 249, kind: 'curso', locale: 'es', title: 'Formación 4 | WebMCP Agent Developer', description: 'Formación práctica WebMCP Agent Developer con cuatro módulos, laboratorios y validador avanzado de tools y schemas.', url: 'https://inematds.github.io/webmcp-4-agent-developer/es/', icon: '🤖' },
   { id: 250, kind: 'curso', locale: 'en', title: 'Training 5 | WebMCP Expert', description: 'Hands-on WebMCP Expert training with four modules, labs, and an advanced tool and schema validator.', url: 'https://inematds.github.io/webmcp-5-expert/en/', icon: '🛡️' },
   { id: 250, kind: 'curso', locale: 'es', title: 'Formación 5 | WebMCP Expert', description: 'Formación práctica WebMCP Expert con cuatro módulos, laboratorios y validador avanzado de tools y schemas.', url: 'https://inematds.github.io/webmcp-5-expert/es/', icon: '🛡️' },
   { id: 10060, kind: 'projeto', locale: 'en', title: 'Content2Video INEMA — one link in, one video out', description: 'Turn web pages and articles into editable vertical videos, with a script, pt-BR voiceover, captions, and MP4 rendering.', url: 'https://inematds.github.io/content2video/guia/en/', icon: '🎬' },
