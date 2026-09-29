@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 241, kind: 'curso', locale: 'en', title: 'Social Media — Your Content Employee', description: 'Practical course: build an AI employee for your social media by pasting prompts into your code assistant.', url: 'https://inematds.github.io/curso-social-media/en/', icon: '📱' },
+  { id: 241, kind: 'curso', locale: 'es', title: 'Redes sociales — Tu empleado de contenido', description: 'Curso práctico: crea un empleado de IA para tus redes sociales pegando prompts en el asistente de código.', url: 'https://inematds.github.io/curso-social-media/es/', icon: '📱' },
   { id: 236, kind: 'curso', locale: 'en', title: 'AI Teams — Complete Course | AI Teams', description: 'Six specialized AI teams you can activate with a single command. Each track teaches all the team’s components: what they do, when to use them, real examples, and the deliverables from each analysis.', url: 'https://inematds.github.io/curso-times-de-ia/en/', icon: '🧠' },
   { id: 236, kind: 'curso', locale: 'es', title: 'Equipos de IA — Curso completo | Equipos de IA', description: 'Seis equipos de IA especializados que activas con un solo comando. Cada ruta enseña todos los
         componentes del equipo: qué hacen, cuándo usarlos, ejemplos reales y los resultados de cada análisis.', url: 'https://inematds.github.io/curso-times-de-ia/es/', icon: '🧠' },
