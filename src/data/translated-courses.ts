@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10060, kind: 'projeto', locale: 'en', title: 'Content2Video INEMA — one link in, one video out', description: 'Turn web pages and articles into editable vertical videos, with a script, pt-BR voiceover, captions, and MP4 rendering.', url: 'https://inematds.github.io/content2video/guia/en/', icon: '🎬' },
+  { id: 10060, kind: 'projeto', locale: 'es', title: 'Content2Video INEMA: entra un enlace, sale un video', description: 'Convierte páginas y artículos en videos verticales editables, con guion, voz pt-BR, subtítulos y render MP4.', url: 'https://inematds.github.io/content2video/guia/es/', icon: '🎬' },
   { id: 10059, kind: 'projeto', locale: 'en', title: 'VideoSub — Video content, step by step', description: 'A local system that turns a topic or content into a script, voice, images, animations, captions, and an MP4 video, with validation at each stage.', url: 'https://inematds.github.io/videosub/guia/en/', icon: '🎬' },
   { id: 10059, kind: 'projeto', locale: 'es', title: 'VideoSub — Contenido en video, paso a paso', description: 'Sistema local que transforma un tema o contenido en guion, voz, imágenes, animaciones, subtítulos y video MP4 con validación por etapa.', url: 'https://inematds.github.io/videosub/guia/es/', icon: '🎬' },
   { id: 245, kind: 'curso', locale: 'en', title: 'Websites & Apps — Build and Resell', description: 'Hands-on course: build websites and apps with AI and turn deliverables into resale products.', url: 'https://inematds.github.io/curso-sites-apps/en/', icon: '🛒' },
