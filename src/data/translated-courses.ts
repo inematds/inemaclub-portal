@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 242, kind: 'curso', locale: 'en', title: 'Extras & Comparisons — Workshop Add-ons', description: 'Supplementary workshop material: model comparisons and standalone prompt packs.', url: 'https://inematds.github.io/curso-suporte/en/', icon: '🧩' },
+  { id: 242, kind: 'curso', locale: 'es', title: 'Extras y comparaciones — complementos del taller', description: 'Material complementario del taller: comparaciones de modelos y paquetes de prompts individuales.', url: 'https://inematds.github.io/curso-suporte/es/', icon: '🧩' },
   { id: 240, kind: 'curso', locale: 'en', title: 'INEMA Command Language | Master the 100 commands /', description: 'An operational language for 100 commands that controls how AI models and
           agents research, verify, analyze, critique, decide, plan,
           execute, and communicate .', url: 'https://inematds.github.io/curso-inema-dsl/en/', icon: '🧭' },
