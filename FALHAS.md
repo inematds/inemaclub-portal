@@ -3,6 +3,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-29 | Anúncio do Nei de 28/09 (aventura/eai.inema.club) não virou novidade: perguntas de membro de 27/09 sem `=====` caíram no mesmo bloco e ele foi descartado como conversa | Nei escrevendo 2 h+ após o último membro = anúncio novo (`GAP_ANUNCIO_MS` em `gera-novidades.mjs`) | prompt |
 | 2026-09-26 | Novas entradas com chaves entre aspas não eram capturadas pelo teste regex do catálogo traduzido | Usar o literal TS padrão com id/kind/locale sem aspas nas chaves; teste rerodado antes do push | prompt |
 | 2026-09-25 | Agente do portal respondia "não tenho registro" pra Hermes, Agnes, NVIDIA etc. (catálogo congelado em 54 fichas desde 10/07 + busca exigindo todas as palavras) | Cron `sync-agente-catalogo.mjs` + rpc `buscar_fichas` em OR ranqueada | infra |
 | 2026-09-25 | Push RSI concorreu com cadastro RSI Copiloto e conflitou no array traduzido | Rebase preservando ambas as entradas e restaurar edição local OSWork | infra |
