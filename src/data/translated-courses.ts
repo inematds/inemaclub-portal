@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 232, kind: 'curso', locale: 'en', title: 'Graph Engineering — From Loops to Graphs', description: 'Complete Graph Engineering course: from isolated loops to agent graphs. Graph fundamentals, loop engineering, agentic vs. loop vs. graph comparison, hands-on practice, and ready-to-use prompts.', url: 'https://inematds.github.io/loopgraph/en/', icon: '🕸️' },
+  { id: 232, kind: 'curso', locale: 'es', title: 'Graph Engineering — de loops a grafos', description: 'Curso completo de Graph Engineering: de loops aislados a grafos de agentes. Fundamentos de grafos, loop engineering, comparación entre agentic, loop y graph, práctica y prompts listos.', url: 'https://inematds.github.io/loopgraph/es/', icon: '🕸️' },
   { id: 233, kind: 'curso', locale: 'en', title: 'Your Digital Employee | WAT7D', description: 'INEMA.CLUB Course · 8 learning paths', url: 'https://inematds.github.io/wat7d/en/', icon: '🤖' },
   { id: 233, kind: 'curso', locale: 'es', title: 'Tu Empleado Digital | WAT7D', description: 'Curso INEMA.CLUB · 8 rutas', url: 'https://inematds.github.io/wat7d/es/', icon: '🤖' },
   { id: 234, kind: 'curso', locale: 'en', title: 'Ablation Audit | Trim Claude Code without losing quality', description: 'INEMA course: audit your CLAUDE.md, skills, and hooks using the ablation method. Diagnose, cut safely, and prove with a test that the minimal config didn’t make things worse.', url: 'https://inematds.github.io/curso-ablacao/en/', icon: '✂️' },
