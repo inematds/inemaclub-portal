@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10062, kind: 'projeto', locale: 'en', title: 'SnagTime — self-hosted scheduling, your way', description: 'SnagTime is a free, self-hostable scheduling app: availability, booking links, Google Calendar, SMTP email, and Stripe test-mode payments. Runs locally with SQLite in five minutes.', url: 'https://inematds.github.io/snagtime/guia/en/', icon: '📅' },
+  { id: 10062, kind: 'projeto', locale: 'es', title: 'SnagTime — agendamiento self-hosted, a tu manera', description: 'SnagTime es una app de agendamiento gratuita y self-hostable: disponibilidad, enlaces de booking, Google Calendar, correos SMTP y pagos de Stripe en modo de prueba. Se ejecuta localmente con SQLite en cinco minutos.', url: 'https://inematds.github.io/snagtime/guia/es/', icon: '📅' },
   { id: 248, kind: 'curso', locale: 'en', title: 'Training 3 | WebMCP Integrator', description: 'Hands-on WebMCP Integrator training with four modules, labs, and an advanced tools and schemas validator.', url: 'https://inematds.github.io/webmcp-3-integrator/en/', icon: '🔗' },
   { id: 248, kind: 'curso', locale: 'es', title: 'Formación 3 | WebMCP Integrator', description: 'Formación práctica WebMCP Integrator con cuatro módulos, laboratorios y validador avanzado de tools y schemas.', url: 'https://inematds.github.io/webmcp-3-integrator/es/', icon: '🔗' },
   { id: 249, kind: 'curso', locale: 'en', title: 'Training 4 | WebMCP Agent Developer', description: 'Hands-on WebMCP Agent Developer training with four modules, labs, and an advanced tool and schema validator.', url: 'https://inematds.github.io/webmcp-4-agent-developer/en/', icon: '🤖' },
