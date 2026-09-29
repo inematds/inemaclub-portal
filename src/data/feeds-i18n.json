@@ -323,10 +323,6 @@
     "en": "Dev with AI v6.2 — One does, the other checks",
     "es": "Dev con IA v6.2 — Uno hace, el otro revisa"
   },
-  "Muse × OpenMuse — o agente pessoal da Meta contra a alternativa open source da CopilotKit: comparação com fatos checados (e o que o vídeo errou)": {
-    "en": "Muse × OpenMuse — Meta’s personal agent versus CopilotKit’s open-source alternative: a fact-checked comparison (and what the video got wrong)",
-    "es": "Muse × OpenMuse — el agente personal de Meta frente a la alternativa de código abierto de CopilotKit: comparación con hechos verificados (y en qué se equivocó el video)"
-  },
   "Letramento em IA na China — planos, carga horária por província, regras de uso de IA na escola, leitura crítica e comparação com os EUA": {
     "en": "AI literacy in China — plans, class hours by province, rules for using AI in schools, critical reading, and comparison with the US",
     "es": "Alfabetización en IA en China — planes, carga horaria por provincia, reglas de uso de IA en la escuela, lectura crítica y comparación con EE. UU."
@@ -370,5 +366,9 @@
   "Estou recuperando um portal q eu criei em 2000,  em 2014 abandonei pq tinha vendido minha empresa mas recuperei mais de 11 milhoes de fotos, 160 mil materia etc,  aos poucos estou fazendo ele voltar": {
     "en": "I’m bringing back a portal I created in 2000. In 2014, I abandoned it because I had sold my company, but I recovered more than 11 million photos, 160,000 articles, etc. I’m gradually bringing it back.",
     "es": "Estoy recuperando un portal que creé en 2000. En 2014 lo abandoné porque había vendido mi empresa, pero recuperé más de 11 millones de fotos, 160 mil artículos, etc. Poco a poco estoy haciendo que vuelva."
+  },
+  "Muse × OpenMuse — o agente pessoal da Meta contra a alternativa open source da CopilotKit: comparação com fatos checados (e o que circula errado nas redes)": {
+    "en": "Muse × OpenMuse — Meta’s personal agent versus CopilotKit’s open-source alternative: a fact-checked comparison (and what’s being misreported on social media)",
+    "es": "Muse × OpenMuse — el agente personal de Meta frente a la alternativa de código abierto de CopilotKit: comparación con datos verificados (y lo que circula erróneamente en las redes)"
   }
 }
