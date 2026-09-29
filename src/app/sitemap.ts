@@ -4,7 +4,7 @@ import { webMcpKnowledge } from '@/data/webmcp-knowledge'
 import { seoPages } from '@/data/seo-pages'
 import { catalogUpdates, courses } from '@/lib/catalog'
 import { SITE_URL } from '@/lib/site'
-import { VIDEOS_VIRAIS_UPDATED } from '@/data/videos-virais'
+import { VIDEOS_UPDATED } from '@/data/videos'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const latest = catalogUpdates[0]?.date
@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...['/', '/en/', '/es/'].map(path => ({ url: `${SITE_URL}${path}`, ...(latest ? { lastModified: latest } : {}), alternates: { languages } })),
     ...['/cursos/', '/en/cursos/', '/es/cursos/'].map(path => ({ url: `${SITE_URL}${path}`, ...(courseDate ? { lastModified: courseDate } : {}), alternates: { languages: courseLanguages } })),
-    { url: `${SITE_URL}/videos/`, lastModified: VIDEOS_VIRAIS_UPDATED },
+    { url: `${SITE_URL}/videos/`, lastModified: VIDEOS_UPDATED },
     ...seoPages.map(page => ({ url: `${SITE_URL}${page.path}`, lastModified: page.updated })),
     ...legacyKnowledge,
     // Same dateModified as the knowledge page template; never use build time.

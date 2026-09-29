@@ -1971,6 +1971,16 @@ html {
     text-underline-offset: 0.2em;
 }
 
+.videos-catalog a {
+    color: var(--primary-color);
+    text-underline-offset: 0.2em;
+}
+
+.videos-catalog a:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
 .breadcrumb-current {
     display: inline-flex;
     gap: 0.55rem;

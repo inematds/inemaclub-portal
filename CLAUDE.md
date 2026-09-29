@@ -173,6 +173,14 @@ Quando o user manda só a URL do curso (`https://inematds.github.io/X/`), usar W
 - Trilhas / módulos / duração (se aparecer)
 - Escolher ícone temático adequado
 
+## Página /videos/ — catálogo de todos os vídeos (2026-09-29)
+
+Fonte única: `src/data/videos.ts`. Vídeo novo publicado (explicavideos, shorts, reels) → **entra aqui no mesmo dia**:
+- 16:9 com player próprio → entrada em `videosExplicativos` (card com link pro player); vertical 9:16 → vídeo numa série de `seriesShorts` (toca na página; MP4 em GitHub Release).
+- Pôster em `public/videos/<id>.jpg`: `ffmpeg -ss 40 -i <url-do-mp4> -frames:v 1 -vf scale=960:-2 -q:v 4 <id>.jpg` (shorts: `-ss 1.5`, `scale=540:-2`). Conferir que o quadro não saiu preto.
+- Atualizar `VIDEOS_UPDATED` (vai pro sitemap). Lista das produções do Explicavideos: seção "Tudo o que o Explicavideos já produziu" do guia `inematds.github.io/explicavideos/guia/`.
+- Só PT por enquanto (não há `/en/videos` nem `/es/videos`).
+
 ## Comunidade — repositórios GitHub
 
 Listagem no portal: 12 mais recentes (excluindo `portal`) + 6 com mais estrelas. Atualização separada do fluxo de cursos.
