@@ -18,6 +18,12 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 240, kind: 'curso', locale: 'en', title: 'INEMA Command Language | Master the 100 commands /', description: 'An operational language for 100 commands that controls how AI models and
+          agents research, verify, analyze, critique, decide, plan,
+          execute, and communicate .', url: 'https://inematds.github.io/curso-inema-dsl/en/', icon: '🧭' },
+  { id: 240, kind: 'curso', locale: 'es', title: 'INEMA Command Language | Domina los 100 comandos /', description: 'Un lenguaje operativo de 100 comandos que controla cómo los modelos y
+          agentes de IA investigan, verifican, analizan, critican, deciden, planifican,
+          ejecutan y comunican .', url: 'https://inematds.github.io/curso-inema-dsl/es/', icon: '🧭' },
   { id: 308, kind: 'curso', locale: 'en', title: 'Products in the AI Era v6 — Know what is worth building', description: 'The Products in the AI Era course in the visual v6 format, for beginners: 18 lessons of about 15 minutes in 3 modules, with simulated screens, one AI chat practice per lesson and the full v2 text as extra material. You fill in your idea sheet lesson by lesson: opportunity questions, pre-mortem, minimum bet, positioning line, 30-day plan and a test with simulated users.', url: 'https://inematds.github.io/produtos-era-ia-v6/en/', icon: '🧭' },
   { id: 308, kind: 'curso', locale: 'es', title: 'Productos en la era de la IA v6 — Saber qué vale la pena construir', description: 'El curso Productos en la era de la IA en el formato visual v6, para principiantes: 18 lecciones de unos 15 minutos en 3 módulos, con pantallas simuladas, una práctica en el chat de IA por lección y el texto completo del v2 como material complementario. Completas la ficha de tu idea lección a lección: preguntas de oportunidad, pre-mortem, apuesta mínima, frase de posicionamiento, plan de 30 días y prueba con usuarios simulados.', url: 'https://inematds.github.io/produtos-era-ia-v6/es/', icon: '🧭' },
   { id: 10069, kind: 'projeto', locale: 'en', title: 'scrollcraft — sites where scroll acts as a timeline, built to a real craft standard', description: 'Claude Code skill that builds premium scroll-driven pages and checks its own work: contrast, dead motion, and stuck clips in a headless browser.', url: 'https://inematds.github.io/scroll-craft/guia/en/', icon: '🎬' },
