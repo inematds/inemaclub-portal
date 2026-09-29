@@ -1,3 +1,4 @@
+| 2026-09-29 | `translated-courses.ts` quebrou o build do main (142 erros): 7 descrições EN/ES (237, 236 es, 231, 240) entraram com quebra de linha dentro da string, a partir de 4f8fb3b; outros commits foram empurrados por cima sem build | Juntar as linhas; antes de commitar tradução, conferir sintaxe com `tsc --noEmit` ou parse do TS, e o gerador remover \n das descrições | prompt |
 | 2026-09-23 | Inserção de novidade atingiu colchete do tipo Update[] | Ancorar no inicializador do array e conferir tsc | prompt |
 # FALHAS — portal
 
