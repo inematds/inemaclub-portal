@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 244, kind: 'curso', locale: 'en', title: 'AI Videos & Ads', description: 'Hands-on course: generate films, UGC ads, and video content at scale with ready-to-use prompts and workflows.', url: 'https://inematds.github.io/curso-videos-ads/en/', icon: '🎬' },
+  { id: 244, kind: 'curso', locale: 'es', title: 'Videos y anuncios con IA', description: 'Curso práctico: genera películas, anuncios UGC y contenido de video a escala con prompts y workflows listos para usar.', url: 'https://inematds.github.io/curso-videos-ads/es/', icon: '🎬' },
   { id: 241, kind: 'curso', locale: 'en', title: 'Social Media — Your Content Employee', description: 'Practical course: build an AI employee for your social media by pasting prompts into your code assistant.', url: 'https://inematds.github.io/curso-social-media/en/', icon: '📱' },
   { id: 241, kind: 'curso', locale: 'es', title: 'Redes sociales — Tu empleado de contenido', description: 'Curso práctico: crea un empleado de IA para tus redes sociales pegando prompts en el asistente de código.', url: 'https://inematds.github.io/curso-social-media/es/', icon: '📱' },
   { id: 236, kind: 'curso', locale: 'en', title: 'AI Teams — Complete Course | AI Teams', description: 'Six specialized AI teams you can activate with a single command. Each track teaches all the team’s components: what they do, when to use them, real examples, and the deliverables from each analysis.', url: 'https://inematds.github.io/curso-times-de-ia/en/', icon: '🧠' },
