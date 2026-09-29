@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10067, kind: 'projeto', locale: 'en', title: 'DSH Orchestrator — DSH, Codex, and Claude in the same environment', description: 'Orchestrate DSH, Codex CLI, Claude Code, Git, and GitHub CLI in persistent, isolated sessions.', url: 'https://inematds.github.io/dsh-orchestrator/guia/en/', icon: '🧭' },
+  { id: 10067, kind: 'projeto', locale: 'es', title: 'DSH Orchestrator — DSH, Codex y Claude en el mismo entorno', description: 'Orquesta DSH, Codex CLI, Claude Code, Git y GitHub CLI en sesiones persistentes y aisladas.', url: 'https://inematds.github.io/dsh-orchestrator/guia/es/', icon: '🧭' },
   { id: 10066, kind: 'projeto', locale: 'en', title: 'Livestreams & Clips Dashboard', description: 'Place folders with MP4s in imports/ in the project root. The system automatically detects it and moves it to the publishing queue.', url: 'https://inematds.github.io/yt-pub-livesx/en/', icon: '📺' },
   { id: 10066, kind: 'projeto', locale: 'es', title: 'Panel de transmisiones en vivo y clips', description: 'Coloca carpetas con MP4 en imports/ en la raíz del proyecto. El sistema lo detecta y lo mueve automáticamente a la cola de publicación.', url: 'https://inematds.github.io/yt-pub-livesx/es/', icon: '📺' },
   { id: 10065, kind: 'projeto', locale: 'en', title: 'musicavideo — music, cover, and video from a sentence', description: 'CLI that turns a free-form request into music, cover art, and a clip — in stages, with an approval gate for each part and an estimated cost shown before spending.', url: 'https://inematds.github.io/musicavideo/guia/en/', icon: '🎬' },
