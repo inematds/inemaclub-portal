@@ -13,6 +13,14 @@ export type Novidade = {
 
 export const novidadesData: Novidade[] = [
   {
+    "id": "vip/2026-09-28/A corrida da IA está saindo do “melhor modelo” e indo para q",
+    "date": "2026-09-28",
+    "titulo": "A corrida da IA está saindo do “melhor modelo” e indo para quem constrói o melhor agente pessoal.",
+    "resumo": "Os principais pontos são: - Opus 5.5 é apresentado como o grande destaque entre os novos modelos, principalmente por escrever melhor, ser mais direto, criar interfaces, apresentações, artefatos visuais e até vídeos via código. - GPT-6 Sol e Luna aparecem como novas opções da OpenAI, com foco também em mais velocidade e eficiência de tokens. - O Voice do ChatGPT ganha muito mais importância porque pode conversar em tempo real enquanto usa ferramentas como e-mail, calendário, Slack e outros plugins. Ou seja: voz deixa de ser apenas conversa e passa a executar trabalho. - O maior destaque do texto é o Muse, da Meta: um agente pessoal rápido, proativo, conectado às ferramentas, capaz de acessar computador, navegador e acompanhar objetivos. - A Meta estaria levando esse agente também para óculos, voz, vídeo e dispositivos dedicados, tentando transformar a IA em algo presente o tempo inteiro, e não apenas dentro de um aplicativo. - O Muse teria sido fortemente inspirado no OpenClaw, mas com a proposta de transformar aquela experiência mais técnica em algo seguro e simples para bilhões de pessoas. - A tendência apontada é que OpenAI, Anthropic, Meta e outras empresas estejam convergindo para praticamente o mesmo produto: memória persistente + e-mail + calendário + mensagens + navegador + computador + tarefas em segundo plano + notificações proativas + voz + ferramentas + contexto do ambiente. Em uma frase: > Estamos entrando na fase em que a disputa deixa de ser “qual IA responde melhor?” e passa a ser “qual agente conhece você, usa suas ferramentas e consegue trabalhar por você o dia inteiro?” Aprender a trabalhar de forma agent-native está se tornando mais importante do que simplesmente aprender a conversar com uma IA.",
+    "grupo": "INEMA.VIP",
+    "url": ""
+  },
+  {
     "id": "vip/2026-09-26/curso de Video completo OSWork estilo de conteudo v2",
     "date": "2026-09-26",
     "titulo": "curso de Video completo OSWork estilo de conteudo v2",
@@ -243,13 +251,5 @@ export const novidadesData: Novidade[] = [
     "resumo": "Parece que vamos ter boas novidades … Previsto para 2 semanas, mas acho que alguns demora mais, segue: 1️⃣ GPT Bel: Nova linha de nomenclatura da OpenAI, focada em alinhamento de segurança, mais rápido e mais potente que o Astra, velocidade de teste interno alegada em 6 vezes 2️⃣ GPT-6 Sol: Alta disponibilidade para uso diário, pode se tornar o novo \"cavalo de trabalho padrão\", capacidades de Agent de longo alcance e código elevadas mais um nível 3️⃣ Claude Fable 5.2: Iteração flagship da Anthropic, codificação + trabalho com conhecimento + tarefas longas continuam esmagando a concorrência, capacidades voltadas para pesquisa ainda mais fortes 4️⃣ Claude Opus 5.1: Atualização do rei da relação custo-benefício, metade do preço se aproximando do desempenho nível Fable, escolha principal para implementação empresarial 5️⃣ Grok 4.7: Novo flagship da xAI, impulsionado por dados de engenharia da SpaceX, multimodal em tempo real + raciocínio mais selvagem, relação custo-benefício continua dando um tapa na cara 6️⃣ DeepSeek V4.1 Pro: Topo do acampamento open-source, 1M de contexto + Agent superpotente, o açougueiro de preços ataca novamente 7️⃣ GLM-5.5 (Z.AI): Nova geração da Zhipu, duplo foco em chinês + código, pesos open-source impactando o teto dos fechados 8️⃣ KIMI K3.1: Evolução do rei do contexto longo da Moonshot AI, MoE de nível 2.8T reforçado novamente, visual + documentos superlongos mais estáveis 9️⃣ Qwen 4.0: Nova geração do Tongyi da Alibaba, salto multimodal + código abrangente, ecossistema com cobertura mais ampla 🔟 Gemini 4.0: Atualização legítima do flagship do Google, 1M de contexto + custo-benefício extremo, velocidade nível Flash com QI nível Pro 1️⃣1️⃣ Muse Spark 1.4: Nova obra do laboratório de superinteligência da Meta, fluxos de trabalho de Agent mais econômicos em tokens, eficiência em tarefas de longo alcance cortada mais uma vez 1️⃣2️⃣ Xiaomi MIMO-V3-Pro / Flash: Fabricante de smartphones invade a vanguarda, versões dupla de ponta + nuvem, velocidade de implementação possivelmente a mais rápida **Previsão de uma onda de 12 novos modelos de IA nas próximas duas semanas**, com alguns podendo demorar mais. As principais promessas são: * **OpenAI:** GPT Bel com mais velocidade e potência; GPT-6 Sol para uso diário, agentes e programação. * **Anthropic:** Fable 5.2 para tarefas complexas e pesquisa; Opus 5.1 buscando desempenho próximo com menor preço. * **Grok e Gemini:** avanços em raciocínio, multimodalidade e velocidade. * **DeepSeek, GLM, Kimi e Qwen:** competição em preço, código, contexto longo e modelos abertos. * **Meta e Xiaomi:** foco em agentes eficientes e execução rápida. **A ideia central: IAs mais capazes, rápidas e baratas, com foco crescente em agentes que executam trabalhos longos.**",
     "grupo": "INEMA.VIP",
     "url": "https://www.youtube.com/watch?v=l5cuD72R8MU"
-  },
-  {
-    "id": "2494987106/6075",
-    "date": "2026-09-14",
-    "titulo": "Vídeos Virais de Pintura em Pedra",
-    "resumo": "Tópico documenta um framework de prompts para criar vídeos virais de pintura em pedra usando IA, com etapa de geração de imagem final seguida de vídeo timelapse image-to-video.",
-    "grupo": "INEMA.PROMPTS",
-    "url": "https://www.inema.pro/cerebro/inema-prompts/6075"
   }
 ];
