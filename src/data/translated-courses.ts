@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 246, kind: 'curso', locale: 'en', title: 'WebMCP Training — Websites and Agents from Zero to Expert', description: 'WebMCP training from zero to expert, with a readiness assessment, four phases, and a final project.', url: 'https://inematds.github.io/webmcp-1-formacao/en/', icon: '🌐' },
+  { id: 246, kind: 'curso', locale: 'es', title: 'Formación WebMCP — Sitios y agentes de cero a experto', description: 'Formación WebMCP de cero a experto, con diagnóstico de preparación, cuatro fases y proyecto final.', url: 'https://inematds.github.io/webmcp-1-formacao/es/', icon: '🌐' },
   { id: 232, kind: 'curso', locale: 'en', title: 'Graph Engineering — From Loops to Graphs', description: 'Complete Graph Engineering course: from isolated loops to agent graphs. Graph fundamentals, loop engineering, agentic vs. loop vs. graph comparison, hands-on practice, and ready-to-use prompts.', url: 'https://inematds.github.io/loopgraph/en/', icon: '🕸️' },
   { id: 232, kind: 'curso', locale: 'es', title: 'Graph Engineering — de loops a grafos', description: 'Curso completo de Graph Engineering: de loops aislados a grafos de agentes. Fundamentos de grafos, loop engineering, comparación entre agentic, loop y graph, práctica y prompts listos.', url: 'https://inematds.github.io/loopgraph/es/', icon: '🕸️' },
   { id: 233, kind: 'curso', locale: 'en', title: 'Your Digital Employee | WAT7D', description: 'INEMA.CLUB Course · 8 learning paths', url: 'https://inematds.github.io/wat7d/en/', icon: '🤖' },
