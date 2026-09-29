@@ -1,8 +1,8 @@
 // Catálogo de todos os vídeos produzidos pelo INEMA, exibido em /videos/.
 // Vídeo novo publicado → uma entrada aqui (explicativo em `videosExplicativos`, vertical em `seriesShorts`),
 // pôster em public/videos/<id>.jpg (ffmpeg -ss 40 -i <mp4> -frames:v 1 -vf scale=960:-2), atualizar VIDEOS_UPDATED, commit + push.
-// Fonte da maioria: ~/projetos/explicavideos (lista de produções no guia) e ~/projetos/output/<id>/.
-import { videosVirais, videoViralMp4 } from './videos-virais'
+// Fonte: ~/projetos/explicavideos (lista de produções no guia) e ~/projetos/output/<id>/.
+// Só entra vídeo aprovado pelo Nei: os 5 shorts de cards + voz sintética (inema-areas-viral, 28/09) foram reprovados e saíram.
 
 export const VIDEOS_UPDATED = '2026-09-29'
 
@@ -112,19 +112,6 @@ export const seriesShorts: SerieShorts[] = [
       mp4: `${EVENTOS_SHORTS_RELEASE}${slug}.mp4`,
       poster: `/videos/eventos-${slug}.jpg`,
       link: { href: `https://eventos.inema.pro/${slug}/`, label: 'Abrir a área' },
-    })),
-  },
-  {
-    id: 'areas',
-    title: '9 áreas de IA, cinco ângulos',
-    description: 'Cinco vídeos curtos sobre o mesmo acervo: cada área com curso, projeto e o primeiro passo, sem cobrança.',
-    videos: videosVirais.map((v) => ({
-      id: `inema-areas-${v.id}`,
-      title: v.title,
-      description: v.description,
-      duration: `${v.angle} · ${v.duration}`,
-      mp4: videoViralMp4(v.id),
-      poster: `/videos/inema-areas-${v.id}.jpg`,
     })),
   },
   {
