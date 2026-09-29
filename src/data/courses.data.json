@@ -6006,6 +6006,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-28",
+      "title": "IA Cultivada — vídeo explicativo com o Nei (10 min): casa × jardim, os oito elementos, os quatro níveis e por que agente não é IA cultivada",
+      "type": "atualizado",
+      "url": "https://inematds.github.io/iacultivada/videos/"
+    },
+    {
+      "date": "2026-09-28",
       "title": "Trade com Agentes — o método do desafio de 7 dias com GPT-6 Astra: rotinas, handoff, estrategista + executor e por que perdeu para o S&P (estudo, não recomendação)",
       "type": "novo",
       "url": "https://inematds.github.io/trade-com-agentes/guia/"

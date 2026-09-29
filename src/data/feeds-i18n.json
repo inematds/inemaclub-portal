@@ -163,10 +163,6 @@
     "en": "very good video about Opus5.5",
     "es": "video muy bueno sobre el Opus5.5"
   },
-  "Expedição Sul — animações de trajeto (Hua Hum, ida e volta) com motor HyperFrames e custo real de produção": {
-    "en": "Expedição Sul — route animations (Hua Hum, round trip) with HyperFrames engine and real production cost",
-    "es": "Expedição Sul — animaciones de trayecto (Hua Hum, ida y vuelta) con motor HyperFrames y costo real de producción"
-  },
   "StickShift v2 — Painel Web + Chat para Claude Code e Codex no Linux/WSL": {
     "en": "StickShift v2 — Web Panel + Chat for Claude Code and Codex on Linux/WSL",
     "es": "StickShift v2 — Panel Web + Chat para Claude Code y Codex en Linux/WSL"
@@ -374,5 +370,9 @@
   "Trade com Agentes — o método do desafio de 7 dias com GPT-6 Astra: rotinas, handoff, estrategista + executor e por que perdeu para o S&P (estudo, não recomendação)": {
     "en": "Agent Trading — the 7-day challenge method with GPT-6 Astra: routines, handoff, strategist + executor, and why it underperformed the S&P (study, not a recommendation)",
     "es": "Trading con Agentes — el método del desafío de 7 días con GPT-6 Astra: rutinas, handoff, estratega + ejecutor y por qué perdió frente al S&P (estudio, no recomendación)"
+  },
+  "IA Cultivada — vídeo explicativo com o Nei (10 min): casa × jardim, os oito elementos, os quatro níveis e por que agente não é IA cultivada": {
+    "en": "Cultivated AI — explainer video with Nei (10 min): house × garden, the eight elements, the four levels, and why an agent is not cultivated AI",
+    "es": "IA Cultivada — video explicativo con Nei (10 min): casa × jardín, los ocho elementos, los cuatro niveles y por qué un agente no es IA cultivada"
   }
 }
