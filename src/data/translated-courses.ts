@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 243, kind: 'curso', locale: 'en', title: 'Commercial Voice Agents — Sell the Service', description: 'Hands-on course: import setups for ready-to-use voice agents and sell phone automation to local businesses.', url: 'https://inematds.github.io/curso-voice-negocios/en/', icon: '🏢' },
+  { id: 243, kind: 'curso', locale: 'es', title: 'Agentes de Voz Comerciales — Vende el Servicio', description: 'Curso práctico: importa configuraciones de agentes de voz listas y vende automatización telefónica a negocios locales.', url: 'https://inematds.github.io/curso-voice-negocios/es/', icon: '🏢' },
   { id: 242, kind: 'curso', locale: 'en', title: 'Extras & Comparisons — Workshop Add-ons', description: 'Supplementary workshop material: model comparisons and standalone prompt packs.', url: 'https://inematds.github.io/curso-suporte/en/', icon: '🧩' },
   { id: 242, kind: 'curso', locale: 'es', title: 'Extras y comparaciones — complementos del taller', description: 'Material complementario del taller: comparaciones de modelos y paquetes de prompts individuales.', url: 'https://inematds.github.io/curso-suporte/es/', icon: '🧩' },
   { id: 240, kind: 'curso', locale: 'en', title: 'INEMA Command Language | Master the 100 commands /', description: 'An operational language for 100 commands that controls how AI models and
