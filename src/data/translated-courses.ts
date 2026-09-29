@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 230, kind: 'curso', locale: 'en', title: 'AI Training—today and what comes next', description: 'AI for your work', url: 'https://inematds.github.io/formacaoia/en/', icon: '🧰' },
+  { id: 230, kind: 'curso', locale: 'es', title: 'Formación en IA — hoy y lo que viene después', description: 'IA para tu trabajo', url: 'https://inematds.github.io/formacaoia/es/', icon: '🧰' },
   { id: 231, kind: 'curso', locale: 'en', title: 'Advanced AI Software Engineering Workshop', description: 'AI already reads repositories, edits files, runs tests, and reviews changes. The challenge is no longer getting AI
         to write code — it\'s getting AI to produce changes correct, safe,
         verifiable, and consistent with the architecture . This course teaches the engineering around the agent.', url: 'https://inematds.github.io/ws2ia/en/', icon: '🤖' },
