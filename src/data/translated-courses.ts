@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 233, kind: 'curso', locale: 'en', title: 'Your Digital Employee | WAT7D', description: 'INEMA.CLUB Course · 8 learning paths', url: 'https://inematds.github.io/wat7d/en/', icon: '🤖' },
+  { id: 233, kind: 'curso', locale: 'es', title: 'Tu Empleado Digital | WAT7D', description: 'Curso INEMA.CLUB · 8 rutas', url: 'https://inematds.github.io/wat7d/es/', icon: '🤖' },
   { id: 234, kind: 'curso', locale: 'en', title: 'Ablation Audit | Trim Claude Code without losing quality', description: 'INEMA course: audit your CLAUDE.md, skills, and hooks using the ablation method. Diagnose, cut safely, and prove with a test that the minimal config didn’t make things worse.', url: 'https://inematds.github.io/curso-ablacao/en/', icon: '✂️' },
   { id: 234, kind: 'curso', locale: 'es', title: 'Auditoría por ablación | Simplifica tu Claude Code sin perder calidad', description: 'Curso INEMA: audita tu CLAUDE.md, tus skills y tus hooks mediante el método de ablación. Diagnostica, elimina con seguridad y demuestra con pruebas que la configuración mínima no empeoró.', url: 'https://inematds.github.io/curso-ablacao/es/', icon: '✂️' },
   { id: 10086, kind: 'projeto', locale: 'en', title: 'Bench Studio BR — the creative studio that runs on your machine', description: 'Bench Studio BR: 73 image and video routes across 5 providers, prompt refinement, local files, and a ledger that shows the actual cost. Complete user guide in Portuguese.', url: 'https://inematds.github.io/bench-studio-br/guia/en/', icon: '🎛️' },
