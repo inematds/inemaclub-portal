@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10070, kind: 'projeto', locale: 'en', title: 'analisevideo — what a filmmaker sees in your video', description: 'Visual and cinematic video analysis with Gemini: camera, lighting, color palette, editing, soundtrack, and how to recreate it. Searchable local database.', url: 'https://inematds.github.io/analisevideo/guia/en/', icon: '🎬' },
+  { id: 10070, kind: 'projeto', locale: 'es', title: 'analisevideo — lo que un cineasta ve en tu video', description: 'Análisis visual y cinematográfico de video con Gemini: cámara, luz, paleta, montaje, banda sonora y cómo recrearlo. Base de datos local con búsqueda.', url: 'https://inematds.github.io/analisevideo/guia/es/', icon: '🎬' },
   { id: 243, kind: 'curso', locale: 'en', title: 'Commercial Voice Agents — Sell the Service', description: 'Hands-on course: import setups for ready-to-use voice agents and sell phone automation to local businesses.', url: 'https://inematds.github.io/curso-voice-negocios/en/', icon: '🏢' },
   { id: 243, kind: 'curso', locale: 'es', title: 'Agentes de Voz Comerciales — Vende el Servicio', description: 'Curso práctico: importa configuraciones de agentes de voz listas y vende automatización telefónica a negocios locales.', url: 'https://inematds.github.io/curso-voice-negocios/es/', icon: '🏢' },
   { id: 242, kind: 'curso', locale: 'en', title: 'Extras & Comparisons — Workshop Add-ons', description: 'Supplementary workshop material: model comparisons and standalone prompt packs.', url: 'https://inematds.github.io/curso-suporte/en/', icon: '🧩' },
