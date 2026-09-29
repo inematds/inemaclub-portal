@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 248, kind: 'curso', locale: 'en', title: 'Training 3 | WebMCP Integrator', description: 'Hands-on WebMCP Integrator training with four modules, labs, and an advanced tools and schemas validator.', url: 'https://inematds.github.io/webmcp-3-integrator/en/', icon: '🔗' },
+  { id: 248, kind: 'curso', locale: 'es', title: 'Formación 3 | WebMCP Integrator', description: 'Formación práctica WebMCP Integrator con cuatro módulos, laboratorios y validador avanzado de tools y schemas.', url: 'https://inematds.github.io/webmcp-3-integrator/es/', icon: '🔗' },
   { id: 249, kind: 'curso', locale: 'en', title: 'Training 4 | WebMCP Agent Developer', description: 'Hands-on WebMCP Agent Developer training with four modules, labs, and an advanced tool and schema validator.', url: 'https://inematds.github.io/webmcp-4-agent-developer/en/', icon: '🤖' },
   { id: 249, kind: 'curso', locale: 'es', title: 'Formación 4 | WebMCP Agent Developer', description: 'Formación práctica WebMCP Agent Developer con cuatro módulos, laboratorios y validador avanzado de tools y schemas.', url: 'https://inematds.github.io/webmcp-4-agent-developer/es/', icon: '🤖' },
   { id: 250, kind: 'curso', locale: 'en', title: 'Training 5 | WebMCP Expert', description: 'Hands-on WebMCP Expert training with four modules, labs, and an advanced tool and schema validator.', url: 'https://inematds.github.io/webmcp-5-expert/en/', icon: '🛡️' },
