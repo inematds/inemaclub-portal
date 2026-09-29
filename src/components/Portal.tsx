@@ -584,6 +584,7 @@ export default function Portal({
             >
               {t.nav.events}
             </a>
+            <a href="/videos/" className="section-nav-link">{t.nav.videos}</a>
             <a href="#comunidade" className="section-nav-link">{t.nav.projects}</a>
             <a href="#telegram" className="section-nav-link">{t.nav.telegram}</a>
             <a href="#social" className="section-nav-link">{t.nav.social}</a>
