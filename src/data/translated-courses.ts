@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 238, kind: 'curso', locale: 'en', title: 'Voice Assistant — JARVIS, CASE & CO.', description: 'Hands-on course: build JARVIS-style voice assistants by pasting prompts into your coding assistant.', url: 'https://inematds.github.io/curso-assistente-voz/en/', icon: '🎙️' },
+  { id: 238, kind: 'curso', locale: 'es', title: 'Asistente de voz — JARVIS, CASE & CIA', description: 'Curso práctico: construye asistentes de voz al estilo JARVIS pegando prompts en tu asistente de código.', url: 'https://inematds.github.io/curso-assistente-voz/es/', icon: '🎙️' },
   { id: 244, kind: 'curso', locale: 'en', title: 'AI Videos & Ads', description: 'Hands-on course: generate films, UGC ads, and video content at scale with ready-to-use prompts and workflows.', url: 'https://inematds.github.io/curso-videos-ads/en/', icon: '🎬' },
   { id: 244, kind: 'curso', locale: 'es', title: 'Videos y anuncios con IA', description: 'Curso práctico: genera películas, anuncios UGC y contenido de video a escala con prompts y workflows listos para usar.', url: 'https://inematds.github.io/curso-videos-ads/es/', icon: '🎬' },
   { id: 241, kind: 'curso', locale: 'en', title: 'Social Media — Your Content Employee', description: 'Practical course: build an AI employee for your social media by pasting prompts into your code assistant.', url: 'https://inematds.github.io/curso-social-media/en/', icon: '📱' },
