@@ -18,6 +18,12 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 231, kind: 'curso', locale: 'en', title: 'Advanced AI Software Engineering Workshop', description: 'AI already reads repositories, edits files, runs tests, and reviews changes. The challenge is no longer getting AI
+        to write code — it\'s getting AI to produce changes correct, safe,
+        verifiable, and consistent with the architecture . This course teaches the engineering around the agent.', url: 'https://inematds.github.io/ws2ia/en/', icon: '🤖' },
+  { id: 231, kind: 'curso', locale: 'es', title: 'Workshop Avanzado de Ingeniería de Software con IA', description: 'La IA ya lee repositorios, edita archivos, ejecuta pruebas y revisa cambios. El desafío ya no es hacer que la IA
+        escriba código, sino hacer que la IA produzca cambios correctas, seguras,
+        verificables y coherentes con la arquitectura . Este curso enseña la ingeniería que rodea al agente.', url: 'https://inematds.github.io/ws2ia/es/', icon: '🤖' },
   { id: 10080, kind: 'projeto', locale: 'en', title: 'Making Of — the photo becomes a miniature and the effect destroys it', description: 'Turns a reference photo into a behind-the-scenes video of a practical effect: the subject in the photo becomes a miniature inside a studio rig, and the simulation destroys the miniature. Kling and Agnes, measured recipes.', url: 'https://inematds.github.io/video-making-of-skill/guia/en/', icon: '🌊' },
   { id: 10080, kind: 'projeto', locale: 'es', title: 'Making Of — la foto se convierte en maqueta y el efecto la destruye', description: 'Convierte una foto de referencia en un video detrás de cámaras de un efecto práctico: el tema de la foto se convierte en una maqueta dentro de un rig de estudio y la simulación destruye la maqueta. Kling y Agnes, recetas medidas.', url: 'https://inematds.github.io/video-making-of-skill/guia/es/', icon: '🌊' },
   { id: 10079, kind: 'projeto', locale: 'en', title: 'musicaclone — clone and create music from the command line', description: 'CLI that takes a music link, understands its style, and clones or recreates the track in Suno (via Kie)—with gates that prevent generating from the wrong material.', url: 'https://inematds.github.io/musicaclone/guia/en/', icon: '🎵' },
