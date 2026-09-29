@@ -127,10 +127,6 @@
     "en": "In addition to using Jev to make LinkedIn more tolerable, I decided to test it in one of my apps, . A platform for orchestrating agents to create agent teams and complete real work tasks. For this to work, I have several tools that  can use to perform all kinds of tasks, but these tools consume many tokens. Cache is enabled, which helps, but it could be better. So I decided to place Jev between the user message and  with the goal of selecting only the tools the orchestrator needs for this type of request. I expected, of course, a good reduction in token count, but what I didn’t expect was a reduction of over 90%. Now I need to carefully analyze my apps and automations and see what improvements I can achieve in other areas.",
     "es": "Además de usar Jev para hacer LinkedIn más tolerable, decidí probarlo en una de mis aplicaciones, . Una plataforma de orquestación de agentes para crear equipos de agentes y completar tareas de trabajo reales. Para que funcione, tengo varias herramientas que  puede usar para realizar todo tipo de tarea, pero esas herramientas consumen muchos tokens. La caché está activada, lo que ayuda, pero podría ser mejor. Entonces, decidí colocar Jev entre el mensaje del usuario y  con el objetivo de seleccionar solo las herramientas que el orquestador necesita para este tipo de solicitud. Esperaba, por supuesto, una buena reducción en el número de tokens, pero lo que no esperaba era una reducción de más del 90%. Ahora necesito analizar con mucha atención mis aplicaciones y automatizaciones y ver qué mejoras puedo obtener en otras áreas."
   },
-  "Explicavideos — processo reutilizável para vídeos com Nei, ilustrações e legendas": {
-    "en": "Explicavideos — reusable process for videos with Nei, illustrations and subtitles",
-    "es": "Explicavideos — proceso reutilizable para videos con Nei, ilustraciones y subtítulos"
-  },
   "Prompt de Orientação de TEXTO": {
     "en": "Text Guidance Prompt",
     "es": "Prompt de Orientación de TEXTO"
@@ -374,5 +370,9 @@
   "Áreas do INEMA Eventos — O que é cada área": {
     "en": "INEMA Events Areas — What Each Area Is",
     "es": "Áreas de INEMA Eventos — Qué es cada área"
+  },
+  "Trade com Agentes — o método do desafio de 7 dias com GPT-6 Astra: rotinas, handoff, estrategista + executor e por que perdeu para o S&P (estudo, não recomendação)": {
+    "en": "Agent Trading — the 7-day challenge method with GPT-6 Astra: routines, handoff, strategist + executor, and why it underperformed the S&P (study, not a recommendation)",
+    "es": "Trading con Agentes — el método del desafío de 7 días con GPT-6 Astra: rutinas, handoff, estratega + ejecutor y por qué perdió frente al S&P (estudio, no recomendación)"
   }
 }

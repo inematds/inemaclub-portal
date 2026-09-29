@@ -6006,6 +6006,12 @@
   "projectUpdatesData": [
     {
       "date": "2026-09-28",
+      "title": "Trade com Agentes — o método do desafio de 7 dias com GPT-6 Astra: rotinas, handoff, estrategista + executor e por que perdeu para o S&P (estudo, não recomendação)",
+      "type": "novo",
+      "url": "https://inematds.github.io/trade-com-agentes/guia/"
+    },
+    {
+      "date": "2026-09-28",
       "title": "Muse × OpenMuse — o agente pessoal da Meta contra a alternativa open source da CopilotKit: comparação com fatos checados (e o que o vídeo errou)",
       "type": "novo",
       "url": "https://inematds.github.io/openmuse-vs-muse/guia/"
@@ -7681,6 +7687,13 @@
       "name": "stickshift",
       "desc": "Câmbio de modelo e esforço para Claude Code e Codex: app de menu-bar no macOS e, na v2, painel web + chat para Linux/WSL via tmux. Fail-closed: só digita depois de provar que o agente está ocioso.",
       "url": "https://inematds.github.io/stickshift/guia/",
+      "badge": "Guia"
+    },
+    {
+      "icon": "📈",
+      "name": "trade-com-agentes",
+      "desc": "Estudo do método de um desafio de 7 dias em que um agente (Codex + GPT-6 Astra) operou US$ 10.000 em ações: 7 rotinas por pregão, handoff entre agentes, estrategista separado do executor (e-mail → bot → Alpaca), portões de risco afrouxados e o diário até perder para o S&P 500. Texto de estudo, não recomendação — trade é risco alto. Guia PT/EN/ES.",
+      "url": "https://inematds.github.io/trade-com-agentes/guia/",
       "badge": "Guia"
     },
     {
