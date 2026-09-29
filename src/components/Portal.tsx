@@ -1418,6 +1418,18 @@ export default function Portal({
           </div>
           <div className="learning-path-cards">
             <a
+              href="https://inematds.github.io/iacultivada/videos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="path-card path-card-4"
+              onClick={() => trackClick('https://inematds.github.io/iacultivada/videos/', 'IA Cultivada (vídeo)', 'ia-cultivada')}
+            >
+              <div className="path-number">🎬</div>
+              {locale !== 'pt' && <span className="lang-pill" title={t.beginners.ptPillTitle}>{t.beginners.ptPill}</span>}
+              <h4>{t.iaCultivada.cards.videoTitle}</h4>
+              <p>{t.iaCultivada.cards.videoDesc}</p>
+            </a>
+            <a
               href="https://inematds.github.io/iacultivada/"
               target="_blank"
               rel="noopener noreferrer"

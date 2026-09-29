@@ -103,6 +103,8 @@
     "subtitle": "La IA no se programa, se cultiva. Los ocho elementos (función, contexto, herramientas, reglas, ejemplos, memoria, evaluación, feedback) aplicados a la vida personal, a tu Jarvis y a los negocios",
     "body": "La página explica el método con la investigación de 2025–2026 detrás. Las soluciones listas lo ponen a funcionar hoy: kits para descargar, un generador de ficha del agente, un diagnóstico de dos minutos, skills para Claude Code y Codex, y paquetes de agentes por área. Todo estático, sin registro.",
     "cards": {
+      "videoTitle": "Video explicativo con Nei",
+      "videoDesc": "10 minutos: casa × jardín, los ocho elementos, los cuatro niveles y por qué un agente no es IA cultivada",
       "paginaTitle": "La página del método",
       "paginaDesc": "Concepto, los dos niveles del cultivo, los ocho elementos, el ciclo y las tres aplicaciones con planes de 30 y 90 días",
       "kitsTitle": "Kits para descargar",
