@@ -18,6 +18,12 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 237, kind: 'curso', locale: 'en', title: '3D and Cinematic Sites — Complete Course | 3D and Cinematic Sites', description: 'Build cinematic scroll websites — the premium effect of browsing inside a video.
+        AI-generated video, frames rendered on canvas, and smooth scrolling. From the complete skill to ready-to-copy, paste, and customize
+        prompt packs.', url: 'https://inematds.github.io/curso-sites-3d/en/', icon: '🎬' },
+  { id: 237, kind: 'curso', locale: 'es', title: 'Sitios 3D y cinematográficos — Curso completo | Sitios 3D y cinematográficos', description: 'Crea sitios web con scroll cinematográfico: el efecto premium de navegar dentro de un video.
+        Video generado con IA, cuadros procesados en canvas y scroll fluido. Desde la skill completa hasta paquetes de
+        prompts listos para copiar, pegar y personalizar.', url: 'https://inematds.github.io/curso-sites-3d/es/', icon: '🎬' },
   { id: 246, kind: 'curso', locale: 'en', title: 'WebMCP Training — Websites and Agents from Zero to Expert', description: 'WebMCP training from zero to expert, with a readiness assessment, four phases, and a final project.', url: 'https://inematds.github.io/webmcp-1-formacao/en/', icon: '🌐' },
   { id: 246, kind: 'curso', locale: 'es', title: 'Formación WebMCP — Sitios y agentes de cero a experto', description: 'Formación WebMCP de cero a experto, con diagnóstico de preparación, cuatro fases y proyecto final.', url: 'https://inematds.github.io/webmcp-1-formacao/es/', icon: '🌐' },
   { id: 232, kind: 'curso', locale: 'en', title: 'Graph Engineering — From Loops to Graphs', description: 'Complete Graph Engineering course: from isolated loops to agent graphs. Graph fundamentals, loop engineering, agentic vs. loop vs. graph comparison, hands-on practice, and ready-to-use prompts.', url: 'https://inematds.github.io/loopgraph/en/', icon: '🕸️' },
