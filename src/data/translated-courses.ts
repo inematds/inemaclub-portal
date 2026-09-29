@@ -18,6 +18,8 @@ export type TranslatedItem = {
 }
 
 export const translatedCatalog: TranslatedItem[] = [
+  { id: 10086, kind: 'projeto', locale: 'en', title: 'Bench Studio BR — the creative studio that runs on your machine', description: 'Bench Studio BR: 73 image and video routes across 5 providers, prompt refinement, local files, and a ledger that shows the actual cost. Complete user guide in Portuguese.', url: 'https://inematds.github.io/bench-studio-br/guia/en/', icon: '🎛️' },
+  { id: 10086, kind: 'projeto', locale: 'es', title: 'Bench Studio BR — el estudio creativo que funciona en tu máquina', description: 'Bench Studio BR: 73 rutas de imagen y video en 5 proveedores, refino de prompts, archivos locales y un libro de cuentas que muestra el costo real. Guía de uso completa en portugués.', url: 'https://inematds.github.io/bench-studio-br/guia/es/', icon: '🎛️' },
   { id: 238, kind: 'curso', locale: 'en', title: 'Voice Assistant — JARVIS, CASE & CO.', description: 'Hands-on course: build JARVIS-style voice assistants by pasting prompts into your coding assistant.', url: 'https://inematds.github.io/curso-assistente-voz/en/', icon: '🎙️' },
   { id: 238, kind: 'curso', locale: 'es', title: 'Asistente de voz — JARVIS, CASE & CIA', description: 'Curso práctico: construye asistentes de voz al estilo JARVIS pegando prompts en tu asistente de código.', url: 'https://inematds.github.io/curso-assistente-voz/es/', icon: '🎙️' },
   { id: 244, kind: 'curso', locale: 'en', title: 'AI Videos & Ads', description: 'Hands-on course: generate films, UGC ads, and video content at scale with ready-to-use prompts and workflows.', url: 'https://inematds.github.io/curso-videos-ads/en/', icon: '🎬' },
