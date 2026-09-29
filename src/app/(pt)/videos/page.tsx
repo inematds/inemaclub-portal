@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import type { CSSProperties } from 'react'
-import { videosExplicativos, seriesShorts, totalVideosShorts } from '@/data/videos'
+import { videosExplicativos, seriesShorts, totalVideosShorts, totalVideosExplicativos } from '@/data/videos'
+import type { Idioma } from '@/data/videos'
 
 export const metadata: Metadata = {
   title: 'Vídeos do INEMA: aulas e shorts sobre IA na prática',
@@ -27,6 +28,20 @@ const frame: CSSProperties = {
 }
 const kicker: CSSProperties = { textTransform: 'uppercase', letterSpacing: '.12em', opacity: 0.7 }
 const section: CSSProperties = { marginTop: '3.2rem' }
+const videoList: CSSProperties = {
+  listStyle: 'none',
+  padding: '0.6rem 0 0',
+  margin: 0,
+  borderTop: '1px solid rgba(116,140,171,.25)',
+  fontSize: '0.92rem',
+}
+const videoRow: CSSProperties = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  gap: '0.8rem',
+  padding: '0.25rem 0',
+}
+const IDIOMA_NOME: Record<Idioma, string> = { pt: 'português', en: 'inglês', es: 'espanhol' }
 
 export default function VideosPage() {
   return (
@@ -46,7 +61,11 @@ export default function VideosPage() {
 
       <section style={section} aria-labelledby="explicativos">
         <h2 id="explicativos">Vídeo-aulas com o Nei</h2>
-        <p style={{ margin: 0 }}>{videosExplicativos.length} produções em 16:9. Cada uma abre no player com capítulos.</p>
+        <p style={{ margin: 0 }}>
+          {totalVideosExplicativos} vídeos em 16:9, em {videosExplicativos.length} produções feitas com o{' '}
+          <a href="https://inematds.github.io/explicavideos/guia/" target="_blank" rel="noopener noreferrer">Explicavideos</a>.
+          Abra o player com capítulos ou o MP4 de cada vídeo no idioma que quiser.
+        </p>
         <ul style={grid('300px')}>
           {videosExplicativos.map((v) => (
             <li key={v.id} style={card}>
@@ -63,7 +82,21 @@ export default function VideosPage() {
               <small style={kicker}>{v.meta}</small>
               <h3 style={{ fontSize: '1.2rem', margin: 0 }}>{v.title}</h3>
               <p style={{ margin: 0 }}>{v.description}</p>
-              <a href={v.playerUrl} target="_blank" rel="noopener noreferrer">Assistir →</a>
+              <a href={v.playerUrl} target="_blank" rel="noopener noreferrer">Assistir no player com capítulos →</a>
+              <ul style={videoList}>
+                {v.videos.map((item) => (
+                  <li key={item.label} style={videoRow}>
+                    <span>{item.label}</span>
+                    <span style={{ display: 'flex', gap: '0.7rem' }}>
+                      {(Object.keys(item.mp4) as Idioma[]).map((l) => (
+                        <a key={l} href={item.mp4[l]} target="_blank" rel="noopener noreferrer" aria-label={`${item.label} em ${IDIOMA_NOME[l]}`}>
+                          {l.toUpperCase()}
+                        </a>
+                      ))}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>

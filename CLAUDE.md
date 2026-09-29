@@ -176,7 +176,8 @@ Quando o user manda só a URL do curso (`https://inematds.github.io/X/`), usar W
 ## Página /videos/ — catálogo de todos os vídeos (2026-09-29)
 
 Fonte única: `src/data/videos.ts`. Vídeo novo publicado (explicavideos, shorts, reels) → **entra aqui no mesmo dia**:
-- 16:9 com player próprio → entrada em `videosExplicativos` (card com link pro player); vertical 9:16 → vídeo numa série de `seriesShorts` (toca na página; MP4 em GitHub Release).
+- Escopo: tudo o que o **Explicavideos** publicou desde o início (versão final v2), cada vídeo com link do MP4 por idioma. Nada reprovado pelo Nei.
+- 16:9 com player próprio → entrada em `videosExplicativos` (card com link pro player + `videos` com os MP4 por idioma; conferir os nomes reais no release, ex.: LOOP-R usa `-en-en.mp4`); vertical 9:16 → vídeo numa série de `seriesShorts` (toca na página; MP4 em GitHub Release).
 - Pôster em `public/videos/<id>.jpg`: `ffmpeg -ss 40 -i <url-do-mp4> -frames:v 1 -vf scale=960:-2 -q:v 4 <id>.jpg` (shorts: `-ss 1.5`, `scale=540:-2`). Conferir que o quadro não saiu preto.
 - Atualizar `VIDEOS_UPDATED` (vai pro sitemap). Lista das produções do Explicavideos: seção "Tudo o que o Explicavideos já produziu" do guia `inematds.github.io/explicavideos/guia/`.
 - Só PT por enquanto (não há `/en/videos` nem `/es/videos`).
